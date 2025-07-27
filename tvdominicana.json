@@ -1,0 +1,677 @@
+[
+  {
+    "nombre": "CINE SONY",
+    "logo": "https://i.postimg.cc/1X5VB1Cw/CINE-SONY.png",
+    "stream": "https://a-cdn.klowdtv.com/live1/cine_720p/playlist.m3u8"
+  },
+  {
+    "nombre": "RETROXTV",
+    "logo": "https://i.postimg.cc/mgqvGcmw/RETROXTV.png",
+    "stream": "https://acceso.radiosportstv.online:3259/live/retroxtvlive.m3u8"
+  },
+  {
+    "nombre": "GRJNGO-PELIS DEL OESTE",
+    "logo": "https://i.postimg.cc/TYLSqJWt/GRJNGO-PELIS-DEL-OESTE.jpg",
+    "stream": "https://amogonetworx-grjngo-2-eu.plex.wurl.tv/4300.m3u8"
+  },
+  {
+    "nombre": "AURORA MEDIA FILMS",
+    "logo": "https://i.postimg.cc/Jz9BHMCT/AURORA-MEDIA-FILMS.jpg",
+    "stream": "https://cdn.streamhispanatv.net:3417/live/auroramflive.m3u8"
+  },
+  {
+    "nombre": "MEGA CINE TV",
+    "logo": "https://i.postimg.cc/PfCwk3Gd/MEGA-CINE-TV.png",
+    "stream": "https://cloudflare.streamgato.us:3125/live/megacinetvlive.m3u8"
+  },
+  {
+    "nombre": "PLUTO TV CINE TERROR 1",
+    "logo": "https://i.postimg.cc/bJM0zM9b/PLUTO-TV-CINE-TERROR.jpg",
+    "stream": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5d8d180092e97a5e107638d3/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS"
+  },
+  {
+    "nombre": "PLUTO TV CINE TERROR 2",
+    "logo": "https://i.postimg.cc/bJM0zM9b/PLUTO-TV-CINE-TERROR.jpg",
+    "stream": "http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5dcddf1ed95e740009fef7ab/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus"
+  },
+  {
+    "nombre": "PLUTO TV CINE ACCION 1",
+    "logo": "https://i.postimg.cc/xdBTvpwf/PLUTO-TV-CINE-ACCION.jpg",
+    "stream": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f1ac2591dd8880007bb7d6d/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&is_lat=1&platform=web&rdid=channel&tags=ROKU_CONTENT_TAGS"
+  },
+  {
+    "nombre": "CINE PREMIERE",
+    "logo": "https://i.postimg.cc/VNdmhV01/CINE-PREMIERE.jpg",
+    "stream": "http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5cf968040ab7d8f181e6a68b/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c27e000-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=a7f04239-fee6-40d2-9e5e-6893a6d330ec"
+  },
+  {
+    "nombre": "MONI TV HD",
+    "logo": "https://i.postimg.cc/rsZVbjhs/MONI-TV-HD.jpg",
+    "stream": "https://tv.arkeo.cl:19360/8134/8134."
+  },
+  {
+    "nombre": "CV ViSION",
+    "logo": "https://i.postimg.cc/9XnrCGm1/CV-Vi-SION.jpg",
+    "stream": "https://eu1.servers10.com:8081/8128/index.m3u8"
+  },
+  {
+    "nombre": "PLATINIUM TV",
+    "logo": "https://i.postimg.cc/pXNR8JHF/PLATINUM-TV.jpg",
+    "stream": "https://live20.bozztv.com/akamaissh101/ssh101/platiniumtv/chunks.m3u8"
+  },
+  {
+    "nombre": "CIELO TV",
+    "logo": "https://i.postimg.cc/yY3WdkWK/CIELO-TV.jpg",
+    "stream": "https://streaming.servervideo.net:1936/cielotv/cielotv/playlist.m3u8"
+  },
+  {
+    "nombre": "LUZ DIVINA TV",
+    "logo": "https://i.postimg.cc/bwjYwgK0/LUZ-DIVINA-TV.jpg",
+    "stream": "https://tv.wracanal10.com:3776/live/luzdivinatvlive.m3u8"
+  },
+  {
+    "nombre": "TV LUZ",
+    "logo": "https://i.postimg.cc/wBngnkcs/TV-LUZ.jpg",
+    "stream": "https://host.streamingnation.live/p/3780/live/tvluzlive.m3u8"
+  },
+  {
+    "nombre": "TELE RUMBA TV",
+    "logo": "https://i.postimg.cc/FzGgKJ2Z/TELE-RUMBA-TV.jpg",
+    "stream": "https://inliveserver.com:1936/18506/18506/playlist.m3u8"
+  },
+  {
+    "nombre": "PULA TV",
+    "logo": "https://i.postimg.cc/wj0rbW0w/PULA-TV.jpg",
+    "stream": "https://vdo2.streamgato.us:3239/live/pulatvlive.m3u8"
+  },
+  {
+    "nombre": "PUNTO TV",
+    "logo": "https://i.postimg.cc/j5Jk2RK1/PUNTO-TV.png",
+    "stream": "https://vdo1.streamgato.us:3599/live/puntotvlive.m3u8"
+  },
+  {
+    "nombre": "TELETUR",
+    "logo": "https://i.postimg.cc/YjcSh0H8/TELETUR.jpg",
+    "stream": "https://cloudflare.streamgato.us:3227/live/teleturtvlive.m3u8"
+  },
+  {
+    "nombre": "VISION NDV",
+    "logo": "https://i.postimg.cc/Rh7s1GWQ/VISION-NDV.jpg",
+    "stream": "https://cloudflare.streamgato.us:3820/live/visionndvlive.m3u8"
+  },
+  {
+    "nombre": "TVS",
+    "logo": "https://i.postimg.cc/ZKmDYkQf/TVS.png",
+    "stream": "https://imagenuniversaltv.net:3741/live/tvslive.m3u8"
+  },
+  {
+    "nombre": "TELEMICRO",
+    "logo": "https://i.postimg.cc/mDxY6t17/ANI-RETRO.png",
+    "stream": "http://200.229.147.142:8000/play/a057/index.m3u8"
+  },
+  {
+    "nombre": "BEBETO TELEVISION HD",
+    "logo": "https://i.postimg.cc/qq36xL3H/BEBETO-TELEVISION-HD.jpg",
+    "stream": "https://television.essastream.com:3502/live/bebetotelevisionlive.m3u8"
+  },
+  {
+    "nombre": "DIGITAL809TV",
+    "logo": "https://i.postimg.cc/Zq8GpxRj/DIGITAL809-TV.png",
+    "stream": "https://inliveserver.com:1936/digital809tv/digital809tv/playlist.m3u8"
+  },
+  {
+    "nombre": "AREA 809",
+    "logo": "https://i.postimg.cc/tJXyYwzP/AREA-809.png",
+    "stream": "https://vdo.voxhdnet.com:3159/stream/play.m3u8"
+  },
+  {
+    "nombre": "RUTA 66 TV",
+    "logo": "https://i.postimg.cc/9MBt5MTY/RUTA-66-TV.jpg",
+    "stream": "https://cnn.livestreaminggroup.info:3796/live/ruta66tvlive.m3u8"
+  },
+  {
+    "nombre": "MANACLAR TV",
+    "logo": "https://i.postimg.cc/fRNW4jqN/MANACLAR-TV.jpg",
+    "stream": "https://5790d294af2dc.streamlock.net/manaclar/manaclar/playlist.m3u8"
+  },
+  {
+    "nombre": "CITRICO TV",
+    "logo": "https://i.postimg.cc/J7HRGd98/CITRICO-TV.jpg",
+    "stream": "https://rdn.essastream.com:3996/live/citricotvlive.m3u8"
+  },
+  {
+    "nombre": "CAMU TV",
+    "logo": "https://i.postimg.cc/mgB4pZhZ/CAMU-TV.jpg",
+    "stream": "https://server40.servistreaming.com:3477/stream/play.m3u8"
+  },
+  {
+    "nombre": "MI PUEBLO TV",
+    "logo": "https://i.postimg.cc/wj2pCKsX/MI-PUEBLO-TV.png",
+    "stream": "https://ds.tvabierta.net/memfs/e02e5624-6ff9-42b0-b500-68b22e5adc64_output_0.m3u8"
+  },
+  {
+    "nombre": "TV EXITOS",
+    "logo": "https://i.postimg.cc/Jz7yHpT7/TV-EXITOS.jpg",
+    "stream": "https://streaming.grupomediosdelnorte.com:19360/tvexitos/tvexitos.m3u8"
+  },
+  {
+    "nombre": "ALEGRE TV",
+    "logo": "https://i.postimg.cc/Jz7yHpT7/TV-EXITOS.jpg",
+    "stream": "https://streamunoapp.com:3149/live/alegretvlive.m3u8"
+  },
+  {
+    "nombre": "CIBAEÑA TV",
+    "logo": "https://i.postimg.cc/NfrSdHBc/CIBAE-A-TV.png",
+    "stream": "https://streamunoapp.com:3958/live/cibaenatvlive.m3u8"
+  },
+  {
+    "nombre": "CLARO TV DOMINICANA",
+    "logo": "https://i.postimg.cc/nrGpP2Jr/CLARO-TV-DOMINICANA.png",
+    "stream": "https://streamunoapp.com:3960/live/claroteledomlive.m3u8"
+  },
+  {
+    "nombre": "TELERADIO NORTE",
+    "logo": "https://i.postimg.cc/zGBcp9qd/TELERADIO-NORTE.jpg",
+    "stream": "https://angelistic.live:3785/live/tvoficiallive.m3u8"
+  },
+  {
+    "nombre": "VEGAVISION CANAL 18",
+    "logo": "https://i.postimg.cc/mDPfJrmz/VEGAVISION-CANAL-18.jpg",
+    "stream": "https://rdn.essastream.com:3400/live/canal18hdlive.m3u8"
+  },
+  {
+    "nombre": "TLSD",
+    "logo": "https://i.postimg.cc/TP7vtbJv/TLSD.png",
+    "stream": "https://vdopanel.jlahozconsulting.com/p/3668/live/santodomingolive.m3u8"
+  },
+  {
+    "nombre": "LA REYNA TV",
+    "logo": "https://i.postimg.cc/6qWkhwzN/LA-REYNA-TV.jpg",
+    "stream": "https://cloud2.streaminglivehd.com:1936/lareinatv/lareinatv/playlist.m3u8"
+  },
+  {
+    "nombre": "ANTENA LATINA",
+    "logo": "https://i.postimg.cc/pXjLGr1x/ANTENA-LATINA.png",
+    "stream": "https://alba-do-antena7-antena7.stream.mediatiquestream.com/original.m3u8"
+  },
+  {
+    "nombre": "RTVD 4-R.D",
+    "logo": "https://i.postimg.cc/5ts4YCj5/RTVD.jpg",
+    "stream": "https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8?DVR"
+  },
+  {
+    "nombre": "LA FE MUEVE MONTAÑA TV",
+    "logo": "https://i.postimg.cc/k55sj1Z4/LA-FE-MUEVE-MONTA-AS-TV.jpg",
+    "stream": "https://inliveserver.com:1936/10020/10020/playlist.m3u8?DVR"
+  },
+  {
+    "nombre": "EL VIVIENTE TV",
+    "logo": "https://i.postimg.cc/cCQ1Vcjg/EL-VIVIENTE-TV.jpg",
+    "stream": "https://host.streamingnation.live/p/3968/live/elvivientetvlive.m3u8"
+  },
+  {
+    "nombre": "IDEAL TV",
+    "logo": "https://i.postimg.cc/kXvXsfKL/IDEAL-TV.png",
+    "stream": "https://cloud5.idealtv.net/hls/live.m3u8"
+  },
+  {
+    "nombre": "ANTENA 21",
+    "logo": "https://i.postimg.cc/NMLg1jr3/ANTENA-21.png",
+    "stream": "https://alba-do-antena7-c21.stream.mediatiquestream.com/index.m3u8"
+  },
+  {
+    "nombre": "CANAL DEL SOL",
+    "logo": "https://i.postimg.cc/c1bvkVx7/CANAL-DEL-SOL.png",
+    "stream": "https://5790d294af2dc.streamlock.net/sol65/sol65/playlist.m3u8"
+  },
+  {
+    "nombre": "HERMANAS MIRABAL TV",
+    "logo": "https://i.postimg.cc/Pxs1FJmw/HERMANAS-MIRABAL-TV.png",
+    "stream": "https://cnn.essastream.com:3091/live/hmtvlive.m3u8"
+  },
+  {
+    "nombre": "RNN-NOTICIAS",
+    "logo": "https://i.postimg.cc/1zFxPVw5/RNN-NOTICIAS.jpg",
+    "stream": "https://2-fss-2.streamhoster.com/pl_120/206532-5753030-1/playlist.m3u8"
+  },
+  {
+    "nombre": "RDN TV",
+    "logo": "https://i.postimg.cc/YC25YQYc/RDN-TV.jpg",
+    "stream": "https://vdo2.streamgato.us:3278/live/rdntvlive.m3u8"
+  },
+  {
+    "nombre": "NOTICIAS 16",
+    "logo": "https://i.postimg.cc/Kjk8y8GP/NOTICIAS-16.png",
+    "stream": "https://cdn.essastream.com:3457/live/noticiasn16live.m3u8"
+  },
+  {
+    "nombre": "TELEUNIVERSO",
+    "logo": "https://i.postimg.cc/zBYsfDFw/TELEUNIVERSO.png",
+    "stream": "https://teleuniversotv.streamgato.us:3110/live/teleuniversotvlive.m3u8"
+  },
+  {
+    "nombre": "NARANJA TV",
+    "logo": "https://i.postimg.cc/hGDZjCJj/NARANJA-TV.jpg",
+    "stream": "https://cdn.streamingcpanel.com:3526/live/teleraiceslive.m3u8?DVD"
+  },
+  {
+    "nombre": "TELENOVISA 43",
+    "logo": "https://i.postimg.cc/SNxSB8JC/TELENOVISA-43.png",
+    "stream": "https://rdn.essastream.com:3230/live/telenovisa43live.m3u8"
+  },
+  {
+    "nombre": "TV DAJA",
+    "logo": "https://i.postimg.cc/BvJ3GTgZ/TV-DAJA.jpg",
+    "stream": "https://rdn.essastream.com:3388/live/dajatvlive.m3u8"
+  },
+  {
+    "nombre": "SANTIAGO TV",
+    "logo": "https://i.postimg.cc/3JQyz0Vh/SANTIAGO-TV.png",
+    "stream": "https://vdo1.streamgato.us:3677/live/telemileniolive.m3u8"
+  },
+  {
+    "nombre": "CANAL DTV",
+    "logo": "https://i.postimg.cc/WbdsGR20/CANAL-DTV.jpg",
+    "stream": "https://s.emisoras.tv:8081/dtv/index.m3u8"
+  },
+  {
+    "nombre": "CROM TV",
+    "logo": "https://i.postimg.cc/d3pPH1qr/CROM-TV.png",
+    "stream": "https://cnn.essastream.com:3333/live/cromtvlive.m3u8"
+  },
+  {
+    "nombre": "TS TELESIGLO",
+    "logo": "https://i.postimg.cc/QMp2n0xB/TS-TELESIGLO.png",
+    "stream": "https://vdo2.streamgato.us:3562/live/dantvlive.m3u8"
+  },
+  {
+    "nombre": "EL PUERTO TV",
+    "logo": "https://i.postimg.cc/fybfmTrz/EL-PUERTO-TV.png",
+    "stream": "https://5bf8041cb3fed.streamlock.net/PuertoTV/PuertoTV/playlist.m3u8"
+  },
+  {
+    "nombre": "MONTE CRISTI DIGITAL",
+    "logo": "https://i.postimg.cc/fW26cLz4/MONTE-CRISTI-DIGITAL.jpg",
+    "stream": "https://soportedvb.click:3400/live/montecristitvlive.m3u8"
+  },
+  {
+    "nombre": "EL SEIS RD",
+    "logo": "https://i.postimg.cc/wBQtWMM3/EL-SEIS.jpg",
+    "stream": "https://5790d294af2dc.streamlock.net/canal6/canal6/playlist.m3u8"
+  },
+  {
+    "nombre": "MICROVISION",
+    "logo": "https://i.postimg.cc/NG3HfW3s/MICROVISION.jpg",
+    "stream": "https://streaming.telecablecentral.com.do/live/MicroHD/playlist.m3u8"
+  },
+  {
+    "nombre": "TV 10-SAN JUAN",
+    "logo": "https://i.postimg.cc/gk36wgpv/TV-10-SAN-JUAN.png",
+    "stream": "https://59d39900ebfb8.streamlock.net/TV10SanJuan/TV10SanJuan/playlist.m3u8"
+  },
+  {
+    "nombre": "VILLA ALTAGRACIA TV",
+    "logo": "https://i.postimg.cc/Pf2hQx2x/VILLA-ALTAGRACIA-TV.jpg",
+    "stream": "https://inliveserver.com:1936/10016/10016/playlist.m3u8"
+  },
+  {
+    "nombre": "TELEVER-JARABACOA",
+    "logo": "https://i.postimg.cc/PrbPfNby/TELEVER-JARABACOA.jpg",
+    "stream": "https://vdo1.streamgato.us:3342/live/televercanal12live.m3u8"
+  },
+  {
+    "nombre": "CATORCE TV",
+    "logo": "https://i.postimg.cc/Gmc94rqC/CATORCE-TV.jpg",
+    "stream": "https://tv.livestreaminggroup.info:3052/live/catorcetvlive.m3u8"
+  },
+  {
+    "nombre": "CINEVISION",
+    "logo": "https://i.postimg.cc/nLrz1kyS/CINEVISION-CANAL-19.jpg",
+    "stream": "https://cdn.mycloudstream.io/hls/live/broadcast/etyetihk/index.m3u8"
+  },
+  {
+    "nombre": "NEXXO TV",
+    "logo": "https://i.postimg.cc/SKPK19qS/NEXXO-TV.png",
+    "stream": "https://cdn3.streamgato.us:3938/live/nexxotvlive.m3u8"
+  },
+  {
+    "nombre": "TELEDIGITAL-CANAL56",
+    "logo": "https://i.postimg.cc/ydS8MNYF/TELEDIGITAL-CANAL-56.jpg",
+    "stream": "https://vdopanel.jlahozconsulting.com/p/3124/hybrid/play.m3u8"
+  },
+  {
+    "nombre": "EN TELEVISION",
+    "logo": "https://i.postimg.cc/7YZphW0R/EN-TELEVISION.png",
+    "stream": "https://tv.livestreaminggroup.info:3985/live/entelevisionlive.m3u8"
+  },
+  {
+    "nombre": "HILANDO FINO TV",
+    "logo": "https://i.postimg.cc/ZnRVbX2F/HILANDO-FINO-TV.jpg",
+    "stream": "https://hilandofinotv.essastream.com:3606/live/canalhilandofinotvlive.m3u8"
+  },
+  {
+    "nombre": "AHORA TV 35",
+    "logo": "https://i.postimg.cc/nVR3Rc9d/AHORA-TV-35.jpg",
+    "stream": "https://tv.livestreaminggroup.info:3513/live/canal35live.m3u8"
+  },
+  {
+    "nombre": "CDN 37",
+    "logo": "https://i.postimg.cc/JzbcL1tC/CDN-37.png",
+    "stream": "https://rtmp-live-ingest-us-east-1-universe-dacast-com.akamaized.net/transmuxv1/streams/7ed9a111-1110-47df-3bd8-85a9e0a15e3c.m3u8"
+  },
+  {
+    "nombre": "TVO-LA ROMANA",
+    "logo": "https://i.postimg.cc/q7wsNj8m/TVO-LA-ROMANA.jpg",
+    "stream": "https://cdn.mycloudstream.io/hls/live/broadcast/aa5i1jfn/mono.m3u8"
+  },
+  {
+    "nombre": "LUNA TV",
+    "logo": "https://i.postimg.cc/5Nz8BxBQ/LUNA-TV.jpg",
+    "stream": "https://tv.wracanal10.com:3671/live/lunatvcanal53live.m3u8"
+  },
+  {
+    "nombre": "DE ULTIMO MINUTO TV",
+    "logo": "https://i.postimg.cc/qRg3z0BR/DE-ULTIMO-MINUTO-TV.jpg",
+    "stream": "https://soportedvb.click:3620/live/deultimominutomedialive.m3u8"
+  },
+  {
+    "nombre": "ALTANTO TV",
+    "logo": "https://i.postimg.cc/L4wWTBWC/ALTANTO-TV.jpg",
+    "stream": "https://streaming.altantotv.domiplay.net/hls/0/stream.m3u8"
+  },
+  {
+    "nombre": "HAINA VISION-CANAL 6",
+    "logo": "https://i.postimg.cc/C1D8V0Ff/HAINA-VISION-CANAL-6.jpg",
+    "stream": "https://cdn.streamingcpanel.com:3447/live/hainavisionlive.m3u8"
+  },
+  {
+    "nombre": "BELLAVISION",
+    "logo": "https://i.postimg.cc/XJpbZNZp/BELLAVISION.png",
+    "stream": "https://rdn.essastream.com:3110/live/bellavision8hdlive.m3u8"
+  },
+  {
+    "nombre": "COCO TV",
+    "logo": "https://i.postimg.cc/gkvnc4F1/COCO-TV.jpg",
+    "stream": "https://cloudflare.streamgato.us:3253/live/canalcocotvlive.m3u8"
+  },
+  {
+    "nombre": "TELENORD-CANAL 8",
+    "logo": "https://i.postimg.cc/66DkpFDc/TELENORD-CANAL-08.png",
+    "stream": "https://rdn.essastream.com:3170/live/telenord8live.m3u8"
+  },
+  {
+    "nombre": "TELENORD CANAL 10",
+    "logo": "https://i.postimg.cc/FzYCg7mJ/TELENORD.jpg",
+    "stream": "https://rdn.essastream.com:3676/live/telenord10live.m3u8"
+  },
+  {
+    "nombre": "TELENORD-CANAL 12",
+    "logo": "https://i.postimg.cc/MpwgyVZj/TELENORD-CANAL-12.png",
+    "stream": "https://vdo1.streamgato.us:3345/live/telenord12live.m3u8"
+  },
+  {
+    "nombre": "BAJO TECHO TV",
+    "logo": "https://i.postimg.cc/qRhZ2Np6/BAJO-TECHO-TV.png",
+    "stream": "https://rdn.essastream.com:3042/live/bajotechotvlive.m3u8"
+  },
+  {
+    "nombre": "VALLEVISION",
+    "logo": "https://i.postimg.cc/mk3jSMJk/VALLEVISION.jpg",
+    "stream": "https://streaming.telecablecentral.com.do/Vallevision/ValleHD/playlist.m3u8"
+  },
+  {
+    "nombre": "READY HD",
+    "logo": "https://i.postimg.cc/L88DzJT4/READY-HD.png",
+    "stream": "https://streaming.telecablecentral.com.do/ReadyTV/ReadyHD/playlist.m3u8"
+  },
+  {
+    "nombre": "BOREAL TELEVISION HD",
+    "logo": "https://i.postimg.cc/Y2NzZ6Dq/BOREAL-TELEVISION.png",
+    "stream": "https://cdn.borealtelevision.com:3712/live/borealtelevisionhdlive.m3u8"
+  },
+  {
+    "nombre": "TELEMAXRD",
+    "logo": "https://i.postimg.cc/nccBW6Q0/TELEMAXRD.jpg",
+    "stream": "https://vdo2.streamgato.us:3673/live/telemaxlive.m3u8"
+  },
+  {
+    "nombre": "FUEGO TV",
+    "logo": "https://i.postimg.cc/MHZMhQXv/FUEGO-TV.jpg",
+    "stream": "https://video.misistemareseller.com/Fuegotv/Fuegotv/playlist.m3u8"
+  },
+  {
+    "nombre": "COLIMDO TV",
+    "logo": "https://i.postimg.cc/gkJLs8f7/COLIMDO-TV.jpg",
+    "stream": "https://cnn.livestreaminggroup.info:3132/live/colimdotvlive.m3u8"
+  },
+  {
+    "nombre": "TELE IMPACTO",
+    "logo": "https://i.postimg.cc/KYn1jNM1/TELEIMPACTO.png",
+    "stream": "https://vpss2003.streamprolive.com/hls/live.m3u8"
+  },
+  {
+    "nombre": "TELECONTACTO 57",
+    "logo": "https://i.postimg.cc/3NbRVfPc/TELECONTACTO-57.jpg",
+    "stream": "https://streaming.grupomediosdelnorte.com:19360/telecontacto/telecontacto.m3u8"
+  },
+  {
+    "nombre": "VEGA TV",
+    "logo": "https://i.postimg.cc/sgPzZ0TC/VEGATEVE.png",
+    "stream": "https://cloud6.livescast.com:3797/live/vegatevelive.m3u8"
+  },
+  {
+    "nombre": "VTV 32",
+    "logo": "https://i.postimg.cc/2jP3QM71/VTV-32.jpg",
+    "stream": "https://cnn.livestreaminggroup.info:3507/live/vtv32live.m3u8"
+  },
+  {
+    "nombre": "TELECANAL 12",
+    "logo": "https://i.postimg.cc/MZdwZszr/TELECANAL-12.jpg",
+    "stream": "https://rdn.essastream.com:3258/live/telecanal12live.m3u8"
+  },
+  {
+    "nombre": "ALCARRIZOS TV",
+    "logo": "https://i.postimg.cc/D07ykYGk/ALCARRIZOS-TV.jpg",
+    "stream": "https://5790d294af2dc.streamlock.net/alcarrizostv/alcarrizostv/playlist.m3u8"
+  },
+  {
+    "nombre": "TELE DOMINICANA",
+    "logo": "https://i.postimg.cc/KYLZKyrh/TELE-DOMINICANA.png",
+    "stream": "https://vdopanel.jlahozconsulting.com/p/3417/hybrid/play.m3u8"
+  },
+  {
+    "nombre": "MAKINA VISION",
+    "logo": "https://i.postimg.cc/BnTYtYLw/MAKINA-VISION.jpg",
+    "stream": "https://vdopanel.jlahozconsulting.com/p/3303/live/makinalive.m3u8"
+  },
+  {
+    "nombre": "AGENDA 56",
+    "logo": "https://i.postimg.cc/RZqS1rxL/AGENDA-56.png",
+    "stream": "https://cloudflare.streamgato.us:3148/live/agenda56tvlive.m3u8"
+  },
+  {
+    "nombre": "AION TV",
+    "logo": "https://i.postimg.cc/j56tqtyt/ION-TV.jpg",
+    "stream": "https://vdo.aiontelevision.com:3735/live/aiontelevisionlive.m3u8"
+  },
+  {
+    "nombre": "CANALDA TV",
+    "logo": "https://i.postimg.cc/26xNRTf5/CANALDA-TV.jpg",
+    "stream": "https://canalda.rgradio.net:3084/live/canaldalive.m3u8"
+  },
+  {
+    "nombre": "CENOVISION TV",
+    "logo": "https://i.postimg.cc/WbCKyxJn/CENOVISION-TV.jpg",
+    "stream": "https://5790d294af2dc.streamlock.net/cenovision/cenovision/playlist.m3u8"
+  },
+  {
+    "nombre": "ECOVISION TV",
+    "logo": "https://i.postimg.cc/fLPjLQsq/ECOVISION-TV.png",
+    "stream": "https://streaming.grupomediosdelnorte.com:19360/ecovision/ecovision.m3u8"
+  },
+  {
+    "nombre": "EDU MAS TV",
+    "logo": "https://i.postimg.cc/zvJb8db2/EDU-MAS-TV.jpg",
+    "stream": "https://vdopanel.jlahozconsulting.com:3720/hybrid/play.m3u8"
+  },
+  {
+    "nombre": "GH TELEVISION",
+    "logo": "https://i.postimg.cc/PrCfYsjz/GH-TELEVISION.jpg",
+    "stream": "https://tv.ghtelevision.com:3018/live/ghtelevisionlive.m3u8"
+  },
+  {
+    "nombre": "IMAGEN UNIVERSAL TV",
+    "logo": "https://i.postimg.cc/T3mRNVhK/IMAGEN-UNIVERSAL-TV.png",
+    "stream": "https://imagenuniversaltv.net:3771/live/iutvlive.m3u8"
+  },
+  {
+    "nombre": "JIMANI TV",
+    "logo": "https://i.postimg.cc/k4Mq5LsS/JIMANI-TV.jpg",
+    "stream": "https://cloud2.streaminglivehd.com:1936/8246/8246/playlist.m3u8"
+  },
+  {
+    "nombre": "LA CALETA TV",
+    "logo": "https://i.postimg.cc/8c9StcSd/LA-CALETA-TV.jpg",
+    "stream": "https://rdn.essastream.com:3168/live/lacaletatvlive.m3u8"
+  },
+  {
+    "nombre": "LA RUTA TV",
+    "logo": "https://i.postimg.cc/SQ3b0nBC/LA-RUTA-TV.jpg",
+    "stream": "https://streamunoapp.com:3983/live/larutatvlive.m3u8"
+  },
+  {
+    "nombre": "MAKAO TV",
+    "logo": "https://i.postimg.cc/w38r1mzr/MAKAO-TV.png",
+    "stream": "https://live.obslivestream.com/makaomux/tracks-v2a1/playlist.m3u8"
+  },
+  {
+    "nombre": "CHINOLA TV",
+    "logo": "https://i.postimg.cc/1RNmSDPN/CHINOLA-TV.png",
+    "stream": "https://627bb251f23c7.streamlock.net:444/ExtremaKids/ExtremaKids/playlist.m3u8"
+  },
+  {
+    "nombre": "PITUCO TV",
+    "logo": "https://i.postimg.cc/1zd1948k/PITUCO-TV.png",
+    "stream": "https://imagenuniversaltv.net:3439/live/elpitucolive.m3u8"
+  },
+  {
+    "nombre": "PUNTA CANA TV",
+    "logo": "https://i.postimg.cc/fyn49Fj5/PUNTA-CANA-TV.jpg",
+    "stream": "https://rdn.essastream.com:3544/live/puntacanatvlive.m3u8"
+  },
+  {
+    "nombre": "SAN ISIDRO TV",
+    "logo": "https://i.postimg.cc/50zTbgdz/SAN-ISIDRO-TV.jpg",
+    "stream": "https://rdn.essastream.com:3160/live/sanisidrotvlive.m3u8"
+  },
+  {
+    "nombre": "SIMA VISION TV",
+    "logo": "https://i.postimg.cc/YCSPhMBM/SIMA-VISION-TV.png",
+    "stream": "https://soportedvb.click:3668/live/simavisiontvlive.m3u8"
+  },
+  {
+    "nombre": "SU MUNDO TV",
+    "logo": "https://i.postimg.cc/R06bLd0Y/SU-MUNDO-TV.jpg",
+    "stream": "https://175036.global.ssl.fastly.net/6217e980d5bee0e090792fdf/live_75f5635097ba11ecb9f1255c8fe65a34/tracks-v2a1/mono.ts.m3u8"
+  },
+  {
+    "nombre": "TELE UNIVERSAL",
+    "logo": "https://i.postimg.cc/4yZLZT1C/TELE-UNIVERSAL.png",
+    "stream": "https://vdo2.streamgato.us:3466/live/teleuniversaldclive.m3u8"
+  },
+  {
+    "nombre": "TELECANAL 28",
+    "logo": "https://i.postimg.cc/sf9HmvV3/TELECANAL-28.jpg",
+    "stream": "https://vdo2.streamgato.us:3841/live/telecanal28tvlive.m3u8"
+  },
+  {
+    "nombre": "TELECIBAO",
+    "logo": "https://i.postimg.cc/25Z2Z5cR/TELECIBAO.jpg",
+    "stream": "https://vdo2.streamgato.us:3713/live/telecibaotvlive.m3u8"
+  },
+  {
+    "nombre": "TELETURISMO",
+    "logo": "https://i.postimg.cc/mDWVNGJc/TELETURISMO.png",
+    "stream": "https://stream.gia.tv/giatvplayout7/giatv-208343/tracks-v1a1/mono.ts.m3u8"
+  },
+  {
+    "nombre": "XTRA TV",
+    "logo": "https://i.postimg.cc/BndC40qh/XTRA-TV.png",
+    "stream": "https://cnn.essastream.com:3387/live/xtratvlive.m3u8"
+  },
+  {
+    "nombre": "GALAXIA TEVE",
+    "logo": "https://i.postimg.cc/nLrz1kyS/CINEVISION-CANAL-19.jpg",
+    "stream": "https://streaming.grupomediosdelnorte.com:19360/galaxiateve/galaxiateve.m3u8"
+  },
+  {
+    "nombre": "MEGAVISION 43",
+    "logo": "https://i.postimg.cc/cCK1qZj0/MEGAVISION-TV.png",
+    "stream": "https://66b3a8363297d.streamlock.net/megavision/MV/playlist.m3u8"
+  },
+  {
+    "nombre": "MUSAVICION",
+    "logo": "https://i.postimg.cc/g2KxHcbT/MUSAVISION.jpg",
+    "stream": "https://cnn.hostlagarto.com/musavisiontv/tracks-v1a1/mono.m3u8"
+  },
+  {
+    "nombre": "DELTA TV",
+    "logo": "https://i.postimg.cc/Pq3N06xb/DELTA-TV.png",
+    "stream": "https://rdn.essastream.com:3949/live/deltatv50live.m3u8"
+  },
+  {
+    "nombre": "SUPER 7 FM",
+    "logo": "https://i.postimg.cc/QtvCdHcH/SUPER-7-FM.png",
+    "stream": "https://tv.livestreaminggroup.info:3295/live/super7tvlive.m3u8"
+  },
+  {
+    "nombre": "HIGUEY DIGITAL",
+    "logo": "https://i.postimg.cc/3wRxjgBk/HIGUEY-DIGITAL.jpg",
+    "stream": "https://vdo1.streamgato.us:3046/live/tvhigueycanal12live.m3u8"
+  },
+  {
+    "nombre": "COTUBANAMA DIGITAL",
+    "logo": "https://i.postimg.cc/CKQLczPm/COTUBANAMA-DIGITAL.jpg",
+    "stream": "https://host.streamingnation.live/p/3588/hybrid/play.m3u8"
+  },
+  {
+    "nombre": "NITIDA TV",
+    "logo": "https://i.postimg.cc/JnH7vMSm/NITIDA-TV.jpg",
+    "stream": "https://ed18ov.live.opencaster.com/bznudxxdtppv/index.m3u8?"
+  },
+  {
+    "nombre": "FAROVISION 22",
+    "logo": "https://i.postimg.cc/90GmX1Wn/FAROVISION.jpg",
+    "stream": "https://streamtv.intervenhosting.net:3754/hybrid/play.m3u8"
+  },
+  {
+    "nombre": "CANAL HTV LIVE",
+    "logo": "https://i.postimg.cc/8zy1C7SN/CANAL-HTV-LIVE.png",
+    "stream": "https://vdo1.streamgato.us:3833/live/canalhtvlivelive.m3u8"
+  },
+  {
+    "nombre": "SRC MEDIA TV",
+    "logo": "https://i.postimg.cc/d0pw8g3f/SRC-MEDIA-TV.jpg",
+    "stream": "https://video.misistemareseller.com:1936/srctv/srctv/playlist.m3u8"
+  },
+  {
+    "nombre": "ZONA VISION TV",
+    "logo": "https://i.postimg.cc/Y9Fk88mC/ZONA-VISION-TV.png",
+    "stream": "https://ds.tvabierta.net/memfs/b295f254-7af9-45e4-bfc6-7e0bba41929d.m3u8"
+  },
+  {
+    "nombre": "VALLE NUEVO TV",
+    "logo": "https://i.postimg.cc/wMdzrJhc/VALLE-NUEVO-TV.jpg",
+    "stream": "https://media.streambrothers.com:19360/8262/8262.m3u8"
+  },
+  {
+    "nombre": "HITS 360 FM",
+    "logo": "https://i.postimg.cc/VLgw7J5n/HITS-360-FM.png",
+    "stream": "https://cdn.essastream.com:3023/live/hits360tvlive.m3u8"
+  },
+  {
+    "nombre": "SALVACION TV",
+    "logo": "https://i.postimg.cc/pL1HH3fd/SALVACION-TV.png",
+    "stream": "https://stream.eleden.com/livesalvatv/ngrp:livesalvatv_all/playlist.m3u8"
+  }
+]
