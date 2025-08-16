@@ -10,6 +10,11 @@
     "stream": "https://acceso.radiosportstv.online:3259/live/retroxtvlive.m3u8"
   },
   {
+    "nombre": "TELEARAGUA",
+    "logo": "https://i.postimg.cc/6p4gN9my/TELEARAGUA.jpg",
+    "stream": "http://45.173.198.59:8080/hls/nginx3.m3u8"
+  },
+  {
     "nombre": "GRJNGO-PELIS DEL OESTE",
     "logo": "https://i.postimg.cc/TYLSqJWt/GRJNGO-PELIS-DEL-OESTE.jpg",
     "stream": "https://amogonetworx-grjngo-2-eu.plex.wurl.tv/4300.m3u8"
