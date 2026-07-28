@@ -10,11 +10,6 @@
     "url": "https://d1ypfac91iuc9g.cloudfront.net/ts:abr.m3u8"
   },
   {
-    "name": "COLOR VISION 9",
-    "logo": "https://i.postimg.cc/251jSZT2/COLOR-VISION.png",
-    "url": "https://cdn3.wind.do/streams/colorvision/colorvision_master.m3u8"
-  },
-  {
     "name": "AME TV",
     "logo": "https://i.postimg.cc/c6qG7njF/AME-TV.png",
     "url": "https://ss2.tvrdomi.com:1936/ame47/ame47/playlist.m3u8"
@@ -28,16 +23,6 @@
     "name": "MUND2 TV",
     "logo": "https://i.postimg.cc/Gt9f0WKh/MUND2_TV.jpg",
     "url": "https://mlb.essastream.com:8081/mun2tv/index.m3u8"
-  },
-  {
-    "name": "TELESISTEMA 11",
-    "logo": "https://i.postimg.cc/wTdj8WJx/TELESISTEMA.jpg",
-    "url": "https://cdn3.wind.do/streams/telesistema/telesistema_master.m3u8"
-  },
-  {
-    "name": "CDN",
-    "logo": "https://i.postimg.cc/JzbcL1tC/CDN-37.png",
-    "url": "http://190.61.90.17:40000/play/a03p/index.m3u8"
   },
   {
     "name": "TS TELESIGLO",
