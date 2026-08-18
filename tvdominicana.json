@@ -245,11 +245,6 @@
     "url": "https://jmp2.uk/stvp-ESBC2700002LO"
   },
   {
-    "name": "TELEANTILLAS",
-    "logo": "https://i.imgur.com/G1pJZkC.png",
-    "url": "http://45.171.108.253:8888/TELEANTILLAS/index.m3u8"
-  },
-  {
     "name": "ANTENA 7",
     "logo": "https://i.postimg.cc/pXjLGr1x/ANTENA-LATINA.png",
     "url": "https://d3gie3ig6argu.cloudfront.net/ts:abr.m3u8"
@@ -258,6 +253,11 @@
     "name": "ANTENA 21",
     "logo": "https://i.postimg.cc/d0DN0D9L/images.jpg",
     "url": "https://d1ypfac91iuc9g.cloudfront.net/ts:abr.m3u8"
+  },
+  {
+    "name": "COLOR VISION 9",
+    "logo": "https://i.postimg.cc/251jSZT2/COLOR-VISION.png",
+    "url": "https://cdn3.wind.do/streams/colorvision/colorvision_master.m3u8"
   },
   {
     "name": "AME TV",
@@ -290,6 +290,36 @@
     "url": "https://edge.essastream.com/telemilenio/playlist.m3u8"
   },
   {
+    "name": "Tele Antillas (1080p)",
+    "logo": "https://i.imgur.com/G1pJZkC.png",
+    "url": "http://45.171.108.253:8888/TELEANTILLAS/index.m3u8"
+  },
+  {
+    "name": "Telecentro (1080p)",
+    "logo": "https://i.imgur.com/F17zNXh.png",
+    "url": "http://190.122.104.210:5080/LiveApp/streams/tcentro.m3u8"
+  },
+  {
+    "name": "TeleCentro (720p)",
+    "logo": "https://i.imgur.com/g61TdZ3.png",
+    "url": "https://live-evg7.tv360.bitel.com.pe/bitel/telecentro/playlist.m3u8"
+  },
+  {
+    "name": "Telecentro (720p)",
+    "logo": "https://i.imgur.com/QtRNfaj.png",
+    "url": "https://streamtv.intervenhosting.net:3161/live/telecentrolive.m3u8"
+  },
+  {
+    "name": "Telemicro (1080p)",
+    "logo": "https://i.imgur.com/WhgySAk.png",
+    "url": "https://live4.telemicro.com.do/live/telemicrocast_1080p/playlist.m3u8"
+  },
+  {
+    "name": "TELEMICRO INTERNACIONAL",
+    "logo": "https://i.imgur.com/507tvMY.png",
+    "url": "http://200.115.120.1:8000/play/ca085/index.m3u8"
+  },
+  {
     "name": "ALCARRIZOS TV",
     "logo": "https://i.postimg.cc/D07ykYGk/ALCARRIZOS-TV.jpg",
     "url": "https://5790d294af2dc.streamlock.net/alcarrizostv/alcarrizostv/playlist.m3u8"
@@ -313,6 +343,46 @@
     "name": "PITUCO TV",
     "logo": "https://i.postimg.cc/1zd1948k/PITUCO-TV.png",
     "url": "https://imagenuniversaltv.net:3439/live/elpitucolive.m3u8"
+  },
+  {
+    "name": "GUAYMATE TV",
+    "logo": "https://cdn.m3u.cl/logo/1011_Guaymate_TV.png",
+    "url": "https://live20.bozztv.com/akamaissh101/ssh101/guaymatetv/playlist.m3u8?PlaylistM3UCL"
+  },
+  {
+    "name": "TELEUNION",
+    "logo": "https://cdn.m3u.cl/logo/1692_PRIDEtv_Latam.png",
+    "url": "http://server3.prostudionetwork.com:1945/teleunion/TU/playlist.m3u8?PlaylistM3UCL"
+  },
+  {
+    "name": "PRIDE LATAM",
+    "logo": "https://cdn.m3u.cl/logo/1692_PRIDEtv_Latam.png",
+    "url": "https://backend.energeek.cl/webtv/pridetvweb/index.m3u8?token=D3m0M3UCLWeb&PlaylistM3UCL"
+  },
+  {
+    "name": "CDN",
+    "logo": "https://i.postimg.cc/JzbcL1tC/CDN-37.png",
+    "url": "http://190.61.90.17:40000/play/a03p/index.m3u8"
+  },
+  {
+    "name": "TELECANAL 28",
+    "logo": "https://i.postimg.cc/sf9HmvV3/TELECANAL-28.jpg",
+    "url": "https://mlb.essastream.com:8081/telecanal28/index.m3u8"
+  },
+  {
+    "name": "PUNTO TV",
+    "logo": "https://i.postimg.cc/j5Jk2RK1/PUNTO-TV.png",
+    "url": "https://fox.hostlagarto.com:8081/puntotv/index.m3u8"
+  },
+  {
+    "name": "NARANJA TV",
+    "logo": "https://i.postimg.cc/hGDZjCJj/NARANJA-TV.jpg",
+    "url": "https://cdn.streamingcpanel.com:3526/live/teleraiceslive.m3u8?DVD"
+  },
+  {
+    "name": "MAKINA VISION",
+    "logo": "https://i.postimg.cc/BnTYtYLw/MAKINA-VISION.jpg",
+    "url": "https://vdopanel.jlahozconsulting.com/p/3303/live/makinalive.m3u8"
   },
   {
     "name": "ALEGRE TV",
@@ -1010,6 +1080,11 @@
     "url": "https://lightning-now80s-samsungnz.amagi.tv/playlist720p.m3u8"
   },
   {
+    "name": "REWIN CL",
+    "logo": "https://cdn.m3u.cl/logo/156_Rewind.png",
+    "url": "https://tls-cl.cdnz.cl/rewindtv/live/playlist.m3u8?PlaylistM3UCL"
+  },
+  {
     "name": "NOW 70",
     "logo": "https://i.postimg.cc/VLCHx6cY/NOW-70.jpg",
     "url": "https://lightning-now70s-samsungnz.amagi.tv/playlist720p.m3u8"
@@ -1088,6 +1163,11 @@
     "name": "ACCDN",
     "logo": "https://i.postimg.cc/wTtpLBCG/ACCDN.png",
     "url": "https://raycom-accdn-firetv.amagi.tv/playlist.m3u8"
+  },
+  {
+    "name": "MARCA TV",
+    "logo": "https://i.postimg.cc/DZM5RRHm/MARCA-TV.png",
+    "url": "https://eu1.servers10.com:8081/8030/index.m3u8"
   },
   {
     "name": "MASTER TV",
@@ -1318,11 +1398,6 @@
     "name": "EL CAMINO TV",
     "logo": "https://i.postimg.cc/rySpW5b2/EL-CAMINO-TV.jpg",
     "url": "https://5d32e2b9b7eed.streamlock.net:4443/ectv/ectv/playlist.m3u8"
-  },
-  {
-    "name": "MARCA TV",
-    "logo": "https://i.postimg.cc/DZM5RRHm/MARCA-TV.png",
-    "url": "https://eu1.servers10.com:8081/8030/index.m3u8"
   },
   {
     "name": "UNITEL",
