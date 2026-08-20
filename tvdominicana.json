@@ -305,21 +305,6 @@
     "url": "https://live-evg7.tv360.bitel.com.pe/bitel/telecentro/playlist.m3u8"
   },
   {
-    "name": "Telecentro (720p)",
-    "logo": "https://i.imgur.com/QtRNfaj.png",
-    "url": "https://streamtv.intervenhosting.net:3161/live/telecentrolive.m3u8"
-  },
-  {
-    "name": "Telemicro (1080p)",
-    "logo": "https://i.imgur.com/WhgySAk.png",
-    "url": "https://live4.telemicro.com.do/live/telemicrocast_1080p/playlist.m3u8"
-  },
-  {
-    "name": "TELEMICRO INTERNACIONAL",
-    "logo": "https://i.imgur.com/507tvMY.png",
-    "url": "http://200.115.120.1:8000/play/ca085/index.m3u8"
-  },
-  {
     "name": "ALCARRIZOS TV",
     "logo": "https://i.postimg.cc/D07ykYGk/ALCARRIZOS-TV.jpg",
     "url": "https://5790d294af2dc.streamlock.net/alcarrizostv/alcarrizostv/playlist.m3u8"
