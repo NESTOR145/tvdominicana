@@ -274,6 +274,11 @@
     "logo": "https://i.imgur.com/v3mkmZa.png",
     "url": "http://190.122.104.210:5080/LiveApp/streams/Di15.m3u8"
   },
+   {
+    "name": "DIGITAL809",
+    "logo": "https://i.imgur.com/NKdV8b1.png",
+    "url": "https://stream.inliveserver.com:19360/8146/8146.m3u8"
+  },
   {
     "name": "Telemicro (1080p)",
     "logo": "https://i.imgur.com/WhgySAk.png",
