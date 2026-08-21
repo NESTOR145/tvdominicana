@@ -281,8 +281,9 @@
     "headers": {
       "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36",
       "Referer": "https://telemicro.com.do/players/5tv/"
-    },
-    {
+    }
+  },
+  {
     "name": "MUND2 TV",
     "logo": "https://i.postimg.cc/Gt9f0WKh/MUND2_TV.jpg",
     "url": "https://mlb.essastream.com:8081/mun2tv/index.m3u8"
