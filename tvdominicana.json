@@ -270,16 +270,6 @@
     "url": "https://cdn.protvradiostream.com/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8"
   },
   {
-    "name": "TELEMICRO",
-    "logo": "https://i.postimg.cc/vZDJ07yF/Telemicro.png",
-    "url": "https://live2.telemicro.com.do/live/55/playlist.m3u8"
-  },
-    {
-    "name": "DIGITAL 15",
-    "logo": "https://i.postimg.cc/rpRs8XyN/DIGITAL-15.jpg",
-    "url": "https://live2.telemicro.com.do/live/digital15cast_1080p/playlist.m3u8"
-  },
-  {
     "name": "MUND2 TV",
     "logo": "https://i.postimg.cc/Gt9f0WKh/MUND2_TV.jpg",
     "url": "https://mlb.essastream.com:8081/mun2tv/index.m3u8"
@@ -353,11 +343,6 @@
     "name": "PRIDE LATAM",
     "logo": "https://cdn.m3u.cl/logo/1692_PRIDEtv_Latam.png",
     "url": "https://backend.energeek.cl/webtv/pridetvweb/index.m3u8?token=D3m0M3UCLWeb&PlaylistM3UCL"
-  },
-  {
-    "name": "CDN",
-    "logo": "https://i.postimg.cc/JzbcL1tC/CDN-37.png",
-    "url": "http://190.61.90.17:40000/play/a03p/index.m3u8"
   },
   {
     "name": "TELECANAL 28",
