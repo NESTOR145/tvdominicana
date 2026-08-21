@@ -819,6 +819,11 @@
     "url": "https://tv-trtcocuk.medya.trt.com.tr/master_720.m3u8"
   },
   {
+    "name": "BEST CLASICOS",
+    "logo": "https://i.postimg.cc/d3hCBR5Y/BEST-CLASICOS.png",
+    "url": "https://acceso.mediosdecostarica.com:3873/hybrid/play.m3u8"
+  },
+  {
     "name": "SOLDADITOS DE JESUS TV",
     "logo": "https://i.postimg.cc/NFkt9vh1/SOLDADITOS-DE-JESUS-TV.png",
     "url": "https://2nbyj587d53k-hls-live.5centscdn.com/13/597b5bed7fd3f225bcaa5c4a0cdc3ff6.sdp/playlist.m3u8"
