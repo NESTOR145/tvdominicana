@@ -303,6 +303,11 @@
     "logo": "https://i.postimg.cc/50jP56SW/CORAL-39.jpg",
     "url": "https://hls.tvabierta.net/hls/039.m3u8"
   },
+   {
+    "name": "CORA TV",
+    "logo": "https://i.postimg.cc/Zngr8D6w/CORAL-TV.jpg",
+    "url": "https://tv.mediacp.eu:8081/coraltv/index.m3u8"
+  },
   {
     "name": "TS TELESIGLO",
     "logo": "https://i.postimg.cc/QMp2n0xB/TS-TELESIGLO.png",
