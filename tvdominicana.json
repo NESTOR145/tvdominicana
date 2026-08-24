@@ -619,7 +619,7 @@
     "url": "https://host.streamingnation.live/p/3780/live/tvluzlive.m3u8"
   },
   {
-    "name": "#EXTINF:-1 tvg-id=\"markatv\" tvg-logo=\"https://i.postimg.cc/DZM5RRHm/MARCA-TV.png\" group-title=\"DOMINICANOS\"MARKA TV",
+    "name": "MARKA TV RD",
     "logo": "https://i.postimg.cc/DZM5RRHm/MARCA-TV.png",
     "url": "http://200.7.219.221:8088/live/livetv/index.m3u8"
   },
