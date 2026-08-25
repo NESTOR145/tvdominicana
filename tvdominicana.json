@@ -1169,6 +1169,11 @@
     "url": "https://video2.lhdserver.es/pjtv/live.m3u8"
   },
   {
+    "name": "AGRO TV",
+    "logo": "https://i.postimg.cc/1XS1BS1t/AGRO-TV.jpg",
+    "url": "https://live-evg8.tv360.bitel.com.pe/bitel/agroSRT/playlist.m3u8"
+  },
+  {
     "name": "CULTURA24 TV",
     "logo": "https://i.postimg.cc/5t0hRMZ5/CULTURA24-TV.png",
     "url": "https://www.opencaster.com/resources/hls_stream/cultura24.m3u8"
