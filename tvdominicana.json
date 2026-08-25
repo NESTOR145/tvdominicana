@@ -1,250 +1,5 @@
 [
   {
-    "name": "CINE SONY",
-    "logo": "https://i.postimg.cc/1X5VB1Cw/CINE-SONY.png",
-    "url": "https://a-cdn.klowdtv.com/live1/cine_720p/playlist.m3u8"
-  },
-  {
-    "name": "AURORA MEDIA FILMS",
-    "logo": "https://i.postimg.cc/Jz9BHMCT/AURORA-MEDIA-FILMS.jpg",
-    "url": "https://cdn.streamhispanatv.net:3417/live/auroramflive.m3u8"
-  },
-  {
-    "name": "MY TIME MOVIE NETWORK",
-    "logo": "https://i.postimg.cc/LXS8k0KG/ATRESPLAYER-MULTICINE.jpg",
-    "url": "https://appletree-mytimespain-rakuten.amagi.tv/480p/index.m3u8"
-  },
-  {
-    "name": "LOVE WINE",
-    "logo": "https://i.postimg.cc/MGxC9kH0/LOVE-WINE.jpg",
-    "url": "https://amg01821-lovetvchannels-lovewinespain-tivify-tivify-9ajng.amagi.tv/480p/index.m3u8"
-  },
-  {
-    "name": "GRJNGO-PELIS DEL OESTE",
-    "logo": "https://i.postimg.cc/TYLSqJWt/GRJNGO-PELIS-DEL-OESTE.jpg",
-    "url": "https://amogonetworx-grjngo-2-eu.plex.wurl.tv/4300.m3u8"
-  },
-  {
-    "name": "CINE WESTERN",
-    "logo": "https://i.postimg.cc/3rSjKhRP/PELICULAS-DEL-OESTE.jpg",
-    "url": "https://jmp2.uk/stvp-ES2300005G7"
-  },
-  {
-    "name": "RUNTIME ESPAÑOL 1",
-    "logo": "https://i.postimg.cc/ydKXb9JN/RUNTIME-ESPA-OL.jpg",
-    "url": "https://run-rt-uh-roku.otteravision.com/run/rt_uh/rt_uh.m3u8"
-  },
-  {
-    "name": "RUNTIME ESPAÑOL 2",
-    "logo": "https://i.postimg.cc/hGVZ4ZMb/RUNTIME-ESPA-OL.jpg",
-    "url": "https://run-rt-es.otteravision.com/run/rt_es/rt_es.m3u8"
-  },
-  {
-    "name": "RUNTIME ACCION",
-    "logo": "https://i.postimg.cc/pTxGmQ6N/RUNTIME-ACCION.jpg",
-    "url": "https://run-ra-es.otteravision.com/run/ra_es/ra_es.m3u8"
-  },
-  {
-    "name": "RUNTIME COMEDIA",
-    "logo": "https://i.postimg.cc/RFRPK3kW/RUNTIME-COMEDIA.jpg",
-    "url": "https://run-rc-es.otteravision.com/run/rc_es/rc_es.m3u8"
-  },
-  {
-    "name": "RUNTIME THRILLER",
-    "logo": "https://i.postimg.cc/kGYfY0X9/RUNTIME-THRILLER.jpg",
-    "url": "https://run-th-es.otteravision.com/run/th_es/th_es.m3u8"
-  },
-  {
-    "name": "RUNTIME CRIMEN",
-    "logo": "https://i.postimg.cc/DwXB5YVk/RUNTIME-CRIMEN.jpg",
-    "url": "https://run-cr-es.otteravision.com/run/cr_es/cr_es.m3u8"
-  },
-  {
-    "name": "RUNTIME ROMANCE",
-    "logo": "https://i.postimg.cc/wx42zdgY/RUNTIME-ROMANCE.jpg",
-    "url": "https://run-rr-es.otteravision.com/run/rr_es/rr_es.m3u8"
-  },
-  {
-    "name": "RUNTIME CLASSIC",
-    "logo": "https://i.postimg.cc/xdPGFwt7/RUNTIME-CLASSIC.jpg",
-    "url": "https://run-cl-es.otteravision.com/run/cl_es/cl_es.m3u8"
-  },
-  {
-    "name": "Pelis Top",
-    "logo": "https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/645e383c-88f5-4378-88fd-0d4989c01cde.jpeg",
-    "url": "https://top-movies-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-5983/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.extra_eids=&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=217.216.126.162&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=5983&ads.rtv_channel_name=top-movies-rakuten-tv_es&ads.rtv_content_id=5983&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=2202b7c4-0915-42fd-8d5d-47d68d1bc894&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=5983&publishing_platform_id=5&tenant_identifier=rtv"
-  },
-  {
-    "name": "Acción",
-    "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/cc0a135a-3a25-4b7a-84b3-d29d5ee6e4d8.jpeg",
-    "url": "https://action-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6069/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.extra_eids=&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=217.216.126.162&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6069&ads.rtv_channel_name=action-rakuten-tv_es&ads.rtv_content_id=6069&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=3a022410-2e1b-4deb-a052-f76e59804986&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6069&publishing_platform_id=5&tenant_identifier=rtv"
-  },
-  {
-    "name": "Comedia",
-    "logo": "https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/68048254-04b5-4438-bb14-118427a0ba3a.jpeg",
-    "url": "https://comedy-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6180/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.extra_eids=&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=217.216.126.162&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6180&ads.rtv_channel_name=comedy-rakuten-tv_es&ads.rtv_content_id=6180&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=a0a77f3c-7a42-40f5-85aa-8bc4416b9c19&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6180&publishing_platform_id=5&tenant_identifier=rtv"
-  },
-  {
-    "name": "Drama",
-    "logo": "https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/400caa96-4298-41ae-92a4-8a2406fc81c8.jpeg",
-    "url": "https://drama-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6092/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.extra_eids=&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=217.216.126.162&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6092&ads.rtv_channel_name=drama-rakuten-tv_es&ads.rtv_content_id=6092&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=88c9bbf6-8673-4b11-9617-8da370bbb571&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6092&publishing_platform_id=5&tenant_identifier=rtv"
-  },
-  {
-    "name": "Películas Románticas",
-    "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/ec9d1d83-74cc-443d-b2ec-b51b970fe831.jpeg",
-    "url": "https://romance-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6105/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.extra_eids=&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=217.216.126.162&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6105&ads.rtv_channel_name=romance-rakuten-tv_es&ads.rtv_content_id=6105&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=83cb3b05-422b-4a9c-a4ad-2a21612db817&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6105&publishing_platform_id=5&tenant_identifier=rtv"
-  },
-  {
-    "name": "Cine Español",
-    "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/294f65bc-fa27-494d-9cb5-423260b7e875.jpeg",
-    "url": "https://spanish-cinema-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6196/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.extra_eids=&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=217.216.126.162&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6196&ads.rtv_channel_name=spanish-cinema-rakuten-tv_es&ads.rtv_content_id=6196&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=206a877c-a547-4501-9ced-297f0ce084c9&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6196&publishing_platform_id=5&tenant_identifier=rtv"
-  },
-  {
-    "name": "Sci-Fi",
-    "logo": "https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/a0e491eb-8f73-4bd9-a034-0fe9fd6984d7.jpeg",
-    "url": "https://sci-fi-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6740/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.extra_eids=&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=217.216.126.162&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6740&ads.rtv_channel_name=sci-fi-rakuten-tv_es&ads.rtv_content_id=6740&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=9a88a649-3487-495c-bfb0-46b6b8980763&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6740&publishing_platform_id=5&tenant_identifier=rtv"
-  },
-  {
-    "name": "Thrillers",
-    "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/8f5f37e8-70f0-4d3d-b8cd-ce5f34d6e916.jpeg",
-    "url": "https://thriller-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6480/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version"
-  },
-  {
-    "name": "HORROR VISION",
-    "logo": "https://i.postimg.cc/D0Ny90Nm/HORROR-VISION.png",
-    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=sci-fi%2Cmystery%2Chorror&ads._fw_content_language=es&ads._fw_content_rating=tv-14&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=ppid&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=DarkMatterTV&ads.content_livestream=0&ads.csid=zeus_es_tricoastdarkmatteres_ssai&ads.gam_correlator=&ads.os_language=&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=4070&ads.rakuten_streaming_id=063cf442-8adc-4e40-84c5-f86d67b38d83&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883019&ads.xumo_contentId=3479&ads.xumo_contentName=TriCoastDarkMatterES&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=3479&ads.xumo_providerName=dark-matter-spa-rakutentv&ads.xumo_streamId=88883019"
-  },
-  {
-    "name": "CINE FRIKI",
-    "logo": "https://i.postimg.cc/8zszspPX/CINE-FRIKI.jpg",
-    "url": "https://zylo-cinefriki-rakuten.amagi.tv/playlist.m3u8"
-  },
-  {
-    "name": "RETROX X PLUS",
-    "logo": "https://i.postimg.cc/6pPmMhLw/RETROX-X-PLUS.png",
-    "url": "https://tls-cl.cdnz.cl/retroplustvuno/live/playlist.m3u8"
-  },
-  {
-    "name": "RETROX TV",
-    "logo": "https://i.postimg.cc/mgqvGcmw/RETROXTV.png",
-    "url": "https://lbgo.bozztv.com/ssh101/ssh101/retyroxtv/playlist.m3u8"
-  },
-  {
-    "name": "SKYFLIX MOVIES",
-    "logo": "https://i.postimg.cc/RVmcdXrd/SKYFLIX-MOVIES.png",
-    "url": "https://canadaremar2.todostreaming.es/live/argentina-web.m3u8"
-  },
-  {
-    "name": "GARAVITO TV",
-    "logo": "https://i.postimg.cc/3xhCFB6f/GARAVITO-TV.png",
-    "url": "https://59ef525c24caa.streamlock.net/garabitoTV/garabitotv/playlist.m3u8"
-  },
-  {
-    "name": "UNIVERSAL CRIME",
-    "logo": "https://i.postimg.cc/VvMqZk29/UNIVERSAL-CRIME.jpg",
-    "url": "https://xumo-xumoent-vc-107-xmuvk.fast.nbcuni.com/live/master.m3u8"
-  },
-  {
-    "name": "ACTION HOLLYWOOD MOVIES",
-    "logo": "https://i.postimg.cc/sfhNhJNW/ACTION-HOLLYWOOD-MOVIES.jpg",
-    "url": "https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-actionhollywood-samsungnz/playlist.m3u8"
-  },
-  {
-    "name": "13 TELESERIES",
-    "logo": "https://i.postimg.cc/G2TsFy9D/13-TELESERIES.png",
-    "url": "https://origin.dpsgo.com/ssai/event/f4TrySe8SoiGF8Lu3EIq1g/master.m3u8"
-  },
-  {
-    "name": "MY TIME MOVIE",
-    "logo": "https://i.postimg.cc/3R0x7Ywg/MY-TIME-MOVIE.jpg",
-    "url": "https://appletree-mytime-samsungmexico.amagi.tv/playlist.m3u8"
-  },
-  {
-    "name": "PANICO HD",
-    "logo": "https://i.postimg.cc/ZKvx01xf/PANICO-HD.jpg",
-    "url": "http://181.78.8.199:8000/play/a0bt/index.m3u8"
-  },
-  {
-    "name": "CANAL CINE DIOS",
-    "logo": "https://i.postimg.cc/cL44Pp6S/CANAL-CINE-DIOS.png",
-    "url": "https://canal.mediaserver.com.co/live/cinedios.m3u8"
-  },
-  {
-    "name": "CINE TERROR",
-    "logo": "https://i.postimg.cc/bJM0zM9b/PLUTO-TV-CINE-TERROR.jpg",
-    "url": "https://jmp2.uk/plu-5d8d180092e97a5e107638d3.m3u8"
-  },
-  {
-    "name": "URBAN ACTION",
-    "logo": "https://i.postimg.cc/nhBf5YD4/URBAN-ACTION.jpg",
-    "url": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/7ad8ce96-5a3f-413e-ae15-7c2cef7bc8f8/manifest.m3u8"
-  },
-  {
-    "name": "BIGTIME",
-    "logo": "https://i.postimg.cc/q7vfHTLj/channels4-profile.jpg",
-    "url": "https://76af1d7e277b46a58a41c188c3ea4117.mediatailor.us-east-1.amazonaws.com/v1/master/f4e8c53a8367a5b58e20ce054ea3ce25a3e904d3/Samsung-es_BjgtjmePeliculasGratis/playlist.m3u8"
-  },
-  {
-    "name": "AMC PLEX",
-    "logo": "https://i.postimg.cc/T3pzCfMr/AMC-PLEX.jpg",
-    "url": "https://amc-amcespanol-1-us.plex.wurl.tv/playlist.m3u8"
-  },
-  {
-    "name": "TODO CINE",
-    "logo": "https://i.postimg.cc/Hs7p03dt/TODO-CINE.jpg",
-    "url": "https://aegis-cloudfront-1.tubi.video/be9224ff-0bff-440d-aa84-40afcb2150b5/playlist.m3u8"
-  },
-  {
-    "name": "CLASSIQUE TV",
-    "logo": "https://i.postimg.cc/CKXnY4gj/CLASSIQUE-TV.jpg",
-    "url": "https://stmv1.srvif.com/classique/classique/playlist.m3u8"
-  },
-  {
-    "name": "ZEE ONE",
-    "logo": "https://i.postimg.cc/bJf7RX5b/ZEE-ONE.png",
-    "url": "https://amg17931-zee-amg17931c6-samsung-au-8872.playouts.now.amagi.tv/playlist/amg17931-asiatvusaltdfast-zeeworld-samsungau/playlist.m3u8"
-  },
-  {
-    "name": "TELESELVA",
-    "logo": "https://i.postimg.cc/rFs3QdLd/TELESELVA.png",
-    "url": "https://7.innovatestream.pe:19360/tvnoticiassatipo/tvnoticiassatipo.m3u8?WebM3UCL"
-  },
-  {
-    "name": "PITAARA TV",
-    "logo": "https://i.postimg.cc/9FY9kvT0/BALLE-BALLE.jpg",
-    "url": "https://vg-pitaaratvlive.akamaized.net/ptnr-website/title-PitaaraTV/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-583798/playlist.m3u8"
-  },
-  {
-    "name": "TVS RETRO",
-    "logo": "https://i.postimg.cc/W3sL5qPh/TVS-RETRO.png",
-    "url": "https://cdn.streamhispanatv.net:3531/live/tvsretrogtlive.m3u8"
-  },
-  {
-    "name": "BARVE TV",
-    "logo": "https://i.postimg.cc/fywdWCQD/BARVE-TV-CANAL-9.jpg",
-    "url": "https://cdn.streamhispanatv.net:3549/live/barbetvlive.m3u8"
-  },
-  {
-    "name": "NIM TV",
-    "logo": "https://i.postimg.cc/wxVJfCDv/NIM-TV.jpg",
-    "url": "https://cdn.streamhispanatv.net:3210/live/nimtvgtlive.m3u8"
-  },
-  {
-    "name": "PELIMEX",
-    "logo": "https://i.postimg.cc/K8Yd3hDg/PELIMEX.jpg",
-    "url": "https://telecine-pelimex-1-eu.xiaomi.wurl.tv/4300.m3u8"
-  },
-  {
-    "name": "XTREMA ACTION",
-    "logo": "https://i.postimg.cc/Pr6QytNt/XTREMO-CHANNEL.png",
-    "url": "https://stmv6.voxtvhd.com.br/cineaccion/cineaccion/playlist.m3u8"
-  },
-  {
-    "name": "PELICULAS DEL OESTE",
-    "logo": "https://i.postimg.cc/L4ZLQJ0r/CINE_WESTERN.jpg",
-    "url": "https://jmp2.uk/stvp-ESBC2700002LO"
-  },
-  {
     "name": "ANTENA 7",
     "logo": "https://i.postimg.cc/pXjLGr1x/ANTENA-LATINA.png",
     "url": "https://d3gie3ig6argu.cloudfront.net/ts:abr.m3u8"
@@ -619,7 +374,7 @@
     "url": "https://host.streamingnation.live/p/3780/live/tvluzlive.m3u8"
   },
   {
-    "name": "MARKA TV RD",
+    "name": "#EXTINF:-1 tvg-id=\"markatv\" tvg-logo=\"https://i.postimg.cc/DZM5RRHm/MARCA-TV.png\" group-title=\"DOMINICANOS\"MARKA TV",
     "logo": "https://i.postimg.cc/DZM5RRHm/MARCA-TV.png",
     "url": "http://200.7.219.221:8088/live/livetv/index.m3u8"
   },
@@ -872,6 +627,51 @@
     "name": "ECOVISION TV",
     "logo": "https://i.postimg.cc/fLPjLQsq/ECOVISION-TV.png",
     "url": "https://streaming.grupomediosdelnorte.com:19360/ecovision/ecovision.m3u8"
+  },
+  {
+    "name": "RETROX X PLUS",
+    "logo": "https://i.postimg.cc/6pPmMhLw/RETROX-X-PLUS.png",
+    "url": "https://tls-cl.cdnz.cl/retroplustvuno/live/playlist.m3u8"
+  },
+  {
+    "name": "RETROX TV",
+    "logo": "https://i.postimg.cc/mgqvGcmw/RETROXTV.png",
+    "url": "https://lbgo.bozztv.com/ssh101/ssh101/retyroxtv/playlist.m3u8"
+  },
+  {
+    "name": "GARAVITO TV",
+    "logo": "https://i.postimg.cc/3xhCFB6f/GARAVITO-TV.png",
+    "url": "https://59ef525c24caa.streamlock.net/garabitoTV/garabitotv/playlist.m3u8"
+  },
+  {
+    "name": "CLASSIQUE TV",
+    "logo": "https://i.postimg.cc/CKXnY4gj/CLASSIQUE-TV.jpg",
+    "url": "https://stmv1.srvif.com/classique/classique/playlist.m3u8"
+  },
+  {
+    "name": "ZEE ONE",
+    "logo": "https://i.postimg.cc/bJf7RX5b/ZEE-ONE.png",
+    "url": "https://amg17931-zee-amg17931c6-samsung-au-8872.playouts.now.amagi.tv/playlist/amg17931-asiatvusaltdfast-zeeworld-samsungau/playlist.m3u8"
+  },
+  {
+    "name": "TELESELVA",
+    "logo": "https://i.postimg.cc/rFs3QdLd/TELESELVA.png",
+    "url": "https://7.innovatestream.pe:19360/tvnoticiassatipo/tvnoticiassatipo.m3u8?WebM3UCL"
+  },
+  {
+    "name": "PITAARA TV",
+    "logo": "https://i.postimg.cc/9FY9kvT0/BALLE-BALLE.jpg",
+    "url": "https://vg-pitaaratvlive.akamaized.net/ptnr-website/title-PitaaraTV/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-583798/playlist.m3u8"
+  },
+  {
+    "name": "TVS RETRO",
+    "logo": "https://i.postimg.cc/W3sL5qPh/TVS-RETRO.png",
+    "url": "https://cdn.streamhispanatv.net:3531/live/tvsretrogtlive.m3u8"
+  },
+  {
+    "name": "BARVE TV",
+    "logo": "https://i.postimg.cc/fywdWCQD/BARVE-TV-CANAL-9.jpg",
+    "url": "https://cdn.streamhispanatv.net:3549/live/barbetvlive.m3u8"
   },
   {
     "name": "90 KIDS",
