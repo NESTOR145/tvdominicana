@@ -52,7 +52,7 @@
   {
     "name": "DIGITAL 15",
     "logo": "https://i.imgur.com/v3mkmZa.png",
-    "url": "http://190.122.104.210:5080/LiveApp/streams/Di15.m3u8"
+    "url": "https://live2.telemicro.com.do/live/digital15cast_1080p/playlist.m3u8"
   },
   {
     "name": "DIGITAL 809",
@@ -67,7 +67,7 @@
   {
     "name": "TELECENTRO",
     "logo": "https://i.postimg.cc/5y3TvT0H/TELECENTRO.png",
-    "url": "http://190.122.104.210:5080/LiveApp/streams/tcentro.m3u8"
+    "url": "https://live2.telemicro.com.do/live/telecentrocast_1080p/playlist.m3u8"
   },
   {
     "name": "TELEMICRO",
