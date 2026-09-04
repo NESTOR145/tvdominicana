@@ -406,6 +406,11 @@
     "url": "https://edge.essastream.com/lacaletatv/playlist.m3u8"
   },
   {
+    "name": "TELEUNION",
+    "logo": "https://i.postimg.cc/2ycTRZMz/TELEUNION.jpg",
+    "url": "http://server2grupocam.com:1945/teleunion/TU/playlist.m3u8"
+  },
+  {
     "name": "HIGUEY DIGITAL",
     "logo": "https://i.postimg.cc/3wRxjgBk/HIGUEY-DIGITAL.jpg",
     "url": "https://host.streamingnation.live/p/3467/live/tvhigueylive.m3u8"
