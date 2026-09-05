@@ -621,6 +621,31 @@
     "url": "https://ss2.tvrdomi.com:1936/quisqueyalabella/quisqueyalabella/chunklist_w20117411.m3u8"
   },
   {
+    "name": "CARIVISION HD",
+    "logo": "https://i.postimg.cc/7Z48Dnws/CARIVISION.png",
+    "url": "https://ss2.tvrdomi.com:1936/carivision/carivision/chunklist.m3u8"
+  },
+  {
+    "name": "ORBIT TV",
+    "logo": "https://i.postimg.cc/X7sNyjmv/ORBIT-TV.jpg",
+    "url": "https://cnn.hostlagarto.com/orbittv/index.m3u8"
+  },
+  {
+    "name": "RNN CANAL 27",
+    "logo": "https://i.postimg.cc/1zFxPVw5/RNN-NOTICIAS.jpg",
+    "url": "https://2-fss-2.streamhoster.com/pl_138/206532-6829902-1/playlist.m3u8"
+  },
+  {
+    "name": "ENLACE TV",
+    "logo": "https://i.postimg.cc/SQ7gCvPm/ENLACE-TV.jpg",
+    "url": "https://livecdnusa.enlace.plus/enlace/master.m3u8"
+  },
+  {
+    "name": "EL NUEVO DIARIO",
+    "logo": "https://i.postimg.cc/6qLzF4KX/EL-NUEVO-DIARIO.png",
+    "url": "https://nuevodiario01.streamprolive.com/hls/live.m3u8"
+  },
+  {
     "name": "ENTIVISION",
     "logo": "https://i.postimg.cc/JzYY1mWt/ENTIVISION.jpg",
     "url": "https://edge.essastream.com/enntivision/tracks-v1a1/mono.m3u8"
