@@ -146,6 +146,136 @@
     "url": "https://edge.essastream.com/dajatv/playlist.m3u8"
   },
   {
+    "name": "BOCA CHICA TV",
+    "logo": "https://i.postimg.cc/pLpPLG8Z/BOCA-CHICA-TV.jpg",
+    "url": "https://cdnfox.hostlagarto.com/bocachicatv/index.m3u8"
+  },
+  {
+    "name": "NAVARRETE TV",
+    "logo": "https://i.postimg.cc/c4JSF9Df/NAVARRETE-TV.png",
+    "url": "https://cnn.hostlagarto.com/ntvnavarrete/index.m3u8"
+  },
+  {
+    "name": "QUISQUEYA TV CANAL 17",
+    "logo": "https://i.postimg.cc/VNQ2PDF0/QUISQUEYA-TV.png",
+    "url": "https://cdn.protvradiostream.com/rtvd17/ngrp:rtvd17_all/playlist.m3u8"
+  },
+  {
+    "name": "MORRO TV",
+    "logo": "https://i.postimg.cc/tC8MF28C/MORRO-TV.png",
+    "url": "https://cdnfox.hostlagarto.com/morrotv/index.m3u8"
+  },
+  {
+    "name": "LA VOZ SIN SENSURA TV",
+    "logo": "https://i.postimg.cc/pXm3qHrm/LA-VOZ-SIN-SENSURA-TV.jpg",
+    "url": "https://cdnfox.hostlagarto.com/lavozsincensuratv/index.m3u8"
+  },
+  {
+    "name": "SABANETA TV",
+    "logo": "https://i.postimg.cc/P5m2YhmZ/SABANETA-TV.jpg",
+    "url": "https://amg00803-cnnfast-amg00803c3-lg-es-5477.playouts.now.amagi.tv/playlist1080p.m3u8"
+  },
+  {
+    "name": "REPORTERO TV",
+    "logo": "https://i.postimg.cc/1R8x6n49/REPORTERO-TV.jpg",
+    "url": "https://streamrd.cloud:5443/LiveApp/streams/J3E3REmLNBzirS9A10575071547538.m3u8"
+  },
+  {
+    "name": "CTT CANAL 49",
+    "logo": "https://i.postimg.cc/1tTjMB4r/CCT-49.jpg",
+    "url": "https://cdnfox.hostlagarto.com/cct49/index.m3u8"
+  },
+  {
+    "name": "PRONEMSTV",
+    "logo": "https://i.postimg.cc/Nj4CZB5K/PRONEMSTV.jpg",
+    "url": "https://cdnfox.hostlagarto.com/pronemstv/index.m3u8"
+  },
+  {
+    "name": "TELE DAJABON",
+    "logo": "https://i.postimg.cc/XYVQfmx1/TELE-DAJABON.jpg",
+    "url": "https://5790d294af2dc.streamlock.net/dajabon/dajabon/playlist.m3u8"
+  },
+  {
+    "name": "LINIEROS TV",
+    "logo": "https://i.postimg.cc/kG3yBpBv/LINIEROS-TV.jpg",
+    "url": "https://soportedvb.click:3017/live/linierostvlive.m3u8"
+  },
+  {
+    "name": "VTV 32",
+    "logo": "https://i.postimg.cc/2jP3QM71/VTV-32.jpg",
+    "url": "https://edge.livestreaminggroup.info/vtv32live/index.fmp4.m3u8"
+  },
+  {
+    "name": "BONAO TV",
+    "logo": "https://i.postimg.cc/15RQzpS0/BONAO-TV.jpg",
+    "url": "https://tele-stream.telecasa.net/live/st2/bonaotv-hd/index.m3u8"
+  },
+  {
+    "name": "JARABACOA TV",
+    "logo": "https://i.postimg.cc/KY3LB5X9/JARABACOA-TV.jpg",
+    "url": "https://streaming.jarabacoatv.com/Jarabacoa_tv/index.fmp4.m3u8"
+  },
+  {
+    "name": "A7 TV",
+    "logo": "https://i.postimg.cc/Xv5Gp7FP/A7-TV.png",
+    "url": "https://183.bozztv.com/ssh101/ssh101/a7tvjarabacoa/playlist.m3u8"
+  },
+  {
+    "name": "FAROVISION 22",
+    "logo": "https://i.postimg.cc/gkZ65Z89/FAROVISION.jpg",
+    "url": "https://streamtv.intervenhosting.net:3754/hybrid/play.m3u8"
+  },
+  {
+    "name": "LAGUNA TV",
+    "logo": "https://i.postimg.cc/W3n4kD4C/LAGUNA-TV.jpg",
+    "url": "https://cnn.hostlagarto.com/lagutv/playlist.m3u8"
+  },
+  {
+    "name": "CASCARA TV",
+    "logo": "https://i.postimg.cc/286pZr67/CASCARA-TV.jpg",
+    "url": "https://ss2.tvrdomi.com:1936/cascaratv/cascaratv/playlist.m3u8"
+  },
+  {
+    "name": "PUNTA CANA TV",
+    "logo": "https://i.postimg.cc/fyn49Fj5/PUNTA-CANA-TV.jpg",
+    "url": "https://cdnfox.hostlagarto.com/puntacanatv/index.m3u8"
+  },
+  {
+    "name": "EL PODER TV",
+    "logo": "https://i.postimg.cc/2jg5Bfjr/EL-PODER-TV.png",
+    "url": "https://28tv.online:3795/live/elpodertvcanal57live.m3u8"
+  },
+  {
+    "name": "TELECOMERCIO",
+    "logo": "https://i.postimg.cc/tC0X4tkK/TELECOMERCIO.jpg",
+    "url": "https://streaming.grupomediosdelnorte.com:19360/telecomerciotv/telecomerciotv.m3u8"
+  },
+  {
+    "name": "FRATA TV",
+    "logo": "https://i.postimg.cc/XNH7rNTY/FRATA-TV.jpg",
+    "url": "https://vdopanel.jlahozconsulting.com:3706/live/fratalive.m3u8"
+  },
+  {
+    "name": "SANTA CRUZ TV",
+    "logo": "https://i.postimg.cc/15ZQQR5K/SANTA-CRUZ-TV.jpg",
+    "url": "https://host.streamingnation.live/p/3345/hybrid/play.m3u8"
+  },
+  {
+    "name": "NOTICIAS 16",
+    "logo": "https://i.postimg.cc/Kjk8y8GP/NOTICIAS-16.png",
+    "url": "https://edge.essastream.com/noticias16/tracks-v1a1/mono.m3u8"
+  },
+  {
+    "name": "PALMAR TV",
+    "logo": "https://i.postimg.cc/Gm7VHbr8/PALMAR-TV.jpg",
+    "url": "https://streamunoapp.com:3255/live/palmartvlive.m3u8"
+  },
+  {
+    "name": "MIAVISION",
+    "logo": "https://i.postimg.cc/XvBHqFQm/MIAVISION-TV.jpg",
+    "url": "https://edge.essastream.com/miavisiontv/tracks-v1a1/mono.m3u8"
+  },
+  {
     "name": "ALTANTO TV",
     "logo": "https://i.postimg.cc/L4wWTBWC/ALTANTO-TV.jpg",
     "url": "https://stream.haislin.com/ls_j3BOKxBbUJ/index.m3u8"
