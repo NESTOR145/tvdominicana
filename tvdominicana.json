@@ -611,6 +611,56 @@
     "url": "https://cdn.streamingcpanel.com:3447/live/hainavisionlive.m3u8"
   },
   {
+    "name": "CAÑA TV",
+    "logo": "https://i.postimg.cc/pd1w1zd9/CANA-TV.png",
+    "url": "https://stream.castr.com/66ba42228522543585913afc/live_0da43710597b11ef9a978b0191f4a826/tracks-v1/index.fmp4.m3u8"
+  },
+  {
+    "name": "QUISQUEYA LA BELLA TV",
+    "logo": "https://i.postimg.cc/3wW6pNZd/QUISQUEYA-LA-BELLA-TV.jpg",
+    "url": "https://ss2.tvrdomi.com:1936/quisqueyalabella/quisqueyalabella/chunklist_w20117411.m3u8"
+  },
+  {
+    "name": "ENTIVISION",
+    "logo": "https://i.postimg.cc/JzYY1mWt/ENTIVISION.jpg",
+    "url": "https://edge.essastream.com/enntivision/tracks-v1a1/mono.m3u8"
+  },
+  {
+    "name": "TELEVISION DEL ESTE",
+    "logo": "https://i.postimg.cc/7Lqf35TW/TELEVISION-DEL-ESTE.jpg",
+    "url": "https://edge.essastream.com/televisiondeleste/index.m3u8"
+  },
+  {
+    "name": "TELE OLA 44",
+    "logo": "https://i.postimg.cc/bwrLVMSW/TELE-OLA-44.jpg",
+    "url": "https://teleola.ddns.net/hls/stream.m3u8"
+  },
+  {
+    "name": "PUNTO TV CANAL 40",
+    "logo": "https://i.postimg.cc/j5Jk2RK1/PUNTO-TV.png",
+    "url": "https://ss2.tvrdomi.com:1936/puntotvdigital/puntotvdigital/chunklist.m3u8"
+  },
+  {
+    "name": "TV HISPANIC",
+    "logo": "https://i.postimg.cc/rFBz7RKQ/TV-HISPANIC.jpg",
+    "url": "https://livetv.305streamhd.com:3504/live/tvhispaniclive.m3u8"
+  },
+  {
+    "name": "ROCAVISION",
+    "logo": "https://i.postimg.cc/bwRDbNvX/ROCAVISION.jpg",
+    "url": "https://streamunoapp.com:3331/live/rocavisiontvlive.m3u8"
+  },
+  {
+    "name": "LA TORA TV",
+    "logo": "https://i.postimg.cc/8cBD3c9S/LA-TORA-TV.jpg",
+    "url": "https://tv.wracanal10.com:3012/live/latoratvlive.m3u8"
+  },
+  {
+    "name": "CTVD",
+    "logo": "https://i.postimg.cc/xdHZg7B5/CTVD.jpg",
+    "url": "https://cdn2.streamgato.us/ctvd/ctvd/playlist.m3u8"
+  },
+  {
     "name": "VALLEVISION",
     "logo": "https://i.postimg.cc/mk3jSMJk/VALLEVISION.jpg",
     "url": "https://streaming.telecablecentral.com.do/Vallevision/ValleHD/playlist.m3u8"
