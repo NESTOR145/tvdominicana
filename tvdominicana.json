@@ -327,8 +327,63 @@
   },
   {
     "name": "GUAYMATE TV",
-    "logo": "https://cdn.m3u.cl/logo/1011_Guaymate_TV.png",
-    "url": "https://live20.bozztv.com/akamaissh101/ssh101/guaymatetv/playlist.m3u8?PlaylistM3UCL"
+    "logo": "https://i.postimg.cc/Z5fthGZD/GUAYMATE-TV.png",
+    "url": "https://live20.bozztv.com/akamaissh101/ssh101/guaymatetv/playlist.m3u8"
+  },
+  {
+    "name": "INFORME TV",
+    "logo": "https://i.postimg.cc/02QJ2hmV/INFORME-TV.jpg",
+    "url": "https://edge.essastream.com/informetv/index.m3u8"
+  },
+  {
+    "name": "LATINA TV INTERNACIONAL",
+    "logo": "https://i.postimg.cc/QxySXQBT/LATINA-TV-INT.png",
+    "url": "https://5790d294af2dc.streamlock.net/latinatv/latinatv/playlist.m3u8"
+  },
+  {
+    "name": "SI TV CANAL 3",
+    "logo": "https://i.postimg.cc/vmdrB3G1/SI-TV-CANAL-3.jpg",
+    "url": "https://stream-proxy.doppiau.workers.dev/?url=http://190.122.104.210:5080/LiveApp/streams/sitv2.m3u8"
+  },
+  {
+    "name": "ONDA TV",
+    "logo": "https://i.postimg.cc/dVvqX7Cn/ONDA-TV.png",
+    "url": "https://cnn.hostlagarto.com/ondatv/index.m3u8"
+  },
+  {
+    "name": "SIEMBRA TV",
+    "logo": "https://i.postimg.cc/Rh36GHvX/SIEMBRA-TV.png",
+    "url": "https://streamunoapp.com:3809/live/siembratvlive.m3u8"
+  },
+  {
+    "name": "TN1 CANAL 51",
+    "logo": "https://i.postimg.cc/C53D3tgK/TNI.jpg",
+    "url": "https://linear-254.frequency.stream/mt/studio/254/hls/master/playlist_1280x720.m3u8"
+  },
+  {
+    "name": "TELE AZUL",
+    "logo": "https://i.postimg.cc/8crcLgHG/TELE-AZUL.jpg",
+    "url": "https://cdn.streamingcpanel.com:3327/live/teleazullive.m3u8"
+  },
+  {
+    "name": "TELECIBAO",
+    "logo": "https://i.postimg.cc/25Z2Z5cR/TELECIBAO.jpg",
+    "url": "https://edge.essastream.com/telecibaotv/index.m3u8"
+  },
+  {
+    "name": "NEGOCIOS TV",
+    "logo": "https://i.postimg.cc/Rhff4H2Z/NEGOCIOS-TV.jpg",
+    "url": "https://streaming013.gestec-video.com/hls/negociostv.m3u8"
+  },
+  {
+    "name": "DIMELO TV",
+    "logo": "https://i.postimg.cc/Px52X2Mm/DIMELO-TV.jpg",
+    "url": "https://live20.bozztv.com/akamaissh101/ssh101/wowchannelsd/playlist.m3u8"
+  },
+  {
+    "name": "CODIGO TV",
+    "logo": "https://i.postimg.cc/85vDpfb0/CODIGO-TV.jpg",
+    "url": "https://edge.essastream.com/codigotv/index.m3u8"
   },
   {
     "name": "TELEUNION",
