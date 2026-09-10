@@ -572,6 +572,11 @@
     "url": "https://live20.bozztv.com/akamaissh101/ssh101/camutv/playlist.m3u8"
   },
   {
+    "name": "NUEVA VISION 14",
+    "logo": "https://i.postimg.cc/Fs8Tv57X/NUEVA-VISION-TV.png",
+    "url": "https://pacific.direcnode.com:3562/live/nuevavisionlive.m3u8"
+  },
+  {
     "name": "MEGA CINE TV",
     "logo": "https://i.postimg.cc/PfCwk3Gd/MEGA-CINE-TV.png",
     "url": "https://cnn.hostlagarto.com/megacinetv/playlist.m3u8"
