@@ -912,6 +912,16 @@
     "url": "https://vpss2003.streamprolive.com/hls/live.m3u8"
   },
   {
+    "name": "LA VOZ SIN SENSURA TV",
+    "logo": "https://i.postimg.cc/pXm3qHrm/LA-VOZ-SIN-SENSURA-TV.jpg",
+    "url": "https://cdnfox.hostlagarto.com/lavozsincensuratv/index.m3u8"
+  },
+  {
+    "name": "DIGITAL VISION 63",
+    "logo": "https://i.imgur.com/FQkLIMR.png",
+    "url": "https://ss2.tvrdomi.com:1936/digitalvision/digitalvision/playlist.m3u8"
+  },
+  {
     "name": "ECOVISION TV",
     "logo": "https://i.postimg.cc/fLPjLQsq/ECOVISION-TV.png",
     "url": "https://streaming.grupomediosdelnorte.com:19360/ecovision/ecovision.m3u8"
@@ -2090,6 +2100,46 @@
     "name": "VIA ALTO MAYO",
     "logo": "https://i.postimg.cc/d0qLLnLN/VIA-ALTO-MAYO.png",
     "url": "https://live.obslivestream.com/viaaltomayomux/index.m3u8"
+  },
+  {
+    "name": "TMA",
+    "logo": "https://i.postimg.cc/Kzx5QQST/TMA-TV.jpg",
+    "url": "http://hls.tmacaraibes.com/live/index.m3u8"
+  },
+  {
+    "name": "RESTAURANDO VIDAS INTERNACIONAL",
+    "logo": "https://i.postimg.cc/635BCr2b/RESTAURANDO-VIDAS-INTERNACIONAL.jpg",
+    "url": "https://v4.tustreaming.cl/restaurandovida/index.m3u8"
+  },
+  {
+    "name": "AYSEN TV",
+    "logo": "https://i.postimg.cc/MTLvXKDG/AYSEN-TV.png",
+    "url": "https://v1.tustreaming.cl/aysentv/index.m3u8"
+  },
+  {
+    "name": "UNIFE TV HD",
+    "logo": "https://i.postimg.cc/52nSfDvZ/UNIFE-HD.jpg",
+    "url": "https://5dcabf026b188.streamlock.net/StreamUnife/livestream/playlist.m3u8"
+  },
+  {
+    "name": "LOGOS TV",
+    "logo": "https://i.postimg.cc/RV6xJryx/LOGOS-TV.jpg",
+    "url": "https://streamer1.streamhost.org/salive/logosH/master.m3u8"
+  },
+  {
+    "name": "NET.TV",
+    "logo": "https://i.postimg.cc/T13mgkL3/NET-TV.png",
+    "url": "https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8"
+  },
+  {
+    "name": "EL TRECE(1080)",
+    "logo": "https://i.postimg.cc/26kQNSmQ/EL-TRECE-TV.jpg",
+    "url": "https://live-01-02-eltrece.vodgc.net/eltrecetv/index.m3u8"
+  },
+  {
+    "name": "NG FEDERAL",
+    "logo": "https://i.postimg.cc/qR3MrhXS/NG-FEDERAL.jpg",
+    "url": "http://www.coninfo.net:1935/tvlink/live/playlist.m3u8"
   },
   {
     "name": "VIA TV",
