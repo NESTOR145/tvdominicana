@@ -900,6 +900,36 @@
     "id": "makaotv"
   },
   {
+    "name": "HATO DEL YAQUE TV",
+    "logo": "https://i.postimg.cc/Vkn2h3z0/HATO-DEL-YAQUE.jpg",
+    "url": "https://streamunoapp.com:3739/live/hatodelyaquetvlive.m3u8",
+    "id": "hato-del-yaque"
+  },
+  {
+    "name": "R&E TV",
+    "logo": "https://i.postimg.cc/BQ8rTjyF/R-E-TV.jpg",
+    "url": "https://tv2.bitstreaming.net:8443/live/r-e-tv.m3u8",
+    "id": "re-tv"
+  },
+  {
+    "name": "TV COTUI",
+    "logo": "https://i.postimg.cc/mr8dY17S/COTUI-TV.png",
+    "url": "https://lbgo.bozztv.com/ssh101/ssh101/tvcotui/playlist.m3u8",
+    "id": "tv-cotui"
+  },
+  {
+    "name": "SUPER DIGITAL TV",
+    "logo": "https://i.postimg.cc/DwNdqz98/SUPER-DIGITAL.jpg",
+    "url": "https://cdn.streamrd.cloud/live/ch_kb5qe1zr.m3u8",
+    "id": "super-digital-tv"
+  },
+  {
+    "name": "TELETURISMO",
+    "logo": "https://i.postimg.cc/mDWVNGJc/TELETURISMO.png",
+    "url": "https://live20.bozztv.com/giatvplayout7/giatv-208343/playlist.m3u8",
+    "id": "teleturismo"
+  },
+  {
     "name": "DE ULTIMO MINUTO TV",
     "logo": "https://i.postimg.cc/qRg3z0BR/DE-ULTIMO-MINUTO-TV.jpg",
     "url": "https://soportedvb.click:3620/live/deultimominutomedialive.m3u8",
