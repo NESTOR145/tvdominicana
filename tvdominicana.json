@@ -1116,6 +1116,18 @@
     "id": "larutatv"
   },
   {
+    "name": "TVN",
+    "logo": "https://i.postimg.cc/Jz1fN0CF/TVN.jpg",
+    "url": "https://5790d294af2dc.streamlock.net/tvn/tvn/playlist.m3u8",
+    "id": "tvn"
+  },
+  {
+    "name": "TURISMO HD",
+    "logo": "https://i.postimg.cc/3RDV8D2h/TURISMO-TV.png",
+    "url": "https://live20.bozztv.com/giatvplayout7/giatv-208343/tracks-v1a1/mono.ts.m3u8",
+    "id": "turismo-hd"
+  },
+  {
     "name": "MUSAVICION",
     "logo": "https://i.postimg.cc/g2KxHcbT/MUSAVISION.jpg",
     "url": "https://cnn.hostlagarto.com/musavisiontv/tracks-v1a1/mono.m3u8",
