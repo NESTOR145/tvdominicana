@@ -2212,6 +2212,26 @@
         "url": "https://live.obslivestream.com/viaaltomayomux/index.m3u8"
     },
     {
+    "name": "TOTO VISION",
+    "logo": "https://i.postimg.cc/Bny252HB/TOTOVISION.jpg",
+    "url": "https://cdn.streamhispanatv.net:3652/stream/play.m3u8"
+    },
+    {
+    "name": "IMAGEN TV",
+    "logo": "https://i.postimg.cc/9MLSV44z/IMAGEN-TV.png",
+    "url": "https://cdn.streamhispanatv.net:3587/live/imagentvlive.m3u8"
+    },
+    {
+    "name": "TV DOBLE C",
+    "logo": "https://i.postimg.cc/vmdCvwF1/TV-DOBLE-C.jpg",
+    "url": "https://cdn.streamhispanatv.net:3080/live/tvdobleclive.m3u8"
+    },
+    {
+    "name": "TV FLORENCIA",
+    "logo": "https://i.postimg.cc/sX3P1s5k/TV-FLORENCIA.jpg",
+    "url": "https://cdn.streamhispanatv.net:3819/live/tvflorecialive.m3u8"
+    },
+    {
         "name": "VIA TV",
         "logo": "https://i.postimg.cc/sftPvdyn/VIA-TV.jpg",
         "url": "https://videoserver.tmcreativos.com:19360/cablerasvia/cablerasvia.m3u8"
