@@ -117,6 +117,11 @@
         "url": "https://lbgo.bozztv.com/ssh101/ssh101/tvmontana10tv/playlist.m3u8"
     },
     {
+        "name": "AGROTENDENCIAS TV",
+        "logo": "https://i.postimg.cc/mkvTmywq/AGROTENDENCIAS.jpg",
+        "url": "https://5fc584f3f19c9.streamlock.net/agrotendencia/videoagrotendencia_hls1/playlist.m3u8"
+    },
+    {
         "name": "NUEVA VISION TV",
         "logo": "https://i.postimg.cc/Fs8Tv57X/NUEVA-VISION-TV.png",
         "url": "https://pacific.direcnode.com:3562/live/nuevavisionlive.m3u8"
@@ -1850,11 +1855,6 @@
         "name": "COLOSAL TV",
         "logo": "https://i.postimg.cc/kg20z1kw/COLOSAL-TV.jpg",
         "url": "http://tv.ticosmedia.com:1935/COLOSAL/COLOSAL/playlist.m3u8"
-    },
-    {
-        "name": "AGROTENDENCIAS TV",
-        "logo": "https://i.postimg.cc/mkvTmywq/AGROTENDENCIAS.jpg",
-        "url": "https://5fc584f3f19c9.streamlock.net/agrotendencia/videoagrotendencia_hls1/playlist.m3u8"
     },
     {
         "name": "CARIBE TV",
