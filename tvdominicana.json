@@ -952,6 +952,11 @@
         "url": "https://streamunoapp.com:3983/live/larutatvlive.m3u8"
     },
     {
+        "name": "SUR TV",
+        "logo": "https://i.postimg.cc/SssJ2d92/SUR-TV.jpg",
+        "url": "https://ss2.tvrdomi.com:1936/eradiofonicas/eradiofonicas/playlist.m3u8"
+    },
+    {
         "name": "MUSAVICION",
         "logo": "https://i.postimg.cc/g2KxHcbT/MUSAVISION.jpg",
         "url": "https://cnn.hostlagarto.com/musavisiontv/tracks-v1a1/mono.m3u8"
