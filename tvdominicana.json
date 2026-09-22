@@ -107,9 +107,9 @@
         "url": "https://lbgo.bozztv.com/ssh101/ssh101/ctv8hd/playlist.m3u8"
     },
     {
-    "name": "TELEALTURA",
-    "logo": "https://i.postimg.cc/qqN05pG8/TELEALTURA.png",
-    "url": "https://stream1.28tv.online/Telealtura/index.m3u8"
+        "name": "TELEALTURA",
+        "logo": "https://i.postimg.cc/qqN05pG8/TELEALTURA.png",
+        "url": "https://stream1.28tv.online/Telealtura/index.m3u8"
     },
     {
         "name": "TV MONTAÑA",
@@ -120,6 +120,11 @@
         "name": "AGROTENDENCIAS TV",
         "logo": "https://i.postimg.cc/mkvTmywq/AGROTENDENCIAS.jpg",
         "url": "https://5fc584f3f19c9.streamlock.net/agrotendencia/videoagrotendencia_hls1/playlist.m3u8"
+    },
+    {
+        "name": "TV AGRO",
+        "logo": "https://i.postimg.cc/C1fw5VSv/TVAGRO.jpg",
+        "url": "http://181.78.8.199:8000/play/a0fj/index.m3u8"
     },
     {
         "name": "NUEVA VISION TV",
@@ -627,6 +632,11 @@
         "url": "https://edge.essastream.com/xtratv/index.m3u8"
     },
     {
+        "name": "SUR TV",
+        "logo": "https://i.postimg.cc/SssJ2d92/SUR-TV.jpg",
+        "url": "https://ss2.tvrdomi.com:1936/eradiofonicas/eradiofonicas/playlist.m3u8"
+    },
+    {
         "name": "DELTA TV",
         "logo": "https://i.postimg.cc/Pq3N06xb/DELTA-TV.png",
         "url": "https://fox.hostlagarto.com:8081/deltatv50/index.m3u8"
@@ -952,11 +962,6 @@
         "url": "https://streamunoapp.com:3983/live/larutatvlive.m3u8"
     },
     {
-        "name": "SUR TV",
-        "logo": "https://i.postimg.cc/SssJ2d92/SUR-TV.jpg",
-        "url": "https://ss2.tvrdomi.com:1936/eradiofonicas/eradiofonicas/playlist.m3u8"
-    },
-    {
         "name": "MUSAVICION",
         "logo": "https://i.postimg.cc/g2KxHcbT/MUSAVISION.jpg",
         "url": "https://cnn.hostlagarto.com/musavisiontv/tracks-v1a1/mono.m3u8"
@@ -1212,6 +1217,16 @@
         "url": "https://cdn.streamhispanatv.net:3549/live/barbetvlive.m3u8"
     },
     {
+        "name": "CSI MIAMI",
+        "logo": "https://i.postimg.cc/hPRpQnMC/CSI-MIAMI.jpg",
+        "url": "https://jmp2.uk/plu-632b5950b515b000079e6b81.m3u8"
+    },
+    {
+        "name": "CSI NEW YORK",
+        "logo": "https://i.postimg.cc/wTkctm1v/CSI-NEW-YORK.jpg",
+        "url": "https://jmp2.uk/plu-632b606e12a67b0007c9e371.m3u8"
+    },
+    {
         "name": "NIM TV",
         "logo": "https://i.postimg.cc/wxVJfCDv/NIM-TV.jpg",
         "url": "https://cdn.streamhispanatv.net:3210/live/nimtvgtlive.m3u8"
@@ -1225,16 +1240,6 @@
         "name": "XTREMA ACTION",
         "logo": "https://i.postimg.cc/Pr6QytNt/XTREMO-CHANNEL.png",
         "url": "https://stmv6.voxtvhd.com.br/cineaccion/cineaccion/playlist.m3u8"
-    },
-    {
-        "name": "CSI MIAMI",
-        "logo": "https://i.postimg.cc/hPRpQnMC/CSI-MIAMI.jpg",
-        "url": "https://jmp2.uk/plu-632b5950b515b000079e6b81.m3u8"
-    },
-    {
-        "name": "CSI NEW YORK",
-        "logo": "https://i.postimg.cc/wTkctm1v/CSI-NEW-YORK.jpg",
-        "url": "https://jmp2.uk/plu-632b606e12a67b0007c9e371.m3u8"
     },
     {
         "name": "PELICULAS DEL OESTE",
@@ -1542,6 +1547,16 @@
         "url": "https://mcncdndigital.com/balleballetv/tracks-v1a1/mono.m3u8"
     },
     {
+        "name": "VIVA LATINO",
+        "logo": "https://i.postimg.cc/T1f2WCnM/VIVA-LATINO.jpg",
+        "url": "http://stream.mcquack.net/285/index.m3u8"
+    },
+    {
+        "name": "CORAZON TV",
+        "logo": "https://i.postimg.cc/LsWNXWK8/CORAZON-TV.jpg",
+        "url": "https://sistemastr.tropicalmoonmedia.com/live/7FFCFEC3978B68D1A2ED0A38DE96AF76/12.m3u8"
+    },
+    {
         "name": "TELERITMO SD",
         "logo": "https://i.postimg.cc/bvDWL0My/TELERITMO.jpg",
         "url": "http://mdstrm.com/live-stream-playlist/57b4dc126338448314449d0c.m3u8"
@@ -1565,16 +1580,6 @@
         "name": "VISION MUSICA",
         "logo": "https://i.postimg.cc/QNS2WfwR/VISION-MUSICA.jpg",
         "url": "https://videoserver.tmcreativos.com:19360/visionmusica/visionmusica.m3u8"
-    },
-    {
-    "name": "VIVA LATINO",
-    "logo": "https://i.postimg.cc/T1f2WCnM/VIVA-LATINO.jpg",
-    "url": "http://stream.mcquack.net/285/index.m3u8"
-    },
-    {
-    "name": "CORAZON TV",
-    "logo": "https://i.postimg.cc/LsWNXWK8/CORAZON-TV.jpg",
-    "url": "https://sistemastr.tropicalmoonmedia.com/live/7FFCFEC3978B68D1A2ED0A38DE96AF76/12.m3u8"
     },
     {
         "name": "QMUSIC",
@@ -1817,11 +1822,6 @@
         "url": "http://tiquiciatv.com:1935/stv/web/playlist.m3u8"
     },
     {
-        "name": "AGRO TV",
-        "logo": "https://i.postimg.cc/1XS1BS1t/AGRO-TV.jpg",
-        "url": "https://live-evg8.tv360.bitel.com.pe/bitel/agroSRT/playlist.m3u8"
-    },
-    {
         "name": "KANDELA TV",
         "logo": "https://i.postimg.cc/265RbYj0/KANDELA-TV.jpg",
         "url": "https://streamtv.intervenhosting.net:3718/live/kandelamedioslive.m3u8"
@@ -2022,11 +2022,6 @@
         "url": "https://stream.oromar.tv/hls/oromartv_hi/index.m3u8"
     },
     {
-        "name": "TV AGRO",
-        "logo": "https://i.postimg.cc/C1fw5VSv/TVAGRO.jpg",
-        "url": "http://181.78.8.199:8000/play/a0fj/index.m3u8"
-    },
-    {
         "name": "EWTN",
         "logo": "https://i.postimg.cc/fbK27r2G/EWTN.png",
         "url": "https://cdn3.wowza.com/1/SmVrQmZCUXZhVDgz/b3J3MFJv/hls/live/playlist.m3u8"
@@ -2117,21 +2112,6 @@
         "url": "https://7.innovatestream.pe:19360/mieltv/mieltv.m3u8"
     },
     {
-    "name": "INVASIVA TV",
-    "logo": "https://i.postimg.cc/0ywLb3P6/INVASIVA-TV.png",
-    "url": "https://tv-omega-nine.vercel.app/hls/live.m3u8"
-   },
-   {
-    "name": "ISLITA TV",
-    "logo": "https://i.postimg.cc/W1z08LhP/ISLITA-TV.jpg",
-    "url": "https://tv.arkeo.cl:1936/unetev/unetev/playlist.m3u8"
-    },
-    {
-    "name": "ADA TV",
-    "logo": "https://i.postimg.cc/FRBZbrx4/ADA-TV.jpg",
-    "url": "https://live-evg10.tv360.bitel.com.pe/bitel/alasdeaguilaSRT/playlist.m3u8"
-    },
-    {
         "name": "RIVEREÑA TV",
         "logo": "https://i.postimg.cc/YCFD8RD2/RIVERE-A-TV.png",
         "url": "https://cloudvideo.servers10.com:8081/8070/tracks-v1a1/mono.m3u8"
@@ -2145,16 +2125,6 @@
         "name": "URANIO TV",
         "logo": "https://i.postimg.cc/43X4zszX/URANIO-TV.png",
         "url": "https://live.obslivestream.com/uraniotv/index.m3u8"
-    },
-    {
-    "name": "AMAZONIA TV",
-    "logo": "https://i.postimg.cc/0NS9WLCf/AMAZONIA-TV.jpg",
-    "url": "https://servilive.com:3199/live/amazoniatvlive.m3u8"
-    },
-    {
-    "name": "COSMOS TV",
-    "logo": "https://i.postimg.cc/P53M37qL/COSMOS-TV.jpg",
-    "url": "https://video.hostingcaaguazu.com:19360/cosmostv/cosmostv.m3u8"
     },
     {
         "name": "VISION SUR",
@@ -2197,14 +2167,59 @@
         "url": "https://live.obslivestream.com/crtvmux/tracks-v1a1/mono.m3u8"
     },
     {
+        "name": "TOTO VISION",
+        "logo": "https://i.postimg.cc/Bny252HB/TOTOVISION.jpg",
+        "url": "https://cdn.streamhispanatv.net:3652/stream/play.m3u8"
+    },
+    {
+        "name": "IMAGEN TV",
+        "logo": "https://i.postimg.cc/9MLSV44z/IMAGEN-TV.png",
+        "url": "https://cdn.streamhispanatv.net:3587/live/imagentvlive.m3u8"
+    },
+    {
+        "name": "TV DOBLE C",
+        "logo": "https://i.postimg.cc/vmdCvwF1/TV-DOBLE-C.jpg",
+        "url": "https://cdn.streamhispanatv.net:3080/live/tvdobleclive.m3u8"
+    },
+    {
+        "name": "TV FLORENCIA",
+        "logo": "https://i.postimg.cc/sX3P1s5k/TV-FLORENCIA.jpg",
+        "url": "https://cdn.streamhispanatv.net:3819/live/tvflorecialive.m3u8"
+    },
+    {
         "name": "TELECOLOR HD",
         "logo": "https://i.postimg.cc/wxbJnK7q/TELECOLOR-HD.jpg",
         "url": "https://live.obslivestream.com/telecolormux/index.m3u8"
     },
     {
+        "name": "INVASIVA TV",
+        "logo": "https://i.postimg.cc/0ywLb3P6/INVASIVA-TV.png",
+        "url": "https://tv-omega-nine.vercel.app/hls/live.m3u8"
+    },
+    {
+        "name": "ISLITA TV",
+        "logo": "https://i.postimg.cc/W1z08LhP/ISLITA-TV.jpg",
+        "url": "https://tv.arkeo.cl:1936/unetev/unetev/playlist.m3u8"
+    },
+    {
+        "name": "ADA TV",
+        "logo": "https://i.postimg.cc/FRBZbrx4/ADA-TV.jpg",
+        "url": "https://live-evg10.tv360.bitel.com.pe/bitel/alasdeaguilaSRT/playlist.m3u8"
+    },
+    {
         "name": "TMA",
         "logo": "https://i.postimg.cc/Kzx5QQST/TMA-TV.jpg",
         "url": "http://hls.tmacaraibes.com/live/index.m3u8"
+    },
+    {
+        "name": "AMAZONIA TV",
+        "logo": "https://i.postimg.cc/0NS9WLCf/AMAZONIA-TV.jpg",
+        "url": "https://servilive.com:3199/live/amazoniatvlive.m3u8"
+    },
+    {
+        "name": "COSMOS TV",
+        "logo": "https://i.postimg.cc/P53M37qL/COSMOS-TV.jpg",
+        "url": "https://video.hostingcaaguazu.com:19360/cosmostv/cosmostv.m3u8"
     },
     {
         "name": "RESTAURANDO VIDAS INTERNACIONAL",
@@ -2250,26 +2265,6 @@
         "name": "VIA ALTO MAYO",
         "logo": "https://i.postimg.cc/d0qLLnLN/VIA-ALTO-MAYO.png",
         "url": "https://live.obslivestream.com/viaaltomayomux/index.m3u8"
-    },
-    {
-    "name": "TOTO VISION",
-    "logo": "https://i.postimg.cc/Bny252HB/TOTOVISION.jpg",
-    "url": "https://cdn.streamhispanatv.net:3652/stream/play.m3u8"
-    },
-    {
-    "name": "IMAGEN TV",
-    "logo": "https://i.postimg.cc/9MLSV44z/IMAGEN-TV.png",
-    "url": "https://cdn.streamhispanatv.net:3587/live/imagentvlive.m3u8"
-    },
-    {
-    "name": "TV DOBLE C",
-    "logo": "https://i.postimg.cc/vmdCvwF1/TV-DOBLE-C.jpg",
-    "url": "https://cdn.streamhispanatv.net:3080/live/tvdobleclive.m3u8"
-    },
-    {
-    "name": "TV FLORENCIA",
-    "logo": "https://i.postimg.cc/sX3P1s5k/TV-FLORENCIA.jpg",
-    "url": "https://cdn.streamhispanatv.net:3819/live/tvflorecialive.m3u8"
     },
     {
         "name": "VIA TV",
