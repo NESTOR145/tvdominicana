@@ -2117,6 +2117,21 @@
         "url": "https://7.innovatestream.pe:19360/mieltv/mieltv.m3u8"
     },
     {
+    "name": "INVASIVA TV",
+    "logo": "https://i.postimg.cc/0ywLb3P6/INVASIVA-TV.png",
+    "url": "https://tv-omega-nine.vercel.app/hls/live.m3u8"
+   },
+   {
+    "name": "ISLITA TV",
+    "logo": "https://i.postimg.cc/W1z08LhP/ISLITA-TV.jpg",
+    "url": "https://tv.arkeo.cl:1936/unetev/unetev/playlist.m3u8"
+    },
+    {
+    "name": "ADA TV",
+    "logo": "https://i.postimg.cc/FRBZbrx4/ADA-TV.jpg",
+    "url": "https://live-evg10.tv360.bitel.com.pe/bitel/alasdeaguilaSRT/playlist.m3u8"
+    },
+    {
         "name": "RIVEREÑA TV",
         "logo": "https://i.postimg.cc/YCFD8RD2/RIVERE-A-TV.png",
         "url": "https://cloudvideo.servers10.com:8081/8070/tracks-v1a1/mono.m3u8"
