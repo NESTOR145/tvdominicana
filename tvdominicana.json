@@ -102,6 +102,11 @@
         "url": "https://lbgo.bozztv.com/ssh101/ssh101/tvmontana10tv/playlist.m3u8"
     },
     {
+        "name": "TELEALTURA",
+        "logo": "https://i.postimg.cc/qqN05pG8/TELEALTURA.png",
+        "url": "https://stream1.28tv.online/Telealtura/index.m3u8"
+    },
+    {
         "name": "AGROTENDENCIAS TV",
         "logo": "https://i.postimg.cc/mkvTmywq/AGROTENDENCIAS.jpg",
         "url": "https://5fc584f3f19c9.streamlock.net/agrotendencia/videoagrotendencia_hls1/playlist.m3u8"
@@ -935,11 +940,6 @@
         "name": "DIGITAL 809",
         "logo": "https://i.imgur.com/NKdV8b1.png",
         "url": "https://stream.inliveserver.com:19360/8146/8146.m3u8"
-    },
-    {
-        "name": "TELEALTURA",
-        "logo": "https://i.postimg.cc/qqN05pG8/TELEALTURA.png",
-        "url": "https://stream1.28tv.online/Telealtura/index.m3u8"
     },
     {
         "name": "FUEGO TV",
