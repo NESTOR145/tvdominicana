@@ -42,7 +42,7 @@
     {
         "name": "TELEANTILLAS",
         "logo": "https://i.imgur.com/G1pJZkC.png",
-        "url": "http://45.171.108.253:8888/TELEANTILLAS/index.m3u8"
+        "url": "https://hls.tvabierta.net/hls/010.m3u8"
     },
     {
         "name": "TELESISTEMA 11",
