@@ -42,7 +42,7 @@
     {
         "name": "TELEANTILLAS",
         "logo": "https://i.imgur.com/G1pJZkC.png",
-        "url": "https://hls.tvabierta.net/hls/010.m3u8"
+        "url": "http://45.171.108.253:8888/TELEANTILLAS/index.m3u8"
     },
     {
         "name": "TELESISTEMA 11",
@@ -97,14 +97,14 @@
         "url": "https://lbgo.bozztv.com/ssh101/ssh101/ctv8hd/playlist.m3u8"
     },
     {
-        "name": "TV MONTAÑA",
-        "logo": "https://i.postimg.cc/SN4c6MB2/TV-MONTANA.jpg",
-        "url": "https://lbgo.bozztv.com/ssh101/ssh101/tvmontana10tv/playlist.m3u8"
-    },
-    {
         "name": "TELEALTURA",
         "logo": "https://i.postimg.cc/qqN05pG8/TELEALTURA.png",
         "url": "https://stream1.28tv.online/Telealtura/index.m3u8"
+    },
+    {
+        "name": "TV MONTAÑA",
+        "logo": "https://i.postimg.cc/SN4c6MB2/TV-MONTANA.jpg",
+        "url": "https://lbgo.bozztv.com/ssh101/ssh101/tvmontana10tv/playlist.m3u8"
     },
     {
         "name": "AGROTENDENCIAS TV",
@@ -952,11 +952,6 @@
         "url": "https://streamunoapp.com:3958/live/cibaenatvlive.m3u8"
     },
     {
-        "name": "TELEFUTURO",
-        "logo": "https://i.postimg.cc/8kMCwsYG/TELEFUTURO.jpg",
-        "url": "https://www.dailymotion.com/cdn/live/video/x9imtbq.m3u8?sec=NYjSybmd-RNtVwVI8pKtLkASzB6QZl6p07yQgNQQx_iIFNgH3UTM3lzMTLjEFknGIKF02IAybrYRwVIM64Tt0GgO9EKyZxBi94jKzT8jCVyzGszNJe2BCre6efemDXT0"
-    },
-    {
         "name": "LA VOZ SIN SENSURA TV",
         "logo": "https://i.postimg.cc/pXm3qHrm/LA-VOZ-SIN-SENSURA-TV.jpg",
         "url": "https://cdnfox.hostlagarto.com/lavozsincensuratv/index.m3u8"
@@ -1147,11 +1142,6 @@
         "url": "https://canal.mediaserver.com.co/live/cinedios.m3u8"
     },
     {
-        "name": "CINE TERROR",
-        "logo": "https://i.postimg.cc/bJM0zM9b/PLUTO-TV-CINE-TERROR.jpg",
-        "url": "https://jmp2.uk/plu-5d8d180092e97a5e107638d3.m3u8"
-    },
-    {
         "name": "URBAN ACTION",
         "logo": "https://i.postimg.cc/nhBf5YD4/URBAN-ACTION.jpg",
         "url": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/7ad8ce96-5a3f-413e-ae15-7c2cef7bc8f8/manifest.m3u8"
@@ -1232,6 +1222,131 @@
         "url": "https://jmp2.uk/stvp-ESBC2700002LO"
     },
     {
+        "name": "PLUTO TV MISTERIOS",
+        "logo": "https://i.postimg.cc/fykf73Qz/PLUTO-TV-MISTERIOS.png",
+        "url": "https://jmp2.uk/plu-5dcde2f53449c50009b2b4dc.m3u8"
+    },
+    {
+        "name": "PLUTO TV CINE TERROR",
+        "logo": "https://i.postimg.cc/bJM0zM9b/PLUTO-TV-CINE-TERROR.jpg",
+        "url": "https://jmp2.uk/plu-5d8d180092e97a5e107638d3.m3u8"
+    },
+    {
+        "name": "PLUTO TV ZOMBIES",
+        "logo": "https://i.postimg.cc/vZw5T2Bz/PLUTO-TV-ZOMBIES.jpg",
+        "url": "https://jmp2.uk/plu-65786888b228b7000843ad9a.m3u8"
+    },
+    {
+        "name": "PLUTO CINE SUSPENSO",
+        "logo": "https://i.postimg.cc/FHxG4XZC/PLUTO-CINE-SUSPENSO.jpg",
+        "url": "https://jmp2.uk/plu-5ddc4e8bcbb9010009b4e84f.m3u8"
+    },
+    {
+        "name": "PLUTO TV AVENTURAS",
+        "logo": "https://i.postimg.cc/J7bkgcKf/PLUTO-TV-AVENTURAS.jpg",
+        "url": "https://jmp2.uk/plu-5ddc266f80e3550009136843.m3u8"
+    },
+    {
+        "name": "PLUTO TV ANIMALES",
+        "logo": "https://i.postimg.cc/SsLxZVq8/PLUTO-TV-ANIMALES.jpg",
+        "url": "https://jmp2.uk/plu-600ae6a78d801e0007117d21.m3u8"
+    },
+    {
+        "name": "PLUTO ANIME LATINO",
+        "logo": "https://i.postimg.cc/TwxRWmmh/PLUTO-ANIME-LATINO.jpg",
+        "url": "https://jmp2.uk/plu-5dcde17bf6591d0009839e02.m3u8"
+    },
+    {
+        "name": "NICK PLUTO TV",
+        "logo": "https://i.postimg.cc/76Q0shS9/NICK-CLASICO.jpg",
+        "url": "https://jmp2.uk/plu-62bdb75c3afd1200079146a6.m3u8"
+    },
+    {
+        "name": "RUGRATS PLUTO TV",
+        "logo": "https://i.postimg.cc/25c13763/RUGRATS.jpg",
+        "url": "https://jmp2.uk/plu-610c09219fc0430007a3fce6.m3u8"
+    },
+    {
+        "name": "NARUTO PLUTO TV",
+        "logo": "https://i.postimg.cc/FHSpy1c9/NARUTO.jpg",
+        "url": "https://jmp2.uk/plu-5ee92e72fb286e0007285fec.m3u8"
+    },
+    {
+        "name": "PLUTO CINE ACCION",
+        "logo": "https://i.postimg.cc/xdBTvpwf/PLUTO-TV-CINE-ACCION.jpg",
+        "url": "https://jmp2.uk/plu-5dcb62e63d4d8f0009f36881.m3u8"
+    },
+    {
+        "name": "PLUTO CINE CLASICO",
+        "logo": "https://i.postimg.cc/HL9TfWKN/PLUTO-TV-CINE-CLASICO.jpg",
+        "url": "https://jmp2.uk/plu-609059dc63be6e0007b4eca6.m3u8"
+    },
+    {
+        "name": "PLUTO CINE CRIMEN",
+        "logo": "https://i.postimg.cc/7LkvB4L9/PLUTO-CINE-CRIMEN.jpg",
+        "url": "https://jmp2.uk/plu-624af40c004f8000079b784d.m3u8"
+    },
+    {
+        "name": "PLUTO CINE DE AUTOR",
+        "logo": "https://i.postimg.cc/SR53cF5Z/PLUTO-CINE-DE-AUTOR.jpg",
+        "url": "https://jmp2.uk/plu-60cc807324d60a0007708dc8.m3u8"
+    },
+    {
+        "name": "PLUTO CINE ESTELAR",
+        "logo": "https://i.postimg.cc/D0HgnTHV/PLUTO-TV-CINE-ESTELAR.jpg",
+        "url": "https://jmp2.uk/plu-5dcde437229eff00091b6c30.m3u8"
+    },
+    {
+        "name": "PLUTO CINE WESTERN",
+        "logo": "https://i.postimg.cc/VNYGrkvQ/PLUTO-CINE-WESTERN.jpg",
+        "url": "https://jmp2.uk/plu-6385e82900ab2e000768a058.m3u8"
+    },
+    {
+        "name": "PLUTO CINE ROMANCE",
+        "logo": "https://i.postimg.cc/3xBMb6D0/PLUTO-CINE-ROMANCE.jpg",
+        "url": "https://jmp2.uk/plu-5dd7ea2aeab5230009986735.m3u8"
+    },
+    {
+        "name": "PLUTO CINE ROMANTICO",
+        "logo": "https://i.postimg.cc/gc6CPr6T/PLUTO-CINE-ROMANTICO.jpg",
+        "url": "https://jmp2.uk/plu-5f1ac9a2d3611d0007a844bb.m3u8"
+    },
+    {
+        "name": "PLUTO DEPORTES",
+        "logo": "https://i.postimg.cc/tTGKz0cn/PLUTO-TV-DEPORTES.jpg",
+        "url": "https://jmp2.uk/plu-5dcde07af1c85b0009b18651.m3u8"
+    },
+    {
+        "name": "PLUTO BELLATOR MMA",
+        "logo": "https://i.postimg.cc/WpBNXf94/BELLATOR-MMA.png",
+        "url": "https://jmp2.uk/plu-5ebc8688f3697d00072f7cf8.m3u8"
+    },
+    {
+        "name": "PLUTO TV VELOCIDAD",
+        "logo": "https://i.postimg.cc/cCVgcxVn/PLUTO-VELOCIDAD.png",
+        "url": "https://jmp2.uk/plu-5dd6dc7480e3550009133d4a.m3u8"
+    },
+    {
+        "name": "PLUTO DOCUMENTALES",
+        "logo": "https://i.postimg.cc/y69VJyLW/PLUTO-DOCUMENTALES.jpg",
+        "url": "https://jmp2.uk/plu-5ddc503ac7ef120009b101a2.m3u8"
+    },
+    {
+        "name": "PLUTO TV HISTORIA",
+        "logo": "https://i.postimg.cc/wvDFm6hB/PLUTO-TV-HISTORIA.jpg",
+        "url": "https://jmp2.uk/plu-5de5758e1a30dc00094fcd6c.m3u8"
+    },
+    {
+        "name": "PLUTO TV COCINA",
+        "logo": "https://i.postimg.cc/VNhJrY95/PLUTO-TV-COCINA.jpg",
+        "url": "https://jmp2.uk/plu-5f1acdaa8ba90f0007d5e760.m3u8"
+    },
+    {
+        "name": "PLUTO CINE INSPIRADOR",
+        "logo": "https://i.postimg.cc/X7L6FHdc/PLUTO-CINE-INSPIRADOR.png",
+        "url": "https://jmp2.uk/plu-6806d519fea7414f33f57016.m3u8"
+    },
+    {
         "name": "90 KIDS",
         "logo": "https://i.postimg.cc/vZnjNPj2/90-KIDS.png",
         "url": "https://jmp2.uk/plu-6452c814939a590008567a3b.m3u8"
@@ -1295,21 +1410,6 @@
         "name": "DUCK TV",
         "logo": "https://i.postimg.cc/Pr1DqQYN/DUCK-TV.jpg",
         "url": "https://dash3.antik.sk/live/duck_tv/index.m3u8"
-    },
-    {
-        "name": "NICK PLUTO TV",
-        "logo": "https://i.postimg.cc/76Q0shS9/NICK-CLASICO.jpg",
-        "url": "https://jmp2.uk/plu-62bdb75c3afd1200079146a6.m3u8"
-    },
-    {
-        "name": "RUGRATS",
-        "logo": "https://i.postimg.cc/25c13763/RUGRATS.jpg",
-        "url": "https://jmp2.uk/plu-610c09219fc0430007a3fce6.m3u8"
-    },
-    {
-        "name": "NARUTO",
-        "logo": "https://i.postimg.cc/FHSpy1c9/NARUTO.jpg",
-        "url": "https://jmp2.uk/plu-5ee92e72fb286e0007285fec.m3u8"
     },
     {
         "name": "DISNEY JUNIOR EAST",
@@ -1592,19 +1692,9 @@
         "url": "https://stream1.sersat.com/hls/garagetv.m3u8"
     },
     {
-        "name": "PLUTO DEPORTES",
-        "logo": "https://i.postimg.cc/tTGKz0cn/PLUTO-TV-DEPORTES.jpg",
-        "url": "https://jmp2.uk/plu-5dcde07af1c85b0009b18651.m3u8"
-    },
-    {
         "name": "ITV DEPORTES",
         "logo": "https://i.postimg.cc/QtLx1M2P/ITV_DEPORTES.jpg",
         "url": "https://thm-it-roku.otteravision.com/thm/it/it.m3u8"
-    },
-    {
-        "name": "BELLATOR MMA",
-        "logo": "https://i.postimg.cc/WpBNXf94/BELLATOR-MMA.png",
-        "url": "https://jmp2.uk/plu-5ebc8688f3697d00072f7cf8.m3u8"
     },
     {
         "name": "FIFA",
@@ -2047,19 +2137,9 @@
         "url": "https://cloud5.streaminglivehd.com:3651/hybrid/play.m3u8?WebM3UCL"
     },
     {
-        "name": "PLUTO TV COCINA",
-        "logo": "https://i.postimg.cc/VNhJrY95/PLUTO-TV-COCINA.jpg",
-        "url": "https://jmp2.uk/plu-5f1acdaa8ba90f0007d5e760.m3u8"
-    },
-    {
         "name": "THEMA TV",
         "logo": "https://i.postimg.cc/7LTnDJ4y/THEMA-TV.png",
         "url": "https://unlimited1-us.dps.live/thema/thema.smil/playlist.m3u8"
-    },
-    {
-        "name": "PLUTO TV HISTORIA",
-        "logo": "https://i.postimg.cc/wvDFm6hB/PLUTO-TV-HISTORIA.jpg",
-        "url": "https://jmp2.uk/plu-5de5758e1a30dc00094fcd6c.m3u8"
     },
     {
         "name": "SOL TV",
