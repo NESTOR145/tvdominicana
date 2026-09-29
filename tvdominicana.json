@@ -957,6 +957,11 @@
         "url": "https://streamunoapp.com:3958/live/cibaenatvlive.m3u8"
     },
     {
+        "name": "TELEFUTURO",
+        "logo": "https://i.postimg.cc/8kMCwsYG/TELEFUTURO.jpg",
+        "url": "https://www.dailymotion.com/cdn/live/video/x9imtbq.m3u8?sec=NYjSybmd-RNtVwVI8pKtLkASzB6QZl6p07yQgNQQx_iIFNgH3UTM3lzMTLjEFknGIKF02IAybrYRwVIM64Tt0GgO9EKyZxBi94jKzT8jCVyzGszNJe2BCre6efemDXT0"
+    },
+    {
         "name": "LA VOZ SIN SENSURA TV",
         "logo": "https://i.postimg.cc/pXm3qHrm/LA-VOZ-SIN-SENSURA-TV.jpg",
         "url": "https://cdnfox.hostlagarto.com/lavozsincensuratv/index.m3u8"
@@ -1892,41 +1897,6 @@
         "url": "https://azt-mun.otteravision.com/azt/mun/mun.m3u8"
     },
     {
-        "name": "CANAL 25 AYACUCHO",
-        "logo": "https://i.postimg.cc/7YW2s1T3/CANAL-25-AYACUCHO.jpg",
-        "url": "https://live-evg10.tv360.bitel.com.pe/bitel/canal25ayacucho/playlist.m3u8"
-    },
-    {
-        "name": "CANAL 26 ARGENTINA",
-        "logo": "https://i.postimg.cc/gc5z1gNJ/CANAL-26-ARGENTINA.png",
-        "url": "https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8"
-    },
-    {
-        "name": "CANAL 30 LONCOMILLA",
-        "logo": "https://i.postimg.cc/MKVn5kqz/CANAL-30-LONCOMILLA.jpg",
-        "url": "https://v1.tustreaming.cl/canal30loncomilla/index.m3u8"
-    },
-    {
-        "name": "CANAL 30 BETHEL",
-        "logo": "https://i.postimg.cc/PqxfB0s8/CANAL-30-BETHEL.jpg",
-        "url": "https://s.emisoras.tv:8081/canal30tvbethel/index.m3u8"
-    },
-    {
-        "name": "CANAL 56 QUIERO TV",
-        "logo": "https://i.postimg.cc/t4gHTPrf/CANAL-56-QUIERO-TV.jpg",
-        "url": "http://45.5.118.152:8000/play/a08z/index.m3u8"
-    },
-    {
-        "name": "EL 70 TV",
-        "logo": "https://i.postimg.cc/52WCW4nm/EL-70-TV.jpg",
-        "url": "https://183.bozztv.com/giatv/giatv-cnal70tv/cnal70tv/playlist.m3u8"
-    },
-    {
-        "name": "CENOVISION",
-        "logo": "https://i.postimg.cc/NMcJyvsX/CENOVISION.jpg",
-        "url": "https://5790d294af2dc.streamlock.net/cenovision/cenovision/playlist.m3u8"
-    }
-    {
         "name": "LIMON TV",
         "logo": "https://i.postimg.cc/NMy9v6Qs/LIMON-TV.jpg",
         "url": "http://k4.usastreams.com/limontv1/limontv1/playlist.m3u8"
@@ -2310,6 +2280,41 @@
         "name": "COSMOS TV",
         "logo": "https://i.postimg.cc/P53M37qL/COSMOS-TV.jpg",
         "url": "https://video.hostingcaaguazu.com:19360/cosmostv/cosmostv.m3u8"
+    },
+    {
+        "name": "CANAL 25 AYACUCHO",
+        "logo": "https://i.postimg.cc/7YW2s1T3/CANAL-25-AYACUCHO.jpg",
+        "url": "https://live-evg10.tv360.bitel.com.pe/bitel/canal25ayacucho/playlist.m3u8"
+    },
+    {
+        "name": "CANAL 26 ARGENTINA",
+        "logo": "https://i.postimg.cc/gc5z1gNJ/CANAL-26-ARGENTINA.png",
+        "url": "https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8"
+    },
+    {
+        "name": "CANAL 30 LONCOMILLA",
+        "logo": "https://i.postimg.cc/MKVn5kqz/CANAL-30-LONCOMILLA.jpg",
+        "url": "https://v1.tustreaming.cl/canal30loncomilla/index.m3u8"
+    },
+    {
+        "name": "CANAL 30 BETHEL",
+        "logo": "https://i.postimg.cc/PqxfB0s8/CANAL-30-BETHEL.jpg",
+        "url": "https://s.emisoras.tv:8081/canal30tvbethel/index.m3u8"
+    },
+    {
+        "name": "CANAL 56 QUIERO TV",
+        "logo": "https://i.postimg.cc/t4gHTPrf/CANAL-56-QUIERO-TV.jpg",
+        "url": "http://45.5.118.152:8000/play/a08z/index.m3u8"
+    },
+    {
+        "name": "EL 70 TV",
+        "logo": "https://i.postimg.cc/52WCW4nm/EL-70-TV.jpg",
+        "url": "https://183.bozztv.com/giatv/giatv-cnal70tv/cnal70tv/playlist.m3u8"
+    },
+    {
+        "name": "CENOVISION",
+        "logo": "https://i.postimg.cc/NMcJyvsX/CENOVISION.jpg",
+        "url": "https://5790d294af2dc.streamlock.net/cenovision/cenovision/playlist.m3u8"
     },
     {
         "name": "RESTAURANDO VIDAS INTERNACIONAL",
