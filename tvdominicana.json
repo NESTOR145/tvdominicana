@@ -50,6 +50,11 @@
         "url": "https://hls.tvabierta.net/hls/011.m3u8"
     },
     {
+        "name": "CDN DEPORTES",
+        "logo": "https://i.postimg.cc/qqbHm7md/CDN-DEPORTES.jpg",
+        "url": "https://hls.tvabierta.net/hls/036.m3u8"
+    },
+    {
         "name": "CORAL TV",
         "logo": "https://i.postimg.cc/Zngr8D6w/CORAL-TV.jpg",
         "url": "https://tv.mediacp.eu:8081/coraltv/index.m3u8"
@@ -1886,6 +1891,41 @@
         "logo": "https://i.postimg.cc/qvJWYdxd/AZTECA-INTERNACIONAL.jpg",
         "url": "https://azt-mun.otteravision.com/azt/mun/mun.m3u8"
     },
+    {
+        "name": "CANAL 25 AYACUCHO",
+        "logo": "https://i.postimg.cc/7YW2s1T3/CANAL-25-AYACUCHO.jpg",
+        "url": "https://live-evg10.tv360.bitel.com.pe/bitel/canal25ayacucho/playlist.m3u8"
+    },
+    {
+        "name": "CANAL 26 ARGENTINA",
+        "logo": "https://i.postimg.cc/gc5z1gNJ/CANAL-26-ARGENTINA.png",
+        "url": "https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8"
+    },
+    {
+        "name": "CANAL 30 LONCOMILLA",
+        "logo": "https://i.postimg.cc/MKVn5kqz/CANAL-30-LONCOMILLA.jpg",
+        "url": "https://v1.tustreaming.cl/canal30loncomilla/index.m3u8"
+    },
+    {
+        "name": "CANAL 30 BETHEL",
+        "logo": "https://i.postimg.cc/PqxfB0s8/CANAL-30-BETHEL.jpg",
+        "url": "https://s.emisoras.tv:8081/canal30tvbethel/index.m3u8"
+    },
+    {
+        "name": "CANAL 56 QUIERO TV",
+        "logo": "https://i.postimg.cc/t4gHTPrf/CANAL-56-QUIERO-TV.jpg",
+        "url": "http://45.5.118.152:8000/play/a08z/index.m3u8"
+    },
+    {
+        "name": "EL 70 TV",
+        "logo": "https://i.postimg.cc/52WCW4nm/EL-70-TV.jpg",
+        "url": "https://183.bozztv.com/giatv/giatv-cnal70tv/cnal70tv/playlist.m3u8"
+    },
+    {
+        "name": "CENOVISION",
+        "logo": "https://i.postimg.cc/NMcJyvsX/CENOVISION.jpg",
+        "url": "https://5790d294af2dc.streamlock.net/cenovision/cenovision/playlist.m3u8"
+    }
     {
         "name": "LIMON TV",
         "logo": "https://i.postimg.cc/NMy9v6Qs/LIMON-TV.jpg",
