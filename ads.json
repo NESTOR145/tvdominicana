@@ -5,8 +5,20 @@
     "description": "En DominiTV le damos publicidad a tu negocio.",
     "imageUrl": "https://raw.githubusercontent.com/NESTOR145/tvdominicana/main/ads/imagen.png",
     "targetUrl": "https://wa.me/18498043741",
-    "ctaText": "Llamar ahora",
+    "ctaText": "contáctanos",
     "priority": 1,
+    "startDate": 0,
+    "endDate": 0,
+    "active": true
+  },
+  {
+    "id": "negocio_2",
+    "title": "Creamos tu Aplicación",
+    "description": "Desarrollamos la app perfecta para tu negocio o empresa.",
+    "imageUrl": "https://raw.githubusercontent.com/NESTOR145/tvdominicana/main/ads/app.png",
+    "targetUrl": "https://wa.me/18498043741",
+    "ctaText": "Contáctanos",
+    "priority": 2,
     "startDate": 0,
     "endDate": 0,
     "active": true
