@@ -1,9 +1,9 @@
 [
   {
     "id": "negocio_1",
-    "title": "Farmacia Central",
-    "description": "Medicamentos 24/7. Delivery gratis en Santo Domingo.",
-    "imageUrl": "https://raw.githubusercontent.com/NESTOR145/tvdominicana/main/ads/farmacia.png",
+    "title": "publicita tu negocio",
+    "description": "En DominiTv le damos publicidad a tu negocio.",
+    "imageUrl": "https://raw.githubusercontent.com/NESTOR145/tvdominicana/main/ads/imagen.png",
     "targetUrl": "https://wa.me/18498043741",
     "ctaText": "Llamar ahora",
     "priority": 1,
@@ -11,16 +11,4 @@
     "endDate": 0,
     "active": true
   },
-  {
-    "id": "negocio_2",
-    "title": "Colmado La Esquina",
-    "description": "Los mejores precios en víveres y bebidas.",
-    "imageUrl": "https://raw.githubusercontent.com/NESTOR145/tvdominicana/main/ads/colmado.jpg",
-    "targetUrl": "https://maps.google.com/?q=18.4861,-69.9312",
-    "ctaText": "Ver ubicación",
-    "priority": 2,
-    "startDate": 0,
-    "endDate": 0,
-    "active": true
-  }
 ]
