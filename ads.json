@@ -1,8 +1,8 @@
 [
   {
     "id": "negocio_1",
-    "title": "publicita tu negocio",
-    "description": "En DominiTv le damos publicidad a tu negocio.",
+    "title": "Publicita tu negocio",
+    "description": "En DominiTV le damos publicidad a tu negocio.",
     "imageUrl": "https://raw.githubusercontent.com/NESTOR145/tvdominicana/main/ads/imagen.png",
     "targetUrl": "https://wa.me/18498043741",
     "ctaText": "Llamar ahora",
@@ -10,5 +10,5 @@
     "startDate": 0,
     "endDate": 0,
     "active": true
-  },
+  }
 ]
