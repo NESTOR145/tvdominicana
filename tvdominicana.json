@@ -1147,6 +1147,11 @@
         "url": "http://181.78.8.199:8000/play/a0bt/index.m3u8"
     },
     {
+        "name": "RETROX TV",
+        "logo": "https://i.postimg.cc/mgqvGcmw/RETROXTV.png",
+        "url": "https://lbgo.bozztv.com/ssh101/ssh101/sternblink/playlist.m3u8"
+    },
+    {
         "name": "CANAL CINE DIOS",
         "logo": "https://i.postimg.cc/cL44Pp6S/CANAL-CINE-DIOS.png",
         "url": "https://canal.mediaserver.com.co/live/cinedios.m3u8"
@@ -1407,6 +1412,11 @@
         "url": "http://5.188.159.128:8070/Cartoon_Network/index.m3u8"
     },
     {
+        "name": "REINO INFANTIL",
+        "logo": "https://i.postimg.cc/DyCXTctS/REINO-INFANTIL.jpg",
+        "url": "https://www.khuwemultimedia.com/hls/reinoinfantiltv/reinoinfantiltv.m3u8"
+    },
+    {
         "name": "GOSPEL CARTOON",
         "logo": "https://i.postimg.cc/j56tqtyt/ION-TV.jpg",
         "url": "https://stmv1.srvif.com/gospelcartoon/gospelcartoon/playlist.m3u8"
@@ -1602,6 +1612,11 @@
         "url": "https://streamtv.mediasector.es/hls/activatv/index.m3u8"
     },
     {
+        "name": "4KURD",
+        "logo": "https://i.postimg.cc/26P02D74/4KURD.jpg",
+        "url": "https://4kuhls.persiana.live/hls/stream.m3u8"
+    },
+    {
         "name": "POWER TV",
         "logo": "https://i.postimg.cc/63mWWj0J/POWER-TV.jpg",
         "url": "https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlists.m3u8"
@@ -1745,6 +1760,26 @@
         "name": "TELESISTEMA",
         "logo": "https://i.postimg.cc/nhNKMxw6/TELESISTEMA.jpg",
         "url": "https://k20.usastreams.com:8081/telesistema/index.m3u8"
+    },
+    {
+        "name": "ANDES TELEVISION",
+        "logo": "https://i.postimg.cc/t4X2rDWS/ANDES-TELEVISION.jpg",
+        "url": "https://live-evg7.tv360.bitel.com.pe/bitel/andestvSRT/playlist.m3u8"
+    },
+    {
+        "name": "AUSTRAL TV",
+        "logo": "https://i.postimg.cc/JnBqyFCG/AUSTRAL-TV.jpg",
+        "url": "https://stmv3.voxtvhd.com.br/australtv/australtv/playlist.m3u8"
+    },
+    {
+        "name": "GRANDE TV",
+        "logo": "https://i.postimg.cc/2y7nhRcL/GRANDE-TV.jpg",
+        "url": "https://vs20.live.opencaster.com/grande41_0b593479/index.m3u8"
+    },
+    {
+        "name": "REFORMA TV",
+        "logo": "https://i.postimg.cc/tgnPDVSS/REFORMA-TV.jpg",
+        "url": "https://5bf8041cb3fed.streamlock.net/ReformaTV/ReformaTV/playlist.m3u8"
     },
     {
         "name": "7 TELEVALECIA",
