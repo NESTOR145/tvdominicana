@@ -832,6 +832,16 @@
         "url": "https://fox.hostlagarto.com:8081/teleturtv/tracks-v1a1/mono.m3u8"
     },
     {
+        "name": "TELE DAJABON",
+        "logo": "https://i.postimg.cc/XYVQfmx1/TELE-DAJABON.jpg",
+        "url": "https://5790d294af2dc.streamlock.net/dajabon/dajabon/playlist.m3u8"
+    }, 
+    {
+        "name": "AION TV",
+        "logo": "https://i.postimg.cc/j56tqtyt/ION-TV.jpg",
+        "url": "https://edge.essastream.com/aiontelevision/playlist.m3u8"
+    },
+    {
         "name": "LA VOZ DE JESUS HD",
         "logo": "https://i.postimg.cc/zfJ9wKhZ/LA-VOZ-DE-JESUS-TV.jpg",
         "url": "https://live20.bozztv.com/giatvplayout7/giatv-208429/playlist.m3u8"
@@ -1697,6 +1707,11 @@
         "url": "https://stream.qmusic.nl/qmusic/videohls.m3u8"
     },
     {
+        "name": "VISION MUSICA",
+        "logo": "https://i.postimg.cc/QNS2WfwR/VISION-MUSICA.jpg",
+        "url": "https://videoserver.tmcreativos.com:19360/visionmusica/visionmusica.m3u8"
+    },
+    {
         "name": "MTV CLIPES 1",
         "logo": "https://i.postimg.cc/LXFCTcLD/MTV-CLIPES-1.jpg",
         "url": "http://rtmp.one.by:1200"
@@ -2210,6 +2225,11 @@
         "name": "MILENIAL",
         "logo": "https://i.postimg.cc/fLMpcVG5/MILENIAL.jpg",
         "url": "https://www.milenial.news/salida/milenial.m3u8"
+    },
+    {
+        "name": "AMITEL TV",
+        "logo": "https://i.postimg.cc/9XN03RX9/AMITEL-TV.jpg",
+        "url": "https://stv2.boliviaplay.com.bo/hls/stream.m3u8"
     },
     {
         "name": "IMPACTO TV",
