@@ -1,20 +1,5 @@
 [
     {
-        "name": "ANTENA 7",
-        "logo": "https://i.postimg.cc/pXjLGr1x/ANTENA-LATINA.png",
-        "url": "https://d3gie3ig6argu.cloudfront.net/ts:abr.m3u8"
-    },
-    {
-        "name": "ANTENA 21",
-        "logo": "https://i.postimg.cc/Gm55SV69/ANTENA-21.jpg",
-        "url": "https://d1ypfac91iuc9g.cloudfront.net/ts:abr.m3u8"
-    },
-    {
-        "name": "COLOR VISION 9",
-        "logo": "https://i.postimg.cc/251jSZT2/COLOR-VISION.png",
-        "url": "https://hls.tvabierta.net/hls/009.m3u8"
-    },
-    {
         "name": "AME TV",
         "logo": "https://i.postimg.cc/c6qG7njF/AME-TV.png",
         "url": "https://ss2.tvrdomi.com:1936/ame47/ame47/playlist.m3u8"
@@ -23,41 +8,6 @@
         "name": "RTVD 4-R.D",
         "logo": "https://i.postimg.cc/5ts4YCj5/RTVD.jpg",
         "url": "https://cdn.protvradiostream.com/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8"
-    },
-    {
-        "name": "MUND2 TV",
-        "logo": "https://i.postimg.cc/Gt9f0WKh/MUND2_TV.jpg",
-        "url": "https://mlb.essastream.com:8081/mun2tv/index.m3u8"
-    },
-    {
-        "name": "TS TELESIGLO",
-        "logo": "https://i.postimg.cc/QMp2n0xB/TS-TELESIGLO.png",
-        "url": "https://cnn.hostlagarto.com/telesiglo/index.m3u8"
-    },
-    {
-        "name": "SANTIAGO TV",
-        "logo": "https://i.postimg.cc/3JQyz0Vh/SANTIAGO-TV.png",
-        "url": "https://edge.essastream.com/telemilenio/playlist.m3u8"
-    },
-    {
-        "name": "TELEANTILLAS",
-        "logo": "https://i.imgur.com/G1pJZkC.png",
-        "url": "https://hls.tvabierta.net/hls/010.m3u8"
-    },
-    {
-        "name": "TELESISTEMA 11",
-        "logo": "https://i.postimg.cc/wTdj8WJx/TELESISTEMA.jpg",
-        "url": "https://hls.tvabierta.net/hls/011.m3u8"
-    },
-    {
-        "name": "CDN DEPORTES",
-        "logo": "https://i.postimg.cc/qqbHm7md/CDN-DEPORTES.jpg",
-        "url": "https://hls.tvabierta.net/hls/036.m3u8"
-    },
-    {
-        "name": "CORAL TV",
-        "logo": "https://i.postimg.cc/Zngr8D6w/CORAL-TV.jpg",
-        "url": "https://tv.mediacp.eu:8081/coraltv/index.m3u8"
     },
     {
         "name": "Digital 15 (1080p)",
@@ -120,6 +70,56 @@
         "name": "TV AGRO",
         "logo": "https://i.postimg.cc/C1fw5VSv/TVAGRO.jpg",
         "url": "http://181.78.8.199:8000/play/a0fj/index.m3u8"
+    },
+    {
+        "name": "MUND2 TV",
+        "logo": "https://i.postimg.cc/Gt9f0WKh/MUND2_TV.jpg",
+        "url": "https://mlb.essastream.com:8081/mun2tv/index.m3u8"
+    },
+    {
+        "name": "TS TELESIGLO",
+        "logo": "https://i.postimg.cc/QMp2n0xB/TS-TELESIGLO.png",
+        "url": "https://cnn.hostlagarto.com/telesiglo/index.m3u8"
+    },
+    {
+        "name": "SANTIAGO TV",
+        "logo": "https://i.postimg.cc/3JQyz0Vh/SANTIAGO-TV.png",
+        "url": "https://edge.essastream.com/telemilenio/playlist.m3u8"
+    },
+    {
+        "name": "TELEANTILLAS",
+        "logo": "https://i.imgur.com/G1pJZkC.png",
+        "url": "https://hls.tvabierta.net/hls/010.m3u8"
+    },
+    {
+        "name": "TELESISTEMA 11",
+        "logo": "https://i.postimg.cc/wTdj8WJx/TELESISTEMA.jpg",
+        "url": "https://hls.tvabierta.net/hls/011.m3u8"
+    },
+    {
+        "name": "CDN DEPORTES",
+        "logo": "https://i.postimg.cc/qqbHm7md/CDN-DEPORTES.jpg",
+        "url": "https://hls.tvabierta.net/hls/036.m3u8"
+    },
+    {
+        "name": "ANTENA 7",
+        "logo": "https://i.postimg.cc/pXjLGr1x/ANTENA-LATINA.png",
+        "url": "https://d3gie3ig6argu.cloudfront.net/ts:abr.m3u8"
+    },
+    {
+        "name": "ANTENA 21",
+        "logo": "https://i.postimg.cc/Gm55SV69/ANTENA-21.jpg",
+        "url": "https://d1ypfac91iuc9g.cloudfront.net/ts:abr.m3u8"
+    },
+    {
+        "name": "COLOR VISION 9",
+        "logo": "https://i.postimg.cc/251jSZT2/COLOR-VISION.png",
+        "url": "https://hls.tvabierta.net/hls/009.m3u8"
+    },
+    {
+        "name": "CORAL TV",
+        "logo": "https://i.postimg.cc/Zngr8D6w/CORAL-TV.jpg",
+        "url": "https://tv.mediacp.eu:8081/coraltv/index.m3u8"
     },
     {
         "name": "CONSUELO TV",
@@ -837,16 +837,6 @@
         "url": "https://fox.hostlagarto.com:8081/teleturtv/tracks-v1a1/mono.m3u8"
     },
     {
-        "name": "TELE DAJABON",
-        "logo": "https://i.postimg.cc/XYVQfmx1/TELE-DAJABON.jpg",
-        "url": "https://5790d294af2dc.streamlock.net/dajabon/dajabon/playlist.m3u8"
-    }, 
-    {
-        "name": "AION TV",
-        "logo": "https://i.postimg.cc/j56tqtyt/ION-TV.jpg",
-        "url": "https://edge.essastream.com/aiontelevision/playlist.m3u8"
-    },
-    {
         "name": "LA VOZ DE JESUS HD",
         "logo": "https://i.postimg.cc/zfJ9wKhZ/LA-VOZ-DE-JESUS-TV.jpg",
         "url": "https://live20.bozztv.com/giatvplayout7/giatv-208429/playlist.m3u8"
@@ -925,6 +915,16 @@
         "name": "TVN",
         "logo": "https://i.postimg.cc/Jz1fN0CF/TVN.jpg",
         "url": "https://5790d294af2dc.streamlock.net/tvn/tvn/playlist.m3u8"
+    },
+    {
+        "name": "TELE DAJABON",
+        "logo": "https://i.postimg.cc/XYVQfmx1/TELE-DAJABON.jpg",
+        "url": "https://5790d294af2dc.streamlock.net/dajabon/dajabon/playlist.m3u8"
+    },
+    {
+        "name": "AION TV",
+        "logo": "https://i.postimg.cc/j56tqtyt/ION-TV.jpg",
+        "url": "https://edge.essastream.com/aiontelevision/playlist.m3u8"
     },
     {
         "name": "TURISMO HD",
@@ -1222,6 +1222,16 @@
         "url": "https://cdn.streamhispanatv.net:3549/live/barbetvlive.m3u8"
     },
     {
+        "name": "CSI MIAMI",
+        "logo": "https://i.postimg.cc/hPRpQnMC/CSI-MIAMI.jpg",
+        "url": "https://jmp2.uk/plu-632b5950b515b000079e6b81.m3u8"
+    },
+    {
+        "name": "CSI NEW YORK",
+        "logo": "https://i.postimg.cc/wTkctm1v/CSI-NEW-YORK.jpg",
+        "url": "https://jmp2.uk/plu-632b606e12a67b0007c9e371.m3u8"
+    },
+    {
         "name": "NIM TV",
         "logo": "https://i.postimg.cc/wxVJfCDv/NIM-TV.jpg",
         "url": "https://cdn.streamhispanatv.net:3210/live/nimtvgtlive.m3u8"
@@ -1262,10 +1272,15 @@
         "url": "https://jmp2.uk/plu-5ee92e72fb286e0007285fec.m3u8"
     },
     {
+        "name": "PLUTO CINE ACCION",
+        "logo": "https://i.postimg.cc/xdBTvpwf/PLUTO-TV-CINE-ACCION.jpg",
+        "url": "https://jmp2.uk/plu-5dcb62e63d4d8f0009f36881.m3u8"
+    },
+    {
         "name": "PLUTO BELLATOR MMA",
         "logo": "https://i.postimg.cc/WpBNXf94/BELLATOR-MMA.png",
         "url": "https://jmp2.uk/plu-5ebc8688f3697d00072f7cf8.m3u8"
-    }, 
+    },
     {
         "name": "PLUTO TV COCINA",
         "logo": "https://i.postimg.cc/VNhJrY95/PLUTO-TV-COCINA.jpg",
@@ -1537,6 +1552,11 @@
         "url": "https://cdnlive.myspirit.tv/LS-ATL-43240-2/index.m3u8"
     },
     {
+        "name": "VISION MUSICA",
+        "logo": "https://i.postimg.cc/QNS2WfwR/VISION-MUSICA.jpg",
+        "url": "https://videoserver.tmcreativos.com:19360/visionmusica/visionmusica.m3u8"
+    },
+    {
         "name": "LIRA TV INTERNACIONAL",
         "logo": "https://i.postimg.cc/8CXJYKQX/LIRA-TV.jpg",
         "url": "https://cloud2.streaminglivehd.com:1936/liratv/liratv/playlist.m3u8"
@@ -1607,11 +1627,6 @@
         "url": "https://stream.qmusic.nl/qmusic/videohls.m3u8"
     },
     {
-        "name": "VISION MUSICA",
-        "logo": "https://i.postimg.cc/QNS2WfwR/VISION-MUSICA.jpg",
-        "url": "https://videoserver.tmcreativos.com:19360/visionmusica/visionmusica.m3u8"
-    },
-    {
         "name": "MTV CLIPES 1",
         "logo": "https://i.postimg.cc/LXFCTcLD/MTV-CLIPES-1.jpg",
         "url": "http://rtmp.one.by:1200"
@@ -1662,6 +1677,16 @@
         "url": "https://video.telesafor.com/hls/video.m3u8"
     },
     {
+        "name": "CDM INTERNACIONAL",
+        "logo": "https://i.postimg.cc/mDPrVv5X/CDM-INTERNACIONAL.jpg",
+        "url": "https://627bb251f23c7.streamlock.net:444/CDMInternacional/CDMInternacional/playlist.m3u8"
+    },
+    {
+        "name": "TELE 11",
+        "logo": "https://i.postimg.cc/RZTq0Qts/TELE-ONCE.jpg",
+        "url": "https://live.11-cdn.com/TeleOnce/3fc63fe00050c646635f16b071cd33e2.sdp/playlist.m3u8"
+    },
+    {
         "name": "VENUS MEDIA PARAGUAY",
         "logo": "https://i.postimg.cc/9FRJTxmW/VENUS-MEDIA.jpg",
         "url": "https://tigocloud.desdeparaguay.net/venusmedia/venusmedia/playlist.m3u8"
@@ -1705,16 +1730,6 @@
         "name": "WTV NICARAGUA",
         "logo": "https://i.postimg.cc/3JBNtmRJ/WTV-NICARAGUA.jpg",
         "url": "https://cloudvideo.servers10.com:8081/8130/index.m3u8"
-    },
-    {
-        "name": "CDM INTERNACIONAL",
-        "logo": "https://i.postimg.cc/mDPrVv5X/CDM-INTERNACIONAL.jpg",
-        "url": "https://627bb251f23c7.streamlock.net:444/CDMInternacional/CDMInternacional/playlist.m3u8"
-    },
-    {
-        "name": "TELE 11",
-        "logo": "https://i.postimg.cc/RZTq0Qts/TELE-ONCE.jpg",
-        "url": "https://live.11-cdn.com/TeleOnce/3fc63fe00050c646635f16b071cd33e2.sdp/playlist.m3u8"
     },
     {
         "name": "FUERTEVENTURA TV",
@@ -2137,11 +2152,6 @@
         "url": "https://www.milenial.news/salida/milenial.m3u8"
     },
     {
-        "name": "AMITEL TV",
-        "logo": "https://i.postimg.cc/9XN03RX9/AMITEL-TV.jpg",
-        "url": "https://stv2.boliviaplay.com.bo/hls/stream.m3u8"
-    },
-    {
         "name": "IMPACTO TV",
         "logo": "https://i.postimg.cc/zfrcNLG5/IMPACTO-TV.png",
         "url": "https://cloudvideo.servers10.com:8081/impactotv/index.m3u8"
@@ -2305,6 +2315,11 @@
         "name": "CANAL 11-MEXICO",
         "logo": "https://i.postimg.cc/MH4NFvGM/CANAL-11-MEXICO.jpg",
         "url": "http://179.60.224.196:8000/play/a0dv/index.m3u8"
+    },
+    {
+        "name": "AMITEL TV",
+        "logo": "https://i.postimg.cc/9XN03RX9/AMITEL-TV.jpg",
+        "url": "https://stv2.boliviaplay.com.bo/hls/stream.m3u8"
     },
     {
         "name": "TV COSMOS",
