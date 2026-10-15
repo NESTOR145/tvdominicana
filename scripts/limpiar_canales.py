@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Comprueba cada canal de tvdominicana.json y elimina los que estén caídos
-tras 3 fallos consecutivos.
+tras 6 fallos consecutivos (perfil conservador).
 """
 
 import json
@@ -16,12 +16,12 @@ JSON_PATH = Path("tvdominicana.json")
 ESTADO_PATH = Path("estado_tvdominicana.json")
 LOG_PATH = Path("canales_eliminados.log")
 
-MAX_FALLOS = 3
+MAX_FALLOS = 6              # 6 fallos consecutivos antes de borrar
 TIMEOUT = 15
 REINTENTOS_POR_ENLACE = 3
 PAUSA_ENTRE_REINTENTOS = 3
 UMBRAL_ABORTO = 0.9
-DRY_RUN = False     # False = borra de verdad. True = solo informa.
+DRY_RUN = False             # False = borra de verdad. True = solo informa.
 
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 # -----------------------------------
@@ -117,7 +117,7 @@ def main():
     eliminados = []
     fallidos = 0
 
-    print(f"Comprobando {total} canales... (DRY_RUN={DRY_RUN})")
+    print(f"Comprobando {total} canales... (DRY_RUN={DRY_RUN}, MAX_FALLOS={MAX_FALLOS})")
 
     for canal in canales:
         nombre = canal.get("name", "desconocido")
