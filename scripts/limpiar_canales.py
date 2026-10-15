@@ -21,7 +21,7 @@ TIMEOUT = 15
 REINTENTOS_POR_ENLACE = 3
 PAUSA_ENTRE_REINTENTOS = 3
 UMBRAL_ABORTO = 0.9
-DRY_RUN = True     # False = borra de verdad. True = solo informa.
+DRY_RUN = False     # False = borra de verdad. True = solo informa.
 
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 # -----------------------------------
