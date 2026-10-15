@@ -21,7 +21,7 @@ TIMEOUT = 15
 REINTENTOS_POR_ENLACE = 3
 PAUSA_ENTRE_REINTENTOS = 3
 UMBRAL_ABORTO = 0.9
-DRY_RUN = True     # <-- CAMBIAR A False CUANDO YA HAYAS PROBADO
+DRY_RUN = false     # <-- CAMBIAR A False CUANDO YA HAYAS PROBADO
 
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 # -----------------------------------
