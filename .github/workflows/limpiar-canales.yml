@@ -2,7 +2,7 @@ name: Limpiar canales caídos
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 permissions:
