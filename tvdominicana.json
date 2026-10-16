@@ -1188,6 +1188,174 @@
     "group-title": "DOMINICANOS"
   },
   {
+    "name": "90 KIDS",
+    "logo": "https://i.postimg.cc/vZnjNPj2/90-KIDS.png",
+    "url": "https://jmp2.uk/plu-6452c814939a590008567a3b.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "BABY SHARK TV 1",
+    "logo": "https://i.postimg.cc/4NMW6z8f/BABY-SHARK-TV.jpg",
+    "url": "https://jmp2.uk/plu-63da6bcd60bc8f0008a5d364.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "BEST CLASICOS",
+    "logo": "https://i.postimg.cc/d3hCBR5Y/BEST-CLASICOS.png",
+    "url": "https://acceso.mediosdecostarica.com:3873/hybrid/play.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "TRT COCUK",
+    "logo": "https://i.postimg.cc/j5WnpChB/TRT-COCUK.jpg",
+    "url": "https://tv-trtcocuk.medya.trt.com.tr/master_720.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "BABY SHARK TV 2",
+    "logo": "https://i.postimg.cc/4NMW6z8f/BABY-SHARK-TV.jpg",
+    "url": "https://jmp2.uk/plu-619d5e6a093e7c0007489211.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "BABY SHARK TV 3",
+    "logo": "https://i.postimg.cc/4NMW6z8f/BABY-SHARK-TV.jpg",
+    "url": "https://c0c65b821b3542c3a4dca92702f59944.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_BabySharkTV/playlist.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "LEGO KIDS TV",
+    "logo": "https://i.postimg.cc/zffBjqG8/LEGO-KIDS-TV.jpg",
+    "url": "https://jmp2.uk/plu-60fb01a24795a6000762fe83.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "PEQUES TV",
+    "logo": "https://i.postimg.cc/ZYpnbj6p/PEQUERADIOS.jpg",
+    "url": "https://live-evg7.tv360.bitel.com.pe/bitel/pequestv/playlist.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "CARTOON CLASSICS",
+    "logo": "https://i.postimg.cc/yNQtyQnr/RETRO-CARTOONS.png",
+    "url": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/d5543c06-5122-49a7-9662-32187f48aa2c/manifest.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "CARTOON CLASSICS 2",
+    "logo": "https://i.postimg.cc/yNQtyQnr/RETRO-CARTOONS.png",
+    "url": "http://5.188.159.128:8070/Cartoon_Network/index.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "REINO INFANTIL",
+    "logo": "https://i.postimg.cc/DyCXTctS/REINO-INFANTIL.jpg",
+    "url": "https://www.khuwemultimedia.com/hls/reinoinfantiltv/reinoinfantiltv.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "GOSPEL CARTOON",
+    "logo": "https://i.postimg.cc/j56tqtyt/ION-TV.jpg",
+    "url": "https://stmv1.srvif.com/gospelcartoon/gospelcartoon/playlist.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "XTREMA CARTOON",
+    "logo": "https://i.postimg.cc/YS3NhJqk/XTREMA-CARTOON.jpg",
+    "url": "https://stmv6.voxtvhd.com.br/xtremacartoons/xtremacartoons/playlist.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "DUCK TV",
+    "logo": "https://i.postimg.cc/Pr1DqQYN/DUCK-TV.jpg",
+    "url": "https://dash3.antik.sk/live/duck_tv/index.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "DISNEY JUNIOR EAST",
+    "logo": "https://i.postimg.cc/brNrGY5g/DISNEY-JUNIOR-EAST.png",
+    "url": "http://tr.live.clarovtrcdn.vtrplay.com/disneyjrhdchi/vxfmt=dp/playlist.m3u8?device_profile=STB_HLS_VCAS_LIVE_HD",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "CHINOLA TV",
+    "logo": "https://i.postimg.cc/1RNmSDPN/CHINOLA-TV.png",
+    "url": "https://tv.wracanal10.com:3300/live/chinolatvlive.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "EXTREMAKIDS",
+    "logo": "https://i.postimg.cc/6pM6TFLS/XTREMA-KIDS-TV.jpg",
+    "url": "https://627bb251f23c7.streamlock.net:444/ExtremaKids/ExtremaKids/playlist.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "TIGUERITOS TV",
+    "logo": "https://i.postimg.cc/qMXVzjc3/TIGUERITOS-TV.jpg",
+    "url": "https://ss2.tvrdomi.com:1936/tigueritostv/tigueritostv/playlist.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "SENSICAL KIDS",
+    "logo": "https://i.postimg.cc/029PgjmZ/SENSICAL-KIDS.jpg",
+    "url": "https://sensical2up-oando.amagi.tv/playlist.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "MOONBUG TV",
+    "logo": "https://i.postimg.cc/0yCM1s1Y/MOONBUG-TV.jpg",
+    "url": "https://moonbug-rokuus.amagi.tv/playlist.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "MR BEANS ANIME",
+    "logo": "https://i.postimg.cc/3RQsZMqm/MR-BEANS-ANIME.png",
+    "url": "https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "TVG XABARIN",
+    "logo": "https://i.postimg.cc/zBMKvTBJ/TVG-XABARIN.png",
+    "url": "https://crtvg-infantil-schlive.flumotion.cloud/crtvglive/smil:channel5PRG.smil/chunklist_b2200000.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "SAT 7 KIDS",
+    "logo": "https://i.postimg.cc/FKq9Vc6V/SAT-7-KIDS.png",
+    "url": "https://svs.itworkscdn.net/sat7kidslive/sat7kids.smil/playlist_dvr.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "DIOS TE VE KIDS",
+    "logo": "https://i.postimg.cc/RCwMwWLw/DIOS-TE-VE-KIDS.png",
+    "url": "https://s.emisoras.tv:8081/diostevekids/index.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "PENIEL KIDS & YOUNG",
+    "logo": "https://i.postimg.cc/L6RmDmxw/PENIEL-KIDS-YOUNG.jpg",
+    "url": "https://s.emisoras.tv:8081/penielkids/index.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "ZOO MOO AUSTRALIA",
+    "logo": "https://i.postimg.cc/K8bVC72Z/ZOO-MOO-AUSTRALIA.jpg",
+    "url": "https://zoomoo-samsungau.amagi.tv/playlist.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "PBS KIDS",
+    "logo": "https://i.postimg.cc/sxmmRQSv/PBS-KIDS.png",
+    "url": "https://livestream.pbskids.org/out/v1/14507d931bbe48a69287e4850e53443c/est.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "3ABN KIDS",
+    "logo": "https://i.postimg.cc/Bny8FgvG/3-ABN-KIDS-LOGO.png",
+    "url": "https://3abn.bozztv.com/3abn2/Kids_live/smil:Kids_live.smil/playlist.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
     "name": "CINE SONY",
     "logo": "https://i.postimg.cc/1X5VB1Cw/CINE-SONY.png",
     "url": "https://a-cdn.klowdtv.com/live1/cine_720p/playlist.m3u8",
@@ -1540,174 +1708,6 @@
     "logo": "https://i.postimg.cc/VNhJrY95/PLUTO-TV-COCINA.jpg",
     "url": "https://jmp2.uk/plu-5f1acdaa8ba90f0007d5e760.m3u8",
     "group-title": "PREMIUM"
-  },
-  {
-    "name": "90 KIDS",
-    "logo": "https://i.postimg.cc/vZnjNPj2/90-KIDS.png",
-    "url": "https://jmp2.uk/plu-6452c814939a590008567a3b.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "BABY SHARK TV 1",
-    "logo": "https://i.postimg.cc/4NMW6z8f/BABY-SHARK-TV.jpg",
-    "url": "https://jmp2.uk/plu-63da6bcd60bc8f0008a5d364.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "BEST CLASICOS",
-    "logo": "https://i.postimg.cc/d3hCBR5Y/BEST-CLASICOS.png",
-    "url": "https://acceso.mediosdecostarica.com:3873/hybrid/play.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "TRT COCUK",
-    "logo": "https://i.postimg.cc/j5WnpChB/TRT-COCUK.jpg",
-    "url": "https://tv-trtcocuk.medya.trt.com.tr/master_720.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "BABY SHARK TV 2",
-    "logo": "https://i.postimg.cc/4NMW6z8f/BABY-SHARK-TV.jpg",
-    "url": "https://jmp2.uk/plu-619d5e6a093e7c0007489211.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "BABY SHARK TV 3",
-    "logo": "https://i.postimg.cc/4NMW6z8f/BABY-SHARK-TV.jpg",
-    "url": "https://c0c65b821b3542c3a4dca92702f59944.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_BabySharkTV/playlist.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "LEGO KIDS TV",
-    "logo": "https://i.postimg.cc/zffBjqG8/LEGO-KIDS-TV.jpg",
-    "url": "https://jmp2.uk/plu-60fb01a24795a6000762fe83.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "PEQUES TV",
-    "logo": "https://i.postimg.cc/ZYpnbj6p/PEQUERADIOS.jpg",
-    "url": "https://live-evg7.tv360.bitel.com.pe/bitel/pequestv/playlist.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "CARTOON CLASSICS",
-    "logo": "https://i.postimg.cc/yNQtyQnr/RETRO-CARTOONS.png",
-    "url": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/d5543c06-5122-49a7-9662-32187f48aa2c/manifest.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "CARTOON CLASSICS 2",
-    "logo": "https://i.postimg.cc/yNQtyQnr/RETRO-CARTOONS.png",
-    "url": "http://5.188.159.128:8070/Cartoon_Network/index.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "REINO INFANTIL",
-    "logo": "https://i.postimg.cc/DyCXTctS/REINO-INFANTIL.jpg",
-    "url": "https://www.khuwemultimedia.com/hls/reinoinfantiltv/reinoinfantiltv.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "GOSPEL CARTOON",
-    "logo": "https://i.postimg.cc/j56tqtyt/ION-TV.jpg",
-    "url": "https://stmv1.srvif.com/gospelcartoon/gospelcartoon/playlist.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "XTREMA CARTOON",
-    "logo": "https://i.postimg.cc/YS3NhJqk/XTREMA-CARTOON.jpg",
-    "url": "https://stmv6.voxtvhd.com.br/xtremacartoons/xtremacartoons/playlist.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "DUCK TV",
-    "logo": "https://i.postimg.cc/Pr1DqQYN/DUCK-TV.jpg",
-    "url": "https://dash3.antik.sk/live/duck_tv/index.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "DISNEY JUNIOR EAST",
-    "logo": "https://i.postimg.cc/brNrGY5g/DISNEY-JUNIOR-EAST.png",
-    "url": "http://tr.live.clarovtrcdn.vtrplay.com/disneyjrhdchi/vxfmt=dp/playlist.m3u8?device_profile=STB_HLS_VCAS_LIVE_HD",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "CHINOLA TV",
-    "logo": "https://i.postimg.cc/1RNmSDPN/CHINOLA-TV.png",
-    "url": "https://tv.wracanal10.com:3300/live/chinolatvlive.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "EXTREMAKIDS",
-    "logo": "https://i.postimg.cc/6pM6TFLS/XTREMA-KIDS-TV.jpg",
-    "url": "https://627bb251f23c7.streamlock.net:444/ExtremaKids/ExtremaKids/playlist.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "TIGUERITOS TV",
-    "logo": "https://i.postimg.cc/qMXVzjc3/TIGUERITOS-TV.jpg",
-    "url": "https://ss2.tvrdomi.com:1936/tigueritostv/tigueritostv/playlist.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "SENSICAL KIDS",
-    "logo": "https://i.postimg.cc/029PgjmZ/SENSICAL-KIDS.jpg",
-    "url": "https://sensical2up-oando.amagi.tv/playlist.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "MOONBUG TV",
-    "logo": "https://i.postimg.cc/0yCM1s1Y/MOONBUG-TV.jpg",
-    "url": "https://moonbug-rokuus.amagi.tv/playlist.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "MR BEANS ANIME",
-    "logo": "https://i.postimg.cc/3RQsZMqm/MR-BEANS-ANIME.png",
-    "url": "https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "TVG XABARIN",
-    "logo": "https://i.postimg.cc/zBMKvTBJ/TVG-XABARIN.png",
-    "url": "https://crtvg-infantil-schlive.flumotion.cloud/crtvglive/smil:channel5PRG.smil/chunklist_b2200000.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "SAT 7 KIDS",
-    "logo": "https://i.postimg.cc/FKq9Vc6V/SAT-7-KIDS.png",
-    "url": "https://svs.itworkscdn.net/sat7kidslive/sat7kids.smil/playlist_dvr.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "DIOS TE VE KIDS",
-    "logo": "https://i.postimg.cc/RCwMwWLw/DIOS-TE-VE-KIDS.png",
-    "url": "https://s.emisoras.tv:8081/diostevekids/index.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "PENIEL KIDS & YOUNG",
-    "logo": "https://i.postimg.cc/L6RmDmxw/PENIEL-KIDS-YOUNG.jpg",
-    "url": "https://s.emisoras.tv:8081/penielkids/index.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "ZOO MOO AUSTRALIA",
-    "logo": "https://i.postimg.cc/K8bVC72Z/ZOO-MOO-AUSTRALIA.jpg",
-    "url": "https://zoomoo-samsungau.amagi.tv/playlist.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "PBS KIDS",
-    "logo": "https://i.postimg.cc/sxmmRQSv/PBS-KIDS.png",
-    "url": "https://livestream.pbskids.org/out/v1/14507d931bbe48a69287e4850e53443c/est.m3u8",
-    "group-title": "ANIME-INFANTIL"
-  },
-  {
-    "name": "3ABN KIDS",
-    "logo": "https://i.postimg.cc/Bny8FgvG/3-ABN-KIDS-LOGO.png",
-    "url": "https://3abn.bozztv.com/3abn2/Kids_live/smil:Kids_live.smil/playlist.m3u8",
-    "group-title": "ANIME-INFANTIL"
   },
   {
     "name": "TELEVISA NOVELAS",
