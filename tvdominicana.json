@@ -7186,5 +7186,23 @@
     "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/buzzr-us.png",
     "url": "http://23.237.104.106:8080/USA_BUZZR/index.m3u8",
     "group-title": "PREMIUM"
+  },
+  {
+    "name": "FreeTV Familia",
+    "logo": "https://img3.static-ottera.com/prod/oly/linear_channel/thumbnails/square/213x213/freetv_familia_1080x1080_02092024.jpg",
+    "url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01024-olympusat-juntos-ono/playlist.m3u8",
+    "group-title": "PREMIUM"
+  },
+  {
+    "name": "Free TV Accion",
+    "logo": "https://img3.static-ottera.com/prod/oly/linear_channel/thumbnails/square/213x213/freetv_accion_1080x1080_02092024.jpg",
+    "url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01024-olympusat-topcinelatam-ono/playlist.m3u8",
+    "group-title": "PREMIUM"
+  },
+  {
+    "name": "Etc TV | Chile",
+    "logo": "",
+    "url": "http://45.185.163.75:8000/play/a0gv/index.m3u8",
+    "group-title": "PREMIUM"
   }
 ]
