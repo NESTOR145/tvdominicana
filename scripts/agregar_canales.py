@@ -12,6 +12,10 @@ Garantías:
   - NO elimina ningún canal existente.
   - Si la lista remota falla, sale sin modificar el JSON.
   - Si un canal nuevo está offline, no se agrega.
+  - Cada canal nuevo se agrega con su campo 'group-title' normalizado:
+      * "DOMINICANOS"     -> gratis
+      * "ANIME-INFANTIL"  -> gratis
+      * "PREMIUM"         -> premium (cualquier otra categoría)
 """
 
 import json
@@ -39,6 +43,35 @@ USER_AGENT = (
     "Chrome/120.0.0.0 Safari/537.36"
 )
 # -----------------------------------
+
+# ---------- CATEGORÍAS VÁLIDAS ----------
+CAT_DOMINICANOS = "DOMINICANOS"
+CAT_ANIME_INFANTIL = "ANIME-INFANTIL"
+CAT_PREMIUM = "PREMIUM"
+
+FREE_CATEGORIES = {CAT_DOMINICANOS, CAT_ANIME_INFANTIL}
+
+
+def normalizar_categoria(valor: str) -> str:
+    """
+    Normaliza el group-title recibido a uno de los 3 valores canónicos.
+    Solo DOMINICANOS y ANIME-INFANTIL son gratis. Todo lo demás es PREMIUM.
+    """
+    if not valor:
+        return CAT_PREMIUM
+
+    v = valor.strip().upper()
+
+    if v in ("DOMINICANOS", "DOMINICANA", "RD", "REPUBLICA DOMINICANA",
+             "REPÚBLICA DOMINICANA"):
+        return CAT_DOMINICANOS
+
+    if v in ("ANIME-INFANTIL", "ANIME INFANTIL", "INFANTIL", "KIDS",
+             "DIBUJOS ANIMADOS", "ANIME", "CARTOONS", "CARTOON"):
+        return CAT_ANIME_INFANTIL
+
+    return CAT_PREMIUM
+
 
 # ---------- LOG ----------
 def log(msg: str) -> None:
@@ -84,11 +117,8 @@ def descargar_m3u(url: str):
 # ---------- PARSER M3U ----------
 RE_ATTR = re.compile(r'([\w-]+)="([^"]*)"')
 
+
 def parsear_m3u(contenido: str):
-    """
-    Parser M3U tolerante. Devuelve una lista de dicts con la misma
-    estructura que tu JSON: name, logo, url, group, headers (opcional).
-    """
     canales = []
     canal_actual = None
 
@@ -104,7 +134,6 @@ def parsear_m3u(contenido: str):
             info = linea[len("#EXTINF:"):]
             atributos = dict(RE_ATTR.findall(info))
 
-            # El nombre va después de la última coma fuera de atributos.
             sin_attrs = RE_ATTR.sub("", info)
             nombre = ""
             if "," in sin_attrs:
@@ -117,7 +146,7 @@ def parsear_m3u(contenido: str):
             }
             group = atributos.get("group-title", "")
             if group:
-                canal_actual["group"] = group
+                canal_actual["group-title"] = group
 
         elif linea.startswith("#EXTVLCOPT:"):
             if canal_actual is not None:
@@ -131,11 +160,9 @@ def parsear_m3u(contenido: str):
                         canal_actual.setdefault("headers", {})["Referer"] = v
 
         elif linea.startswith("#"):
-            # Cualquier otra directiva se ignora.
             continue
 
         else:
-            # Es una URL.
             if canal_actual is not None:
                 canal_actual["url"] = linea
                 if canal_actual["url"]:
@@ -174,7 +201,6 @@ def probar_enlace(url: str, headers) -> bool:
 
 
 def validar_canal(canal):
-    """Devuelve el canal si está online, None si no."""
     url = canal.get("url")
     if not url:
         return None
@@ -189,17 +215,14 @@ def main() -> None:
     log("AGREGAR CANALES ONLINE DESDE LISTA REMOTA")
     log("=" * 60)
 
-    # 1) Cargar JSON actual
     json_actual = cargar_json(JSON_PATH)
     log(f"Canales en el JSON actual: {len(json_actual)}")
 
-    # 2) Descargar M3U
     contenido = descargar_m3u(URL_REMOTA_M3U)
     if not contenido:
         log("No se pudo obtener la lista. Se conserva el JSON sin cambios.")
         sys.exit(0)
 
-    # 3) Parsear
     canales_m3u = parsear_m3u(contenido)
     log(f"Canales encontrados en el M3U: {len(canales_m3u)}")
 
@@ -207,7 +230,6 @@ def main() -> None:
         log("El M3U no contiene canales. Nada que hacer.")
         return
 
-    # 4) Filtrar los que no existen ya (por URL) y deduplicar internos
     urls_existentes = {c.get("url") for c in json_actual if c.get("url")}
     vistos = set()
     candidatos = []
@@ -224,7 +246,6 @@ def main() -> None:
         log("No hay canales nuevos. Nada que agregar.")
         return
 
-    # 5) Validar en paralelo
     log(f"Validando con {MAX_HILOS} hilos...")
     online = []
     with ThreadPoolExecutor(max_workers=MAX_HILOS) as executor:
@@ -248,7 +269,12 @@ def main() -> None:
         log("No se agregó ningún canal nuevo.")
         return
 
-    # 6) Merge y guardado
+    # Normalizar la categoría (group-title) de cada canal nuevo
+    for c in online:
+        cat_original = c.get("group-title", "")
+        c["group-title"] = normalizar_categoria(cat_original)
+
+    # Merge y guardado
     json_actual.extend(online)
     guardar_json(JSON_PATH, json_actual)
     log(f"JSON actualizado. Total de canales: {len(json_actual)}")
