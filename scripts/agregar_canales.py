@@ -3,14 +3,14 @@
 """
 agregar_canales.py
 ------------------
-Descarga la lista M3U remota, valida cada canal y agrega a tvdominicana.json
+Descarga múltiples listas M3U remotas, valida cada canal y agrega a tvdominicana.json
 SOLO los canales que estén online y que aún no existan (comparando por URL).
 
 Garantías:
   - NO toca estado_tvdominicana.json.
   - NO toca canales_eliminados.log.
   - NO elimina ningún canal existente.
-  - Si la lista remota falla, sale sin modificar el JSON.
+  - Si todas las listas remotas fallan, sale sin modificar el JSON.
   - Si un canal nuevo está offline, no se agrega.
   - Cada canal nuevo se agrega con su campo 'group-title' normalizado:
       * "DOMINICANOS"     -> gratis
@@ -30,7 +30,11 @@ import requests
 # ---------- CONFIGURACIÓN ----------
 JSON_PATH = Path("tvdominicana.json")
 
-URL_REMOTA_M3U = "https://raw.githubusercontent.com/TVPRO20/Megatv23/master/tv23.m3u"
+# ✅ Lista de todas las fuentes M3U desde donde se agregarán canales
+URLS_REMOTAS_M3U = [
+    "https://raw.githubusercontent.com/TVPRO20/Megatv23/master/tv23.m3u",
+    "https://raw.githubusercontent.com/NESTOR145/miscanalesdetv/refs/heads/main/todosmiscanales.m3u",
+]
 
 TIMEOUT = 15                    # segundos por intento
 REINTENTOS_POR_ENLACE = 2       # intentos por canal
@@ -212,35 +216,38 @@ def validar_canal(canal):
 # ---------- MAIN ----------
 def main() -> None:
     log("=" * 60)
-    log("AGREGAR CANALES ONLINE DESDE LISTA REMOTA")
+    log("AGREGAR CANALES ONLINE DESDE MÚLTIPLES LISTAS M3U")
     log("=" * 60)
 
     json_actual = cargar_json(JSON_PATH)
     log(f"Canales en el JSON actual: {len(json_actual)}")
 
-    contenido = descargar_m3u(URL_REMOTA_M3U)
-    if not contenido:
-        log("No se pudo obtener la lista. Se conserva el JSON sin cambios.")
-        sys.exit(0)
+    todos_los_candidatos = []
 
-    canales_m3u = parsear_m3u(contenido)
-    log(f"Canales encontrados en el M3U: {len(canales_m3u)}")
+    # ✅ Iterar sobre cada URL configurada
+    for url_remota in URLS_REMOTAS_M3U:
+        contenido = descargar_m3u(url_remota)
+        if contenido:
+            canales_m3u = parsear_m3u(contenido)
+            log(f"Canales encontrados en {url_remota}: {len(canales_m3u)}")
+            todos_los_candidatos.extend(canales_m3u)
 
-    if not canales_m3u:
-        log("El M3U no contiene canales. Nada que hacer.")
+    if not todos_los_candidatos:
+        log("Ninguna lista devolvió canales. Nada que hacer.")
         return
 
+    # Filtrar los que no existen ya (por URL) y deduplicar internos entre las listas
     urls_existentes = {c.get("url") for c in json_actual if c.get("url")}
     vistos = set()
     candidatos = []
-    for c in canales_m3u:
+    for c in todos_los_candidatos:
         u = c.get("url")
         if not u or u in urls_existentes or u in vistos:
             continue
         vistos.add(u)
         candidatos.append(c)
 
-    log(f"Canales nuevos por validar: {len(candidatos)}")
+    log(f"Canales nuevos únicos por validar: {len(candidatos)}")
 
     if not candidatos:
         log("No hay canales nuevos. Nada que agregar.")
