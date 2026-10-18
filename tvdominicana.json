@@ -7072,5 +7072,17 @@
     "logo": "",
     "url": "https://5ff3d9babae13.streamlock.net/8016/8016/playlist.m3u8",
     "group-title": "PREMIUM"
+  },
+  {
+    "name": "Soy Plancha TV CR",
+    "logo": "https://i2.paste.pics/ade26f32ba4868798ef1593a34e57ef7.png",
+    "url": "https://59ef525c24caa.streamlock.net/vmtv/soyplancha/playlist.m3u8",
+    "group-title": "PREMIUM"
+  },
+  {
+    "name": "CONTROVERSIA TV",
+    "logo": "https://i.postimg.cc/T3hQ8Y3P/CONTROVERSIA-TV.jpg",
+    "url": "https://live.obslivestream.com/controversiatv/index.m3u8",
+    "group-title": "PREMIUM"
   }
 ]
