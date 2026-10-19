@@ -7072,5 +7072,41 @@
     "logo": "https://i.postimg.cc/G3qqJkjy/AGUACATE-TV.jpg",
     "url": "https://streamtv.intervenhosting.net:3040/live/aguacatetvbqtolive.m3u8?WebM3UCL",
     "group-title": "PREMIUM"
+  },
+  {
+    "name": "Video Tour Channel CR",
+    "logo": "https://lh3.googleusercontent.com/-QUz4UviUPiE/X3YnewzIm7I/AAAAAAAA6Ho/xpUvyAvSX6Qj0Lvl8qhuZnDdz9VPZWy4QCK8BGAsYHg/s0/2020-10-01.png",
+    "url": "http://k4.usastreams.com/videotour/videotour/playlist.m3u8",
+    "group-title": "PREMIUM"
+  },
+  {
+    "name": "TIV Television (720p)",
+    "logo": "",
+    "url": "https://videohd.live:19360/8008/8008.m3u8",
+    "group-title": "PREMIUM"
+  },
+  {
+    "name": "MORRO TV",
+    "logo": "https://i.postimg.cc/tC8MF28C/MORRO-TV.png",
+    "url": "https://cdnfox.hostlagarto.com/morrotv/index.m3u8",
+    "group-title": "DOMINICANOS"
+  },
+  {
+    "name": "SOMOS TV",
+    "logo": "https://i.postimg.cc/nLB3vgdF/SOMOS-TV.png",
+    "url": "https://vcp3.myplaytv.com/somostv/somostv/chunklist_w2076538066.m3u8?WebM3UCL",
+    "group-title": "PREMIUM"
+  },
+  {
+    "name": "7 TELEVALECIA",
+    "logo": "https://i.postimg.cc/nrfrP1BM/TELEVALENCIA.png",
+    "url": "https://play.cdn.enetres.net/9E9557EFCEBB43A89CEC8FBD3C500247022/028/playlist.m3u8",
+    "group-title": "PREMIUM"
+  },
+  {
+    "name": "VTV 32",
+    "logo": "https://i.postimg.cc/2jP3QM71/VTV-32.jpg",
+    "url": "https://cnn.livestreaminggroup.info:3507/live/vtv32live.m3u8",
+    "group-title": "DOMINICANOS"
   }
 ]
