@@ -78,6 +78,18 @@
     "group-title": "DOMINICANOS"
   },
   {
+    "name": "ANTENA 7",
+    "logo": "https://i.postimg.cc/pXjLGr1x/ANTENA-LATINA.png",
+    "url": "https://hls.tvabierta.net/hls/007.m3u8",
+    "group-title": "DOMINICANOS"
+  },
+  {
+    "name": "ANTENA 21",
+    "logo": "https://i.postimg.cc/pXjLGr1x/ANTENA-LATINA.png",
+    "url": "https://hls.tvabierta.net/hls/021.m3u8",
+    "group-title": "DOMINICANOS"
+  },
+  {
     "name": "TV AGRO",
     "logo": "https://i.postimg.cc/C1fw5VSv/TVAGRO.jpg",
     "url": "http://181.78.8.199:8000/play/a0fj/index.m3u8",
@@ -1149,6 +1161,12 @@
     "name": "REINO INFANTIL",
     "logo": "https://i.postimg.cc/DyCXTctS/REINO-INFANTIL.jpg",
     "url": "https://www.khuwemultimedia.com/hls/reinoinfantiltv/reinoinfantiltv.m3u8",
+    "group-title": "ANIME-INFANTIL"
+  },
+  {
+    "name": "TOM Y JERRY 24/7",
+    "logo": "https://i.postimg.cc/sxmmRQSv/PBS-KIDS.png",
+    "url": "https://live20.bozztv.com/giatvplayout7/giatv-208314/tracks-v1a1/mono.ts.m3u8",
     "group-title": "ANIME-INFANTIL"
   },
   {
