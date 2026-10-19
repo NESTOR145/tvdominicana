@@ -2550,12 +2550,6 @@
     "group-title": "PREMIUM"
   },
   {
-    "name": "AMAZONIA TV",
-    "logo": "https://i.postimg.cc/0NS9WLCf/AMAZONIA-TV.jpg",
-    "url": "https://servilive.com:3199/live/amazoniatvlive.m3u8",
-    "group-title": "PREMIUM"
-  },
-  {
     "name": "COSMOS TV",
     "logo": "https://i.postimg.cc/P53M37qL/COSMOS-TV.jpg",
     "url": "https://video.hostingcaaguazu.com:19360/cosmostv/cosmostv.m3u8",
