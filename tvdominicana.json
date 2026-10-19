@@ -1044,12 +1044,6 @@
     "group-title": "DOMINICANOS"
   },
   {
-    "name": "DIGITAL VISION 63",
-    "logo": "https://i.imgur.com/FQkLIMR.png",
-    "url": "https://ss2.tvrdomi.com:1936/digitalvision/digitalvision/playlist.m3u8",
-    "group-title": "DOMINICANOS"
-  },
-  {
     "name": "COTUBANAMA DIGITAL",
     "logo": "https://i.postimg.cc/CKQLczPm/COTUBANAMA-DIGITAL.jpg",
     "url": "https://host.streamingnation.live/p/3588/hybrid/play.m3u8",
@@ -1851,12 +1845,6 @@
     "name": "MTV CLIPES 1",
     "logo": "https://i.postimg.cc/LXFCTcLD/MTV-CLIPES-1.jpg",
     "url": "http://rtmp.one.by:1200",
-    "group-title": "PREMIUM"
-  },
-  {
-    "name": "CADENA ELITE",
-    "logo": "https://i.postimg.cc/gkGSczxp/CADENA-ELITE.png",
-    "url": "https://cloudvideo.servers10.com:8081/8004/index.m3u8",
     "group-title": "PREMIUM"
   },
   {
