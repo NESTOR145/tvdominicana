@@ -318,12 +318,6 @@
     "group-title": "DOMINICANOS"
   },
   {
-    "name": "CTT CANAL 49",
-    "logo": "https://i.postimg.cc/1tTjMB4r/CCT-49.jpg",
-    "url": "https://cdnfox.hostlagarto.com/cct49/index.m3u8",
-    "group-title": "DOMINICANOS"
-  },
-  {
     "name": "PRONEMSTV",
     "logo": "https://i.postimg.cc/Nj4CZB5K/PRONEMSTV.jpg",
     "url": "https://cdnfox.hostlagarto.com/pronemstv/index.m3u8",
@@ -741,12 +735,6 @@
     "name": "VILLA ALTAGRACIA TV",
     "logo": "https://i.postimg.cc/Pf2hQx2x/VILLA-ALTAGRACIA-TV.jpg",
     "url": "https://cdn.streamrd.cloud/live/ch_loekrwrl.m3u8",
-    "group-title": "DOMINICANOS"
-  },
-  {
-    "name": "MARKA TV RD",
-    "logo": "https://i.postimg.cc/DZM5RRHm/MARCA-TV.png",
-    "url": "http://200.7.219.221:8088/live/livetv/index.m3u8",
     "group-title": "DOMINICANOS"
   },
   {
