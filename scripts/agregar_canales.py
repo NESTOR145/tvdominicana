@@ -7,37 +7,18 @@ Descarga múltiples listas M3U remotas, valida cada canal (HLS real) y agrega a
 tvdominicana.json SOLO los canales que estén online y que aún no existan
 (comparando por URL).
 
-VALIDACIÓN MEJORADA (Opción B):
-  - Si la URL es HLS (.m3u8 / mpegurl / contiene #EXTM3U):
-      1. Descarga el master playlist.
-      2. Si es master, sigue el PRIMER variant.
-      3. Descarga el variant y verifica el PRIMER chunk (HEAD o GET).
-      → Descarta playlists vacías, HTML de error, tokens expirados, etc.
-  - Si la URL no es HLS (mp4, ts, etc.): chequeo ligero de status + bytes.
-  - Fallback: acepta si el servidor devolvió algún byte válido.
+La app consume el JSON desde GitHub y espera SOLO 3 categorías en group-title:
+  - DOMINICANOS
+  - PREMIUM
+  - ANIME-INFANTIL
 
-Clasificación final (2 gratis + 9 premium):
-  GRATIS:
-    - ANIME-INFANTIL  (Kids, Animation, Cartoon, Children, Preschool, Baby, Toddler...)
-    - DOMINICANOS     (tvg-id .do / group-title RD / nombre dominicano)
-  PREMIUM (subdividido por género):
-    - PELICULAS      (Movies, Classic)
-    - SERIES         (Series)
-    - NOTICIAS       (News)
-    - DEPORTES       (Sports)
-    - MUSICA         (Music)
-    - RELIGION       (Religious)
-    - DOCUMENTALES   (Documentary, Science)
-    - COMEDIA        (Comedy)
-    - VARIEDADES     (todo lo demás: General, Entertainment, Family, Shop, Auto, Weather...)
+Además, cada canal nuevo lleva un campo extra "genre" con su género real
+(PELICULAS, SERIES, NOTICIAS, DEPORTES, MUSICA, RELIGION, DOCUMENTALES,
+COMEDIA, VARIEDADES) para que los canales queden agrupados por género dentro
+del JSON y, si algún día la app quiere, pueda usarlo para sub-filtros.
 
-Garantías:
-  - NO toca estado_tvdominicana.json.
-  - NO toca canales_eliminados.log.
-  - NO elimina ningún canal existente.
-  - NO modifica canales ya presentes en el JSON.
-  - Si todas las listas remotas fallan, sale sin modificar el JSON.
-  - Si un canal nuevo está offline, no se agrega.
+Los canales nuevos se ordenan por género antes de agregarse al JSON.
+Los canales ya existentes NO se tocan ni se reordenan.
 """
 
 import json
@@ -59,13 +40,12 @@ URLS_REMOTAS_M3U = [
     "https://iptv-org.github.io/iptv/countries/do.m3u",
 ]
 
-# --- Ajustes optimizados para Opción B ---
-TIMEOUT = 8                    # canales sanos responden <3s
-REINTENTOS_POR_ENLACE = 1      # 1 intento (Opción B ya valida 3 capas)
+TIMEOUT = 8
+REINTENTOS_POR_ENLACE = 1
 PAUSA_ENTRE_REINTENTOS = 1
-MAX_HILOS = 50                 # más que 30 sin floodear hosts
-MAX_PROFUNDIDAD_HLS = 2        # master → variant → segmentos
-BYTES_LECTURA_INICIAL = 16384  # 16 KB para detectar cabeceras HLS
+MAX_HILOS = 50
+MAX_PROFUNDIDAD_HLS = 2
+BYTES_LECTURA_INICIAL = 16384
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -74,30 +54,45 @@ USER_AGENT = (
 )
 # -----------------------------------
 
-# ---- Categorías gratis (no se tocan) ----
+# ---- 3 categorías que entiende la app ----
 CAT_DOMINICANOS = "DOMINICANOS"
 CAT_ANIME_INFANTIL = "ANIME-INFANTIL"
-FREE_CATEGORIES = {CAT_DOMINICANOS, CAT_ANIME_INFANTIL}
+CAT_PREMIUM = "PREMIUM"
 
-# ---- Categorías premium (subdivididas por género) ----
-CAT_PELICULAS = "PELICULAS"
-CAT_SERIES = "SERIES"
-CAT_NOTICIAS = "NOTICIAS"
-CAT_DEPORTES = "DEPORTES"
-CAT_MUSICA = "MUSICA"
-CAT_RELIGION = "RELIGION"
-CAT_DOCUMENTALES = "DOCUMENTALES"
-CAT_COMEDIA = "COMEDIA"
-CAT_VARIEDADES = "VARIEDADES"   # ← fallback de todo lo demás
+# ---- Géneros reales (van al campo "genre") ----
+GEN_PELICULAS = "PELICULAS"
+GEN_SERIES = "SERIES"
+GEN_NOTICIAS = "NOTICIAS"
+GEN_DEPORTES = "DEPORTES"
+GEN_MUSICA = "MUSICA"
+GEN_RELIGION = "RELIGION"
+GEN_DOCUMENTALES = "DOCUMENTALES"
+GEN_COMEDIA = "COMEDIA"
+GEN_VARIEDADES = "VARIEDADES"
 
-# Palabras clave para detectar Kids/Anime (gratis)
+# Orden en que se agruparán los canales nuevos dentro del JSON
+GENRE_ORDER = {
+    CAT_DOMINICANOS: 0,
+    CAT_ANIME_INFANTIL: 1,
+    GEN_PELICULAS: 2,
+    GEN_SERIES: 3,
+    GEN_NOTICIAS: 4,
+    GEN_DEPORTES: 5,
+    GEN_MUSICA: 6,
+    GEN_RELIGION: 7,
+    GEN_DOCUMENTALES: 8,
+    GEN_COMEDIA: 9,
+    GEN_VARIEDADES: 10,
+}
+
+# Palabras clave para detectar Kids/Anime
 KIDS_KEYWORDS = {
     "ANIME-INFANTIL", "ANIME INFANTIL", "INFANTIL", "KIDS",
     "DIBUJOS ANIMADOS", "ANIME", "CARTOONS", "CARTOON",
     "ANIMATION", "CHILDREN", "PRESCHOOL", "BABY", "TODDLER", "TODDLERS",
 }
 
-# Palabras clave para detectar Dominicanos (gratis)
+# Palabras clave para detectar Dominicanos
 DOM_GROUP_KEYWORDS = {
     "DOMINICANOS", "DOMINICANA", "DOMINICANO", "RD",
     "REPUBLICA DOMINICANA", "REPÚBLICA DOMINICANA",
@@ -105,60 +100,65 @@ DOM_GROUP_KEYWORDS = {
 
 DOM_NAME_HINTS = ("dominicana", "dominicano", "quisqueya")
 
-# MAPEO DE GÉNEROS: group-title de la M3U → categoría final
+# Mapeo group-title de la M3U → género real
 GENRE_MAP = {
-    "MOVIES":       CAT_PELICULAS,
-    "CLASSIC":      CAT_PELICULAS,
-    "PELICULAS":    CAT_PELICULAS,
-    "CINE":         CAT_PELICULAS,
-    "SERIES":       CAT_SERIES,
-    "NOVELAS":      CAT_SERIES,
-    "NEWS":         CAT_NOTICIAS,
-    "NOTICIAS":     CAT_NOTICIAS,
-    "SPORTS":       CAT_DEPORTES,
-    "DEPORTES":     CAT_DEPORTES,
-    "MUSIC":        CAT_MUSICA,
-    "MUSICA":       CAT_MUSICA,
-    "RELIGIOUS":    CAT_RELIGION,
-    "RELIGION":     CAT_RELIGION,
-    "DOCUMENTARY":  CAT_DOCUMENTALES,
-    "DOCUMENTALES": CAT_DOCUMENTALES,
-    "SCIENCE":      CAT_DOCUMENTALES,
-    "COMEDY":       CAT_COMEDIA,
-    "COMEDIA":      CAT_COMEDIA,
+    "MOVIES":       GEN_PELICULAS,
+    "CLASSIC":      GEN_PELICULAS,
+    "PELICULAS":    GEN_PELICULAS,
+    "CINE":         GEN_PELICULAS,
+    "SERIES":       GEN_SERIES,
+    "NOVELAS":      GEN_SERIES,
+    "NEWS":         GEN_NOTICIAS,
+    "NOTICIAS":     GEN_NOTICIAS,
+    "SPORTS":       GEN_DEPORTES,
+    "DEPORTES":     GEN_DEPORTES,
+    "MUSIC":        GEN_MUSICA,
+    "MUSICA":       GEN_MUSICA,
+    "RELIGIOUS":    GEN_RELIGION,
+    "RELIGION":     GEN_RELIGION,
+    "DOCUMENTARY":  GEN_DOCUMENTALES,
+    "DOCUMENTALES": GEN_DOCUMENTALES,
+    "SCIENCE":      GEN_DOCUMENTALES,
+    "COMEDY":       GEN_COMEDIA,
+    "COMEDIA":      GEN_COMEDIA,
 }
 
 
-def normalizar_categoria(valor: str, tvg_id: str = "", nombre: str = "") -> str:
+def clasificar(valor: str, tvg_id: str = "", nombre: str = ""):
+    """
+    Devuelve (group_title, genre).
+      - DOMINICANOS / ANIME-INFANTIL → group_title = esa categoría, genre = igual
+      - Todo lo demás → group_title = PREMIUM, genre = género real
+    """
     v = (valor or "").strip().upper()
     tid = (tvg_id or "").strip().lower()
     nom = (nombre or "").strip().lower()
 
     partes = [p.strip() for p in v.split(";") if p.strip()]
 
-    # 1) Kids/Anime/Infantil -> GRATIS
+    # 1) Kids/Anime/Infantil → ANIME-INFANTIL
     if any(p in KIDS_KEYWORDS for p in partes):
-        return CAT_ANIME_INFANTIL
+        return CAT_ANIME_INFANTIL, CAT_ANIME_INFANTIL
 
-    # 2) Dominicano por tvg-id (.do@... o termina en .do) -> GRATIS
+    # 2) Dominicano por tvg-id
     if ".do@" in tid or tid.endswith(".do"):
-        return CAT_DOMINICANOS
+        return CAT_DOMINICANOS, CAT_DOMINICANOS
 
-    # 3) Dominicano por group-title explícito -> GRATIS
+    # 3) Dominicano por group-title
     if any(p in DOM_GROUP_KEYWORDS for p in partes):
-        return CAT_DOMINICANOS
+        return CAT_DOMINICANOS, CAT_DOMINICANOS
 
-    # 4) Dominicano por nombre -> GRATIS
+    # 4) Dominicano por nombre
     if any(h in nom for h in DOM_NAME_HINTS):
-        return CAT_DOMINICANOS
+        return CAT_DOMINICANOS, CAT_DOMINICANOS
 
-    # 5) Género por group-title (primer match gana)
+    # 5) Género real → PREMIUM + genre
     for parte in partes:
         if parte in GENRE_MAP:
-            return GENRE_MAP[parte]
+            return CAT_PREMIUM, GENRE_MAP[parte]
 
-    # 6) Fallback
-    return CAT_VARIEDADES
+    # 6) Fallback → PREMIUM + VARIEDADES
+    return CAT_PREMIUM, GEN_VARIEDADES
 
 
 def log(msg: str) -> None:
@@ -271,10 +271,6 @@ def _headers_para(canal_headers) -> dict:
 
 
 def _verificar_chunk(url_chunk: str, headers: dict) -> bool:
-    """
-    Verifica que el primer segmento HLS exista.
-    Intenta HEAD; si el servidor no lo soporta, cae a GET con stream.
-    """
     try:
         r = requests.head(url_chunk, headers=headers, timeout=TIMEOUT, allow_redirects=True)
         if r.status_code < 400:
@@ -309,14 +305,8 @@ def _verificar_chunk(url_chunk: str, headers: dict) -> bool:
 
 
 def _procesar_hls(url_base: str, texto: str, headers: dict, profundidad: int) -> bool:
-    """
-    Procesa contenido HLS:
-      - Si es master (#EXT-X-STREAM-INF): sigue el primer variant.
-      - Si es segmentos (#EXTINF): verifica el primer chunk.
-      - Si no es ninguno: playlist vacía → inválido.
-    """
     if profundidad > MAX_PROFUNDIDAD_HLS:
-        return True  # demasiado profundo: no rechazar por precaución
+        return True
 
     lineas = [l.strip() for l in texto.splitlines() if l.strip()]
     tiene_master = any(l.startswith("#EXT-X-STREAM-INF") for l in lineas)
@@ -361,17 +351,10 @@ def _procesar_hls(url_base: str, texto: str, headers: dict, profundidad: int) ->
                 break
         return False
 
-    # m3u8 con #EXTM3U pero sin segmentos ni variants → vacía/muerta
     return False
 
 
 def intento_unico(url: str, headers) -> bool:
-    """
-    Un intento de validación con Opción B:
-      1. GET (stream) para detectar content-type y bytes.
-      2. Si parece HLS → validación master→variant→chunk.
-      3. Si no es HLS → chequeo ligero (status + bytes no vacíos).
-    """
     h = _headers_para(headers)
     try:
         r = requests.get(url, headers=h, timeout=TIMEOUT, stream=True, allow_redirects=True)
@@ -398,7 +381,6 @@ def intento_unico(url: str, headers) -> bool:
         if parece_hls:
             return _procesar_hls(url, texto, h, 0)
 
-        # No HLS: aceptar si devolvió algún byte o content-type de video/audio
         if chunk:
             return True
         if any(x in ct for x in ("video/", "audio/", "application/octet-stream", "mp2t")):
@@ -433,7 +415,7 @@ def validar_canal(canal):
 
 def main() -> None:
     log("=" * 60)
-    log("AGREGAR CANALES ONLINE (validación HLS mejorada)")
+    log("AGREGAR CANALES ONLINE (3 categorías + campo genre)")
     log("=" * 60)
 
     json_actual = cargar_json(JSON_PATH)
@@ -493,22 +475,41 @@ def main() -> None:
         log("No se agregó ningún canal nuevo.")
         return
 
-    # Clasificar y limpiar campo interno _tvg_id
+    # Clasificar: asigna group-title (3 categorías) y genre (género real)
     for c in online:
         cat_original = c.get("group-title", "")
         tvg = c.pop("_tvg_id", "")
         nombre = c.get("name", "")
-        c["group-title"] = normalizar_categoria(cat_original, tvg, nombre)
+        group_title, genre = clasificar(cat_original, tvg, nombre)
+        c["group-title"] = group_title
+        c["genre"] = genre
 
-    # Reporte por categoría
-    resumen = {}
+    # Ordenar los nuevos por género (orden fijo) y luego por nombre
+    online.sort(key=lambda c: (
+        GENRE_ORDER.get(c.get("genre", GEN_VARIEDADES), 99),
+        c.get("name", "").lower(),
+    ))
+
+    # Resumen por categoría (3)
+    resumen_cat = {}
     for c in online:
         cat = c["group-title"]
-        resumen[cat] = resumen.get(cat, 0) + 1
-    log("Resumen por categoría:")
-    for cat, n in sorted(resumen.items(), key=lambda x: -x[1]):
+        resumen_cat[cat] = resumen_cat.get(cat, 0) + 1
+    log("Resumen por group-title (categoría app):")
+    for cat, n in sorted(resumen_cat.items(), key=lambda x: -x[1]):
         log(f"  {cat}: {n}")
 
+    # Resumen por género
+    resumen_gen = {}
+    for c in online:
+        g = c["genre"]
+        resumen_gen[g] = resumen_gen.get(g, 0) + 1
+    log("Resumen por genre:")
+    for g, n in sorted(resumen_gen.items(),
+                       key=lambda x: GENRE_ORDER.get(x[0], 99)):
+        log(f"  {g}: {n}")
+
+    # Agregar al JSON respetando el orden: existentes primero, nuevos después
     json_actual.extend(online)
     guardar_json(JSON_PATH, json_actual)
     log(f"JSON actualizado. Total de canales: {len(json_actual)}")
