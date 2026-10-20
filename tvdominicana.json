@@ -7114,5 +7114,11 @@
     "logo": "https://i.postimg.cc/DZM5RRHm/MARCA-TV.png",
     "url": "http://200.7.219.221:8088/live/livetv/index.m3u8",
     "group-title": "DOMINICANOS"
+  },
+  {
+    "name": "CADENA ELITE",
+    "logo": "https://i.postimg.cc/gkGSczxp/CADENA-ELITE.png",
+    "url": "https://cloudvideo.servers10.com:8081/8004/index.m3u8",
+    "group-title": "PREMIUM"
   }
 ]
