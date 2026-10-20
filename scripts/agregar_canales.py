@@ -6,16 +6,19 @@ agregar_canales.py
 Descarga múltiples listas M3U remotas, valida cada canal y agrega a tvdominicana.json
 SOLO los canales que estén online y que aún no existan (comparando por URL).
 
+Clasificación de group-title (solo 3 valores posibles):
+  1) Anime/Infantil/Kids/Animation/Cartoon/Children/Preschool/Baby/Toddler -> ANIME-INFANTIL (gratis)
+  2) tvg-id dominicano (.do@... o termina en .do)                          -> DOMINICANOS    (gratis)
+  3) group-title explícito dominicano (DOMINICANOS, RD, REPUBLICA DOMINICANA...) -> DOMINICANOS (gratis)
+  4) nombre con "dominicana/dominicano/quisqueya" (fallback seguro)        -> DOMINICANOS    (gratis)
+  5) Todo lo demás                                                          -> PREMIUM
+
 Garantías:
   - NO toca estado_tvdominicana.json.
   - NO toca canales_eliminados.log.
   - NO elimina ningún canal existente.
   - Si todas las listas remotas fallan, sale sin modificar el JSON.
   - Si un canal nuevo está offline, no se agrega.
-  - Cada canal nuevo se agrega con su campo 'group-title' normalizado:
-      * "DOMINICANOS"     -> gratis
-      * "ANIME-INFANTIL"  -> gratis
-      * "PREMIUM"         -> premium (cualquier otra categoría)
 """
 
 import json
@@ -30,16 +33,16 @@ import requests
 # ---------- CONFIGURACIÓN ----------
 JSON_PATH = Path("tvdominicana.json")
 
-# ✅ Lista de todas las fuentes M3U desde donde se agregarán canales
 URLS_REMOTAS_M3U = [
     "https://raw.githubusercontent.com/TVPRO20/Megatv23/master/tv23.m3u",
     "https://raw.githubusercontent.com/NESTOR145/miscanalesdetv/refs/heads/main/todosmiscanales.m3u",
+    "https://iptv-org.github.io/iptv/countries/do.m3u",
 ]
 
-TIMEOUT = 15                    # segundos por intento
-REINTENTOS_POR_ENLACE = 2       # intentos por canal
-PAUSA_ENTRE_REINTENTOS = 2      # segundos entre intentos
-MAX_HILOS = 30                  # validaciones simultáneas
+TIMEOUT = 15
+REINTENTOS_POR_ENLACE = 2
+PAUSA_ENTRE_REINTENTOS = 2
+MAX_HILOS = 30
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -48,41 +51,57 @@ USER_AGENT = (
 )
 # -----------------------------------
 
-# ---------- CATEGORÍAS VÁLIDAS ----------
 CAT_DOMINICANOS = "DOMINICANOS"
 CAT_ANIME_INFANTIL = "ANIME-INFANTIL"
 CAT_PREMIUM = "PREMIUM"
 
 FREE_CATEGORIES = {CAT_DOMINICANOS, CAT_ANIME_INFANTIL}
 
+KIDS_KEYWORDS = {
+    "ANIME-INFANTIL", "ANIME INFANTIL", "INFANTIL", "KIDS",
+    "DIBUJOS ANIMADOS", "ANIME", "CARTOONS", "CARTOON",
+    "ANIMATION", "CHILDREN", "PRESCHOOL", "BABY", "TODDLER", "TODDLERS",
+}
 
-def normalizar_categoria(valor: str) -> str:
-    """
-    Normaliza el group-title recibido a uno de los 3 valores canónicos.
-    Solo DOMINICANOS y ANIME-INFANTIL son gratis. Todo lo demás es PREMIUM.
-    """
-    if not valor:
-        return CAT_PREMIUM
+DOM_GROUP_KEYWORDS = {
+    "DOMINICANOS", "DOMINICANA", "DOMINICANO", "RD",
+    "REPUBLICA DOMINICANA", "REPÚBLICA DOMINICANA",
+}
 
-    v = valor.strip().upper()
+DOM_NAME_HINTS = ("dominicana", "dominicano", "quisqueya")
 
-    if v in ("DOMINICANOS", "DOMINICANA", "RD", "REPUBLICA DOMINICANA",
-             "REPÚBLICA DOMINICANA"):
-        return CAT_DOMINICANOS
 
-    if v in ("ANIME-INFANTIL", "ANIME INFANTIL", "INFANTIL", "KIDS",
-             "DIBUJOS ANIMADOS", "ANIME", "CARTOONS", "CARTOON"):
+def normalizar_categoria(valor: str, tvg_id: str = "", nombre: str = "") -> str:
+    v = (valor or "").strip().upper()
+    tid = (tvg_id or "").strip().lower()
+    nom = (nombre or "").strip().lower()
+
+    partes = [p.strip() for p in v.split(";") if p.strip()]
+
+    # 1) Anime / Infantil / Kids -> gratis
+    if any(p in KIDS_KEYWORDS for p in partes):
         return CAT_ANIME_INFANTIL
 
+    # 2) Dominicano por tvg-id (.do@... o termina en .do)
+    if ".do@" in tid or tid.endswith(".do"):
+        return CAT_DOMINICANOS
+
+    # 3) Dominicano por group-title explícito
+    if any(p in DOM_GROUP_KEYWORDS for p in partes):
+        return CAT_DOMINICANOS
+
+    # 4) Fallback por nombre
+    if any(h in nom for h in DOM_NAME_HINTS):
+        return CAT_DOMINICANOS
+
+    # 5) Todo lo demás -> PREMIUM
     return CAT_PREMIUM
 
 
-# ---------- LOG ----------
 def log(msg: str) -> None:
     print(msg, flush=True)
 
 
-# ---------- JSON ----------
 def cargar_json(path: Path):
     if not path.exists():
         log(f"AVISO: no existe {path}. Se creará al final.")
@@ -104,7 +123,6 @@ def guardar_json(path: Path, data) -> None:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
-# ---------- DESCARGA M3U ----------
 def descargar_m3u(url: str):
     try:
         log(f"→ Descargando lista M3U: {url}")
@@ -118,7 +136,6 @@ def descargar_m3u(url: str):
         return None
 
 
-# ---------- PARSER M3U ----------
 RE_ATTR = re.compile(r'([\w-]+)="([^"]*)"')
 
 
@@ -147,6 +164,7 @@ def parsear_m3u(contenido: str):
                 "name": nombre,
                 "logo": atributos.get("tvg-logo", ""),
                 "url": "",
+                "_tvg_id": atributos.get("tvg-id", ""),  # interno
             }
             group = atributos.get("group-title", "")
             if group:
@@ -176,7 +194,6 @@ def parsear_m3u(contenido: str):
     return canales
 
 
-# ---------- VALIDACIÓN ----------
 def intento_unico(url: str, headers) -> bool:
     h = {"User-Agent": USER_AGENT}
     if isinstance(headers, dict):
@@ -213,7 +230,6 @@ def validar_canal(canal):
     return None
 
 
-# ---------- MAIN ----------
 def main() -> None:
     log("=" * 60)
     log("AGREGAR CANALES ONLINE DESDE MÚLTIPLES LISTAS M3U")
@@ -224,7 +240,6 @@ def main() -> None:
 
     todos_los_candidatos = []
 
-    # ✅ Iterar sobre cada URL configurada
     for url_remota in URLS_REMOTAS_M3U:
         contenido = descargar_m3u(url_remota)
         if contenido:
@@ -236,7 +251,6 @@ def main() -> None:
         log("Ninguna lista devolvió canales. Nada que hacer.")
         return
 
-    # Filtrar los que no existen ya (por URL) y deduplicar internos entre las listas
     urls_existentes = {c.get("url") for c in json_actual if c.get("url")}
     vistos = set()
     candidatos = []
@@ -276,12 +290,12 @@ def main() -> None:
         log("No se agregó ningún canal nuevo.")
         return
 
-    # Normalizar la categoría (group-title) de cada canal nuevo
     for c in online:
         cat_original = c.get("group-title", "")
-        c["group-title"] = normalizar_categoria(cat_original)
+        tvg = c.pop("_tvg_id", "")
+        nombre = c.get("name", "")
+        c["group-title"] = normalizar_categoria(cat_original, tvg, nombre)
 
-    # Merge y guardado
     json_actual.extend(online)
     guardar_json(JSON_PATH, json_actual)
     log(f"JSON actualizado. Total de canales: {len(json_actual)}")
