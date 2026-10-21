@@ -6,7 +6,7 @@ agregar_canales.py
 Descarga múltiples listas M3U remotas, valida cada canal con validación REAL
 (Content-Type + primeros bytes + detección de HTML/JSON de error) y agrega a
 tvdominicana.json SOLO los canales que estén realmente online y que aún no
-existan (comparando por URL normalizada).
+existan (comparando por URL normalizada Y nombre normalizado).
 
 Reordena TODO el JSON por categoría:
     DOMINICANOS -> ANIME-INFANTIL -> PREMIUM
@@ -18,6 +18,7 @@ Garantías:
   - NO elimina ningún canal existente (solo lo reordena).
   - Si todas las listas remotas fallan, sale sin modificar el JSON.
   - Si un canal nuevo está offline (o devuelve HTML/JSON de error), NO se agrega.
+  - Si un canal ya existe por URL o por nombre (normalizados), NO se agrega.
 """
 
 import sys
@@ -35,6 +36,7 @@ from canales_common import (
     guardar_json_atomico,
     log,
     normalizar_categoria,
+    normalizar_nombre,
     normalizar_url,
     parsear_m3u,
     probar_enlace,
@@ -100,21 +102,49 @@ def main() -> None:
         log("Ninguna lista devolvió canales. Nada que hacer.")
         return
 
-    # Deduplicación por URL normalizada (evita http vs https, trailing slash, etc.)
+    # ---- Deduplicación por URL normalizada Y nombre normalizado (+ categoría) ----
+    # - URL normalizada: evita duplicados por http/https, www, mayúsculas, etc.
+    # - Nombre normalizado + categoría: evita duplicados como
+    #     "Constanza TV" / "Constanza TV HD" / "CONSTANZA TV (RD)".
+    #   Incluimos la categoría para no fusionar canales homónimos de distinta categoría
+    #   (p. ej., "Canal 5" dominicano vs "Canal 5" premium).
     urls_existentes = {normalizar_url(c.get("url", "")) for c in json_actual if c.get("url")}
-    vistos = set()
+    claves_nombre_existentes = set()
+    for c in json_actual:
+        nom = normalizar_nombre(c.get("name", ""))
+        if nom:
+            claves_nombre_existentes.add((nom, c.get("group-title", "")))
+
+    vistos_url = set()
+    vistos_nombre = set()
     candidatos = []
+    descartados_dup = 0
     for c in todos_los_candidatos:
         u = c.get("url")
         if not u:
             continue
         un = normalizar_url(u)
-        if un in urls_existentes or un in vistos:
+        nom = normalizar_nombre(c.get("name", ""))
+        cat = c.get("group-title", "")
+
+        # Duplicado por URL normalizada
+        if un in urls_existentes or un in vistos_url:
+            descartados_dup += 1
             continue
-        vistos.add(un)
+
+        # Duplicado por nombre normalizado + categoría
+        clave_nombre = (nom, cat) if nom else None
+        if clave_nombre and (clave_nombre in claves_nombre_existentes or clave_nombre in vistos_nombre):
+            descartados_dup += 1
+            continue
+
+        vistos_url.add(un)
+        if clave_nombre:
+            vistos_nombre.add(clave_nombre)
         candidatos.append(c)
 
-    log(f"Canales nuevos únicos por validar: {len(candidatos)}")
+    log(f"Canales nuevos únicos por validar: {len(candidatos)} "
+        f"(descartados por duplicado: {descartados_dup})")
     if not candidatos:
         log("No hay canales nuevos. Nada que agregar.")
         return
