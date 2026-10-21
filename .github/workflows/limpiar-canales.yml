@@ -4,6 +4,15 @@ on:
   schedule:
     - cron: '0 */6 * * *'
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Ejecutar en modo DRY_RUN (no modifica nada)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
 
 permissions:
   contents: write
@@ -15,6 +24,8 @@ concurrency:
 jobs:
   limpiar:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
+    if: github.ref == 'refs/heads/main'
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
@@ -27,20 +38,45 @@ jobs:
           python-version: '3.11'
 
       - name: Instalar dependencias
-        run: pip install requests
+        run: pip install "requests==2.32.3"
 
       - name: Ejecutar limpieza
+        env:
+          PYTHONUNBUFFERED: "1"
+          DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}
         run: python scripts/limpiar_canales.py
 
+      - name: Subir log, JSON y estado (siempre)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: limpiar-resultado
+          path: |
+            tvdominicana.json
+            estado_tvdominicana.json
+            canales_eliminados.log
+          if-no-files-found: ignore
+
       - name: Guardar cambios (robusto)
+        if: success() && github.event.inputs.dry_run != 'true'
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git fetch origin main
-          git pull --rebase --autostash origin main || true
+          # Solo añadimos los archivos que este script escribe (defensa en profundidad)
+          FILES=""
+          [ -f tvdominicana.json ] && FILES="$FILES tvdominicana.json"
+          [ -f estado_tvdominicana.json ] && FILES="$FILES estado_tvdominicana.json"
+          [ -f canales_eliminados.log ] && FILES="$FILES canales_eliminados.log"
 
-          git add -A
+          if [ -z "$FILES" ]; then
+            echo "No hay archivos que guardar."
+            exit 0
+          fi
+
+          git add $FILES
 
           if git diff --cached --quiet; then
             echo "Sin cambios que guardar."
@@ -56,7 +92,7 @@ jobs:
             fi
             echo "Push falló. Reintentando con rebase..."
             git fetch origin main
-            git pull --rebase --autostash origin main || true
+            git rebase origin/main || { echo "Conflicto real en rebase. Abortando."; git rebase --abort; exit 1; }
             sleep 5
           done
 
