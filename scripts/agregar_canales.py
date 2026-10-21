@@ -1,7 +1,14 @@
-
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Agrega canales online de fuentes M3U sin duplicar y sin sobrescribir datos válidos."""
+"""
+agregar_canales.py
+------------------
+Descarga listas M3U remotas, valida cada canal con validación REAL y agrega a
+tvdominicana.json SOLO los canales online que aún no existan (por URL normalizada
+o por nombre normalizado + categoría).
+
+Reordena TODO el JSON: DOMINICANOS -> ANIME-INFANTIL -> PREMIUM, A→Z.
+"""
 
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -15,8 +22,6 @@ from canales_common import (
     USER_AGENT,
     cargar_json_seguro,
     clave_orden,
-    clave_dedupe,
-    clave_nombre_categoria,
     guardar_json_atomico,
     log,
     normalizar_categoria,
@@ -26,6 +31,7 @@ from canales_common import (
     probar_enlace,
 )
 
+# ---------- CONFIGURACIÓN ----------
 JSON_PATH = Path("tvdominicana.json")
 
 URLS_REMOTAS_M3U = [
@@ -33,45 +39,29 @@ URLS_REMOTAS_M3U = [
     "https://raw.githubusercontent.com/NESTOR145/miscanalesdetv/refs/heads/main/todosmiscanales.m3u",
     "https://iptv-org.github.io/iptv/countries/do.m3u",
 ]
+# -----------------------------------
 
 
 def descargar_m3u(url: str):
     try:
         log(f"→ Descargando lista M3U: {url}")
-        response = requests.get(
-            url,
-            headers={"User-Agent": USER_AGENT},
-            timeout=TIMEOUT_DESCARGA_M3U,
-        )
-        response.raise_for_status()
-        contenido = response.text
-
-        if not contenido.strip() or "#EXTINF" not in contenido.upper():
-            log(f"  AVISO: la respuesta de {url} no parece una lista M3U.")
-            return None
-
-        log(f"  OK: {len(contenido):,} caracteres recibidos.")
-        return contenido
-
-    except requests.RequestException as exc:
-        log(f"  ERROR descargando lista: {exc}")
+        headers = {"User-Agent": USER_AGENT}
+        r = requests.get(url, headers=headers, timeout=TIMEOUT_DESCARGA_M3U)
+        r.raise_for_status()
+        log(f"  OK: {len(r.text):,} bytes recibidos.")
+        return r.text
+    except requests.RequestException as e:
+        log(f"  ERROR al descargar la lista: {e}")
         return None
 
 
 def validar_canal(canal):
     url = canal.get("url")
-    if not isinstance(url, str) or not url.strip():
+    if not url:
         return None
-
-    return canal if probar_enlace(url, canal.get("headers")) == "ok" else None
-
-
-def canal_valido(c):
-    return (
-        isinstance(c, dict)
-        and isinstance(c.get("name", ""), str)
-        and isinstance(c.get("url", ""), str)
-    )
+    if probar_enlace(url, canal.get("headers")) == "ok":
+        return canal
+    return None
 
 
 def main() -> None:
@@ -79,179 +69,101 @@ def main() -> None:
     log("AGREGAR CANALES ONLINE DESDE MÚLTIPLES LISTAS M3U")
     log("=" * 60)
 
-    try:
-        json_actual = cargar_json_seguro(JSON_PATH, default=[])
-    except (OSError, ValueError) as exc:
-        log(f"ERROR seguro leyendo {JSON_PATH}: {exc}")
+    json_actual = cargar_json_seguro(JSON_PATH, default=[])
+    if json_actual is None:
+        json_actual = []
+    if not isinstance(json_actual, list):
+        log(f"ERROR: {JSON_PATH} no contiene una lista plana.")
         sys.exit(1)
 
-    if not isinstance(json_actual, list) or any(
-        not canal_valido(c) for c in json_actual
-    ):
-        log(
-            f"ERROR: {JSON_PATH} debe ser una lista de objetos "
-            "de canal válidos. No se modifica."
-        )
-        sys.exit(1)
+    log(f"Canales en el JSON actual: {len(json_actual)}")
 
-    log(f"Canales en JSON actual: {len(json_actual)}")
-
-    todos = []
-    listas_ok = 0
-
+    todos_los_candidatos = []
     for url_remota in URLS_REMOTAS_M3U:
         contenido = descargar_m3u(url_remota)
-        if contenido is None:
-            continue
+        if contenido:
+            canales_m3u = parsear_m3u(contenido)
+            log(f"Canales encontrados en {url_remota}: {len(canales_m3u)}")
+            todos_los_candidatos.extend(canales_m3u)
 
-        canales = parsear_m3u(contenido)
-        if canales:
-            listas_ok += 1
-            log(f"Canales encontrados: {len(canales)}")
-            todos.extend(canales)
-
-    # Si ninguna fuente produjo canales parseables, no hacer ningún cambio.
-    if listas_ok == 0 or not todos:
-        log("Ninguna lista remota produjo canales utilizables. No se modifica el JSON.")
+    if not todos_los_candidatos:
+        log("Ninguna lista devolvió canales. Nada que hacer.")
         return
 
-    urls_existentes = set()
-    nombres_categoria_existentes = set()
-    pares_existentes = set()
-
+    urls_existentes = {normalizar_url(c.get("url", "")) for c in json_actual if c.get("url")}
+    claves_nombre_existentes = set()
     for c in json_actual:
-        url_norm = normalizar_url(c.get("url", ""))
-        nombre_norm = normalizar_nombre(c.get("name", ""))
+        nom = normalizar_nombre(c.get("name", ""))
+        if nom:
+            claves_nombre_existentes.add((nom, c.get("group-title", "")))
 
-        if url_norm:
-            urls_existentes.add(url_norm)
-        if nombre_norm:
-            nombres_categoria_existentes.add(clave_nombre_categoria(c))
-
-        pares_existentes.add(clave_dedupe(c))
-
+    vistos_url = set()
+    vistos_nombre = set()
     candidatos = []
-    urls_vistas = set()
-    nombres_vistos = set()
-    pares_vistos = set()
-    duplicados = 0
+    descartados_dup = 0
+    for c in todos_los_candidatos:
+        u = c.get("url")
+        if not u:
+            continue
+        un = normalizar_url(u)
+        nom = normalizar_nombre(c.get("name", ""))
+        cat = c.get("group-title", "")
 
-    for original in todos:
-        c = dict(original)
-        url_norm = normalizar_url(c.get("url", ""))
-        nombre_norm = normalizar_nombre(c.get("name", ""))
-
-        if not url_norm or not nombre_norm:
+        if un in urls_existentes or un in vistos_url:
+            descartados_dup += 1
             continue
 
-        # Se evita duplicado por URL, por nombre+categoría y por nombre+URL.
-        par = clave_dedupe(c)
-        nombre_cat = clave_nombre_categoria(c)
-
-        if (
-            url_norm in urls_existentes
-            or url_norm in urls_vistas
-            or par in pares_existentes
-            or par in pares_vistos
-            or nombre_cat in nombres_categoria_existentes
-            or nombre_cat in nombres_vistos
-        ):
-            duplicados += 1
+        clave_nombre = (nom, cat) if nom else None
+        if clave_nombre and (clave_nombre in claves_nombre_existentes or clave_nombre in vistos_nombre):
+            descartados_dup += 1
             continue
 
-        urls_vistas.add(url_norm)
-        pares_vistos.add(par)
-        nombres_vistos.add(nombre_cat)
+        vistos_url.add(un)
+        if clave_nombre:
+            vistos_nombre.add(clave_nombre)
         candidatos.append(c)
 
-    log(
-        f"Candidatos únicos para validar: {len(candidatos)}; "
-        f"duplicados descartados: {duplicados}"
-    )
-
+    log(f"Canales nuevos únicos por validar: {len(candidatos)} "
+        f"(descartados por duplicado: {descartados_dup})")
     if not candidatos:
-        log("No hay canales nuevos que agregar.")
+        log("No hay canales nuevos. Nada que agregar.")
         return
 
+    log(f"Validando con {MAX_HILOS} hilos (validación REAL)...")
     online = []
-
-    with ThreadPoolExecutor(max_workers=MAX_HILOS) as pool:
-        futures = {
-            pool.submit(validar_canal, c): c
-            for c in candidatos
-        }
-
-        for future in as_completed(futures):
-            canal = futures[future]
-
+    with ThreadPoolExecutor(max_workers=MAX_HILOS) as executor:
+        futuros = {executor.submit(validar_canal, c): c for c in candidatos}
+        for futuro in as_completed(futuros):
+            canal = futuros[futuro]
             try:
-                result = future.result()
-            except Exception as exc:
-                log(f"ERROR validando {canal.get('name', '?')}: {exc}")
-                result = None
-
-            if result:
-                online.append(result)
-                log(f"  ONLINE: {canal.get('name', '(sin nombre)')}")
+                resultado = futuro.result()
+            except Exception as e:
+                log(f"  ERROR validando {canal.get('name', '?')}: {e}")
+                resultado = None
+            if resultado:
+                online.append(resultado)
+                log(f"  ✅ {canal.get('name', '(sin nombre)')}")
             else:
-                log(f"  NO VALIDADO: {canal.get('name', '(sin nombre)')}")
+                log(f"  ❌ {canal.get('name', '(sin nombre)')}")
 
+    log(f"Canales nuevos ONLINE REALES encontrados: {len(online)}")
     if not online:
-        log("No se agregó ningún canal: ninguno pasó la validación.")
+        log("No se agregó ningún canal nuevo.")
         return
-
-    # Segunda deduplicación antes de escribir, por defensa en profundidad.
-    existentes_urls = {
-        normalizar_url(c.get("url", ""))
-        for c in json_actual
-        if c.get("url")
-    }
-    existentes_nombres = {
-        clave_nombre_categoria(c)
-        for c in json_actual
-    }
-
-    salida_nueva = []
 
     for c in online:
+        cat_original = c.get("group-title", "")
         tvg = c.pop("_tvg_id", "")
-        c["group-title"] = normalizar_categoria(
-            c.get("group-title", ""),
-            tvg,
-            c.get("name", ""),
-        )
-
+        nombre = c.get("name", "")
+        c["group-title"] = normalizar_categoria(cat_original, tvg, nombre)
         if not c.get("headers"):
             c.pop("headers", None)
 
-        un = normalizar_url(c.get("url", ""))
-        nc = clave_nombre_categoria(c)
+    json_actual.extend(online)
+    json_actual.sort(key=clave_orden)
 
-        if un in existentes_urls or nc in existentes_nombres:
-            continue
-
-        existentes_urls.add(un)
-        existentes_nombres.add(nc)
-        salida_nueva.append(c)
-
-    if not salida_nueva:
-        log("Tras la comprobación final no quedan canales nuevos.")
-        return
-
-    # Conserva canales actuales y solo agrega nuevos.
-    resultado = list(json_actual) + salida_nueva
-    resultado.sort(key=clave_orden)
-
-    try:
-        guardar_json_atomico(JSON_PATH, resultado)
-    except OSError as exc:
-        log(f"ERROR guardando JSON de forma atómica: {exc}")
-        sys.exit(1)
-
-    log(
-        f"JSON actualizado. Agregados: {len(salida_nueva)}; "
-        f"total: {len(resultado)}."
-    )
+    guardar_json_atomico(JSON_PATH, json_actual)
+    log(f"JSON actualizado y reordenado. Total de canales: {len(json_actual)}")
     log("=" * 60)
 
 
