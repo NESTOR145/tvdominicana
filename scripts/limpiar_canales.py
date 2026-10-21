@@ -7,6 +7,9 @@ Comprueba cada canal de tvdominicana.json con validación REAL
 (Content-Type + primeros bytes + detección de HTML/JSON de error) y elimina
 los que estén realmente caídos tras MAX_FALLOS consecutivos.
 
+Además, al inicio elimina duplicados existentes (por URL normalizada o por
+nombre normalizado + categoría).
+
 Reglas:
   - "ok"       -> resetea fallos a 0, conserva canal.
   - "temporal" -> NO cuenta como fallo (403/429/5xx/timeout). Conserva canal y estado.
@@ -33,6 +36,8 @@ from canales_common import (
     cargar_json_seguro,
     guardar_json_atomico,
     log,
+    normalizar_nombre,
+    normalizar_url,
     probar_enlace,
 )
 
@@ -84,6 +89,43 @@ def id_canal(canal):
     return f"{canal.get('name','')}|{canal.get('logo','')}"
 
 
+def deduplicar(canales):
+    """
+    Elimina duplicados existentes en el JSON:
+      - por URL normalizada
+      - por nombre normalizado + categoría
+    Devuelve (lista_dedup, n_descartados).
+    """
+    vistos_url = set()
+    vistos_nombre = set()
+    salida = []
+    descartados = 0
+    for c in canales:
+        u = normalizar_url(c.get("url", ""))
+        nom = normalizar_nombre(c.get("name", ""))
+        cat = c.get("group-title", "")
+        clave_nombre = (nom, cat) if nom else None
+
+        dup = False
+        if u and u in vistos_url:
+            log(f"  DUPLICADO URL (se descarta): {c.get('name','?')}")
+            dup = True
+        elif clave_nombre and clave_nombre in vistos_nombre:
+            log(f"  DUPLICADO NOMBRE (se descarta): {c.get('name','?')}")
+            dup = True
+
+        if dup:
+            descartados += 1
+            continue
+
+        if u:
+            vistos_url.add(u)
+        if clave_nombre:
+            vistos_nombre.add(clave_nombre)
+        salida.append(c)
+    return salida, descartados
+
+
 def main():
     if not JSON_PATH.exists():
         log("ERROR: no existe tvdominicana.json")
@@ -94,9 +136,23 @@ def main():
         log("ERROR: tvdominicana.json no es una lista plana.")
         sys.exit(1)
 
+    total_original = len(canales)
+    if total_original == 0:
+        log("Lista vacía.")
+        return
+
+    # ---- Deduplicación inicial (URL normalizada + nombre normalizado + categoría) ----
+    canales, n_dups = deduplicar(canales)
+    if n_dups:
+        log(f"Duplicados eliminados al inicio: {n_dups} "
+            f"({total_original} -> {len(canales)} canales).")
+
     total = len(canales)
     if total == 0:
-        log("Lista vacía.")
+        log("Tras deduplicar no queda ningún canal.")
+        if not DRY_RUN:
+            guardar_json_atomico(JSON_PATH, [])
+            guardar_estado({})
         return
 
     estado = cargar_estado()
@@ -138,7 +194,6 @@ def main():
         if res == "sin_url":
             sin_url += 1
             log(f"  SIN URL (se elimina): {nombre}")
-            # Un canal sin URL no sirve: se elimina directamente.
             eliminados.append((nombre, ""))
             estado.pop(cid, None)
             continue
@@ -151,7 +206,6 @@ def main():
         elif res == "temporal":
             temporales += 1
             log(f"  TEMPORAL (no cuenta): {nombre}")
-            # Conserva canal y estado tal cual (no incrementa fallos)
             nuevos_canales.append(canal)
 
         else:  # "fallo"
@@ -187,13 +241,13 @@ def main():
                     for n, u in eliminados])
 
     if DRY_RUN:
-        log(f"[DRY_RUN] Se eliminarían {len(eliminados)} canales. No se modifica nada.")
+        log(f"[DRY_RUN] Se eliminarían {len(eliminados)} canales (incluye {n_dups} duplicados iniciales).")
         log(f"[DRY_RUN] Estado que se guardaría: {len(estado)} entradas.")
         return
 
-    if eliminados:
+    if eliminados or n_dups:
         guardar_json_atomico(JSON_PATH, nuevos_canales)
-        log(f"Se eliminaron {len(eliminados)} canales.")
+        log(f"Se eliminaron {len(eliminados)} canales y {n_dups} duplicados iniciales.")
     else:
         log("No se eliminó ningún canal.")
 
@@ -201,7 +255,7 @@ def main():
 
     log(f"Resumen: ok={total - caidos_reales - temporales - sin_url}, "
         f"temporal={temporales}, fallo={caidos_reales}, sin_url={sin_url}, "
-        f"eliminados={len(eliminados)}")
+        f"eliminados={len(eliminados)}, duplicados_iniciales={n_dups}")
 
 
 if __name__ == "__main__":
