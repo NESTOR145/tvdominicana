@@ -1,4 +1,4 @@
- [
+[
   {
     "name": "AME TV",
     "logo": "https://i.postimg.cc/c6qG7njF/AME-TV.png",
@@ -2854,5 +2854,3946 @@
     "logo": "https://i.postimg.cc/QCBKqWt5/CANAL-10-DURANGO.jpg",
     "url": "https://5e50264bd6766.streamlock.net/canal10durango/videocanal10durango/playlist.m3u8",
     "group-title": "PREMIUM"
+  },
+  {
+    "name": "Adoram TV (720p)",
+    "logo": "https://i.imgur.com/uU01KHz.png",
+    "url": "https://live20.bozztv.com/giatv/giatv-adoram/adoram/chunks.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Aguila TV (1080p) [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3770-294x165-FFFFFF.jpg",
+    "url": "https://fox.hostlagarto.com:8081/aguilatv/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Bajo Techo TV (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/I2wRq88.png",
+    "url": "https://fox.hostlagarto.com:8081/bajotechotv/tracks-v1a1/mono.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Bebeto TV (1080p) [Not 24/7]",
+    "logo": "",
+    "url": "https://edge.essastream.com/bebetotelevision/index.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Bellavision (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/XqQ3kCs.png",
+    "url": "https://fox.hostlagarto.com:8081/bellavision8hd/tracks-v1a1/mono.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Boca Chica TV (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/npiRBPC.png",
+    "url": "https://fox.hostlagarto.com:8081/bocachicatv/tracks-v1a1/mono.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Bonches Latinos TV (720p)",
+    "logo": "https://i.imgur.com/Kp8x0NS.png",
+    "url": "https://5790d294af2dc.streamlock.net/latinostv/latinostv/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Canal Multivision (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/puOrL7B.jpg",
+    "url": "https://live20.bozztv.com/akamaissh101/ssh101/canalmulti24/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Cananga TV (720p)",
+    "logo": "https://i.imgur.com/isXlMAh.png",
+    "url": "https://cdn.streamingcpanel.com:3545/live/canangatlive.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Caoba TV Radio (720p) [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3906-294x165-FFFFFF.jpg",
+    "url": "https://host.streamingnation.live:3940/live/caobatvlive.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Carivision (1080p) [Geo-blocked]",
+    "logo": "https://i.imgur.com/XjGb2UM.png",
+    "url": "https://ss2.tvrdomi.com:1936/carivision/carivision/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "CNT Mas TV (720p) [Not 24/7]",
+    "logo": "https://dominicanchannels.com/wp-content/uploads/ctnmas.jpg",
+    "url": "https://edge.essastream.com/cntmas/tracks-v1a1/mono.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Codigo TV (1080p) [Not 24/7]",
+    "logo": "https://imgur.com/DbjywI3.png",
+    "url": "https://edge.essastream.com/codigotv/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Colome TV [Not 24/7]",
+    "logo": "https://colometv.com/assets/images/logo.png",
+    "url": "https://ss2.tvrdomi.com:1936/colometv/colometv/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Color Vision (720p) [Geo-blocked]",
+    "logo": "https://i.imgur.com/rkgWToA.jpg",
+    "url": "https://cdn4.wind.do/streams/colorvision/colorvision_master.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "ConstanzaTV (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/4uV90gw.png",
+    "url": "https://live20.bozztv.com/akamaissh101/ssh101/ctv8hd/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Coral 39 (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/k6cv9A9.png",
+    "url": "https://hls.tvabierta.net/hls/039.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Del Pueblo TV [Not 24/7]",
+    "logo": "https://imgur.com/Pw7ZUT1.jpg",
+    "url": "https://vdopanel.jlahozconsulting.com:3869/hybrid/play.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Delta TV Canal 50 (720p) [Not 24/7]",
+    "logo": "https://imgur.com/Z1K1tyl.jpg",
+    "url": "https://fox.hostlagarto.com:8081/deltatv50/tracks-v1a1/mono.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Ecos Canal 57 (1080p) [Not 24/7]",
+    "logo": "https://imgur.com/ccFwraQ.png",
+    "url": "https://2-fss-2.streamhoster.com/pl_138/206532-6829872-1/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Elias Pina TV (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/VqxSsZD.png",
+    "url": "https://cloud2.streaminglivehd.com:1936/8078/8078/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Enntivision (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/nePOFZW.png",
+    "url": "https://edge.essastream.com/enntivision/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Entuno TV (1080p) [Not 24/7]",
+    "logo": "https://imgur.com/U9OsybQ.jpg",
+    "url": "https://soportedvb.click:3442/live/entunotvlive.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Extra 86 TV (720p) [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3780-294x165-FFFFFF.jpg",
+    "url": "https://video-eu1.streamerr.co/hls/sb77f834a54/live.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "FRATA TV (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/VxeTREd.png",
+    "url": "https://vdopanel.jlahozconsulting.com:3706/hybrid/play.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "GH Television (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/xhkiiO3.png",
+    "url": "https://fox.hostlagarto.com:8081/ghtelevision/tracks-v1a1/mono.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Gi Television (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/br9TNG8.png",
+    "url": "https://canal.gitelevisionserver.com/live/DIEEFIh506fL8huspvl0f0c2PZF3/index.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Global Social TV (720p) [Not 24/7]",
+    "logo": "https://imgur.com/sGN1NbR.png",
+    "url": "https://stream.castr.com/6809124f3f3e7e594c63cf15/live_8e5d0b50206a11f08690576446b3c082/index.fmp4.m3u8",
+    "group-title": "DOMINICANOS",
+    "headers": {
+      "Referer": "https://player.castr.com/",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
+    },
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Informe TV (1080p) [Not 24/7]",
+    "logo": "https://imgur.com/TmJaXrO.jpg",
+    "url": "https://edge.essastream.com/informetv/tracks-v1a1/mono.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "JPD TV [Not 24/7]",
+    "logo": "https://i0.wp.com/juanpabloduartetv.com/wp-content/uploads/2024/08/logo-JPDTV-100-x-100.png",
+    "url": "https://imagenuniversaltv.net:3026/live/juanpabloduartetvlive.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Junior Technologia TV (1080p) [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3812-294x165-FFFFFF.jpg",
+    "url": "https://streamunoapp.com:3616/live/juniorrodrigueztvlive.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "La Descarga TV [Geo-blocked]",
+    "logo": "https://imgur.com/kq1CrDE.png",
+    "url": "https://video.udwn.net:19360/ladescargatv/ladescargatv.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "La Hora TV (720p) [Not 24/7]",
+    "logo": "https://lahoratv.org/imagen/lahora.jpeg",
+    "url": "https://edge.enhdtv.com/8206/index.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Latina TV Internacional (720p)",
+    "logo": "https://i.imgur.com/UAfyeYT.png",
+    "url": "https://5790d294af2dc.streamlock.net/latinatv/latinatv/chunklist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Lena TV [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3232-294x165-FFFFFF.jpg",
+    "url": "https://5790d294af2dc.streamlock.net/lenaratv/lenaratv/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Makao TV (1080i)",
+    "logo": "https://i.imgur.com/asD5y7i.png",
+    "url": "https://live.obslivestream.com/makaomux/index.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Makina TV (720p) [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/2951-294x165-FFFFFF.jpg",
+    "url": "https://vdopanel.jlahozconsulting.com:3303/live/makinalive.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Marka TV (720p) [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3355-294x165-FFFFFF.jpg",
+    "url": "https://5790d294af2dc.streamlock.net/markatv/markatv/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "MegaVision TV (480p)",
+    "logo": "https://i.imgur.com/u5ECnZd.png",
+    "url": "http://server3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "MI Turno TV",
+    "logo": "https://imgur.com/uODDaEY.png",
+    "url": "https://video.udwn.net:19360/miturnotv/miturnotv.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Miavision TV (1080p) [Not 24/7]",
+    "logo": "https://imgur.com/Bbcrjvs.png",
+    "url": "https://edge.essastream.com/miavisiontv/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Mision ELTV (720p)",
+    "logo": "https://i.imgur.com/hwC1stN.png",
+    "url": "https://rd.tvabierta.net/live/misioneltv.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Montones TV (1080p)",
+    "logo": "https://montonestv.com/wp-content/uploads/2025/11/montones-logo.png",
+    "url": "https://lbgo.bozztv.com/ssh101/ssh101/montonestv1/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Naranja TV (720p)",
+    "logo": "https://i.imgur.com/g7iFN3s.png",
+    "url": "https://cdn.streamingcpanel.com:3526/live/teleraiceslive.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Noticias 16 (720p) [Not 24/7]",
+    "logo": "",
+    "url": "https://edge.essastream.com/noticias16/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Notisur TV [Not 24/7]",
+    "logo": "https://rdomint.com/images/station/300.jpg",
+    "url": "https://ss2.tvrdomi.com:1936/notisur/notisur/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "OEPM TV (720p)",
+    "logo": "https://i.imgur.com/QghtwMB.jpeg",
+    "url": "https://cnn.hostlagarto.com/oepmtelevision/tracks-v1a1/mono.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "ORBIT TV (1080p)",
+    "logo": "https://i.imgur.com/lizQs3n.png",
+    "url": "https://edge.essastream.com/orbittv/index.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Orbit TV op2 | Republica Dominicana",
+    "logo": "",
+    "url": "https://cnn.hostlagarto.com/orbittv/tracks-v1a1/mono.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Pronems TV (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/a9ORO1G.png",
+    "url": "https://fox.hostlagarto.com:8081/pronemstv/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Punto TV Digital 40 [Geo-blocked]",
+    "logo": "https://puntotvdigital.net/wp-content/uploads/2024/02/logo.png",
+    "url": "https://ss2.tvrdomi.com:1936/puntotvdigital/puntotvdigital/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "R Television [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3039-294x165-FFFFFF.jpg",
+    "url": "https://vdopanel.jlahozconsulting.com/p/3142/hybrid/play.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "R&E TV (480p) [Not 24/7]",
+    "logo": "https://i.imgur.com/HpKQYp3.png",
+    "url": "https://cloud2.streaminglivehd.com:1936/8072/8072/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "RNN DOS (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/12Z9qPw.png",
+    "url": "https://2-fss-2.streamhoster.com/pl_138/206532-6829912-1/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Senales TV",
+    "logo": "https://i.imgur.com/7Zr79F2.png",
+    "url": "https://live.dionelysterrero.com/senalestv/stream.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "SiTV (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/f8bDccF.png",
+    "url": "http://190.122.104.210:5080/LiveApp/streams/sitv2.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Super Canal (Dominican Republic) (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/AZBamNi.png",
+    "url": "https://cnn.hostlagarto.com/supercanalhd/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Tarima TV (720p)",
+    "logo": "https://vercanalesdominicanos.com/wp-content/uploads/2026/03/tarima.png",
+    "url": "http://190.122.104.210:5080/LiveApp/streams/tarima.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "TDN Medios (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/C8dSJM7.png",
+    "url": "https://castv10.plugstreaming.com:19360/tdntv/tdntv.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Tele Antillas (1080p)",
+    "logo": "https://i.imgur.com/G1pJZkC.png",
+    "url": "http://45.171.108.253:8888/TELEANTILLAS/index.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Tele Poder TV (720p) [Not 24/7]",
+    "logo": "https://www.telepoder.online/wp-content/uploads/2024/02/cropped-cropped-Logo-PoderTV2.png",
+    "url": "https://cdn.telepoder.online:3229/dash/stream.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Tele Proyecto TV [Not 24/7]",
+    "logo": "https://imgur.com/LmBxN5x.png",
+    "url": "https://5790d294af2dc.streamlock.net/Teleproyecto/Teleproyecto/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "TeleCibaoHD (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/IpInp05.png",
+    "url": "https://edge.essastream.com/telecibaotv/tracks-v1a1/mono.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Telefuturo (Dominican Republic) (480p) [Not 24/7]",
+    "logo": "https://i.imgur.com/QpnctoU.png",
+    "url": "http://190.122.104.210:5080/LiveApp/streams/tfuturo.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Telemax (Dominican Republic) (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/QvKmjvV.png",
+    "url": "https://edge.essastream.com/telemax/tracks-v1a1/mono.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Telemetro TV [Not 24/7]",
+    "logo": "https://imgur.com/Ck2NL0t.png",
+    "url": "https://streamunoapp.com:3366/live/telemetrolive.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "TELESIGLO (1080p) [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/2195-294x165-FFFFFF.jpg",
+    "url": "https://cnn.hostlagarto.com/telesiglo/tracks-v1a1/mono.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Telesistema 11 (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/ZzeZKCu.png",
+    "url": "https://cdn4.wind.do/streams/telesistema/telesistema_master.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Teleunion (1080p)",
+    "logo": "https://i.imgur.com/vTfxkjW.png",
+    "url": "http://server2grupocam.com:1945/teleunion/TU/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "headers": {
+      "Referer": "https://teleuniontvrd.com/portal/"
+    },
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Teleuniverso (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/gQev8ST.png",
+    "url": "https://hls.tvabierta.net/hls/029.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Televida (Dominican Republic) (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/S8Zdn41.png",
+    "url": "https://cnn.hostlagarto.com/televida/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Television del Este (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/mmjbcGr.png",
+    "url": "https://edge.essastream.com/televisiondeleste/tracks-v1a1/mono.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Tenarenses TV (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/cPIgs0v.png",
+    "url": "https://edge.essastream.com/tenarensestvrd/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Topical Moon RD (720p) [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3900-294x165-FFFFFF.jpg",
+    "url": "https://sistemastr.tropicalmoonmedia.com/live/56BE17DB16EB76C9F2DDB8346F4DFA4E/30.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Tour Spot TV (1280p) [Not 24/7]",
+    "logo": "https://imgur.com/khj869k.png",
+    "url": "https://fox.hostlagarto.com:8081/toursporttv/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "TV Cotui Canal 31 (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/sMF7JDm.png",
+    "url": "https://live20.bozztv.com/akamaissh101/ssh101/tvcotui/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "TV Quisqueya (720p)",
+    "logo": "https://i.imgur.com/G7X4LQI.png",
+    "url": "https://cloud5.livescast.com:19360/canaltvquisqueya/canaltvquisqueya.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "TVS (Dominican Republic) (540p) [Not 24/7]",
+    "logo": "https://i.imgur.com/a2YX1oj.jpg",
+    "url": "https://imagenuniversaltv.net:3741/live/tvslive.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "UVA TV (720p) [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3918-294x165-FFFFFF.jpg",
+    "url": "https://www.uvatvhd.com/hls.php?file=live.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "ZAS TV",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/4058-294x165-FFFFFF.jpg",
+    "url": "https://cloud5.zastv.net/hls/zastv.m3u8",
+    "group-title": "DOMINICANOS",
+    "genre": "DOMINICANOS"
+  },
+  {
+    "name": "Disney Channel Latin America (1080p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/f/ff/2024_Disney_Channel_text_logo.svg",
+    "url": "http://15.204.246.24:8080/DisneyHD/index.m3u8",
+    "group-title": "ANIME-INFANTIL",
+    "genre": "ANIME-INFANTIL"
+  },
+  {
+    "name": "Disney Channel Latin America Panregional HD (1080p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/f/ff/2024_Disney_Channel_text_logo.svg",
+    "url": "http://45.134.141.161:2200/ARG/Disney_Channel/index.m3u8",
+    "group-title": "ANIME-INFANTIL",
+    "genre": "ANIME-INFANTIL"
+  },
+  {
+    "name": "Tom And Jerry (720p)",
+    "logo": "https://gia.tv/streams/pptv/208314.jpg?1750373428",
+    "url": "https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8",
+    "group-title": "ANIME-INFANTIL",
+    "genre": "ANIME-INFANTIL"
+  },
+  {
+    "name": "Motor Vision",
+    "logo": "https://pbs.twimg.com/profile_images/1364953286168698886/ZtoiZzW5_400x400.jpg",
+    "url": "https://ov-mvg-mv-es.ottera.tv/mvg/mv_es/mv_es.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "DEPORTES"
+  },
+  {
+    "name": "PAC12",
+    "logo": "https://b.fssta.com/uploads/application/college/conference-logos/Pac-12.vresize.350.350.medium.0.png",
+    "url": "https://pac12-roku-us.amagi.tv/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "DEPORTES"
+  },
+  {
+    "name": "Red Bull TV",
+    "logo": "https://inthemixstyle.com/wp-content/uploads/2020/12/Redbull-TV-HD.jpg",
+    "url": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "DEPORTES"
+  },
+  {
+    "name": "SportsGrid",
+    "logo": "https://i.imgur.com/ulGKX30.png",
+    "url": "https://amg00315-sportsgrid-firetv.amagi.tv/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "DEPORTES"
+  },
+  {
+    "name": "Trace Sports",
+    "logo": "https://cdn.mitvstatic.com/channels/co_trace-sports-stars_m.png",
+    "url": "https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "DEPORTES"
+  },
+  {
+    "name": "UFC",
+    "logo": "https://www.estilomma.com/images/noticias/thumbnails/Do0-qzJjXwGBUbhK7nCQiVro2YT51DHhBw7OnTvJr35PEACSqaqhxfHdmedSZrEiLTiuqERb=s900-c-k-c0x00ffffff-no-rj_thumb_297x297.jpg",
+    "url": "https://linear-893.frequency.stream/dist/xumo/893/hls/master/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "DEPORTES"
+  },
+  {
+    "name": "History Latin America (1080p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/500px-History_%282021%29.svg.png",
+    "url": "http://15.204.246.24:8080/HistoryHD/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "DOCUMENTALES"
+  },
+  {
+    "name": "13 Festival",
+    "logo": "https://i.imgur.com/hTUe0Pw.png",
+    "url": "https://origin.dpsgo.com/ssai/event/Nftd0fM2SXasfDlRphvUsg/master.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "15TV",
+    "logo": "",
+    "url": "https://servilive.com:3380/live/v3n6thy7glive.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "22.1 Canal 22",
+    "logo": "",
+    "url": "https://5fc584f3f19c9.streamlock.net/canal22/videocanal22/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9Mi8yMS8yMDIxIDExOjQ2OjAzIFBNJmhhc2hfdmFsdWU9WmpCTERYMHh6UVVzcTJ0cmtNd25mQT09JnZhbGlkbWludXRlcz01JmlkPQ==",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "22.2 Canal 22 +",
+    "logo": "",
+    "url": "https://5fc584f3f19c9.streamlock.net/canal222/videocanal222/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9Mi8yMS8yMDIxIDExOjQ5OjA5IFBNJmhhc2hfdmFsdWU9dmZ0MEZRMTMwZ3J6V3hXNndXeDFIUT09JnZhbGlkbWludXRlcz01JmlkPQ==",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "24/7 Canal de Noticias",
+    "logo": "",
+    "url": "https://panel.host-live.com:19360/cn247tv/cn247tv.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "34.1 Mexiquense TV",
+    "logo": "",
+    "url": "https://5e50264bd6766.streamlock.net/mexiquense/videomexiquense/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "34.1 Mexiquense TV op2",
+    "logo": "",
+    "url": "https://5e50264bd6766.streamlock.net/mexiquense/videomexiquense/chunklist_w376735839.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8xMS8yMDIyIDQ6MDg6MTEgQU0maGFzaF92YWx1ZT1ySG13SHNrSE5yTWx5RWJYcTQvZkhRPT0mdmFsaWRtaW51dGVzPTUmaWQ9",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "34.2 AMX Noticias",
+    "logo": "",
+    "url": "https://5e50264bd6766.streamlock.net/mexiquense2/videomexiquense2/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "5TV Corrientes (480p) [Not 24/7]",
+    "logo": "",
+    "url": "http://www.coninfo.net:1935/tvcinco/live1/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "A bocados",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=cooking&ads._fw_content_language=es&ads._fw_content_rating=tv-14&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=IndigeniusSpanish&ads.content_livestream=0&ads.csid=zeus_es_abocados_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=6979&ads.rakuten_streaming_id=b254a7cc-ec9a-428e-b5af-a67bfcf5f6a4&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883131&ads.xumo_channel_id=88883131&ads.xumo_contentId=2459&ads.xumo_contentName=IndigeniusBonViajeSpanish&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=2459&ads.xumo_providerName=a-bocados-spa-rakutentv&ads.xumo_streamId=88883131",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "A&E Latin America (1080p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/A%26E_Network_logo.svg/960px-A%26E_Network_logo.svg.png",
+    "url": "http://138.121.15.230:9002/A&E/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ABN SRT",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0hh/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Acción",
+    "logo": "",
+    "url": "https://action-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6069/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6069&ads.rtv_channel_name=action-rakuten-tv_es&ads.rtv_content_id=6069&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=4cfdafa5-7224-4e57-984b-28107cc5a97f&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6069&publishing_platform_id=5&tenant_identifier=rtv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ADN 40 | MX",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c6/ADN_40.svg",
+    "url": "https://mdstrm.com/live-stream-playlist/60b578b060947317de7b57ac.m3u8?PlaylistM3UCL",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Adult Swim | Mexico",
+    "logo": "",
+    "url": "http://181.78.12.119:16123/play/ch75",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "AE",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0al/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "AE",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ct/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "AE Radio TV (720p) [Not 24/7]",
+    "logo": "",
+    "url": "https://tls-cl.cdnz.cl/aeradio/live/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Africanews",
+    "logo": "",
+    "url": "https://africanews-eng-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6576/bitok/eyJzdGlkIjoiYTRiMmU5OTUtODRhMy00MzgyLWE2ZmQtYzlhZDQzMWFjY2QzIiwibWt0IjoiZXMiLCJjaCI6NjU4OCwicHRmIjo1fQ%3D%3D/26036/africanews-en.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=1&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=12&ads.rtv_channel_id=6588&ads.rtv_channel_name=africanews-eng_es&ads.rtv_content_id=6588&ads.rtv_content_language=en&ads.rtv_language=en&ads.rtvid=271859&ads.streaming_id=a4b2e995-84a3-4382-a6fd-c9ad431accd3&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6588&publishing_platform_id=5&tenant_identifier=rtv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "AGU: Canal 26",
+    "logo": "",
+    "url": "http://streamingcws10.com:1935/telemetrika3/videotelemetrika3/.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "AGU: Presumiendo Mexico",
+    "logo": "",
+    "url": "http://streamingcws10.com:1935/telemetrika/videotelemetrika/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Alerta Cobra - Brigada especial de carreteras",
+    "logo": "",
+    "url": "https://alarm-for-cobra-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-7230/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=7230&ads.rtv_channel_name=alarm-for-cobra-rakuten-tv_es&ads.rtv_content_id=7230&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=07a0e02a-ae2d-407a-a7c1-f46cd498ae1e&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=7230&publishing_platform_id=5&tenant_identifier=rtv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "AMX Noticias | MX",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/80/AMX_Noticias_Logo.png",
+    "url": "https://5e50264bd6766.streamlock.net/mexiquense2/videomexiquense2/playlist.m3u8?PlaylistM3UCL",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ANIMAL PLANET",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0by/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Animal Planet HD AMAZONAS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a06w/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Animax Radio",
+    "logo": "",
+    "url": "http://node-13.zeno.fm:80/0guzsnntsnhvv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Anime TV | Brasil",
+    "logo": "",
+    "url": "https://stmv2.painelvideocast.com.br/animetv/animetv/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "animotion channel",
+    "logo": "",
+    "url": "http://190.60.39.221:8000/play/a03d",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Antena TV",
+    "logo": "",
+    "url": "https://5ca9af4645e15.streamlock.net/grd/videogrd/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ANTV",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0fo/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Archivos Forenses",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=series%2Ccrime&ads._fw_content_language=es&ads._fw_content_rating=tv-14&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=ArchivosForenses&ads.content_livestream=0&ads.csid=zeus_es_archivosforenses_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=3901&ads.rakuten_streaming_id=ee674554-31f6-458b-9c5a-8325f6ea48df&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883012&ads.xumo_channel_id=88883012&ads.xumo_contentId=2648&ads.xumo_contentName=FilmRiseTrueCrimeMexico&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=2648&ads.xumo_providerName=forensic-files-spa-rakutentv&ads.xumo_streamId=88883012",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Atacama Noticias (720p) [Not 24/7]",
+    "logo": "",
+    "url": "https://v2.tustreaming.cl/atacamanoticias/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Atacama TV (Copiapó) (720p) [Not 24/7]",
+    "logo": "",
+    "url": "https://v2.tustreaming.cl/atacamatv/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "AXN",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cu/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "AXN",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0am/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "AYM Sports",
+    "logo": "https://www.insidethegames.biz/images/2014/08/Glasgow_2014_blog_images/AYM_Sports_will_broadcast_coverage_of_the_Under-15_Baseball_World_Cup_across_the_Americas.jpg",
+    "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=5106",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Azteca Clic",
+    "logo": "https://mediaplan.com.gt/wp-content/uploads/2022/07/Clic450x300.png",
+    "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=4827",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Azteca Corazon",
+    "logo": "https://mediaplan.com.gt/wp-content/uploads/2022/07/Corazon450x300-1.png",
+    "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=4826",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Azteca Internacional",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Azteca_Internacional_logo_2023.png",
+    "url": "https://dujft6o2exhah.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-0lvc4h1b07aou/mun.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Azteca Uno -1h",
+    "logo": "https://i.imgur.com/rRxgBtI.png",
+    "url": "https://azt-oo.otteravision.com/out/v1/da53d7d388be437e92bf8f464018eb48/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Baby Shark TV",
+    "logo": "",
+    "url": "https://c0c65b821b3542c3a4dca92702f59944.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_BabySharkTV/playlist.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_categories=IAB1&ads.content_genre=children%2Canimation&ads.content_livestream=0&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_type=web&ads.device_year=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.nonce=&ads.os_language=&ads.placement=1&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=7&ads.rtv_content_id=3619&ads.rtv_content_language=en&ads.rtvid=271859&ads.streaming_id=ba96603e-52c8-42ed-a5b9-48d8092c56dd&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&ads.wurl_channel_id=696",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Baby TV",
+    "logo": "",
+    "url": "http://181.78.12.119:16123/play/ch01",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "BABYTV  ENVIADO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a08d/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "BANDAMAX",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0g9/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Beats Radio (480p)",
+    "logo": "",
+    "url": "https://videostream.shockmedia.com.ar:19360/beatsradio/beatsradio.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Bigtime - Películas Gratis",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-ESBC2700003T8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "BITME",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ga/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Bloomberg | Mexico",
+    "logo": "",
+    "url": "https://d19vc4shchm9pr.cloudfront.net/out/v1/a67ad47be66f4c3ea4a14c8f22984fa7/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Bob Esponja",
+    "logo": "https://fontmeme.com/images/Spongebob-TV-Series.png",
+    "url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6254598f5083f800076d8563/master.m3u8?deviceId=0&deviceVersion=0&appVersion=0&deviceType=0&deviceMake=0&sid=cb17&deviceDNT=0&deviceModel=0",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Boricua TV",
+    "logo": "https://i.imgur.com/Qs4szHD.png",
+    "url": "https://2-fss-2.streamhoster.com/pl_138/amlst:201284-1347630/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Buzzr",
+    "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/buzzr-us.png",
+    "url": "http://23.237.104.106:8080/USA_BUZZR/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CABLE NOTICIAS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0e8/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CABLE NOTICIAS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0g3/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Cadena 103 (720p) [Not 24/7]",
+    "logo": "",
+    "url": "http://arcast.net:1935/cadena103/cadena103/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CANAL 1 NACIONAL SIN TRANS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cz/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Canal 10 CR",
+    "logo": "",
+    "url": "https://acceso.mediosdecostarica.com:3606/hybrid/play.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CANAL 12 VALLEDUPAR",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0e4/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CANAL 13 NACIONAL SIN TRANS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0d4/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Canal 15 DTP  | Honduras",
+    "logo": "",
+    "url": "https://vdo.tecnoservix.stream:3838/live/canal15dtplive.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Canal 22 Nacional (720p) [Geo-blocked]",
+    "logo": "",
+    "url": "https://5fc584f3f19c9.streamlock.net/canal22/smil:canal22.smil/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Canal 26 Aguascalientes (1080p)",
+    "logo": "",
+    "url": "https://60417ddeaf0d9.streamlock.net/telemetrika3/smil:telemetrika3.smil/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Canal 33 Tijuana (720p)",
+    "logo": "",
+    "url": "https://5f2c1b0d880e5.streamlock.net/canal33tijuana/videocanal33tijuana/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Canal 4 Posadas (576p)",
+    "logo": "",
+    "url": "https://iptv.ixfo.com.ar:30443/live/C4POS/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Canal 4 San Juan | Argentina",
+    "logo": "",
+    "url": "http://streamlov.alsolnet.com/canal4sanjuan/live/chunklist_w1603184235.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Canal 44 Ciudad Juárez (720p) [Not 24/7]",
+    "logo": "",
+    "url": "https://5e50264bd6766.streamlock.net/canal44/videocanal44/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Canal 5 TV Cozumel (1080p)",
+    "logo": "",
+    "url": "https://video0.rogohosting.com:19360/tvcozumel/tvcozumel.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Canal 5 Vision Latina | ND",
+    "logo": "",
+    "url": "https://5fc584f3f19c9.streamlock.net/genteopa/videogenteopa/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Canal 6 CdMX",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1f/XEQ-TV_Logo.png",
+    "url": "https://stitcher.pluto.tv/stitch/hls/channel/652e91fd6208700008dcaf7b/master.m3u8?deviceType=web&servertSideAds=false&deviceMake=safari&deviceVersion=1&deviceId=spencer&appVersion=1&deviceDNT=0&deviceModel=web&sid=5c994790-62bc-11ef-843f-be5cd951c95a",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Canal 6 Digital | Argentina",
+    "logo": "",
+    "url": "https://iptv.ixfo.com.ar:30443/live/c6digital/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Canal 9 Resistencia (720p)",
+    "logo": "",
+    "url": "http://coninfo.net:1935/9linklivert/smil:9linkmultibr.smil/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CANAL CAPITAL NACIONAL SIN TRANS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0d3/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CANAL CONGRE NACIONAL SIN TRANS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0d2/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CANAL DE LAS ESTRELLAS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0as/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Canal Orbe 21",
+    "logo": "",
+    "url": "https://stream.arcast.net:4443/canal21/ngrp:canal21_all/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Canal Parlamento del Congreso de Jalisco (720p) [Not 24/7]",
+    "logo": "",
+    "url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CANALES NACIONALES",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cy/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CANALESTRELLAS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cx/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CANALINSTITUCIONAL  NACIONAL SIN TRANS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0d0/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CARACOL",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0b0/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CARACOL 2 DIRECTO PARA SENCORE",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0hw/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CARACOL LOCAL",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a08s/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CARACOL SRT",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0aw/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Cartoon Network  | Mexico",
+    "logo": "",
+    "url": "http://181.78.12.119:16123/play/ch09",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CARTOON NETWORK ENVIADO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a095/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CARTOONITO ENVIADO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09f/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CB TV Michoacan",
+    "logo": "",
+    "url": "https://5ca3e84a76d30.streamlock.net/cbtv/videoc3b3t3v3/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CBS News 24/7",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-USBA370000104",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CBS Sports HQ",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-USBB4800005VO",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CGTN",
+    "logo": "",
+    "url": "https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8?ads_amagi_channel_id=852&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB12&ads_content_genre=news&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=149.102.236.246&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=7&ads_rtv_content_id=5004&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=9681d5c5-abc7-4578-bb75-8be4c43e9d3b&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CGTN Documentary",
+    "logo": "",
+    "url": "https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8?ads_amagi_channel_id=853&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=documentary&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=149.102.236.246&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=7&ads_rtv_content_id=5002&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=a5139560-1a2d-4fc4-a927-73170a7f68df&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Chaco TV (720p) [Not 24/7]",
+    "logo": "",
+    "url": "https://wowzasrv.chaco.gov.ar/Streamtv/chacotv/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CHH: CANAL 44",
+    "logo": "",
+    "url": "https://5e50264bd6766.streamlock.net/canal442/videocanal442/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Chile Channel | Chile",
+    "logo": "",
+    "url": "https://v2.tustreaming.cl/chilechannel/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CHP: Canal 10",
+    "logo": "",
+    "url": "https://5ca9af4645e15.streamlock.net/chiapas/videochiapas/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Cine Español",
+    "logo": "",
+    "url": "https://spanish-cinema-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6196/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6196&ads.rtv_channel_name=spanish-cinema-rakuten-tv_es&ads.rtv_content_id=6196&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=3e315a74-7fd2-48b3-a6b2-5faf06c6a528&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6196&publishing_platform_id=5&tenant_identifier=rtv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Cine Estrella TV",
+    "logo": "https://estrellamedia.com/wp-content/uploads/2023/04/CineETV-1.jpg",
+    "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00567-estrellamedia-cineestrella-lgus/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CINE FAMILIAR",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09p/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Cine Friki",
+    "logo": "",
+    "url": "https://zylo-cinefriki-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-zylo-cinefriki-rakuten/CDN/master.m3u8?ads_amagi_channel_id=851&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=movies%2Cmystery&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=149.102.236.246&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=12&ads_rtv_content_id=5016&ads_rtv_content_language=es&ads_rtvid=271859&ads_streaming_id=e8c3d02f-94ac-4531-8c36-592a93d96b68&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CINE HISPANO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09n/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CINE INFANTIL",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09o/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CINE MEXICANO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0e1/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CINE MEXICANO ENVIADO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a07z/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CINE PREMIUN",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09q/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "cinecanal",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0bz/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Cinecanal HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a094/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CITY ENVIADO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a087/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CITY ENVIADO ENVIAR",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0eg/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Ciudad Magazine (1080p) [Geo-blocked]",
+    "logo": "",
+    "url": "https://live-01-07-ciudad.vodgc.net/live-01-07-ciudad.vodgc.net/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CMX: Efekto TV",
+    "logo": "",
+    "url": "https://cdn.jwplayer.com/manifests/bez1terN.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CN City | Chile",
+    "logo": "",
+    "url": "https://envivo.cncity.live/hls/envivo.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CNN",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0dt/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CNN ENVIADO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a08a/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "COLOMBEIA",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0fn/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Comedia",
+    "logo": "",
+    "url": "https://comedy-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6180/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6180&ads.rtv_channel_name=comedy-rakuten-tv_es&ads.rtv_content_id=6180&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=1fcbc0ee-4bdc-4db1-b17b-bf92017864f3&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6180&publishing_platform_id=5&tenant_identifier=rtv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "COMEDY",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0e3/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Comedy Central HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a07i/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "comedycentral",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0c0/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CONCIENCIA TV",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0fq/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Conecta TV | MX",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Conecta_TV_Logo.png",
+    "url": "https://stream8.mexiserver.com:19360/conectatvx/conectatvx.m3u8?PlaylistM3UCL",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Cosmos TV (720p)",
+    "logo": "",
+    "url": "https://tv.mediacp.eu:19360/cosmos/cosmos.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Crimen",
+    "logo": "",
+    "url": "https://crime-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6220/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6220&ads.rtv_channel_name=crime-rakuten-tv_es&ads.rtv_content_id=6220&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=502732cf-3556-40db-a232-51a58afd5c8b&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6220&publishing_platform_id=5&tenant_identifier=rtv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "CRISTOVISION",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0dr/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Cumbia Mix (720p)",
+    "logo": "",
+    "url": "https://cloud.tvomix.com/CUMBIAMIX/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Dark Matter",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=sci-fi%2Cmystery%2Chorror&ads._fw_content_language=es&ads._fw_content_rating=tv-14&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=DarkMatterTV&ads.content_livestream=0&ads.csid=zeus_es_tricoastdarkmatteres_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=4070&ads.rakuten_streaming_id=1a4f9467-b785-4b51-8c33-2a1bfaddbe9b&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883019&ads.xumo_channel_id=88883019&ads.xumo_contentId=3479&ads.xumo_contentName=TriCoastDarkMatterES&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=3479&ads.xumo_providerName=dark-matter-spa-rakutentv&ads.xumo_streamId=88883019",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Deluxe Dance Germany",
+    "logo": "https://i.imgur.com/Qu7t15Y.png",
+    "url": "https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Deluxe Lounge HD",
+    "logo": "",
+    "url": "https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/2299f30c-3582-11ec-9c7c-2cf753b8a203/0/master.m3u8?ads%3Aamznbrmid=&ads%3Aamznregion=&ads%3Aamznslots=&ads%3Aapp_bundle=com.rakuten.tv&ads%3Aapp_store_url=rakuten.tv&ads%3Aapp_version=&ads%3Abrand_name=&ads%3Acontent_categories=IAB1&ads%3Acontent_classification=7&ads%3Acontent_genre=entertainment&ads%3Acontent_livestream=0&ads%3Adevice_type=web&ads%3Adevice_year=&ads%3Afunke_channel_id=RAKB0001&ads%3Agam_correlator=&ads%3Agoogle_ad_manager_nonce=&ads%3Aifa_type=&ads%3Ainv_partner_domain=rakuten.tv&ads%3Alanguage=&ads%3Amarket=es&ads%3Anetwork_name=RakutenTV&ads%3Aos_language=&ads%3Aplacement=1&ads%3Aplayer_height=&ads%3Aplayer_width=&ads%3Apod_type=playerpage_midroll&ads%3Aprodq=1&ads%3Artv_content_id=4222&ads%3Astreaming_id=6de1e50e-d403-4102-8002-34ab19f4cab7&ads%3Atcf=&ads%3Ativo_devcountry=&ads%3Ativo_devmakedate=&ads%3Ativo_mvpd=&ads%3Ativo_platform=&ads%3Ativo_usid=&ads%3Ativo_uxloc=&ads%3Auser_type=visitor&country=es&optout=1&uid=&vendor=rakuten",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Deluxe Music Germany",
+    "logo": "https://i.imgur.com/HimuPPb.png",
+    "url": "https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "DEPELICULA",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0au/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "DEPELICULAS SRT",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0e0/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "DHE HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a086/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "DIOS Te Ve | Honduras",
+    "logo": "",
+    "url": "https://s.emisoras.tv:8081/diostevetv/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "DISCOVERY CHANNEL",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0c4/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Discovery H&H HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a071/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Discovery HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09a/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "DISCOVERY ID",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0c5/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Discovery Kids HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a070/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Discoveryhh",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0c2/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Discoverykids",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0c3/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "DISNEY CHANNEL  ENVIADO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0dn/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "DISNEY JR ENVIADO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a084/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "DISTRITO COMEDIA",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0g8/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "DJ TV Estacion Mix | Argentina",
+    "logo": "",
+    "url": "https://mix.fachacarlos1.workers.dev/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Dragon Ball Super op2 | ND",
+    "logo": "",
+    "url": "http://stream-cdn-iad3.vaughnsoft.net/play/live_goku_tv_latam.flv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Dreiko TV | Panamá",
+    "logo": "",
+    "url": "https://cloudvideo.servers10.com:8081/8020/tracks-v1a1/mono.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Dry Bar Comedy",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-USAJ30000039U",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "El Conquistador",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=reality%2Coutdoors&ads._fw_content_language=es&ads._fw_content_rating=tv-14&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=IndigeniusSpanish&ads.content_livestream=0&ads.csid=zeus_es_elconsquistado_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=6975&ads.rakuten_streaming_id=035e3f5d-d7d2-4204-9c97-e75782d9030a&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883130&ads.xumo_channel_id=88883130&ads.xumo_contentId=2054&ads.xumo_contentName=IndigeniusSpanish&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=2054&ads.xumo_providerName=el-conquistador-spa-rakutentv&ads.xumo_streamId=88883130",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "En Familia",
+    "logo": "",
+    "url": "https://family-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6205/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=12&ads.rtv_channel_id=6205&ads.rtv_channel_name=family-rakuten-tv_es&ads.rtv_content_id=6205&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=08cd2c86-0643-4912-8e53-176a7fd84650&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6205&publishing_platform_id=5&tenant_identifier=rtv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ENCODER DE 8P",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09s/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ENCODER DE 8P 2",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ht/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ENLACE",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0dq/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ENTRETEIMENT",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ac/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Entreteiment",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cm/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ESPN 1",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0b1/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "espn 2",
+    "logo": "",
+    "url": "http://181.78.12.119:16123/play/ch17",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ESPN 2",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0b2/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ESPN 2 HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a08z/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ESPN 3",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0b3/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ESPN 3 HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a07f/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ESPN 4HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09b/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ESPN 5HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a08n/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ESPN 6HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a07g/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ESPN 7HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a08o/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ESPN EXTRA",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0do/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ESPN HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a08y/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ESPN5",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0bv/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ESPN6",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0bw/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ESPN7",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0bx/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Estilo y Vida",
+    "logo": "",
+    "url": "https://lifestyle-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6232/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6232&ads.rtv_channel_name=lifestyle-rakuten-tv_es&ads.rtv_content_id=6232&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=416c0259-c0b0-4f48-a647-0ab805682555&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6232&publishing_platform_id=5&tenant_identifier=rtv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Estrella TV",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/9/99/Estrella_TV_-_2020_logo.png",
+    "url": "https://estrellatv-oando.amagi.tv/playlistR720P.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ET",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-USBA3700002JF",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Etc TV | Chile",
+    "logo": "",
+    "url": "http://45.185.163.75:8000/play/a0gv/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Euronews EN DIRECTO",
+    "logo": "",
+    "url": "https://euronews-live-spa-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6571/bitok/eyJzdGlkIjoiNDkzY2FkODktN2QwMi00Y2ZlLWJmMWEtNDBiNmJjMWFmYzg5IiwibWt0IjoiZXMiLCJjaCI6NjU3MSwicHRmIjo1fQ%3D%3D/26034/euronews-es.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=1&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=12&ads.rtv_channel_id=6571&ads.rtv_channel_name=euronews-live-spa_es&ads.rtv_content_id=6571&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=493cad89-7d02-4cfe-bf1a-40b6bc1afc89&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6571&publishing_platform_id=5&tenant_identifier=rtv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "EWTN",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ee/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Expresa TV (720p)",
+    "logo": "",
+    "url": "https://5ca9af4645e15.streamlock.net/teleradio/smil:teleradio.smil/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Extrema TV | Costa Rica",
+    "logo": "",
+    "url": "http://livestreamcdn.net:1935/ExtremaTV/ExtremaTV/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "FailArmy",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-ESBA1400006NP",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "FilmRise Sci-Fi",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=sci-fi&ads._fw_content_language=es&ads._fw_content_rating=tv-14&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=FilmRiseSciFiSpanish&ads.content_livestream=0&ads.csid=zeus_es_filmrisescifispanish_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=3689&ads.rakuten_streaming_id=c023c3cc-03f4-44b8-bc8a-abc0a91f7ef6&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883026&ads.xumo_channel_id=88883026&ads.xumo_contentId=2701&ads.xumo_contentName=FilmRiseSpanish&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=2701&ads.xumo_providerName=filmrise-sci-fi-spa-rakutentv&ads.xumo_streamId=88883026",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "FOOD NETWORK",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0hu/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "FRANCE 24 FAST",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-ESBD1100001PQ",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Frecuencia Musical Tv op2 | USA",
+    "logo": "",
+    "url": "https://s2.tvdatta.com:3307/live/fmtvmatrizlive.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "FS1 | Austria",
+    "logo": "",
+    "url": "http://stream.fs1.tv:8080/hls/webstream.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "FTF Sports",
+    "logo": "https://provider-static.plex.tv/epg/cms/production/a3974870-48f2-4030-8b46-9534dc2b4772/FTFSports_750x500_logo_dark.png",
+    "url": "https://1199970269.rsc.cdn77.org/FTF/FTF_SCTE.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "FUEL TV",
+    "logo": "",
+    "url": "https://amg01074-fueltv-fueltvemeaen-rakuten-b6j62.amagi.tv/hls/amagi_hls_data_rakutenAA-fueltvemeaen/CDN/master.m3u8?ads_amagi_channel_id=847&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB17&ads_content_genre=sports%2Caction&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=149.102.236.246&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=7&ads_rtv_content_id=4802&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=21e2c88e-b019-4f8c-b7ac-e6ebe5b3dda6&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "FX",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ds/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "GikTVMX (720p)",
+    "logo": "",
+    "url": "https://pistream.ddns.net/hls/stream.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "GikTVMX | MX",
+    "logo": "",
+    "url": "https://pistream.ddns.net/hls/stream.m3u8?PlaylistM3UCL",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "GLOBOVISION",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09k/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Globovision",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0co/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Golden",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cj/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "GOLDEN EDGE",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ab/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Goldenedge",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ck/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "GRJNGO",
+    "logo": "https://provider-static.plex.tv/epg/cms/production/76964e60-8756-4551-8748-dbd7852bd0bd/Grjngo-Westernfilme_logo_light_-_Toni_Newesil__1_.png",
+    "url": "https://amogonetworx-grjngo-2-eu.plex.wurl.tv/2000.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Grjngo",
+    "logo": "",
+    "url": "https://86ebcafef90e449fbb9439c196e7d149.mediatailor.us-east-1.amazonaws.com/v1/master/0fb304b2320b25f067414d481a779b77db81760d/RakutenTV-es_GrjngoPeliculasDelOeste-1/playlist.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_categories=IAB1&ads.content_genre=western%2Cmovies&ads.content_livestream=0&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_type=web&ads.device_year=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.nonce=&ads.os_language=&ads.placement=1&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_content_id=4495&ads.rtv_content_language=es&ads.rtvid=271859&ads.streaming_id=082eb658-d32f-4dc7-ad59-ef4b5138f4ef&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&ads.wurl_channel_id=1906",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Hard Knocks Fighting Championship",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB17&ads._fw_content_genre=sports&ads._fw_content_language=en&ads._fw_content_rating=tv-14&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=HardKnocks&ads.content_livestream=0&ads.csid=zeus_eu_hardknocks_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=359&ads.rakuten_streaming_id=7ea08a05-66d7-4c85-ab37-11520ba5c147&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883037&ads.xumo_channel_id=88883037&ads.xumo_contentId=212&ads.xumo_contentName=HardKnocks&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=212&ads.xumo_providerName=hard-knocks-fighting-champ-eng-rakutentv&ads.xumo_streamId=88883037",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Historias de ultratumba",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=mystery%2Chorror%2Cthriller&ads._fw_content_language=es&ads._fw_content_rating=tv-14&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=IndigeniusFrance&ads.content_livestream=0&ads.csid=zeus_fr_ahaunting_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=6974&ads.rakuten_streaming_id=3334e742-acc4-4fc1-b599-b89a56215450&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883127&ads.xumo_channel_id=88883127&ads.xumo_contentId=4231&ads.xumo_contentName=IndigeniusCrimenSpanish&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=4231&ads.xumo_providerName=a-haunting-spa-rakutentv&ads.xumo_streamId=88883127",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "history",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cv/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "HISTORY1",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0an/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "History2",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cq/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "HISTORY2 INTERNO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ag/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "HITS MEXICANOS",
+    "logo": "",
+    "url": "https://e46fa4a445464f8a9150fa7d510eb85c.mediatailor.us-west-2.amazonaws.com/v1/manifest/2d2d0d97b0e548f025b2598a69b55bf30337aa0e/npp/7ad7548f-cc44-4a1b-9aff-34610417fe1b/4.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "HOGAR TV HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0g0/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "HTV SRT EN",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a081/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ICRTV Colima (1080p)",
+    "logo": "",
+    "url": "https://5fc584f3f19c9.streamlock.net/icrtvcolima/smil:icrtvcolima.smil/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "ID HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a07j/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Ideas en 5 Minutos",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-ESBC3500002PW",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Ideas en 5 minutos",
+    "logo": "",
+    "url": "https://soul-5mincraftspa-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-soul-5mincraftspanish-rakuten/CDN/master.m3u8?ads_amagi_channel_id=843&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment%2Chobbies&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=149.102.236.246&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_content_id=4658&ads_rtv_content_language=es&ads_rtvid=271859&ads_streaming_id=34a1bf09-285c-4db2-b7b3-8310ae68eb12&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "INTER 24/7",
+    "logo": "",
+    "url": "https://amg27604-amg27604c1-amgplt0165.playout.now3.amagi.tv/playlist/amg27604-amg27604c1-amgplt0165/playlist.m3u8?ads_amagi_channel_id=1044&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB17&ads_content_genre=sports&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=149.102.236.246&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_content_id=7073&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=23ed89b3-cbaf-4654-a89c-0e7f72ee5406&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "IQ Channel",
+    "logo": "https://meganettv.fun/storage/channel-logos/Fg8XXH5P1j0a2RjpkWFmaAR4X50xrRKVrQ4O5LFM.png",
+    "url": "https://rtmp.info/iqtv/envivo/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Iquique Tv | Chile",
+    "logo": "",
+    "url": "https://origin.skarnetchile.com:8081/iquiquetv-hd/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "IVC",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cs/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "IVC",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ah/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Jalisco TV (720p)",
+    "logo": "",
+    "url": "https://video0.rogohosting.com:19360/sisjalisciense/sisjalisciense.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Just for Laughs",
+    "logo": "https://drupal.hahaha.com/sites/default/files/2022-12/jfl_226x150.png",
+    "url": "https://distributionsjustepourrire-justforlaughsgags-1-es.samsung.wurl.tv/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Kanal D",
+    "logo": "https://www.kanalddrama.com/assets/img/logo_bottom2.png",
+    "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01602-themahqfrance-vivekanald-samsungspain/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Kanal D Drama HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a083/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "KanalDrama",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0c6/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Kpop Tv Play | Brasil",
+    "logo": "",
+    "url": "https://d1243acc59954ef9bdd02bd9d13025cb.mediatailor.us-east-1.amazonaws.com/v1/master/f4e8c53a8367a5b58e20ce054ea3ce25a3e904d3/LG-br_NewKPop/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "La fiebre del jade",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=entertainment&ads._fw_content_language=es&ads._fw_content_rating=tv-14&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=JadeFeverSpanish&ads.content_livestream=0&ads.csid=zeus_es_indigeniuslefiebredeljade_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=5915&ads.rakuten_streaming_id=0fbc6628-abcc-4c9d-967c-fcf6b07412a6&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883088&ads.xumo_channel_id=88883088&ads.xumo_contentId=2504&ads.xumo_contentName=IndigeniusSpanish&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=2504&ads.xumo_providerName=jade-fever-spa-rakutentv&ads.xumo_streamId=88883088",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Las tres mellizas",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=children%2Canimation&ads._fw_content_language=es&ads._fw_content_rating=tv-pg&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=IndigeniusSpanish&ads.content_livestream=0&ads.csid=zeus_es_lastresmellizas_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=6976&ads.rakuten_streaming_id=e657f4fc-aaf9-4a98-a527-e7bb271145b9&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883128&ads.xumo_channel_id=88883128&ads.xumo_contentId=1865&ads.xumo_contentName=IndigeniusKids&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=1865&ads.xumo_providerName=las-tres-mellizas-spa-rakutentv&ads.xumo_streamId=88883128",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Lassie TV",
+    "logo": "",
+    "url": "https://xumo-xumoent-ch833-p47sj.fast.nbcuni.com/live/master.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "lifetime",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cr/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "LIFETIME INTERNO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ai/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Lobo TV (720p)",
+    "logo": "",
+    "url": "https://5ca3e84a76d30.streamlock.net/tvlobo/videotvlobo/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Los Gipsy Kings",
+    "logo": "",
+    "url": "https://gipsy-kings-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6752/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6752&ads.rtv_channel_name=gipsy-kings-rakuten-tv_es&ads.rtv_content_id=6752&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=4f766b9d-7f4c-4d64-98cd-1fc0ab425c64&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6752&publishing_platform_id=5&tenant_identifier=rtv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Los Padrinos Mágicos",
+    "logo": "https://images.pluto.tv/channels/6322099c822bbc00074857db/colorLogoPNG-1667576393608.png",
+    "url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6322099c822bbc00074857db/master.m3u8?deviceId=0&deviceVersion=0&appVersion=0&deviceType=0&deviceMake=0&sid=cb17&deviceDNT=0&deviceModel=0",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Love the Planet",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-ESBC4700002TD",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Made In Hollywood",
+    "logo": "https://i.imgur.com/p16HNIM.png",
+    "url": "https://connection3-ent-nz.samsung.wurl.tv/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Maverick Black Cinema",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-USAJ3000007MT",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "MERIDIANO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0fr/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Merlí",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=soap-opera%2Cdrama%2Cromance&ads._fw_content_language=es&ads._fw_content_rating=tv-14&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=IndigeniusSpanish&ads.content_livestream=0&ads.csid=zeus_es_merli_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=6828&ads.rakuten_streaming_id=888f0419-f030-46c8-8241-7f80d0f70faf&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883119&ads.xumo_channel_id=88883119&ads.xumo_contentId=2054&ads.xumo_contentName=IndigeniusSpanish&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=2054&ads.xumo_providerName=merli-spa-rakutentv&ads.xumo_streamId=88883119",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Mexiquense TV | MX",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1c/XEM_Logo.png",
+    "url": "https://5ca3e84a76d30.streamlock.net:443/mexiquense/videomexiquense/playlist.m3u8?PlaylistM3UCL",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "MHz Mysteries",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-USAJ22000130U",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Miami TV Latino",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/633-294x165-FFFFFF.jpg",
+    "url": "https://59ec5453559f0.streamlock.net/Latino/smil:VIVALIVE/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Miami TV Life",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3469-960x540-000000.jpg",
+    "url": "https://59ec5453559f0.streamlock.net/miamitvlife/smil:WEB/.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "MIC: Canal 6",
+    "logo": "",
+    "url": "https://5f1af61612fb5.streamlock.net/canal6mich2/videocanal6mich2/chunklist_w119129650.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9Ni8xNy8yMDIzIDE6MjA6MzUgUE0maGFzaF92YWx1ZT1pLyttRnh1STUrS1gwNFdWZnFnbGRnPT0mdmFsaWRtaW51dGVzPTEwJmlkPQ%3D%3D",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "MIC: CBTV Michoacan",
+    "logo": "",
+    "url": "https://5ca3e84a76d30.streamlock.net/cbtv/videocbtv/chunklist_w233916547.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9Ni8xNy8yMDIzIDE6MTY6MTYgUE0maGFzaF92YWx1ZT1TRG9tVW16WXcxdldkdkQ5N3VwdjlnPT0mdmFsaWRtaW51dGVzPTEwJmlkPQ%3D%3D",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "MIC: Media Group Radio",
+    "logo": "",
+    "url": "https://5ca3e84a76d30.streamlock.net/canal6mich/videocanal6mich/chunklist_w157206410.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9Ni8xNy8yMDIzIDE6MTk6MjQgUE0maGFzaF92YWx1ZT1yUmh6dG1ERHhBTEJMRUNSWlpxUXRRPT0mdmFsaWRtaW51dGVzPTM2MCZpZD0%3D",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "MIC: Media Group Radio",
+    "logo": "",
+    "url": "https://5ca3e84a76d30.streamlock.net/canal6mich/videocanal6mich/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Misterios sin resolver",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=crime%2Cmystery&ads._fw_content_language=es&ads._fw_content_rating=tv-14&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=FilmRise&ads.content_livestream=0&ads.csid=zeus_es_misteriossinresolver_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=6972&ads.rakuten_streaming_id=535a7dd0-64c8-431d-b466-cfa77d39b6dd&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883123&ads.xumo_channel_id=88883123&ads.xumo_contentId=2648&ads.xumo_contentName=FilmRiseTrueCrimeMexico&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=2648&ads.xumo_providerName=filmrise-unsolved-mysteries-spa-rakutentv&ads.xumo_streamId=88883123",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Monte Maria (1080p)",
+    "logo": "",
+    "url": "https://5ca9af4645e15.streamlock.net/montemaria/videomontemaria/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "MTV",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ad/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "MUSICA HITS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09u/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "MUSICA POPULAR",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09v/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "MUSICA REGUETON",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09r/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "MUSICA SALSA",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09z/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "MX: MULTIMEDIOS TELEDIARIO NOW DASH",
+    "logo": "",
+    "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=11014",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Nat Geo HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a093/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Natgeo",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0c7/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "National Geographic (1080p)",
+    "logo": "",
+    "url": "http://138.121.15.230:9002/NAT-GEO/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Naturaleza",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=outdoors&ads._fw_content_language=es&ads._fw_content_rating=tv-14&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=IndigeniusNaturalezaSpanish&ads.content_livestream=0&ads.csid=zeus_es_indigeniusnaturalezaspanish_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=3688&ads.rakuten_streaming_id=467e57f0-c3e7-4ef5-99a2-d16b51e14031&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883049&ads.xumo_channel_id=88883049&ads.xumo_contentId=2161&ads.xumo_contentName=IndigeniusNaturalezaSpanish&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=2161&ads.xumo_providerName=naturaleza-spa-rakutentv&ads.xumo_streamId=88883049",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Nature Time",
+    "logo": "",
+    "url": "https://amg00090-amgnaturetimeemea-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-bamus-naturetimeemeaspa/CDN/master.m3u8?ads_amagi_channel_id=809&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=outdoors%2Canimals&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=149.102.236.246&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_content_id=4330&ads_rtv_content_language=es&ads_rtvid=271859&ads_streaming_id=4dc52a2b-5874-4e38-9239-ecdefa35d9c5&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "NAY: 8 NTV Nayarit",
+    "logo": "",
+    "url": "https://60417ddeaf0d9.streamlock.net/ntv/videontv/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Negocios TV",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-ESBD3400001AA",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Neo TV | Argentina",
+    "logo": "",
+    "url": "https://videostream.shockmedia.com.ar:19360/neotvdigital/neotvdigital.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Neox | Argentina",
+    "logo": "",
+    "url": "https://tv.streamcasthd.com:3031/live/neoxtvlive.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Nick HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a07l/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Nickelodeon en español",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nickelodeon_2023_logo_%28outline%29.svg/1200px-Nickelodeon_2023_logo_%28outline%29.svg.png",
+    "url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d8d08395f39465da6fb3ec4/master.m3u8?deviceId=0&deviceVersion=0&appVersion=0&deviceType=0&deviceMake=0&sid=ce75&deviceDNT=0&deviceModel=0",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "NICKJR",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0a0/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "NOW 70s",
+    "logo": "",
+    "url": "https://lightning-now70s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now70s-rakuten/CDN/playlist.m3u8?ads_amagi_channel_id=869&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=149.102.236.246&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_content_id=5284&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=85a72260-293c-41a1-ba07-f4912265bddb&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "NOW 80s",
+    "logo": "",
+    "url": "https://lightning-now80s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now80s-rakuten/CDN/playlist.m3u8?ads_amagi_channel_id=871&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=149.102.236.246&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_content_id=5318&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=9ed41ddb-9492-486f-8047-e663eb175e55&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "NOW Rock",
+    "logo": "",
+    "url": "https://lightning-now90s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now90s-rakuten/CDN/playlist.m3u8?ads_amagi_channel_id=870&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=149.102.236.246&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_content_id=5352&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=08d5d157-6d7e-4f80-8560-0e6ac3f544a1&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "NTN 24",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0a6/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "NUESTRATELE",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0a8/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Nueve TV San Luís Potosí (720p)",
+    "logo": "",
+    "url": "https://5ca9af4645e15.streamlock.net/nuevetv/videonuevetv/.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "OLE 1",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0aj/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "OLE 2.2",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0af/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Pac-12 Insider",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-USBA300034DB",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "paramount",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0c8/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Paramount HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a06u/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Pelis Top",
+    "logo": "",
+    "url": "https://top-movies-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-5983/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=5983&ads.rtv_channel_name=top-movies-rakuten-tv_es&ads.rtv_content_id=5983&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=59537d01-a75b-4540-ba03-975af0665f31&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=5983&publishing_platform_id=5&tenant_identifier=rtv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Películas Románticas",
+    "logo": "",
+    "url": "https://romance-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6105/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6105&ads.rtv_channel_name=romance-rakuten-tv_es&ads.rtv_content_id=6105&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=223dabcc-75e6-4548-a193-a5cb9a3b3ec0&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6105&publishing_platform_id=5&tenant_identifier=rtv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "People Are Awesome",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-ESAJ4500023Y5",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Pichilemu TV (1080p)",
+    "logo": "",
+    "url": "https://5ff3d9babae13.streamlock.net/8028/8028/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Pilotos del Ártico",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=entertainment%2Coutdoors&ads._fw_content_language=es&ads._fw_content_rating=tv-14&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=IcePilotsSpanish&ads.content_livestream=0&ads.csid=zeus_es_indigeniusicepilots_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=5914&ads.rakuten_streaming_id=468587c2-db81-47dc-8b96-2a047ae734a9&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883090&ads.xumo_channel_id=88883090&ads.xumo_contentId=2504&ads.xumo_contentName=IndigeniusSpanish&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=2504&ads.xumo_providerName=ice-pilots-spa-rakutentv&ads.xumo_streamId=88883090",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "PlousTV",
+    "logo": "https://www.ploustv.com/ploustv.png",
+    "url": "https://vcp.myplaytv.com/glowtv/glowtv/.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Power Max Radio TV (720p)",
+    "logo": "",
+    "url": "https://videostream.shockmedia.com.ar:19360/radio1045/radio1045.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "PowerHD (720p)",
+    "logo": "",
+    "url": "https://live2.tensila.com/1-1-1.power-tv/hls/master.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Presumiendo México (720p)",
+    "logo": "",
+    "url": "https://60417ddeaf0d9.streamlock.net/telemetrika/smil:telemetrika.smil/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Primired | ND",
+    "logo": "",
+    "url": "https://cdn.global.elektamedia.com/live/c7eds/Primired/SA_LIVE_hls_enc/master.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Qello Concerts by Stingray",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=entertainment&ads._fw_content_language=en&ads._fw_content_rating=tv-g&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=QelloConcertsbyStingray&ads.content_livestream=0&ads.csid=zeus_eu_qelloconcertsbystingray_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=341&ads.rakuten_streaming_id=01061c4c-5895-48b6-8d30-489ee428379f&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883052&ads.xumo_channel_id=88883052&ads.xumo_contentId=187&ads.xumo_contentName=QelloConcertsByStingray&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=187&ads.xumo_providerName=stingray-qello-concerts-eng-rakutentv&ads.xumo_streamId=88883052",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Quantica TV | Argentina",
+    "logo": "",
+    "url": "https://videostream.shockmedia.com.ar:19360/quanticatv/quanticatv.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Qwest TV",
+    "logo": "",
+    "url": "https://qwestjazz-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-qwestjazz-rakuten/CDN/master.m3u8?ads_amagi_channel_id=711&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=149.102.236.246&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_content_id=2268&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=988d4b14-0a9b-4061-925c-063cd49f7d4a&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio 88 Stereo CR",
+    "logo": "https://i2.paste.pics/191d7f0299ec0197d15d2e7b76ff037f.png",
+    "url": "http://k3.usastreams.com/CableLatino/88stereo/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Acustik 1150 Morelia",
+    "logo": "",
+    "url": "http://server2.sit-mexico.com:8050/stream/1/",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Banda Duranguense 93.3",
+    "logo": "",
+    "url": "http://node-25.zeno.fm/ksykvw16avduv?rj-ttl=5&rj-tok=AAABeNiPueQAr80XAC6vekxRNQ",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Bonita 95.1 Oaxaca op2",
+    "logo": "",
+    "url": "http://node-19.zeno.fm/05g7pygka3quv?rj-ttl=5&rj-tok=AAABcjgJJpIAM_RurmDtn1qn5g",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Bruno | Italia",
+    "logo": "",
+    "url": "https://stream2.xdevel.com/video0s975758-1048/stream/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Colombia Bachata",
+    "logo": "",
+    "url": "http://perseus.shoutca.st:8312/;stream/1",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Colombia Crossover",
+    "logo": "",
+    "url": "http://64.37.50.226:8006/stream",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Colombia Salsa Rosa",
+    "logo": "",
+    "url": "http://64.37.50.226:8036/stream",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Conexion Tropical 96 9",
+    "logo": "",
+    "url": "https://radios.solumedia.com:6088/stream",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Conexion Web TV (720p)",
+    "logo": "",
+    "url": "https://tuvideoonline.com.ar:3391/live/radioconexionlive.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Estacion Mix",
+    "logo": "",
+    "url": "https://listen.openstream.co/6502/audio",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Fortuna Radio",
+    "logo": "",
+    "url": "https://s1.raudiostream.com:8008/stream",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio La Bonita del Norte 92.7",
+    "logo": "",
+    "url": "https://stream3.mexiserver.com:10131/stream/1/",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio La Grupera 93.1 Morelia",
+    "logo": "",
+    "url": "http://www.tuasesorweb.com:8000/;stream/1",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio La Grupera Radio MX",
+    "logo": "",
+    "url": "https://centova.hostingelectrica.net/proxy/grupera12?mp=/stream",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio La Ranchera de Monterrey 1050",
+    "logo": "",
+    "url": "http://streamingcwsradio20.com:9410/stream",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio LT15 La Radio del Litoral",
+    "logo": "",
+    "url": "https://lt15concordia.radioca.st/stream",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Merengue Tropical Merengue",
+    "logo": "",
+    "url": "http://tropical100.net:8012/;",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Michy Miau FM",
+    "logo": "",
+    "url": "http://node-34.zeno.fm/s5494s8pta0uv?rj-ttl=5&rj-tok=AAABeMmnxIcAFJ64ThNbIiZ4sA",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Panda FM",
+    "logo": "",
+    "url": "http://65.21.202.84:8301/stream/1/",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Panda Pop",
+    "logo": "",
+    "url": "http://65.21.202.84:8182/stream/1/",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Pop",
+    "logo": "",
+    "url": "http://node-15.zeno.fm/94abs07w82quv?rj-ttl=5&rj-tok=AAABdqgGbDsANLkFqNQ2h-p5IA",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Reggae Mix Station",
+    "logo": "",
+    "url": "http://france1.coollabel-productions.com:8142/;",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Rock Antenne Classic Perlen",
+    "logo": "",
+    "url": "http://194.97.151.139/classic-perlen",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Rock Metal",
+    "logo": "",
+    "url": "http://100x100rock.stream.laut.fm:8080/100x100rock",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Santa Ana California",
+    "logo": "",
+    "url": "http://s10.voscast.com:7688/;stream1575414865714/1",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Selena",
+    "logo": "",
+    "url": "http://s10.voscast.com:7870/;",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Tatu-Tatu",
+    "logo": "",
+    "url": "https://stream.pcradio.ru/Tatu-med",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Tsipikua 94.7",
+    "logo": "",
+    "url": "http://stream-170.zeno.fm/ryiionzsjxztv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio TV Neuquén (720p) [Not 24/7]",
+    "logo": "",
+    "url": "https://media.neuquen.gov.ar/rtn/television/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Vida al Maximo",
+    "logo": "",
+    "url": "http://stream.zeno.fm/0z2k0tsmx38uv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Viva El Mariachi",
+    "logo": "",
+    "url": "http://node-03.zeno.fm/gs4xg5s0csmtv?rj-ttl=5&rj-tok=AAABeHBWouQA9m2GhtVlBW72EA",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radio Within Temptation op2",
+    "logo": "",
+    "url": "https://stream.pcradio.ru/Within_Temptation-med",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Radiocanal San Francisco (1080p)",
+    "logo": "",
+    "url": "http://204.199.3.2/.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "raduo2",
+    "logo": "",
+    "url": "https://stream.pcradio.ru/Linkin_Park-hi",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Raly TV (720p)",
+    "logo": "",
+    "url": "https://cloudvideo.servers10.com:8081/8072/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "RCG 1 Saltillo | MX",
+    "logo": "",
+    "url": "https://video1.getstreamhosting.com:1936/8172/8172/playlist.m3u8?PlaylistM3UCL",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "RCN ENVIO SEÑAL",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0az/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "RCN LOCAL",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09l/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "RCN Mas",
+    "logo": "https://img1.static-ottera.com/prod/cnm/linear_channel/thumbnails/widescreen/960x540/sin_titulo_1920_x_1080_px_7.jpg",
+    "url": "https://rcntv-rcnmas-1-us.plex.wurl.tv/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "RCN NOVELAS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0a7/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "RED BULL TV | Austria",
+    "logo": "",
+    "url": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_1660.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Retro Music Tv | Checoslovaquia",
+    "logo": "",
+    "url": "http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Royalworld - Nobleza y Dinastias",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-ESBD1400003QN",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "RTG (720p)",
+    "logo": "",
+    "url": "https://5e50264bd6766.streamlock.net/radtvguerrero/videoradtvguerrero/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "RTN (Neuquén) (720p) [Not 24/7]",
+    "logo": "",
+    "url": "https://media.neuquen.gov.ar/rtn/television/media.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "RTQ Queretaro | MX",
+    "logo": "",
+    "url": "https://59d39900ebfb8.streamlock.net/rytqrolive/rytqrolive/playlist.m3u8?PlaylistM3UCL",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "RUMBA TV",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ec/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "RUMBA TV HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0fy/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SCI",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0hv/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Sci-Fi",
+    "logo": "",
+    "url": "https://sci-fi-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6740/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6740&ads.rtv_channel_name=sci-fi-rakuten-tv_es&ads.rtv_content_id=6740&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=a6dd781c-4281-42f4-840d-64ab9b55d8c8&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6740&publishing_platform_id=5&tenant_identifier=rtv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SET Televisión Canal 26.1 (720p) [Not 24/7]",
+    "logo": "",
+    "url": "https://5d0d1d7a6be9e.streamlock.net/sicom/canal1/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SET Televisión Canal 26.2 (720p) [Not 24/7]",
+    "logo": "",
+    "url": "https://5d0d1d7a6be9e.streamlock.net/sicom/canal2/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SEÑAL COLOMBIA  NACIONAL SIN TRANS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0d1/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Señal España (XHUNES-TDT) (720p)",
+    "logo": "",
+    "url": "https://tv91.hostingnuclear.com:19360/xhunestv/xhunestv.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SIN: TVP Culiacan",
+    "logo": "",
+    "url": "https://5ca3e84a76d30.streamlock.net/gpacifico1/smil:gpculiacan.smil/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SIN: TVP Los Mochis",
+    "logo": "",
+    "url": "https://5ca3e84a76d30.streamlock.net/gpacifico2/smil:mochis.smil/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SIN: TVP Mazatlan",
+    "logo": "",
+    "url": "https://5ca3e84a76d30.streamlock.net/gpacifico4/smil:mazatlan.smil/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SIZART Canal 24 (XHZHZ-TDT) (720p)",
+    "logo": "",
+    "url": "https://5f2c1b0d880e5.streamlock.net/zacatecas/videozacatecas/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SLP: Nueve TV",
+    "logo": "",
+    "url": "https://5ca9af4645e15.streamlock.net/nuevetv/videonuevetv/chunklist_w2067160029.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SoloBáilalo (480p)",
+    "logo": "",
+    "url": "https://5ff3d9babae13.streamlock.net/8000/8000/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SoloBáilalo (480p)",
+    "logo": "",
+    "url": "https://5ff3d9babae13.streamlock.net/8016/8016/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SON: Telemax Sonora",
+    "logo": "",
+    "url": "http://s5.mexside.net:1935/telemax/telemax/chunklist_w586584359.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SON: TVP Cd. Obregon",
+    "logo": "",
+    "url": "https://5ca3e84a76d30.streamlock.net/gpacifico3/smil:obregon.smil/chunklist_w1903526755_b1428000_sleng.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SONY CHANNEL",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ao/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SONY CHANNEL",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0e6/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SONY MUVIES",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ap/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SONY MUVIES",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0e7/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Soy Plancha TV CR",
+    "logo": "https://i2.paste.pics/ade26f32ba4868798ef1593a34e57ef7.png",
+    "url": "https://59ef525c24caa.streamlock.net/vmtv/soyplancha/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SPACE SRT EN",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a096/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Stadium",
+    "logo": "https://s23455.pcdn.co/wp-content/uploads/2018/08/stadium-logo-640.jpeg.optimal.jpeg",
+    "url": "https://2d006483e2aa43fe812f7b464cb2916d.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung_Stadium/playlist.m3u8?ads.wurl_channel=160&ads.wurl_name=Stadium&ads.us_privacy=1YNY&ads.psid=%7BPSID%7D&ads.targetopt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "starchannel",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0c9/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Stingray Greatest Hits",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=entertainment&ads._fw_content_language=en&ads._fw_content_rating=tv-g&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=StingrayGreatestHits&ads.content_livestream=0&ads.csid=zeus_eu_stingraygreatesthits_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=2188&ads.rakuten_streaming_id=3ce799b0-802f-4c84-b7fc-236a5c029c86&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883053&ads.xumo_channel_id=88883053&ads.xumo_contentId=1857&ads.xumo_contentName=StingrayGreatestHits&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=1857&ads.xumo_providerName=stingray-greatest-hits-eng&ads.xumo_streamId=88883053",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Stingray Naturescape",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=outdoors&ads._fw_content_language=en&ads._fw_content_rating=tv-g&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=StingrayNaturescape&ads.content_livestream=0&ads.csid=zeus_eu_stingrayambiance_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=1288&ads.rakuten_streaming_id=7ab66400-6470-42b7-b20b-4703ca1571af&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883056&ads.xumo_channel_id=88883056&ads.xumo_contentId=188&ads.xumo_contentName=StingrayAmbiance&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=188&ads.xumo_providerName=stingray-naturescape-eng-rakutentv&ads.xumo_streamId=88883056",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Stingray: Hitlist",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=entertainment&ads._fw_content_language=en&ads._fw_content_rating=tv-g&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=StingrayHitlist&ads.content_livestream=0&ads.csid=zeus_eu_stingrayhitlist_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=2080&ads.rakuten_streaming_id=8aabc52b-07fd-472f-a4c3-5ef81b662341&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883054&ads.xumo_channel_id=88883054&ads.xumo_contentId=1858&ads.xumo_contentName=StingrayHitlist&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=1858&ads.xumo_providerName=stingray-hit-list-eng-rakutentv&ads.xumo_streamId=88883054",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Stingray: Remember the 80’s",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=entertainment&ads._fw_content_language=en&ads._fw_content_rating=tv-g&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=RememberThe80sUK&ads.content_livestream=0&ads.csid=zeus_uk_stingrayrememberthe80s_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=4883&ads.rakuten_streaming_id=e927a2b0-0e84-4db1-a526-69719a0ed6eb&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883071&ads.xumo_channel_id=88883071&ads.xumo_contentId=2184&ads.xumo_contentName=StingrayEverything80s&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=2184&ads.xumo_providerName=stingray-remember-the-80s-eng-rakutentv&ads.xumo_streamId=88883071",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Studio Universal Latin America (1080p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png",
+    "url": "http://15.204.246.24:8080/StudioUniversalHD/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Studiouniversal",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cf/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SYFY",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cl/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "SYFY (USA)",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09x/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Taltal TV",
+    "logo": "",
+    "url": "https://giatv.bozztv.com/giatv/giatv-TALTALTVANIMACION/TALTALTVANIMACION/chunks.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Tastemade",
+    "logo": "https://static-prod.adweek.com/wp-content/uploads/2022/05/Tastemade-2022.jpg",
+    "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00047-tastemade-tastemadees16international24i-ono/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TCM",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0du/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Tele Saltillo",
+    "logo": "",
+    "url": "https://servilive.com:3879/live/telesaltillolive.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Tele Yucatan (1080p) [Geo-blocked]",
+    "logo": "",
+    "url": "https://5ca3e84a76d30.streamlock.net/teleyucatan/videoteleyucatan/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TELEAMIGA",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0dv/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TELEAMIGA ENVIADO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a08b/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TELEANTIOQUIA NACIONAL SIN TRANS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0d5/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TELECAFE NACIONAL SIN TRANS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0d8/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TELECARIBE NACIONAL SIN TRANS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0d6/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TELEHIT MUSICA",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0g7/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TELEISLAS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0dx/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TeleJunín (576p)",
+    "logo": "",
+    "url": "https://videostream.shockmedia.com.ar:19360/telejunin/telejunin.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Telemas | Costarica",
+    "logo": "",
+    "url": "https://acceso.mediosdecostarica.com:3192/hybrid/play.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "telemundo",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cg/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Telemundo Puerto Rico",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Telemundo_Puerto_Rico.svg/1200px-Telemundo_Puerto_Rico.svg.png",
+    "url": "https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Telenorte | ND",
+    "logo": "",
+    "url": "https://627bb251f23c7.streamlock.net:444/TopRadioTV/TopRadioTV/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TELENOSTALGIA ENVIADO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a07t/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TELENOSTALGIA HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0fz/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TELENOVELAS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ar/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "telenovelas",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cw/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TELEPACIFICO NACIONAL SIN TRANS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0d7/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Telered | Costa Rica",
+    "logo": "",
+    "url": "https://k20.usastreams.com:8081/telered/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TELESUR",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0fm/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TeleSUR HD | Costa Rica",
+    "logo": "",
+    "url": "https://s1.tvdatta.com:3582/live/telesurlive.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Teletrak | Chile",
+    "logo": "",
+    "url": "http://unlimited6-cl.dps.live/sportinghd/sportinghd.smil/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TELEVEN",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09j/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "televen",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cd/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TELEVISA 1",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ak/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TELEVISA CON ENTRETEIMENT",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0av/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TELEVISA DE 3 CANALES",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0at/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Tennis+",
+    "logo": "",
+    "url": "https://amg01935-amg01935c1-amgplt0165.playout.now3.amagi.tv/playlist/amg01935-amg01935c1-amgplt0165/playlist.m3u8?ads_amagi_channel_id=985&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakuten.tv&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB17&ads_content_genre=sports&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=149.102.236.246&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_content_id=7182&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=ff9732d3-41a4-46aa-8d23-37501144dae0&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Tevex (720p) [Not 24/7]",
+    "logo": "",
+    "url": "https://v4.tustreaming.cl/tevexinter/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "The Pet Collective",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-ESAJ4500016BH",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Thrillers",
+    "logo": "",
+    "url": "https://thriller-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6480/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6480&ads.rtv_channel_name=thriller-rakuten-tv_es&ads.rtv_content_id=6480&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=a3cb69dc-13b0-4f77-bfdb-735c958516b8&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6480&publishing_platform_id=5&tenant_identifier=rtv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TIV Television (720p)",
+    "logo": "",
+    "url": "https://videohd.live:19360/8008/8008.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TLC",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ch/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TLC",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0a3/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TLT",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0fs/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TNT NOVELAS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0bq/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TNT Novelas HD",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09h/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TNT SERIES SRT EN",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a098/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TNT SRT EN",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a097/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Todo Crimen",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=crime&ads._fw_content_language=es&ads._fw_content_rating=tv-14&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=IndigeniusCrimenSpanish&ads.content_livestream=0&ads.csid=zeus_es_indigeniuscrimenspanish_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=3687&ads.rakuten_streaming_id=239e7c9b-44c7-431e-ba83-8671d3ef85bd&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883018&ads.xumo_channel_id=88883018&ads.xumo_contentId=2192&ads.xumo_contentName=IndigeniusCrimenSpanish&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=2192&ads.xumo_providerName=todo-crimen-spa-rakutentv&ads.xumo_streamId=88883018",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Toon Googles",
+    "logo": "https://m.media-amazon.com/images/I/81j8DgLstPL.png",
+    "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=514",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Toonami Aftermath East | ND",
+    "logo": "",
+    "url": "http://api.toonamiaftermath.com:3000/est/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Toonami Aftermath West| ND",
+    "logo": "",
+    "url": "http://api.toonamiaftermath.com:3000/pst/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TOONCAST ENVIADO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09g/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TRACE Latina",
+    "logo": "https://provider-static.plex.tv/epg/cms/production/04b0a12e-b393-4456-9927-a48b793b623a/trace_latina_light_-_Nathan_BECKER.png",
+    "url": "https://amg01131-tracetv-tracelatinaes-samsungspain-d7byg.amagi.tv/playlist/amg01131-tracetv-tracelatinaes-samsungspain/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Trace Latina",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-ESBA3300042Y6",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TRACE Urban",
+    "logo": "https://provider-static.plex.tv/epg/cms/production/d6fba6a2-2650-487f-ab1b-1eb034bd11c7/trace_urban_light_-_Nathan_BECKER.png",
+    "url": "https://amg01131-tracetv-traceurbanes-samsungspain-c6yeo.amagi.tv/playlist/amg01131-tracetv-traceurbanes-samsungspain/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Trace Urban",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-ESBA3300043M0",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Trailers",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-ESBC1700004PX",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Transmedia Televisión Morelia (614p) [Geo-blocked]",
+    "logo": "",
+    "url": "http://streamingcws20.com:1935/tmtv/videotmtv/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Transmedia Televisión Morelia (614p) [Geo-blocked]",
+    "logo": "",
+    "url": "https://5ca3e84a76d30.streamlock.net/tmtv/videotmtv/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Travelxp",
+    "logo": "",
+    "url": "https://854164eda2f94a29ba557d887890363c.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_TravelXPES/playlist.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_categories=IAB1&ads.content_genre=outdoors%2Chobbies&ads.content_livestream=0&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_type=web&ads.device_year=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.nonce=&ads.os_language=&ads.placement=1&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=7&ads.rtv_content_id=5756&ads.rtv_content_language=es&ads.rtvid=271859&ads.streaming_id=686c6c0e-ca87-4a90-ae1a-a45777f26dad&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&ads.wurl_channel_id=1613",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TRO NACIONAL SIN TRANS",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0d9/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TURBO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0a5/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TURBO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ci/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TV Cuatro 4.1 (1080p)",
+    "logo": "",
+    "url": "https://5f1af61612fb5.streamlock.net/tv4/tv4.smil/.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TV FAMB",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0fp/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TV Lobo Durango (720p)",
+    "logo": "",
+    "url": "https://5ca9af4645e15.streamlock.net/lobodurango/videolobodurango/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TV Maná Argentina (576p) [Not 24/7]",
+    "logo": "",
+    "url": "https://w2.manasat.com/tvmana-ar/smil:tvmana-ar.smil/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TV Mar La Paz (1080p)",
+    "logo": "",
+    "url": "https://5fc584f3f19c9.streamlock.net/tvmarlapaz/smil:tvmarlapaz.smil/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TV Mar Los Cabos (1080p)",
+    "logo": "",
+    "url": "https://5fc584f3f19c9.streamlock.net/tvmarloscabos/smil:tvmarloscabos.smil/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TV Mar Puerto Vallarta (1080p)",
+    "logo": "",
+    "url": "https://5ca9af4645e15.streamlock.net/tvmarvallarta/videotvmarvallarta/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TV+ HD",
+    "logo": "",
+    "url": "https://jireh-10-hls-video-cl-movistar.dps.live/hls-video/ey6283je82983je9823je8jowowiekldk9838274/tvmas/tvmas.smil/tvmas/livestream0/chunks.m3u8?dpssid=b2105023887169ce9bd2c6a2e&sid=ba5t1l1xb297314216469ce9c570f1e1&ndvc=0",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TVAGRO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0e5/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TVES",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ft/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TVP Culiacan | MX",
+    "logo": "",
+    "url": "https://5ca3e84a76d30.streamlock.net:443/gpacifico1/smil:gpculiacan.smil/playlist.m3u8?PlaylistM3UCL",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TVP Los Mochis (720p) [Not 24/7]",
+    "logo": "",
+    "url": "https://5ca3e84a76d30.streamlock.net/gpacifico2/mochis.smil/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TVP Los Mochis | MX",
+    "logo": "",
+    "url": "https://5ca3e84a76d30.streamlock.net:443/gpacifico2/smil:mochis.smil/playlist.m3u8?PlaylistM3UCL",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TVP Mazatlan | MX",
+    "logo": "",
+    "url": "https://5ca3e84a76d30.streamlock.net:443/gpacifico4/smil:mazatlan.smil/playlist.m3u8?PlaylistM3UCL",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TVP Obregon | MX",
+    "logo": "",
+    "url": "https://5ca3e84a76d30.streamlock.net:443/gpacifico3/smil:obregon.smil/playlist.m3u8?PlaylistM3UCL",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TVP Obregón (720p) [Not 24/7]",
+    "logo": "",
+    "url": "https://5ca3e84a76d30.streamlock.net/gpacifico3/obregon.smil/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "TyC Sports USA",
+    "logo": "",
+    "url": "http://45.170.130.224:8000/play/a020/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "U Los Lagos TV (1080p) [Not 24/7]",
+    "logo": "",
+    "url": "http://tv.ulagos.cl/web/live.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Ultra TV Puebla (720p) [Not 24/7]",
+    "logo": "",
+    "url": "https://5e50264bd6766.streamlock.net/telemetrika2/smil:telemetrika2.smil/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "UMTV (1080p) [Not 24/7]",
+    "logo": "",
+    "url": "https://60417ddeaf0d9.streamlock.net/montemorelos/videomontemorelos/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "UMTV | MX",
+    "logo": "",
+    "url": "https://60417ddeaf0d9.streamlock.net:443/montemorelos/videomontemorelos/playlist.m3u8?PlaylistM3UCL",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "UNIVERSAL",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09t/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Universal",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0ce/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "UNIVERSAL  STUDIO",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a09w/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Universal TV Latin America (1080p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Universal_TV_logo.svg/960px-Universal_TV_logo.svg.png",
+    "url": "http://15.204.246.24:8080/UniversalHD/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "UNIVISION",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0e2/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "UNIVISION",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0er/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Univision Latin America (1080p)",
+    "logo": "",
+    "url": "http://138.121.15.230:9002/UNIVISION/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Urban Mix (720p)",
+    "logo": "",
+    "url": "https://cloud.tvomix.com/URBANMIX/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Urbano TV CR",
+    "logo": "https://i2.paste.pics/0c73fe6bc691b4aa4d1ac9cc3f93e500.png",
+    "url": "https://59ef525c24caa.streamlock.net/tvurbano/tvurbano/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "USA Network (syfy)",
+    "logo": "",
+    "url": "http://181.78.12.119:16123/play/a0df",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "UTV (720p)",
+    "logo": "",
+    "url": "https://v2.tustreaming.cl/utv/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Vaya semanita",
+    "logo": "",
+    "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=com.rakuten.tv&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=comedy&ads._fw_content_language=es&ads._fw_content_rating=tv-14&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=IndigeniusSpanish&ads.content_livestream=0&ads.csid=zeus_es_vayasemanita_ssai&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=6978&ads.rakuten_streaming_id=2808c10a-98ab-48c8-97c0-12120e94a636&ads.rakuten_user_type=visitor&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883129&ads.xumo_channel_id=88883129&ads.xumo_contentId=1103&ads.xumo_contentName=Indigenius&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=1103&ads.xumo_providerName=vaya-semanita-spa-rakutentv&ads.xumo_streamId=88883129",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "VClassicTV",
+    "logo": "https://vclassictv.cl/wp-content/uploads/2024/09/lovovclassictv_24-e1725897773915.png",
+    "url": "https://5eaccbab48461.streamlock.net:1936/8112/8112/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Venevision",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cp/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "VER: TVMAS Veracruz",
+    "logo": "",
+    "url": "https://5ca9af4645e15.streamlock.net/rtv/videortv/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Video Tour Channel CR",
+    "logo": "https://lh3.googleusercontent.com/-QUz4UviUPiE/X3YnewzIm7I/AAAAAAAA6Ho/xpUvyAvSX6Qj0Lvl8qhuZnDdz9VPZWy4QCK8BGAsYHg/s0/2020-10-01.png",
+    "url": "http://k4.usastreams.com/videotour/videotour/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Vintage Music CR",
+    "logo": "https://i2.paste.pics/508ad957b4f4585f59b0d4c265bbac61.png",
+    "url": "https://59ef525c24caa.streamlock.net/vmtv/tvvintage/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "VM Latino CR",
+    "logo": "https://i2.paste.pics/fbefcbca47462eb80eedbeaf95126474.png",
+    "url": "https://59ef525c24caa.streamlock.net/vmtv/vmlatino/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Voice Over Radio TV | Costa Rica",
+    "logo": "",
+    "url": "https://cloudvideo.servers10.com:8081/8198/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "warner",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cb/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "WaterBear",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-ESBC170000388",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "WIN SPORT MAS  LOCAL",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0hz/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "WINSPORT",
+    "logo": "",
+    "url": "http://181.78.8.199:8000/play/a0cc/index.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Women's Football",
+    "logo": "https://images.pluto.tv/channels/659bfdc66e4f6a0008ae4a3c/colorLogoPNG.png",
+    "url": "https://stitcher.pluto.tv/stitch/hls/channel/659bfdc66e4f6a0008ae4a3c/master.m3u8?deviceType=web&servertSideAds=false&deviceMake=safari&deviceVersion=1&deviceId=spencer&appVersion=1&deviceDNT=0&deviceModel=web&sid=626b2305-62bc-11ef-a3c9-3a1e0aa74d84",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Wording TV HD | Brasil",
+    "logo": "",
+    "url": "https://tv02.zas.media:1936/wordingtv/wordingtv/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "World Billiards TV",
+    "logo": "",
+    "url": "https://9a81dd4ee3884d0dbcacafaf0d81327a.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_BilliardsTV/playlist.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_categories=IAB17&ads.content_genre=sports&ads.content_livestream=0&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_type=web&ads.device_year=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.nonce=&ads.os_language=&ads.placement=1&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=7&ads.rtv_content_id=3722&ads.rtv_content_language=en&ads.rtvid=271859&ads.streaming_id=c9aaf5c8-3515-4397-8f12-5a1dafb15371&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&ads.wurl_channel_id=967",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "World Poker Tour",
+    "logo": "",
+    "url": "https://jmp2.uk/stvp-ESBD2900001P9",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "X Level Media (1080p)",
+    "logo": "",
+    "url": "https://tuvideoonline.com.ar:3332/live/xlevelmedialive.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "Zoomoo",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/ZooMoo-Kids-Logo-Oficial-01.png/1200px-ZooMoo-Kids-Logo-Oficial-01.png",
+    "url": "https://amg01553-blueantmediaasi-zoomoonz-samsungnz-rdufn.amagi.tv/playlist/amg01553-blueantmediaasi-zoomoonz-samsungnz/playlist.m3u8",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
+  },
+  {
+    "name": "¡HOLA! Play",
+    "logo": "",
+    "url": "https://hola-play-2108fd06-86d4-44e8-9867-c35b4895a1c1-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6433/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=149.102.236.246&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=13&ads.rtv_channel_id=6433&ads.rtv_channel_name=hola-play-2108fd06-86d4-44e8-9867-c35b4895a1c1_es&ads.rtv_content_id=6433&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=9512d965-532e-401b-b955-404db80bb3a1&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6433&publishing_platform_id=5&tenant_identifier=rtv",
+    "group-title": "PREMIUM",
+    "genre": "VARIEDADES"
   }
-] 
+]
