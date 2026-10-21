@@ -3,24 +3,8 @@
 """
 limpiar_canales.py
 ------------------
-Valida cada canal con validación REAL, elimina los caídos tras MAX_FALLOS
-consecutivos y elimina duplicados existentes al inicio.
-
-Reordena TODO el JSON al final: DOMINICANOS -> ANIME-INFANTIL -> PREMIUM, A→Z.
-
-Reglas:
-  - "ok"       -> resetea fallos a 0, conserva canal.
-  - "temporal" -> NO cuenta como fallo. Conserva canal y estado.
-  - "fallo"    -> suma 1 a fallos. Si llega a MAX_FALLOS, elimina.
-  - "sin_url"  -> se elimina directamente.
-
-Garantías:
-  - Aborta si >UMBRAL_ABORTO de canales validables fallan.
-  - Guardado atómico de JSON y estado.
-  - DRY_RUN=1 no modifica nada.
-  - Log de eliminados con timestamp.
-  - Limpia entradas huérfanas del estado.
-  - Deduplica al inicio y reordena al final.
+Valida cada canal, elimina caídos tras MAX_FALLOS consecutivos y deduplica.
+Re-normaliza categorías de TODOS los canales existentes.
 """
 
 import json
@@ -36,21 +20,19 @@ from canales_common import (
     clave_orden,
     guardar_json_atomico,
     log,
+    normalizar_categoria,
     normalizar_nombre,
     normalizar_url,
     probar_enlace,
 )
 
-# ---------- CONFIGURACIÓN ----------
 JSON_PATH = Path("tvdominicana.json")
 ESTADO_PATH = Path("estado_tvdominicana.json")
 LOG_PATH = Path("canales_eliminados.log")
 
-# MAX_FALLOS configurable por env: por defecto 6 fallos consecutivos para eliminar.
 MAX_FALLOS = int(os.getenv("MAX_FALLOS", "6"))
 UMBRAL_ABORTO = 0.9
 DRY_RUN = os.getenv("DRY_RUN", "0") == "1"
-# -----------------------------------
 
 
 def cargar_estado():
@@ -83,7 +65,6 @@ def anexar_log(lineas):
 
 
 def id_canal(canal):
-    """ID estable y NO colisionable. Usa URL normalizada si existe."""
     url = normalizar_url(canal.get("url", ""))
     if url:
         return url
@@ -91,7 +72,6 @@ def id_canal(canal):
 
 
 def deduplicar(canales):
-    """Elimina duplicados por URL normalizada y por nombre normalizado + categoría."""
     vistos_url = set()
     vistos_nombre = set()
     salida = []
@@ -141,6 +121,25 @@ def main():
     if n_dups:
         log(f"Duplicados eliminados al inicio: {n_dups} "
             f"({total_original} -> {len(canales)} canales).")
+
+    # Re-normalizar categorías de TODOS los canales
+    log("Re-normalizando categorías...")
+    cambios_cat = 0
+    for c in canales:
+        cat_original = c.get("group-title", "")
+        tvg = c.get("tvg-id") or c.get("_tvg_id") or c.get("tvg_id") or ""
+        nombre = c.get("name", "")
+        cat_nueva = normalizar_categoria(cat_original, tvg, nombre)
+        if cat_nueva != cat_original:
+            cambios_cat += 1
+        c["group-title"] = cat_nueva
+        if tvg:
+            c["tvg-id"] = tvg
+        else:
+            c.pop("tvg-id", None)
+            c.pop("tvg_id", None)
+    if cambios_cat:
+        log(f"Categorías re-normalizadas: {cambios_cat} canales actualizados.")
 
     total = len(canales)
     if total == 0:
@@ -235,13 +234,11 @@ def main():
         log(f"[DRY_RUN] Estado que se guardaría: {len(estado)} entradas.")
         return
 
-    if eliminados or n_dups:
-        # Reordenar SIEMPRE para garantizar DOMINICANOS -> ANIME-INFANTIL -> PREMIUM
+    if eliminados or n_dups or cambios_cat:
         nuevos_canales.sort(key=clave_orden)
         guardar_json_atomico(JSON_PATH, nuevos_canales)
         log(f"Se eliminaron {len(eliminados)} canales y {n_dups} duplicados iniciales.")
     else:
-        # Aunque no se elimine nada, reordenar por si el JSON venía desordenado
         nuevos_canales.sort(key=clave_orden)
         guardar_json_atomico(JSON_PATH, nuevos_canales)
         log("No se eliminó ningún canal.")
