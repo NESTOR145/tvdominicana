@@ -1,15 +1,14 @@
-
 name: Agregar canales online desde lista remota
 
 on:
   schedule:
+    # Desplazado 2 horas respecto a la limpieza.
     - cron: '0 2,8,14,20 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
-# Mismo grupo en ambos workflows para que agregar y limpiar no se ejecuten juntos.
 concurrency:
   group: canales
   cancel-in-progress: false
@@ -19,45 +18,63 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     if: github.ref == 'refs/heads/main'
-
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
         with:
-          ref: main
           fetch-depth: 0
 
       - name: Instalar Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: pip
 
       - name: Instalar dependencias
-        run: python -m pip install --disable-pip-version-check "requests==2.32.3"
+        run: pip install "requests==2.32.3"
+
+      - name: Validar JSON (falla rápido si está corrupto)
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          p = pathlib.Path("tvdominicana.json")
+          if not p.exists():
+              print(f"AVISO: {p} no existe. Se crea vacío.")
+              p.write_text("[]", encoding="utf-8")
+          else:
+              texto = p.read_text(encoding="utf-8-sig").strip()
+              if not texto:
+                  print(f"AVISO: {p} está vacío. Se reinicia a [].")
+                  p.write_text("[]", encoding="utf-8")
+              else:
+                  data = json.loads(texto)
+                  assert isinstance(data, list), f"{p} no es lista plana"
+                  print(f"OK: {p} es válido ({len(data)} canales).")
+          PY
 
       - name: Ejecutar agregación
+        working-directory: .
         env:
           PYTHONUNBUFFERED: "1"
         run: python scripts/agregar_canales.py
 
-      - name: Subir resultado
+      - name: Subir log y JSON (siempre)
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: agregar-resultado
-          path: tvdominicana.json
+          path: |
+            tvdominicana.json
           if-no-files-found: ignore
-          retention-days: 14
 
-      - name: Guardar cambios
+      - name: Guardar cambios (robusto)
         if: success()
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -- tvdominicana.json
+
+          git add tvdominicana.json
 
           if git diff --cached --quiet; then
             echo "Sin cambios que guardar."
@@ -71,18 +88,11 @@ jobs:
               echo "Push correcto en intento $i."
               exit 0
             fi
-
-            echo "Push falló; actualizando main e intentando rebase."
+            echo "Push falló. Reintentando con rebase..."
             git fetch origin main
-
-            if ! git rebase origin/main; then
-              git rebase --abort || true
-              echo "::error::Conflicto al integrar cambios remotos. No se fuerza el push."
-              exit 1
-            fi
-
-            sleep 3
+            git rebase origin/main || { echo "Conflicto real en rebase. Abortando."; git rebase --abort; exit 1; }
+            sleep 5
           done
 
-          echo "::error::No se pudo hacer push tras 3 intentos."
+          echo "No se pudo hacer push tras 3 intentos."
           exit 1
