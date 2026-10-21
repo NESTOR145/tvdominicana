@@ -13,10 +13,16 @@ Clasificación de group-title (solo 3 valores posibles):
   4) nombre con "dominicana/dominicano/quisqueya" (fallback seguro)        -> DOMINICANOS    (gratis)
   5) Todo lo demás                                                          -> PREMIUM
 
+ORDENAMIENTO (OPCIÓN B):
+  Después de agregar los nuevos canales, TODO el JSON (viejos + nuevos) se
+  reordena por categoría:
+      DOMINICANOS → ANIME-INFANTIL → PREMIUM
+  y dentro de cada categoría, alfabético por nombre (A→Z).
+
 Garantías:
   - NO toca estado_tvdominicana.json.
   - NO toca canales_eliminados.log.
-  - NO elimina ningún canal existente.
+  - NO elimina ningún canal existente (solo lo reordena).
   - Si todas las listas remotas fallan, sale sin modificar el JSON.
   - Si un canal nuevo está offline, no se agrega.
 """
@@ -56,6 +62,13 @@ CAT_ANIME_INFANTIL = "ANIME-INFANTIL"
 CAT_PREMIUM = "PREMIUM"
 
 FREE_CATEGORIES = {CAT_DOMINICANOS, CAT_ANIME_INFANTIL}
+
+# Orden final de las categorías en el JSON (Opción B)
+CAT_ORDER = {
+    CAT_DOMINICANOS: 0,
+    CAT_ANIME_INFANTIL: 1,
+    CAT_PREMIUM: 2,
+}
 
 KIDS_KEYWORDS = {
     "ANIME-INFANTIL", "ANIME INFANTIL", "INFANTIL", "KIDS",
@@ -230,6 +243,14 @@ def validar_canal(canal):
     return None
 
 
+def _clave_orden(canal: dict):
+    """Clave de ordenamiento: categoría (según CAT_ORDER), luego nombre A→Z."""
+    cat = (canal.get("group-title") or "").strip().upper()
+    orden_cat = CAT_ORDER.get(cat, 99)
+    nombre = (canal.get("name") or "").lower()
+    return (orden_cat, nombre)
+
+
 def main() -> None:
     log("=" * 60)
     log("AGREGAR CANALES ONLINE DESDE MÚLTIPLES LISTAS M3U")
@@ -290,15 +311,25 @@ def main() -> None:
         log("No se agregó ningún canal nuevo.")
         return
 
+    # Clasificar nuevos
     for c in online:
         cat_original = c.get("group-title", "")
         tvg = c.pop("_tvg_id", "")
         nombre = c.get("name", "")
         c["group-title"] = normalizar_categoria(cat_original, tvg, nombre)
 
+    # Agregar al JSON
     json_actual.extend(online)
+
+    # ══════════════════════════════════════════════════════════════
+    # OPCIÓN B: reordenar TODO el JSON por categoría y nombre A→Z
+    # Orden: DOMINICANOS → ANIME-INFANTIL → PREMIUM
+    # ══════════════════════════════════════════════════════════════
+    json_actual.sort(key=_clave_orden)
+    # ══════════════════════════════════════════════════════════════
+
     guardar_json(JSON_PATH, json_actual)
-    log(f"JSON actualizado. Total de canales: {len(json_actual)}")
+    log(f"JSON actualizado y reordenado. Total de canales: {len(json_actual)}")
     log("=" * 60)
 
 
