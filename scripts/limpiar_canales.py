@@ -46,7 +46,8 @@ JSON_PATH = Path("tvdominicana.json")
 ESTADO_PATH = Path("estado_tvdominicana.json")
 LOG_PATH = Path("canales_eliminados.log")
 
-MAX_FALLOS = 6
+# MAX_FALLOS configurable por env: por defecto 6 fallos consecutivos para eliminar.
+MAX_FALLOS = int(os.getenv("MAX_FALLOS", "6"))
 UMBRAL_ABORTO = 0.9
 DRY_RUN = os.getenv("DRY_RUN", "0") == "1"
 # -----------------------------------
@@ -82,8 +83,8 @@ def anexar_log(lineas):
 
 
 def id_canal(canal):
-    """ID estable y NO colisionable. Si no hay URL, usa name+logo."""
-    url = canal.get("url", "")
+    """ID estable y NO colisionable. Usa URL normalizada si existe."""
+    url = normalizar_url(canal.get("url", ""))
     if url:
         return url
     return f"{canal.get('name','')}|{canal.get('logo','')}"
