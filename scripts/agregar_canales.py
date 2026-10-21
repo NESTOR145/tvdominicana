@@ -1,88 +1,259 @@
 
-name: Agregar canales online desde lista remota
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Agrega canales online de fuentes M3U sin duplicar y sin sobrescribir datos válidos."""
 
-on:
-  schedule:
-    - cron: '0 2,8,14,20 * * *'
-  workflow_dispatch:
+import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
 
-permissions:
-  contents: write
+import requests
 
-# Mismo grupo en ambos workflows para que agregar y limpiar no se ejecuten juntos.
-concurrency:
-  group: canales
-  cancel-in-progress: false
+from canales_common import (
+    MAX_HILOS,
+    TIMEOUT_DESCARGA_M3U,
+    USER_AGENT,
+    cargar_json_seguro,
+    clave_orden,
+    clave_dedupe,
+    clave_nombre_categoria,
+    guardar_json_atomico,
+    log,
+    normalizar_categoria,
+    normalizar_nombre,
+    normalizar_url,
+    parsear_m3u,
+    probar_enlace,
+)
 
-jobs:
-  agregar:
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
-    if: github.ref == 'refs/heads/main'
+JSON_PATH = Path("tvdominicana.json")
 
-    steps:
-      - name: Descargar repositorio
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          fetch-depth: 0
+URLS_REMOTAS_M3U = [
+    "https://raw.githubusercontent.com/TVPRO20/Megatv23/master/tv23.m3u",
+    "https://raw.githubusercontent.com/NESTOR145/miscanalesdetv/refs/heads/main/todosmiscanales.m3u",
+    "https://iptv-org.github.io/iptv/countries/do.m3u",
+]
 
-      - name: Instalar Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-          cache: pip
 
-      - name: Instalar dependencias
-        run: python -m pip install --disable-pip-version-check "requests==2.32.3"
+def descargar_m3u(url: str):
+    try:
+        log(f"→ Descargando lista M3U: {url}")
+        response = requests.get(
+            url,
+            headers={"User-Agent": USER_AGENT},
+            timeout=TIMEOUT_DESCARGA_M3U,
+        )
+        response.raise_for_status()
+        contenido = response.text
 
-      - name: Ejecutar agregación
-        env:
-          PYTHONUNBUFFERED: "1"
-        run: python scripts/agregar_canales.py
+        if not contenido.strip() or "#EXTINF" not in contenido.upper():
+            log(f"  AVISO: la respuesta de {url} no parece una lista M3U.")
+            return None
 
-      - name: Subir resultado
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: agregar-resultado
-          path: tvdominicana.json
-          if-no-files-found: ignore
-          retention-days: 14
+        log(f"  OK: {len(contenido):,} caracteres recibidos.")
+        return contenido
 
-      - name: Guardar cambios
-        if: success()
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -- tvdominicana.json
+    except requests.RequestException as exc:
+        log(f"  ERROR descargando lista: {exc}")
+        return None
 
-          if git diff --cached --quiet; then
-            echo "Sin cambios que guardar."
-            exit 0
-          fi
 
-          git commit -m "Auto: agregar canales online desde lista remota"
+def validar_canal(canal):
+    url = canal.get("url")
+    if not isinstance(url, str) or not url.strip():
+        return None
 
-          for i in 1 2 3; do
-            if git push origin HEAD:main; then
-              echo "Push correcto en intento $i."
-              exit 0
-            fi
+    return canal if probar_enlace(url, canal.get("headers")) == "ok" else None
 
-            echo "Push falló; actualizando main e intentando rebase."
-            git fetch origin main
 
-            if ! git rebase origin/main; then
-              git rebase --abort || true
-              echo "::error::Conflicto al integrar cambios remotos. No se fuerza el push."
-              exit 1
-            fi
+def canal_valido(c):
+    return (
+        isinstance(c, dict)
+        and isinstance(c.get("name", ""), str)
+        and isinstance(c.get("url", ""), str)
+    )
 
-            sleep 3
-          done
 
-          echo "::error::No se pudo hacer push tras 3 intentos."
-          exit 1
+def main() -> None:
+    log("=" * 60)
+    log("AGREGAR CANALES ONLINE DESDE MÚLTIPLES LISTAS M3U")
+    log("=" * 60)
+
+    try:
+        json_actual = cargar_json_seguro(JSON_PATH, default=[])
+    except (OSError, ValueError) as exc:
+        log(f"ERROR seguro leyendo {JSON_PATH}: {exc}")
+        sys.exit(1)
+
+    if not isinstance(json_actual, list) or any(
+        not canal_valido(c) for c in json_actual
+    ):
+        log(
+            f"ERROR: {JSON_PATH} debe ser una lista de objetos "
+            "de canal válidos. No se modifica."
+        )
+        sys.exit(1)
+
+    log(f"Canales en JSON actual: {len(json_actual)}")
+
+    todos = []
+    listas_ok = 0
+
+    for url_remota in URLS_REMOTAS_M3U:
+        contenido = descargar_m3u(url_remota)
+        if contenido is None:
+            continue
+
+        canales = parsear_m3u(contenido)
+        if canales:
+            listas_ok += 1
+            log(f"Canales encontrados: {len(canales)}")
+            todos.extend(canales)
+
+    # Si ninguna fuente produjo canales parseables, no hacer ningún cambio.
+    if listas_ok == 0 or not todos:
+        log("Ninguna lista remota produjo canales utilizables. No se modifica el JSON.")
+        return
+
+    urls_existentes = set()
+    nombres_categoria_existentes = set()
+    pares_existentes = set()
+
+    for c in json_actual:
+        url_norm = normalizar_url(c.get("url", ""))
+        nombre_norm = normalizar_nombre(c.get("name", ""))
+
+        if url_norm:
+            urls_existentes.add(url_norm)
+        if nombre_norm:
+            nombres_categoria_existentes.add(clave_nombre_categoria(c))
+
+        pares_existentes.add(clave_dedupe(c))
+
+    candidatos = []
+    urls_vistas = set()
+    nombres_vistos = set()
+    pares_vistos = set()
+    duplicados = 0
+
+    for original in todos:
+        c = dict(original)
+        url_norm = normalizar_url(c.get("url", ""))
+        nombre_norm = normalizar_nombre(c.get("name", ""))
+
+        if not url_norm or not nombre_norm:
+            continue
+
+        # Se evita duplicado por URL, por nombre+categoría y por nombre+URL.
+        par = clave_dedupe(c)
+        nombre_cat = clave_nombre_categoria(c)
+
+        if (
+            url_norm in urls_existentes
+            or url_norm in urls_vistas
+            or par in pares_existentes
+            or par in pares_vistos
+            or nombre_cat in nombres_categoria_existentes
+            or nombre_cat in nombres_vistos
+        ):
+            duplicados += 1
+            continue
+
+        urls_vistas.add(url_norm)
+        pares_vistos.add(par)
+        nombres_vistos.add(nombre_cat)
+        candidatos.append(c)
+
+    log(
+        f"Candidatos únicos para validar: {len(candidatos)}; "
+        f"duplicados descartados: {duplicados}"
+    )
+
+    if not candidatos:
+        log("No hay canales nuevos que agregar.")
+        return
+
+    online = []
+
+    with ThreadPoolExecutor(max_workers=MAX_HILOS) as pool:
+        futures = {
+            pool.submit(validar_canal, c): c
+            for c in candidatos
+        }
+
+        for future in as_completed(futures):
+            canal = futures[future]
+
+            try:
+                result = future.result()
+            except Exception as exc:
+                log(f"ERROR validando {canal.get('name', '?')}: {exc}")
+                result = None
+
+            if result:
+                online.append(result)
+                log(f"  ONLINE: {canal.get('name', '(sin nombre)')}")
+            else:
+                log(f"  NO VALIDADO: {canal.get('name', '(sin nombre)')}")
+
+    if not online:
+        log("No se agregó ningún canal: ninguno pasó la validación.")
+        return
+
+    # Segunda deduplicación antes de escribir, por defensa en profundidad.
+    existentes_urls = {
+        normalizar_url(c.get("url", ""))
+        for c in json_actual
+        if c.get("url")
+    }
+    existentes_nombres = {
+        clave_nombre_categoria(c)
+        for c in json_actual
+    }
+
+    salida_nueva = []
+
+    for c in online:
+        tvg = c.pop("_tvg_id", "")
+        c["group-title"] = normalizar_categoria(
+            c.get("group-title", ""),
+            tvg,
+            c.get("name", ""),
+        )
+
+        if not c.get("headers"):
+            c.pop("headers", None)
+
+        un = normalizar_url(c.get("url", ""))
+        nc = clave_nombre_categoria(c)
+
+        if un in existentes_urls or nc in existentes_nombres:
+            continue
+
+        existentes_urls.add(un)
+        existentes_nombres.add(nc)
+        salida_nueva.append(c)
+
+    if not salida_nueva:
+        log("Tras la comprobación final no quedan canales nuevos.")
+        return
+
+    # Conserva canales actuales y solo agrega nuevos.
+    resultado = list(json_actual) + salida_nueva
+    resultado.sort(key=clave_orden)
+
+    try:
+        guardar_json_atomico(JSON_PATH, resultado)
+    except OSError as exc:
+        log(f"ERROR guardando JSON de forma atómica: {exc}")
+        sys.exit(1)
+
+    log(
+        f"JSON actualizado. Agregados: {len(salida_nueva)}; "
+        f"total: {len(resultado)}."
+    )
+    log("=" * 60)
+
+
+if __name__ == "__main__":
+    main()
