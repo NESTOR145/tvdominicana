@@ -18,4 +18,99 @@ permissions:
   contents: write
 
 concurrency:
- 
+  group: canales
+  cancel-in-progress: false
+
+jobs:
+  limpiar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install "requests==2.32.3"
+
+      - name: Validar JSON (falla rápido si está corrupto)
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          p = pathlib.Path("tvdominicana.json")
+          if not p.exists():
+              print(f"ERROR: {p} no existe.")
+              raise SystemExit(1)
+          texto = p.read_text(encoding="utf-8-sig").strip()
+          if not texto:
+              print(f"AVISO: {p} está vacío. Nada que limpiar.")
+              raise SystemExit(0)
+          data = json.loads(texto)
+          assert isinstance(data, list), f"{p} no es lista plana"
+          print(f"OK: {p} es válido ({len(data)} canales).")
+          PY
+
+      - name: Ejecutar limpieza
+        env:
+          PYTHONUNBUFFERED: "1"
+          DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}
+        run: python scripts/limpiar_canales.py
+
+      - name: Subir log, JSON y estado (siempre)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: limpiar-resultado
+          path: |
+            tvdominicana.json
+            estado_tvdominicana.json
+            canales_eliminados.log
+          if-no-files-found: ignore
+
+      - name: Guardar cambios (robusto)
+        if: success() && github.event.inputs.dry_run != 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          FILES=""
+          [ -f tvdominicana.json ] && FILES="$FILES tvdominicana.json"
+          [ -f estado_tvdominicana.json ] && FILES="$FILES estado_tvdominicana.json"
+          [ -f canales_eliminados.log ] && FILES="$FILES canales_eliminados.log"
+
+          if [ -z "$FILES" ]; then
+            echo "No hay archivos que guardar."
+            exit 0
+          fi
+
+          git add $FILES
+
+          if git diff --cached --quiet; then
+            echo "Sin cambios que guardar."
+            exit 0
+          fi
+
+          git commit -m "Auto: limpiar canales caídos"
+
+          for i in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "Push correcto en intento $i."
+              exit 0
+            fi
+            echo "Push falló. Reintentando con rebase..."
+            git fetch origin main
+            git rebase origin/main || { echo "Conflicto real en rebase. Abortando."; git rebase --abort; exit 1; }
+            sleep 5
+          done
+
+          echo "No se pudo hacer push tras 3 intentos."
+          exit 1
