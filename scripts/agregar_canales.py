@@ -3,22 +3,22 @@
 """
 agregar_canales.py
 ------------------
-Descarga múltiples listas M3U remotas, valida cada canal (HLS real) y agrega a
-tvdominicana.json SOLO los canales que estén online y que aún no existan
-(comparando por URL).
+Descarga múltiples listas M3U remotas, valida cada canal y agrega a tvdominicana.json
+SOLO los canales que estén online y que aún no existan (comparando por URL).
 
-La app consume el JSON desde GitHub y espera SOLO 3 categorías en group-title:
-  - DOMINICANOS
-  - PREMIUM
-  - ANIME-INFANTIL
+Clasificación de group-title (solo 3 valores posibles):
+  1) Anime/Infantil/Kids/Animation/Cartoon/Children/Preschool/Baby/Toddler -> ANIME-INFANTIL (gratis)
+  2) tvg-id dominicano (.do@... o termina en .do)                          -> DOMINICANOS    (gratis)
+  3) group-title explícito dominicano (DOMINICANOS, RD, REPUBLICA DOMINICANA...) -> DOMINICANOS (gratis)
+  4) nombre con "dominicana/dominicano/quisqueya" (fallback seguro)        -> DOMINICANOS    (gratis)
+  5) Todo lo demás                                                          -> PREMIUM
 
-Además, cada canal nuevo lleva un campo extra "genre" con su género real
-(PELICULAS, SERIES, NOTICIAS, DEPORTES, MUSICA, RELIGION, DOCUMENTALES,
-COMEDIA, VARIEDADES) para que los canales queden agrupados por género dentro
-del JSON y, si algún día la app quiere, pueda usarlo para sub-filtros.
-
-Los canales nuevos se ordenan por género antes de agregarse al JSON.
-Los canales ya existentes NO se tocan ni se reordenan.
+Garantías:
+  - NO toca estado_tvdominicana.json.
+  - NO toca canales_eliminados.log.
+  - NO elimina ningún canal existente.
+  - Si todas las listas remotas fallan, sale sin modificar el JSON.
+  - Si un canal nuevo está offline, no se agrega.
 """
 
 import json
@@ -26,7 +26,6 @@ import re
 import sys
 import time
 from pathlib import Path
-from urllib.parse import urljoin
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
@@ -40,12 +39,10 @@ URLS_REMOTAS_M3U = [
     "https://iptv-org.github.io/iptv/countries/do.m3u",
 ]
 
-TIMEOUT = 8
-REINTENTOS_POR_ENLACE = 1
-PAUSA_ENTRE_REINTENTOS = 1
-MAX_HILOS = 50
-MAX_PROFUNDIDAD_HLS = 2
-BYTES_LECTURA_INICIAL = 16384
+TIMEOUT = 15
+REINTENTOS_POR_ENLACE = 2
+PAUSA_ENTRE_REINTENTOS = 2
+MAX_HILOS = 30
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -54,45 +51,18 @@ USER_AGENT = (
 )
 # -----------------------------------
 
-# ---- 3 categorías que entiende la app ----
 CAT_DOMINICANOS = "DOMINICANOS"
 CAT_ANIME_INFANTIL = "ANIME-INFANTIL"
 CAT_PREMIUM = "PREMIUM"
 
-# ---- Géneros reales (van al campo "genre") ----
-GEN_PELICULAS = "PELICULAS"
-GEN_SERIES = "SERIES"
-GEN_NOTICIAS = "NOTICIAS"
-GEN_DEPORTES = "DEPORTES"
-GEN_MUSICA = "MUSICA"
-GEN_RELIGION = "RELIGION"
-GEN_DOCUMENTALES = "DOCUMENTALES"
-GEN_COMEDIA = "COMEDIA"
-GEN_VARIEDADES = "VARIEDADES"
+FREE_CATEGORIES = {CAT_DOMINICANOS, CAT_ANIME_INFANTIL}
 
-# Orden en que se agruparán los canales nuevos dentro del JSON
-GENRE_ORDER = {
-    CAT_DOMINICANOS: 0,
-    CAT_ANIME_INFANTIL: 1,
-    GEN_PELICULAS: 2,
-    GEN_SERIES: 3,
-    GEN_NOTICIAS: 4,
-    GEN_DEPORTES: 5,
-    GEN_MUSICA: 6,
-    GEN_RELIGION: 7,
-    GEN_DOCUMENTALES: 8,
-    GEN_COMEDIA: 9,
-    GEN_VARIEDADES: 10,
-}
-
-# Palabras clave para detectar Kids/Anime
 KIDS_KEYWORDS = {
     "ANIME-INFANTIL", "ANIME INFANTIL", "INFANTIL", "KIDS",
     "DIBUJOS ANIMADOS", "ANIME", "CARTOONS", "CARTOON",
     "ANIMATION", "CHILDREN", "PRESCHOOL", "BABY", "TODDLER", "TODDLERS",
 }
 
-# Palabras clave para detectar Dominicanos
 DOM_GROUP_KEYWORDS = {
     "DOMINICANOS", "DOMINICANA", "DOMINICANO", "RD",
     "REPUBLICA DOMINICANA", "REPÚBLICA DOMINICANA",
@@ -100,65 +70,32 @@ DOM_GROUP_KEYWORDS = {
 
 DOM_NAME_HINTS = ("dominicana", "dominicano", "quisqueya")
 
-# Mapeo group-title de la M3U → género real
-GENRE_MAP = {
-    "MOVIES":       GEN_PELICULAS,
-    "CLASSIC":      GEN_PELICULAS,
-    "PELICULAS":    GEN_PELICULAS,
-    "CINE":         GEN_PELICULAS,
-    "SERIES":       GEN_SERIES,
-    "NOVELAS":      GEN_SERIES,
-    "NEWS":         GEN_NOTICIAS,
-    "NOTICIAS":     GEN_NOTICIAS,
-    "SPORTS":       GEN_DEPORTES,
-    "DEPORTES":     GEN_DEPORTES,
-    "MUSIC":        GEN_MUSICA,
-    "MUSICA":       GEN_MUSICA,
-    "RELIGIOUS":    GEN_RELIGION,
-    "RELIGION":     GEN_RELIGION,
-    "DOCUMENTARY":  GEN_DOCUMENTALES,
-    "DOCUMENTALES": GEN_DOCUMENTALES,
-    "SCIENCE":      GEN_DOCUMENTALES,
-    "COMEDY":       GEN_COMEDIA,
-    "COMEDIA":      GEN_COMEDIA,
-}
 
-
-def clasificar(valor: str, tvg_id: str = "", nombre: str = ""):
-    """
-    Devuelve (group_title, genre).
-      - DOMINICANOS / ANIME-INFANTIL → group_title = esa categoría, genre = igual
-      - Todo lo demás → group_title = PREMIUM, genre = género real
-    """
+def normalizar_categoria(valor: str, tvg_id: str = "", nombre: str = "") -> str:
     v = (valor or "").strip().upper()
     tid = (tvg_id or "").strip().lower()
     nom = (nombre or "").strip().lower()
 
     partes = [p.strip() for p in v.split(";") if p.strip()]
 
-    # 1) Kids/Anime/Infantil → ANIME-INFANTIL
+    # 1) Anime / Infantil / Kids -> gratis
     if any(p in KIDS_KEYWORDS for p in partes):
-        return CAT_ANIME_INFANTIL, CAT_ANIME_INFANTIL
+        return CAT_ANIME_INFANTIL
 
-    # 2) Dominicano por tvg-id
+    # 2) Dominicano por tvg-id (.do@... o termina en .do)
     if ".do@" in tid or tid.endswith(".do"):
-        return CAT_DOMINICANOS, CAT_DOMINICANOS
+        return CAT_DOMINICANOS
 
-    # 3) Dominicano por group-title
+    # 3) Dominicano por group-title explícito
     if any(p in DOM_GROUP_KEYWORDS for p in partes):
-        return CAT_DOMINICANOS, CAT_DOMINICANOS
+        return CAT_DOMINICANOS
 
-    # 4) Dominicano por nombre
+    # 4) Fallback por nombre
     if any(h in nom for h in DOM_NAME_HINTS):
-        return CAT_DOMINICANOS, CAT_DOMINICANOS
+        return CAT_DOMINICANOS
 
-    # 5) Género real → PREMIUM + genre
-    for parte in partes:
-        if parte in GENRE_MAP:
-            return CAT_PREMIUM, GENRE_MAP[parte]
-
-    # 6) Fallback → PREMIUM + VARIEDADES
-    return CAT_PREMIUM, GEN_VARIEDADES
+    # 5) Todo lo demás -> PREMIUM
+    return CAT_PREMIUM
 
 
 def log(msg: str) -> None:
@@ -227,7 +164,7 @@ def parsear_m3u(contenido: str):
                 "name": nombre,
                 "logo": atributos.get("tvg-logo", ""),
                 "url": "",
-                "_tvg_id": atributos.get("tvg-id", ""),
+                "_tvg_id": atributos.get("tvg-id", ""),  # interno
             }
             group = atributos.get("group-title", "")
             if group:
@@ -257,136 +194,20 @@ def parsear_m3u(contenido: str):
     return canales
 
 
-# ============================================================
-# VALIDACIÓN MEJORADA (Opción B: HLS real)
-# ============================================================
-
-def _headers_para(canal_headers) -> dict:
+def intento_unico(url: str, headers) -> bool:
     h = {"User-Agent": USER_AGENT}
-    if isinstance(canal_headers, dict):
-        for k, v in canal_headers.items():
+    if isinstance(headers, dict):
+        for k, v in headers.items():
             if isinstance(k, str) and isinstance(v, str):
                 h[k] = v
-    return h
-
-
-def _verificar_chunk(url_chunk: str, headers: dict) -> bool:
     try:
-        r = requests.head(url_chunk, headers=headers, timeout=TIMEOUT, allow_redirects=True)
-        if r.status_code < 400:
-            r.close()
-            return True
-        if r.status_code in (403, 405, 501):
-            r.close()
-            try:
-                r2 = requests.get(url_chunk, headers=headers, timeout=TIMEOUT,
-                                  stream=True, allow_redirects=True)
-                ok = r2.status_code < 400
-                try:
-                    if ok:
-                        r2.raw.read(1, decode_content=True)
-                except Exception:
-                    pass
-                r2.close()
-                return ok
-            except Exception:
-                return False
-        r.close()
-        return False
-    except Exception:
+        r = requests.get(url, headers=h, timeout=TIMEOUT, stream=True)
+        code = r.status_code
         try:
-            r = requests.get(url_chunk, headers=headers, timeout=TIMEOUT,
-                             stream=True, allow_redirects=True)
-            ok = r.status_code < 400
             r.close()
-            return ok
         except Exception:
-            return False
-
-
-def _procesar_hls(url_base: str, texto: str, headers: dict, profundidad: int) -> bool:
-    if profundidad > MAX_PROFUNDIDAD_HLS:
-        return True
-
-    lineas = [l.strip() for l in texto.splitlines() if l.strip()]
-    tiene_master = any(l.startswith("#EXT-X-STREAM-INF") for l in lineas)
-    tiene_segmentos = any(l.startswith("#EXTINF") for l in lineas)
-
-    if tiene_master:
-        for i, l in enumerate(lineas):
-            if l.startswith("#EXT-X-STREAM-INF"):
-                for j in range(i + 1, len(lineas)):
-                    v = lineas[j]
-                    if v and not v.startswith("#"):
-                        vurl = urljoin(url_base, v)
-                        try:
-                            r2 = requests.get(vurl, headers=headers, timeout=TIMEOUT,
-                                              stream=True, allow_redirects=True)
-                            if r2.status_code >= 400:
-                                r2.close()
-                                return False
-                            try:
-                                c2 = r2.raw.read(BYTES_LECTURA_INICIAL, decode_content=True)
-                            except Exception:
-                                c2 = b""
-                            r2.close()
-                        except Exception:
-                            return False
-                        return _procesar_hls(
-                            vurl,
-                            c2.decode("utf-8", errors="ignore"),
-                            headers,
-                            profundidad + 1,
-                        )
-                break
-        return False
-
-    if tiene_segmentos:
-        for i, l in enumerate(lineas):
-            if l.startswith("#EXTINF"):
-                for j in range(i + 1, len(lineas)):
-                    c = lineas[j]
-                    if c and not c.startswith("#"):
-                        return _verificar_chunk(urljoin(url_base, c), headers)
-                break
-        return False
-
-    return False
-
-
-def intento_unico(url: str, headers) -> bool:
-    h = _headers_para(headers)
-    try:
-        r = requests.get(url, headers=h, timeout=TIMEOUT, stream=True, allow_redirects=True)
-        if r.status_code >= 400:
-            r.close()
-            return False
-
-        try:
-            chunk = r.raw.read(BYTES_LECTURA_INICIAL, decode_content=True)
-        except Exception:
-            chunk = b""
-
-        ct = (r.headers.get("Content-Type") or "").lower()
-        url_limpia = url.lower().split("?")[0]
-        r.close()
-
-        texto = chunk.decode("utf-8", errors="ignore")
-        parece_hls = (
-            "#EXTM3U" in texto
-            or "mpegurl" in ct
-            or url_limpia.endswith(".m3u8")
-        )
-
-        if parece_hls:
-            return _procesar_hls(url, texto, h, 0)
-
-        if chunk:
-            return True
-        if any(x in ct for x in ("video/", "audio/", "application/octet-stream", "mp2t")):
-            return True
-        return False
-
+            pass
+        return code < 400
     except Exception:
         return False
 
@@ -409,13 +230,9 @@ def validar_canal(canal):
     return None
 
 
-# ============================================================
-# MAIN
-# ============================================================
-
 def main() -> None:
     log("=" * 60)
-    log("AGREGAR CANALES ONLINE (3 categorías + campo genre)")
+    log("AGREGAR CANALES ONLINE DESDE MÚLTIPLES LISTAS M3U")
     log("=" * 60)
 
     json_actual = cargar_json(JSON_PATH)
@@ -450,9 +267,8 @@ def main() -> None:
         log("No hay canales nuevos. Nada que agregar.")
         return
 
-    log(f"Validando con {MAX_HILOS} hilos (HLS: master→variant→chunk)...")
+    log(f"Validando con {MAX_HILOS} hilos...")
     online = []
-    t0 = time.time()
     with ThreadPoolExecutor(max_workers=MAX_HILOS) as executor:
         futuros = {executor.submit(validar_canal, c): c for c in candidatos}
         for futuro in as_completed(futuros):
@@ -468,48 +284,18 @@ def main() -> None:
             else:
                 log(f"  ❌ {canal.get('name', '(sin nombre)')}")
 
-    log(f"Validación terminada en {time.time() - t0:.1f}s")
     log(f"Canales nuevos online encontrados: {len(online)}")
 
     if not online:
         log("No se agregó ningún canal nuevo.")
         return
 
-    # Clasificar: asigna group-title (3 categorías) y genre (género real)
     for c in online:
         cat_original = c.get("group-title", "")
         tvg = c.pop("_tvg_id", "")
         nombre = c.get("name", "")
-        group_title, genre = clasificar(cat_original, tvg, nombre)
-        c["group-title"] = group_title
-        c["genre"] = genre
+        c["group-title"] = normalizar_categoria(cat_original, tvg, nombre)
 
-    # Ordenar los nuevos por género (orden fijo) y luego por nombre
-    online.sort(key=lambda c: (
-        GENRE_ORDER.get(c.get("genre", GEN_VARIEDADES), 99),
-        c.get("name", "").lower(),
-    ))
-
-    # Resumen por categoría (3)
-    resumen_cat = {}
-    for c in online:
-        cat = c["group-title"]
-        resumen_cat[cat] = resumen_cat.get(cat, 0) + 1
-    log("Resumen por group-title (categoría app):")
-    for cat, n in sorted(resumen_cat.items(), key=lambda x: -x[1]):
-        log(f"  {cat}: {n}")
-
-    # Resumen por género
-    resumen_gen = {}
-    for c in online:
-        g = c["genre"]
-        resumen_gen[g] = resumen_gen.get(g, 0) + 1
-    log("Resumen por genre:")
-    for g, n in sorted(resumen_gen.items(),
-                       key=lambda x: GENRE_ORDER.get(x[0], 99)):
-        log(f"  {g}: {n}")
-
-    # Agregar al JSON respetando el orden: existentes primero, nuevos después
     json_actual.extend(online)
     guardar_json(JSON_PATH, json_actual)
     log(f"JSON actualizado. Total de canales: {len(json_actual)}")
