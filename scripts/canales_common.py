@@ -11,13 +11,14 @@ Incluye:
   - Logging a stdout con flush.
   - Parseo de listas M3U.
   - Clasificación de categorías.
-  - Normalización de URLs para deduplicación.
+  - Normalización de URLs y de nombres para deduplicación.
 """
 
 import json
 import os
 import re
 import time
+import unicodedata
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
@@ -84,6 +85,16 @@ DOM_NAME_HINTS = ("dominicana", "dominicano", "quisqueya")
 
 RE_ATTR = re.compile(r'([\w-]+)="([^"]*)"')
 
+# Sufijos/etiquetas que se ignoran al comparar nombres de canales.
+# Permite que "Constanza TV", "Constanza TV HD", "CONSTANZA TV (RD)"
+# colapsen al mismo nombre normalizado.
+SUFIJOS_IGNORAR = re.compile(
+    r"\b(hd|sd|fhd|uhd|4k|8k|h265|hevc|\+1|\+2|\+3|"
+    r"latino|lat|español|esp|castellano|"
+    r"opcion\s*\d+|opci[oó]n\s*\d+)\b",
+    re.IGNORECASE,
+)
+
 
 # ---------- LOGGING ----------
 def log(msg: str) -> None:
@@ -108,13 +119,21 @@ def guardar_json_atomico(path: Path, data) -> None:
 
 
 def cargar_json_seguro(path: Path, default=None):
-    """Carga JSON con mensajes claros. Devuelve default si no existe."""
+    """
+    Carga JSON con mensajes claros.
+    - Devuelve `default` si el archivo no existe o está vacío (0 bytes / solo blancos).
+    - Tolera BOM UTF-8 (utf-8-sig).
+    - Lanza excepción si el contenido no es JSON válido.
+    """
     path = Path(path)
     if not path.exists():
         return default
     try:
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
+        texto = path.read_text(encoding="utf-8-sig").strip()
+        if not texto:
+            log(f"AVISO: {path} está vacío. Se usa default ({default!r}).")
+            return default
+        return json.loads(texto)
     except json.JSONDecodeError as e:
         log(f"ERROR: {path} no es JSON válido: {e}")
         raise
@@ -122,15 +141,82 @@ def cargar_json_seguro(path: Path, default=None):
 
 # ---------- NORMALIZACIÓN DE URL ----------
 def normalizar_url(u: str) -> str:
-    """Normaliza URL para deduplicar: scheme/host lowercase, sin trailing slash, sin fragmento."""
+    """
+    Normaliza URL para deduplicar:
+      - scheme y host en minúsculas
+      - http y https se tratan como equivalentes
+      - sin 'www.'
+      - sin puerto por defecto (:80 / :443)
+      - path en minúsculas y sin trailing slash
+      - query ordenada alfabéticamente
+      - sin fragmento
+    """
     if not u:
         return ""
     try:
         s = urlsplit(u.strip())
-        path = s.path.rstrip("/") or "/"
-        return urlunsplit((s.scheme.lower(), s.netloc.lower(), path, s.query, ""))
+        scheme = s.scheme.lower()
+        if scheme in ("http", "https"):
+            scheme = "https"
+        host = s.netloc.lower()
+        if host.startswith("www."):
+            host = host[4:]
+        if host.endswith(":80") or host.endswith(":443"):
+            host = host.rsplit(":", 1)[0]
+        path = s.path.lower().rstrip("/") or "/"
+        query = s.query
+        if query:
+            query = "&".join(sorted(query.split("&")))
+        return urlunsplit((scheme, host, path, query, ""))
     except Exception:
         return u.strip()
+
+
+# ---------- NORMALIZACIÓN DE NOMBRE ----------
+def normalizar_nombre(n: str) -> str:
+    """
+    Normaliza un nombre de canal para deduplicar variantes:
+      - minúsculas
+      - sin tildes
+      - sin paréntesis ni corchetes
+      - sin sufijos HD/SD/FHD/4K/+1/+2/latino/español...
+      - sin caracteres no alfanuméricos
+      - espacios colapsados
+
+    Ejemplos:
+      "Constanza TV"        -> "constanza tv"
+      "Constanza TV HD"     -> "constanza tv"
+      "CONSTANZA TV (RD)"   -> "constanza tv"
+      "Color Visión"        -> "color vision"
+      "Color Visión +1"     -> "color vision"
+    """
+    if not n:
+        return ""
+    # Quitar tildes/diacríticos
+    n = unicodedata.normalize("NFKD", n)
+    n = "".join(c for c in n if not unicodedata.combining(c))
+    # Minúsculas
+    n = n.lower()
+    # Quitar paréntesis y corchetes con su contenido
+    n = re.sub(r"\([^)]*\)", " ", n)
+    n = re.sub(r"\[[^\]]*\]", " ", n)
+    # Quitar sufijos comunes
+    n = SUFIJOS_IGNORAR.sub(" ", n)
+    # Dejar solo letras, números y espacios
+    n = re.sub(r"[^a-z0-9\s]", " ", n)
+    # Colapsar espacios
+    return " ".join(n.split())
+
+
+def clave_dedupe(canal: dict):
+    """
+    Devuelve una tupla (url_norm, nombre_norm, categoria) para deduplicar.
+    Se usa tanto en agregar como en limpiar.
+    """
+    url_norm = normalizar_url(canal.get("url", ""))
+    nombre_norm = normalizar_nombre(canal.get("name", ""))
+    categoria = canal.get("group-title", "")
+    return (url_norm, nombre_norm, categoria)
 
 
 # ---------- CLASIFICACIÓN ----------
@@ -236,33 +322,25 @@ def _headers_para(url: str, headers) -> dict:
 def _primeros_bytes_validos(chunk: bytes, content_type: str) -> bool:
     """Decide si el primer chunk parece video/HLS y NO un HTML/JSON de error."""
     if not chunk:
-        # Algunos HLS válidos no envían bytes en el primer chunk si se cierra rápido;
-        # si el content-type es válido, lo aceptamos.
         return any(ct in content_type for ct in CONTENT_TYPES_VALIDOS)
 
     chunk_lower = chunk[:2048].lower().lstrip()
 
-    # Detección de firmas de error
     for firma in FIRMAS_ERROR:
         if chunk_lower.startswith(firma):
             return False
 
-    # Un HLS válido empieza por #EXTM3U
     if chunk_lower.startswith(b"#extm3u"):
         return True
 
-    # Un MPEG-TS empieza por 0x47 (sincronía TS)
     if chunk[:1] == b"\x47":
         return True
 
-    # Si el content-type es de video/audio explícito, aceptamos
     if any(ct in content_type for ct in CONTENT_TYPES_VALIDOS):
-        # ...pero si el chunk parece HTML, lo rechazamos igual
         if b"<html" in chunk_lower or b"<!doctype" in chunk_lower:
             return False
         return True
 
-    # Content-type desconocido y chunk desconocido → rechazamos (conservador)
     return False
 
 
@@ -294,10 +372,8 @@ def validar_stream(url: str, headers=None) -> str:
         if code >= 400:
             return "fallo"
         if code < 200 or code >= 300:
-            # 3xx: requests ya siguió redirects por defecto; si llega aquí, raro
             return "fallo"
 
-        # Leer primeros bytes para verificar que es video/HLS real
         try:
             chunk = next(r.iter_content(chunk_size=2048), b"")
         except (requests.exceptions.Timeout,
