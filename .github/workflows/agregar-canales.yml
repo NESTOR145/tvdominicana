@@ -2,7 +2,6 @@ name: Agregar canales online desde lista remota
 
 on:
   schedule:
-    # Desplazado 2 horas respecto a la limpieza.
     - cron: '0 2,8,14,20 * * *'
   workflow_dispatch:
 
@@ -56,6 +55,55 @@ jobs:
         env:
           PYTHONUNBUFFERED: "1"
         run: python scripts/agregar_canales.py
+
+      - name: Validar JSON generado (falla si hay errores graves)
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          p = pathlib.Path("tvdominicana.json")
+          data = json.loads(p.read_text(encoding="utf-8-sig"))
+
+          errores = []
+          warnings = []
+
+          if len(data) == 0:
+              errores.append("JSON vacío tras agregación")
+
+          CATS_OK = {"DOMINICANOS", "PELICULAS Y SERIES", "ANIME-INFANTIL", "NOTICIAS",
+                     "NOVELAS", "DEPORTES", "MUSICA", "RELIGION Y CULTURA",
+                     "VARIEDADES", "GENERAL"}
+          cats_invalidas = {}
+          for c in data:
+              cat = (c.get("group-title") or "").upper()
+              if cat not in CATS_OK:
+                  cats_invalidas[cat] = cats_invalidas.get(cat, 0) + 1
+          if cats_invalidas:
+              errores.append(f"Categorías inválidas ({len(cats_invalidas)}): {dict(list(cats_invalidas.items())[:5])}")
+
+          PRIORITY = [
+              "AME TV", "RTVD-R.D", "TELEMICRO", "DIGITAL 15", "TELECENTRO",
+              "ANTENA 7", "ANTENA 21", "TELESISTEMA", "TELE ANTILLAS", "COLOR VISION",
+              "CINEVISION", "ALCARRIZOS TV", "CONTANZA TV", "TELEALTURA", "TV MONTAÑA",
+              "AGROTENNDENCIAS TV", "TS TELESIGLO", "SANTIAGO TV", "CDN", "NOTICIAS 16",
+              "CDN DEPORTES", "CORAL TV", "NARANJA TV", "RNN CANAL 37", "VISION TV",
+              "PERAVIA VISION", "BANI VISION", "TLSD", "READY HD", "HERMANAS MIRABAL TV",
+              "DIGITAL 809", "CHINOLA TV", "BELLAVISION",
+          ]
+          nombres = {(c.get("name") or "").strip().upper() for c in data}
+          faltantes = [p for p in PRIORITY if p.upper() not in nombres]
+          if faltantes:
+              warnings.append(f"⚠️ {len(faltantes)} de los 33 prioritarios no están: {faltantes[:5]}...")
+
+          for w in warnings:
+              print(f"::warning::{w}")
+          if errores:
+              for e in errores:
+                  print(f"::error::{e}")
+              sys.exit(1)
+
+          print(f"OK: {len(data)} canales. Categorías válidas.")
+          print("Sin errores graves.")
+          PY
 
       - name: Subir log y JSON (siempre)
         if: always()
