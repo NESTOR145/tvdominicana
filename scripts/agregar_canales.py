@@ -4,10 +4,7 @@
 agregar_canales.py
 ------------------
 Descarga listas M3U remotas, valida cada canal con validación REAL y agrega a
-tvdominicana.json SOLO los canales online que aún no existan (por URL normalizada
-o por nombre normalizado + categoría).
-
-Reordena TODO el JSON: DOMINICANOS -> ANIME-INFANTIL -> PREMIUM, A→Z.
+tvdominicana.json SOLO los canales online que aún no existan.
 """
 
 import sys
@@ -31,14 +28,13 @@ from canales_common import (
     probar_enlace,
 )
 
-# ---------- CONFIGURACIÓN ----------
 JSON_PATH = Path("tvdominicana.json")
 
 URLS_REMOTAS_M3U = [
     "https://raw.githubusercontent.com/NESTOR145/miscanalesdetv/refs/heads/main/todosmiscanales.m3u",
     "https://iptv-org.github.io/iptv/countries/do.m3u",
+    "https://iptv-org.github.io/iptv/languages/spa.m3u",
 ]
-# -----------------------------------
 
 
 def descargar_m3u(url: str):
@@ -155,6 +151,8 @@ def main() -> None:
         tvg = c.pop("_tvg_id", "")
         nombre = c.get("name", "")
         c["group-title"] = normalizar_categoria(cat_original, tvg, nombre)
+        if tvg:
+            c["tvg-id"] = tvg
         if not c.get("headers"):
             c.pop("headers", None)
 
