@@ -87,7 +87,7 @@ RE_ATTR = re.compile(r'([\w-]+)="([^"]*)"')
 SUFIJOS_IGNORAR = re.compile(
     r"\b(hd|sd|fhd|uhd|4k|8k|h265|hevc|\+1|\+2|\+3|"
     r"latino|lat|español|esp|castellano|"
-    r"opcion\s*\d+|opci[oó]n\s*\d+)\b",
+    r"opcion\s*\d+|opción\s*\d+)\b",
     re.IGNORECASE,
 )
 
