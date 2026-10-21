@@ -12,8 +12,6 @@ permissions:
   contents: write
 
 concurrency:
-  # MISMO grupo que el workflow de limpieza:
-  # si uno está corriendo, el otro espera a que termine.
   group: canales
   cancel-in-progress: false
 
@@ -21,6 +19,7 @@ jobs:
   agregar:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    if: github.ref == 'refs/heads/main'
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
@@ -33,23 +32,32 @@ jobs:
           python-version: '3.11'
 
       - name: Instalar dependencias
-        run: pip install requests
+        run: pip install "requests==2.32.3"
 
       - name: Ejecutar agregación
+        working-directory: .
+        env:
+          PYTHONUNBUFFERED: "1"
         run: python scripts/agregar_canales.py
 
+      - name: Subir log y JSON (siempre)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agregar-resultado
+          path: |
+            tvdominicana.json
+          if-no-files-found: ignore
+
       - name: Guardar cambios (robusto)
+        if: success()
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Traer lo último del remoto antes de nada
-          git fetch origin main
-
-          # Rebase para integrar cambios que hicieras tú mientras corría el script
-          git pull --rebase --autostash origin main || true
-
-          git add -A
+          git add tvdominicana.json
 
           if git diff --cached --quiet; then
             echo "Sin cambios que guardar."
@@ -58,7 +66,6 @@ jobs:
 
           git commit -m "Auto: agregar canales online desde lista remota"
 
-          # Reintentar el push hasta 3 veces con rebase intermedio
           for i in 1 2 3; do
             if git push origin HEAD:main; then
               echo "Push correcto en intento $i."
@@ -66,7 +73,7 @@ jobs:
             fi
             echo "Push falló. Reintentando con rebase..."
             git fetch origin main
-            git pull --rebase --autostash origin main || true
+            git rebase origin/main || { echo "Conflicto real en rebase. Abortando."; git rebase --abort; exit 1; }
             sleep 5
           done
 
