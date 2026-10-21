@@ -35,7 +35,6 @@ from canales_common import (
 JSON_PATH = Path("tvdominicana.json")
 
 URLS_REMOTAS_M3U = [
-    "https://raw.githubusercontent.com/TVPRO20/Megatv23/master/tv23.m3u",
     "https://raw.githubusercontent.com/NESTOR145/miscanalesdetv/refs/heads/main/todosmiscanales.m3u",
     "https://iptv-org.github.io/iptv/countries/do.m3u",
 ]
