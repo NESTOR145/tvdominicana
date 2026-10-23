@@ -4,15 +4,6 @@
 canales_common.py
 -----------------
 Utilidades compartidas por agregar_canales.py y limpiar_canales.py.
-
-Incluye:
-  - Validación REAL de streams (Content-Type + primeros bytes + detección de HTML/JSON de error).
-  - Guardado atómico de JSON (nunca corrompe).
-  - Carga de JSON tolerante a archivo vacío, BOM y archivo inexistente.
-  - Logging a stdout con flush.
-  - Parseo de listas M3U (incluye headers inline del #EXTINF).
-  - Clasificación en 10 categorías canónicas.
-  - Prioridad de los 33 dominicanos.
 """
 
 import json
@@ -69,9 +60,11 @@ CAT_ORDER = {
     CAT_VARIEDADES: 8, CAT_GENERAL: 9,
 }
 
+# ✅ Ajuste 1: "cineseries" y "plutotv" añadidos
 GROUP_TO_CATEGORY = {
     "movies": CAT_PELICULAS, "series": CAT_PELICULAS, "classic": CAT_PELICULAS,
     "peliculas": CAT_PELICULAS, "película": CAT_PELICULAS, "cine": CAT_PELICULAS,
+    "cineseries": CAT_PELICULAS, "cine-series": CAT_PELICULAS,
     "animation": CAT_ANIME, "kids": CAT_ANIME, "family": CAT_ANIME,
     "infantil": CAT_ANIME, "ninos": CAT_ANIME, "dibujos": CAT_ANIME,
     "news": CAT_NOTICIAS, "noticias": CAT_NOTICIAS,
@@ -85,6 +78,7 @@ GROUP_TO_CATEGORY = {
     "auto": CAT_VARIEDADES, "business": CAT_VARIEDADES,
     "education": CAT_VARIEDADES, "science": CAT_VARIEDADES,
     "documentary": CAT_VARIEDADES, "relax": CAT_VARIEDADES,
+    "plutotv": CAT_VARIEDADES,  # ✅ Ajuste 1
     "general": CAT_GENERAL, "public": CAT_GENERAL,
     "legislative": CAT_GENERAL, "weather": CAT_GENERAL,
     "shop": CAT_GENERAL, "undefined": CAT_GENERAL,
@@ -118,17 +112,18 @@ SUFIJOS_IGNORAR = re.compile(
     re.IGNORECASE,
 )
 
+# ✅ Ajustes 2 y 3: "CONSTANZA" y "AGROTENDENCIAS" corregidos
 PRIORITY_DOMINICANOS = [
     "AME TV", "RTVD-R.D", "TELEMICRO", "DIGITAL 15", "TELECENTRO",
     "ANTENA 7", "ANTENA 21", "TELESISTEMA", "TELE ANTILLAS", "COLOR VISION",
-    "CINEVISION", "ALCARRIZOS TV", "CONTANZA TV", "TELEALTURA", "TV MONTAÑA",
-    "AGROTENNDENCIAS TV", "TS TELESIGLO", "SANTIAGO TV", "CDN", "NOTICIAS 16",
+    "CINEVISION", "ALCARRIZOS TV", "CONSTANZA TV", "TELEALTURA", "TV MONTAÑA",
+    "AGROTENDENCIAS TV", "TS TELESIGLO", "SANTIAGO TV", "CDN", "NOTICIAS 16",
     "CDN DEPORTES", "CORAL TV", "NARANJA TV", "RNN CANAL 37", "VISION TV",
     "PERAVIA VISION", "BANI VISION", "TLSD", "READY HD", "HERMANAS MIRABAL TV",
     "DIGITAL 809", "CHINOLA TV", "BELLAVISION",
 ]
 
-_PRIORITY_KEYS = [(i, None) for i, _ in enumerate(PRIORITY_DOMINICANOS)]  # placeholder
+_PRIORITY_KEYS = [(i, None) for i, _ in enumerate(PRIORITY_DOMINICANOS)]
 
 
 def log(msg: str) -> None:
@@ -308,7 +303,6 @@ def parsear_m3u(contenido: str):
             if group:
                 canal_actual["group-title"] = group
 
-            # Headers inline del EXTINF
             ref_inline = atributos.get("http-referrer", "").strip()
             ua_inline  = atributos.get("http-user-agent", "").strip()
             if ref_inline or ua_inline:
