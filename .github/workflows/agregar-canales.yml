@@ -51,7 +51,6 @@ jobs:
           PY
 
       - name: Ejecutar agregación
-        working-directory: .
         env:
           PYTHONUNBUFFERED: "1"
         run: python scripts/agregar_canales.py
@@ -83,8 +82,8 @@ jobs:
           PRIORITY = [
               "AME TV", "RTVD-R.D", "TELEMICRO", "DIGITAL 15", "TELECENTRO",
               "ANTENA 7", "ANTENA 21", "TELESISTEMA", "TELE ANTILLAS", "COLOR VISION",
-              "CINEVISION", "ALCARRIZOS TV", "CONTANZA TV", "TELEALTURA", "TV MONTAÑA",
-              "AGROTENNDENCIAS TV", "TS TELESIGLO", "SANTIAGO TV", "CDN", "NOTICIAS 16",
+              "CINEVISION", "ALCARRIZOS TV", "CONSTANZA TV", "TELEALTURA", "TV MONTAÑA",
+              "AGROTENDENCIAS TV", "TS TELESIGLO", "SANTIAGO TV", "CDN", "NOTICIAS 16",
               "CDN DEPORTES", "CORAL TV", "NARANJA TV", "RNN CANAL 37", "VISION TV",
               "PERAVIA VISION", "BANI VISION", "TLSD", "READY HD", "HERMANAS MIRABAL TV",
               "DIGITAL 809", "CHINOLA TV", "BELLAVISION",
