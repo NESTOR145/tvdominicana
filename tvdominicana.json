@@ -356,7 +356,7 @@
   {
     "name": "AVIVAMIENTO TV",
     "logo": "https://i.postimg.cc/Rh5jGLJD/avivamiento-tv.png",
-    "url": "https://s1.abntelevision.com/avivamientoabr/stream/avivamientohd/avivamientohd/playlist.m3u8",
+    "url": "https://28tv.online:3081/live/avivamientotvlive.m3u8 ",
     "group-title": "DOMINICANOS",
     "tvg-id": "avivamientotv.do@SD",
     "country": "DO",
