@@ -236,6 +236,13 @@
     "language": "es"
   },
   {
+    "name": "Naranja TV (720p)",
+    "logo": "https://i.imgur.com/g7iFN3s.png",
+    "url": "https://cdn.streamingcpanel.com:3526/live/teleraiceslive.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "NaranjaTV.do@SD"
+  },
+  {
     "name": "CENOVISION TV",
     "logo": "https://i.postimg.cc/WbCKyxJn/CENOVISION-TV.jpg",
     "url": "https://5790d294af2dc.streamlock.net/cenovision/cenovision/playlist.m3u8",
@@ -259,6 +266,13 @@
     "url": "http://server3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "MegaVisionTV.do@SD"
+  },
+  {
+    "name": "Miavision TV (1080p) [Not 24/7]",
+    "logo": "https://imgur.com/Bbcrjvs.png",
+    "url": "https://edge.essastream.com/miavisiontv/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "MiavisionTV.do@HD"
   },
   {
     "name": "NUEVA VISION TV",
@@ -1387,9 +1401,9 @@
   {
     "name": "NEXXO TV",
     "logo": "https://i.postimg.cc/SKPK19qS/NEXXO-TV.png",
-    "url": "https://5790d294af2dc.streamlock.net/Nexxo/Nexxo/playlist.m3u8",
+    "url": "https://edge.essastream.com/nexxontv/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "nexxotv2.do@SD",
+    "tvg-id": "nexxotv.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -1505,9 +1519,9 @@
   {
     "name": "PUNTA CANA TV",
     "logo": "https://i.postimg.cc/fyn49Fj5/PUNTA-CANA-TV.jpg",
-    "url": "https://fox.hostlagarto.com:8081/puntacanatv/index.m3u8",
+    "url": "https://cdnfox.hostlagarto.com/puntacanatv/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "puntacanatv2.do@SD",
+    "tvg-id": "puntacanatv.do@SD",
     "country": "DO",
     "language": "es"
   },
