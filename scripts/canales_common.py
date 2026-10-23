@@ -60,7 +60,6 @@ CAT_ORDER = {
     CAT_VARIEDADES: 8, CAT_GENERAL: 9,
 }
 
-# ✅ Ajuste 1: "cineseries" y "plutotv" añadidos
 GROUP_TO_CATEGORY = {
     "movies": CAT_PELICULAS, "series": CAT_PELICULAS, "classic": CAT_PELICULAS,
     "peliculas": CAT_PELICULAS, "película": CAT_PELICULAS, "cine": CAT_PELICULAS,
@@ -78,7 +77,7 @@ GROUP_TO_CATEGORY = {
     "auto": CAT_VARIEDADES, "business": CAT_VARIEDADES,
     "education": CAT_VARIEDADES, "science": CAT_VARIEDADES,
     "documentary": CAT_VARIEDADES, "relax": CAT_VARIEDADES,
-    "plutotv": CAT_VARIEDADES,  # ✅ Ajuste 1
+    "plutotv": CAT_VARIEDADES,
     "general": CAT_GENERAL, "public": CAT_GENERAL,
     "legislative": CAT_GENERAL, "weather": CAT_GENERAL,
     "shop": CAT_GENERAL, "undefined": CAT_GENERAL,
@@ -112,7 +111,6 @@ SUFIJOS_IGNORAR = re.compile(
     re.IGNORECASE,
 )
 
-# ✅ Ajustes 2 y 3: "CONSTANZA" y "AGROTENDENCIAS" corregidos
 PRIORITY_DOMINICANOS = [
     "AME TV", "RTVD-R.D", "TELEMICRO", "DIGITAL 15", "TELECENTRO",
     "ANTENA 7", "ANTENA 21", "TELESISTEMA", "TELE ANTILLAS", "COLOR VISION",
@@ -216,6 +214,16 @@ def normalizar_categoria(valor: str, tvg_id: str = "", nombre: str = "") -> str:
         return CAT_DOMINICANOS
     if any(h in nom for h in DOM_NAME_HINTS):
         return CAT_DOMINICANOS
+
+    # ✅ FAST-PATH: Si el group-title ya es una de las 10 categorías, respetarla.
+    CATS_CANONICAS = {
+        "DOMINICANOS", "PELICULAS Y SERIES", "ANIME-INFANTIL", "NOTICIAS",
+        "NOVELAS", "DEPORTES", "MUSICA", "RELIGION Y CULTURA",
+        "VARIEDADES", "GENERAL"
+    }
+    for p in partes:
+        if p in CATS_CANONICAS:
+            return p # Devuelve "NOVELAS", "PELICULAS Y SERIES", etc., al instante
 
     # 2) group-title multi-valor
     for p in partes:
