@@ -6,14 +6,15 @@ agregar_canales.py
 Descarga listas M3U remotas, valida cada canal con validación REAL y agrega a
 tvdominicana.json SOLO los canales online que aún no existan.
 
-Reglas de actualización:
-- Si un canal ya existe (mismo nombre + categoría) pero cambió de URL,
-  SOLO se actualiza si la nueva URL responde correctamente (validación real).
-- Las URLs nuevas que estén caídas se descartan y se conserva la URL anterior.
-- Las URLs temporales (timeout, 403, 5xx) también se descartan por seguridad.
+Reglas:
+- Las URLs en URLS_SIN_FILTRO se procesan completas (como siempre).
+- Las URLs en URLS_CON_FILTRO solo aceptan canales nuevos cuyas categorías
+  estén en GRUPOS_PERMITIDOS (para evitar llenar el JSON de basura).
+- Las actualizaciones de URL de canales existentes nunca se filtran.
 """
 
 import sys
+import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
@@ -36,10 +37,49 @@ from canales_common import (
 
 JSON_PATH = Path("tvdominicana.json")
 
-URLS_REMOTAS_M3U = [
+# --- CONFIGURACIÓN DE LISTAS REMOTAS ---
+
+# 1) Listas que se procesan SIN filtro (se agrega todo lo que esté online).
+URLS_SIN_FILTRO = [
     "https://raw.githubusercontent.com/NESTOR145/miscanalesdetv/refs/heads/main/todosmiscanales.m3u",
     "https://iptv-org.github.io/iptv/countries/do.m3u",
 ]
+
+# 2) Listas que se procesan CON filtro (solo se agregan las categorías permitidas).
+URLS_CON_FILTRO = [
+    "https://iptv-org.github.io/iptv/languages/spa.m3u",
+]
+
+# --- FILTRO DE GRUPOS PERMITIDOS (Solo aplica a URLS_CON_FILTRO) ---
+GRUPOS_PERMITIDOS = {
+    # Cine y Series
+    "movies", "movie", "series", "classic", "cine", "peliculas", "película",
+    # Anime / Infantil
+    "animation", "anime", "kids", "family", "infantil", "ninos", "dibujos",
+    # Música
+    "music", "musica", "música",
+    # Deportes
+    "sports", "deportes",
+    # Documentales
+    "documentary", "documental",
+    # Noticias
+    "news", "noticias",
+    # Dominicanos
+    "dominicano", "dominicana"
+}
+# ------------------------------------------------------------------
+
+
+def es_grupo_permitido(group_title: str) -> bool:
+    """Devuelve True si alguna parte del group-title está en GRUPOS_PERMITIDOS."""
+    if not group_title:
+        return False
+    partes = group_title.split(";")
+    for p in partes:
+        p_norm = unicodedata.normalize("NFKD", p).encode("ascii", "ignore").decode().lower().strip()
+        if p_norm in GRUPOS_PERMITIDOS:
+            return True
+    return False
 
 
 def descargar_m3u(url: str):
@@ -79,13 +119,24 @@ def main() -> None:
 
     log(f"Canales en el JSON actual: {len(json_actual)}")
 
+    # Cada entrada será: (canal, aplica_filtro)
     todos_los_candidatos = []
-    for url_remota in URLS_REMOTAS_M3U:
+
+    # Descargar listas SIN filtro
+    for url_remota in URLS_SIN_FILTRO:
         contenido = descargar_m3u(url_remota)
         if contenido:
             canales_m3u = parsear_m3u(contenido)
-            log(f"Canales encontrados en {url_remota}: {len(canales_m3u)}")
-            todos_los_candidatos.extend(canales_m3u)
+            log(f"Canales encontrados en {url_remota}: {len(canales_m3u)} (sin filtro)")
+            todos_los_candidatos.extend((c, False) for c in canales_m3u)
+
+    # Descargar listas CON filtro
+    for url_remota in URLS_CON_FILTRO:
+        contenido = descargar_m3u(url_remota)
+        if contenido:
+            canales_m3u = parsear_m3u(contenido)
+            log(f"Canales encontrados en {url_remota}: {len(canales_m3u)} (con filtro)")
+            todos_los_candidatos.extend((c, True) for c in canales_m3u)
 
     if not todos_los_candidatos:
         log("Ninguna lista devolvió canales. Nada que hacer.")
@@ -101,14 +152,14 @@ def main() -> None:
         if nom:
             mapa_existentes[(nom, cat)] = c
 
-    # --- CLASIFICAR: nuevos y actualizaciones pendientes ---
+    # --- CLASIFICAR ---
     vistos_url = set()
     vistos_nombre = set()
-    # Cada entrada: (canal_remoto, es_actualizacion, existente_o_None)
     a_validar = []
     descartados_dup = 0
+    ignorados_por_categoria = 0
 
-    for c in todos_los_candidatos:
+    for c, aplica_filtro in todos_los_candidatos:
         u = c.get("url")
         if not u:
             continue
@@ -122,7 +173,7 @@ def main() -> None:
             descartados_dup += 1
             continue
 
-        # 2. Mismo nombre pero URL distinta -> candidato a actualización (requiere validación)
+        # 2. Mismo nombre pero URL distinta -> actualización (NO se filtra)
         if clave_nombre and clave_nombre in mapa_existentes:
             existente = mapa_existentes[clave_nombre]
             vistos_url.add(un)
@@ -134,18 +185,24 @@ def main() -> None:
             descartados_dup += 1
             continue
 
-        # 4. Canal nuevo
+        # 4. Canal NUEVO -> Aplicar filtro SOLO si viene de una URL con filtro
+        if aplica_filtro and not es_grupo_permitido(cat):
+            ignorados_por_categoria += 1
+            continue
+
         vistos_url.add(un)
         if clave_nombre:
             vistos_nombre.add(clave_nombre)
         a_validar.append((c, False, None))
 
+    log(f"Candidatos: {len(a_validar)} | Ignorados por categoría: {ignorados_por_categoria} | Duplicados: {descartados_dup}")
+
     if not a_validar:
-        log(f"Nada que validar. Descartados por duplicado: {descartados_dup}")
+        log("Nada que validar. Nada que hacer.")
         log("=" * 60)
         return
 
-    # --- VALIDAR TODO EN PARALELO (nuevos + actualizaciones) ---
+    # --- VALIDAR TODO EN PARALELO ---
     log(f"Validando {len(a_validar)} canales (nuevos + actualizaciones) con {MAX_HILOS} hilos...")
     online_nuevos = []
     actualizados_url = 0
@@ -166,7 +223,6 @@ def main() -> None:
 
             if resultado:
                 if es_upd:
-                    # Actualización validada OK -> aplicar
                     log(f"  🔄 {canal.get('name', '?')}: URL actualizada (validada OK)")
                     existente["url"] = canal["url"]
                     tvg_nuevo = canal.get("_tvg_id", "")
@@ -176,7 +232,6 @@ def main() -> None:
                         existente["headers"] = canal["headers"]
                     actualizados_url += 1
                 else:
-                    # Canal nuevo validado OK -> agregar
                     online_nuevos.append(resultado)
                     log(f"  ✅ {canal.get('name', '(sin nombre)')}")
             else:
@@ -204,6 +259,7 @@ def main() -> None:
     log("Resumen:")
     log(f"  Nuevos agregados:        {len(online_nuevos)}")
     log(f"  URLs actualizadas:       {actualizados_url}")
+    log(f"  Ignorados por categoría: {ignorados_por_categoria}")
     log(f"  Descartados por caída:   {descartados_por_caida}")
     log(f"  Descartados por dup:     {descartados_dup}")
 
