@@ -75,25 +75,11 @@
     "language": "es"
   },
   {
-    "name": "Telesistema 11 (1080p) [Not 24/7]",
-    "logo": "https://i.imgur.com/ZzeZKCu.png",
-    "url": "https://cdn4.wind.do/streams/telesistema/telesistema_master.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "Telesistema11.do@SD"
-  },
-  {
     "name": "Tele Antillas (1080p)",
     "logo": "https://i.imgur.com/G1pJZkC.png",
     "url": "https://hls.tvabierta.net/hls/010.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "teleantillas.do@SD"
-  },
-  {
-    "name": "Tele Antillas (1080p)",
-    "logo": "https://i.imgur.com/G1pJZkC.png",
-    "url": "http://45.171.108.253:8888/TELEANTILLAS/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "TeleAntillas.do@SD"
   },
   {
     "name": "Color Vision (720p) [Geo-blocked]",
@@ -137,13 +123,6 @@
     "tvg-id": "constanzatv.do@SD",
     "country": "DO",
     "language": "es"
-  },
-  {
-    "name": "ConstanzaTV (1080p) [Not 24/7]",
-    "logo": "https://i.imgur.com/4uV90gw.png",
-    "url": "https://live20.bozztv.com/akamaissh101/ssh101/ctv8hd/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "ConstanzaTV.do@SD"
   },
   {
     "name": "TELEALTURA",
@@ -200,13 +179,6 @@
     "language": "es"
   },
   {
-    "name": "Noticias 16 (720p) [Not 24/7]",
-    "logo": "",
-    "url": "https://edge.essastream.com/noticias16/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "Noticias16.do@SD"
-  },
-  {
     "name": "CDN DEPORTES",
     "logo": "https://i.postimg.cc/qqbHm7md/CDN-DEPORTES.jpg",
     "url": "https://hls.tvabierta.net/hls/036.m3u8",
@@ -232,13 +204,6 @@
     "tvg-id": "naranjatv.do@SD",
     "country": "DO",
     "language": "es"
-  },
-  {
-    "name": "Naranja TV (720p)",
-    "logo": "https://i.imgur.com/g7iFN3s.png",
-    "url": "https://cdn.streamingcpanel.com:3526/live/teleraiceslive.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "NaranjaTV.do@SD"
   },
   {
     "name": "CENOVISION TV",
@@ -359,13 +324,6 @@
     "language": "es"
   },
   {
-    "name": "Bellavision (1080p) [Not 24/7]",
-    "logo": "https://i.imgur.com/XqQ3kCs.png",
-    "url": "https://fox.hostlagarto.com:8081/bellavision8hd/tracks-v1a1/mono.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "Bellavision.do@SD"
-  },
-  {
     "name": "A7 TV",
     "logo": "https://i.postimg.cc/Xv5Gp7FP/A7-TV.png",
     "url": "https://183.bozztv.com/ssh101/ssh101/a7tvjarabacoa/playlist.m3u8",
@@ -452,13 +410,6 @@
     "language": "es"
   },
   {
-    "name": "Bajo Techo TV (1080p) [Not 24/7]",
-    "logo": "https://i.imgur.com/I2wRq88.png",
-    "url": "https://fox.hostlagarto.com:8081/bajotechotv/tracks-v1a1/mono.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "BajoTechoTV.do@SD"
-  },
-  {
     "name": "BOCA CHICA TV",
     "logo": "https://i.postimg.cc/pLpPLG8Z/BOCA-CHICA-TV.jpg",
     "url": "https://cdnfox.hostlagarto.com/bocachicatv/index.m3u8",
@@ -466,13 +417,6 @@
     "tvg-id": "bocachicatv.do@SD",
     "country": "DO",
     "language": "es"
-  },
-  {
-    "name": "Boca Chica TV (720p) [Not 24/7]",
-    "logo": "https://i.imgur.com/npiRBPC.png",
-    "url": "https://fox.hostlagarto.com:8081/bocachicatv/tracks-v1a1/mono.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "BocaChicaTV.do@SD"
   },
   {
     "name": "BONAO TV",
@@ -564,13 +508,6 @@
     "tvg-id": "carivisionhd.do@SD"
   },
   {
-    "name": "Carivision (1080p) [Geo-blocked]",
-    "logo": "https://i.imgur.com/XjGb2UM.png",
-    "url": "https://ss2.tvrdomi.com:1936/carivision/carivision/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "Carivision.do@SD"
-  },
-  {
     "name": "CASCARA TV",
     "logo": "https://i.postimg.cc/286pZr67/CASCARA-TV.jpg",
     "url": "https://ss2.tvrdomi.com:1936/cascaratv/cascaratv/playlist.m3u8",
@@ -639,13 +576,6 @@
     "tvg-id": "codigotv.do@SD",
     "country": "DO",
     "language": "es"
-  },
-  {
-    "name": "Codigo TV (1080p) [Not 24/7]",
-    "logo": "https://imgur.com/DbjywI3.png",
-    "url": "https://edge.essastream.com/codigotv/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "CodigoTV.do@HD"
   },
   {
     "name": "COLIMDO TV",
@@ -882,13 +812,6 @@
     "language": "es"
   },
   {
-    "name": "FRATA TV (1080p) [Not 24/7]",
-    "logo": "https://i.imgur.com/VxeTREd.png",
-    "url": "https://vdopanel.jlahozconsulting.com:3706/hybrid/play.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "FRATATV.do@SD"
-  },
-  {
     "name": "FRONTERA VISION",
     "logo": "https://i.postimg.cc/rFRGLbhT/FRONTERA-VISION.jpg",
     "url": "https://59f1cbe63db89.streamlock.net:1443/fronteravision/_definst_/fronteravision/playlist.m3u8",
@@ -914,13 +837,6 @@
     "tvg-id": "ghtelevision.do@SD",
     "country": "DO",
     "language": "es"
-  },
-  {
-    "name": "GH Television (1080p) [Not 24/7]",
-    "logo": "https://i.imgur.com/xhkiiO3.png",
-    "url": "https://fox.hostlagarto.com:8081/ghtelevision/tracks-v1a1/mono.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "GHTelevision.do@SD"
   },
   {
     "name": "Gi Television (720p) [Not 24/7]",
@@ -1002,13 +918,6 @@
     "tvg-id": "informetv.do@SD",
     "country": "DO",
     "language": "es"
-  },
-  {
-    "name": "Informe TV (1080p) [Not 24/7]",
-    "logo": "https://imgur.com/TmJaXrO.jpg",
-    "url": "https://edge.essastream.com/informetv/tracks-v1a1/mono.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "InformeTV.do@HD"
   },
   {
     "name": "JARABACOA TV",
@@ -1111,13 +1020,6 @@
     "language": "es"
   },
   {
-    "name": "Latina TV Internacional (720p)",
-    "logo": "https://i.imgur.com/UAfyeYT.png",
-    "url": "https://5790d294af2dc.streamlock.net/latinatv/latinatv/chunklist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "LatinaTVInternacional.do@SD"
-  },
-  {
     "name": "Lena TV [Not 24/7]",
     "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3232-294x165-FFFFFF.jpg",
     "url": "https://5790d294af2dc.streamlock.net/lenaratv/lenaratv/playlist.m3u8",
@@ -1166,13 +1068,6 @@
     "tvg-id": "makaotv.do@SD",
     "country": "DO",
     "language": "es"
-  },
-  {
-    "name": "Makao TV (1080i)",
-    "logo": "https://i.imgur.com/asD5y7i.png",
-    "url": "https://live.obslivestream.com/makaomux/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "MakaoTV.do@SD"
   },
   {
     "name": "Makina TV (720p) [Not 24/7]",
@@ -1289,13 +1184,6 @@
     "language": "es"
   },
   {
-    "name": "MorroTV (720p) [Not 24/7]",
-    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3759-294x165-FFFFFF.jpg",
-    "url": "https://fox.hostlagarto.com:8081/morrotv/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "MorroTV.do@SD"
-  },
-  {
     "name": "MTV CLIPES 1",
     "logo": "https://i.postimg.cc/LXFCTcLD/MTV-CLIPES-1.jpg",
     "url": "http://rtmp.one.by:1200",
@@ -1398,13 +1286,6 @@
     "language": "es"
   },
   {
-    "name": "ORBIT TV (1080p)",
-    "logo": "https://i.imgur.com/lizQs3n.png",
-    "url": "https://edge.essastream.com/orbittv/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "ORBITTV.do@SD"
-  },
-  {
     "name": "PALMAR TV",
     "logo": "https://i.postimg.cc/Gm7VHbr8/PALMAR-TV.jpg",
     "url": "https://streamunoapp.com:3255/live/palmartvlive.m3u8",
@@ -1446,13 +1327,6 @@
     "url": "https://cdnfox.hostlagarto.com/pronemstv/index.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "pronemstv.do@SD"
-  },
-  {
-    "name": "Pronems TV (1080p) [Not 24/7]",
-    "logo": "https://i.imgur.com/a9ORO1G.png",
-    "url": "https://fox.hostlagarto.com:8081/pronemstv/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "PronemsTV.do@SD"
   },
   {
     "name": "PUNTA CANA TV",
@@ -1521,13 +1395,6 @@
     "tvg-id": "randetv.do@SD",
     "country": "DO",
     "language": "es"
-  },
-  {
-    "name": "R&E TV (480p) [Not 24/7]",
-    "logo": "https://i.imgur.com/HpKQYp3.png",
-    "url": "https://cloud2.streaminglivehd.com:1936/8072/8072/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "RETV.do@SD"
   },
   {
     "name": "RDN",
@@ -1818,13 +1685,6 @@
     "language": "es"
   },
   {
-    "name": "Telecanal 28 (1080p) [Not 24/7]",
-    "logo": "https://i.imgur.com/hEJ6lZ9.png",
-    "url": "https://edge.essastream.com/telecanal28/tracks-v1a1/mono.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "Telecanal28.do@SD"
-  },
-  {
     "name": "TELECIBAO",
     "logo": "https://i.postimg.cc/25Z2Z5cR/TELECIBAO.jpg",
     "url": "https://edge.essastream.com/telecibaotv/index.m3u8",
@@ -1866,13 +1726,6 @@
     "tvg-id": "telefuturo.do@SD",
     "country": "DO",
     "language": "es"
-  },
-  {
-    "name": "Telefuturo (Dominican Republic) (480p) [Not 24/7]",
-    "logo": "https://i.imgur.com/QpnctoU.png",
-    "url": "http://190.122.104.210:5080/LiveApp/streams/tfuturo.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "Telefuturo.do@SD"
   },
   {
     "name": "Telemax (Dominican Republic) (1080p) [Not 24/7]",
@@ -1966,16 +1819,6 @@
     "language": "es"
   },
   {
-    "name": "Teleunion (1080p)",
-    "logo": "https://i.imgur.com/vTfxkjW.png",
-    "url": "http://server2grupocam.com:1945/teleunion/TU/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "headers": {
-      "Referer": "https://teleuniontvrd.com/portal/"
-    },
-    "tvg-id": "Teleunion.do@SD"
-  },
-  {
     "name": "Teleuniverso (720p) [Not 24/7]",
     "logo": "https://i.imgur.com/gQev8ST.png",
     "url": "https://hls.tvabierta.net/hls/029.m3u8",
@@ -2008,13 +1851,6 @@
     "language": "es"
   },
   {
-    "name": "Television del Este (1080p) [Not 24/7]",
-    "logo": "https://i.imgur.com/mmjbcGr.png",
-    "url": "https://edge.essastream.com/televisiondeleste/tracks-v1a1/mono.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "TelevisiondelEste.do@SD"
-  },
-  {
     "name": "TENARENSES TV",
     "logo": "https://i.postimg.cc/26Mpqw9p/TENARENSES-TV.jpg",
     "url": "https://edge.essastream.com/tenarensestvrd/index.m3u8",
@@ -2022,13 +1858,6 @@
     "tvg-id": "tenarensestv.do@SD",
     "country": "DO",
     "language": "es"
-  },
-  {
-    "name": "Tenarenses TV (1080p) [Not 24/7]",
-    "logo": "https://i.imgur.com/cPIgs0v.png",
-    "url": "https://edge.essastream.com/tenarensestvrd/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "TenarensesTV.do@SD"
   },
   {
     "name": "TN1 CANAL 51",
@@ -2163,13 +1992,6 @@
     "tvg-id": "tvs.do@SD",
     "country": "DO",
     "language": "es"
-  },
-  {
-    "name": "TVS (Dominican Republic) (540p) [Not 24/7]",
-    "logo": "https://i.imgur.com/a2YX1oj.jpg",
-    "url": "https://imagenuniversaltv.net:3741/live/tvslive.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "TVS.do@SD"
   },
   {
     "name": "UVA TV (720p) [Not 24/7]",
@@ -2464,13 +2286,6 @@
     "tvg-id": "friki"
   },
   {
-    "name": "Cine Friki (1080p)",
-    "logo": "https://i.imgur.com/b3Ospym.png",
-    "url": "https://d2mr4fu91mjx9m.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-rb0tx75ojbc5u/CineFriki_ES.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "CineFriki.es@SD"
-  },
-  {
     "name": "Cine Premiere",
     "logo": "https://i.imgur.com/PdhWTO6.png",
     "url": "https://jmp2.uk/plu-5cf968040ab7d8f181e6a68b.m3u8",
@@ -2504,13 +2319,6 @@
     "url": "https://jmp2.uk/stvp-ES2300005G7",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "hbo2"
-  },
-  {
-    "name": "Cine Western (Spain) (1080p)",
-    "logo": "https://i.imgur.com/2UROzSc.png",
-    "url": "https://d2nq34q0i1r3la.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-awohw8g217ho8/CineWestern_ES.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "CineWestern.es@SD"
   },
   {
     "name": "Cinecanal (1080p)",
@@ -2548,13 +2356,6 @@
     "tvg-id": "CinemaxLatinAmerica.us@SD"
   },
   {
-    "name": "Cinemax Latin America HD (1080p)",
-    "logo": "https://i.imgur.com/cZWoJWD.png",
-    "url": "http://38.65.175.84:8000/play/a093/index.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "CinemaxLatinAmerica.us@HD"
-  },
-  {
     "name": "Claro Cinema (1080p)",
     "logo": "https://i.imgur.com/SOLGQxQ.jpg",
     "url": "http://158.172.217.18:8000/play/a00d/index.m3u8",
@@ -2581,13 +2382,6 @@
     "url": "https://tv.mediacp.eu:19360/cosmos/cosmos.m3u8",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "CosmosTv.ar@HD"
-  },
-  {
-    "name": "Cosmos Tv SD",
-    "logo": "https://i0.wp.com/fmcosmos.com/wp-content/uploads/2021/11/COSMOS-TV.png",
-    "url": "https://canaletaplus.com:3922/live/cosmoslive.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "CosmosTv.ar@SD"
   },
   {
     "name": "CSI MIAMI",
@@ -2888,13 +2682,6 @@
     "tvg-id": "mytimespain"
   },
   {
-    "name": "MyTime Movie Network (Spain) (1080p)",
-    "logo": "https://i.imgur.com/pw4NZK1.png",
-    "url": "https://appletree-mytimespain-rakuten.amagi.tv/playlist.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "MyTimeMovieNetwork.es@SD"
-  },
-  {
     "name": "NCIS (United States) LatAm",
     "logo": "https://images.pluto.tv/channels/63eb9fdda995710008991c54/colorLogoPNG.png",
     "url": "https://jmp2.uk/plu-63eb947c4e83e70008ab877b.m3u8",
@@ -3005,13 +2792,6 @@
     "url": "https://jmp2.uk/plu-5f1ac8099c49f600076579b2.m3u8",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "PlutoTVCineComedia.de@ES"
-  },
-  {
-    "name": "Pluto TV Cine Comedia (United States)",
-    "logo": "https://images.pluto.tv/channels/5f12101f0b12f00007844c7c/colorLogoPNG_1732662798298.png",
-    "url": "https://jmp2.uk/plu-5f513564e4622a0007c578c0.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "PlutoTVCineComedia.us@US"
   },
   {
     "name": "Pluto TV Cine Comedia (United States) LatAm",
@@ -3441,13 +3221,6 @@
     "tvg-id": "StarChannel.cl@SD"
   },
   {
-    "name": "Star Channel (Colombia) (1080p)",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png",
-    "url": "http://190.61.47.54:8000/play/a035/index.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "StarChannel.co@SD"
-  },
-  {
     "name": "Star Channel Latin America (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png",
     "url": "http://15.204.246.24:8080/STARCHANNELHD/index.m3u8",
@@ -3537,13 +3310,6 @@
     "url": "https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/star_main_576.m3u8",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "TVEStar.es@SD"
-  },
-  {
-    "name": "TVE Star HD (1080p)",
-    "logo": "https://i.ibb.co/j98NY8Mr/starcolor.png",
-    "url": "https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/star_main_1080.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "TVEStar.es@HD"
   },
   {
     "name": "TVN3 (1080p) [Geo-blocked]",
@@ -4546,13 +4312,6 @@
     "tvg-id": "estrellamedia"
   },
   {
-    "name": "Estrella News (1080p)",
-    "logo": "https://i.imgur.com/HRrkhLq.png",
-    "url": "https://estrella-news-oando.amagi.tv/playlist.m3u8",
-    "group-title": "NOTICIAS",
-    "tvg-id": "EstrellaNews.us@SD"
-  },
-  {
     "name": "EURONEWS",
     "logo": "https://i.postimg.cc/tTbfhXmX/EURONEWS.jpg",
     "url": "https://cdn-euronews.akamaized.net/live/eds/euronews-pl/26382/index.m3u8",
@@ -4886,13 +4645,6 @@
     "url": "http://181.78.211.244:8005/play/a0cc/index.m3u8",
     "group-title": "NOTICIAS",
     "tvg-id": "Telesur.ve@SD"
-  },
-  {
-    "name": "Telesur HD (1080p)",
-    "logo": "https://i.imgur.com/P50VjRX.png",
-    "url": "https://mblesmain01.telesur.ultrabase.net/mbliveMain/hd/playlist.m3u8",
-    "group-title": "NOTICIAS",
-    "tvg-id": "Telesur.ve@HD"
   },
   {
     "name": "TN (1080p)",
@@ -5972,13 +5724,6 @@
     "tvg-id": "RadioEdelweiss.cl@SD"
   },
   {
-    "name": "Radio Fantastica 98.9 FM (1080p)",
-    "logo": "https://i.imgur.com/mpcIbrH.jpg",
-    "url": "http://190.107.232.9:8082/livestream/stream.m3u8",
-    "group-title": "MUSICA",
-    "tvg-id": "RadioFantastica989FM.ec@SD"
-  },
-  {
     "name": "Radio Ideal (720p) [Not 24/7]",
     "logo": "https://i.imgur.com/chPfoOs.png",
     "url": "https://www.idealfm104-7.com/hls/0/stream.m3u8",
@@ -6525,13 +6270,6 @@
     "tvg-id": "AnimalPlanetLatinAmerica.us@SD"
   },
   {
-    "name": "Animal Planet Latin America HD (720p) [Geo-blocked]",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/960px-2018_Animal_Planet_logo.svg.png",
-    "url": "http://15.204.246.24:8080/AnimalPlanetHD/index.m3u8",
-    "group-title": "VARIEDADES",
-    "tvg-id": "AnimalPlanetLatinAmerica.us@HD"
-  },
-  {
     "name": "ANTENA 1 PERU",
     "logo": "https://i.postimg.cc/gJdqkgDy/ANTENA-1.jpg",
     "url": "http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/antenauno.stream/playlist.m3u8",
@@ -6894,13 +6632,6 @@
     "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00567-estrellamedia-estrellagames-estrellamedia/playlist.m3u8",
     "group-title": "VARIEDADES",
     "tvg-id": "estrellagame"
-  },
-  {
-    "name": "Estrella Games (1080p)",
-    "logo": "https://i.imgur.com/Z52nEnH.png",
-    "url": "https://estrella-games-oando.amagi.tv/playlist.m3u8",
-    "group-title": "VARIEDADES",
-    "tvg-id": "EstrellaGames.us@SD"
   },
   {
     "name": "ESTRELLA TV",
