@@ -1062,6 +1062,13 @@
     "language": "es"
   },
   {
+    "name": "JPD TV [Not 24/7]",
+    "logo": "https://i0.wp.com/juanpabloduartetv.com/wp-content/uploads/2024/08/logo-JPDTV-100-x-100.png",
+    "url": "https://imagenuniversaltv.net:3026/live/juanpabloduartetvlive.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "JPDTV.do@HD"
+  },
+  {
     "name": "Junior Technologia TV (1080p) [Not 24/7]",
     "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3812-294x165-FFFFFF.jpg",
     "url": "https://streamunoapp.com:3616/live/juniorrodrigueztvlive.m3u8",
@@ -1797,6 +1804,13 @@
     "language": "es"
   },
   {
+    "name": "Tele Poder TV (720p) [Not 24/7]",
+    "logo": "https://www.telepoder.online/wp-content/uploads/2024/02/cropped-cropped-Logo-PoderTV2.png",
+    "url": "https://cdn.telepoder.online:3229/dash/stream.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "TelePoderTV.do@HD"
+  },
+  {
     "name": "Tele Proyecto TV [Not 24/7]",
     "logo": "https://imgur.com/LmBxN5x.png",
     "url": "https://5790d294af2dc.streamlock.net/Teleproyecto/Teleproyecto/playlist.m3u8",
@@ -2299,9 +2313,9 @@
   {
     "name": "XTRA TV",
     "logo": "https://i.postimg.cc/BndC40qh/XTRA-TV.png",
-    "url": "https://edge.essastream.com/xtratv/index.m3u8",
+    "url": "https://streaming.social3.hr/ExtraTVudzdhr5/uUankWqpXD/1.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "xtratv.do@SD",
+    "tvg-id": "xtratv",
     "country": "DO",
     "language": "es"
   },
@@ -2391,6 +2405,13 @@
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "amcplex",
     "language": "es"
+  },
+  {
+    "name": "AMC Series Latin America (1080p)",
+    "logo": "https://amc-series.s3.amazonaws.com/menu/hbfen1Gom0_k1cyqi7rw4-amc-series-train-w.png",
+    "url": "http://45.171.64.30:6060/play/a005/index.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "AMCSeriesLatinAmerica.us@Panregional"
   },
   {
     "name": "Aneflix Live (720p)",
@@ -2724,6 +2745,13 @@
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "pelisoeste",
     "language": "es"
+  },
+  {
+    "name": "HBO 2 Latin America HD (1080p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/HBO2_logo.svg/960px-HBO2_logo.svg.png",
+    "url": "http://45.171.64.30:6060/play/a00i/index.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "HBO2LatinAmerica.us@HD"
   },
   {
     "name": "HORROR VISION",
@@ -3993,6 +4021,13 @@
     "group-title": "ANIME-INFANTIL",
     "tvg-id": "gospel",
     "language": "es"
+  },
+  {
+    "name": "HBO Family Latin America (1080p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png",
+    "url": "http://45.171.64.30:6060/play/a00k/index.m3u8",
+    "group-title": "ANIME-INFANTIL",
+    "tvg-id": "HBOFamilyLatinAmerica.us@SD"
   },
   {
     "name": "Hey Arnold!",
@@ -5326,6 +5361,13 @@
     "tvg-id": "SqalaTV.pe@SD"
   },
   {
+    "name": "Teletrak TV (720p)",
+    "logo": "https://i.imgur.com/NoJvlig.png",
+    "url": "https://unlimited6-cl.dps.live/sportinghd/sportinghd.smil/playlist.m3u8",
+    "group-title": "DEPORTES",
+    "tvg-id": "TeletrakTV.cl@SD"
+  },
+  {
     "name": "Turf Movil (720p)",
     "logo": "https://i.imgur.com/TwIe4lK.png",
     "url": "https://tvturf4.janus.cl/playlist/stream.m3u8?d=w&id=",
@@ -5484,6 +5526,13 @@
     "tvg-id": "ChocolateFM.cl@SD"
   },
   {
+    "name": "Claro Musica TV (1080p)",
+    "logo": "https://i.imgur.com/vrSFUwv.png",
+    "url": "http://45.171.64.30:6060/play/a010",
+    "group-title": "MUSICA",
+    "tvg-id": "ClaroMusicaTV.co@SD"
+  },
+  {
     "name": "Concert Channel (720p)",
     "logo": "https://i.imgur.com/u2irADf.png",
     "url": "https://jmp2.uk/plu-6868152657543d1f8be4ece3.m3u8",
@@ -5594,6 +5643,13 @@
     "tvg-id": "FMPlusTV.cl@SD"
   },
   {
+    "name": "Galactica TV",
+    "logo": "https://i.imgur.com/byL1zCV.jpeg",
+    "url": "https://stream.neux.site/memfs/e3f59eec-6b93-45e1-a2ab-c82381c2a9ec.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "GalacticaTV.pe@SD"
+  },
+  {
     "name": "Genial TV (720p)",
     "logo": "https://i.imgur.com/uBC8e96.png",
     "url": "https://v1.tustreaming.cl/genialtv/index.m3u8",
@@ -5609,6 +5665,13 @@
       "Referer": "https://www.heinow.com.py/"
     },
     "tvg-id": "HEiNow.py@SD"
+  },
+  {
+    "name": "HTV (720p)",
+    "logo": "https://i.imgur.com/NlKFNHS.png",
+    "url": "http://45.171.64.30:6060/play/a012/index.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "HTV.us@SD"
   },
   {
     "name": "HTV Argentina (720p)",
@@ -6095,6 +6158,13 @@
     "tvg-id": "RitoqueTV.cl@SD"
   },
   {
+    "name": "Rock & Pop (1080p)",
+    "logo": "https://fmrockandpop.com/images/ryp/R&P_Logo_web_207x112px.png",
+    "url": "http://190.128.214.97:64333/play/a032/index.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "RockPop.ar@SD"
+  },
+  {
     "name": "Rumba TV",
     "logo": "https://i.imgur.com/WtVpWwI.png",
     "url": "http://186.148.196.100:8000/play/a02h",
@@ -6524,6 +6594,13 @@
     "group-title": "VARIEDADES",
     "tvg-id": "andestv",
     "language": "es"
+  },
+  {
+    "name": "Animal Planet Latin America (1080p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/960px-2018_Animal_Planet_logo.svg.png",
+    "url": "http://190.128.214.97:64333/play/a01n/index.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "AnimalPlanetLatinAmerica.us@SD"
   },
   {
     "name": "ANTENA 1 PERU",
