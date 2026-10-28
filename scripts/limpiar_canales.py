@@ -5,6 +5,7 @@ limpiar_canales.py
 ------------------
 Valida cada canal, elimina caídos tras MAX_FALLOS consecutivos y deduplica
 de forma SEGURA (solo borra duplicados entre los canales que están online).
+Además, corrige el campo 'country': solo los dominicanos llevan "DO".
 """
 
 import json
@@ -100,6 +101,27 @@ def main():
         else:
             c.pop("tvg-id", None)
             c.pop("tvg_id", None)
+
+    # --- CORREGIR CAMPO 'country' ---
+    log("Corrigiendo campo 'country' (solo dominicanos llevan DO)...")
+    for c in canales:
+        cat = c.get("group-title", "")
+        tvg = (c.get("tvg-id") or c.get("_tvg_id") or "").lower()
+        
+        if cat == "DOMINICANOS":
+            if c.get("country") != "DO":
+                c["country"] = "DO"
+        else:
+            if c.get("country") == "DO":
+                if "." in tvg:
+                    posible_pais = tvg.split(".")[-1].split("@")[0].upper()
+                    if len(posible_pais) == 2 and posible_pais.isalpha() and posible_pais != "DO":
+                        c["country"] = posible_pais
+                    else:
+                        c.pop("country", None)
+                else:
+                    c.pop("country", None)
+    # --- FIN CORRECCIÓN 'country' ---
 
     estado = cargar_estado()
     log(f"Comprobando {total_original} canales (incluyendo duplicados)... (DRY_RUN={DRY_RUN}, MAX_FALLOS={MAX_FALLOS}, hilos={MAX_HILOS})")
