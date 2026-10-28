@@ -96,8 +96,9 @@
     "name": "AGROTENDENCIAS TV",
     "logo": "https://i.postimg.cc/mkvTmywq/AGROTENDENCIAS.jpg",
     "url": "https://5fc584f3f19c9.streamlock.net/agrotendencia/videoagrotendencia_hls1/playlist.m3u8",
-    "group-title": "VARIEDADES",
-    "tvg-id": "agrotendecias",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "agrotendecias.do@SD",
+    "country": "DO",
     "language": "es"
   },
   {
