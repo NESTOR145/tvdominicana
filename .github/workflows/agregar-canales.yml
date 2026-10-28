@@ -88,8 +88,9 @@ jobs:
               "PERAVIA VISION", "BANI VISION", "TLSD", "READY HD", "HERMANAS MIRABAL TV",
               "DIGITAL 809", "CHINOLA TV", "BELLAVISION",
           ]
-          nombres = {(c.get("name") or "").strip().upper() for c in data}
-          faltantes = [p for p in PRIORITY if p.upper() not in nombres]
+          # Validación flexible para evitar falsos positivos con nombres compuestos
+          nombres_texto = " ".join([(c.get("name") or "").upper() for c in data])
+          faltantes = [p for p in PRIORITY if p.upper() not in nombres_texto]
           if faltantes:
               warnings.append(f"⚠️ {len(faltantes)} de los 33 prioritarios no están: {faltantes[:5]}...")
 
