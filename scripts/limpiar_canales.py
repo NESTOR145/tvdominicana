@@ -3,8 +3,8 @@
 """
 limpiar_canales.py
 ------------------
-Valida cada canal, elimina caídos tras MAX_FALLOS consecutivos y deduplica.
-Re-normaliza categorías de TODOS los canales existentes.
+Valida cada canal, elimina caídos tras MAX_FALLOS consecutivos y deduplica
+de forma SEGURA (solo borra duplicados entre los canales que están online).
 """
 
 import json
@@ -42,11 +42,9 @@ def cargar_estado():
         with open(ESTADO_PATH, "r", encoding="utf-8") as f:
             data = json.load(f)
         if not isinstance(data, dict):
-            log("AVISO: estado no es dict. Se reinicia.")
             return {}
         return data
-    except Exception as e:
-        log(f"AVISO: estado corrupto ({e}). Se respalda y reinicia.")
+    except Exception:
         try:
             ESTADO_PATH.rename(ESTADO_PATH.with_suffix(".corrupto.json"))
         except OSError:
@@ -71,37 +69,6 @@ def id_canal(canal):
     return f"{canal.get('name','')}|{canal.get('logo','')}"
 
 
-def deduplicar(canales):
-    vistos_url = set()
-    vistos_nombre = set()
-    salida = []
-    descartados = 0
-    for c in canales:
-        u = normalizar_url(c.get("url", ""))
-        nom = normalizar_nombre(c.get("name", ""))
-        cat = c.get("group-title", "")
-        clave_nombre = (nom, cat) if nom else None
-
-        dup = False
-        if u and u in vistos_url:
-            log(f"  DUPLICADO URL (se descarta): {c.get('name','?')}")
-            dup = True
-        elif clave_nombre and clave_nombre in vistos_nombre:
-            log(f"  DUPLICADO NOMBRE (se descarta): {c.get('name','?')}")
-            dup = True
-
-        if dup:
-            descartados += 1
-            continue
-
-        if u:
-            vistos_url.add(u)
-        if clave_nombre:
-            vistos_nombre.add(clave_nombre)
-        salida.append(c)
-    return salida, descartados
-
-
 def main():
     if not JSON_PATH.exists():
         log("ERROR: no existe tvdominicana.json")
@@ -117,12 +84,7 @@ def main():
         log("Lista vacía.")
         return
 
-    canales, n_dups = deduplicar(canales)
-    if n_dups:
-        log(f"Duplicados eliminados al inicio: {n_dups} "
-            f"({total_original} -> {len(canales)} canales).")
-
-    # Re-normalizar categorías de TODOS los canales
+    # 1. Re-normalizar categorías de TODOS los canales
     log("Re-normalizando categorías...")
     cambios_cat = 0
     for c in canales:
@@ -138,19 +100,9 @@ def main():
         else:
             c.pop("tvg-id", None)
             c.pop("tvg_id", None)
-    if cambios_cat:
-        log(f"Categorías re-normalizadas: {cambios_cat} canales actualizados.")
-
-    total = len(canales)
-    if total == 0:
-        log("Tras deduplicar no queda ningún canal.")
-        if not DRY_RUN:
-            guardar_json_atomico(JSON_PATH, [])
-            guardar_estado({})
-        return
 
     estado = cargar_estado()
-    log(f"Comprobando {total} canales... (DRY_RUN={DRY_RUN}, MAX_FALLOS={MAX_FALLOS}, hilos={MAX_HILOS})")
+    log(f"Comprobando {total_original} canales (incluyendo duplicados)... (DRY_RUN={DRY_RUN}, MAX_FALLOS={MAX_FALLOS}, hilos={MAX_HILOS})")
 
     resultados = {}
     with ThreadPoolExecutor(max_workers=MAX_HILOS) as executor:
@@ -171,7 +123,8 @@ def main():
                 res = "fallo"
             resultados[id_canal(canal)] = (canal, res)
 
-    nuevos_canales = []
+    # 2. Clasificar resultados y procesar fallos
+    canales_sobrevivientes = []
     eliminados = []
     caidos_reales = 0
     temporales = 0
@@ -193,61 +146,85 @@ def main():
         if res == "ok":
             log(f"  OK: {nombre}")
             estado[cid] = 0
-            nuevos_canales.append(canal)
-
+            canales_sobrevivientes.append(canal)
         elif res == "temporal":
             temporales += 1
             log(f"  TEMPORAL (no cuenta): {nombre}")
-            nuevos_canales.append(canal)
-
+            canales_sobrevivientes.append(canal)
         else:
             caidos_reales += 1
             fallos = estado.get(cid, 0) + 1
             estado[cid] = fallos
-
             if fallos >= MAX_FALLOS:
                 log(f"  ELIMINADO (falló {fallos} veces): {nombre}")
                 eliminados.append((nombre, url))
                 estado.pop(cid, None)
             else:
                 log(f"  FALLO {fallos}/{MAX_FALLOS}: {nombre}")
-                nuevos_canales.append(canal)
+                canales_sobrevivientes.append(canal)
 
-    validables = total - sin_url
+    validables = total_original - sin_url
     if validables > 0 and (caidos_reales / validables) > UMBRAL_ABORTO:
         log(f"::warning::ABORTADO: fallaron {caidos_reales}/{validables} canales validables. No se modifica nada.")
         sys.exit(0)
 
-    ids_vivos = {id_canal(c) for c in nuevos_canales}
+    # 3. DEDUPLICACIÓN SEGURA (Solo entre los que sobrevivieron y están online)
+    log("Deduplicando canales online...")
+    vistos_url = set()
+    vistos_nombre = set()
+    canales_finales = []
+    n_dups = 0
+
+    for c in canales_sobrevivientes:
+        u = normalizar_url(c.get("url", ""))
+        nom = normalizar_nombre(c.get("name", ""))
+        clave_nombre = nom if nom else None
+
+        dup = False
+        if u and u in vistos_url:
+            log(f"  DUPLICADO URL (se descarta): {c.get('name','?')}")
+            dup = True
+        elif clave_nombre and clave_nombre in vistos_nombre:
+            log(f"  DUPLICADO NOMBRE (se descarta): {c.get('name','?')}")
+            dup = True
+
+        if dup:
+            n_dups += 1
+            continue
+
+        if u:
+            vistos_url.add(u)
+        if clave_nombre:
+            vistos_nombre.add(clave_nombre)
+        canales_finales.append(c)
+
+    # Limpiar estado huérfano
+    ids_vivos = {id_canal(c) for c in canales_finales}
     huerfanos = [k for k in estado.keys() if k not in ids_vivos]
     for k in huerfanos:
         estado.pop(k, None)
-    if huerfanos:
-        log(f"Estado: {len(huerfanos)} entradas huérfanas eliminadas.")
 
     if eliminados and not DRY_RUN:
-        anexar_log([f"{time.strftime('%Y-%m-%d %H:%M:%S')}  {n}  {u}"
-                    for n, u in eliminados])
+        anexar_log([f"{time.strftime('%Y-%m-%d %H:%M:%S')}  {n}  {u}" for n, u in eliminados])
 
     if DRY_RUN:
-        log(f"[DRY_RUN] Se eliminarían {len(eliminados)} canales (incluye {n_dups} duplicados iniciales).")
-        log(f"[DRY_RUN] Estado que se guardaría: {len(estado)} entradas.")
+        log(f"[DRY_RUN] Se eliminarían {len(eliminados)} caídos y {n_dups} duplicados.")
         return
 
-    if eliminados or n_dups or cambios_cat:
-        nuevos_canales.sort(key=clave_orden)
-        guardar_json_atomico(JSON_PATH, nuevos_canales)
-        log(f"Se eliminaron {len(eliminados)} canales y {n_dups} duplicados iniciales.")
+    # Guardar cambios
+    if eliminados or n_dups or cambios_cat or len(canales_finales) != total_original:
+        canales_finales.sort(key=clave_orden)
+        guardar_json_atomico(JSON_PATH, canales_finales)
+        log(f"Se eliminaron {len(eliminados)} caídos y {n_dups} duplicados.")
     else:
-        nuevos_canales.sort(key=clave_orden)
-        guardar_json_atomico(JSON_PATH, nuevos_canales)
+        canales_finales.sort(key=clave_orden)
+        guardar_json_atomico(JSON_PATH, canales_finales)
         log("No se eliminó ningún canal.")
 
     guardar_estado(estado)
-
-    log(f"Resumen: ok={total - caidos_reales - temporales - sin_url}, "
+    log(f"Resumen: ok={total_original - caidos_reales - temporales - sin_url}, "
         f"temporal={temporales}, fallo={caidos_reales}, sin_url={sin_url}, "
-        f"eliminados={len(eliminados)}, duplicados_iniciales={n_dups}")
+        f"eliminados={len(eliminados)}, duplicados_borrados={n_dups}")
 
 
 if __name__ == "__main__":
