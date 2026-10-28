@@ -92,15 +92,16 @@ def validar_canal_nuevo(canal):
 def validar_actualizacion(canal_nuevo, canal_existente):
     """
     Valida si se debe actualizar un canal existente.
-    - Primero prueba la URL actual del existente (rápido, 1 intento).
+    - Primero prueba la URL actual del existente (2 intentos para tolerar
+      hipos de red puntuales).
     - Si la URL vieja funciona, devuelve "conservar".
     - Si la URL vieja falla, prueba la nueva.
       - Si la nueva funciona, devuelve "actualizar".
       - Si la nueva falla, devuelve "conservar_caida".
     """
     url_vieja = canal_existente.get("url", "")
-    # Probamos la URL vieja con 1 solo intento para que sea rápido
-    if url_vieja and probar_enlace(url_vieja, canal_existente.get("headers"), intentos=1) == "ok":
+    # Probamos la URL vieja con 2 intentos para tolerar hipos de red puntuales
+    if url_vieja and probar_enlace(url_vieja, canal_existente.get("headers"), intentos=2, pausa=2.0) == "ok":
         return "conservar"
     
     # La URL vieja está caída o no existe, probar la nueva
