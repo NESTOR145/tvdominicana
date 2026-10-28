@@ -5,6 +5,11 @@ agregar_canales.py
 ------------------
 Descarga listas M3U remotas, valida cada canal con validación REAL y agrega a
 tvdominicana.json SOLO los canales online que aún no existan.
+
+Lógica de actualización:
+- Si un canal ya existe y su URL actual funciona, se conserva intacta.
+- Si un canal ya existe pero su URL actual está caída, se prueba la nueva URL.
+  Si la nueva funciona, se actualiza. Si no, se conserva la vieja.
 """
 
 import sys
@@ -74,13 +79,34 @@ def descargar_m3u(url: str):
         return None
 
 
-def validar_canal(canal):
+def validar_canal_nuevo(canal):
+    """Valida un canal nuevo. Devuelve el canal si está online, None si no."""
     url = canal.get("url")
     if not url:
         return None
     if probar_enlace(url, canal.get("headers")) == "ok":
         return canal
     return None
+
+
+def validar_actualizacion(canal_nuevo, canal_existente):
+    """
+    Valida si se debe actualizar un canal existente.
+    - Primero prueba la URL actual del existente (rápido, 1 intento).
+    - Si la URL vieja funciona, devuelve "conservar".
+    - Si la URL vieja falla, prueba la nueva.
+      - Si la nueva funciona, devuelve "actualizar".
+      - Si la nueva falla, devuelve "conservar_caida".
+    """
+    url_vieja = canal_existente.get("url", "")
+    # Probamos la URL vieja con 1 solo intento para que sea rápido
+    if url_vieja and probar_enlace(url_vieja, canal_existente.get("headers"), intentos=1) == "ok":
+        return "conservar"
+    
+    # La URL vieja está caída o no existe, probar la nueva
+    if probar_enlace(canal_nuevo.get("url"), canal_nuevo.get("headers")) == "ok":
+        return "actualizar"
+    return "conservar_caida"
 
 
 def main() -> None:
@@ -117,7 +143,7 @@ def main() -> None:
         log("Ninguna lista devolvió canales. Nada que hacer.")
         return
 
-    # --- PREPARAR ÍNDICES (Solo por nombre y url) ---
+    # --- PREPARAR ÍNDICES ---
     urls_existentes = {normalizar_url(c.get("url", "")) for c in json_actual if c.get("url")}
 
     mapa_existentes = {}
@@ -144,20 +170,24 @@ def main() -> None:
         
         clave_nombre = nom_limpio if nom_limpio else un
 
+        # 1. URL ya existe exactamente -> ignorar
         if un in urls_existentes or un in vistos_url:
             descartados_dup += 1
             continue
 
+        # 2. Mismo nombre -> actualización condicional (solo si la vieja está caída)
         if clave_nombre in mapa_existentes:
             existente = mapa_existentes[clave_nombre]
             vistos_url.add(un)
             a_validar.append((c, True, existente))
             continue
 
+        # 3. Duplicado dentro de las listas remotas -> ignorar
         if clave_nombre in vistos_nombre:
             descartados_dup += 1
             continue
 
+        # 4. Canal NUEVO -> Aplicar filtro SOLO si viene de una URL con filtro
         if aplica_filtro and not es_grupo_permitido(cat):
             ignorados_por_categoria += 1
             continue
@@ -175,16 +205,20 @@ def main() -> None:
         return
 
     # --- VALIDAR TODO EN PARALELO ---
-    log(f"Validando {len(a_validar)} canales (nuevos + actualizaciones) con {MAX_HILOS} hilos...")
+    log(f"Validando {len(a_validar)} canales (nuevos + actualizaciones condicionales) con {MAX_HILOS} hilos...")
     online_nuevos = []
     actualizados_url = 0
+    conservados = 0
     descartados_por_caida = 0
 
     with ThreadPoolExecutor(max_workers=MAX_HILOS) as executor:
-        futuros = {
-            executor.submit(validar_canal, canal): (canal, es_upd, existente)
-            for canal, es_upd, existente in a_validar
-        }
+        futuros = {}
+        for canal, es_upd, existente in a_validar:
+            if es_upd:
+                futuros[executor.submit(validar_actualizacion, canal, existente)] = (canal, es_upd, existente)
+            else:
+                futuros[executor.submit(validar_canal_nuevo, canal)] = (canal, es_upd, existente)
+
         for futuro in as_completed(futuros):
             canal, es_upd, existente = futuros[futuro]
             try:
@@ -193,9 +227,9 @@ def main() -> None:
                 log(f"  ERROR validando {canal.get('name', '?')}: {e}")
                 resultado = None
 
-            if resultado:
-                if es_upd:
-                    log(f"  🔄 {canal.get('name', '?')}: URL actualizada (validada OK)")
+            if es_upd:
+                if resultado == "actualizar":
+                    log(f"  🔄 {canal.get('name', '?')}: URL actualizada (vieja caída, nueva OK)")
                     existente["url"] = canal["url"]
                     tvg_nuevo = canal.get("_tvg_id", "")
                     if tvg_nuevo:
@@ -203,15 +237,19 @@ def main() -> None:
                     if canal.get("headers"):
                         existente["headers"] = canal["headers"]
                     actualizados_url += 1
-                else:
+                elif resultado == "conservar":
+                    log(f"  ⏭️ {canal.get('name', '?')}: URL vieja funciona, se conserva")
+                    conservados += 1
+                else:  # conservar_caida
+                    log(f"  ⏭️ {canal.get('name', '?')}: ambas URLs caídas, se conserva la vieja")
+                    conservados += 1
+            else:
+                if resultado:
                     online_nuevos.append(resultado)
                     log(f"  ✅ {canal.get('name', '(sin nombre)')}")
-            else:
-                if es_upd:
-                    log(f"  ⏭️ {canal.get('name', '?')}: nueva URL caída. Se conserva la anterior.")
                 else:
                     log(f"  ❌ {canal.get('name', '(sin nombre)')}")
-                descartados_por_caida += 1
+                    descartados_por_caida += 1
 
     # --- PROCESAR NUEVOS ---
     for c in online_nuevos:
@@ -231,6 +269,7 @@ def main() -> None:
     log("Resumen:")
     log(f"  Nuevos agregados:        {len(online_nuevos)}")
     log(f"  URLs actualizadas:       {actualizados_url}")
+    log(f"  URLs conservadas:        {conservados}")
     log(f"  Ignorados por categoría: {ignorados_por_categoria}")
     log(f"  Descartados por caída:   {descartados_por_caida}")
     log(f"  Descartados por dup:     {descartados_dup}")
@@ -244,6 +283,7 @@ def main() -> None:
         log("Sin cambios. JSON no se modificó.")
 
     log("=" * 60)
+
 
 if __name__ == "__main__":
     main()
