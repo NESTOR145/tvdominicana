@@ -589,7 +589,7 @@
     "name": "CIELO TV",
     "logo": "https://i.postimg.cc/4dfbLs2J/CIELO-TV.jpg",
     "url": "https://streaming.servervideo.net:1936/cielotv/cielotv/playlist.m3u8",
-    "group-title": "VARIEDADES",
+    "group-title": "DOMINICANOS",
     "tvg-id": "cielotv.do@SD",
     "language": "es"
   },
@@ -1269,7 +1269,7 @@
     "name": "MTV CLIPES 1",
     "logo": "https://i.postimg.cc/LXFCTcLD/MTV-CLIPES-1.jpg",
     "url": "http://rtmp.one.by:1200",
-    "group-title": "MUSICA",
+    "group-title": "DOMINICANOS",
     "tvg-id": "mtvclipes.do",
     "language": "es"
   },
@@ -1324,15 +1324,6 @@
     "url": "https://edge.essastream.com/nexxontv/index.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "nexxotv.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
-    "name": "NEXXO TV",
-    "logo": "https://i.postimg.cc/SKPK19qS/NEXXO-TV.png",
-    "url": "https://5790d294af2dc.streamlock.net/Nexxo/Nexxo/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "nexxotv2.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -1434,15 +1425,6 @@
     "language": "es"
   },
   {
-    "name": "PUNTA CANA TV",
-    "logo": "https://i.postimg.cc/fyn49Fj5/PUNTA-CANA-TV.jpg",
-    "url": "https://fox.hostlagarto.com:8081/puntacanatv/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "puntacanatv2.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "PUNTO TV",
     "logo": "https://i.postimg.cc/j5Jk2RK1/PUNTO-TV.png",
     "url": "https://fox.hostlagarto.com:8081/puntotv/index.m3u8",
@@ -1523,7 +1505,7 @@
     "name": "RETRO MUSIC HD",
     "logo": "https://i.postimg.cc/wBCPry8h/RETRO-MUSIC-HD.jpg",
     "url": "http://stream.mediawork.cz/retrotv//retrotvHQ1/playlist.m3u8",
-    "group-title": "MUSICA",
+    "group-title": "DOMINICANOS",
     "tvg-id": "retromusicHD.do",
     "language": "es"
   },
@@ -1660,7 +1642,7 @@
     "name": "SUPER CANAL",
     "logo": "https://i.postimg.cc/zfCgdH1R/SUPER-CANAL.png",
     "url": "https://cnn.hostlagarto.com/supercanalhd/playlist.m3u8",
-    "group-title": "VARIEDADES",
+    "group-title": "DOMINICANOS",
     "tvg-id": "SuperCanal.do@SD",
     "language": "es"
   },
@@ -1900,7 +1882,7 @@
     "name": "TELERITMO SD",
     "logo": "https://i.postimg.cc/bvDWL0My/TELERITMO.jpg",
     "url": "http://mdstrm.com/live-stream-playlist/57b4dc126338448314449d0c.m3u8",
-    "group-title": "MUSICA",
+    "group-title": "DOMINICANOS",
     "tvg-id": "telerutmo.do",
     "language": "es"
   },
@@ -1961,7 +1943,7 @@
     "name": "TELEVIDA",
     "logo": "https://i.postimg.cc/fRFB9mz1/TELEVIDA.jpg",
     "url": "https://cnn.hostlagarto.com/televida/playlist.m3u8",
-    "group-title": "VARIEDADES",
+    "group-title": "DOMINICANOS",
     "tvg-id": "Televida.do@SD",
     "language": "es"
   },
@@ -6667,14 +6649,6 @@
     "language": "es"
   },
   {
-    "name": "CENOVISION",
-    "logo": "https://i.postimg.cc/NMcJyvsX/CENOVISION.jpg",
-    "url": "https://5790d294af2dc.streamlock.net/cenovision/cenovision/playlist.m3u8",
-    "group-title": "VARIEDADES",
-    "tvg-id": "cenovisiontv",
-    "language": "es"
-  },
-  {
     "name": "CETELMON TV ESPAÑA",
     "logo": "https://i.postimg.cc/y8P4V6Q5/CETELMON-TV-ESPA-A.jpg",
     "url": "http://player.cetelmon.tv/protecteddfd43c2f3a8b41f3f28582bf8993aca6/992_high.m3u8",
@@ -6824,14 +6798,6 @@
     "url": "https://59ec5453559f0.streamlock.net/energytvDJ/smil:VIVALIVETV/.m3u8",
     "group-title": "VARIEDADES",
     "tvg-id": "tvfashion",
-    "language": "es"
-  },
-  {
-    "name": "ENLACE TV",
-    "logo": "https://i.postimg.cc/SQ7gCvPm/ENLACE-TV.jpg",
-    "url": "https://livecdnusa.enlace.plus/ejtv/smil:ejtv-hd.smil/playlist.m3u8",
-    "group-title": "VARIEDADES",
-    "tvg-id": "enlacetv",
     "language": "es"
   },
   {
@@ -7606,14 +7572,6 @@
     "url": "https://cloudvideo.servers10.com:8081/8130/index.m3u8",
     "group-title": "VARIEDADES",
     "tvg-id": "wtvnicaragua",
-    "language": "es"
-  },
-  {
-    "name": "XTRA TV",
-    "logo": "https://i.postimg.cc/BndC40qh/XTRA-TV.png",
-    "url": "https://streaming.social3.hr/ExtraTVudzdhr5/uUankWqpXD/1.m3u8",
-    "group-title": "VARIEDADES",
-    "tvg-id": "xtratv",
     "language": "es"
   },
   {
