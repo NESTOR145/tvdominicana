@@ -104,10 +104,14 @@ DOM_NAME_HINTS = ("dominicana", "dominicano", "quisqueya")
 
 RE_ATTR = re.compile(r'([\w-]+)="([^"]*)"')
 
+# NUEVO: Filtro mejorado para limpiar resoluciones y textos basura
 SUFIJOS_IGNORAR = re.compile(
     r"\b(hd|sd|fhd|uhd|4k|8k|h265|hevc|\+1|\+2|\+3|"
     r"latino|lat|español|esp|castellano|"
-    r"opcion\s*\d+|opción\s*\d+)\b",
+    r"opcion\s*\d+|opción\s*\d+|"
+    r"1080p|720p|480p|360p|240p|"
+    r"not\s*24\s*7|geo\s*blocked|geo\s*bloqueado"
+    r")\b",
     re.IGNORECASE,
 )
 
@@ -186,11 +190,28 @@ def normalizar_nombre(n: str) -> str:
     n = unicodedata.normalize("NFKD", n)
     n = "".join(c for c in n if not unicodedata.combining(c))
     n = n.lower()
-    n = re.sub(r"\([^)]*\)", " ", n)
-    n = re.sub(r"\[[^\]]*\]", " ", n)
+    
+    # Quita todo lo que esté entre paréntesis o corchetes
+    n = re.sub(r"\([^)]*\)", " ", n) 
+    n = re.sub(r"\[[^\]]*\]", " ", n) 
+    
+    # Aplica el filtro de resoluciones y palabras basura
     n = SUFIJOS_IGNORAR.sub(" ", n)
+    
+    # Quita caracteres especiales y deja solo letras, números y espacios
     n = re.sub(r"[^a-z0-9\s]", " ", n)
-    return "".join(n.split())
+    
+    # Limpia espacios dobles
+    n = " ".join(n.split())
+    
+    # CRUCIAL: Eliminamos TODOS los espacios para evitar fallos de comparación
+    n = n.replace(" ", "")
+    
+    # CASOS ESPECIALES (Para que coincidan los nombres de tu JSON)
+    n = n.replace("colorvision9", "colorvision")
+    n = n.replace("cdn37", "cdn")
+    
+    return n
 
 
 def clave_dedupe(canal: dict):
@@ -206,7 +227,6 @@ def normalizar_categoria(valor: str, tvg_id: str = "", nombre: str = "") -> str:
     tid = (tvg_id or "").strip().lower()
     nom = (nombre or "").strip().lower()
 
-    # 1) DOMINICANOS (se comprueba primero)
     if ".do@" in tid or tid.endswith(".do"):
         return CAT_DOMINICANOS
     partes = [p.strip() for p in v.split(";") if p.strip()]
@@ -215,7 +235,6 @@ def normalizar_categoria(valor: str, tvg_id: str = "", nombre: str = "") -> str:
     if any(h in nom for h in DOM_NAME_HINTS):
         return CAT_DOMINICANOS
 
-    # ✅ FAST-PATH: Si el group-title ya es una de las 10 categorías, respetarla.
     CATS_CANONICAS = {
         "DOMINICANOS", "PELICULAS Y SERIES", "ANIME-INFANTIL", "NOTICIAS",
         "NOVELAS", "DEPORTES", "MUSICA", "RELIGION Y CULTURA",
@@ -223,28 +242,24 @@ def normalizar_categoria(valor: str, tvg_id: str = "", nombre: str = "") -> str:
     }
     for p in partes:
         if p in CATS_CANONICAS:
-            return p # Devuelve "NOVELAS", "PELICULAS Y SERIES", etc., al instante
+            return p 
 
-    # 2) group-title multi-valor
     for p in partes:
         p_norm = unicodedata.normalize("NFKD", p).encode("ascii", "ignore").decode().lower().strip()
         cat = GROUP_TO_CATEGORY.get(p_norm)
         if cat:
             return cat
 
-    # 3) Fallback por nombre
     for key, cat in NAME_FALLBACKS:
         if key in nom:
             return cat
 
-    # 4) Catch-all
     return CAT_GENERAL
 
 
 def _build_priority_keys():
     global _PRIORITY_KEYS
     _PRIORITY_KEYS = [(i, normalizar_nombre(p)) for i, p in enumerate(PRIORITY_DOMINICANOS)]
-
 
 _build_priority_keys()
 
