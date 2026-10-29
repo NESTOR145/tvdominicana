@@ -2226,9 +2226,9 @@
   {
     "name": "TVS",
     "logo": "https://i.postimg.cc/ZKmDYkQf/TVS.png",
-    "url": "https://imagenuniversaltv.net:3741/live/tvslive.m3u8",
+    "url": "https://vcp10.myplaytv.com/tvs/tvs/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "TVS.do@SD",
+    "tvg-id": "tvs.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -2414,6 +2414,13 @@
     "url": "http://45.171.64.30:6060/play/a005/index.m3u8",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "AMCSeriesLatinAmerica.us@Panregional"
+  },
+  {
+    "name": "Andromeda",
+    "logo": "https://i.imgur.com/6ot2lmd.png",
+    "url": "https://jmp2.uk/plu-6850335b5965a2fd49f7e36d.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "Andromeda.us@Spain"
   },
   {
     "name": "Aneflix Live (720p)",
@@ -4705,6 +4712,13 @@
     "url": "https://dai.google.com/linear/hls/event/oYQGDqEGTmGdHE_fz9oLlg/master.m3u8",
     "group-title": "NOTICIAS",
     "tvg-id": "LatinaNoticias247.pe@SD"
+  },
+  {
+    "name": "Le Monde en 24h",
+    "logo": "https://i.imgur.com/2igwi7g.png",
+    "url": "https://stream.berosat.live/hls/monde24h-tv-index/monde24h-tv-index.m3u8",
+    "group-title": "NOTICIAS",
+    "tvg-id": "LeMondeen24h.cd@SD"
   },
   {
     "name": "Lenca TV (720p) [Not 24/7]",
@@ -7050,6 +7064,13 @@
     "group-title": "VARIEDADES",
     "tvg-id": "ewtn",
     "language": "es"
+  },
+  {
+    "name": "Forensic Files",
+    "logo": "https://i.imgur.com/V5vvuLK.png",
+    "url": "https://jmp2.uk/plu-62e92392a3e6270007f562e8.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "ForensicFiles.us@SD"
   },
   {
     "name": "FOROVISION",
