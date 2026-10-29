@@ -2226,9 +2226,9 @@
   {
     "name": "TVS",
     "logo": "https://i.postimg.cc/ZKmDYkQf/TVS.png",
-    "url": "https://vcp10.myplaytv.com/tvs/tvs/playlist.m3u8",
+    "url": "https://imagenuniversaltv.net:3741/live/tvslive.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "tvs.do@SD",
+    "tvg-id": "TVS.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -2749,11 +2749,25 @@
     "language": "es"
   },
   {
+    "name": "HBO (United States) (720p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/960px-HBO_logo.svg.png",
+    "url": "http://tvsen7.aynascope.net/hbo/index.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "HBO.us@East"
+  },
+  {
     "name": "HBO 2 Latin America HD (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/HBO2_logo.svg/960px-HBO2_logo.svg.png",
     "url": "http://45.171.64.30:6060/play/a00i/index.m3u8",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "HBO2LatinAmerica.us@HD"
+  },
+  {
+    "name": "HBO Hits (720p)",
+    "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/HBO_Hits_Logo.svg/960px-HBO_Hits_Logo.svg.png",
+    "url": "http://tvsen7.aynascope.net/hbo2/index.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "HBOHits.us@East"
   },
   {
     "name": "HORROR VISION",
@@ -3937,6 +3951,13 @@
     "tvg-id": "DisneyJrLatinAmerica.ar@South"
   },
   {
+    "name": "Disney Junior (United States) (480p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/2024_Disney_Jr._Logo.svg/960px-2024_Disney_Jr._Logo.svg.png",
+    "url": "http://tvsen5.aynascope.net/disney/index.m3u8",
+    "group-title": "ANIME-INFANTIL",
+    "tvg-id": "DisneyJunior.us@East"
+  },
+  {
     "name": "DISNEY JUNIOR EAST",
     "logo": "https://i.postimg.cc/brNrGY5g/DISNEY-JUNIOR-EAST.png",
     "url": "http://tr.live.clarovtrcdn.vtrplay.com/disneyjrhdchi/vxfmt=dp/playlist.m3u8?device_profile=STB_HLS_VCAS_LIVE_HD",
@@ -4698,6 +4719,13 @@
     "url": "https://limited2.todostreaming.es/live/m95-livestream.m3u8",
     "group-title": "NOTICIAS",
     "tvg-id": "M95TelevisionMarbella.es@SD"
+  },
+  {
+    "name": "Maya TV",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Maya_TV_logo.png/960px-Maya_TV_logo.png",
+    "url": "https://media.streambrothers.com:19360/8036/8036.m3u8",
+    "group-title": "NOTICIAS",
+    "tvg-id": "MayaTV.hn@SD"
   },
   {
     "name": "Mega TV (Paraguay) (1080p)",
@@ -6288,6 +6316,13 @@
     "tvg-id": "TheCabbinFM.ar@SD"
   },
   {
+    "name": "Top Latino TV",
+    "logo": "https://i.imgur.com/VRl8nPZ.png",
+    "url": "http://38.87.224.20:2220/play/a02b/index.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "TopLatinoTV.pe@SD"
+  },
+  {
     "name": "Totalmusic (1080p)",
     "logo": "https://static.elektamedia.com/ch/tmc_main.png",
     "url": "https://cdn.global.elektamedia.com/live/c7eds/Totalmusic/SA_LIVE_hls_enc/master.m3u8",
@@ -7807,6 +7842,13 @@
     "url": "https://inforedvos.lcdn.claro.net.co/Content/HLS_HLS_DIR/Live/channel(REDMASHDWEB)/master.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "RedPlus.co@SD"
+  },
+  {
+    "name": "Somos Entre Rios (360p)",
+    "logo": "https://files.catbox.moe/ufv5z0.png",
+    "url": "https://live20.bozztv.com/akamaissh101/ssh101/somosentrerios/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "SomosEntreRios.ar@SD"
   },
   {
     "name": "Studio Universal Latin America (1080p)",
