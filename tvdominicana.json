@@ -86,9 +86,9 @@
   {
     "name": "TELEANTILLAS",
     "logo": "https://i.imgur.com/G1pJZkC.png",
-    "url": "https://hls.tvabierta.net/hls/010.m3u8",
+    "url": "http://45.171.108.253:8888/TELEANTILLAS/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "teleantillas.do@SD",
+    "tvg-id": "TeleAntillas.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -1657,9 +1657,9 @@
   {
     "name": "SIEMBRA TV",
     "logo": "https://i.postimg.cc/Rh36GHvX/SIEMBRA-TV.png",
-    "url": "https://streamunoapp.com:3809/live/siembratvlive.m3u8",
+    "url": "https://cloud2.streaminglivehd.com:1936/siembratv/siembratv/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "siembratv.do@SD",
+    "tvg-id": "SiembraTV.ve@SD",
     "country": "DO",
     "language": "es"
   },
@@ -4390,6 +4390,13 @@
     "language": "es"
   },
   {
+    "name": "4Dmas Noticias TV (1080p) [Not 24/7]",
+    "logo": "https://i.ibb.co/1fb5BtN/unnamed.png",
+    "url": "https://rds3.desdeparaguay.net/4dmasnoticiastv/4dmasnoticiastv/playlist.m3u8",
+    "group-title": "NOTICIAS",
+    "tvg-id": "4DmasNoticiasTV.py@SD"
+  },
+  {
     "name": "A24 (1080p)",
     "logo": "https://i.imgur.com/LnXQkIU.png",
     "url": "http://138.59.227.20:8000/play/a05u/index.m3u8",
@@ -5362,6 +5369,13 @@
     "tvg-id": "WinSports.co@SD"
   },
   {
+    "name": "Win+ Futbol (1080p)",
+    "logo": "https://i.imgur.com/0UN87vB.png",
+    "url": "http://181.78.12.119:16123/play/ch19/index.m3u8",
+    "group-title": "DEPORTES",
+    "tvg-id": "WinPlusFutbol.co@SD"
+  },
+  {
     "name": "13 Festival (1080p)",
     "logo": "https://i.imgur.com/Ymk6j5o.png",
     "url": "https://origin.dpsgo.com/ssai/event/Nftd0fM2SXasfDlRphvUsg/master.m3u8",
@@ -5795,6 +5809,27 @@
     "tvg-id": "MetropolitanadelCuzco.pe@SD"
   },
   {
+    "name": "Mi Musica Reggaeton (1080p)",
+    "logo": "https://i.imgur.com/MMb9u4u.png",
+    "url": "http://181.78.12.119:16123/play/ch53/index.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "MiMusicaReggaeton.us@SD"
+  },
+  {
+    "name": "Mi Musica Romantica (1080p)",
+    "logo": "https://i.imgur.com/eIaRv0U.png",
+    "url": "http://181.78.12.119:16123/play/ch54/index.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "MiMusicaRomantica.us@SD"
+  },
+  {
+    "name": "Mi Musica Salsa (1080p)",
+    "logo": "https://i.imgur.com/sT91t83.png",
+    "url": "http://181.78.12.119:16123/play/ch55/index.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "MiMusicaSalsa.us@SD"
+  },
+  {
     "name": "Millenium 109 FM",
     "logo": "https://i.imgur.com/sfNL6Bv.png",
     "url": "https://videoserver.tmcreativos.com:19360/nqvnhujhrx/nqvnhujhrx.m3u8",
@@ -6086,6 +6121,13 @@
     "url": "http://158.172.217.18:8000/play/a01k/index.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "RadiolaTV.co@SD"
+  },
+  {
+    "name": "Ranchenato TV (1080p)",
+    "logo": "https://i.imgur.com/TCv5NqN.png",
+    "url": "http://181.78.12.119:16123/play/ch15/index.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "RanchenatoTV.co@SD"
   },
   {
     "name": "Retromusica Television (720p)",
