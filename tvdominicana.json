@@ -77,9 +77,9 @@
   {
     "name": "TELESISTEMA 11",
     "logo": "https://i.postimg.cc/wTdj8WJx/TELESISTEMA.jpg",
-    "url": "https://hls.tvabierta.net/hls/011.m3u8",
+    "url": "https://cdn4.wind.do/streams/telesistema/telesistema_master.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "telesistema11.do@SD",
+    "tvg-id": "Telesistema11.do@SD",
     "country": "DO",
     "language": "es"
   },
