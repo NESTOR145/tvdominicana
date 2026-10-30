@@ -465,15 +465,6 @@
     "language": "es"
   },
   {
-    "name": "BEBETO TELEVISION HD",
-    "logo": "https://i.postimg.cc/qq36xL3H/BEBETO-TELEVISION-HD.jpg",
-    "url": "https://mlb.essastream.com:8081/bebetotelevision/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "bebetotelevisionhd.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "BOCA CHICA TV",
     "logo": "https://i.postimg.cc/pLpPLG8Z/BOCA-CHICA-TV.jpg",
     "url": "https://cdnfox.hostlagarto.com/bocachicatv/index.m3u8",
@@ -540,15 +531,6 @@
     "url": "https://s.emisoras.tv:8081/dtv/index.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "canaldtv.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
-    "name": "CANAL HTV LIVE",
-    "logo": "https://i.postimg.cc/8zy1C7SN/CANAL-HTV-LIVE.png",
-    "url": "https://fox.hostlagarto.com:8081/canalhtv/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "canalhtvlive.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -1053,15 +1035,6 @@
     "language": "es"
   },
   {
-    "name": "JIMANI TV",
-    "logo": "https://i.postimg.cc/k4Mq5LsS/JIMANI-TV.jpg",
-    "url": "https://cloud2.streaminglivehd.com:1936/8246/8246/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "jimanitv.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "JPD TV [Not 24/7]",
     "logo": "https://i0.wp.com/juanpabloduartetv.com/wp-content/uploads/2024/08/logo-JPDTV-100-x-100.png",
     "url": "https://imagenuniversaltv.net:3026/live/juanpabloduartetvlive.m3u8",
@@ -1101,15 +1074,6 @@
     "group-title": "DOMINICANOS",
     "tvg-id": "LaHoraTV.do@HD",
     "country": "DO"
-  },
-  {
-    "name": "LA REYNA TV",
-    "logo": "https://i.postimg.cc/6qWkhwzN/LA-REYNA-TV.jpg",
-    "url": "https://cloud2.streaminglivehd.com:1936/lareinatv/lareinatv/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "lareynatv.do@SD",
-    "country": "DO",
-    "language": "es"
   },
   {
     "name": "LA RUTA TV",
@@ -1502,15 +1466,6 @@
     "url": "https://cdnfox.hostlagarto.com/pronemstv/index.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "pronemstv.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
-    "name": "PULA TV",
-    "logo": "https://i.postimg.cc/wj0rbW0w/PULA-TV.jpg",
-    "url": "https://fox.hostlagarto.com:8081/pulatv/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "pulatv.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -2146,15 +2101,6 @@
     "country": "DO"
   },
   {
-    "name": "TV DAJA",
-    "logo": "https://i.postimg.cc/BvJ3GTgZ/TV-DAJA.jpg",
-    "url": "https://edge.essastream.com/dajatv/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "tvdaja.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "TV EXITOS",
     "logo": "https://i.postimg.cc/Jz7yHpT7/TV-EXITOS.jpg",
     "url": "https://streaming.grupomediosdelnorte.com:19360/tvexitos/tvexitos.m3u8",
@@ -2740,14 +2686,6 @@
     "tvg-id": "FilmexClasico.mx@SD"
   },
   {
-    "name": "GARAVITO TV",
-    "logo": "https://i.postimg.cc/3xhCFB6f/GARAVITO-TV.png",
-    "url": "https://59ef525c24caa.streamlock.net/garabitoTV/garabitotv/playlist.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "garavitotv",
-    "language": "es"
-  },
-  {
     "name": "GRJNGO-PELIS DEL OESTE",
     "logo": "https://i.postimg.cc/TYLSqJWt/GRJNGO-PELIS-DEL-OESTE.jpg",
     "url": "https://amogonetworx-grjngo-2-eu.plex.wurl.tv/4300.m3u8",
@@ -2951,14 +2889,6 @@
     "url": "https://jmp2.uk/plu-63eb947c4e83e70008ab877b.m3u8",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "NCIS.us@LatAm"
-  },
-  {
-    "name": "NIM TV",
-    "logo": "https://i.postimg.cc/wxVJfCDv/NIM-TV.jpg",
-    "url": "https://cdn.streamhispanatv.net:3210/live/nimtvgtlive.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "nintv",
-    "language": "es"
   },
   {
     "name": "Novelisima (1080p)",
@@ -3368,14 +3298,6 @@
     "name": "RETROX TV",
     "logo": "https://i.postimg.cc/mgqvGcmw/RETROXTV.png",
     "url": "https://lbgo.bozztv.com/ssh101/ssh101/sternblink/playlist.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "retrox",
-    "language": "es"
-  },
-  {
-    "name": "RETROX X PLUS",
-    "logo": "https://i.postimg.cc/6pPmMhLw/RETROX-X-PLUS.png",
-    "url": "https://tls-cl.cdnz.cl/retroplustvuno/live/playlist.m3u8",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "retrox",
     "language": "es"
