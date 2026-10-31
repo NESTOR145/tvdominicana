@@ -1,0 +1,131 @@
+name: Generar Guía de Programación (EPG)
+
+on:
+  schedule:
+    # Cada 6 horas, desplazado 30 min respecto a los otros workflows
+    # para no coincidir exactamente con ellos.
+    - cron: '30 1,7,13,19 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  # 🚨 CRÍTICO: Mismo grupo que "agregar" y "limpiar" para que nunca se pisen al hacer push.
+  group: canales
+  cancel-in-progress: false
+
+jobs:
+  generar_epg:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install "requests==2.32.3"
+
+      - name: Validar tvdominicana.json
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          p = pathlib.Path("tvdominicana.json")
+          if not p.exists():
+              print("ERROR: tvdominicana.json no existe. Abortando.")
+              raise SystemExit(1)
+          texto = p.read_text(encoding="utf-8-sig").strip()
+          if not texto:
+              print("AVISO: tvdominicana.json está vacío. Abortando.")
+              raise SystemExit(0)
+          data = json.loads(texto)
+          assert isinstance(data, list), "tvdominicana.json no es una lista plana"
+          print(f"OK: {len(data)} canales.")
+          PY
+
+      - name: Ejecutar generación de EPG
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: python scripts/generar_epg.py
+
+      - name: Validar epg.json generado
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          p = pathlib.Path("epg.json")
+          if not p.exists():
+              print("::warning::epg.json no existe. No se generó guía.")
+              sys.exit(0)
+          data = json.loads(p.read_text(encoding="utf-8-sig"))
+          if not isinstance(data, list):
+              print("::error::epg.json no es una lista.")
+              sys.exit(1)
+          if len(data) == 0:
+              print("::warning::epg.json está vacío. No se actualizará.")
+              sys.exit(0)
+          # Validar estructura mínima
+          for prog in data[:10]:
+              for campo in ["channelId", "title", "startTime", "endTime"]:
+                  if campo not in prog:
+                      print(f"::error::Programa sin campo '{campo}'.")
+                      sys.exit(1)
+          print(f"OK: {len(data)} programas con estructura válida.")
+          PY
+
+      - name: Subir artefactos
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: epg-resultado
+          path: epg.json
+          if-no-files-found: ignore
+
+      - name: Guardar cambios (robusto)
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Solo añadir si el archivo existe y tiene contenido
+          if [ ! -f epg.json ]; then
+            echo "epg.json no existe. Nada que guardar."
+            exit 0
+          fi
+
+          if ! python -c "import json; d=json.load(open('epg.json')); assert len(d)>0" 2>/dev/null; then
+            echo "epg.json está vacío o es inválido. No se guarda."
+            exit 0
+          fi
+
+          git add epg.json
+
+          if git diff --cached --quiet; then
+            echo "Sin cambios que guardar."
+            exit 0
+          fi
+
+          git commit -m "Auto: actualizar EPG (Guía de Programación)"
+
+          for i in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "Push correcto en intento $i."
+              exit 0
+            fi
+            echo "Push falló. Reintentando con rebase..."
+            git fetch origin main
+            git rebase origin/main || { echo "Conflicto real en rebase. Abortando."; git rebase --abort; exit 1; }
+            sleep 5
+          done
+
+          echo "No se pudo hacer push tras 3 intentos."
+          exit 1
