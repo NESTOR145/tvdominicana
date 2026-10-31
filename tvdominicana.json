@@ -2109,6 +2109,15 @@
     "language": "es"
   },
   {
+    "name": "RADIO 67 TV",
+    "logo": "https://i.postimg.cc/SQf4P2nt/RADIO-67-TV.jpg",
+    "url": "https://radio67tv.tvabierta.net/hls/stream.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "radio67tv.do@SD"
+    "country": "DO",
+    "language": "es"
+  },
+  {
     "name": "TV HISPANIC",
     "logo": "https://i.postimg.cc/rFBz7RKQ/TV-HISPANIC.jpg",
     "url": "https://livetv.305streamhd.com:3504/live/tvhispaniclive.m3u8",
