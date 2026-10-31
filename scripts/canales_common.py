@@ -6,6 +6,7 @@ canales_common.py
 Utilidades compartidas por agregar_canales.py y limpiar_canales.py.
 """
 
+import hashlib  # 🚨 NUEVO: necesario para generar_channel_id()
 import json
 import os
 import re
@@ -191,23 +192,17 @@ def normalizar_nombre(n: str) -> str:
     n = "".join(c for c in n if not unicodedata.combining(c))
     n = n.lower()
     
-    # Quita todo lo que esté entre paréntesis o corchetes
     n = re.sub(r"\([^)]*\)", " ", n) 
     n = re.sub(r"\[[^\]]*\]", " ", n) 
     
-    # Aplica el filtro de resoluciones y palabras basura
     n = SUFIJOS_IGNORAR.sub(" ", n)
     
-    # Quita caracteres especiales y deja solo letras, números y espacios
     n = re.sub(r"[^a-z0-9\s]", " ", n)
     
-    # Limpia espacios dobles
     n = " ".join(n.split())
     
-    # CRUCIAL: Eliminamos TODOS los espacios para evitar fallos de comparación
     n = n.replace(" ", "")
     
-    # CASOS ESPECIALES (Para que coincidan los nombres de tu JSON)
     n = n.replace("colorvision9", "colorvision")
     n = n.replace("cdn37", "cdn")
     
@@ -439,3 +434,26 @@ def probar_enlace(url: str, headers=None, intentos: int = 3, pausa: float = 3.0)
         if i < intentos - 1:
             time.sleep(pausa)
     return "temporal" if temporal_visto else "fallo"
+
+
+# ============================================================
+# 🚨 NUEVO: Utilidades para la EPG (Guía de Programación)
+# ============================================================
+def generar_channel_id(url: str, name: str) -> str:
+    """
+    Genera el MISMO channelId que usa la app Android (ChannelDTO.kt).
+    
+    La app hace:
+        safe_url  = url.trim()
+        safe_name = name.trim()
+        sha1("$safe_url|$safe_name")[:32]
+    
+    Esta función reproduce exactamente esa lógica para que los IDs
+    coincidan entre el JSON de canales y el JSON de la EPG.
+    """
+    safe_url = (url or "").strip()
+    safe_name = (name or "").strip()
+    if not safe_url and not safe_name:
+        return "empty_channel"
+    raw = f"{safe_url}|{safe_name}"
+    return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:32]
