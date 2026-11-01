@@ -13,7 +13,7 @@ Fuentes soportadas (en orden de PRIORIDAD):
 5. iptv-epg AR        (Argentina - para TyC, Fox, etc.)
 6. iptv-epg CL        (Chile - para TVN3, etc.)
 7. iptv-epg ES        (España - para Clan, Eurosport, etc.)
-8. iptv-epg US        (Estados Unidos / Panregional - para canales US)
+8. epgshare01 US2     (Estados Unidos / Panregional - para canales US)
 
 Estrategia de fusión:
 - Se descargan todas las fuentes en paralelo.
@@ -97,11 +97,11 @@ FUENTES_EPG = [
         "url": "https://iptv-epg.org/files/epg-es.xml",
         "gzip": False,
     },
-    # --- 7. ESTADOS UNIDOS / PANREGIONAL (Para HBO, Cinemax, Disney, etc.) ---
+    # --- 7. ESTADOS UNIDOS / PANREGIONAL (Guía ligera de epgshare01) ---
     {
-        "nombre": "iptv-epg-US",
+        "nombre": "epgshare01-US2",
         "url": "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
-        "gzip": False,
+        "gzip": True,
     },
 ]
 
@@ -114,7 +114,7 @@ HORAS_ADELANTE = 48
 
 # Timeouts
 TIMEOUT_DESCARGA = 90  # segundos por fuente
-MAX_DESCARGA_BYTES = 200 * 1024 * 1024  # 200 MB máximo por fuente
+MAX_DESCARGA_BYTES = 500 * 1024 * 1024  # 500 MB máximo por fuente
 MAX_HILOS_DESCARGA = 3
 
 # User-Agent tipo navegador (algunos servidores bloquean "Bot" en el UA)
@@ -170,6 +170,12 @@ TVG_ID_MAP = {
     "ESPN2LatinAmerica.us@South":          "ESPN2.co",
     "ESPN3LatinAmerica.us@South":          "ESPN3.co",
     "ESPN4LatinAmerica.us@South":          "ESPN4.co",
+
+    # --- ESTADOS UNIDOS (Red de seguridad para epgshare01) ---
+    "HBOHits.us@East":                     "HBOHits.us",
+    "CinemaxHits.us@East":                 "CinemaxHits.us",
+    "StarzKidsFamily.us@East":             "StarzKidsFamily.us",
+    "FoxDeportes.us@SD":                   "FoxDeportes.us",
 }
 
 # ------------------------------------------------------------
