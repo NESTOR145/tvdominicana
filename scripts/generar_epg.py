@@ -8,6 +8,12 @@ Guía de Programación (EPG) multi-fuente con fusión inteligente.
 Fuentes soportadas (en orden de PRIORIDAD):
 1. iptv-epg DO        (República Dominicana)
 2. epgshare01 DO1     (República Dominicana)
+3. iptv-epg MX        (México - para HBO, Star, Disney, etc.)
+4. iptv-epg CO        (Colombia - para Warner, Win Sports, etc.)
+5. iptv-epg AR        (Argentina - para TyC, Fox, etc.)
+6. iptv-epg CL        (Chile - para TVN3, etc.)
+7. iptv-epg ES        (España - para Clan, Eurosport, etc.)
+8. iptv-epg US        (Estados Unidos / Panregional - para canales US)
 
 Estrategia de fusión:
 - Se descargan todas las fuentes en paralelo.
@@ -19,10 +25,8 @@ Matching de canales:
 - Los `tvg-id` del JSON (tvdominicana.json) suelen tener formatos como
   "telemicro.do@SD", "rtvd", "colorvision9.do", mientras que las fuentes
   usan formatos como "Telemicro.dr" o "Canal.5.(Telemicro).do".
-- Este script aplica un matching en cascada (normalización + alias +
-  fuzzy substring) para resolver la mayoría de estos desajustes.
-- Los canales que no existan en ninguna fuente se reportan al final en
-  el log y simplemente se omiten (sin romper la generación del EPG).
+- Este script aplica un mapeo directo para los IDs conocidos y un matching
+  en cascada (normalización + alias + fuzzy substring) para el resto.
 
 Tolerancia a fallos:
 - Si una fuente falla, se continúa con las demás.
@@ -49,9 +53,10 @@ from canales_common import (
 )
 
 # ============================================================
-# CONFIGURACIÓN
+# CONFIGURACIÓN DE FUENTES (8 guías seleccionadas)
 # ============================================================
 FUENTES_EPG = [
+    # --- 1. DOMINICANAS (Prioridad Máxima) ---
     {
         "nombre": "iptv-epg-DO",
         "url": "https://iptv-epg.org/files/epg-do.xml",
@@ -61,6 +66,42 @@ FUENTES_EPG = [
         "nombre": "epgshare01-DO1",
         "url": "https://epgshare01.online/epgshare01/epg_ripper_DO1.xml.gz",
         "gzip": True,
+    },
+    # --- 2. MÉXICO (Para Star Channel, Azteca, Claro, HBO MX, etc.) ---
+    {
+        "nombre": "iptv-epg-MX",
+        "url": "https://iptv-epg.org/files/epg-mx.xml",
+        "gzip": False,
+    },
+    # --- 3. COLOMBIA (Para Win Sports, Warner CO, ESPN CO, etc.) ---
+    {
+        "nombre": "iptv-epg-CO",
+        "url": "https://iptv-epg.org/files/epg-co.xml",
+        "gzip": False,
+    },
+    # --- 4. ARGENTINA (Para TyC, Fox Sports AR, etc.) ---
+    {
+        "nombre": "iptv-epg-AR",
+        "url": "https://iptv-epg.org/files/epg-ar.xml",
+        "gzip": False,
+    },
+    # --- 5. CHILE (Para TVN3, Star Channel CL, etc.) ---
+    {
+        "nombre": "iptv-epg-CL",
+        "url": "https://iptv-epg.org/files/epg-cl.xml",
+        "gzip": False,
+    },
+    # --- 6. ESPAÑA (Para Clan, Eurosport ES, etc.) ---
+    {
+        "nombre": "iptv-epg-ES",
+        "url": "https://iptv-epg.org/files/epg-es.xml",
+        "gzip": False,
+    },
+    # --- 7. ESTADOS UNIDOS / PANREGIONAL (Para HBO, Cinemax, Disney, etc.) ---
+    {
+        "nombre": "iptv-epg-US",
+        "url": "https://iptv-epg.org/files/epg-us.xml",
+        "gzip": False,
     },
 ]
 
@@ -74,7 +115,7 @@ HORAS_ADELANTE = 48
 # Timeouts
 TIMEOUT_DESCARGA = 90  # segundos por fuente
 MAX_DESCARGA_BYTES = 200 * 1024 * 1024  # 200 MB máximo por fuente
-MAX_HILOS_DESCARGA = 2
+MAX_HILOS_DESCARGA = 3
 
 # User-Agent tipo navegador (algunos servidores bloquean "Bot" en el UA)
 USER_AGENT = (
@@ -84,9 +125,56 @@ USER_AGENT = (
 )
 
 # ------------------------------------------------------------
+# MAPEO DIRECTO DE IDS (OPCIÓN A)
+# Traduce los tvg-id de tu JSON exactamente a los de la guía.
+# ------------------------------------------------------------
+TVG_ID_MAP = {
+    # --- DOMINICANOS ---
+    "telemicro.do@SD":       "Telemicro.dr",
+    "telesistema11.do@SD":   "Telesistema11.dr",
+    "telecentro.do@SD":      "Telecentro.dr",
+    "digital15.do@SD":       "Canal.15.(Digital.Quince.Telemicro).(República.Dominicana).do",
+    "teleantillas.do@SD":    "TeleAntillas.dr",
+    "colorvision9.do@SD":    "ColorVision.dr",
+    "cdn.do@SD":             "CDN.dr",
+    "cdndeportes.do@SD":     "CDNDeportes.dr",
+    "teleuniverso.do@SD":    "TeleUniverso.dr",
+    "teleunion.do@SD":       "Teleunion.dr",
+    
+    # --- PELICULAS Y SERIES (Feeds México .mx) ---
+    "AMCLatinAmerica.us@Panregional":      "AMC.mx",
+    "AXNLatinAmerica.us@CentralAmerica":   "AXN.mx",
+    "Cinecanal.us@Panregional":            "Cinecanal.mx",
+    "CinemaxLatinAmerica.us@SD":           "Cinemax.mx",
+    "CNNenEspanol.us@SD":                  "CNNenEspanol.mx",
+    "DiscoveryKidsLatinAmerica.us@Panregional": "DiscoveryKids.mx",
+    "DisneyChannelLatinAmerica.ar@Panregional": "DisneyChannel.mx",
+    "DisneyJrLatinAmerica.ar@North":       "DisneyJunior.mx",
+    "DisneyXD.us@East":                    "DisneyXD.mx",
+    "HBO.us@East":                         "HBO.mx",
+    "HBO2LatinAmerica.us@HD":              "HBO2.mx",
+    "HBOFamilyLatinAmerica.us@SD":         "HBOFamily.mx",
+    "HistoryLatinAmerica.us@Panregional":  "History.mx",
+    "History2LatinAmerica.us@Panregional": "History2.mx",
+    "NationalGeographicLatinAmerica.us@Panregional": "NationalGeographic.mx",
+    "StarChannelLatinAmerica.us@Panregional": "StarChannel.mx",
+    "TNTSeriesLatinAmerica.us@Panregional": "TNTSeries.mx",
+    "UniversalTVLatinAmerica.us@Panregional": "UniversalTV.mx",
+    "StudioUniversalLatinAmerica.us@Panregional": "StudioUniversal.mx",
+    "AELatinAmerica.us@Panregional":       "AAndE.mx",
+    "WarnerChannel.us@Colombia":           "WarnerChannel.co",
+    "WarnerChannel.us@South":              "WarnerChannel.ar",
+    
+    # --- DEPORTES ---
+    "ESPNLatinAmerica.us@South":           "ESPN.co",
+    "ESPN2LatinAmerica.us@South":          "ESPN2.co",
+    "ESPN3LatinAmerica.us@South":          "ESPN3.co",
+    "ESPN4LatinAmerica.us@South":          "ESPN4.co",
+}
+
+# ------------------------------------------------------------
 # ALIAS: mapea tvg-id "normalizado" del JSON -> alias en las fuentes.
 # Útil para canales cuyo nombre cambia entre la app y la EPG.
-# Añade aquí los que necesites; se documentan los más comunes de RD.
 # ------------------------------------------------------------
 ALIASES_TVG = {
     # Antena 7 / Antena Latina se llama "Canal7.dr" en iptv-epg
@@ -139,21 +227,6 @@ def parsear_fecha_xmltv(fecha_str: str) -> int | None:
 # NORMALIZACIÓN / MATCHING DE IDs DE CANAL
 # ============================================================
 def _normalizar_id_canal(s: str) -> str:
-    """
-    Normaliza un tvg-id / channel-id para comparación.
-    - Quita @SD, @HD, etc.
-    - Quita el sufijo de país (.do, .dr, .com, ...).
-    - Quita puntos, espacios, guiones, paréntesis, &, /.
-    - Quita acentos y pasa a minúsculas.
-
-    Ejemplos:
-        "telemicro.do@SD"        -> "telemicro"
-        "Telemicro.dr"           -> "telemicro"
-        "Canal.5.de.República.Dominicana.(Telemicro).do"
-                                 -> "canal5derepublicadominicanatelemicro"
-        "Canal7.dr"              -> "canal7"
-        "ColorVisión"            -> "colorvision"
-    """
     if not s:
         return ""
     s = s.strip().lower()
@@ -165,13 +238,6 @@ def _normalizar_id_canal(s: str) -> str:
 
 
 def _build_match_index(mapa_tvg: dict) -> list:
-    """
-    Construye una lista de (channel_id, keys, base_key, nombre_key)
-    para resolver canales del XML contra el JSON.
-    - keys: incluye base_key + alias
-    - base_key: normalización del tvg-id
-    - nombre_key: normalización del name
-    """
     idx = []
     for tvg_id, (_url, nombre, channel_id) in mapa_tvg.items():
         base_key = _normalizar_id_canal(tvg_id)
@@ -198,10 +264,6 @@ def _resolver_channel_id(
     mapa_tvg: dict,
     match_index: list,
 ) -> tuple[str | None, int]:
-    """
-    Resuelve el channel id de la fuente EPG al channelId interno de la app.
-    Devuelve (channel_id, score). score=0 significa sin match.
-    """
     # Match exacto (rápido)
     if channel_attr in mapa_tvg:
         return mapa_tvg[channel_attr][2], 10_000
@@ -216,19 +278,14 @@ def _resolver_channel_id(
 
     for channel_id, keys, base_key, nombre_key in match_index:
         for key in keys:
-            # 1) Igualdad exacta con el id base -> máxima prioridad
             if cx and cx == key:
                 score = 2000 if key == base_key else 1900
-            # 2) Igualdad exacta con el display-name normalizado
             elif dx and dx == key:
                 score = 1800
-            # 3) El id del XML CONTIENE la clave del JSON (>=4 chars)
             elif cx and len(key) >= 4 and key in cx:
                 score = 700 + len(key)
-            # 4) La clave del JSON CONTIENE el id del XML (>=4 chars)
             elif cx and len(cx) >= 4 and cx in key:
                 score = 600 + len(cx)
-            # 5) El display-name del XML contiene la clave del JSON (>=4)
             elif dx and len(key) >= 4 and key in dx:
                 score = 500 + len(key)
             else:
@@ -309,7 +366,6 @@ def extraer_programas(
         log(f"  ERROR [{nombre_fuente}]: XML mal formado: {e}")
         return {}
 
-    # Mapa auxiliar: channel id -> display-name (para fuzzy matching)
     display_map = {}
     for ch in root.findall("channel"):
         cid = ch.get("id", "")
@@ -424,24 +480,37 @@ def main() -> None:
     # 2. Mapa tvg-id → (url, name, channelId)
     mapa_tvg = {}
     sin_tvg = 0
+    mapeados_directos = 0
+    
     for canal in canales:
         tvg_id = (canal.get("tvg-id") or "").strip()
+        
+        # --- APLICACIÓN DEL MAPEO DIRECTO (OPCIÓN A) ---
+        if tvg_id in TVG_ID_MAP:
+            tvg_id_original = tvg_id
+            tvg_id = TVG_ID_MAP[tvg_id]
+            canal["tvg-id"] = tvg_id  # Actualizamos el diccionario en memoria
+            log(f"  🔄 Mapeado: {tvg_id_original} -> {tvg_id}")
+            mapeados_directos += 1
+        # ------------------------------------------------
+
         if not tvg_id:
             sin_tvg += 1
             continue
+            
         url = canal.get("url", "")
         name = canal.get("name", "")
         channel_id = generar_channel_id(url, name)
         mapa_tvg[tvg_id] = (url, name, channel_id)
 
-    log(f"Canales con tvg-id: {len(mapa_tvg)} | Sin tvg-id: {sin_tvg}")
+    log(f"Canales con tvg-id: {len(mapa_tvg)} | Sin tvg-id: {sin_tvg} | Mapeados directos: {mapeados_directos}")
 
     if not mapa_tvg:
         log("ADVERTENCIA: Ningún canal tiene tvg-id. No se puede generar EPG.")
         guardar_json_atomico(EPG_JSON_PATH, [])
         return
 
-    # 3. Construir índice de matching
+    # 3. Construir índice de matching (para los que no están en el mapa directo)
     match_index = _build_match_index(mapa_tvg)
     log(f"Índice de matching: {len(match_index)} canales con claves de búsqueda")
 
@@ -503,7 +572,7 @@ def main() -> None:
     log(f"Fuentes exitosas: {fuentes_exitosas}/{len(FUENTES_EPG)}")
 
     # 7. Fusión
-    log("Fusionando fuentes (prioridad: 1ª > 2ª)...")
+    log("Fusionando fuentes (prioridad: 1ª > 2ª > ...)...")
     lista_final = fusionar_fuentes(fuentes_programas)
 
     if not lista_final:
