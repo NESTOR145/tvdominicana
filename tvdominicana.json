@@ -755,9 +755,9 @@
   {
     "name": "DELTA TV",
     "logo": "https://i.postimg.cc/Pq3N06xb/DELTA-TV.png",
-    "url": "https://fox.hostlagarto.com:8081/deltatv50/index.m3u8",
+    "url": "https://st.deltaboliviainstitucion.org:3778/hybrid/play.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "deltatv.do@SD",
+    "tvg-id": "DeltaTV.bo@SD",
     "country": "DO",
     "language": "es"
   },
@@ -1243,6 +1243,13 @@
     "country": "DO"
   },
   {
+    "name": "Marka TV (720p) [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3355-294x165-FFFFFF.jpg",
+    "url": "https://5790d294af2dc.streamlock.net/markatv/markatv/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "MarkaTV.do@HD"
+  },
+  {
     "name": "MARKA TV RD",
     "logo": "https://i.postimg.cc/DZM5RRHm/MARCA-TV.png",
     "url": "http://200.7.219.221:8088/live/livetv/index.m3u8",
@@ -1721,9 +1728,9 @@
   {
     "name": "SUR TV",
     "logo": "https://i.postimg.cc/SssJ2d92/SUR-TV.jpg",
-    "url": "https://ss2.tvrdomi.com:1936/eradiofonicas/eradiofonicas/playlist.m3u8",
+    "url": "https://surtv-2.mddsoluciones.cl/play/ZZZ-WEB-001:ULpj2JxXM9/live/surtvweb/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "surtv.do@SD",
+    "tvg-id": "SURTV.cl@SD",
     "country": "DO",
     "language": "es"
   },
@@ -2405,6 +2412,13 @@
     "tvg-id": "AXNLatinAmerica.us@Andes"
   },
   {
+    "name": "AXN Latin America South",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
+    "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/10.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "AXNLatinAmerica.us@South"
+  },
+  {
     "name": "Az Cinema (1080p)",
     "logo": "https://i.imgur.com/B5UN7C8.png",
     "url": "http://15.204.196.147:22880/CABLE-MAGES-AZCINEMA/video.m3u8",
@@ -2528,6 +2542,13 @@
     "url": "http://138.121.15.230:9002/CINECANAL/index.m3u8",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "Cinecanal.us@Pacific"
+  },
+  {
+    "name": "Cinecanal South",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/960px-CinecanalLA.png",
+    "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/17.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "Cinecanal.us@South"
   },
   {
     "name": "Cinemax (United States) West (720p)",
@@ -3463,6 +3484,13 @@
     "tvg-id": "StarChannelLatinAmerica.us@Panregional"
   },
   {
+    "name": "Star Channel Latin America South",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png",
+    "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/51.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "StarChannelLatinAmerica.us@South"
+  },
+  {
     "name": "Star Trek LatAm",
     "logo": "https://images.pluto.tv/channels/5efbd39f8c4ce900075d7698/colorLogoPNG.png",
     "url": "https://jmp2.uk/plu-5ec5761aabe4690007f6e047.m3u8",
@@ -3594,6 +3622,13 @@
     "url": "http://38.134.250.110:8000/play/a029/index.m3u8",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "WarnerChannel.us@Colombia"
+  },
+  {
+    "name": "Warner Channel South",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Warner_TV_logo.svg/960px-Warner_TV_logo.svg.png",
+    "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/68.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "WarnerChannel.us@South"
   },
   {
     "name": "XTREMA ACTION",
@@ -4410,6 +4445,13 @@
     "tvg-id": "A24.ar@SD"
   },
   {
+    "name": "ABC-TV Paraguay",
+    "logo": "https://i.imgur.com/OqfBMGy.png",
+    "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/7.m3u8",
+    "group-title": "NOTICIAS",
+    "tvg-id": "ABCTVParaguay.py@SD"
+  },
+  {
     "name": "Actualidad 360",
     "logo": "https://i.imgur.com/3YeTu0n.png",
     "url": "https://jmp2.uk/plu-67517fae5534bb0008187997.m3u8",
@@ -4906,6 +4948,13 @@
     "tvg-id": "Telesur.ve@SD"
   },
   {
+    "name": "TN (1080p)",
+    "logo": "https://i.imgur.com/vFwPhPS.png",
+    "url": "http://158.172.155.130:8000/play/a0dp/index.m3u8",
+    "group-title": "NOTICIAS",
+    "tvg-id": "TN.ar@SD"
+  },
+  {
     "name": "TORREVISION",
     "logo": "https://i.postimg.cc/vT8h3Dsv/TORREVISION.png",
     "url": "https://cdnlivevlc.codev8.net/canaltorremolinoslive/smil:channel1.smil/playlist.m3u8",
@@ -5176,6 +5225,13 @@
     "language": "es"
   },
   {
+    "name": "Fox Deportes (720p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/FOX_Deportes_logo.png/960px-FOX_Deportes_logo.png",
+    "url": "http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8",
+    "group-title": "DEPORTES",
+    "tvg-id": "FoxDeportes.us@SD"
+  },
+  {
     "name": "Fox Sports (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/960px-FOX_Sports_logo.svg.png",
     "url": "http://138.59.227.20:8000/play/a085/index.m3u8",
@@ -5296,6 +5352,20 @@
     "url": "https://live-evg8.tv360.bitel.com.pe/bitel/studiotvhuanta/playlist.m3u8",
     "group-title": "DEPORTES",
     "tvg-id": "SqalaTV.pe@SD"
+  },
+  {
+    "name": "TNT Sports (Argentina)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/TNT_Sports_2021_logo.svg/960px-TNT_Sports_2021_logo.svg.png",
+    "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/86.m3u8",
+    "group-title": "DEPORTES",
+    "tvg-id": "TNTSports.ar@HD"
+  },
+  {
+    "name": "TNT Sports Premium ArgentinaHD (1080p)",
+    "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/TNT_Sports_Premium_%28Argentina%29.png/960px-TNT_Sports_Premium_%28Argentina%29.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "url": "http://181.78.79.131:8000/play/a0q9",
+    "group-title": "DEPORTES",
+    "tvg-id": "TNTSportsPremium.cl@ArgentinaHD"
   },
   {
     "name": "Turf Movil (720p)",
@@ -5632,6 +5702,13 @@
     "tvg-id": "La100.ar@SD"
   },
   {
+    "name": "La Clave (720p)",
+    "logo": "https://cdn.m3u.cl/logo/1270_La_Clave.png",
+    "url": "https://unlimited1-cl-isp.dps.live/laclavetv/laclavetv.smil/playlist.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "LaClave.cl@SD"
+  },
+  {
     "name": "La Elegida Television",
     "logo": "https://i.imgur.com/zdrbjDc.png",
     "url": "https://stmv.gmpro.top/laelegidatv/laelegidatv/playlist.m3u8",
@@ -5736,6 +5813,13 @@
     "url": "https://video1.earthcam.com/myearthcam/075ff02f78c35af55564cf3af3b3f750.flv/playlist.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "MetropolitanadelCuzco.pe@SD"
+  },
+  {
+    "name": "Mi Musica Hits (720p)",
+    "logo": "https://i.imgur.com/z9MlLFL.png",
+    "url": "http://38.188.186.47:4000/play/a04n/index.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "MiMusicaHits.us@SD"
   },
   {
     "name": "Mi Musica Reggaeton (1080p)",
@@ -6277,6 +6361,13 @@
     "url": "https://sistemastr.tropicalmoonmedia.com:443/live/D8E123ACA054EF85B153C354A481A406/4.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "TropicalMoonUrbanTV.pa@SD"
+  },
+  {
+    "name": "Tropicalia 93.9 FM",
+    "logo": "https://i.imgur.com/oMML5Ue.png",
+    "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/67.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "Tropicalia939FM.py@SD"
   },
   {
     "name": "Turbo Mix Radio TV (720p)",
@@ -7033,6 +7124,13 @@
     "url": "http://15.204.246.24:8080/HistoryHD/index.m3u8",
     "group-title": "VARIEDADES",
     "tvg-id": "HistoryLatinAmerica.us@Panregional"
+  },
+  {
+    "name": "History Latin America South",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/500px-History_%282021%29.svg.png",
+    "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/37.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "HistoryLatinAmerica.us@South"
   },
   {
     "name": "IMAGEN TV",
