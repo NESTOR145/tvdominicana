@@ -1427,9 +1427,9 @@
   {
     "name": "ONDA TV",
     "logo": "https://i.postimg.cc/dVvqX7Cn/ONDA-TV.png",
-    "url": "https://cnn.hostlagarto.com/ondatv/index.m3u8",
+    "url": "https://live-evg5.tv360.bitel.com.pe/bitel/onda/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "ondatv.do@SD",
+    "tvg-id": "OndaTV.pe@SD",
     "country": "DO",
     "language": "es"
   },
@@ -2192,9 +2192,9 @@
   {
     "name": "TVS",
     "logo": "https://i.postimg.cc/ZKmDYkQf/TVS.png",
-    "url": "https://vcp10.myplaytv.com/tvs/tvs/playlist.m3u8",
+    "url": "https://imagenuniversaltv.net:3741/live/tvslive.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "tvs.do@SD",
+    "tvg-id": "TVS.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -4475,6 +4475,13 @@
     "language": "es"
   },
   {
+    "name": "ADN TV (720p)",
+    "logo": "https://i.imgur.com/AVfTwNw.png",
+    "url": "https://redirector.rudo.video/hls-video/931b584451fa6dd1313ee66efbfd5802e3f3bcea/adntv/adntv.smil/playlist.m3u8",
+    "group-title": "NOTICIAS",
+    "tvg-id": "ADNTV.cl@SD"
+  },
+  {
     "name": "AMX Noticias (720p) [Not 24/7]",
     "logo": "https://i.imgur.com/snIU1UA.jpg",
     "url": "https://5e50264bd6766.streamlock.net/mexiquense2/videomexiquense2/playlist.m3u8",
@@ -4987,7 +4994,7 @@
   {
     "name": "Unicanal",
     "logo": "https://i.imgur.com/cgTD2TW.png",
-    "url": "http://45.170.130.224:8000/play/a04y/index.m3u8?hls",
+    "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/72.m3u8",
     "group-title": "NOTICIAS",
     "tvg-id": "Unicanal.py@SD"
   },
