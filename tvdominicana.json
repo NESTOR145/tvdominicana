@@ -2182,6 +2182,15 @@
     "language": "es"
   },
   {
+    "name": "RADIO 67 TV",
+    "logo": "https://i.postimg.cc/SQf4P2nt/RADIO-67-TV.jpg",
+    "url": "https://radio67tv.tvabierta.net/hls/stream.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "radio67.do@SD",
+    "country": "DO",
+    "language": "es"
+  },
+  {
     "name": "VEGAVISION CANAL 18",
     "logo": "https://i.postimg.cc/mDPfJrmz/VEGAVISION-CANAL-18.jpg",
     "url": "https://fox.hostlagarto.com:8081/canal26/tracks-v1a1/mono.m3u8",
