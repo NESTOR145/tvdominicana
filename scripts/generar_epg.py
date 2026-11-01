@@ -100,7 +100,7 @@ FUENTES_EPG = [
     # --- 7. ESTADOS UNIDOS / PANREGIONAL (Para HBO, Cinemax, Disney, etc.) ---
     {
         "nombre": "iptv-epg-US",
-        "url": "https://iptv-epg.org/files/epg-us.xml",
+        "url": "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
         "gzip": False,
     },
 ]
