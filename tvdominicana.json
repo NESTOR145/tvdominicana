@@ -1550,6 +1550,13 @@
     "language": "es"
   },
   {
+    "name": "R Television [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3039-294x165-FFFFFF.jpg",
+    "url": "https://vdopanel.jlahozconsulting.com/p/3142/hybrid/play.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "RTelevision.do@HD"
+  },
+  {
     "name": "R&E TV",
     "logo": "https://i.postimg.cc/BQ8rTjyF/R-E-TV.jpg",
     "url": "https://tv2.bitstreaming.net:8443/live/r-e-tv.m3u8",
@@ -2295,6 +2302,13 @@
     "group-title": "DOMINICANOS",
     "tvg-id": "Yunavision.do@SD",
     "country": "DO"
+  },
+  {
+    "name": "ZAS TV",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/4058-294x165-FFFFFF.jpg",
+    "url": "https://cloud5.zastv.net/hls/zastv.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "ZASTV.do@HD"
   },
   {
     "name": "ZINC NOMBRE TV",
@@ -7483,6 +7497,13 @@
     "language": "es"
   },
   {
+    "name": "Radio Carnaval TV (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/cdpbkSo.png",
+    "url": "https://eu1.servers10.com:8081/8116/index.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "RadioCarnavalTV.es@SD"
+  },
+  {
     "name": "RCG TV",
     "logo": "https://i.postimg.cc/J7cw6pyz/RCG-TV.jpg",
     "url": "https://video1.getstreamhosting.com:1936/8172/8172/chunklist_w1513808412.m3u8",
@@ -7821,6 +7842,13 @@
     "url": "https://tv.alterna.ar/stream/hls/live.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "AlternaTV.ar@SD"
+  },
+  {
+    "name": "Canal 33 Tijuana (720p)",
+    "logo": "https://iili.io/JCt1Nbn.png",
+    "url": "https://5f2c1b0d880e5.streamlock.net/canal33tijuana/videocanal33tijuana/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "Canal33Tijuana.mx@SD"
   },
   {
     "name": "CEACOM TV (1080p) [Not 24/7]",
