@@ -6,9 +6,8 @@ generar_epg.py
 Guía de Programación (EPG) multi-fuente con fusión inteligente.
 
 Fuentes soportadas (en orden de PRIORIDAD):
-1. epgshare01 ES1     (España - muy completa, ~370 canales)
-2. Open-EPG Spain     (España - muy completa, ~380 canales)
-3. TDTChannels        (Fuente original)
+1. iptv-epg DO        (República Dominicana)
+2. epgshare01 DO1     (República Dominicana)
 
 Estrategia de fusión:
 - Se descargan todas las fuentes en paralelo.
@@ -45,24 +44,18 @@ from canales_common import (
 # Lista de fuentes EPG en orden de PRIORIDAD (primera = más prioritaria).
 # Si quieres añadir más fuentes, simplemente agrega un dict a esta lista.
 # Documentación:
-#   - epgshare01: https://epgshare01.online/
-#   - open-epg:   https://www.open-epg.com/
-#   - tdtchannels: https://www.tdtchannels.com/epg/
+#   - iptv-epg:    https://iptv-epg.org/
+#   - epgshare01:  https://epgshare01.online/
 FUENTES_EPG = [
     {
-        "nombre": "epgshare01-ES1",
-        "url": "https://epgshare01.online/epgshare01/epg_ripper_ES1.xml.gz",
-        "gzip": True,
-    },
-    {
-        "nombre": "open-epg-spain",
-        "url": "https://www.open-epg.com/files/spain.xml.gz",
-        "gzip": True,
-    },
-    {
-        "nombre": "tdtchannels",
-        "url": "https://www.tdtchannels.com/epg/TV.xml",
+        "nombre": "iptv-epg-DO",
+        "url": "https://iptv-epg.org/files/epg-do.xml",
         "gzip": False,
+    },
+    {
+        "nombre": "epgshare01-DO1",
+        "url": "https://epgshare01.online/epgshare01/epg_ripper_DO1.xml.gz",
+        "gzip": True,
     },
 ]
 
@@ -78,7 +71,7 @@ TIMEOUT_DESCARGA = 90  # segundos por fuente
 MAX_DESCARGA_BYTES = 200 * 1024 * 1024  # 200 MB máximo por fuente
 
 # Hilos para descarga en paralelo
-MAX_HILOS_DESCARGA = 3
+MAX_HILOS_DESCARGA = 2
 
 
 # ============================================================
@@ -231,7 +224,7 @@ def extraer_programas(
 # ============================================================
 def fusionar_fuentes(fuentes_programas: list[dict[str, list[dict]]]) -> list[dict]:
     """
-    Fusiona fuentes respetando prioridad (primera > segunda > tercera).
+    Fusiona fuentes respetando prioridad (primera > segunda).
     Deduplica por (channelId, startTime).
     """
     canales_finales: dict[str, dict[int, dict]] = {}
@@ -347,7 +340,7 @@ def main() -> None:
     log(f"Fuentes exitosas: {fuentes_exitosas}/{len(FUENTES_EPG)}")
 
     # 6. Fusión
-    log("Fusionando fuentes (prioridad: 1ª > 2ª > 3ª)...")
+    log("Fusionando fuentes (prioridad: 1ª > 2ª)...")
     lista_final = fusionar_fuentes(fuentes_programas)
 
     if not lista_final:
