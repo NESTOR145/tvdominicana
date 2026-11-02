@@ -255,6 +255,13 @@
     "language": "es"
   },
   {
+    "name": "Larivision TV (720p) [Not 24/7]",
+    "logo": "https://www.larivision.com/web/wp-content/uploads/2025/07/logow.png",
+    "url": "https://live.larivision.net/livelan/live.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "LarivisionTV.do@HD"
+  },
+  {
     "name": "MegaVision TV (480p)",
     "logo": "https://i.imgur.com/u5ECnZd.png",
     "url": "http://server3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8",
@@ -2263,9 +2270,9 @@
   {
     "name": "XTRA TV",
     "logo": "https://i.postimg.cc/BndC40qh/XTRA-TV.png",
-    "url": "https://edge.essastream.com/xtratv/index.m3u8",
+    "url": "https://streaming.social3.hr/ExtraTVudzdhr5/uUankWqpXD/1.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "xtratv.do@SD",
+    "tvg-id": "xtratv",
     "country": "DO",
     "language": "es"
   },
@@ -7727,9 +7734,9 @@
   {
     "name": "UNITEL",
     "logo": "https://i.postimg.cc/DwPWcRGP/UNITEL-TV.jpg",
-    "url": "https://play.agenciastreaming.com:8081/uniteltv/index.m3u8",
+    "url": "http://190.181.61.93:8000/play/1909/index.m3u8",
     "group-title": "VARIEDADES",
-    "tvg-id": "unitel",
+    "tvg-id": "Unitel.bo@SantaCruz",
     "language": "es"
   },
   {
