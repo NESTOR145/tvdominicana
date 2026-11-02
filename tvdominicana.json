@@ -965,9 +965,9 @@
   {
     "name": "Global TV (Dominican Republic) (720p) [Not 24/7]",
     "logo": "https://i.imgur.com/1rQaROm.png",
-    "url": "https://vtm1.msinteractiva.com./globaltv/globaltv/playlist.m3u8",
+    "url": "http://190.93.224.42/GLOBAL/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "GlobalTV.do@SD",
+    "tvg-id": "GlobalTV.pe@SD",
     "country": "DO"
   },
   {
@@ -2195,6 +2195,13 @@
     "tvg-id": "TVS.do@SD",
     "country": "DO",
     "language": "es"
+  },
+  {
+    "name": "UVA TV (720p) [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3918-294x165-FFFFFF.jpg",
+    "url": "https://www.uvatvhd.com/hls.php?file=live.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "UVATV.do@HD"
   },
   {
     "name": "VALLE NUEVO TV",
@@ -5629,6 +5636,13 @@
     "tvg-id": "FabulosaEstereo1005FM.pa@SD"
   },
   {
+    "name": "Farra Play (576p)",
+    "logo": "https://i.imgur.com/bXWzstH.png",
+    "url": "https://stream.farra.com.py/live/farra_low.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "FarraPlay.py@SD"
+  },
+  {
     "name": "Fiesta TV",
     "logo": "https://i.imgur.com/42wImV2.png",
     "url": "https://panelvideo1.intermediahost.co:3286/live/ruzfpkqklive.m3u8",
@@ -5648,6 +5662,13 @@
     "url": "https://v2.tustreaming.cl/fmplus/index.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "FMPlusTV.cl@SD"
+  },
+  {
+    "name": "Galactica TV",
+    "logo": "https://i.imgur.com/byL1zCV.jpeg",
+    "url": "https://stream.neux.site/memfs/e3f59eec-6b93-45e1-a2ab-c82381c2a9ec.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "GalacticaTV.pe@SD"
   },
   {
     "name": "Genial TV (720p)",
@@ -7093,6 +7114,13 @@
     "url": "https://live20.bozztv.com/akamaissh101/ssh101/gextvaccess/playlist.m3u8",
     "group-title": "VARIEDADES",
     "tvg-id": "GexTV.cr@HD"
+  },
+  {
+    "name": "GO TV (720p)",
+    "logo": "https://i.ibb.co/jkvYVyz/Captura.png",
+    "url": "https://rds3.desdeparaguay.net/gotv/gotv/playlist.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "GOTV.py@SD"
   },
   {
     "name": "GRACIA TV",
