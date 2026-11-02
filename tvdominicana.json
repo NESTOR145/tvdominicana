@@ -129,15 +129,6 @@
     "language": "es"
   },
   {
-    "name": "TELEALTURA",
-    "logo": "https://i.postimg.cc/qqN05pG8/TELEALTURA.png",
-    "url": "https://stream1.28tv.online/Telealtura/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "telealtura.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "TV MONTAÑA",
     "logo": "https://i.postimg.cc/SN4c6MB2/TV-MONTANA.jpg",
     "url": "https://lbgo.bozztv.com/ssh101/ssh101/tvmontana10tv/playlist.m3u8",
@@ -1452,15 +1443,6 @@
     "language": "es"
   },
   {
-    "name": "PITUCO TV",
-    "logo": "https://i.postimg.cc/1zd1948k/PITUCO-TV.png",
-    "url": "https://imagenuniversaltv.net:3439/live/elpitucolive.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "pitucotv.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "PORTAL DIGITAL",
     "logo": "https://i.postimg.cc/Qx77z7tW/PORTAL-DIGITAL.jpg",
     "url": "https://edge.essastream.com/portaldigital/index.m3u8",
@@ -1554,7 +1536,8 @@
     "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3039-294x165-FFFFFF.jpg",
     "url": "https://vdopanel.jlahozconsulting.com/p/3142/hybrid/play.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "RTelevision.do@HD"
+    "tvg-id": "RTelevision.do@HD",
+    "country": "DO"
   },
   {
     "name": "R&E TV",
@@ -2308,7 +2291,8 @@
     "logo": "https://www.vivalivetv.com/public/files/shows/0/1/4058-294x165-FFFFFF.jpg",
     "url": "https://cloud5.zastv.net/hls/zastv.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "ZASTV.do@HD"
+    "tvg-id": "ZASTV.do@HD",
+    "country": "DO"
   },
   {
     "name": "ZINC NOMBRE TV",
@@ -5541,13 +5525,6 @@
     "tvg-id": "Canal3KMKTV.cr@SD"
   },
   {
-    "name": "TV Music",
-    "logo": "https://i.imgur.com/JigzJck.png",
-    "url": "https://srv4.zcast.com.br/chamametv/chamametv/playlist.m3u8",
-    "group-title": "MUSICA",
-    "tvg-id": "ChaV.ar@SD"
-  },
-  {
     "name": "Chocolate FM (720p)",
     "logo": "https://cdn.m3u.cl/logo/382_ChocolateFM.png",
     "url": "https://5eaccbab48461.streamlock.net:1936/8180/8180/playlist.m3u8",
@@ -6399,6 +6376,13 @@
     "tvg-id": "TurboMixRadioTV.pe@SD"
   },
   {
+    "name": "TV Music",
+    "logo": "https://i.imgur.com/JigzJck.png",
+    "url": "https://srv4.zcast.com.br/chamametv/chamametv/playlist.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "ChaV.ar@SD"
+  },
+  {
     "name": "TVOMIX (1080p)",
     "logo": "https://ugc.production.linktr.ee/7ef61237-c46d-456b-afe3-a42ef49a979e_Mejorado2.png",
     "url": "https://cloud.tvomix.com/TVOMIX/index.m3u8",
@@ -6808,14 +6792,6 @@
     "url": "https://vdopanel.jlahozconsulting.com/p/3124/hybrid/play.m3u8",
     "group-title": "VARIEDADES",
     "tvg-id": "canal56",
-    "language": "es"
-  },
-  {
-    "name": "CANAL 56 QUIERO TV",
-    "logo": "https://i.postimg.cc/t4gHTPrf/CANAL-56-QUIERO-TV.jpg",
-    "url": "http://45.5.118.152:8000/play/a08z/index.m3u8",
-    "group-title": "VARIEDADES",
-    "tvg-id": "56quierotv",
     "language": "es"
   },
   {
