@@ -259,7 +259,8 @@
     "logo": "https://www.larivision.com/web/wp-content/uploads/2025/07/logow.png",
     "url": "https://live.larivision.net/livelan/live.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "LarivisionTV.do@HD"
+    "tvg-id": "LarivisionTV.do@HD",
+    "country": "DO"
   },
   {
     "name": "MegaVision TV (480p)",
