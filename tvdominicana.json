@@ -174,15 +174,6 @@
     "language": "es"
   },
   {
-    "name": "CDN",
-    "logo": "https://i.postimg.cc/JzbcL1tC/CDN-37.png",
-    "url": "http://190.61.90.17:40000/play/a03p/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "cdn.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "NOTICIAS 16",
     "logo": "https://i.postimg.cc/Kjk8y8GP/NOTICIAS-16.png",
     "url": "https://edge.essastream.com/noticias16/tracks-v1a1/mono.m3u8",
@@ -654,14 +645,6 @@
     "tvg-id": "colimdotv.do@SD",
     "country": "DO",
     "language": "es"
-  },
-  {
-    "name": "Colome TV [Not 24/7]",
-    "logo": "https://colometv.com/assets/images/logo.png",
-    "url": "https://ss2.tvrdomi.com:1936/colometv/colometv/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "ColomeTV.do@HD",
-    "country": "DO"
   },
   {
     "name": "CONSUELO TV",
@@ -2271,15 +2254,6 @@
     "group-title": "DOMINICANOS",
     "tvg-id": "ZASTV.do@HD",
     "country": "DO"
-  },
-  {
-    "name": "ZINC NOMBRE TV",
-    "logo": "https://i.postimg.cc/B6dyZvt2/ZINC-NOMBRE.jpg",
-    "url": "https://5790d294af2dc.streamlock.net/zincnombretv/live/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "zincnombretv.do@SD",
-    "country": "DO",
-    "language": "es"
   },
   {
     "name": "13 TELESERIES",
