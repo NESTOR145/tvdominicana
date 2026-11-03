@@ -1029,7 +1029,8 @@
     "logo": "https://i.postimg.cc/k4Mq5LsS/JIMANI-TV.jpg",
     "url": "https://cloud2.streaminglivehd.com:1936/8246/8246/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "jimanitv.do@SD"
+    "tvg-id": "jimanitv.do@SD",
+    "country": "DO"
   },
   {
     "name": "JPD TV [Not 24/7]",
@@ -1068,7 +1069,8 @@
     "logo": "https://i.postimg.cc/6qWkhwzN/LA-REYNA-TV.jpg",
     "url": "https://cloud2.streaminglivehd.com:1936/lareinatv/lareinatv/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "lareynatv.do@SD"
+    "tvg-id": "lareynatv.do@SD",
+    "country": "DO"
   },
   {
     "name": "LA RUTA TV",
@@ -5862,13 +5864,6 @@
     "url": "https://cloudvideo.servers10.com:8081/8032/index.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "MusicTVGranada.es@SD"
-  },
-  {
-    "name": "Nande Portetepe TV",
-    "logo": "https://i.imgur.com/3taT6JK.jpeg",
-    "url": "https://video.hostingcaaguazu.com:19360/nandeportetepe/nandeportetepe.m3u8",
-    "group-title": "MUSICA",
-    "tvg-id": "NandePortetepeTV.py@SD"
   },
   {
     "name": "NOW 70",
