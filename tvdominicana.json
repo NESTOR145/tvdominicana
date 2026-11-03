@@ -86,18 +86,18 @@
   {
     "name": "TELEANTILLAS",
     "logo": "https://i.imgur.com/G1pJZkC.png",
-    "url": "https://hls.tvabierta.net/hls/010.m3u8",
+    "url": "http://45.171.108.253:8888/TELEANTILLAS/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "teleantillas.do@SD",
+    "tvg-id": "TeleAntillas.do@SD",
     "country": "DO",
     "language": "es"
   },
   {
     "name": "COLOR VISION 9",
     "logo": "https://i.postimg.cc/251jSZT2/COLOR-VISION.png",
-    "url": "https://hls.tvabierta.net/hls/009.m3u8",
+    "url": "https://cdn4.wind.do/streams/colorvision/colorvision_master.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "colorvision9.do@SD",
+    "tvg-id": "ColorVision.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -1025,6 +1025,13 @@
     "language": "es"
   },
   {
+    "name": "JIMANI TV",
+    "logo": "https://i.postimg.cc/k4Mq5LsS/JIMANI-TV.jpg",
+    "url": "https://cloud2.streaminglivehd.com:1936/8246/8246/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "jimanitv.do@SD"
+  },
+  {
     "name": "JPD TV [Not 24/7]",
     "logo": "https://i0.wp.com/juanpabloduartetv.com/wp-content/uploads/2024/08/logo-JPDTV-100-x-100.png",
     "url": "https://imagenuniversaltv.net:3026/live/juanpabloduartetvlive.m3u8",
@@ -1055,6 +1062,13 @@
     "group-title": "DOMINICANOS",
     "tvg-id": "LaHoraTV.do@HD",
     "country": "DO"
+  },
+  {
+    "name": "LA REYNA TV",
+    "logo": "https://i.postimg.cc/6qWkhwzN/LA-REYNA-TV.jpg",
+    "url": "https://cloud2.streaminglivehd.com:1936/lareinatv/lareinatv/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "lareynatv.do@SD"
   },
   {
     "name": "LA RUTA TV",
@@ -3486,6 +3500,13 @@
     "tvg-id": "TNTNovelas.us@Colombia"
   },
   {
+    "name": "TNT Novelas ColombiaHD (1080p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png",
+    "url": "http://181.78.79.131:8000/play/a0na",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "TNTNovelas.us@ColombiaHD"
+  },
+  {
     "name": "TNT Series Latin America (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/7/75/TNT_Series_Logo_2016.png",
     "url": "http://168.196.127.137:6001/play/a095/index.m3u8",
@@ -3814,6 +3835,13 @@
     "url": "http://38.134.250.110:8000/play/a003/index.m3u8",
     "group-title": "ANIME-INFANTIL",
     "tvg-id": "DiscoveryKidsLatinAmerica.us@Colombia"
+  },
+  {
+    "name": "Disney Channel (United States) (720p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/2024_Disney_Channel_text_logo.svg/960px-2024_Disney_Channel_text_logo.svg.png",
+    "url": "http://4.30.180.36:8420/disneychannel/index.m3u8?token=test",
+    "group-title": "ANIME-INFANTIL",
+    "tvg-id": "DisneyChannel.us@East"
   },
   {
     "name": "Disney Channel Latin America (1080p)",
@@ -4305,6 +4333,13 @@
     "group-title": "ANIME-INFANTIL",
     "tvg-id": "tomjerry",
     "language": "es"
+  },
+  {
+    "name": "Tooncast (1080p)",
+    "logo": "https://i.imgur.com/3yXRbQy.png",
+    "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/69.m3u8",
+    "group-title": "ANIME-INFANTIL",
+    "tvg-id": "Tooncast.us@Panregional"
   },
   {
     "name": "Tooncast Argentina (720p)",
@@ -7805,6 +7840,13 @@
     "url": "https://inforedvos.lcdn.claro.net.co/Content/HLS_HLS_DIR/Live/channel(REDMASHDWEB)/master.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "RedPlus.co@SD"
+  },
+  {
+    "name": "Somos Entre Rios (360p)",
+    "logo": "https://files.catbox.moe/ufv5z0.png",
+    "url": "https://live20.bozztv.com/akamaissh101/ssh101/somosentrerios/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "SomosEntreRios.ar@SD"
   },
   {
     "name": "Studio Universal Latin America (1080p)",
