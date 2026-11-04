@@ -186,7 +186,8 @@
     "logo": "https://i.imgur.com/eQyjIgf.png",
     "url": "http://190.61.90.17:40000/play/a03p/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "CDN.do@SD"
+    "tvg-id": "CDN.do@SD",
+    "country": "DO"
   },
   {
     "name": "NOTICIAS 16",
@@ -2299,7 +2300,8 @@
     "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3751-294x165-FFFFFF.jpg",
     "url": "https://5790d294af2dc.streamlock.net/zincnombretv/live/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "ZincNombreTV.do@HD"
+    "tvg-id": "ZincNombreTV.do@HD",
+    "country": "DO"
   },
   {
     "name": "13 TELESERIES",
