@@ -86,7 +86,7 @@
   {
     "name": "TELEANTILLAS",
     "logo": "https://i.imgur.com/G1pJZkC.png",
-    "url": "https://hls.tvabierta.net/hls/010.m3u8",
+    "url": "http://45.171.108.253:8888/TELEANTILLAS/index.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "TeleAntillas.do@SD",
     "country": "DO",
@@ -127,6 +127,13 @@
     "tvg-id": "constanzatv.do@SD",
     "country": "DO",
     "language": "es"
+  },
+  {
+    "name": "TELEALTURA",
+    "logo": "https://i.postimg.cc/qqN05pG8/TELEALTURA.png",
+    "url": "https://stream1.28tv.online/Telealtura/index.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "telealtura.do@SD"
   },
   {
     "name": "TV MONTAÑA",
@@ -636,6 +643,13 @@
     "tvg-id": "cocotv.do@SD",
     "country": "DO",
     "language": "es"
+  },
+  {
+    "name": "Codigo TV (1080p) [Not 24/7]",
+    "logo": "https://imgur.com/DbjywI3.png",
+    "url": "https://edge.essastream.com/codigotv/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "CodigoTV.do@HD"
   },
   {
     "name": "COLIMDO TV",
@@ -1441,6 +1455,13 @@
     "language": "es"
   },
   {
+    "name": "PULSOVISION",
+    "logo": "https://i.postimg.cc/4NZz0b6g/PULSOVISION.jpg",
+    "url": "https://5790d294af2dc.streamlock.net/pulsovision/pulsovision/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "pulsovision.do@SD"
+  },
+  {
     "name": "PUNTA CANA TV",
     "logo": "https://i.postimg.cc/fyn49Fj5/PUNTA-CANA-TV.jpg",
     "url": "https://cdnfox.hostlagarto.com/puntacanatv/index.m3u8",
@@ -2040,9 +2061,9 @@
   {
     "name": "TV AGRO",
     "logo": "https://i.postimg.cc/C1fw5VSv/TVAGRO.jpg",
-    "url": "http://181.78.8.199:8000/play/a0fj/index.m3u8",
+    "url": "http://190.61.47.54:8000/play/a01k/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "tvagro.do@SD",
+    "tvg-id": "TVAgro.co@SD",
     "country": "DO",
     "language": "es"
   },
@@ -2106,6 +2127,13 @@
     "group-title": "DOMINICANOS",
     "tvg-id": "TVQuisqueya.us@SD",
     "country": "DO"
+  },
+  {
+    "name": "TV SUR",
+    "logo": "https://i.postimg.cc/pXjLGr1x/ANTENA-LATINA.png",
+    "url": "https://streamtvs.tvcanalsur.com.do/hls/stream.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "tvsur..do@SD"
   },
   {
     "name": "TVN",
@@ -5852,6 +5880,13 @@
     "url": "https://cloudvideo.servers10.com:8081/8032/index.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "MusicTVGranada.es@SD"
+  },
+  {
+    "name": "Nande Portetepe TV",
+    "logo": "https://i.imgur.com/3taT6JK.jpeg",
+    "url": "https://video.hostingcaaguazu.com:19360/nandeportetepe/nandeportetepe.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "NandePortetepeTV.py@SD"
   },
   {
     "name": "NOW 70",
