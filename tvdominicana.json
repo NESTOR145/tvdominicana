@@ -133,7 +133,8 @@
     "logo": "https://i.postimg.cc/qqN05pG8/TELEALTURA.png",
     "url": "https://stream1.28tv.online/Telealtura/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "telealtura.do@SD"
+    "tvg-id": "telealtura.do@SD",
+    "country": "DO"
   },
   {
     "name": "TV MONTAÑA",
@@ -649,7 +650,8 @@
     "logo": "https://imgur.com/DbjywI3.png",
     "url": "https://edge.essastream.com/codigotv/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "CodigoTV.do@HD"
+    "tvg-id": "CodigoTV.do@HD",
+    "country": "DO"
   },
   {
     "name": "COLIMDO TV",
@@ -1459,7 +1461,8 @@
     "logo": "https://i.postimg.cc/4NZz0b6g/PULSOVISION.jpg",
     "url": "https://5790d294af2dc.streamlock.net/pulsovision/pulsovision/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "pulsovision.do@SD"
+    "tvg-id": "pulsovision.do@SD",
+    "country": "DO"
   },
   {
     "name": "PUNTA CANA TV",
@@ -2133,7 +2136,8 @@
     "logo": "https://i.postimg.cc/pXjLGr1x/ANTENA-LATINA.png",
     "url": "https://streamtvs.tvcanalsur.com.do/hls/stream.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "tvsur..do@SD"
+    "tvg-id": "tvsur..do@SD",
+    "country": "DO"
   },
   {
     "name": "TVN",
