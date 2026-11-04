@@ -182,6 +182,13 @@
     "language": "es"
   },
   {
+    "name": "CDN (576p)",
+    "logo": "https://i.imgur.com/eQyjIgf.png",
+    "url": "http://190.61.90.17:40000/play/a03p/index.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "CDN.do@SD"
+  },
+  {
     "name": "NOTICIAS 16",
     "logo": "https://i.postimg.cc/Kjk8y8GP/NOTICIAS-16.png",
     "url": "https://edge.essastream.com/noticias16/tracks-v1a1/mono.m3u8",
@@ -2286,6 +2293,13 @@
     "group-title": "DOMINICANOS",
     "tvg-id": "ZASTV.do@HD",
     "country": "DO"
+  },
+  {
+    "name": "Zinc Nombre TV (720p) [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3751-294x165-FFFFFF.jpg",
+    "url": "https://5790d294af2dc.streamlock.net/zincnombretv/live/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "ZincNombreTV.do@HD"
   },
   {
     "name": "13 TELESERIES",
