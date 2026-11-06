@@ -784,15 +784,6 @@
     "country": "DO"
   },
   {
-    "name": "EL NUEVO DIARIO",
-    "logo": "https://i.postimg.cc/6qLzF4KX/EL-NUEVO-DIARIO.png",
-    "url": "https://nuevodiario01.streamprolive.com/hls/live.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "elnuevodiario.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "EL PODER TV",
     "logo": "https://i.postimg.cc/2jg5Bfjr/EL-PODER-TV.png",
     "url": "https://28tv.online:3795/live/elpodertvcanal57live.m3u8",
@@ -3549,13 +3540,6 @@
     "tvg-id": "TNTNovelas.us@ColombiaHD"
   },
   {
-    "name": "TNT Series Latin America (1080p)",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/7/75/TNT_Series_Logo_2016.png",
-    "url": "http://168.196.127.137:6001/play/a095/index.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "TNTSeriesLatinAmerica.us@Panregional"
-  },
-  {
     "name": "TODO CINE",
     "logo": "https://i.postimg.cc/Hs7p03dt/TODO-CINE.jpg",
     "url": "https://aegis-cloudfront-1.tubi.video/be9224ff-0bff-440d-aa84-40afcb2150b5/playlist.m3u8",
@@ -5116,13 +5100,6 @@
     "url": "https://streamtv.as3sport.online:3394/hybrid/play.m3u8",
     "group-title": "DEPORTES",
     "tvg-id": "AS3SportTV.ve@SD"
-  },
-  {
-    "name": "AyM Sports (1080p)",
-    "logo": "https://i.imgur.com/yu3Bpbd.png",
-    "url": "http://168.196.127.137:6001/play/a06v/index.m3u8",
-    "group-title": "DEPORTES",
-    "tvg-id": "AyMSports.mx@SD"
   },
   {
     "name": "beIN SPORTS XTRA en Espanol (1080p)",
