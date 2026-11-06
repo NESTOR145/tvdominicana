@@ -1582,7 +1582,8 @@
     "logo": "https://i.postimg.cc/9MBt5MTY/RUTA-66-TV.jpg",
     "url": "https://edge.livestreaminggroup.info/ruta66tvlive/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "ruta66tv.do@SD"
+    "tvg-id": "ruta66tv.do@SD",
+    "country": "DO"
   },
   {
     "name": "SABANETA TV",
@@ -5258,13 +5259,6 @@
     "language": "es"
   },
   {
-    "name": "Fox Deportes (720p)",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/FOX_Deportes_logo.png/960px-FOX_Deportes_logo.png",
-    "url": "http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8",
-    "group-title": "DEPORTES",
-    "tvg-id": "FoxDeportes.us@SD"
-  },
-  {
     "name": "Fox Sports (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/960px-FOX_Sports_logo.svg.png",
     "url": "http://138.59.227.20:8000/play/a085/index.m3u8",
@@ -7791,14 +7785,6 @@
     "url": "http://190.181.61.93:8000/play/1909/index.m3u8",
     "group-title": "VARIEDADES",
     "tvg-id": "Unitel.bo@SantaCruz",
-    "language": "es"
-  },
-  {
-    "name": "UNIVERS TV",
-    "logo": "https://i.postimg.cc/zv1QFqtz/UNIVERS-TV.png",
-    "url": "https://cloud2.streaminglivehd.com:1936/universfaller/universfaller/playlist.m3u8",
-    "group-title": "VARIEDADES",
-    "tvg-id": "universfaller",
     "language": "es"
   },
   {
