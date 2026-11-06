@@ -95,7 +95,7 @@
   {
     "name": "COLOR VISION 9",
     "logo": "https://i.postimg.cc/251jSZT2/COLOR-VISION.png",
-    "url": "https://hls.tvabierta.net/hls/009.m3u8",
+    "url": "https://cdn4.wind.do/streams/colorvision/colorvision_master.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "ColorVision.do@SD",
     "country": "DO",
@@ -1576,6 +1576,13 @@
     "tvg-id": "romanatv42.do@SD",
     "country": "DO",
     "language": "es"
+  },
+  {
+    "name": "RUTA 66 TV",
+    "logo": "https://i.postimg.cc/9MBt5MTY/RUTA-66-TV.jpg",
+    "url": "https://edge.livestreaminggroup.info/ruta66tvlive/index.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "ruta66tv.do@SD"
   },
   {
     "name": "SABANETA TV",
@@ -6837,9 +6844,9 @@
   {
     "name": "CANAL 56",
     "logo": "https://i.postimg.cc/bY2Q8mhB/CANAL-56.jpg",
-    "url": "https://vdopanel.jlahozconsulting.com/p/3124/hybrid/play.m3u8",
+    "url": "https://videos.canal56.com/directe/stream/index.m3u8",
     "group-title": "VARIEDADES",
-    "tvg-id": "canal56",
+    "tvg-id": "Canal56.es@SD",
     "language": "es"
   },
   {
