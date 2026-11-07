@@ -2,9 +2,9 @@ name: Generar Guía de Programación (EPG)
 
 on:
   schedule:
-    # Cada 6 horas, desplazado 30 min respecto a los otros workflows
-    # para no coincidir exactamente con ellos.
-    - cron: '30 1,7,13,19 * * *'
+    # Se ejecuta a las 02:00, 08:00, 14:00 y 20:00 (UTC),
+    # 30 min después de "Limpiar canales caídos" y 2h después de "Agregar canales".
+    - cron: '0 2,8,14,20 * * *'  # <-- AJUSTADO
   workflow_dispatch:
 
 permissions:
