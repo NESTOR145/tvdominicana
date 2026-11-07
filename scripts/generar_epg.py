@@ -13,7 +13,8 @@ Fuentes soportadas (en orden de PRIORIDAD):
 5. iptv-epg AR        (Argentina - para TyC, Fox, etc.)
 6. iptv-epg CL        (Chile - para TVN3, etc.)
 7. iptv-epg ES        (España - para Clan, Eurosport, etc.)
-8. epgshare01 US2     (Estados Unidos / Panregional - para canales US)
+8. TDTChannels EPG    (España - fuente oficial de TDTChannels)
+9. epgshare01 US2     (Estados Unidos / Panregional - para canales US)
 
 Estrategia de fusión:
 - Se descargan todas las fuentes en paralelo.
@@ -53,7 +54,7 @@ from canales_common import (
 )
 
 # ============================================================
-# CONFIGURACIÓN DE FUENTES (8 guías seleccionadas)
+# CONFIGURACIÓN DE FUENTES (9 guías seleccionadas)
 # ============================================================
 FUENTES_EPG = [
     # --- 1. DOMINICANAS (Prioridad Máxima) ---
@@ -91,13 +92,19 @@ FUENTES_EPG = [
         "url": "https://iptv-epg.org/files/epg-cl.xml",
         "gzip": False,
     },
-    # --- 6. ESPAÑA (Para Clan, Eurosport ES, etc.) ---
+    # --- 6. ESPAÑA (Guía genérica de iptv-epg) ---
     {
         "nombre": "iptv-epg-ES",
         "url": "https://iptv-epg.org/files/epg-es.xml",
         "gzip": False,
     },
-    # --- 7. ESTADOS UNIDOS / PANREGIONAL (Guía ligera de epgshare01) ---
+    # --- 7. TDTCHANNELS (Fuente oficial para España) ---
+    {
+        "nombre": "tdtchannels-ES",
+        "url": "https://www.tdtchannels.com/epg/TV.xml.gz",
+        "gzip": True,
+    },
+    # --- 8. ESTADOS UNIDOS / PANREGIONAL (Guía ligera de epgshare01) ---
     {
         "nombre": "epgshare01-US2",
         "url": "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
@@ -176,6 +183,22 @@ TVG_ID_MAP = {
     "CinemaxHits.us@East":                 "CinemaxHits.us",
     "StarzKidsFamily.us@East":             "StarzKidsFamily.us",
     "FoxDeportes.us@SD":                   "FoxDeportes.us",
+    
+    # --- TDTCHANNELS (ESPAÑA) ---
+    "La1.TV":          "LA1.es",
+    "La2.TV":          "LA2.es",
+    "24Horas.TV":      "24Horas.es",
+    "Clan.TV":         "ClanTVE.es",
+    "TDP.TV":          "Teledeporte.es",
+    "SX3.TV":          "Super3.es",      # TDTChannels lo llama SX3, la guía Super3
+    "13.TV":           "TRECE.es",       # TRECE
+    "ElToroTV.TV":     "ElToroTV.es",
+    "RMTV.TV":         "RealMadridTV.es",
+    "Euronews.TV":     "Euronews.es",
+    "324.TV":          "324.es",
+    "E3.TV":           "Esport3.es",
+    "CanalSurA.TV":    "CanalSurAndalucia.es",
+    "ETBD.TV":         "ETB1.es",
 }
 
 # ------------------------------------------------------------
