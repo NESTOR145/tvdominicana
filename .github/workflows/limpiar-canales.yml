@@ -2,7 +2,7 @@ name: Limpiar canales caídos
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '30 1,7,13,19 * * *'  # <-- AJUSTADO: Corre a las 1:30, 7:30, 13:30 y 19:30 (UTC)
   workflow_dispatch:
     inputs:
       dry_run:
