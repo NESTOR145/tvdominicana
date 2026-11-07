@@ -65,12 +65,23 @@ GROUP_TO_CATEGORY = {
     "movies": CAT_PELICULAS, "series": CAT_PELICULAS, "classic": CAT_PELICULAS,
     "peliculas": CAT_PELICULAS, "película": CAT_PELICULAS, "cine": CAT_PELICULAS,
     "cineseries": CAT_PELICULAS, "cine-series": CAT_PELICULAS,
+    
     "animation": CAT_ANIME, "kids": CAT_ANIME, "family": CAT_ANIME,
     "infantil": CAT_ANIME, "ninos": CAT_ANIME, "dibujos": CAT_ANIME,
+    "infantiles": CAT_ANIME,  # <-- NUEVO (TDTChannels)
+    
     "news": CAT_NOTICIAS, "noticias": CAT_NOTICIAS,
+    "informativos": CAT_NOTICIAS,  # <-- NUEVO (TDTChannels)
+    
     "sports": CAT_DEPORTES, "deportes": CAT_DEPORTES,
+    "deportivos": CAT_DEPORTES,  # <-- NUEVO (TDTChannels)
+    
     "music": CAT_MUSICA, "musica": CAT_MUSICA, "música": CAT_MUSICA,
+    "musicales": CAT_MUSICA,  # <-- NUEVO (TDTChannels)
+    
     "religious": CAT_RELIGION, "religion": CAT_RELIGION,
+    "religiosos": CAT_RELIGION,  # <-- NUEVO (TDTChannels)
+    
     "culture": CAT_RELIGION, "cultura": CAT_RELIGION,
     "entertainment": CAT_VARIEDADES, "entretenimiento": CAT_VARIEDADES,
     "comedy": CAT_VARIEDADES, "lifestyle": CAT_VARIEDADES,
@@ -79,8 +90,11 @@ GROUP_TO_CATEGORY = {
     "education": CAT_VARIEDADES, "science": CAT_VARIEDADES,
     "documentary": CAT_VARIEDADES, "relax": CAT_VARIEDADES,
     "plutotv": CAT_VARIEDADES,
+    
     "general": CAT_GENERAL, "public": CAT_GENERAL,
+    "generalistas": CAT_GENERAL,  # <-- NUEVO (TDTChannels)
     "legislative": CAT_GENERAL, "weather": CAT_GENERAL,
+    "eventuales": CAT_GENERAL,  # <-- NUEVO (TDTChannels)
     "shop": CAT_GENERAL, "undefined": CAT_GENERAL,
 }
 
