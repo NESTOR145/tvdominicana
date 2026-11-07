@@ -115,6 +115,12 @@ def main():
             if c.get("country") == "DO":
                 if "." in tvg:
                     posible_pais = tvg.split(".")[-1].split("@")[0].upper()
+                    
+                    # --- NUEVO AJUSTE PARA TDTCHANNELS (ESPAÑA) ---
+                    if posible_pais == "TV":
+                        posible_pais = "ES"
+                    # ------------------------------------------------
+                    
                     if len(posible_pais) == 2 and posible_pais.isalpha() and posible_pais != "DO":
                         c["country"] = posible_pais
                     else:
