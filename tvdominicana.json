@@ -2163,9 +2163,9 @@
   {
     "name": "TVS",
     "logo": "https://i.postimg.cc/ZKmDYkQf/TVS.png",
-    "url": "https://vcp10.myplaytv.com/tvs/tvs/playlist.m3u8",
+    "url": "https://imagenuniversaltv.net:3741/live/tvslive.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "tvs.do@SD",
+    "tvg-id": "TVS.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -3988,6 +3988,16 @@
     "url": "https://live20.bozztv.com/giatvplayout7/giatv-209902/tracks-v1a1/mono.ts.m3u8",
     "group-title": "ANIME-INFANTIL",
     "tvg-id": "Doraemon.us@SD"
+  },
+  {
+    "name": "DreamWorks Channel Latin America (1080p)",
+    "logo": "",
+    "url": "https://barinaslive1.boldmss.com/DREAMWORKS/DREAMWORKS.isml/index.m3u8",
+    "group-title": "ANIME-INFANTIL",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"
+    },
+    "tvg-id": "DreamWorksChannelLatinAmerica.us@Panregional"
   },
   {
     "name": "Dreiko TV (720p) [Not 24/7]",
@@ -7662,6 +7672,13 @@
     "group-title": "VARIEDADES",
     "tvg-id": "justiciatv",
     "language": "es"
+  },
+  {
+    "name": "KANDELA TV",
+    "logo": "https://i.postimg.cc/265RbYj0/KANDELA-TV.jpg",
+    "url": "https://streamtv.intervenhosting.net:3718/live/kandelamedioslive.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "kandelatv"
   },
   {
     "name": "LANCELOT TV",
