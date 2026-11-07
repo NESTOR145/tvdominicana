@@ -44,15 +44,26 @@ URLS_SIN_FILTRO = [
 
 URLS_CON_FILTRO = [
     "https://iptv-org.github.io/iptv/languages/spa.m3u",
+    "https://www.tdtchannels.com/lists/tv.m3u8", # <--- URL OFICIAL DE TDTCHANNELS
 ]
 
 # --- FILTRO DE GRUPOS PERMITIDOS ---
 GRUPOS_PERMITIDOS = {
+    # Categorías originales
     "movies", "movie", "series", "classic", "cine", "peliculas", "película",
     "animation", "anime", "kids", "family", "infantil", "ninos", "dibujos",
     "music", "musica", "música", "sports", "deportes",
     "documentary", "documental", "news", "noticias",
-    "dominicano", "dominicana"
+    "dominicano", "dominicana",
+    
+    # --- NUEVOS PARA TDTCHANNELS (ESPAÑA) ---
+    "generalistas", 
+    "informativos", 
+    "deportivos", 
+    "infantiles", 
+    "musicales", 
+    "religiosos", 
+    "eventuales"
 }
 
 def es_grupo_permitido(group_title: str) -> bool:
@@ -100,11 +111,9 @@ def validar_actualizacion(canal_nuevo, canal_existente):
       - Si la nueva falla, devuelve "conservar_caida".
     """
     url_vieja = canal_existente.get("url", "")
-    # Probamos la URL vieja con 2 intentos para tolerar hipos de red puntuales
     if url_vieja and probar_enlace(url_vieja, canal_existente.get("headers"), intentos=2, pausa=2.0) == "ok":
         return "conservar"
     
-    # La URL vieja está caída o no existe, probar la nueva
     if probar_enlace(canal_nuevo.get("url"), canal_nuevo.get("headers")) == "ok":
         return "actualizar"
     return "conservar_caida"
@@ -176,7 +185,7 @@ def main() -> None:
             descartados_dup += 1
             continue
 
-        # 2. Mismo nombre -> actualización condicional (solo si la vieja está caída)
+        # 2. Mismo nombre -> actualización condicional
         if clave_nombre in mapa_existentes:
             existente = mapa_existentes[clave_nombre]
             vistos_url.add(un)
@@ -206,7 +215,7 @@ def main() -> None:
         return
 
     # --- VALIDAR TODO EN PARALELO ---
-    log(f"Validando {len(a_validar)} canales (nuevos + actualizaciones condicionales) con {MAX_HILOS} hilos...")
+    log(f"Validando {len(a_validar)} canales con {MAX_HILOS} hilos...")
     online_nuevos = []
     actualizados_url = 0
     conservados = 0
@@ -241,7 +250,7 @@ def main() -> None:
                 elif resultado == "conservar":
                     log(f"  ⏭️ {canal.get('name', '?')}: URL vieja funciona, se conserva")
                     conservados += 1
-                else:  # conservar_caida
+                else:
                     log(f"  ⏭️ {canal.get('name', '?')}: ambas URLs caídas, se conserva la vieja")
                     conservados += 1
             else:
