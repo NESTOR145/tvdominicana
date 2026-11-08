@@ -3665,6 +3665,13 @@
     "language": "es"
   },
   {
+    "name": "123TV (480p)",
+    "logo": "https://i.imgur.com/xXGeZms.png",
+    "url": "http://200.59.191.177:8000/play/a0lb/index.m3u8",
+    "group-title": "ANIME-INFANTIL",
+    "tvg-id": "123TV.ve@SD"
+  },
+  {
     "name": "13 Kids (1080p)",
     "logo": "https://i.imgur.com/8WJUbSD.png",
     "url": "https://origin.dpsgo.com/ssai/event/LhHrVtyeQkKZ-Ye_xEU75g/master.m3u8",
@@ -4056,6 +4063,13 @@
     "group-title": "ANIME-INFANTIL",
     "tvg-id": "extrema",
     "language": "es"
+  },
+  {
+    "name": "FMH Kids (720p)",
+    "logo": "https://img-evg3.tv360.bitel.com.pe/peru-image/2024/12/31/22/1735657792230/b870c45f862d_480_270.png",
+    "url": "http://38.87.224.19:2220/play/a03u/index.m3u8",
+    "group-title": "ANIME-INFANTIL",
+    "tvg-id": "FMHKids.us@SD"
   },
   {
     "name": "FunBox",
@@ -5500,6 +5514,20 @@
     "url": "http://45.228.234.9:8000/play/a06b/index.m3u8",
     "group-title": "DEPORTES",
     "tvg-id": "SkySports1.mx@SD"
+  },
+  {
+    "name": "Sky Sports 2 (1080p)",
+    "logo": "https://i.imgur.com/VM0a8Ny.png",
+    "url": "http://200.115.120.1:8000/play/ca82266/index.m3u8",
+    "group-title": "DEPORTES",
+    "tvg-id": "SkySports2.mx@SD"
+  },
+  {
+    "name": "SportsMax News (1080p)",
+    "logo": "https://i.imgur.com/IjN1Nhm.png",
+    "url": "http://181.79.86.130:8000/play/a081/index.m3u8",
+    "group-title": "DEPORTES",
+    "tvg-id": "SportsMaxNews.ve@SD"
   },
   {
     "name": "Sqala TV (720p)",
@@ -8293,7 +8321,7 @@
   {
     "name": "+tdp",
     "logo": "https://graph.facebook.com/teledeporteRTVE/picture?width=200&height=200",
-    "url": "https://ztnr.rtve.es/ztnr/6712432.m3u8",
+    "url": "https://ztnr.rtve.es/ztnr/6712411.m3u8",
     "group-title": "GENERAL"
   },
   {
