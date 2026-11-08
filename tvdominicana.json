@@ -182,14 +182,6 @@
     "language": "es"
   },
   {
-    "name": "CDN (576p)",
-    "logo": "https://i.imgur.com/eQyjIgf.png",
-    "url": "http://190.61.90.17:40000/play/a03p/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "CDN.do@SD",
-    "country": "DO"
-  },
-  {
     "name": "NOTICIAS 16",
     "logo": "https://i.postimg.cc/Kjk8y8GP/NOTICIAS-16.png",
     "url": "https://edge.essastream.com/noticias16/tracks-v1a1/mono.m3u8",
@@ -330,15 +322,6 @@
     "language": "es"
   },
   {
-    "name": "TLSD",
-    "logo": "https://i.postimg.cc/QMT5h950/MASTER-TV.png",
-    "url": "https://vdopanel.jlahozconsulting.com:3769/live/santodomingolive.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "tlsd.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "READY HD",
     "logo": "https://i.postimg.cc/L88DzJT4/READY-HD.png",
     "url": "https://streaming.telecablecentral.com.do/ReadyTV/ReadyHD/playlist.m3u8",
@@ -422,15 +405,6 @@
     "url": "https://stream.haislin.com/ahoratv/index.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "ahoratv35.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
-    "name": "AION TV",
-    "logo": "https://i.postimg.cc/j56tqtyt/ION-TV.jpg",
-    "url": "https://edge.essastream.com/aiontelevision/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "aiontv.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -1569,14 +1543,6 @@
     "country": "DO"
   },
   {
-    "name": "RNN DOS (720p) [Not 24/7]",
-    "logo": "https://i.imgur.com/12Z9qPw.png",
-    "url": "https://2-fss-2.streamhoster.com/pl_138/206532-6829912-1/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "RNN.do@DOS",
-    "country": "DO"
-  },
-  {
     "name": "ROMANA TV 42",
     "logo": "https://i.postimg.cc/1z5c8NVM/ROMANA-TV-42.png",
     "url": "https://videoserver.tmcreativos.com:19360/cvmhbyrcat/cvmhbyrcat.m3u8",
@@ -2281,14 +2247,6 @@
     "url": "https://cloud5.zastv.net/hls/zastv.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "ZASTV.do@HD",
-    "country": "DO"
-  },
-  {
-    "name": "Zinc Nombre TV (720p) [Not 24/7]",
-    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3751-294x165-FFFFFF.jpg",
-    "url": "https://5790d294af2dc.streamlock.net/zincnombretv/live/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "ZincNombreTV.do@HD",
     "country": "DO"
   },
   {
@@ -5852,13 +5810,6 @@
     "group-title": "MUSICA",
     "tvg-id": "energymusic",
     "language": "es"
-  },
-  {
-    "name": "Exa TV",
-    "logo": "https://i.imgur.com/JWOqr1a.png",
-    "url": "http://190.61.90.17:40000/play/a0hk/index.m3u8",
-    "group-title": "MUSICA",
-    "tvg-id": "ExaTV.mx@SD"
   },
   {
     "name": "Expres Chequia",
