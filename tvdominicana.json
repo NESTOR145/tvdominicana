@@ -6422,21 +6422,6 @@
     "tvg-id": "RetromusicaTelevision.cl@SD"
   },
   {
-    "name": "REWIN CL",
-    "logo": "https://cdn.m3u.cl/logo/156_Rewind.png",
-    "url": "https://tls-cl.cdnz.cl/rewindtv/live/playlist.m3u8?PlaylistM3UCL",
-    "group-title": "MUSICA",
-    "tvg-id": "rewin",
-    "language": "es"
-  },
-  {
-    "name": "Rewind TV (1080p)",
-    "logo": "https://i.imgur.com/OG0RC2e.png",
-    "url": "https://tls-cl.cdnz.cl/rewindtv/live/playlist.m3u8",
-    "group-title": "MUSICA",
-    "tvg-id": "RewindTV.cl@SD"
-  },
-  {
     "name": "Reyali (614p)",
     "logo": "https://i.imgur.com/YmFjnsF.png",
     "url": "https://eu1.servers10.com:8081/8090/index.m3u8",
