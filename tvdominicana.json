@@ -1350,15 +1350,6 @@
     "language": "es"
   },
   {
-    "name": "NITIDA TV",
-    "logo": "https://i.postimg.cc/JnH7vMSm/NITIDA-TV.jpg",
-    "url": "https://vs20.live.opencaster.com/bznudxxdtppv/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "nitidatv.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "Notisur TV [Not 24/7]",
     "logo": "https://rdomint.com/images/station/300.jpg",
     "url": "https://ss2.tvrdomi.com:1936/notisur/notisur/playlist.m3u8",
@@ -1453,23 +1444,6 @@
     "tvg-id": "puntotv.do@SD",
     "country": "DO",
     "language": "es"
-  },
-  {
-    "name": "PUNTO TV CANAL 40",
-    "logo": "https://i.postimg.cc/j5Jk2RK1/PUNTO-TV.png",
-    "url": "https://ss2.tvrdomi.com:1936/puntotvdigital/puntotvdigital/chunklist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "puntotvcanal40.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
-    "name": "Punto TV Digital 40 [Geo-blocked]",
-    "logo": "https://puntotvdigital.net/wp-content/uploads/2024/02/logo.png",
-    "url": "https://ss2.tvrdomi.com:1936/puntotvdigital/puntotvdigital/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "PuntoTVDigital40.do@SD",
-    "country": "DO"
   },
   {
     "name": "QUISQUEYA LA BELLA TV",
@@ -4500,13 +4474,6 @@
     "tvg-id": "324.TV"
   },
   {
-    "name": "4Dmas Noticias TV (1080p) [Not 24/7]",
-    "logo": "https://i.ibb.co/1fb5BtN/unnamed.png",
-    "url": "https://rds3.desdeparaguay.net/4dmasnoticiastv/4dmasnoticiastv/playlist.m3u8",
-    "group-title": "NOTICIAS",
-    "tvg-id": "4DmasNoticiasTV.py@SD"
-  },
-  {
     "name": "A24 (1080p)",
     "logo": "https://i.imgur.com/LnXQkIU.png",
     "url": "http://138.59.227.20:8000/play/a05u/index.m3u8",
@@ -5823,13 +5790,6 @@
     "url": "https://www.streaming507.net:19360/videofabulosa/videofabulosa.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "FabulosaEstereo1005FM.pa@SD"
-  },
-  {
-    "name": "Farra Play (576p)",
-    "logo": "https://i.imgur.com/bXWzstH.png",
-    "url": "https://stream.farra.com.py/live/farra_low.m3u8",
-    "group-title": "MUSICA",
-    "tvg-id": "FarraPlay.py@SD"
   },
   {
     "name": "Fiesta TV",
