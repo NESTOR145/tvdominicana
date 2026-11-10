@@ -437,7 +437,7 @@
   {
     "name": "AVIVAMIENTO TV",
     "logo": "https://i.postimg.cc/Rh5jGLJD/avivamiento-tv.png",
-    "url": "https://28tv.online:3081/live/avivamientotvlive.m3u8",
+    "url": "https://s1.abntelevision.com/avivamientoabr/stream/avivamientohd/avivamientohd/playlist.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "AvivamientoTV.co@SD",
     "country": "DO",
@@ -904,6 +904,13 @@
     "language": "es"
   },
   {
+    "name": "GH TELEVISION",
+    "logo": "https://i.postimg.cc/PrCfYsjz/GH-TELEVISION.jpg",
+    "url": "https://fox.hostlagarto.com:8081/ghtelevision/index.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "ghtelevision.do@SD"
+  },
+  {
     "name": "Gi Television (720p) [Not 24/7]",
     "logo": "https://i.imgur.com/br9TNG8.png",
     "url": "https://canal.gitelevisionserver.com/live/DIEEFIh506fL8huspvl0f0c2PZF3/index.m3u8",
@@ -1086,6 +1093,13 @@
     "tvg-id": "lavozdemaria.do@SD",
     "country": "DO",
     "language": "es"
+  },
+  {
+    "name": "LA VOZ SIN SENSURA TV",
+    "logo": "https://i.postimg.cc/pXm3qHrm/LA-VOZ-SIN-SENSURA-TV.jpg",
+    "url": "https://cdnfox.hostlagarto.com/lavozsincensuratv/index.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "lavozsinsensuratv.do@SD"
   },
   {
     "name": "LAGUNA TV",
@@ -1522,6 +1536,13 @@
     "tvg-id": "retromusicHD.do",
     "language": "es",
     "country": "DO"
+  },
+  {
+    "name": "RNN DOS (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/12Z9qPw.png",
+    "url": "https://2-fss-2.streamhoster.com/pl_138/206532-6829912-1/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "RNN.do@DOS"
   },
   {
     "name": "ROMANA TV 42",
@@ -4722,7 +4743,7 @@
   {
     "name": "HCH (720p)",
     "logo": "https://i.imgur.com/2CB5ezq.png",
-    "url": "https://live.streamhch.com/live/streams/hch1.m3u8",
+    "url": "http://45.228.234.9:8000/play/a06t/index.m3u8",
     "group-title": "NOTICIAS",
     "tvg-id": "HCH.hn@SD"
   },
