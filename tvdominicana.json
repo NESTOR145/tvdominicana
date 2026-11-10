@@ -1777,6 +1777,13 @@
     "country": "DO"
   },
   {
+    "name": "TELECOMERCIO",
+    "logo": "https://i.postimg.cc/tC0X4tkK/TELECOMERCIO.jpg",
+    "url": "https://streaming.grupomediosdelnorte.com:19360/telecomerciotv/telecomerciotv.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "telecomercio.do@SD"
+  },
+  {
     "name": "TELECONTACTO 57",
     "logo": "https://i.postimg.cc/3NbRVfPc/TELECONTACTO-57.jpg",
     "url": "https://streaming.grupomediosdelnorte.com:19360/telecontacto/telecontacto.m3u8",
@@ -5204,6 +5211,13 @@
     "tvg-id": "ClaroSports.mx@SD"
   },
   {
+    "name": "DAZN F1",
+    "logo": "https://i.imgur.com/yFCr5XX.png",
+    "url": "https://tvorb.net/ZTV/6918-live.m3u8",
+    "group-title": "DEPORTES",
+    "tvg-id": "DAZNF1.uk@Spain"
+  },
+  {
     "name": "DeporTV (1080p)",
     "logo": "https://i.imgur.com/THk9ARS.png",
     "url": "http://158.172.155.130:8000/play/a09y/index.m3u8",
@@ -5519,6 +5533,13 @@
     "tvg-id": "TNTSportsPremium.cl@ArgentinaHD"
   },
   {
+    "name": "TNT Sports Premium HD (1080p)",
+    "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/TNT_Sports_Premium_%28Argentina%29.png/960px-TNT_Sports_Premium_%28Argentina%29.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "url": "http://205.235.6.29:8000/play/a104/index.m3u8",
+    "group-title": "DEPORTES",
+    "tvg-id": "TNTSportsPremium.cl@HD"
+  },
+  {
     "name": "Top Barça",
     "logo": "https://graph.facebook.com/fcbarcelona/picture?width=200&height=200",
     "url": "https://amg17560-fcb-amg17560c2-samsung-es-9803.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg17560-fcbarcelona-topbarcaspanish-samsunges/playlist.m3u8",
@@ -5826,6 +5847,13 @@
     "url": "https://www.streaming507.net:19360/videofabulosa/videofabulosa.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "FabulosaEstereo1005FM.pa@SD"
+  },
+  {
+    "name": "Farra Play (576p)",
+    "logo": "https://i.imgur.com/bXWzstH.png",
+    "url": "https://stream.farra.com.py/live/farra_low.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "FarraPlay.py@SD"
   },
   {
     "name": "Fiesta TV",
