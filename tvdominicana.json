@@ -326,7 +326,8 @@
     "logo": "https://i.postimg.cc/QMT5h950/MASTER-TV.png",
     "url": "https://vdopanel.jlahozconsulting.com:3769/live/santodomingolive.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "tlsd.do@SD"
+    "tvg-id": "tlsd.do@SD",
+    "country": "DO"
   },
   {
     "name": "READY HD",
@@ -903,15 +904,6 @@
     "language": "es"
   },
   {
-    "name": "GH TELEVISION",
-    "logo": "https://i.postimg.cc/PrCfYsjz/GH-TELEVISION.jpg",
-    "url": "https://fox.hostlagarto.com:8081/ghtelevision/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "ghtelevision.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "Gi Television (720p) [Not 24/7]",
     "logo": "https://i.imgur.com/br9TNG8.png",
     "url": "https://canal.gitelevisionserver.com/live/DIEEFIh506fL8huspvl0f0c2PZF3/index.m3u8",
@@ -1361,7 +1353,8 @@
     "logo": "https://i.postimg.cc/JnH7vMSm/NITIDA-TV.jpg",
     "url": "https://vs20.live.opencaster.com/bznudxxdtppv/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "nitidatv.do@SD"
+    "tvg-id": "nitidatv.do@SD",
+    "country": "DO"
   },
   {
     "name": "Notisur TV [Not 24/7]",
@@ -2242,7 +2235,8 @@
     "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3751-294x165-FFFFFF.jpg",
     "url": "https://5790d294af2dc.streamlock.net/zincnombretv/live/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "ZincNombreTV.do@HD"
+    "tvg-id": "ZincNombreTV.do@HD",
+    "country": "DO"
   },
   {
     "name": "13 TELESERIES",
