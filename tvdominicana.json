@@ -5639,11 +5639,11 @@
     "language": "es"
   },
   {
-    "name": "Chamame TV",
+    "name": "MUSICA TV",
     "logo": "https://i.imgur.com/JigzJck.png",
     "url": "https://srv4.zcast.com.br/chamametv/chamametv/playlist.m3u8",
     "group-title": "MUSICA",
-    "tvg-id": "ChamameTV.ar@SD"
+    "tvg-id": "musicatv.ar@SD"
   },
   {
     "name": "Chocolate FM (720p)",
