@@ -851,6 +851,13 @@
     "language": "es"
   },
   {
+    "name": "Enntivision (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/nePOFZW.png",
+    "url": "https://edge.essastream.com/enntivision/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "Enntivision.do@SD"
+  },
+  {
     "name": "ENTERATE RD",
     "logo": "https://i.postimg.cc/Ss8drfNF/ENTERATE-RD.jpg",
     "url": "https://5790d294af2dc.streamlock.net/enteraterd/enteraterd/playlist.m3u8",
@@ -1510,6 +1517,13 @@
     "language": "es"
   },
   {
+    "name": "Punto TV Digital 40 (360p) [Geo-blocked]",
+    "logo": "https://puntotvdigital.net/wp-content/uploads/2024/02/logo.png",
+    "url": "https://ss2.tvrdomi.com:1936/puntotvdigital/puntotvdigital/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "PuntoTVDigital40.do@SD"
+  },
+  {
     "name": "QUISQUEYA LA BELLA TV",
     "logo": "https://i.postimg.cc/3wW6pNZd/QUISQUEYA-LA-BELLA-TV.jpg",
     "url": "https://ss2.tvrdomi.com:1936/quisqueyalabella/quisqueyalabella/chunklist_w20117411.m3u8",
@@ -1714,9 +1728,9 @@
   {
     "name": "SUR TV",
     "logo": "https://i.postimg.cc/SssJ2d92/SUR-TV.jpg",
-    "url": "https://ss2.tvrdomi.com:1936/eradiofonicas/eradiofonicas/playlist.m3u8",
+    "url": "https://surtv-2.mddsoluciones.cl/play/ZZZ-WEB-001:ULpj2JxXM9/live/surtvweb/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "surtv.do@SD",
+    "tvg-id": "SURTV.cl@SD",
     "country": "DO",
     "language": "es"
   },
@@ -1727,6 +1741,13 @@
     "group-title": "DOMINICANOS",
     "tvg-id": "TarimaTV.do@HD",
     "country": "DO"
+  },
+  {
+    "name": "TDN Medios (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/C8dSJM7.png",
+    "url": "https://castv10.plugstreaming.com:19360/tdntv/tdntv.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "TDNMedios.do@SD"
   },
   {
     "name": "TELE AZUL",
@@ -5393,6 +5414,16 @@
     "tvg-id": "PlutoTVESports.us@LatAm"
   },
   {
+    "name": "Real Madrid TV (1080p)",
+    "logo": "https://i.imgur.com/5pMo7dL.png",
+    "url": "http://90.163.85.113:8093/stream/26/index.m3u8",
+    "group-title": "DEPORTES",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"
+    },
+    "tvg-id": "RealMadridTV.es@SD"
+  },
+  {
     "name": "Real Madrid TV EN",
     "logo": "https://graph.facebook.com/RealMadrid/picture?width=200&height=200",
     "url": "https://rmtv.akamaized.net/hls/live/2043154/rmtv-en-web/master.m3u8",
@@ -5482,6 +5513,13 @@
     "url": "https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8",
     "group-title": "DEPORTES",
     "tvg-id": "TyCSports.ar@SD"
+  },
+  {
+    "name": "TyC Sports USA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/TyC_Sports_logo.svg/960px-TyC_Sports_logo.svg.png",
+    "url": "http://45.170.130.224:8000/play/a020/index.m3u8",
+    "group-title": "DEPORTES",
+    "tvg-id": "TyCSportsUSA.ar@SD"
   },
   {
     "name": "Vinx TV",
@@ -5639,13 +5677,6 @@
     "language": "es"
   },
   {
-    "name": "MUSICA TV",
-    "logo": "https://i.imgur.com/JigzJck.png",
-    "url": "https://srv4.zcast.com.br/chamametv/chamametv/playlist.m3u8",
-    "group-title": "MUSICA",
-    "tvg-id": "musicatv.ar@SD"
-  },
-  {
     "name": "Chocolate FM (720p)",
     "logo": "https://cdn.m3u.cl/logo/382_ChocolateFM.png",
     "url": "https://5eaccbab48461.streamlock.net:1936/8180/8180/playlist.m3u8",
@@ -5778,6 +5809,13 @@
     "url": "https://v2.tustreaming.cl/fmplus/index.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "FMPlusTV.cl@SD"
+  },
+  {
+    "name": "Galactica TV",
+    "logo": "https://i.imgur.com/byL1zCV.jpeg",
+    "url": "https://stream.neux.site/memfs/e3f59eec-6b93-45e1-a2ab-c82381c2a9ec.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "GalacticaTV.pe@SD"
   },
   {
     "name": "Genial TV (720p)",
@@ -6037,6 +6075,13 @@
     "url": "https://cloudvideo.servers10.com:8081/8032/index.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "MusicTVGranada.es@SD"
+  },
+  {
+    "name": "MUSICA TV",
+    "logo": "https://i.imgur.com/JigzJck.png",
+    "url": "https://srv4.zcast.com.br/chamametv/chamametv/playlist.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "musicatv.ar@SD"
   },
   {
     "name": "MusicTop (1080p)",
@@ -7239,9 +7284,9 @@
   {
     "name": "COSMOS TV",
     "logo": "https://i.postimg.cc/P53M37qL/COSMOS-TV.jpg",
-    "url": "https://video.hostingcaaguazu.com:19360/cosmostv/cosmostv.m3u8",
+    "url": "https://tv.mediacp.eu:19360/cosmos/cosmos.m3u8",
     "group-title": "VARIEDADES",
-    "tvg-id": "cosmos",
+    "tvg-id": "CosmosTv.ar@HD",
     "language": "es"
   },
   {
@@ -8063,6 +8108,13 @@
     "language": "es"
   },
   {
+    "name": "Unifranz (720p)",
+    "logo": "https://unifranz.edu.bo/wp-content/themes/unifranz-web/public/images/logos/logo-light-min.442cee.svg",
+    "url": "https://edge.enhdtv.com/8192/index.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "Unifranz.bo@HD"
+  },
+  {
     "name": "UNITEL",
     "logo": "https://i.postimg.cc/DwPWcRGP/UNITEL-TV.jpg",
     "url": "https://play.agenciastreaming.com:8081/uniteltv/index.m3u8",
@@ -8154,6 +8206,12 @@
     "name": "+24",
     "logo": "https://pbs.twimg.com/profile_images/1634293543987453954/mb1Rzmso_200x200.jpg",
     "url": "https://ztnr.rtve.es/ztnr/6108696.m3u8",
+    "group-title": "GENERAL"
+  },
+  {
+    "name": "+tdp",
+    "logo": "https://graph.facebook.com/teledeporteRTVE/picture?width=200&height=200",
+    "url": "https://ztnr.rtve.es/ztnr/6712432.m3u8",
     "group-title": "GENERAL"
   },
   {
