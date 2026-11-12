@@ -928,6 +928,14 @@
     "language": "es"
   },
   {
+    "name": "GALAXIA TV",
+    "logo": "https://i.postimg.cc/mZcwLhCj/GALAXIA-TV.jpg",
+    "url": "https://streaming.grupomediosdelnorte.com:19360/galaxiateve/galaxiateve.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "galaxiatv.do@SD",
+    "language": "es"
+  },
+  {
     "name": "GH TELEVISION",
     "logo": "https://i.postimg.cc/PrCfYsjz/GH-TELEVISION.jpg",
     "url": "https://fox.hostlagarto.com:8081/ghtelevision/index.m3u8",
@@ -1562,9 +1570,9 @@
   {
     "name": "R&E TV",
     "logo": "https://i.postimg.cc/BQ8rTjyF/R-E-TV.jpg",
-    "url": "https://tv2.bitstreaming.net:8443/live/r-e-tv.m3u8",
+    "url": "https://cloud2.streaminglivehd.com:1936/8072/8072/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "randetv.do@SD",
+    "tvg-id": "RETV.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -1636,22 +1644,6 @@
     "group-title": "DOMINICANOS",
     "tvg-id": "sabanetatv.do@SD",
     "country": "DO",
-    "language": "es"
-  },
-  {
-    "name": "GALAXIA TV",
-    "logo": "https://i.postimg.cc/mZcwLhCj/GALAXIA-TV.jpg",
-    "url": "https://streaming.grupomediosdelnorte.com:19360/galaxiateve/galaxiateve.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "galaxiatv.do@SD",
-    "language": "es"
-  },
-  {
-    "name": "TELEVIDA",
-    "logo": "https://i.postimg.cc/fRFB9mz1/TELEVIDA.jpg",
-    "url": "https://tls-cl.cdnz.cl/televida/live/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "televida.do@SD",
     "language": "es"
   },
   {
@@ -2039,6 +2031,14 @@
     "language": "es"
   },
   {
+    "name": "TELEVIDA",
+    "logo": "https://i.postimg.cc/fRFB9mz1/TELEVIDA.jpg",
+    "url": "https://tls-cl.cdnz.cl/televida/live/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "televida.do@SD",
+    "language": "es"
+  },
+  {
     "name": "TELEVISION DEL ESTE",
     "logo": "https://i.postimg.cc/7Lqf35TW/TELEVISION-DEL-ESTE.jpg",
     "url": "https://edge.essastream.com/televisiondeleste/index.m3u8",
@@ -2206,9 +2206,9 @@
   {
     "name": "TVS",
     "logo": "https://i.postimg.cc/ZKmDYkQf/TVS.png",
-    "url": "https://vcp10.myplaytv.com/tvs/tvs/playlist.m3u8",
+    "url": "https://imagenuniversaltv.net:3741/live/tvslive.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "tvs.do@SD",
+    "tvg-id": "TVS.do@SD",
     "country": "DO",
     "language": "es"
   },
