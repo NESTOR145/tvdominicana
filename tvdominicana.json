@@ -855,7 +855,8 @@
     "logo": "https://i.imgur.com/nePOFZW.png",
     "url": "https://edge.essastream.com/enntivision/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "Enntivision.do@SD"
+    "tvg-id": "Enntivision.do@SD",
+    "country": "DO"
   },
   {
     "name": "ENTERATE RD",
@@ -1521,7 +1522,8 @@
     "logo": "https://puntotvdigital.net/wp-content/uploads/2024/02/logo.png",
     "url": "https://ss2.tvrdomi.com:1936/puntotvdigital/puntotvdigital/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "PuntoTVDigital40.do@SD"
+    "tvg-id": "PuntoTVDigital40.do@SD",
+    "country": "DO"
   },
   {
     "name": "QUISQUEYA LA BELLA TV",
@@ -1747,7 +1749,8 @@
     "logo": "https://i.imgur.com/C8dSJM7.png",
     "url": "https://castv10.plugstreaming.com:19360/tdntv/tdntv.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "TDNMedios.do@SD"
+    "tvg-id": "TDNMedios.do@SD",
+    "country": "DO"
   },
   {
     "name": "TELE AZUL",
