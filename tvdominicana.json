@@ -1639,6 +1639,22 @@
     "language": "es"
   },
   {
+    "name": "GALAXIA TV",
+    "logo": "https://i.postimg.cc/mZcwLhCj/GALAXIA-TV.jpg",
+    "url": "https://streaming.grupomediosdelnorte.com:19360/galaxiateve/galaxiateve.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "galaxiatv.do@SD",
+    "language": "es"
+  },
+  {
+    "name": "TELEVIDA",
+    "logo": "https://i.postimg.cc/fRFB9mz1/TELEVIDA.jpg",
+    "url": "https://tls-cl.cdnz.cl/televida/live/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "televida.do@SD",
+    "language": "es"
+  },
+  {
     "name": "SALVACION TV",
     "logo": "https://i.postimg.cc/pL1HH3fd/SALVACION-TV.png",
     "url": "https://stream.eleden.com/livesalvatv/ngrp:livesalvatv_all/playlist.m3u8",
@@ -7487,14 +7503,6 @@
     "language": "es"
   },
   {
-    "name": "GALAXIA TV",
-    "logo": "https://i.postimg.cc/mZcwLhCj/GALAXIA-TV.jpg",
-    "url": "https://streaming.grupomediosdelnorte.com:19360/galaxiateve/galaxiateve.m3u8",
-    "group-title": "VARIEDADES",
-    "tvg-id": "galaxiatv",
-    "language": "es"
-  },
-  {
     "name": "GO TV (720p)",
     "logo": "https://i.ibb.co/jkvYVyz/Captura.png",
     "url": "https://rds3.desdeparaguay.net/gotv/gotv/playlist.m3u8",
@@ -8042,14 +8050,6 @@
     "url": "https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master_540.m3u8",
     "group-title": "VARIEDADES",
     "tvg-id": "telemundopr",
-    "language": "es"
-  },
-  {
-    "name": "TELEVIDA",
-    "logo": "https://i.postimg.cc/fRFB9mz1/TELEVIDA.jpg",
-    "url": "https://tls-cl.cdnz.cl/televida/live/playlist.m3u8",
-    "group-title": "VARIEDADES",
-    "tvg-id": "televida",
     "language": "es"
   },
   {
