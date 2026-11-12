@@ -4488,6 +4488,13 @@
     "tvg-id": "A24.ar@SD"
   },
   {
+    "name": "A24 Paraguay",
+    "logo": "https://i.imgur.com/XWBmjBk.png",
+    "url": "https://tv.mitvparaguay.com/hls?type=hls&id=a24",
+    "group-title": "NOTICIAS",
+    "tvg-id": "A24Paraguay.py@SD"
+  },
+  {
     "name": "ABC-TV Paraguay",
     "logo": "https://i.imgur.com/OqfBMGy.png",
     "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/7.m3u8",
@@ -5142,6 +5149,13 @@
     "url": "https://dc1644a9jazgj.cloudfront.net/beIN_Sports_Xtra_Espanol.m3u8",
     "group-title": "DEPORTES",
     "tvg-id": "beINSPORTSXTRAenEspanol.us@SD"
+  },
+  {
+    "name": "Bicolor+ Premium 2 (720p)",
+    "logo": "https://img-evg3.tv360.bitel.com.pe/peru-image/2026/09/24/03/1790194132371/1e57475a9a6b_640_360.png",
+    "url": "https://live-evg10.tv360.bitel.com.pe/bitel/bicolorpremium2_abr/playlist.m3u8",
+    "group-title": "DEPORTES",
+    "tvg-id": "BicolorPlusPremium2.pe@SD"
   },
   {
     "name": "Bicolor+ Premium [Geo-blocked]",
