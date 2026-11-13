@@ -1229,9 +1229,18 @@
   {
     "name": "MAKAO TV",
     "logo": "https://i.postimg.cc/w38r1mzr/MAKAO-TV.png",
-    "url": "https://live.obslivestream.com/makaomux/tracks-v2a1/playlist.m3u8",
+    "url": "https://live.obslivestream.com/makaomux/tracks-v1a1/mono.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "makaotv.do@SD",
+    "country": "DO",
+    "language": "es"
+  },
+  {
+    "name": "SUPER CANAL 33",
+    "logo": "https://i.postimg.cc/909NGyXZ/SUPER-CANAL-33.jpg",
+    "url": "https://cnn.hostlagarto.com/supercanalhd/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "supercanal33.do@SD",
     "country": "DO",
     "language": "es"
   },
