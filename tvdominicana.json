@@ -399,7 +399,8 @@
     "logo": "https://i.imgur.com/uU01KHz.png",
     "url": "https://183.giatvcdn.com/giatv/giatv-adoram/adoram/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "AdoramTV.do@SD"
+    "tvg-id": "AdoramTV.do@SD",
+    "country": "DO"
   },
   {
     "name": "Aguila TV (1080p) [Not 24/7]",
@@ -556,7 +557,8 @@
     "logo": "https://i.imgur.com/puOrL7B.jpg",
     "url": "https://183.giatvcdn.com/ssh101/ssh101/canalmulti24/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "CanalMultivision.do@SD"
+    "tvg-id": "CanalMultivision.do@SD",
+    "country": "DO"
   },
   {
     "name": "CANALDA TV",
@@ -1349,7 +1351,8 @@
     "logo": "https://montonestv.com/wp-content/uploads/2025/11/montones-logo.png",
     "url": "https://183.giatvcdn.com/ssh101/ssh101/montonestv1/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "MontonesTV.do@HD"
+    "tvg-id": "MontonesTV.do@HD",
+    "country": "DO"
   },
   {
     "name": "MORRO TV",
@@ -2061,7 +2064,8 @@
       "Referer": "https://player.castr.com/",
       "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
     },
-    "tvg-id": "TeleviaductoCanal14.do@SD"
+    "tvg-id": "TeleviaductoCanal14.do@SD",
+    "country": "DO"
   },
   {
     "name": "TELEVIDA",
@@ -2104,7 +2108,8 @@
     "logo": "https://gia.tv/streams/pptv/208314.jpg?1750373428",
     "url": "https://183.giatvcdn.com/giatvplayout7/giatv-208314/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "TomAndJerry.do@HD"
+    "tvg-id": "TomAndJerry.do@HD",
+    "country": "DO"
   },
   {
     "name": "Topical Moon RD (720p) [Not 24/7]",
@@ -2163,7 +2168,8 @@
     "logo": "https://i.imgur.com/sMF7JDm.png",
     "url": "https://183.giatvcdn.com/ssh101/ssh101/tvcotui/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "TVCotuiCanal31.do@SD"
+    "tvg-id": "TVCotuiCanal31.do@SD",
+    "country": "DO"
   },
   {
     "name": "TV DAJA",
