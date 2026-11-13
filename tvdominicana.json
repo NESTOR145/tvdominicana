@@ -6668,6 +6668,13 @@
     "tvg-id": "SoloBailalo.cl@SD"
   },
   {
+    "name": "SOY Plancha TV (720p)",
+    "logo": "https://i.ibb.co/P4kpMgk/1689344714578.jpg",
+    "url": "https://59ef525c24caa.streamlock.net/vmtv/soyplancha/playlist.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "SOYPlanchaTV.cr@SD"
+  },
+  {
     "name": "SpektraTV (720p)",
     "logo": "https://i.imgur.com/0zCt8e4.png",
     "url": "https://cloudvideo.servers10.com:8081/8026/tracks-v1a1/index.m3u8",
