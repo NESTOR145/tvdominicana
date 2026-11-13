@@ -122,9 +122,9 @@
   {
     "name": "CONSTANZA TV",
     "logo": "https://i.postimg.cc/vHy5rVJ4/CONTANZA-TV.jpg",
-    "url": "https://lbgo.bozztv.com/ssh101/ssh101/ctv8hd/playlist.m3u8",
+    "url": "https://183.giatvcdn.com/ssh101/ssh101/ctv8hd/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "constanzatv.do@SD",
+    "tvg-id": "ConstanzaTV.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -379,9 +379,9 @@
   {
     "name": "A7 TV",
     "logo": "https://i.postimg.cc/Xv5Gp7FP/A7-TV.png",
-    "url": "https://183.bozztv.com/ssh101/ssh101/a7tvjarabacoa/playlist.m3u8",
+    "url": "https://183.giatvcdn.com/ssh101/ssh101/a7tvjarabacoa/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "a7tv.do@SD",
+    "tvg-id": "A7TV.do@HD",
     "country": "DO",
     "language": "es"
   },
@@ -393,6 +393,13 @@
     "tvg-id": "acentotv.do@SD",
     "country": "DO",
     "language": "es"
+  },
+  {
+    "name": "Adoram TV (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/uU01KHz.png",
+    "url": "https://183.giatvcdn.com/giatv/giatv-adoram/adoram/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "AdoramTV.do@SD"
   },
   {
     "name": "Aguila TV (1080p) [Not 24/7]",
@@ -543,6 +550,13 @@
     "tvg-id": "canalhtvlive.do@SD",
     "country": "DO",
     "language": "es"
+  },
+  {
+    "name": "Canal Multivision (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/puOrL7B.jpg",
+    "url": "https://183.giatvcdn.com/ssh101/ssh101/canalmulti24/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "CanalMultivision.do@SD"
   },
   {
     "name": "CANALDA TV",
@@ -1125,9 +1139,9 @@
   {
     "name": "LA VOZ DE JESUS HD",
     "logo": "https://i.postimg.cc/zfJ9wKhZ/LA-VOZ-DE-JESUS-TV.jpg",
-    "url": "https://live20.bozztv.com/giatvplayout7/giatv-208429/playlist.m3u8",
+    "url": "https://183.giatvcdn.com/giatvplayout7/giatv-208429/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "lavozdejesushd.do@SD",
+    "tvg-id": "LaVozdeJesusHD.do@HD",
     "country": "DO",
     "language": "es"
   },
@@ -1329,6 +1343,13 @@
     "tvg-id": "montecristidigital.do@SD",
     "country": "DO",
     "language": "es"
+  },
+  {
+    "name": "Montones TV (720p) [Not 24/7]",
+    "logo": "https://montonestv.com/wp-content/uploads/2025/11/montones-logo.png",
+    "url": "https://183.giatvcdn.com/ssh101/ssh101/montonestv1/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "MontonesTV.do@HD"
   },
   {
     "name": "MORRO TV",
@@ -2032,6 +2053,17 @@
     "language": "es"
   },
   {
+    "name": "Televiaducto Canal 14 (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/M9A6hqR.png",
+    "url": "https://stream.castr.com/5ec16b5935bd933ad25fdd37/live_a193cbb0a9f711f199075bad3dcd9dda/index.fmp4.m3u8",
+    "group-title": "DOMINICANOS",
+    "headers": {
+      "Referer": "https://player.castr.com/",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+    },
+    "tvg-id": "TeleviaductoCanal14.do@SD"
+  },
+  {
     "name": "TELEVIDA",
     "logo": "https://i.postimg.cc/fRFB9mz1/TELEVIDA.jpg",
     "url": "https://tls-cl.cdnz.cl/televida/live/playlist.m3u8",
@@ -2068,6 +2100,13 @@
     "language": "es"
   },
   {
+    "name": "Tom And Jerry (720p) [Not 24/7]",
+    "logo": "https://gia.tv/streams/pptv/208314.jpg?1750373428",
+    "url": "https://183.giatvcdn.com/giatvplayout7/giatv-208314/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "TomAndJerry.do@HD"
+  },
+  {
     "name": "Topical Moon RD (720p) [Not 24/7]",
     "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3900-294x165-FFFFFF.jpg",
     "url": "https://sistemastr.tropicalmoonmedia.com/live/56BE17DB16EB76C9F2DDB8346F4DFA4E/30.m3u8",
@@ -2078,9 +2117,9 @@
   {
     "name": "TURISMO HD",
     "logo": "https://i.postimg.cc/3RDV8D2h/TURISMO-TV.png",
-    "url": "https://live20.bozztv.com/giatvplayout7/giatv-208343/tracks-v1a1/mono.ts.m3u8",
+    "url": "https://183.giatvcdn.com/giatvplayout7/giatv-208343/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "turismohd.do@SD",
+    "tvg-id": "TurismoHD.do@HD",
     "country": "DO",
     "language": "es"
   },
@@ -2118,6 +2157,13 @@
     "tvg-id": "tvcotui.do@SD",
     "country": "DO",
     "language": "es"
+  },
+  {
+    "name": "TV Cotui Canal 31 (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/sMF7JDm.png",
+    "url": "https://183.giatvcdn.com/ssh101/ssh101/tvcotui/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "TVCotuiCanal31.do@SD"
   },
   {
     "name": "TV DAJA",
@@ -3819,6 +3865,13 @@
     "tvg-id": "CartoonNetwork.us@East"
   },
   {
+    "name": "Cartoon Network (United States) West (1080p) [Geo-blocked]",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png",
+    "url": "http://212.5.144.156:8080/cartoon/index.m3u8",
+    "group-title": "ANIME-INFANTIL",
+    "tvg-id": "CartoonNetwork.us@West"
+  },
+  {
     "name": "Cartoon Network Latin America North Atlantic (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png",
     "url": "http://45.173.12.70:8000/play/a0fj",
@@ -5184,11 +5237,25 @@
     "tvg-id": "beINSPORTSXTRAenEspanol.us@SD"
   },
   {
+    "name": "Bicolor+ (720p)",
+    "logo": "https://img-evg3.tv360.bitel.com.pe/peru-image/2026/09/24/00/1790182833200/6a8e1eb7f5d6_640_360.png",
+    "url": "https://live-evg10.tv360.bitel.com.pe/bitel/bicolorfree_abr/playlist.m3u8",
+    "group-title": "DEPORTES",
+    "tvg-id": "BicolorPlus.pe@SD"
+  },
+  {
     "name": "Bicolor+ Premium 2 (720p)",
     "logo": "https://img-evg3.tv360.bitel.com.pe/peru-image/2026/09/24/03/1790194132371/1e57475a9a6b_640_360.png",
     "url": "https://live-evg10.tv360.bitel.com.pe/bitel/bicolorpremium2_abr/playlist.m3u8",
     "group-title": "DEPORTES",
     "tvg-id": "BicolorPlusPremium2.pe@SD"
+  },
+  {
+    "name": "Bicolor+ Premium 3 (720p)",
+    "logo": "https://img-evg3.tv360.bitel.com.pe/peru-image/2026/09/24/03/1790194198636/d91910da3254_640_360.png",
+    "url": "https://live-evg10.tv360.bitel.com.pe/bitel/bicolorpremium3_abr/playlist.m3u8",
+    "group-title": "DEPORTES",
+    "tvg-id": "BicolorPlusPremium3.pe@SD"
   },
   {
     "name": "Bicolor+ Premium [Geo-blocked]",
@@ -5298,9 +5365,9 @@
   {
     "name": "ESPN Premium HD (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/960px-ESPN_Premium_logo.svg.png",
-    "url": "http://158.172.155.130:8000/play/a0ao/index.m3u8",
+    "url": "http://45.134.141.161:2200/ARG/ESPN_Premium_Argentina_HD/tracks-v1a1/mono.m3u8",
     "group-title": "DEPORTES",
-    "tvg-id": "ESPNPremium.ar@HD"
+    "tvg-id": "ESPNPremium.ar@SD"
   },
   {
     "name": "ETB Deportes (Kirolak 360)",
