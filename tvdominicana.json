@@ -6110,6 +6110,13 @@
     "tvg-id": "MasMusicaFM.co@SD"
   },
   {
+    "name": "MegaBox (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/JqaW7Ei.png",
+    "url": "https://hdbox.chunklistv.com/live?stream=megabox",
+    "group-title": "MUSICA",
+    "tvg-id": "MegaBox.ni@SD"
+  },
+  {
     "name": "Metaleitor TV",
     "logo": "https://new.opencaster.com/uploads/logos/logo_14_1752798826.png",
     "url": "https://vs20.live.opencaster.com/metaleitortv_423d3342/index.m3u8",
@@ -6819,6 +6826,13 @@
     "url": "https://cloud.tvomix.com/TVOMIX/index.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "TVOMIX.es@HD"
+  },
+  {
+    "name": "TVONE Nicaragua (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/FNk6rdz.png",
+    "url": "https://hdbox.chunklistv.com/live?stream=tvone",
+    "group-title": "MUSICA",
+    "tvg-id": "TVONENicaragua.ni@SD"
   },
   {
     "name": "TVUNO (720p)",
