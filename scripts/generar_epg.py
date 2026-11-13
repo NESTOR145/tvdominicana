@@ -112,6 +112,15 @@ FUENTES_EPG = [
     },
 ]
 
+# ============================================================
+# LISTA NEGRA: Canales con datos incorrectos en fuentes específicas
+# ============================================================
+IGNORAR_FUENTE = {
+    # En iptv-epg-DO, Telemicro tiene la programación de Digital 15 por error.
+    # Lo ignoramos en esa fuente para que use la siguiente (epgshare01-DO1).
+    "iptv-epg-DO": ["Telemicro.dr", "telemicro.do@SD"],
+}
+
 CANALES_JSON_PATH = Path("tvdominicana.json")
 EPG_JSON_PATH = Path("epg.json")
 
@@ -203,22 +212,16 @@ TVG_ID_MAP = {
 
 # ------------------------------------------------------------
 # ALIAS: mapea tvg-id "normalizado" del JSON -> alias en las fuentes.
-# Útil para canales cuyo nombre cambia entre la app y la EPG.
 # ------------------------------------------------------------
 ALIASES_TVG = {
-    # Antena 7 / Antena Latina se llama "Canal7.dr" en iptv-epg
     "antena7":      {"canal7", "antena7", "antenalatin"},
     "antenalatina": {"canal7", "antenalatin"},
     "antenalatin":  {"canal7", "antenalatin"},
-    # Digital 15 / Digital Quince
     "digital15":    {"canal15", "digital15", "digitalquince"},
     "digitalquince":{"canal15", "digital15", "digitalquince"},
     "canal15":      {"canal15", "digital15", "digitalquince"},
-    # Color Visión a veces aparece como "colorvision9"
     "colorvision9": {"colorvision"},
-    # Telecentro a veces aparece como "telecentro13"
     "telecentro13": {"telecentro"},
-    # Teleuniverso a veces aparece como "canal29"
     "canal29":      {"teleuniverso"},
 }
 
@@ -411,6 +414,10 @@ def extraer_programas(
     for prog in root.findall("programme"):
         channel_attr = prog.get("channel", "").strip()
         if not channel_attr:
+            continue
+
+        # 🚨 CORRECCIÓN: Ignorar canales en la lista negra de esta fuente
+        if channel_attr in IGNORAR_FUENTE.get(nombre_fuente, []):
             continue
 
         channel_id, _score = _resolver_channel_id(
