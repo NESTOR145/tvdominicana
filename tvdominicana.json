@@ -933,7 +933,8 @@
     "url": "https://streaming.grupomediosdelnorte.com:19360/galaxiateve/galaxiateve.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "galaxiatv.do@SD",
-    "language": "es"
+    "language": "es",
+    "country": "DO"
   },
   {
     "name": "GH TELEVISION",
@@ -2036,7 +2037,8 @@
     "url": "https://tls-cl.cdnz.cl/televida/live/playlist.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "televida.do@SD",
-    "language": "es"
+    "language": "es",
+    "country": "DO"
   },
   {
     "name": "TELEVISION DEL ESTE",
