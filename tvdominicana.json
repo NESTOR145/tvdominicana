@@ -420,15 +420,6 @@
     "language": "es"
   },
   {
-    "name": "AION TV",
-    "logo": "https://i.postimg.cc/j56tqtyt/ION-TV.jpg",
-    "url": "https://edge.essastream.com/aiontelevision/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "aiontv.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "ALEGRE TV",
     "logo": "https://i.postimg.cc/26W9PTcM/ALEGRE-TV.png",
     "url": "https://streamunoapp.com:3149/live/alegretvlive.m3u8",
@@ -461,15 +452,6 @@
     "url": "https://fox.hostlagarto.com:8081/bajotechotv/index.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "bajotechotv.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
-    "name": "BEBETO TELEVISION HD",
-    "logo": "https://i.postimg.cc/qq36xL3H/BEBETO-TELEVISION-HD.jpg",
-    "url": "https://mlb.essastream.com:8081/bebetotelevision/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "bebetotelevisionhd.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -540,15 +522,6 @@
     "url": "https://s.emisoras.tv:8081/dtv/index.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "canaldtv.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
-    "name": "CANAL HTV LIVE",
-    "logo": "https://i.postimg.cc/8zy1C7SN/CANAL-HTV-LIVE.png",
-    "url": "https://fox.hostlagarto.com:8081/canalhtv/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "canalhtvlive.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -803,15 +776,6 @@
     "group-title": "DOMINICANOS",
     "tvg-id": "EcosCanal57.do@HD",
     "country": "DO"
-  },
-  {
-    "name": "EL NUEVO DIARIO",
-    "logo": "https://i.postimg.cc/6qLzF4KX/EL-NUEVO-DIARIO.png",
-    "url": "https://nuevodiario01.streamprolive.com/hls/live.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "elnuevodiario.do@SD",
-    "country": "DO",
-    "language": "es"
   },
   {
     "name": "EL PODER TV",
@@ -1085,15 +1049,6 @@
     "group-title": "DOMINICANOS",
     "tvg-id": "JuniorTechnologiaTV.do@HD",
     "country": "DO"
-  },
-  {
-    "name": "LA CALETA TV",
-    "logo": "https://i.postimg.cc/8c9StcSd/LA-CALETA-TV.jpg",
-    "url": "https://edge.essastream.com/lacaletatv/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "lacaletatv.do@SD",
-    "country": "DO",
-    "language": "es"
   },
   {
     "name": "La Descarga TV [Geo-blocked]",
@@ -1479,15 +1434,6 @@
     "language": "es"
   },
   {
-    "name": "PITUCO TV",
-    "logo": "https://i.postimg.cc/1zd1948k/PITUCO-TV.png",
-    "url": "https://imagenuniversaltv.net:3439/live/elpitucolive.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "pitucotv.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "PORTAL DIGITAL",
     "logo": "https://i.postimg.cc/Qx77z7tW/PORTAL-DIGITAL.jpg",
     "url": "https://edge.essastream.com/portaldigital/index.m3u8",
@@ -1511,15 +1457,6 @@
     "url": "https://cdnfox.hostlagarto.com/pronemstv/index.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "pronemstv.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
-    "name": "PULA TV",
-    "logo": "https://i.postimg.cc/wj0rbW0w/PULA-TV.jpg",
-    "url": "https://fox.hostlagarto.com:8081/pulatv/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "pulatv.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -1650,15 +1587,6 @@
     "url": "https://videoserver.tmcreativos.com:19360/cvmhbyrcat/cvmhbyrcat.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "romanatv42.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
-    "name": "RUTA 66 TV",
-    "logo": "https://i.postimg.cc/9MBt5MTY/RUTA-66-TV.jpg",
-    "url": "https://edge.livestreaminggroup.info/ruta66tvlive/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "ruta66tv.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -1908,15 +1836,6 @@
     "country": "DO"
   },
   {
-    "name": "TELECOMERCIO",
-    "logo": "https://i.postimg.cc/tC0X4tkK/TELECOMERCIO.jpg",
-    "url": "https://streaming.grupomediosdelnorte.com:19360/telecomerciotv/telecomerciotv.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "telecomercio.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "TELECONTACTO 57",
     "logo": "https://i.postimg.cc/3NbRVfPc/TELECONTACTO-57.jpg",
     "url": "https://streaming.grupomediosdelnorte.com:19360/telecontacto/telecontacto.m3u8",
@@ -2095,15 +2014,6 @@
     "language": "es"
   },
   {
-    "name": "TENARENSES TV",
-    "logo": "https://i.postimg.cc/26Mpqw9p/TENARENSES-TV.jpg",
-    "url": "https://edge.essastream.com/tenarensestvrd/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "tenarensestv.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "TN1 CANAL 51",
     "logo": "https://i.postimg.cc/C53D3tgK/TNI.jpg",
     "url": "https://linear-254.frequency.stream/mt/studio/254/hls/master/playlist_1280x720.m3u8",
@@ -2179,15 +2089,6 @@
     "group-title": "DOMINICANOS",
     "tvg-id": "TVCotuiCanal31.do@SD",
     "country": "DO"
-  },
-  {
-    "name": "TV DAJA",
-    "logo": "https://i.postimg.cc/BvJ3GTgZ/TV-DAJA.jpg",
-    "url": "https://edge.essastream.com/dajatv/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "tvdaja.do@SD",
-    "country": "DO",
-    "language": "es"
   },
   {
     "name": "TV EXITOS",
@@ -3380,14 +3281,6 @@
     "language": "es"
   },
   {
-    "name": "RETROX X PLUS",
-    "logo": "https://i.postimg.cc/6pPmMhLw/RETROX-X-PLUS.png",
-    "url": "https://tls-cl.cdnz.cl/retroplustvuno/live/playlist.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "retrox",
-    "language": "es"
-  },
-  {
     "name": "romance-rakuten-tv",
     "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/ec9d1d83-74cc-443d-b2ec-b51b970fe831.jpeg",
     "url": "https://romance-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6105/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.extra_eids=&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=217.216.126.162&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6105&ads.rtv_channel_name=romance-rakuten-tv_es&ads.rtv_content_id=6105&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=83cb3b05-422b-4a9c-a4ad-2a21612db817&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6105&publishing_platform_id=5&tenant_identifier=rtv",
@@ -3862,14 +3755,6 @@
     "url": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/d5543c06-5122-49a7-9662-32187f48aa2c/manifest.m3u8",
     "group-title": "ANIME-INFANTIL",
     "tvg-id": "cartooon1",
-    "language": "es"
-  },
-  {
-    "name": "CARTOON CLASSICS 2",
-    "logo": "https://i.postimg.cc/yNQtyQnr/RETRO-CARTOONS.png",
-    "url": "http://5.188.159.128:8070/Cartoon_Network/index.m3u8",
-    "group-title": "ANIME-INFANTIL",
-    "tvg-id": "cartooon2",
     "language": "es"
   },
   {
@@ -6550,14 +6435,6 @@
     "url": "https://vdochile.com:3864/stream/play.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "RetromusicaTelevision.cl@SD"
-  },
-  {
-    "name": "REWIN CL",
-    "logo": "https://cdn.m3u.cl/logo/156_Rewind.png",
-    "url": "https://tls-cl.cdnz.cl/rewindtv/live/playlist.m3u8?PlaylistM3UCL",
-    "group-title": "MUSICA",
-    "tvg-id": "rewin",
-    "language": "es"
   },
   {
     "name": "Reyali (614p)",
