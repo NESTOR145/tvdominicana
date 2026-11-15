@@ -15,7 +15,7 @@ concurrency:
 jobs:
   agregar:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     if: github.ref == 'refs/heads/main'
     steps:
       - name: Descargar repositorio
@@ -81,7 +81,7 @@ jobs:
 
           PRIORITY = [
               "AME TV", "RTVD 4-R.D", "TELEMICRO", "DIGITAL 15", "TELECENTRO",
-              "ANTENA 7", "ANTENA 21", "TELESISTEMA", "TELEANTILLAS", "COLOR VISION",
+              "ANTENA 7", "ANTENA 21", "TELESISTEMA", "TELE ANTILLAS", "COLOR VISION",
               "CINEVISION", "ALCARRIZOS TV", "CONSTANZA TV", "TELEALTURA", "TV MONTAÑA",
               "AGROTENDENCIAS TV", "TS TELESIGLO", "SANTIAGO TV", "CDN", "NOTICIAS 16",
               "CDN DEPORTES", "CORAL TV", "NARANJA TV", "RNN CANAL 27", "VISION TV",
@@ -101,7 +101,6 @@ jobs:
               sys.exit(1)
 
           print(f"OK: {len(data)} canales. Categorías válidas.")
-          print("Sin errores graves.")
           PY
 
       - name: Subir log y JSON (siempre)
