@@ -142,7 +142,8 @@
     "logo": "https://i.imgur.com/DHyRWc0.png",
     "url": "https://183.giatvcdn.com/ssh101/ssh101/tvmontana10tv/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "TVMontanaCanal10.do@SD"
+    "tvg-id": "TVMontanaCanal10.do@SD",
+    "country": "DO"
   },
   {
     "name": "TV MONTAÑA",
@@ -1847,7 +1848,8 @@
     "logo": "https://i.postimg.cc/tC0X4tkK/TELECOMERCIO.jpg",
     "url": "https://streaming.grupomediosdelnorte.com:19360/telecomerciotv/telecomerciotv.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "telecomercio.do@SD"
+    "tvg-id": "telecomercio.do@SD",
+    "country": "DO"
   },
   {
     "name": "TELECONTACTO 57",
@@ -2041,7 +2043,8 @@
     "logo": "https://i.imgur.com/jizId9Z.png",
     "url": "https://ss2.tvrdomi.com:1936/nuevaisabelatv/nuevaisabelatv/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "TNICanal51.do@SD"
+    "tvg-id": "TNICanal51.do@SD",
+    "country": "DO"
   },
   {
     "name": "Tom And Jerry (720p) [Not 24/7]",
