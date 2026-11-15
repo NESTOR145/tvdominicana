@@ -2,16 +2,16 @@ name: Generar Guía de Programación (EPG)
 
 on:
   schedule:
-    # Se ejecuta a las 02:00, 08:00, 14:00 y 20:00 (UTC),
-    # 30 min después de "Limpiar canales caídos" y 2h después de "Agregar canales".
-    - cron: '0 2,8,14,20 * * *'  # <-- AJUSTADO
+    # 30 min después de "Limpiar canales caídos" (que ahora puede tardar hasta 90 min)
+    # y 3h 30min después de "Agregar canales" (que ahora puede tardar hasta 60 min).
+    - cron: '30 3,9,15,21 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  # 🚨 CRÍTICO: Mismo grupo que "agregar" y "limpiar" para que nunca se pisen al hacer push.
+  # Mismo grupo que "agregar" y "limpiar" para que nunca se pisen al hacer push.
   group: canales
   cancel-in-progress: false
 
