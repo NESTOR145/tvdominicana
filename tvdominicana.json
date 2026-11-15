@@ -138,6 +138,13 @@
     "language": "es"
   },
   {
+    "name": "TV Montana Canal 10 (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/DHyRWc0.png",
+    "url": "https://183.giatvcdn.com/ssh101/ssh101/tvmontana10tv/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "TVMontanaCanal10.do@SD"
+  },
+  {
     "name": "TV MONTAÑA",
     "logo": "https://i.postimg.cc/SN4c6MB2/TV-MONTANA.jpg",
     "url": "https://lbgo.bozztv.com/ssh101/ssh101/tvmontana10tv/playlist.m3u8",
@@ -493,9 +500,9 @@
   {
     "name": "CAMU TV",
     "logo": "https://i.postimg.cc/mgB4pZhZ/CAMU-TV.jpg",
-    "url": "https://live20.bozztv.com/akamaissh101/ssh101/camutv/playlist.m3u8",
+    "url": "https://183.giatvcdn.com/ssh101/ssh101/camutv/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "camutv.do@SD",
+    "tvg-id": "CamuTV.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -1836,6 +1843,13 @@
     "country": "DO"
   },
   {
+    "name": "TELECOMERCIO",
+    "logo": "https://i.postimg.cc/tC0X4tkK/TELECOMERCIO.jpg",
+    "url": "https://streaming.grupomediosdelnorte.com:19360/telecomerciotv/telecomerciotv.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "telecomercio.do@SD"
+  },
+  {
     "name": "TELECONTACTO 57",
     "logo": "https://i.postimg.cc/3NbRVfPc/TELECONTACTO-57.jpg",
     "url": "https://streaming.grupomediosdelnorte.com:19360/telecontacto/telecontacto.m3u8",
@@ -2021,6 +2035,13 @@
     "tvg-id": "tn1canal51.do@SD",
     "country": "DO",
     "language": "es"
+  },
+  {
+    "name": "TNI Canal51 (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/jizId9Z.png",
+    "url": "https://ss2.tvrdomi.com:1936/nuevaisabelatv/nuevaisabelatv/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "TNICanal51.do@SD"
   },
   {
     "name": "Tom And Jerry (720p) [Not 24/7]",
@@ -2385,6 +2406,13 @@
     "tvg-id": "AVIRewind.us@SD"
   },
   {
+    "name": "AXN (Spain)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
+    "url": "http://sultanios.alwaysdata.net/vavo.php?ID=4238619703",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "AXN.es@SD"
+  },
+  {
     "name": "AXN Latin America (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
     "url": "http://138.121.15.230:9002/AXN/index.m3u8",
@@ -2404,6 +2432,13 @@
     "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/10.m3u8",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "AXNLatinAmerica.us@South"
+  },
+  {
+    "name": "AXN Movies (Spain)",
+    "logo": "https://static.wikia.nocookie.net/logopedia/images/d/d2/AXN_Movies_logo.svg/revision/latest/scale-to-width-down/512",
+    "url": "http://sultanios.alwaysdata.net/vavo.php?ID=2493319111",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "AXNMovies.es@SD"
   },
   {
     "name": "Az Cinema (1080p)",
@@ -2790,6 +2825,41 @@
     "url": "https://jmp2.uk/plu-63eb95baa99571000898a078.m3u8",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "MacGyver.us@LatAm"
+  },
+  {
+    "name": "Maxcine (720p)",
+    "logo": "https://gia.tv/streams/pptv/208138.png",
+    "url": "https://183.giatvcdn.com/giatvplayout7/giatv-208138/playlist.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "Maxcine.us@HD"
+  },
+  {
+    "name": "Maxcine 2 (720p)",
+    "logo": "https://gia.tv/streams/pptv/209163.png",
+    "url": "https://183.giatvcdn.com/giatvplayout7/giatv-209163/playlist.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "Maxcine2.us@HD"
+  },
+  {
+    "name": "Maxcine Comedy (720p)",
+    "logo": "https://gia.tv/streams/pptv/208730.png",
+    "url": "https://183.giatvcdn.com/giatvplayout7/giatv-208730/playlist.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "MaxcineComedy.us@HD"
+  },
+  {
+    "name": "Maxcine Family (720p)",
+    "logo": "https://gia.tv/streams/pptv/208817.png",
+    "url": "https://183.giatvcdn.com/giatvplayout7/giatv-208817/playlist.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "MaxcineFamily.us@HD"
+  },
+  {
+    "name": "Maxcine Kids (720p)",
+    "logo": "https://gia.tv/streams/pptv/209909.png",
+    "url": "https://183.giatvcdn.com/giatvplayout7/giatv-209909/playlist.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "MaxcineKids.us@HD"
   },
   {
     "name": "Medium (Germany)",
@@ -3965,6 +4035,13 @@
     "group-title": "ANIME-INFANTIL",
     "tvg-id": "ducktv",
     "language": "es"
+  },
+  {
+    "name": "El Chavo TV (720p)",
+    "logo": "https://gia.tv/streams/pptv/211465.png",
+    "url": "https://183.giatvcdn.com/giatvplayout7/giatv-211465/playlist.m3u8",
+    "group-title": "ANIME-INFANTIL",
+    "tvg-id": "ElChavoTV.mx@HD"
   },
   {
     "name": "EnerGeek (1080p) [Geo-blocked]",
