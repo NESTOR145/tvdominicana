@@ -3690,6 +3690,13 @@
     "language": "es"
   },
   {
+    "name": "TVS venezuela",
+    "logo": "https://i.postimg.cc/PfgKNwQV/TVS-MARACAY.jpg",
+    "url": "https://vcp10.myplaytv.com/tvs/tvs/playlist.m3u8?PlaylistM3UCL",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "tvsmaracay",
+  },
+  {
     "name": "123TV (480p)",
     "logo": "https://i.imgur.com/xXGeZms.png",
     "url": "http://200.59.191.177:8000/play/a0lb/index.m3u8",
