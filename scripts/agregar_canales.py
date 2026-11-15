@@ -1,288 +1,144 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-agregar_canales.py
-------------------
-Descarga listas M3U remotas, valida cada canal y agrega a tvdominicana.json
-solo los canales online que aún no existan.
-"""
+name: Agregar canales online desde lista remota
 
-import sys
-import unicodedata
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from pathlib import Path
+on:
+  schedule:
+    - cron: '0 0,6,12,18 * * *'
+  workflow_dispatch:
 
-import requests
+permissions:
+  contents: write
 
-from canales_common import (
-    MAX_HILOS,
-    TIMEOUT_DESCARGA_M3U,
-    USER_AGENT,
-    cargar_json_seguro,
-    clave_orden,
-    guardar_json_atomico,
-    log,
-    normalizar_categoria,
-    normalizar_nombre,
-    normalizar_url,
-    parsear_m3u,
-    probar_enlace,
-)
+concurrency:
+  group: canales
+  cancel-in-progress: false
 
-JSON_PATH = Path("tvdominicana.json")
+jobs:
+  agregar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-# --- CONFIGURACIÓN DE LISTAS REMOTAS ---
-URLS_SIN_FILTRO = [
-    # Listas originales
-    "https://raw.githubusercontent.com/NESTOR145/miscanalesdetv/refs/heads/main/todosmiscanales.m3u",
-    "https://iptv-org.github.io/iptv/countries/do.m3u",
-    # --- 17 listas iptv-org por país (sin filtro) ---
-    "https://iptv-org.github.io/iptv/countries/pe.m3u",
-    "https://iptv-org.github.io/iptv/countries/cl.m3u",
-    "https://iptv-org.github.io/iptv/countries/ec.m3u",
-    "https://iptv-org.github.io/iptv/countries/pr.m3u",
-    "https://iptv-org.github.io/iptv/countries/ar.m3u",
-    "https://iptv-org.github.io/iptv/countries/co.m3u",
-    "https://iptv-org.github.io/iptv/countries/ve.m3u",
-    "https://iptv-org.github.io/iptv/countries/cu.m3u",
-    "https://iptv-org.github.io/iptv/countries/gt.m3u",
-    "https://iptv-org.github.io/iptv/countries/hn.m3u",
-    "https://iptv-org.github.io/iptv/countries/sv.m3u",
-    "https://iptv-org.github.io/iptv/countries/ni.m3u",
-    "https://iptv-org.github.io/iptv/countries/cr.m3u",
-    "https://iptv-org.github.io/iptv/countries/pa.m3u",
-    "https://iptv-org.github.io/iptv/countries/uy.m3u",
-    "https://iptv-org.github.io/iptv/countries/py.m3u",
-    "https://iptv-org.github.io/iptv/countries/bo.m3u",
-]
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-URL_MEXICO = "https://iptv-org.github.io/iptv/countries/mx.m3u"
+      - name: Instalar dependencias
+        run: pip install "requests==2.32.3"
 
-URLS_CON_FILTRO = [
-    "https://iptv-org.github.io/iptv/languages/spa.m3u",
-    "https://www.tdtchannels.com/lists/tv.m3u8",
-    URL_MEXICO,
-]
+      - name: Validar JSON (falla rápido si está corrupto)
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          p = pathlib.Path("tvdominicana.json")
+          if not p.exists():
+              print(f"AVISO: {p} no existe. Se crea vacío.")
+              p.write_text("[]", encoding="utf-8")
+          else:
+              texto = p.read_text(encoding="utf-8-sig").strip()
+              if not texto:
+                  print(f"AVISO: {p} está vacío. Se reinicia a [].")
+                  p.write_text("[]", encoding="utf-8")
+              else:
+                  data = json.loads(texto)
+                  assert isinstance(data, list), f"{p} no es lista plana"
+                  print(f"OK: {p} es válido ({len(data)} canales).")
+          PY
 
-# --- FILTRO DE GRUPOS PERMITIDOS (para SPA y TDTChannels) ---
-GRUPOS_PERMITIDOS = {
-    "movies", "movie", "series", "classic", "cine", "peliculas", "película",
-    "animation", "anime", "kids", "family", "infantil", "ninos", "dibujos",
-    "music", "musica", "música", "sports", "deportes",
-    "documentary", "documental", "news", "noticias",
-    "dominicano", "dominicana",
-    "generalistas", "informativos", "deportivos", "infantiles",
-    "musicales", "religiosos", "eventuales",
-}
+      - name: Ejecutar agregación
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: python scripts/agregar_canales.py
 
+      - name: Validar JSON generado (falla si hay errores graves)
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          p = pathlib.Path("tvdominicana.json")
+          data = json.loads(p.read_text(encoding="utf-8-sig"))
 
-def es_grupo_permitido(group_title: str) -> bool:
-    if not group_title:
-        return False
-    for p in group_title.split(";"):
-        p_norm = unicodedata.normalize("NFKD", p).encode("ascii", "ignore").decode().lower().strip()
-        if p_norm in GRUPOS_PERMITIDOS:
-            return True
-    return False
+          errores = []
+          warnings = []
 
+          if len(data) == 0:
+              errores.append("JSON vacío tras agregación")
 
-def es_canal_valido_mexico(canal: dict) -> bool:
-    """Filtro específico para México: sin geo-blocked, tvg-id limpio y .m3u8."""
-    nombre = canal.get("name", "")
-    if "[Geo-blocked]" in nombre or "[Geo-bloqueado]" in nombre:
-        return False
-    tvg_id = canal.get("_tvg_id", "").strip()
-    if not tvg_id or any(ch in tvg_id for ch in "[]() "):
-        return False
-    url = canal.get("url", "").strip()
-    if not url.startswith("http") or ".m3u8" not in url:
-        return False
-    return True
+          CATS_OK = {"DOMINICANOS", "PELICULAS Y SERIES", "ANIME-INFANTIL", "NOTICIAS",
+                     "NOVELAS", "DEPORTES", "MUSICA", "RELIGION Y CULTURA",
+                     "VARIEDADES", "GENERAL"}
+          cats_invalidas = {}
+          for c in data:
+              cat = (c.get("group-title") or "").upper()
+              if cat not in CATS_OK:
+                  cats_invalidas[cat] = cats_invalidas.get(cat, 0) + 1
+          if cats_invalidas:
+              errores.append(f"Categorías inválidas ({len(cats_invalidas)}): {dict(list(cats_invalidas.items())[:5])}")
 
+          PRIORITY = [
+              "AME TV", "RTVD 4-R.D", "TELEMICRO", "DIGITAL 15", "TELECENTRO",
+              "ANTENA 7", "ANTENA 21", "TELESISTEMA", "TELE ANTILLAS", "COLOR VISION",
+              "CINEVISION", "ALCARRIZOS TV", "CONSTANZA TV", "TELEALTURA", "TV MONTAÑA",
+              "AGROTENDENCIAS TV", "TS TELESIGLO", "SANTIAGO TV", "CDN", "NOTICIAS 16",
+              "CDN DEPORTES", "CORAL TV", "NARANJA TV", "RNN CANAL 27", "VISION TV",
+              "PERAVIA VISION", "BANI VISION", "TLSD", "READY HD", "HERMANAS MIRABAL TV",
+              "DIGITAL 809", "CHINOLA TV", "BELLAVISION",
+          ]
+          nombres_texto = " ".join([(c.get("name") or "").upper() for c in data])
+          faltantes = [p for p in PRIORITY if p.upper() not in nombres_texto]
+          if faltantes:
+              warnings.append(f"⚠️ {len(faltantes)} de los 33 prioritarios no están: {faltantes[:5]}...")
 
-def descargar_m3u(url: str):
-    try:
-        log(f"→ Descargando: {url}")
-        r = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT_DESCARGA_M3U)
-        r.raise_for_status()
-        log(f"  OK: {len(r.text):,} bytes")
-        return r.text
-    except requests.RequestException as e:
-        log(f"  ERROR: {e}")
-        return None
+          for w in warnings:
+              print(f"::warning::{w}")
+          if errores:
+              for e in errores:
+                  print(f"::error::{e}")
+              sys.exit(1)
 
+          print(f"OK: {len(data)} canales. Categorías válidas.")
+          PY
 
-def validar_canal_nuevo(canal):
-    url = canal.get("url")
-    if not url:
-        return None
-    if probar_enlace(url, canal.get("headers")) == "ok":
-        return canal
-    return None
+      - name: Subir log y JSON (siempre)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agregar-resultado
+          path: |
+            tvdominicana.json
+          if-no-files-found: ignore
 
+      - name: Guardar cambios (robusto)
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-def validar_actualizacion(canal_nuevo, canal_existente):
-    url_vieja = canal_existente.get("url", "")
-    if url_vieja and probar_enlace(url_vieja, canal_existente.get("headers"), intentos=2, pausa=2.0) == "ok":
-        return "conservar"
-    if probar_enlace(canal_nuevo.get("url"), canal_nuevo.get("headers")) == "ok":
-        return "actualizar"
-    return "conservar_caida"
+          git add tvdominicana.json
 
+          if git diff --cached --quiet; then
+            echo "Sin cambios que guardar."
+            exit 0
+          fi
 
-def main() -> None:
-    log("=" * 60)
-    log("AGREGAR CANALES ONLINE")
-    log("=" * 60)
+          git commit -m "Auto: agregar canales online desde lista remota"
 
-    json_actual = cargar_json_seguro(JSON_PATH, default=[])
-    if json_actual is None:
-        json_actual = []
-    if not isinstance(json_actual, list):
-        log("ERROR: JSON no es lista plana.")
-        sys.exit(1)
+          for i in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "Push correcto en intento $i."
+              exit 0
+            fi
+            echo "Push falló. Reintentando con rebase..."
+            git fetch origin main
+            git rebase origin/main || { echo "Conflicto real en rebase. Abortando."; git rebase --abort; exit 1; }
+            sleep 5
+          done
 
-    log(f"Canales en JSON actual: {len(json_actual)}")
-
-    candidatos = []
-
-    for url in URLS_SIN_FILTRO:
-        contenido = descargar_m3u(url)
-        if contenido:
-            canales = parsear_m3u(contenido)
-            log(f"  {url}: {len(canales)} canales (sin filtro)")
-            candidatos.extend((c, None) for c in canales)
-
-    for url in URLS_CON_FILTRO:
-        contenido = descargar_m3u(url)
-        if contenido:
-            canales = parsear_m3u(contenido)
-            tipo = "mexico" if url == URL_MEXICO else "categoria"
-            log(f"  {url}: {len(canales)} canales (filtro {tipo})")
-            candidatos.extend((c, tipo) for c in canales)
-
-    if not candidatos:
-        log("Nada que procesar.")
-        return
-
-    urls_existentes = {normalizar_url(c.get("url", "")) for c in json_actual if c.get("url")}
-    mapa_existentes = {}
-    for c in json_actual:
-        n = normalizar_nombre(c.get("name", ""))
-        if n:
-            mapa_existentes[n] = c
-
-    vistos_url = set()
-    vistos_nombre = set()
-    a_validar = []
-    dup = 0
-    ign_filtro = 0
-
-    for c, tipo in candidatos:
-        u = c.get("url")
-        if not u:
-            continue
-        un = normalizar_url(u)
-        nom = normalizar_nombre(c.get("name", ""))
-        cat = c.get("group-title", "")
-        clave = nom if nom else un
-
-        if un in urls_existentes or un in vistos_url:
-            dup += 1
-            continue
-
-        if clave in mapa_existentes:
-            vistos_url.add(un)
-            a_validar.append((c, "upd", mapa_existentes[clave]))
-            continue
-
-        if clave in vistos_nombre:
-            dup += 1
-            continue
-
-        if tipo == "categoria" and not es_grupo_permitido(cat):
-            ign_filtro += 1
-            continue
-        if tipo == "mexico" and not es_canal_valido_mexico(c):
-            ign_filtro += 1
-            continue
-
-        vistos_url.add(un)
-        if clave:
-            vistos_nombre.add(clave)
-        a_validar.append((c, "nuevo", None))
-
-    log(f"Candidatos: {len(a_validar)} | Ignorados: {ign_filtro} | Duplicados: {dup}")
-
-    if not a_validar:
-        log("Nada que validar.")
-        return
-
-    log(f"Validando {len(a_validar)} canales...")
-    nuevos = []
-    upd_url = 0
-    conservados = 0
-    caidos = 0
-
-    with ThreadPoolExecutor(max_workers=MAX_HILOS) as ex:
-        futuros = {}
-        for canal, modo, existente in a_validar:
-            if modo == "upd":
-                futuros[ex.submit(validar_actualizacion, canal, existente)] = (canal, modo, existente)
-            else:
-                futuros[ex.submit(validar_canal_nuevo, canal)] = (canal, modo, existente)
-
-        for f in as_completed(futuros):
-            canal, modo, existente = futuros[f]
-            try:
-                res = f.result()
-            except Exception as e:
-                log(f"  ERROR {canal.get('name','?')}: {e}")
-                res = None
-
-            if modo == "upd":
-                if res == "actualizar":
-                    log(f"  🔄 {canal.get('name','?')}")
-                    existente["url"] = canal["url"]
-                    if canal.get("_tvg_id"):
-                        existente["tvg-id"] = canal["_tvg_id"]
-                    if canal.get("headers"):
-                        existente["headers"] = canal["headers"]
-                    upd_url += 1
-                else:
-                    conservados += 1
-            else:
-                if res:
-                    nuevos.append(res)
-                    log(f"  ✅ {canal.get('name','(sin nombre)')}")
-                else:
-                    log(f"  ❌ {canal.get('name','(sin nombre)')}")
-                    caidos += 1
-
-    for c in nuevos:
-        cat_o = c.get("group-title", "")
-        tvg = c.pop("_tvg_id", "")
-        c["group-title"] = normalizar_categoria(cat_o, tvg, c.get("name", ""))
-        if tvg:
-            c["tvg-id"] = tvg
-        if not c.get("headers"):
-            c.pop("headers", None)
-
-    json_actual.extend(nuevos)
-
-    log("=" * 60)
-    log(f"Nuevos: {len(nuevos)} | URLs actualizadas: {upd_url} | Conservados: {conservados}")
-    log(f"Ignorados filtro: {ign_filtro} | Caídos: {caidos} | Duplicados: {dup}")
-
-    if nuevos or upd_url > 0:
-        json_actual.sort(key=clave_orden)
-        guardar_json_atomico(JSON_PATH, json_actual)
-        log(f"JSON actualizado. Total: {len(json_actual)}")
-    else:
-        log("Sin cambios.")
-
-    log("=" * 60)
-
-
-if __name__ == "__main__":
-    main()
+          echo "No se pudo hacer push tras 3 intentos."
+          exit 1
