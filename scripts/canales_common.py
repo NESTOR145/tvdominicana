@@ -6,7 +6,7 @@ canales_common.py
 Utilidades compartidas por agregar_canales.py y limpiar_canales.py.
 """
 
-import hashlib  # 🚨 NUEVO: necesario para generar_channel_id()
+import hashlib
 import json
 import os
 import re
@@ -62,27 +62,41 @@ CAT_ORDER = {
 }
 
 GROUP_TO_CATEGORY = {
-    "movies": CAT_PELICULAS, "series": CAT_PELICULAS, "classic": CAT_PELICULAS,
-    "peliculas": CAT_PELICULAS, "película": CAT_PELICULAS, "cine": CAT_PELICULAS,
-    "cineseries": CAT_PELICULAS, "cine-series": CAT_PELICULAS,
-    
-    "animation": CAT_ANIME, "kids": CAT_ANIME, "family": CAT_ANIME,
-    "infantil": CAT_ANIME, "ninos": CAT_ANIME, "dibujos": CAT_ANIME,
-    "infantiles": CAT_ANIME,  # <-- NUEVO (TDTChannels)
-    
+    # --- Películas y series ---
+    "movies": CAT_PELICULAS, "movie": CAT_PELICULAS,
+    "series": CAT_PELICULAS, "classic": CAT_PELICULAS,
+    "peliculas": CAT_PELICULAS, "película": CAT_PELICULAS,
+    "cine": CAT_PELICULAS, "cineseries": CAT_PELICULAS,
+    "cine-series": CAT_PELICULAS,
+
+    # --- Infantil / anime ---
+    "animation": CAT_ANIME, "anime": CAT_ANIME,
+    "kids": CAT_ANIME, "family": CAT_ANIME,
+    "infantil": CAT_ANIME, "infantiles": CAT_ANIME,
+    "ninos": CAT_ANIME, "dibujos": CAT_ANIME,
+
+    # --- Noticias ---
     "news": CAT_NOTICIAS, "noticias": CAT_NOTICIAS,
-    "informativos": CAT_NOTICIAS,  # <-- NUEVO (TDTChannels)
-    
+    "informativos": CAT_NOTICIAS,
+
+    # --- Deportes ---
     "sports": CAT_DEPORTES, "deportes": CAT_DEPORTES,
-    "deportivos": CAT_DEPORTES,  # <-- NUEVO (TDTChannels)
-    
+    "deportivos": CAT_DEPORTES,
+
+    # --- Música ---
     "music": CAT_MUSICA, "musica": CAT_MUSICA, "música": CAT_MUSICA,
-    "musicales": CAT_MUSICA,  # <-- NUEVO (TDTChannels)
-    
+    "musicales": CAT_MUSICA,
+
+    # --- Religión / cultura ---
     "religious": CAT_RELIGION, "religion": CAT_RELIGION,
-    "religiosos": CAT_RELIGION,  # <-- NUEVO (TDTChannels)
-    
+    "religiosos": CAT_RELIGION,
     "culture": CAT_RELIGION, "cultura": CAT_RELIGION,
+
+    # --- Novelas ---
+    "novela": CAT_NOVELAS, "novelas": CAT_NOVELAS,
+    "telenovela": CAT_NOVELAS, "telenovelas": CAT_NOVELAS,
+
+    # --- Variedades ---
     "entertainment": CAT_VARIEDADES, "entretenimiento": CAT_VARIEDADES,
     "comedy": CAT_VARIEDADES, "lifestyle": CAT_VARIEDADES,
     "cooking": CAT_VARIEDADES, "travel": CAT_VARIEDADES,
@@ -90,11 +104,13 @@ GROUP_TO_CATEGORY = {
     "education": CAT_VARIEDADES, "science": CAT_VARIEDADES,
     "documentary": CAT_VARIEDADES, "relax": CAT_VARIEDADES,
     "plutotv": CAT_VARIEDADES,
-    
+    "outdoor": CAT_VARIEDADES,
+
+    # --- General ---
     "general": CAT_GENERAL, "public": CAT_GENERAL,
-    "generalistas": CAT_GENERAL,  # <-- NUEVO (TDTChannels)
+    "generalistas": CAT_GENERAL,
     "legislative": CAT_GENERAL, "weather": CAT_GENERAL,
-    "eventuales": CAT_GENERAL,  # <-- NUEVO (TDTChannels)
+    "eventuales": CAT_GENERAL,
     "shop": CAT_GENERAL, "undefined": CAT_GENERAL,
 }
 
@@ -119,7 +135,6 @@ DOM_NAME_HINTS = ("dominicana", "dominicano", "quisqueya")
 
 RE_ATTR = re.compile(r'([\w-]+)="([^"]*)"')
 
-# NUEVO: Filtro mejorado para limpiar resoluciones y textos basura
 SUFIJOS_IGNORAR = re.compile(
     r"\b(hd|sd|fhd|uhd|4k|8k|h265|hevc|\+1|\+2|\+3|"
     r"latino|lat|español|esp|castellano|"
@@ -205,21 +220,14 @@ def normalizar_nombre(n: str) -> str:
     n = unicodedata.normalize("NFKD", n)
     n = "".join(c for c in n if not unicodedata.combining(c))
     n = n.lower()
-    
-    n = re.sub(r"\([^)]*\)", " ", n) 
-    n = re.sub(r"\[[^\]]*\]", " ", n) 
-    
+    n = re.sub(r"\([^)]*\)", " ", n)
+    n = re.sub(r"\[[^\]]*\]", " ", n)
     n = SUFIJOS_IGNORAR.sub(" ", n)
-    
     n = re.sub(r"[^a-z0-9\s]", " ", n)
-    
     n = " ".join(n.split())
-    
     n = n.replace(" ", "")
-    
     n = n.replace("colorvision9", "colorvision")
     n = n.replace("cdn37", "cdn")
-    
     return n
 
 
@@ -251,7 +259,7 @@ def normalizar_categoria(valor: str, tvg_id: str = "", nombre: str = "") -> str:
     }
     for p in partes:
         if p in CATS_CANONICAS:
-            return p 
+            return p
 
     for p in partes:
         p_norm = unicodedata.normalize("NFKD", p).encode("ascii", "ignore").decode().lower().strip()
@@ -450,21 +458,7 @@ def probar_enlace(url: str, headers=None, intentos: int = 3, pausa: float = 3.0)
     return "temporal" if temporal_visto else "fallo"
 
 
-# ============================================================
-# 🚨 NUEVO: Utilidades para la EPG (Guía de Programación)
-# ============================================================
 def generar_channel_id(url: str, name: str) -> str:
-    """
-    Genera el MISMO channelId que usa la app Android (ChannelDTO.kt).
-    
-    La app hace:
-        safe_url  = url.trim()
-        safe_name = name.trim()
-        sha1("$safe_url|$safe_name")[:32]
-    
-    Esta función reproduce exactamente esa lógica para que los IDs
-    coincidan entre el JSON de canales y el JSON de la EPG.
-    """
     safe_url = (url or "").strip()
     safe_name = (name or "").strip()
     if not safe_url and not safe_name:
