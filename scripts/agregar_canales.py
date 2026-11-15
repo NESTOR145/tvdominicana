@@ -3,13 +3,8 @@
 """
 agregar_canales.py
 ------------------
-Descarga listas M3U remotas, valida cada canal con validación REAL y agrega a
-tvdominicana.json SOLO los canales online que aún no existan.
-
-Lógica de actualización:
-- Si un canal ya existe y su URL actual funciona, se conserva intacta.
-- Si un canal ya existe pero su URL actual está caída, se prueba la nueva URL.
-  Si la nueva funciona, se actualiza. Si no, se conserva la vieja.
+Descarga listas M3U remotas, valida cada canal y agrega a tvdominicana.json
+solo los canales online que aún no existan.
 """
 
 import sys
@@ -38,60 +33,86 @@ JSON_PATH = Path("tvdominicana.json")
 
 # --- CONFIGURACIÓN DE LISTAS REMOTAS ---
 URLS_SIN_FILTRO = [
+    # Listas originales
     "https://raw.githubusercontent.com/NESTOR145/miscanalesdetv/refs/heads/main/todosmiscanales.m3u",
     "https://iptv-org.github.io/iptv/countries/do.m3u",
+    # --- 17 listas iptv-org por país (sin filtro) ---
+    "https://iptv-org.github.io/iptv/countries/pe.m3u",
+    "https://iptv-org.github.io/iptv/countries/cl.m3u",
+    "https://iptv-org.github.io/iptv/countries/ec.m3u",
+    "https://iptv-org.github.io/iptv/countries/pr.m3u",
+    "https://iptv-org.github.io/iptv/countries/ar.m3u",
+    "https://iptv-org.github.io/iptv/countries/co.m3u",
+    "https://iptv-org.github.io/iptv/countries/ve.m3u",
+    "https://iptv-org.github.io/iptv/countries/cu.m3u",
+    "https://iptv-org.github.io/iptv/countries/gt.m3u",
+    "https://iptv-org.github.io/iptv/countries/hn.m3u",
+    "https://iptv-org.github.io/iptv/countries/sv.m3u",
+    "https://iptv-org.github.io/iptv/countries/ni.m3u",
+    "https://iptv-org.github.io/iptv/countries/cr.m3u",
+    "https://iptv-org.github.io/iptv/countries/pa.m3u",
+    "https://iptv-org.github.io/iptv/countries/uy.m3u",
+    "https://iptv-org.github.io/iptv/countries/py.m3u",
+    "https://iptv-org.github.io/iptv/countries/bo.m3u",
 ]
+
+URL_MEXICO = "https://iptv-org.github.io/iptv/countries/mx.m3u"
 
 URLS_CON_FILTRO = [
     "https://iptv-org.github.io/iptv/languages/spa.m3u",
-    "https://www.tdtchannels.com/lists/tv.m3u8", # <--- URL OFICIAL DE TDTCHANNELS
+    "https://www.tdtchannels.com/lists/tv.m3u8",
+    URL_MEXICO,
 ]
 
-# --- FILTRO DE GRUPOS PERMITIDOS ---
+# --- FILTRO DE GRUPOS PERMITIDOS (para SPA y TDTChannels) ---
 GRUPOS_PERMITIDOS = {
-    # Categorías originales
     "movies", "movie", "series", "classic", "cine", "peliculas", "película",
     "animation", "anime", "kids", "family", "infantil", "ninos", "dibujos",
     "music", "musica", "música", "sports", "deportes",
     "documentary", "documental", "news", "noticias",
     "dominicano", "dominicana",
-    
-    # --- NUEVOS PARA TDTCHANNELS (ESPAÑA) ---
-    "generalistas", 
-    "informativos", 
-    "deportivos", 
-    "infantiles", 
-    "musicales", 
-    "religiosos", 
-    "eventuales"
+    "generalistas", "informativos", "deportivos", "infantiles",
+    "musicales", "religiosos", "eventuales",
 }
+
 
 def es_grupo_permitido(group_title: str) -> bool:
     if not group_title:
         return False
-    partes = group_title.split(";")
-    for p in partes:
+    for p in group_title.split(";"):
         p_norm = unicodedata.normalize("NFKD", p).encode("ascii", "ignore").decode().lower().strip()
         if p_norm in GRUPOS_PERMITIDOS:
             return True
     return False
 
 
+def es_canal_valido_mexico(canal: dict) -> bool:
+    """Filtro específico para México: sin geo-blocked, tvg-id limpio y .m3u8."""
+    nombre = canal.get("name", "")
+    if "[Geo-blocked]" in nombre or "[Geo-bloqueado]" in nombre:
+        return False
+    tvg_id = canal.get("_tvg_id", "").strip()
+    if not tvg_id or any(ch in tvg_id for ch in "[]() "):
+        return False
+    url = canal.get("url", "").strip()
+    if not url.startswith("http") or ".m3u8" not in url:
+        return False
+    return True
+
+
 def descargar_m3u(url: str):
     try:
-        log(f"→ Descargando lista M3U: {url}")
-        headers = {"User-Agent": USER_AGENT}
-        r = requests.get(url, headers=headers, timeout=TIMEOUT_DESCARGA_M3U)
+        log(f"→ Descargando: {url}")
+        r = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT_DESCARGA_M3U)
         r.raise_for_status()
-        log(f"  OK: {len(r.text):,} bytes recibidos.")
+        log(f"  OK: {len(r.text):,} bytes")
         return r.text
     except requests.RequestException as e:
-        log(f"  ERROR al descargar la lista: {e}")
+        log(f"  ERROR: {e}")
         return None
 
 
 def validar_canal_nuevo(canal):
-    """Valida un canal nuevo. Devuelve el canal si está online, None si no."""
     url = canal.get("url")
     if not url:
         return None
@@ -101,19 +122,9 @@ def validar_canal_nuevo(canal):
 
 
 def validar_actualizacion(canal_nuevo, canal_existente):
-    """
-    Valida si se debe actualizar un canal existente.
-    - Primero prueba la URL actual del existente (2 intentos para tolerar
-      hipos de red puntuales).
-    - Si la URL vieja funciona, devuelve "conservar".
-    - Si la URL vieja falla, prueba la nueva.
-      - Si la nueva funciona, devuelve "actualizar".
-      - Si la nueva falla, devuelve "conservar_caida".
-    """
     url_vieja = canal_existente.get("url", "")
     if url_vieja and probar_enlace(url_vieja, canal_existente.get("headers"), intentos=2, pausa=2.0) == "ok":
         return "conservar"
-    
     if probar_enlace(canal_nuevo.get("url"), canal_nuevo.get("headers")) == "ok":
         return "actualizar"
     return "conservar_caida"
@@ -121,176 +132,154 @@ def validar_actualizacion(canal_nuevo, canal_existente):
 
 def main() -> None:
     log("=" * 60)
-    log("AGREGAR CANALES ONLINE DESDE MÚLTIPLES LISTAS M3U")
+    log("AGREGAR CANALES ONLINE")
     log("=" * 60)
 
     json_actual = cargar_json_seguro(JSON_PATH, default=[])
     if json_actual is None:
         json_actual = []
     if not isinstance(json_actual, list):
-        log(f"ERROR: {JSON_PATH} no contiene una lista plana.")
+        log("ERROR: JSON no es lista plana.")
         sys.exit(1)
 
-    log(f"Canales en el JSON actual: {len(json_actual)}")
+    log(f"Canales en JSON actual: {len(json_actual)}")
 
-    todos_los_candidatos = []
+    candidatos = []
 
-    for url_remota in URLS_SIN_FILTRO:
-        contenido = descargar_m3u(url_remota)
+    for url in URLS_SIN_FILTRO:
+        contenido = descargar_m3u(url)
         if contenido:
-            canales_m3u = parsear_m3u(contenido)
-            log(f"Canales encontrados en {url_remota}: {len(canales_m3u)} (sin filtro)")
-            todos_los_candidatos.extend((c, False) for c in canales_m3u)
+            canales = parsear_m3u(contenido)
+            log(f"  {url}: {len(canales)} canales (sin filtro)")
+            candidatos.extend((c, None) for c in canales)
 
-    for url_remota in URLS_CON_FILTRO:
-        contenido = descargar_m3u(url_remota)
+    for url in URLS_CON_FILTRO:
+        contenido = descargar_m3u(url)
         if contenido:
-            canales_m3u = parsear_m3u(contenido)
-            log(f"Canales encontrados en {url_remota}: {len(canales_m3u)} (con filtro)")
-            todos_los_candidatos.extend((c, True) for c in canales_m3u)
+            canales = parsear_m3u(contenido)
+            tipo = "mexico" if url == URL_MEXICO else "categoria"
+            log(f"  {url}: {len(canales)} canales (filtro {tipo})")
+            candidatos.extend((c, tipo) for c in canales)
 
-    if not todos_los_candidatos:
-        log("Ninguna lista devolvió canales. Nada que hacer.")
+    if not candidatos:
+        log("Nada que procesar.")
         return
 
-    # --- PREPARAR ÍNDICES ---
     urls_existentes = {normalizar_url(c.get("url", "")) for c in json_actual if c.get("url")}
-
     mapa_existentes = {}
     for c in json_actual:
-        nom_limpio = normalizar_nombre(c.get("name", ""))
-        if nom_limpio:
-            mapa_existentes[nom_limpio] = c
+        n = normalizar_nombre(c.get("name", ""))
+        if n:
+            mapa_existentes[n] = c
 
-    # --- CLASIFICAR ---
     vistos_url = set()
     vistos_nombre = set()
     a_validar = []
-    descartados_dup = 0
-    ignorados_por_categoria = 0
+    dup = 0
+    ign_filtro = 0
 
-    for c, aplica_filtro in todos_los_candidatos:
+    for c, tipo in candidatos:
         u = c.get("url")
         if not u:
             continue
-        
         un = normalizar_url(u)
-        nom_limpio = normalizar_nombre(c.get("name", ""))
+        nom = normalizar_nombre(c.get("name", ""))
         cat = c.get("group-title", "")
-        
-        clave_nombre = nom_limpio if nom_limpio else un
+        clave = nom if nom else un
 
-        # 1. URL ya existe exactamente -> ignorar
         if un in urls_existentes or un in vistos_url:
-            descartados_dup += 1
+            dup += 1
             continue
 
-        # 2. Mismo nombre -> actualización condicional
-        if clave_nombre in mapa_existentes:
-            existente = mapa_existentes[clave_nombre]
+        if clave in mapa_existentes:
             vistos_url.add(un)
-            a_validar.append((c, True, existente))
+            a_validar.append((c, "upd", mapa_existentes[clave]))
             continue
 
-        # 3. Duplicado dentro de las listas remotas -> ignorar
-        if clave_nombre in vistos_nombre:
-            descartados_dup += 1
+        if clave in vistos_nombre:
+            dup += 1
             continue
 
-        # 4. Canal NUEVO -> Aplicar filtro SOLO si viene de una URL con filtro
-        if aplica_filtro and not es_grupo_permitido(cat):
-            ignorados_por_categoria += 1
+        if tipo == "categoria" and not es_grupo_permitido(cat):
+            ign_filtro += 1
+            continue
+        if tipo == "mexico" and not es_canal_valido_mexico(c):
+            ign_filtro += 1
             continue
 
         vistos_url.add(un)
-        if clave_nombre:
-            vistos_nombre.add(clave_nombre)
-        a_validar.append((c, False, None))
+        if clave:
+            vistos_nombre.add(clave)
+        a_validar.append((c, "nuevo", None))
 
-    log(f"Candidatos: {len(a_validar)} | Ignorados por categoría: {ignorados_por_categoria} | Duplicados: {descartados_dup}")
+    log(f"Candidatos: {len(a_validar)} | Ignorados: {ign_filtro} | Duplicados: {dup}")
 
     if not a_validar:
-        log("Nada que validar. Nada que hacer.")
-        log("=" * 60)
+        log("Nada que validar.")
         return
 
-    # --- VALIDAR TODO EN PARALELO ---
-    log(f"Validando {len(a_validar)} canales con {MAX_HILOS} hilos...")
-    online_nuevos = []
-    actualizados_url = 0
+    log(f"Validando {len(a_validar)} canales...")
+    nuevos = []
+    upd_url = 0
     conservados = 0
-    descartados_por_caida = 0
+    caidos = 0
 
-    with ThreadPoolExecutor(max_workers=MAX_HILOS) as executor:
+    with ThreadPoolExecutor(max_workers=MAX_HILOS) as ex:
         futuros = {}
-        for canal, es_upd, existente in a_validar:
-            if es_upd:
-                futuros[executor.submit(validar_actualizacion, canal, existente)] = (canal, es_upd, existente)
+        for canal, modo, existente in a_validar:
+            if modo == "upd":
+                futuros[ex.submit(validar_actualizacion, canal, existente)] = (canal, modo, existente)
             else:
-                futuros[executor.submit(validar_canal_nuevo, canal)] = (canal, es_upd, existente)
+                futuros[ex.submit(validar_canal_nuevo, canal)] = (canal, modo, existente)
 
-        for futuro in as_completed(futuros):
-            canal, es_upd, existente = futuros[futuro]
+        for f in as_completed(futuros):
+            canal, modo, existente = futuros[f]
             try:
-                resultado = futuro.result()
+                res = f.result()
             except Exception as e:
-                log(f"  ERROR validando {canal.get('name', '?')}: {e}")
-                resultado = None
+                log(f"  ERROR {canal.get('name','?')}: {e}")
+                res = None
 
-            if es_upd:
-                if resultado == "actualizar":
-                    log(f"  🔄 {canal.get('name', '?')}: URL actualizada (vieja caída, nueva OK)")
+            if modo == "upd":
+                if res == "actualizar":
+                    log(f"  🔄 {canal.get('name','?')}")
                     existente["url"] = canal["url"]
-                    tvg_nuevo = canal.get("_tvg_id", "")
-                    if tvg_nuevo:
-                        existente["tvg-id"] = tvg_nuevo
+                    if canal.get("_tvg_id"):
+                        existente["tvg-id"] = canal["_tvg_id"]
                     if canal.get("headers"):
                         existente["headers"] = canal["headers"]
-                    actualizados_url += 1
-                elif resultado == "conservar":
-                    log(f"  ⏭️ {canal.get('name', '?')}: URL vieja funciona, se conserva")
-                    conservados += 1
+                    upd_url += 1
                 else:
-                    log(f"  ⏭️ {canal.get('name', '?')}: ambas URLs caídas, se conserva la vieja")
                     conservados += 1
             else:
-                if resultado:
-                    online_nuevos.append(resultado)
-                    log(f"  ✅ {canal.get('name', '(sin nombre)')}")
+                if res:
+                    nuevos.append(res)
+                    log(f"  ✅ {canal.get('name','(sin nombre)')}")
                 else:
-                    log(f"  ❌ {canal.get('name', '(sin nombre)')}")
-                    descartados_por_caida += 1
+                    log(f"  ❌ {canal.get('name','(sin nombre)')}")
+                    caidos += 1
 
-    # --- PROCESAR NUEVOS ---
-    for c in online_nuevos:
-        cat_original = c.get("group-title", "")
+    for c in nuevos:
+        cat_o = c.get("group-title", "")
         tvg = c.pop("_tvg_id", "")
-        nombre = c.get("name", "")
-        c["group-title"] = normalizar_categoria(cat_original, tvg, nombre)
+        c["group-title"] = normalizar_categoria(cat_o, tvg, c.get("name", ""))
         if tvg:
             c["tvg-id"] = tvg
         if not c.get("headers"):
             c.pop("headers", None)
 
-    json_actual.extend(online_nuevos)
+    json_actual.extend(nuevos)
 
-    # --- RESUMEN ---
     log("=" * 60)
-    log("Resumen:")
-    log(f"  Nuevos agregados:        {len(online_nuevos)}")
-    log(f"  URLs actualizadas:       {actualizados_url}")
-    log(f"  URLs conservadas:        {conservados}")
-    log(f"  Ignorados por categoría: {ignorados_por_categoria}")
-    log(f"  Descartados por caída:   {descartados_por_caida}")
-    log(f"  Descartados por dup:     {descartados_dup}")
+    log(f"Nuevos: {len(nuevos)} | URLs actualizadas: {upd_url} | Conservados: {conservados}")
+    log(f"Ignorados filtro: {ign_filtro} | Caídos: {caidos} | Duplicados: {dup}")
 
-    # --- GUARDAR SI HAY CAMBIOS ---
-    if online_nuevos or actualizados_url > 0:
+    if nuevos or upd_url > 0:
         json_actual.sort(key=clave_orden)
         guardar_json_atomico(JSON_PATH, json_actual)
-        log(f"JSON actualizado. Total de canales: {len(json_actual)}")
+        log(f"JSON actualizado. Total: {len(json_actual)}")
     else:
-        log("Sin cambios. JSON no se modificó.")
+        log("Sin cambios.")
 
     log("=" * 60)
 
