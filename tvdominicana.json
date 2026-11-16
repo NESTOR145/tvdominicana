@@ -3620,13 +3620,6 @@
     "tvg-id": "TVN3.cl@SD"
   },
   {
-    "name": "TVS MARACAY",
-    "logo": "https://i.postimg.cc/PfgKNwQV/TVS-MARACAY.jpg",
-    "url": "https://vcp10.myplaytv.com/tvs/tvs/playlist.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "tvsmaracay"
-  },
-  {
     "name": "TVS RETRO",
     "logo": "https://i.postimg.cc/W3sL5qPh/TVS-RETRO.png",
     "url": "https://cdn.streamhispanatv.net:3531/live/tvsretrogtlive.m3u8",
