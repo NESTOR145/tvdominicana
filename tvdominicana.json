@@ -3549,11 +3549,9 @@
   {
     "name": "TVS MARACAY",
     "logo": "https://i.postimg.cc/PfgKNwQV/TVS-MARACAY.jpg",
-    "url": "https://vcp10.myplaytv.com/tvs/tvs/playlist.m3u8?PlaylistM3UCL",
+    "url": "https://vcp10.myplaytv.com/tvs/tvs/playlist.m3u8",
     "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "tvsmaracay",
-    "country": "UN",
-    "language": "es"
+    "tvg-id": "tvsmaracay"
   },
   {
     "name": "TVS RETRO",
