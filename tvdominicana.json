@@ -86,9 +86,9 @@
   {
     "name": "TELEANTILLAS",
     "logo": "https://i.imgur.com/G1pJZkC.png",
-    "url": "https://hls.tvabierta.net/hls/010.m3u8",
+    "url": "http://45.171.108.253:8888/TELEANTILLAS/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "teleantillas.do@SD",
+    "tvg-id": "TeleAntillas.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -461,6 +461,13 @@
     "tvg-id": "bajotechotv.do@SD",
     "country": "DO",
     "language": "es"
+  },
+  {
+    "name": "Bebeto TV (1080p)",
+    "logo": "",
+    "url": "https://cloud5.livescast.com:19360/bebetotv/bebetotv.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "BebetoTV.do@SD"
   },
   {
     "name": "BOCA CHICA TV",
@@ -1921,6 +1928,13 @@
     "country": "DO"
   },
   {
+    "name": "Telenews TV (1080p)",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3878-294x165-FFFFFF.jpg",
+    "url": "https://stream1.28tv.online/TeleNewsCanal40/index.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "TelenewsTV.do@SD"
+  },
+  {
     "name": "TELENORD-CANAL 10",
     "logo": "https://i.postimg.cc/FzYCg7mJ/TELENORD.jpg",
     "url": "https://fox.hostlagarto.com:8081/telenord10/playlist.m3u8",
@@ -2098,6 +2112,13 @@
     "tvg-id": "TurismoHD.do@HD",
     "country": "DO",
     "language": "es"
+  },
+  {
+    "name": "Turismo RDTV (720p) [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3800-294x165-FFFFFF.jpg",
+    "url": "https://5790d294af2dc.streamlock.net/yosoyturismotv/live/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "TurismoRDTV.do@HD"
   },
   {
     "name": "TV 10-SAN JUAN",
@@ -2506,6 +2527,13 @@
     "tvg-id": "bjtjme",
     "country": "UN",
     "language": "es"
+  },
+  {
+    "name": "Bom Cine (576p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Logo-bom.svg/960px-Logo-bom.svg.png",
+    "url": "https://cdn78-at.azotosolutions.com/cdnedge39/Canale3/master.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "BomCine.es@SD"
   },
   {
     "name": "CANAL CINE DIOS",
@@ -3518,6 +3546,13 @@
     "tvg-id": "SonyMoviesLatinAmerica.us@SD"
   },
   {
+    "name": "Squirrel (576p)",
+    "logo": "https://i.imgur.com/9y8VcBr.png",
+    "url": "https://cdn78-at.azotosolutions.com/cdnedge39/Canale1/master.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "Squirrel.es@SD"
+  },
+  {
     "name": "Star Channel (Chile) (720p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png",
     "url": "http://138.121.15.230:9002/STAR-CHANNEL/index.m3u8",
@@ -3869,6 +3904,13 @@
     "tvg-id": "cartooon2",
     "country": "UN",
     "language": "es"
+  },
+  {
+    "name": "Cartoon Network (United States) [Not 24/7;Geo-blocked]",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png",
+    "url": "https://turnerlive.warnermediacdn.com/hls/live/2023160/tooneast/noslate/VIDEO_3_1928000.m3u8",
+    "group-title": "ANIME-INFANTIL",
+    "tvg-id": "CartoonNetwork.us@East"
   },
   {
     "name": "Cartoon Network (United States) West (1080p) [Geo-blocked]",
@@ -4886,6 +4928,13 @@
     "tvg-id": "M95TelevisionMarbella.es@SD"
   },
   {
+    "name": "Maya TV",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Maya_TV_logo.png/960px-Maya_TV_logo.png",
+    "url": "https://media.streambrothers.com:19360/8036/8036.m3u8",
+    "group-title": "NOTICIAS",
+    "tvg-id": "MayaTV.hn@SD"
+  },
+  {
     "name": "Mega TV (Paraguay) (1080p)",
     "logo": "https://i.imgur.com/CaA7l86.png",
     "url": "https://www.desde-paraguay.com/mega.m3u8",
@@ -5031,6 +5080,13 @@
     "url": "https://live-evg5.tv360.bitel.com.pe/bitel/qosqo/playlist.m3u8",
     "group-title": "NOTICIAS",
     "tvg-id": "QosqoTimes.pe@SD"
+  },
+  {
+    "name": "Quantica TV",
+    "logo": "https://i.imgur.com/6f8EYC2.jpeg",
+    "url": "https://videostream.shockmedia.com.ar:19360/quanticatv/quanticatv.m3u8",
+    "group-title": "NOTICIAS",
+    "tvg-id": "QuanticaTV.ar@SD"
   },
   {
     "name": "Radio 5",
@@ -6003,6 +6059,13 @@
     "url": "https://movil.ejeserver.com/live/lamoradatv.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "LaMoradaRadioTV.co@SD"
+  },
+  {
+    "name": "La Top 102.9 (720p)",
+    "logo": "https://i.imgur.com/ZqwLPag.jpg",
+    "url": "https://59d39900ebfb8.streamlock.net/top102/top102/playlist.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "LaTop1029.hn@SD"
   },
   {
     "name": "La Top 107.7 (720p)",
@@ -7822,6 +7885,13 @@
     "language": "es"
   },
   {
+    "name": "Alt Media TV",
+    "logo": "https://i.imgur.com/YkOgWMc.png",
+    "url": "https://video.hostingcaaguazu.com:19360/altmedia/altmedia.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "AltMediaTV.py@SD"
+  },
+  {
     "name": "AMERICA TV",
     "logo": "https://i.postimg.cc/rsQ6XvVZ/AMERICA-TV.png",
     "url": "https://live.gideo.video/americateve2/master.m3u8",
@@ -8234,6 +8304,13 @@
     "tvg-id": "colosaltv",
     "country": "UN",
     "language": "es"
+  },
+  {
+    "name": "Comedy Central Latin America (1080p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/960px-Comedy_Central_2018.svg.png",
+    "url": "http://190.93.224.42/COMEDY-CENTRAL/index.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "ComedyCentralLatinAmerica.us@Panregional"
   },
   {
     "name": "CONECTA TV",
@@ -9360,6 +9437,13 @@
     "language": "es"
   },
   {
+    "name": "Tele UV [Not 24/7]",
+    "logo": "https://i.imgur.com/8MdUH69.jpeg",
+    "url": "https://58fe359775f31.streamlock.net/tvuv/myStream/playlist.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "TeleUV.mx@SD"
+  },
+  {
     "name": "TELECOLOR HD",
     "logo": "https://i.postimg.cc/wxbJnK7q/TELECOLOR-HD.jpg",
     "url": "https://live.obslivestream.com/telecolormux/index.m3u8",
@@ -9525,6 +9609,13 @@
     "language": "es"
   },
   {
+    "name": "TVS MARACAY",
+    "logo": "https://i.postimg.cc/PfgKNwQV/TVS-MARACAY.jpg",
+    "url": "https://vcp10.myplaytv.com/tvs/tvs/playlist.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "tvsmaracay"
+  },
+  {
     "name": "Ultra Casanare TV (1080p) [Not 24/7]",
     "logo": "https://i.imgur.com/1voWgLI.png",
     "url": "https://eu1.servers10.com:8081/8072/index.m3u8",
@@ -9571,9 +9662,9 @@
   {
     "name": "UNIFE TV HD",
     "logo": "https://i.postimg.cc/52nSfDvZ/UNIFE-HD.jpg",
-    "url": "https://5dcabf026b188.streamlock.net/StreamUnife/livestream/playlist.m3u8",
+    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/xundwjvp/index.m3u8",
     "group-title": "VARIEDADES",
-    "tvg-id": "unife",
+    "tvg-id": "UnifeTV.ar@SD",
     "country": "UN",
     "language": "es"
   },
@@ -10135,6 +10226,13 @@
     "tvg-id": "CaliforniaMediosTV.mx@SD"
   },
   {
+    "name": "CaliTV (1080p)",
+    "logo": "https://i.imgur.com/2312Luq.png",
+    "url": "https://tdcdigital-streams.github.io/iptv/CaliTV.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "CaliTV.co@SD"
+  },
+  {
     "name": "Campo Abierto TV (720p)",
     "logo": "https://i.imgur.com/KL6pgaL.png",
     "url": "https://v2.tustreaming.cl/catvlive/index.m3u8",
@@ -10440,6 +10538,13 @@
     "url": "https://stream.arcast.com.ar/c5sf/c5sf/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "Canal5SantaFe.ar@SD"
+  },
+  {
+    "name": "Canal 5 TV Chepes",
+    "logo": "https://i.imgur.com/AzEqroq.png",
+    "url": "https://videostream.shockmedia.com.ar:19360/canal5alfatvchepes/canal5alfatvchepes.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "Canal5TVChepes.ar@SD"
   },
   {
     "name": "Canal 5 TV Cozumel (1080p)",
@@ -10880,6 +10985,13 @@
     "tvg-id": "ClubTV.cl@SD"
   },
   {
+    "name": "CNC Bugavision (720p)",
+    "logo": "https://i.imgur.com/zJAwnvd.png",
+    "url": "https://movil.ejeserver.com/live/cncbuga.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "CNCBugavision.co@SD"
+  },
+  {
     "name": "CNC Pereira (720p)",
     "logo": "https://i.imgur.com/5vJ0aXH.png",
     "url": "https://cloudvideo.servers10.com:8081/latinchaneltv/index.m3u8",
@@ -11144,6 +11256,13 @@
     "url": "https://5ca9af4645e15.streamlock.net/teleradio/smil:teleradio.smil/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "ExpresaTV.mx@SD"
+  },
+  {
+    "name": "FAP TV (720p)",
+    "logo": "https://i.imgur.com/jZ7g58e.png",
+    "url": "https://edge.enhdtv.com/faptv/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "FAPTV.bo@SD"
   },
   {
     "name": "Folcloreando TV",
@@ -12715,6 +12834,13 @@
     "tvg-id": "TeveEmpresa.pe@SD"
   },
   {
+    "name": "Tevesur (720p)",
+    "logo": "https://i.imgur.com/LcZ2Hhd.jpeg",
+    "url": "https://live-evg11.tv360.bitel.com.pe/bitel/tevesurSRT/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "Tevesur.pe@SD"
+  },
+  {
     "name": "TicaVision (1080p)",
     "logo": "https://i.imgur.com/mev90pC.jpg",
     "url": "https://5eac7b031d945.streamlock.net/TICAVISION/TICAVISION/playlist.m3u8",
@@ -12992,6 +13118,13 @@
     "tvg-id": "TVSurCanal14.cr@SD"
   },
   {
+    "name": "TV Sur Canal 9 (620p) [Not 24/7]",
+    "logo": "https://i.imgur.com/7HbISMV.png",
+    "url": "http://tv.ticosmedia.com:1935/TVSUR/TVSUR/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "TVSurCanal9.cr@SD"
+  },
+  {
     "name": "TV UCT (1080p)",
     "logo": "https://i.imgur.com/tpI0WQH.png",
     "url": "https://unlimited1-us.dps.live/uct/uct.smil/playlist.m3u8",
@@ -13201,6 +13334,13 @@
     "tvg-id": "Uniteve.ar@SD"
   },
   {
+    "name": "Univalle Television (1080p)",
+    "logo": "https://i.imgur.com/qgrWDIs.png",
+    "url": "https://master.tucableip.com/univalletv/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "UnivalleTelevision.bo@SD"
+  },
+  {
     "name": "Universal TV Latin America (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Universal_TV_logo.svg/960px-Universal_TV_logo.svg.png",
     "url": "http://15.204.246.24:8080/UniversalHD/index.m3u8",
@@ -13213,6 +13353,13 @@
     "url": "http://38.134.250.110:8000/play/a006/index.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "UniversalTVLatinAmerica.us@Colombia"
+  },
+  {
+    "name": "Universitaria TV (720p)",
+    "logo": "https://i.imgur.com/OcDimHX.png",
+    "url": "https://live-evg11.tv360.bitel.com.pe/bitel/uraniotv/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "UniversitariaTV.pe@SD"
   },
   {
     "name": "Unsion TV (1080p)",
