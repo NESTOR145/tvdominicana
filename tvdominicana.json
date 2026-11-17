@@ -1035,7 +1035,8 @@
     "logo": "https://i.imgur.com/0WBsAin.png",
     "url": "https://stream1.28tv.online/HTVLiveCanal52/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "HTVLive.do@SD"
+    "tvg-id": "HTVLive.do@SD",
+    "country": "DO"
   },
   {
     "name": "IMAGEN UNIVERSAL TV",
