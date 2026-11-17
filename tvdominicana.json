@@ -989,9 +989,9 @@
   {
     "name": "Global TV (Dominican Republic) (720p) [Not 24/7]",
     "logo": "https://i.imgur.com/1rQaROm.png",
-    "url": "https://vtm1.msinteractiva.com/globaltv/globaltv/playlist.m3u8",
+    "url": "http://190.93.224.42/GLOBAL/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "GlobalTV.do@SD",
+    "tvg-id": "GlobalTV.pe@SD",
     "country": "DO"
   },
   {
@@ -1029,6 +1029,13 @@
     "tvg-id": "higueydigital.do@SD",
     "country": "DO",
     "language": "es"
+  },
+  {
+    "name": "HTV Live (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/0WBsAin.png",
+    "url": "https://stream1.28tv.online/HTVLiveCanal52/index.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "HTVLive.do@SD"
   },
   {
     "name": "IMAGEN UNIVERSAL TV",
@@ -2460,9 +2467,9 @@
   {
     "name": "AXN (Spain)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
-    "url": "http://sultanios.alwaysdata.net/vavo.php?ID=4238619703",
+    "url": "http://90.170.214.40:9700/stream/avatel/axn/master.m3u8",
     "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "AXN.es@SD"
+    "tvg-id": "AXN.es@HD"
   },
   {
     "name": "AXN Latin America (1080p)",
@@ -4300,6 +4307,13 @@
     "tvg-id": "nickpluto",
     "country": "UN",
     "language": "es"
+  },
+  {
+    "name": "Nickelodeon (Spain) HD",
+    "logo": "https://i.imgur.com/E84jnP8.png",
+    "url": "http://90.170.214.40:9700/stream/avatel/nickelodeonhd/master.m3u8",
+    "group-title": "ANIME-INFANTIL",
+    "tvg-id": "Nickelodeon.es@HD"
   },
   {
     "name": "Nickelodeon Clasico (720p)",
@@ -6293,6 +6307,13 @@
     "logo": "https://graph.facebook.com/ONFM93.8/picture?width=200&height=200",
     "url": "https://5ce9406b73c33.streamlock.net/ONFM/livestream/master.m3u8",
     "group-title": "MUSICA"
+  },
+  {
+    "name": "Onda 15 TV (224p)",
+    "logo": "https://i.imgur.com/mUrZz9O.png",
+    "url": "https://cloudvideo.servers10.com:8081/8034/index.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "Onda15TV.es@SD"
   },
   {
     "name": "Onda Valencia TV (720p)",
@@ -9854,7 +9875,7 @@
   {
     "name": "+tdp",
     "logo": "https://graph.facebook.com/teledeporteRTVE/picture?width=200&height=200",
-    "url": "https://ztnr.rtve.es/ztnr/6712432.m3u8",
+    "url": "https://ztnr.rtve.es/ztnr/6712411.m3u8",
     "group-title": "GENERAL"
   },
   {
@@ -10038,6 +10059,13 @@
     "url": "https://unlimited6-cl.dps.live/atv/atv.smil/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "AntofagastaTV.cl@SD"
+  },
+  {
+    "name": "Anzoategui TV (360p) [Not 24/7]",
+    "logo": "https://i.imgur.com/SLqrEOz.png",
+    "url": "https://vcp2.myplaytv.com/anzoateguitv/anzoateguitv/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "AnzoateguiTV.ve@SD"
   },
   {
     "name": "Argentinisima Satelital (540p)",
@@ -11219,6 +11247,13 @@
     "tvg-id": "ElRadar.cl@SD"
   },
   {
+    "name": "Emisora Comunitaria 104.1 FM",
+    "logo": "https://i.imgur.com/SQ79Wsb.png",
+    "url": "https://104florencia.co/wp-admin/admin-ajax.php?action=frp_hls_proxy&url=https://streamyes.alsolnet.com/comunitariafm/live/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "EmisoraComunitaria1041FM.co@SD"
+  },
+  {
     "name": "En Linea Maule (720p)",
     "logo": "https://enlineamaule.cl/wp-content/uploads/2025/08/En-linea-Maule841351465.png",
     "url": "https://v2.tustreaming.cl/enlineamauletv/index.m3u8",
@@ -11636,6 +11671,13 @@
     "url": "http://tr.live.clarovtrcdn.vtrplay.com/megahdchi/vxfmt=dp/playlist.m3u8?device_profile=STB_HLS_VCAS_LIVE_HD",
     "group-title": "GENERAL",
     "tvg-id": "Mega.cl@SD"
+  },
+  {
+    "name": "Mega TV Jaen (720p)",
+    "logo": "https://i.imgur.com/zK1YcpJ.png",
+    "url": "https://live-evg5.tv360.bitel.com.pe/bitel/megatv/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "MegaTVJaen.pe@SD"
   },
   {
     "name": "Megavision Canal 19 (720p)",
@@ -12465,6 +12507,13 @@
     "url": "http://45.171.64.30:6060/play/a04n/index.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "Space.ar@Panregional"
+  },
+  {
+    "name": "Studio + TV (1080p)",
+    "logo": "https://carjocosa.space/studio/logo.png",
+    "url": "https://vd01.streaminghd.net.ar:3113/hybrid/play.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "StudioPlusTV.ec@HD"
   },
   {
     "name": "Studio Pasco TV (720p)",
@@ -13483,6 +13532,13 @@
     "tvg-id": "VTVValledeAconcagua.cl@SD"
   },
   {
+    "name": "WAPA-TV 4.1 (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/kqq7tD9.png",
+    "url": "https://wapa.hostless.app/WAPA-TV-4-1.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "WAPATV41.pr@HD"
+  },
+  {
     "name": "Wayra TV (720p)",
     "logo": "https://i.imgur.com/eQLRVFp.png",
     "url": "https://live-evg11.tv360.bitel.com.pe/bitel/wayratv/playlist.m3u8",
@@ -13572,6 +13628,13 @@
     "url": "https://5ca9af4645e15.streamlock.net/chiapas/videochiapas/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "XHTTGTDT.mx@SD"
+  },
+  {
+    "name": "XHZHZ-TDT (720p)",
+    "logo": "https://i.imgur.com/RxhABeK.png",
+    "url": "https://5f2c1b0d880e5.streamlock.net/zacatecas/videozacatecas/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "XHZHZTDT.mx@SD"
   },
   {
     "name": "Yurimaguas TV (720p)",
