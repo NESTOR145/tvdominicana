@@ -467,7 +467,8 @@
     "logo": "",
     "url": "https://cloud5.livescast.com:19360/bebetotv/bebetotv.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "BebetoTV.do@SD"
+    "tvg-id": "BebetoTV.do@SD",
+    "country": "DO"
   },
   {
     "name": "BOCA CHICA TV",
@@ -1932,7 +1933,8 @@
     "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3878-294x165-FFFFFF.jpg",
     "url": "https://stream1.28tv.online/TeleNewsCanal40/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "TelenewsTV.do@SD"
+    "tvg-id": "TelenewsTV.do@SD",
+    "country": "DO"
   },
   {
     "name": "TELENORD-CANAL 10",
@@ -2118,7 +2120,8 @@
     "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3800-294x165-FFFFFF.jpg",
     "url": "https://5790d294af2dc.streamlock.net/yosoyturismotv/live/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "TurismoRDTV.do@HD"
+    "tvg-id": "TurismoRDTV.do@HD",
+    "country": "DO"
   },
   {
     "name": "TV 10-SAN JUAN",
