@@ -2119,7 +2119,8 @@
     "logo": "https://imgur.com/khj869k.png",
     "url": "https://fox.hostlagarto.com:8081/toursporttv/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "TourSpotTV.do@HD"
+    "tvg-id": "TourSpotTV.do@HD",
+    "country": "DO"
   },
   {
     "name": "TURISMO HD",
