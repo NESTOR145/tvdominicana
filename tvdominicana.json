@@ -2115,6 +2115,13 @@
     "country": "DO"
   },
   {
+    "name": "Tour Spot TV (1280p) [Not 24/7]",
+    "logo": "https://imgur.com/khj869k.png",
+    "url": "https://fox.hostlagarto.com:8081/toursporttv/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "TourSpotTV.do@HD"
+  },
+  {
     "name": "TURISMO HD",
     "logo": "https://i.postimg.cc/3RDV8D2h/TURISMO-TV.png",
     "url": "https://183.giatvcdn.com/giatvplayout7/giatv-208343/playlist.m3u8",
@@ -5434,9 +5441,9 @@
   {
     "name": "ESPN Premium",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/960px-ESPN_Premium_logo.svg.png",
-    "url": "http://45.134.141.161:2200/ARG/ESPN_Premium_Argentina_HD/tracks-v1a1/mono.m3u8",
+    "url": "http://158.172.155.130:8000/play/a0ao/index.m3u8",
     "group-title": "DEPORTES",
-    "tvg-id": "ESPNPremium.ar@SD"
+    "tvg-id": "ESPNPremium.ar@HD"
   },
   {
     "name": "ETB Deportes (Kirolak 360)",
@@ -7742,6 +7749,13 @@
     "tvg-id": "TVUniversalUruguay.uy@SD"
   },
   {
+    "name": "TVGracia",
+    "logo": "https://i.imgur.com/tMl4ISO.png",
+    "url": "https://vs20.live.opencaster.com/diego_57244803/index.m3u8",
+    "group-title": "RELIGION Y CULTURA",
+    "tvg-id": "TVGracia.co@SD"
+  },
+  {
     "name": "UAA TV (1080p)",
     "logo": "https://i.imgur.com/brCSiGh.png",
     "url": "https://5fe2654d6127d.streamlock.net/uaa2/videouaa2/playlist.m3u8",
@@ -7971,9 +7985,9 @@
   {
     "name": "Animal Planet Latin America (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/960px-2018_Animal_Planet_logo.svg.png",
-    "url": "http://190.128.214.97:64333/play/a01n/index.m3u8",
+    "url": "http://15.204.246.24:8080/AnimalPlanetHD/index.m3u8",
     "group-title": "VARIEDADES",
-    "tvg-id": "AnimalPlanetLatinAmerica.us@SD"
+    "tvg-id": "AnimalPlanetLatinAmerica.us@HD"
   },
   {
     "name": "Archivos Forenses",
@@ -9957,6 +9971,13 @@
     "tvg-id": "AlsaciasTelevision.hn@SD"
   },
   {
+    "name": "AlternaTV (720p) [Not 24/7]",
+    "logo": "https://tv.alterna.ar/alternatv.png",
+    "url": "https://tv.alterna.ar/stream/hls/live.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "AlternaTV.ar@SD"
+  },
+  {
     "name": "AM Canal",
     "logo": "https://i.imgur.com/wfi9NXL.png",
     "url": "https://streaming.bitsur.cl:3534/live/vdo1102live.m3u8",
@@ -10729,6 +10750,13 @@
     "tvg-id": "Canal9BioBioTelevision.cl@SD"
   },
   {
+    "name": "Canal 9 Cosespu",
+    "logo": "https://i.imgur.com/w5e1d8k.png",
+    "url": "https://video2.lhdserver.es/canal9cosespu/live.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "Canal9Cosespu.co@SD"
+  },
+  {
     "name": "Canal 9 Resistencia (720p)",
     "logo": "https://i.imgur.com/xqgRFpC.png",
     "url": "http://coninfo.net:1935/9linklivert/smil:9linkmultibr.smil/playlist.m3u8",
@@ -11482,6 +11510,13 @@
     "tvg-id": "JusticiaTV.mx@SD"
   },
   {
+    "name": "Kalu TV (1080p)",
+    "logo": "https://i.imgur.com/MO4w3OT.jpeg",
+    "url": "https://tv.kaludecolombia.com/memfs/d71c0104-4752-4690-bdbf-19aa849da6c4.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "KaluTV.co@SD"
+  },
+  {
     "name": "Kpop Mix (720p)",
     "logo": "https://tvomix.com/Logos/Kpopmix.png",
     "url": "https://cloud.tvomix.com/KPOPMIX/index.m3u8",
@@ -12136,6 +12171,13 @@
     "tvg-id": "RadioTVOriente.pe@SD"
   },
   {
+    "name": "RB TV (1080p)",
+    "logo": "https://i.imgur.com/EMFAFX0.png",
+    "url": "https://video.hostingcaaguazu.com:19360/rbtv/rbtv.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "RBTV.py@SD"
+  },
+  {
     "name": "RCN HD2 (1080p)",
     "logo": "https://i.imgur.com/SrMPTfc.png",
     "url": "http://181.78.14.26:4000/play/a07m/index.m3u8",
@@ -12547,9 +12589,12 @@
   {
     "name": "Sula TV (1080p)",
     "logo": "https://i.imgur.com/v90r5jS.png",
-    "url": "https://tv.webmedialive.com/sulatv/live/playlist.m3u8",
+    "url": "https://restreamer.multicable.hn/memfs/8a0f3d8a-0475-4169-89f2-f8facf11b723.m3u8",
     "group-title": "GENERAL",
-    "tvg-id": "SulaTV.hn@SD"
+    "tvg-id": "SulaTV.hn@SD",
+    "headers": {
+      "Referer": "https://multicablemas.com/"
+    }
   },
   {
     "name": "SUR TV (720p)",
