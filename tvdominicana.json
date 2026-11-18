@@ -418,15 +418,6 @@
     "language": "es"
   },
   {
-    "name": "AION TV",
-    "logo": "https://i.postimg.cc/j56tqtyt/ION-TV.jpg",
-    "url": "https://edge.essastream.com/aiontelevision/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "aiontv.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "ALEGRE TV",
     "logo": "https://i.postimg.cc/26W9PTcM/ALEGRE-TV.png",
     "url": "https://streamunoapp.com:3149/live/alegretvlive.m3u8",
@@ -793,15 +784,6 @@
     "country": "DO"
   },
   {
-    "name": "EL NUEVO DIARIO",
-    "logo": "https://i.postimg.cc/6qLzF4KX/EL-NUEVO-DIARIO.png",
-    "url": "https://nuevodiario01.streamprolive.com/hls/live.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "elnuevodiario.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "El Pituco TV (720p)",
     "logo": "https://elpituco.com/wp-content/uploads/2021/04/ElPituco.png",
     "url": "https://imagenuniversaltv.net:3439/live/elpitucolive.m3u8",
@@ -815,15 +797,6 @@
     "url": "https://28tv.online:3795/live/elpodertvcanal57live.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "elpodertv.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
-    "name": "EL PUERTO TV",
-    "logo": "https://i.postimg.cc/fybfmTrz/EL-PUERTO-TV.png",
-    "url": "https://5bf8041cb3fed.streamlock.net/PuertoTV/PuertoTV/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "elpuertotv.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -1633,15 +1606,6 @@
     "language": "es"
   },
   {
-    "name": "RUTA 66 TV",
-    "logo": "https://i.postimg.cc/9MBt5MTY/RUTA-66-TV.jpg",
-    "url": "https://edge.livestreaminggroup.info/ruta66tvlive/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "ruta66tv.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
     "name": "SABANETA TV",
     "logo": "https://i.postimg.cc/P5m2YhmZ/SABANETA-TV.jpg",
     "url": "https://amg00803-cnnfast-amg00803c3-lg-es-5477.playouts.now.amagi.tv/playlist1080p.m3u8",
@@ -2173,15 +2137,6 @@
     "group-title": "DOMINICANOS",
     "tvg-id": "TVCotuiCanal31.do@SD",
     "country": "DO"
-  },
-  {
-    "name": "TV DAJA",
-    "logo": "https://i.postimg.cc/BvJ3GTgZ/TV-DAJA.jpg",
-    "url": "https://edge.essastream.com/dajatv/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "tvdaja.do@SD",
-    "country": "DO",
-    "language": "es"
   },
   {
     "name": "TV EXITOS",
@@ -3912,15 +3867,6 @@
     "url": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/d5543c06-5122-49a7-9662-32187f48aa2c/manifest.m3u8",
     "group-title": "ANIME-INFANTIL",
     "tvg-id": "cartooon1",
-    "country": "UN",
-    "language": "es"
-  },
-  {
-    "name": "CARTOON CLASSICS 2",
-    "logo": "https://i.postimg.cc/yNQtyQnr/RETRO-CARTOONS.png",
-    "url": "http://5.188.159.128:8070/Cartoon_Network/index.m3u8",
-    "group-title": "ANIME-INFANTIL",
-    "tvg-id": "cartooon2",
     "country": "UN",
     "language": "es"
   },
@@ -5665,13 +5611,6 @@
     "tvg-id": "TNTSportsPremium.cl@ArgentinaHD"
   },
   {
-    "name": "TNT Sports Premium HD",
-    "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/TNT_Sports_Premium_%28Argentina%29.png/960px-TNT_Sports_Premium_%28Argentina%29.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
-    "url": "https://play-fulltv.com.ar/playtvpre/tntsportschile.m3u8",
-    "group-title": "DEPORTES",
-    "tvg-id": "TNTSportsPremium.cl@HD"
-  },
-  {
     "name": "Top Barça",
     "logo": "https://graph.facebook.com/fcbarcelona/picture?width=200&height=200",
     "url": "https://amg17560-fcb-amg17560c2-samsung-es-9803.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg17560-fcbarcelona-topbarcaspanish-samsunges/playlist.m3u8",
@@ -6593,15 +6532,6 @@
     "url": "https://vdochile.com:3864/stream/play.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "RetromusicaTelevision.cl@SD"
-  },
-  {
-    "name": "REWIN CL",
-    "logo": "https://cdn.m3u.cl/logo/156_Rewind.png",
-    "url": "https://tls-cl.cdnz.cl/rewindtv/live/playlist.m3u8?PlaylistM3UCL",
-    "group-title": "MUSICA",
-    "tvg-id": "rewin",
-    "country": "UN",
-    "language": "es"
   },
   {
     "name": "Reyali (614p)",
@@ -8055,13 +7985,6 @@
     "url": "https://stmv6.voxtvhd.com.br/vacantveo2/vacantveo2/playlist.m3u8",
     "group-title": "VARIEDADES",
     "tvg-id": "BacanTeVeo.ec@SD"
-  },
-  {
-    "name": "Buena TV (1080p)",
-    "logo": "https://i.imgur.com/tsajuxi.png",
-    "url": "https://59825a54e4454.streamlock.net:8443/papo351/papo351/playlist.m3u8",
-    "group-title": "VARIEDADES",
-    "tvg-id": "BuenaTV.pr@SD"
   },
   {
     "name": "CALDERA VISION",
@@ -10627,13 +10550,6 @@
     "url": "https://online.coopmorteros.coop/canal50/vivo.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "Canal50Morteros.ar@SD"
-  },
-  {
-    "name": "Canal 56 Quiero TV (720p)",
-    "logo": "https://i.imgur.com/l9kDNld.jpeg",
-    "url": "http://45.5.118.152:8000/play/a08z/index.m3u8",
-    "group-title": "GENERAL",
-    "tvg-id": "Canal56QuieroTV.bo@SD"
   },
   {
     "name": "Canal 6 Posadas (1080p)",
