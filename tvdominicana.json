@@ -1573,9 +1573,9 @@
   {
     "name": "R&E TV",
     "logo": "https://i.postimg.cc/BQ8rTjyF/R-E-TV.jpg",
-    "url": "https://tv2.bitstreaming.net:8443/live/r-e-tv.m3u8",
+    "url": "https://cloud2.streaminglivehd.com:1936/8072/8072/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "randetv.do@SD",
+    "tvg-id": "RETV.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -4637,6 +4637,13 @@
     "tvg-id": "zoomoo",
     "country": "UN",
     "language": "es"
+  },
+  {
+    "name": "24 Horas (720p)",
+    "logo": "https://i.ibb.co/21sXZ3GT/24h.png",
+    "url": "https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr.m3u8",
+    "group-title": "NOTICIAS",
+    "tvg-id": "24Horas.es@SD"
   },
   {
     "name": "24 Horas Catalunya (720p)",
@@ -9891,7 +9898,7 @@
   {
     "name": "+tdp",
     "logo": "https://graph.facebook.com/teledeporteRTVE/picture?width=200&height=200",
-    "url": "https://ztnr.rtve.es/ztnr/6712411.m3u8",
+    "url": "https://ztnr.rtve.es/ztnr/6712426.m3u8",
     "group-title": "GENERAL"
   },
   {
@@ -11237,7 +11244,7 @@
   {
     "name": "Ecuador TV (1080p)",
     "logo": "https://i.imgur.com/hj6EYwe.png",
-    "url": "http://45.224.97.181:9999/EcuadorTV/index.m3u8",
+    "url": "https://video-eu1.streamerr.co/hls/s64029a8fdf/live.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "EcuadorTV.ec@SD"
   },
@@ -12673,6 +12680,13 @@
     "url": "https://cloudvideo.servers10.com:8081/8230/index.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "TDtv.cr@SD"
+  },
+  {
+    "name": "Tele Mocoa Canal 10 (720p)",
+    "logo": "https://i.imgur.com/XHtpEfu.png",
+    "url": "https://live.amelbatv.co:81/telemocoalive/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "TeleMocoaCanal10.co@SD"
   },
   {
     "name": "Tele Uno (720p) [Not 24/7]",
