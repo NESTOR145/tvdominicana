@@ -549,6 +549,13 @@
     "language": "es"
   },
   {
+    "name": "CANANGA DIGITAL",
+    "logo": "https://i.postimg.cc/CLQzxJZ7/CANANGA-DIGITAL.png",
+    "url": "https://cdn.streamingcpanel.com/p/3472/live/canangadigitallive.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "canadigital.do@SD"
+  },
+  {
     "name": "Cananga TV (720p)",
     "logo": "https://i.imgur.com/isXlMAh.png",
     "url": "https://cdn.streamingcpanel.com:3545/live/canangatlive.m3u8",
@@ -6075,6 +6082,13 @@
     "tvg-id": "LaX.pr@SD"
   },
   {
+    "name": "LIRA TV INTERNACIONAL",
+    "logo": "https://i.postimg.cc/8CXJYKQX/LIRA-TV.jpg",
+    "url": "https://cloud2.streaminglivehd.com:1936/liratv/liratv/playlist.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "beanitv"
+  },
+  {
     "name": "Lobo TV (720p)",
     "logo": "https://i.imgur.com/3fA50RJ.png",
     "url": "https://5ca3e84a76d30.streamlock.net/tvlobo/videotvlobo/playlist.m3u8",
@@ -6167,7 +6181,7 @@
   {
     "name": "Mi Musica Salsa (1080p)",
     "logo": "https://i.imgur.com/sT91t83.png",
-    "url": "http://181.78.12.119:16123/play/ch55/index.m3u8",
+    "url": "http://38.134.250.110:8000/play/a02m/index.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "MiMusicaSalsa.us@SD"
   },
@@ -6423,6 +6437,13 @@
     "tvg-id": "RadioDuna.cl@SD"
   },
   {
+    "name": "Radio Edelweiss (720p)",
+    "logo": "https://cdn.m3u.cl/logo/1313_Radio_Edelweiss.png",
+    "url": "https://stmv5.voxtvhd.com.br/edelweisstv/edelweisstv/playlist.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "RadioEdelweiss.cl@SD"
+  },
+  {
     "name": "Radio Fantastica 98.9 FM (1080p)",
     "logo": "https://i.imgur.com/mpcIbrH.jpg",
     "url": "http://190.107.232.9:8082/livestream/stream.m3u8",
@@ -6651,6 +6672,13 @@
     "tvg-id": "SaborTV.cl@SD"
   },
   {
+    "name": "Salsa Gorda Television (1080p)",
+    "logo": "https://i.imgur.com/3IhYd7G.jpg",
+    "url": "https://stmv1.voxtvhd.com.br/salsagorda/salsagorda/playlist.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "SalsaGordaTelevision.co@SD"
+  },
+  {
     "name": "Sensacion Costa (1080p)",
     "logo": "https://i.imgur.com/oYQoWAB.png",
     "url": "https://tvcosta.gleeze.com/memfs/4d48db09-0b1e-4803-8da7-22be388bdd7e.m3u8",
@@ -6825,6 +6853,13 @@
     "url": "https://live-evg11.tv360.bitel.com.pe/bitel/turbomixSRT/playlist.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "TurboMixRadioTV.pe@SD"
+  },
+  {
+    "name": "Tv Carigso (720p)",
+    "logo": "https://i.imgur.com/nhg1uM9.png",
+    "url": "https://183.giatvcdn.com/ssh101/ssh101/carigsotv2026/playlist.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "TvCarigso.bo@SD"
   },
   {
     "name": "TVOMIX (1080p)",
@@ -7487,6 +7522,13 @@
     "tvg-id": "OlamMetroTV.ni@SD"
   },
   {
+    "name": "Origen Channel (1080p) [Geo-blocked]",
+    "logo": "https://i.imgur.com/QI3b4HI.png",
+    "url": "https://play.cdn.enetres.net/6E5C615AA5FF4123ACAF0DAB57B7B8DC022/022/playlist.m3u8",
+    "group-title": "RELIGION Y CULTURA",
+    "tvg-id": "OrigenChannel.co@SD"
+  },
+  {
     "name": "Paraiso TV (720p)",
     "logo": "https://i.imgur.com/wE31GIP.jpg",
     "url": "https://stream.eleden.com/livewtpm/ngrp:livewtpm_all/playlist.m3u8",
@@ -7757,6 +7799,13 @@
     "tvg-id": "VisionLatina.pa@SD"
   },
   {
+    "name": "VTV Canal 17 (720p)",
+    "logo": "https://i.imgur.com/TUhFzql.png",
+    "url": "http://190.181.61.93:8000/play/a00f/index.m3u8",
+    "group-title": "RELIGION Y CULTURA",
+    "tvg-id": "VTVCanal17.bo@SD"
+  },
+  {
     "name": "WECN (720p)",
     "logo": "https://i.imgur.com/NYBZBY0.png",
     "url": "https://59825a54e4454.streamlock.net:8443/pastorairisn394/pastorairisn394/chunklist_w239411719.m3u8",
@@ -8006,6 +8055,13 @@
     "url": "https://stmv6.voxtvhd.com.br/vacantveo2/vacantveo2/playlist.m3u8",
     "group-title": "VARIEDADES",
     "tvg-id": "BacanTeVeo.ec@SD"
+  },
+  {
+    "name": "Buena TV (1080p)",
+    "logo": "https://i.imgur.com/tsajuxi.png",
+    "url": "https://59825a54e4454.streamlock.net:8443/papo351/papo351/playlist.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "BuenaTV.pr@SD"
   },
   {
     "name": "CALDERA VISION",
@@ -8627,6 +8683,13 @@
     "tvg-id": "GirasolTV.hn@SD"
   },
   {
+    "name": "Girovisual (1080p)",
+    "logo": "https://i.imgur.com/BYBMuhf.png",
+    "url": "https://live-evg8.tv360.bitel.com.pe/bitel/girovisualSRT-TRA/playlist.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "Girovisual.cl@SD"
+  },
+  {
     "name": "GO TV (720p)",
     "logo": "https://i.ibb.co/jkvYVyz/Captura.png",
     "url": "https://rds3.desdeparaguay.net/gotv/gotv/playlist.m3u8",
@@ -8717,9 +8780,9 @@
   {
     "name": "IMAGEN TV",
     "logo": "https://i.postimg.cc/9MLSV44z/IMAGEN-TV.png",
-    "url": "https://cdn.streamhispanatv.net:3587/live/imagentvlive.m3u8",
+    "url": "https://igd-it-runtime.otteravision.com/igd/it/it.m3u8",
     "group-title": "VARIEDADES",
-    "tvg-id": "imagentv",
+    "tvg-id": "ImagenTV.mx@SD",
     "country": "UN",
     "language": "es"
   },
@@ -9683,6 +9746,13 @@
     "language": "es"
   },
   {
+    "name": "UNIVERS TV",
+    "logo": "https://i.postimg.cc/zv1QFqtz/UNIVERS-TV.png",
+    "url": "https://cloud2.streaminglivehd.com:1936/universfaller/universfaller/playlist.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "universfaller"
+  },
+  {
     "name": "URANIO TV",
     "logo": "https://i.postimg.cc/43X4zszX/URANIO-TV.png",
     "url": "https://live.obslivestream.com/uraniotv/index.m3u8",
@@ -10063,6 +10133,13 @@
     "tvg-id": "AsContenidos.bo@SD"
   },
   {
+    "name": "Asi es mi Pueblo TV (720p)",
+    "logo": "https://canales.asplurtv.com/logo_asitv.png",
+    "url": "http://190.181.61.93:8000/play/a00g/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "AsiesmiPuebloTV.bo@SD"
+  },
+  {
     "name": "Atlantis Radio TV (720p)",
     "logo": "https://i.imgur.com/1eB9roP.png",
     "url": "https://live-evg8.tv360.bitel.com.pe/bitel/atlantisSRT/playlist.m3u8",
@@ -10175,6 +10252,13 @@
     "tvg-id": "BoliviaTV.bo@SD"
   },
   {
+    "name": "Bolivision (1080p)",
+    "logo": "https://i.imgur.com/U98Z5zn.png",
+    "url": "http://190.181.61.93:8000/play/a00j/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "Bolivision.bo@LaPaz"
+  },
+  {
     "name": "Bruno Masi TV (720p)",
     "logo": "https://i.ibb.co/QFmyjZN/unnamed-1.png",
     "url": "https://rds3.desdeparaguay.net/brunomasitv/brunomasitv/playlist.m3u8",
@@ -10208,6 +10292,13 @@
     "url": "https://videoserver.tmcreativos.com:19360/dcsajkpvrh/dcsajkpvrh.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "CADTV.py@SD"
+  },
+  {
+    "name": "Cadena A (576p)",
+    "logo": "https://i.imgur.com/BxQPPAA.png",
+    "url": "http://190.181.61.93:8000/play/a00k/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "CadenaA.bo@LaPaz"
   },
   {
     "name": "Cadena TV (720p) [Not 24/7]",
@@ -10275,9 +10366,9 @@
   {
     "name": "Canal 10 (El Salvador) (720p)",
     "logo": "https://i.imgur.com/y2ppMnY.png",
-    "url": "https://5ca3e84a76d30.streamlock.net/tves/videotves/playlist.m3u8",
+    "url": "https://ddycmnicl95kp.cloudfront.net/live/ja5k3h31wv9r/master.m3u8",
     "group-title": "GENERAL",
-    "tvg-id": "Canal10.sv@SD"
+    "tvg-id": "Canal10.ni@SD"
   },
   {
     "name": "Canal 10 Goya (1080p)",
@@ -10327,6 +10418,13 @@
     "url": "https://tv91.hostingnuclear.com:19360/intercable/intercable.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "Canal13Esquipulas.gt@SD"
+  },
+  {
+    "name": "Canal 14 Valle Alto Television (720p)",
+    "logo": "https://i.imgur.com/I1eVjLs.jpeg",
+    "url": "https://stmv1.voxtvhd.com.br/vavizacli/vavizacli/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "Canal14ValleAltoTelevision.bo@SD"
   },
   {
     "name": "Canal 2 Alpavision Neiva (720p) [Not 24/7]",
@@ -10776,6 +10874,13 @@
     "url": "http://131.221.41.94/hls/canal2.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "CanalDos.co@SD"
+  },
+  {
+    "name": "Canal Guia ABE (1080p)",
+    "logo": "https://i.imgur.com/NAvMyZK.png",
+    "url": "http://190.181.61.93:8000/play/a00q/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "CanalGuiaABE.bo@SD"
   },
   {
     "name": "Canal Institucional (1080p)",
@@ -11242,6 +11347,13 @@
     "tvg-id": "EnLineaMaule.cl@SD"
   },
   {
+    "name": "En Vivo TV (1080p)",
+    "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/d3971ef0-0005-4a40-a152-390ce681a7a7-profile_image-150x150.png",
+    "url": "http://190.181.61.93:8000/play/1520/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "EnVivoTV.bo@SD"
+  },
+  {
     "name": "Enfoque Digital TV (1080p)",
     "logo": "https://i.imgur.com/GaJzjt5.png",
     "url": "https://5eaccbab48461.streamlock.net:1936/8074/8074/playlist.m3u8",
@@ -11343,11 +11455,25 @@
     "tvg-id": "Gigavision.bo@SantaCruz"
   },
   {
+    "name": "Gigavision La Paz (1080p)",
+    "logo": "https://i.imgur.com/fE3BkcT.png",
+    "url": "http://190.181.61.93:8000/play/a00i/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "Gigavision.bo@LaPaz"
+  },
+  {
     "name": "Globovision (576p)",
     "logo": "https://i.imgur.com/v6nRdxQ.png",
     "url": "http://181.78.8.199:8000/play/a09k/index.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "Globovision.ve@SD"
+  },
+  {
+    "name": "GoGoPlayTV (720p)",
+    "logo": "",
+    "url": "http://190.181.61.93:8000/play/a00d/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "GoGoPlayTV.bo@SD"
   },
   {
     "name": "Golden Plus (1080p)",
@@ -11738,6 +11864,13 @@
     "tvg-id": "NativaTVSatipo.pe@SD"
   },
   {
+    "name": "Nayarit Comunica (1080p)",
+    "logo": "https://i.imgur.com/aZCTkjU.jpg",
+    "url": "https://live.iplanay.gob.mx/hls/nayarittv.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "NayaritComunica.mx@SD"
+  },
+  {
     "name": "Neox TV [Not 24/7]",
     "logo": "https://i.imgur.com/eIX71c9.png",
     "url": "https://tv.streamcasthd.com:3031/live/neoxtvlive.m3u8",
@@ -11869,6 +12002,13 @@
     "url": "http://45.170.130.224:8000/play/a032/index.m3u8?hls",
     "group-title": "GENERAL",
     "tvg-id": "Paravision.py@SD"
+  },
+  {
+    "name": "PI MEDIA TV (1080p)",
+    "logo": "https://pimediatv.weebly.com/uploads/1/2/8/7/12877343/published/pigran.png",
+    "url": "https://183.giatvcdn.com/ssh101/ssh101/bolivianews/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "PIMEDIATV.bo@SD"
   },
   {
     "name": "Pichilemu TV (1080p)",
@@ -12326,6 +12466,13 @@
     "tvg-id": "RumboMineroTV.pe@SD"
   },
   {
+    "name": "SABCO Vision (720p)",
+    "logo": "https://i.imgur.com/1psliIs.jpeg",
+    "url": "https://59d39900ebfb8.streamlock.net/rytqrolive/rytqrolive/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "SABCOVision.bo@SD"
+  },
+  {
     "name": "San Nicolas TV (720p)",
     "logo": "https://i.imgur.com/z94YCpH.png",
     "url": "https://v4.tustreaming.cl/sannicolastv/index.m3u8",
@@ -12414,6 +12561,13 @@
     "url": "https://5d0d1d7a6be9e.streamlock.net/sicom/canal1/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "SICOMTelevision.mx@XHPBZCTDT"
+  },
+  {
+    "name": "Siglo XXI TV (576p)",
+    "logo": "https://i.imgur.com/d1N2WzD.png",
+    "url": "http://190.181.61.93:8000/play/a00b/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "SigloXXITV.bo@SD"
   },
   {
     "name": "SIL TV (1080p)",
@@ -12919,6 +13073,13 @@
     "tvg-id": "TIVTelevision.ar@SD"
   },
   {
+    "name": "TL Estrella (720p)",
+    "logo": "",
+    "url": "http://190.181.61.93:8000/play/a004/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "TLEstrella.bo@SD"
+  },
+  {
     "name": "TN8 (1080p)",
     "logo": "https://i.imgur.com/m0Zdxiz.png",
     "url": "https://streamingcws30.com/tn8/videotn8/playlist.m3u8",
@@ -13175,6 +13336,13 @@
     "tvg-id": "TVShowFortaleza.br@SD"
   },
   {
+    "name": "TV Show Oruro (720p)",
+    "logo": "https://i.ibb.co/nnsYJCq/IMG-20210731-094609.png",
+    "url": "http://tv.istbolivia.com:1935/tvshow/tvshow/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "TVShowOruro.bo@SD"
+  },
+  {
     "name": "TV Sur Canal 14 (1080p)",
     "logo": "https://i.imgur.com/OpHYYZA.png",
     "url": "https://k20.usastreams.com:8081/tvsur/index.m3u8",
@@ -13194,6 +13362,13 @@
     "url": "https://unlimited1-us.dps.live/uct/uct.smil/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "TVUCT.cl@SD"
+  },
+  {
+    "name": "TV Universitaria (720p)",
+    "logo": "https://i.imgur.com/p5IqKnB.png",
+    "url": "http://190.181.61.93:8000/play/a006/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "TVUniversitaria.bo@SD"
   },
   {
     "name": "TV+ (1080p)",
@@ -13389,6 +13564,20 @@
     "url": "https://5ff3d9babae13.streamlock.net/ubyecbxnfd/ubyecbxnfd/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "UniregionTV.cl@SD"
+  },
+  {
+    "name": "Unitel (Bolivia) Cochabamba (1080p)",
+    "logo": "https://i.imgur.com/B9wg1zj.png",
+    "url": "http://190.181.61.93:8000/play/1913/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "Unitel.bo@Cochabamba"
+  },
+  {
+    "name": "Unitel (Bolivia) La Paz (1080p)",
+    "logo": "https://i.imgur.com/B9wg1zj.png",
+    "url": "http://190.181.61.93:8000/play/1910/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "Unitel.bo@LaPaz"
   },
   {
     "name": "Uniteve (720p) [Not 24/7]",
