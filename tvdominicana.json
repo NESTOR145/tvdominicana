@@ -1263,14 +1263,6 @@
     "language": "es"
   },
   {
-    "name": "Marla Vision (576p) [Not 24/7]",
-    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3738-294x165-FFFFFF.jpg",
-    "url": "https://soportedvb.click:3877/live/merlavisionlive.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "MarlaVision.do@SD",
-    "country": "DO"
-  },
-  {
     "name": "MEGA CINE TV",
     "logo": "https://i.postimg.cc/PfCwk3Gd/MEGA-CINE-TV.png",
     "url": "https://cnn.hostlagarto.com/megacinetv/playlist.m3u8",
@@ -2049,15 +2041,6 @@
     "url": "https://edge.essastream.com/televisiondeleste/index.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "televisiondeleste.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
-    "name": "TENARENSES TV",
-    "logo": "https://i.postimg.cc/26Mpqw9p/TENARENSES-TV.jpg",
-    "url": "https://edge.essastream.com/tenarensestvrd/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "tenarensestv.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -3025,15 +3008,6 @@
     "language": "es"
   },
   {
-    "name": "Pelis Top",
-    "logo": "https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/645e383c-88f5-4378-88fd-0d4989c01cde.jpeg",
-    "url": "https://top-movies-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-5983/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.extra_eids=&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=217.216.126.162&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=5983&ads.rtv_channel_name=top-movies-rakuten-tv_es&ads.rtv_content_id=5983&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=2202b7c4-0915-42fd-8d5d-47d68d1bc894&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=5983&publishing_platform_id=5&tenant_identifier=rtv",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "top-movies-rakuten-tv",
-    "country": "UN",
-    "language": "es"
-  },
-  {
     "name": "Películas Románticas",
     "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/ec9d1d83-74cc-443d-b2ec-b51b970fe831.jpeg",
     "url": "https://romance-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6105/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.extra_eids=&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=217.216.126.162&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6105&ads.rtv_channel_name=romance-rakuten-tv_es&ads.rtv_content_id=6105&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=83cb3b05-422b-4a9c-a4ad-2a21612db817&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6105&publishing_platform_id=5&tenant_identifier=rtv",
@@ -3381,13 +3355,6 @@
     "url": "https://oly-ftvpc.otteravision.com/oly/ftvpc/ftvpc.m3u8",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "PopcornCentral.mx@SD"
-  },
-  {
-    "name": "Rakuten TV Action Movies (1080p)",
-    "logo": "https://i.imgur.com/Meew6eX.png",
-    "url": "https://a9c57ec7ec5e4b7daeacc6316a0bb404.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6069/master.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "RakutenTVActionMovies.es@Spain"
   },
   {
     "name": "Rakuten TV Comedy Movies (1080p)",
@@ -3873,13 +3840,6 @@
     "url": "http://23.237.104.106:8080/USA_BOOMERANG/index.m3u8",
     "group-title": "ANIME-INFANTIL",
     "tvg-id": "Boomerang.us@SD"
-  },
-  {
-    "name": "Canal IPe (720p)",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Identidad_Peruana_ipe_2020.png/960px-Identidad_Peruana_ipe_2020.png",
-    "url": "http://187.102.210.46/IPE/index.m3u8",
-    "group-title": "ANIME-INFANTIL",
-    "tvg-id": "CanalIPe.pe@SD"
   },
   {
     "name": "CARTOON CLASSICS",
@@ -5999,13 +5959,6 @@
     "tvg-id": "IQChannel.cr@SD"
   },
   {
-    "name": "Karibena (720p)",
-    "logo": "https://i.imgur.com/cgHjg1e.png",
-    "url": "http://187.102.210.46/KARIBENA/index.m3u8",
-    "group-title": "MUSICA",
-    "tvg-id": "Karibena.pe@SD"
-  },
-  {
     "name": "Kronehit Austria DE",
     "logo": "https://graph.facebook.com/kronehit/picture?width=200&height=200",
     "url": "https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8",
@@ -6148,13 +6101,6 @@
     "url": "https://video1.earthcam.com/myearthcam/075ff02f78c35af55564cf3af3b3f750.flv/playlist.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "MetropolitanadelCuzco.pe@SD"
-  },
-  {
-    "name": "Mi Musica Hits (720p)",
-    "logo": "https://i.imgur.com/z9MlLFL.png",
-    "url": "http://38.188.186.47:4000/play/a04n/index.m3u8",
-    "group-title": "MUSICA",
-    "tvg-id": "MiMusicaHits.us@SD"
   },
   {
     "name": "Mi Musica Popular (1080p)",
@@ -7235,13 +7181,6 @@
     "url": "https://s.emisoras.tv:8081/diostevetv/index.m3u8",
     "group-title": "RELIGION Y CULTURA",
     "tvg-id": "DiosTeVe.hn@SD"
-  },
-  {
-    "name": "Dios Tv Talanga (1080p)",
-    "logo": "https://i.ibb.co/mb8F7R1/Db52f621d30793337de1cdcfc4f02be1.png",
-    "url": "https://tv.webmedialive.com/unciontv/live/playlist.m3u8",
-    "group-title": "RELIGION Y CULTURA",
-    "tvg-id": "DiosTvTalanga.hn@SD"
   },
   {
     "name": "Ebenezer TV (1080p)",
