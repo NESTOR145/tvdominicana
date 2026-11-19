@@ -553,7 +553,8 @@
     "logo": "https://i.postimg.cc/CLQzxJZ7/CANANGA-DIGITAL.png",
     "url": "https://cdn.streamingcpanel.com/p/3472/live/canangadigitallive.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "canadigital.do@SD"
+    "tvg-id": "canadigital.do@SD",
+    "country": "DO"
   },
   {
     "name": "Cananga TV (720p)",
@@ -2057,15 +2058,6 @@
     "url": "https://edge.essastream.com/tenarensestvrd/index.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "tenarensestv.do@SD",
-    "country": "DO",
-    "language": "es"
-  },
-  {
-    "name": "TN1 CANAL 51",
-    "logo": "https://i.postimg.cc/C53D3tgK/TNI.jpg",
-    "url": "https://ss2.tvrdomi.com:1936/nuevaisabelatv/nuevaisabelatv/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "tn1canal51.do@SD",
     "country": "DO",
     "language": "es"
   },
@@ -5953,13 +5945,6 @@
     "url": "https://v2.tustreaming.cl/fmplus/index.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "FMPlusTV.cl@SD"
-  },
-  {
-    "name": "Galactica TV",
-    "logo": "https://i.imgur.com/byL1zCV.jpeg",
-    "url": "https://stream.neux.site/memfs/e3f59eec-6b93-45e1-a2ab-c82381c2a9ec.m3u8",
-    "group-title": "MUSICA",
-    "tvg-id": "GalacticaTV.pe@SD"
   },
   {
     "name": "Genial TV (720p)",
@@ -10014,13 +9999,6 @@
     "tvg-id": "AMCanal.cl@SD"
   },
   {
-    "name": "Amaga Television (720p)",
-    "logo": "https://i.imgur.com/hvpbfzG.png",
-    "url": "https://viewhn.com/amagatelevision/sdfUYWKegHKRPpSirG/playlist.m3u8",
-    "group-title": "GENERAL",
-    "tvg-id": "AmagaTelevision.co@SD"
-  },
-  {
     "name": "Amazonica TV (720p)",
     "logo": "https://i.imgur.com/22ebHAX.jpeg",
     "url": "https://live-evg8.tv360.bitel.com.pe/bitel/amazonicatvSRT/playlist.m3u8",
@@ -11261,13 +11239,6 @@
     "url": "https://unlimited2-cl-isp.dps.live/decimatv/decimatv.smil/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "DecimaTV.cl@SD"
-  },
-  {
-    "name": "Despierta TV (1080p) [Not 24/7]",
-    "logo": "https://i.imgur.com/hywjKNo.jpg",
-    "url": "https://video2.lhdserver.es/despiertatv/live.m3u8",
-    "group-title": "GENERAL",
-    "tvg-id": "DespiertaTV.mx@SD"
   },
   {
     "name": "Dmoda Channel (1080p)",
