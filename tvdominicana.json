@@ -438,9 +438,9 @@
   {
     "name": "AVIVAMIENTO TV",
     "logo": "https://i.postimg.cc/Rh5jGLJD/avivamiento-tv.png",
-    "url": "https://28tv.online:3081/live/avivamientotvlive.m3u8",
+    "url": "https://s1.abntelevision.com/avivamientoabr/stream/avivamientohd/avivamientohd/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "avivamientotv.do@SD",
+    "tvg-id": "AvivamientoTV.co@SD",
     "country": "DO",
     "language": "es"
   },
@@ -5945,6 +5945,13 @@
     "url": "https://v2.tustreaming.cl/fmplus/index.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "FMPlusTV.cl@SD"
+  },
+  {
+    "name": "Galactica TV",
+    "logo": "https://i.imgur.com/byL1zCV.jpeg",
+    "url": "https://stream.neux.site/memfs/e3f59eec-6b93-45e1-a2ab-c82381c2a9ec.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "GalacticaTV.pe@SD"
   },
   {
     "name": "Genial TV (720p)",
@@ -12178,6 +12185,13 @@
     "tvg-id": "RadioRitmoFM.cl@SD"
   },
   {
+    "name": "Radio TV Mega (720p)",
+    "logo": "https://i.imgur.com/pwRhOHB.png",
+    "url": "https://183.giatvcdn.com/ssh101/ssh101/radiotvmega26/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "RadioTVMega.bo@SD"
+  },
+  {
     "name": "Radio TV Neuquen (720p) [Not 24/7]",
     "logo": "https://i.imgur.com/HXBLozl.png",
     "url": "https://media.neuquen.gov.ar/rtn/television/playlist.m3u8",
@@ -12260,6 +12274,13 @@
     "url": "https://live-evg10.tv360.bitel.com.pe/bitel/realtv/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "RealTelevision.pe@SD"
+  },
+  {
+    "name": "Red America TV (1080p)",
+    "logo": "https://i.imgur.com/qYNmeDe.png",
+    "url": "https://edge.enhdtv.com/redamerica/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "RedAmericaTV.bo@SD"
   },
   {
     "name": "Red Digital (1080p) [Not 24/7]",
@@ -12636,6 +12657,13 @@
     "tvg-id": "Space.ar@Panregional"
   },
   {
+    "name": "SPC Canal 15 (1080p)",
+    "logo": "https://i.imgur.com/8GzjELt.jpeg",
+    "url": "https://183.giatvcdn.com/giatv/giatv-1762252013SPC/1762252013SPC/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "SPCCanal15.bo@SD"
+  },
+  {
     "name": "Studio + TV (1080p)",
     "logo": "https://carjocosa.space/studio/logo.png",
     "url": "https://vd01.streaminghd.net.ar:3113/hybrid/play.m3u8",
@@ -12669,6 +12697,13 @@
     "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/53.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "StudioUniversalLatinAmerica.us@South"
+  },
+  {
+    "name": "Sucremanta TV (1080p)",
+    "logo": "https://i.imgur.com/noN0Yhe.png",
+    "url": "https://183.giatvcdn.com/ssh101/ssh101/ok2026/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "SucremantaTV.bo@SD"
   },
   {
     "name": "Sula TV (1080p)",
@@ -12756,6 +12791,13 @@
     "url": "https://cloudvideo.servers10.com:8081/8230/index.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "TDtv.cr@SD"
+  },
+  {
+    "name": "TELE 6 (1080p)",
+    "logo": "https://i.imgur.com/p7tt72X.png",
+    "url": "https://183.giatvcdn.com/ssh101/ssh101/tele6/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "TELE6.bo@SD"
   },
   {
     "name": "Tele Mocoa Canal 10 (720p)",
@@ -13396,7 +13438,7 @@
   {
     "name": "TVes (1080p)",
     "logo": "https://i.imgur.com/QX5DVUB.png",
-    "url": "https://vs20.live.opencaster.com/tves_5fd18b1e/index.m3u8",
+    "url": "http://45.226.205.96:48000/play/a0dn/index.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "TVes.ve@SD"
   },
