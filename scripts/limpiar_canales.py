@@ -80,7 +80,7 @@ def main():
         log("Lista vacía.")
         return
 
-    # 1. Re-normalizar categorías
+    # 1. Re-normalizar categorías (corrige canales históricos mal clasificados)
     log("Re-normalizando categorías...")
     cambios = 0
     for c in canales:
@@ -95,6 +95,8 @@ def main():
         else:
             c.pop("tvg-id", None)
             c.pop("tvg_id", None)
+    if cambios:
+        log(f"  Categorías re-normalizadas: {cambios} canales")
 
     # 2. Corregir 'country'
     log("Corrigiendo 'country'...")
@@ -226,7 +228,8 @@ def main():
     guardar_json_atomico(JSON_PATH, finales)
     guardar_estado(estado)
     log(f"Resumen: ok={total - caidos - temporales - sin_url}, temporal={temporales}, "
-        f"fallo={caidos}, sin_url={sin_url}, eliminados={len(eliminados)}, dups={n_dups}")
+        f"fallo={caidos}, sin_url={sin_url}, eliminados={len(eliminados)}, dups={n_dups}, "
+        f"reclasificados={cambios}")
 
 
 if __name__ == "__main__":
