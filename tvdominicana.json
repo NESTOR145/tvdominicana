@@ -454,14 +454,6 @@
     "language": "es"
   },
   {
-    "name": "Bebeto TV (1080p)",
-    "logo": "",
-    "url": "https://cloud5.livescast.com:19360/bebetotv/bebetotv.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "BebetoTV.do@SD",
-    "country": "DO"
-  },
-  {
     "name": "BOCA CHICA TV",
     "logo": "https://i.postimg.cc/pLpPLG8Z/BOCA-CHICA-TV.jpg",
     "url": "https://cdnfox.hostlagarto.com/bocachicatv/index.m3u8",
@@ -1786,7 +1778,8 @@
     "logo": "https://dominicanchannels.com/wp-content/uploads/tele-ola.jpeg",
     "url": "https://teleola.ddns.net/hls/stream.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "TeleOla44.do@SD"
+    "tvg-id": "TeleOla44.do@SD",
+    "country": "DO"
   },
   {
     "name": "Tele Poder TV (720p) [Not 24/7]",
@@ -7183,13 +7176,6 @@
     "tvg-id": "Cristovision.co@SD"
   },
   {
-    "name": "Diaspora TV",
-    "logo": "https://i.imgur.com/lppmyxD.png",
-    "url": "https://s1.tvdatta.com:3978/live/diasporatvlive.m3u8",
-    "group-title": "RELIGION Y CULTURA",
-    "tvg-id": "DiasporaTV.pe@SD"
-  },
-  {
     "name": "Dios Te Ve (720p)",
     "logo": "https://i.imgur.com/7hNwUV2.png",
     "url": "https://s.emisoras.tv:8081/diostevetv/index.m3u8",
@@ -11262,13 +11248,6 @@
     "url": "https://video.ipstream.cl:3459/hybrid/play.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "ElRadar.cl@SD"
-  },
-  {
-    "name": "Emisora Comunitaria 104.1 FM",
-    "logo": "https://i.imgur.com/SQ79Wsb.png",
-    "url": "https://104florencia.co/wp-admin/admin-ajax.php?action=frp_hls_proxy&url=https://streamyes.alsolnet.com/comunitariafm/live/playlist.m3u8",
-    "group-title": "GENERAL",
-    "tvg-id": "EmisoraComunitaria1041FM.co@SD"
   },
   {
     "name": "En Linea Maule (720p)",
