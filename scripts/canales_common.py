@@ -98,6 +98,8 @@ GROUP_TO_CATEGORY = {
     "novela": CAT_NOVELAS, "novelas": CAT_NOVELAS,
     "telenovela": CAT_NOVELAS, "telenovelas": CAT_NOVELAS,
     "novelas turcas": CAT_NOVELAS, "telenovelas turcas": CAT_NOVELAS,
+    "drama": CAT_NOVELAS, "dramas": CAT_NOVELAS,
+    "romance": CAT_NOVELAS, "soap": CAT_NOVELAS, "soap opera": CAT_NOVELAS,
 
     # --- Variedades ---
     "entertainment": CAT_VARIEDADES, "entretenimiento": CAT_VARIEDADES,
@@ -117,72 +119,234 @@ GROUP_TO_CATEGORY = {
 }
 
 # --- Coincidencias por NOMBRE de canal (prioridad sobre group-title genérico) ---
-# ORDEN IMPORTANTE: primero las categorías más específicas y prioritarias.
+# ORDEN IMPORTANTE: los overrides van al principio; luego por categorías.
 # La comprobación se hace con substring (key in nom); el nombre ya está en minúsculas.
 NAME_FALLBACKS = [
-    # 1) NOVELAS (máxima prioridad: "novela", "novelas", "telenovela", "telenovelas")
+    # ============================================================
+    # 0) OVERRIDES ESPECÍFICOS (casos que combinan keywords de dos categorías)
+    # ============================================================
+    ("maxcine kids", CAT_ANIME),      # marca de películas pero es infantil
+    ("3abn kids", CAT_RELIGION),      # marca religiosa pero tiene "kids"
+
+    # ============================================================
+    # 1) NOVELAS (máxima prioridad)
+    # ============================================================
     ("telenovela", CAT_NOVELAS),
     ("novela", CAT_NOVELAS),
+    ("kanal d drama", CAT_NOVELAS),
+    ("dramas coreanos", CAT_NOVELAS),
+    ("k-drama", CAT_NOVELAS),
+    ("k drama", CAT_NOVELAS),
+    ("sin tetas", CAT_NOVELAS),
+    ("la rosa de guadalupe", CAT_NOVELAS),
+    ("la promesa", CAT_NOVELAS),
 
-    # 2) DEPORTES
+    # ============================================================
+    # 2) RELIGIÓN específicos (antes que "kids" y "cine")
+    # ============================================================
+    ("3abn", CAT_RELIGION),
+    ("ewtn", CAT_RELIGION),
+    ("daystar", CAT_RELIGION),
+    ("hope channel", CAT_RELIGION),
+    ("tbn ", CAT_RELIGION),
+    ("bethel", CAT_RELIGION),
+    ("maria vision", CAT_RELIGION),
+    ("maría visión", CAT_RELIGION),
+    ("redvida", CAT_RELIGION),
+    ("enlace tv", CAT_RELIGION),
+    ("enlace juvenil", CAT_RELIGION),
+    ("dios te ve", CAT_RELIGION),
+    ("cine dios", CAT_RELIGION),
+    ("cbn espanol", CAT_RELIGION),
+    ("llbn", CAT_RELIGION),
+    ("ecclesia", CAT_RELIGION),
+    ("cristovision", CAT_RELIGION),
+    ("iglesia", CAT_RELIGION),
+    ("gospel", CAT_RELIGION),
+
+    # ============================================================
+    # 3) PELÍCULAS específicos (antes que "kids")
+    # ============================================================
+    ("maxcine", CAT_PELICULAS),
+    ("hbo", CAT_PELICULAS),
+    ("cinemax", CAT_PELICULAS),
+    ("starz", CAT_PELICULAS),
+    ("warner", CAT_PELICULAS),
+    ("sony channel", CAT_PELICULAS),
+    ("sony movies", CAT_PELICULAS),
+    ("star channel", CAT_PELICULAS),
+    ("studio universal", CAT_PELICULAS),
+    ("universal tv", CAT_PELICULAS),
+    ("universal crime", CAT_PELICULAS),
+    ("axn", CAT_PELICULAS),
+    ("amc ", CAT_PELICULAS),
+    ("tcm ", CAT_PELICULAS),
+    ("golden premier", CAT_PELICULAS),
+    ("golden plus", CAT_PELICULAS),
+    ("europa europa", CAT_PELICULAS),
+    ("film & arts", CAT_PELICULAS),
+    ("bom cine", CAT_PELICULAS),
+    ("az cinema", CAT_PELICULAS),
+    ("cinecanal", CAT_PELICULAS),
+    ("pelimex", CAT_PELICULAS),
+    ("filmex", CAT_PELICULAS),
+    ("cinelatino", CAT_PELICULAS),
+    ("cinepride", CAT_PELICULAS),
+    ("lifetime movies", CAT_PELICULAS),
+    ("bbc drama", CAT_PELICULAS),
+
+    # ============================================================
+    # 4) DEPORTES
+    # ============================================================
+    ("espn", CAT_DEPORTES),
+    ("fox sport", CAT_DEPORTES),
+    ("fox deportes", CAT_DEPORTES),
+    ("bein sport", CAT_DEPORTES),
+    ("dazn", CAT_DEPORTES),
     ("deporte", CAT_DEPORTES),
     ("sport", CAT_DEPORTES),
     ("futbol", CAT_DEPORTES),
     ("fútbol", CAT_DEPORTES),
-    ("espn", CAT_DEPORTES),
-    ("fox sport", CAT_DEPORTES),
-    ("bein sport", CAT_DEPORTES),
-    ("dazn", CAT_DEPORTES),
     ("nba", CAT_DEPORTES),
     ("nfl", CAT_DEPORTES),
     ("mlb", CAT_DEPORTES),
     ("ufc", CAT_DEPORTES),
     ("wwe", CAT_DEPORTES),
+    ("real madrid", CAT_DEPORTES),
+    ("golf channel", CAT_DEPORTES),
+    ("fight tv", CAT_DEPORTES),
+    ("red bull tv", CAT_DEPORTES),
+    ("win sports", CAT_DEPORTES),
+    ("tyc sports", CAT_DEPORTES),
+    ("sky sports", CAT_DEPORTES),
+    ("claro sports", CAT_DEPORTES),
+    ("eurosport", CAT_DEPORTES),
+    ("tnt sports", CAT_DEPORTES),
+    ("fifa", CAT_DEPORTES),
+    ("master tv", CAT_DEPORTES),
+    ("top barca", CAT_DEPORTES),
+    ("top barça", CAT_DEPORTES),
+    ("turismo travel", CAT_DEPORTES),
 
-    # 3) NOTICIAS
-    ("noticia", CAT_NOTICIAS),
-    ("news", CAT_NOTICIAS),
+    # ============================================================
+    # 5) NOTICIAS
+    # ============================================================
     ("cnn", CAT_NOTICIAS),
-    ("bbc", CAT_NOTICIAS),
+    ("bbc news", CAT_NOTICIAS),
+    ("bbc world", CAT_NOTICIAS),
     ("al jazeera", CAT_NOTICIAS),
     ("dw ", CAT_NOTICIAS),
     ("france 24", CAT_NOTICIAS),
-    ("rt ", CAT_NOTICIAS),
     ("euronews", CAT_NOTICIAS),
+    ("noticia", CAT_NOTICIAS),
+    ("news", CAT_NOTICIAS),
+    ("milenio", CAT_NOTICIAS),
+    ("foro tv", CAT_NOTICIAS),
+    ("adn 40", CAT_NOTICIAS),
+    ("ntn24", CAT_NOTICIAS),
+    ("t13", CAT_NOTICIAS),
+    ("hl ", CAT_NOTICIAS),
+    ("telesur", CAT_NOTICIAS),
+    ("hispan tv", CAT_NOTICIAS),
+    ("rt en", CAT_NOTICIAS),
+    ("a24", CAT_NOTICIAS),
+    ("c9n", CAT_NOTICIAS),
+    ("tvn24", CAT_NOTICIAS),
+    ("abc teleshow", CAT_NOTICIAS),
+    ("cablenoticias", CAT_NOTICIAS),
+    ("mercurio noticias", CAT_NOTICIAS),
+    ("newsmax", CAT_NOTICIAS),
+    ("24 horas", CAT_NOTICIAS),
+    ("informativos", CAT_NOTICIAS),
 
-    # 4) INFANTIL / ANIME
-    ("anime", CAT_ANIME),
-    ("cartoon", CAT_ANIME),
-    ("infantil", CAT_ANIME),
-    ("kids", CAT_ANIME),
-    ("disney", CAT_ANIME),
-    ("nickelodeon", CAT_ANIME),
-    ("nick jr", CAT_ANIME),
+    # ============================================================
+    # 6) INFANTIL / ANIME (después de religión y películas específicas)
+    # ============================================================
     ("discovery kids", CAT_ANIME),
+    ("nick jr", CAT_ANIME),
     ("baby tv", CAT_ANIME),
+    ("babyfirst", CAT_ANIME),
+    ("baby shark", CAT_ANIME),
     ("pbs kids", CAT_ANIME),
+    ("nickelodeon", CAT_ANIME),
+    ("disney", CAT_ANIME),
+    ("cartoonito", CAT_ANIME),
+    ("cartoon", CAT_ANIME),
+    ("boomerang", CAT_ANIME),
+    ("tooncast", CAT_ANIME),
+    ("pitufo", CAT_ANIME),
+    ("paka paka", CAT_ANIME),
+    ("chikitoonz", CAT_ANIME),
+    ("anime", CAT_ANIME),
+    ("naruto", CAT_ANIME),
+    ("one piece", CAT_ANIME),
+    ("south park", CAT_ANIME),
+    ("rugrats", CAT_ANIME),
+    ("bob esponja", CAT_ANIME),
+    ("dragon ball", CAT_ANIME),
+    ("doraemon", CAT_ANIME),
+    ("shin-chan", CAT_ANIME),
+    ("detective conan", CAT_ANIME),
+    ("hey arnold", CAT_ANIME),
+    ("daria", CAT_ANIME),
+    ("kenan", CAT_ANIME),
+    ("icarly", CAT_ANIME),
+    ("infantil", CAT_ANIME),
+    ("kidz", CAT_ANIME),
+    ("kids", CAT_ANIME),
 
-    # 5) MÚSICA
-    ("musica", CAT_MUSICA),
-    ("música", CAT_MUSICA),
-    ("music", CAT_MUSICA),
+    # ============================================================
+    # 7) MÚSICA
+    # ============================================================
     ("mtv", CAT_MUSICA),
     ("vh1", CAT_MUSICA),
     ("telehit", CAT_MUSICA),
+    ("htv", CAT_MUSICA),
+    ("now 70", CAT_MUSICA),
+    ("now 80", CAT_MUSICA),
+    ("now rock", CAT_MUSICA),
+    ("xite", CAT_MUSICA),
+    ("stingray", CAT_MUSICA),
+    ("kpop", CAT_MUSICA),
+    ("rumbamix", CAT_MUSICA),
+    ("top latino", CAT_MUSICA),
+    ("totalmusic", CAT_MUSICA),
+    ("qmusic", CAT_MUSICA),
+    ("urban mix", CAT_MUSICA),
+    ("musica", CAT_MUSICA),
+    ("música", CAT_MUSICA),
+    ("music", CAT_MUSICA),
 
-    # 6) RELIGIÓN / CULTURA
+    # ============================================================
+    # 8) RELIGIÓN genéricos
+    # ============================================================
     ("religi", CAT_RELIGION),
     ("religio", CAT_RELIGION),
     ("cristo", CAT_RELIGION),
     ("cristian", CAT_RELIGION),
-    ("iglesia", CAT_RELIGION),
-    ("ewtn", CAT_RELIGION),
     ("cultura", CAT_RELIGION),
     ("culture", CAT_RELIGION),
-    ("history", CAT_RELIGION),
-    ("discovery", CAT_RELIGION),
 
-    # 7) PELÍCULAS (menor prioridad: "cine" es muy genérico)
+    # ============================================================
+    # 9) VARIEDADES / DOCUMENTALES
+    # ============================================================
+    ("investigation discovery", CAT_VARIEDADES),
+    ("discovery", CAT_VARIEDADES),
+    ("history", CAT_VARIEDADES),
+    ("nat geo", CAT_VARIEDADES),
+    ("national geographic", CAT_VARIEDADES),
+    ("animal planet", CAT_VARIEDADES),
+    ("tlc", CAT_VARIEDADES),
+    ("food network", CAT_VARIEDADES),
+    ("hgtv", CAT_VARIEDADES),
+    ("el gourmet", CAT_VARIEDADES),
+    ("love nature", CAT_VARIEDADES),
+    ("hola! ", CAT_VARIEDADES),
+    ("dmax", CAT_VARIEDADES),
+
+    # ============================================================
+    # 10) PELÍCULAS genéricos (última prioridad)
+    # ============================================================
     ("pelicula", CAT_PELICULAS),
     ("película", CAT_PELICULAS),
     ("movie", CAT_PELICULAS),
@@ -198,9 +362,9 @@ DOM_NAME_HINTS = ("dominicana", "dominicano", "quisqueya")
 
 RE_ATTR = re.compile(r'([\w-]+)="([^"]*)"')
 
-# Regex de novelas: captura "novela", "novelas", "telenovela", "telenovelas"
-# en cualquier posición del nombre (con o sin espacios entre palabras).
-RE_NOVELAS_NOMBRE = re.compile(r'(tele)?novelas?', re.IGNORECASE)
+# Regex de novelas: captura "novela", "novelas", "telenovela", "telenovelas",
+# "Novelisima", "Tlnovelas", etc. Se aplica sobre el nombre en minúsculas.
+RE_NOVELAS_NOMBRE = re.compile(r'novel', re.IGNORECASE)
 
 SUFIJOS_IGNORAR = re.compile(
     r"\b(hd|sd|fhd|uhd|4k|8k|h265|hevc|\+1|\+2|\+3|"
@@ -312,9 +476,8 @@ def normalizar_categoria(valor: str, tvg_id: str = "", nombre: str = "") -> str:
 
     ORDEN DE PRIORIDAD (de más específico a más genérico):
       1) Dominicanos (tvg-id .do, grupo dominicano, o nombre con hint)
-      2) Nombre del canal → NAME_FALLBACKS (aquí "novela" es el primero,
-         por lo que ningún canal de novelas se escapa aunque su group-title
-         diga "Peliculas", "Movies", "Entertainment" o "Pluto TV")
+      2) Nombre del canal → NAME_FALLBACKS (novelas primero, luego el resto;
+         los overrides específicos resuelven casos como "maxcine kids")
       3) group-title ya en forma canónica (respetar clasificación correcta)
       4) GROUP_TO_CATEGORY (mapeo flexible de group-title)
       5) GENERAL (fallback final)
@@ -333,7 +496,6 @@ def normalizar_categoria(valor: str, tvg_id: str = "", nombre: str = "") -> str:
         return CAT_DOMINICANOS
 
     # 2) Nombre del canal (prioridad sobre group-title genérico)
-    #    Incluye un atajo específico para novelas para máxima claridad.
     if RE_NOVELAS_NOMBRE.search(nom):
         return CAT_NOVELAS
     for key, cat in NAME_FALLBACKS:
