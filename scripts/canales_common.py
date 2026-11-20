@@ -61,6 +61,7 @@ CAT_ORDER = {
     CAT_VARIEDADES: 8, CAT_GENERAL: 9,
 }
 
+# --- Mapeo de group-title (solo se usa como fallback cuando el nombre no matchea) ---
 GROUP_TO_CATEGORY = {
     # --- Películas y series ---
     "movies": CAT_PELICULAS, "movie": CAT_PELICULAS,
@@ -89,12 +90,14 @@ GROUP_TO_CATEGORY = {
 
     # --- Religión / cultura ---
     "religious": CAT_RELIGION, "religion": CAT_RELIGION,
-    "religiosos": CAT_RELIGION,
+    "religioso": CAT_RELIGION, "religiosos": CAT_RELIGION,
     "culture": CAT_RELIGION, "cultura": CAT_RELIGION,
+    "cristiano": CAT_RELIGION, "cristianos": CAT_RELIGION,
 
     # --- Novelas ---
     "novela": CAT_NOVELAS, "novelas": CAT_NOVELAS,
     "telenovela": CAT_NOVELAS, "telenovelas": CAT_NOVELAS,
+    "novelas turcas": CAT_NOVELAS, "telenovelas turcas": CAT_NOVELAS,
 
     # --- Variedades ---
     "entertainment": CAT_VARIEDADES, "entretenimiento": CAT_VARIEDADES,
@@ -102,9 +105,8 @@ GROUP_TO_CATEGORY = {
     "cooking": CAT_VARIEDADES, "travel": CAT_VARIEDADES,
     "auto": CAT_VARIEDADES, "business": CAT_VARIEDADES,
     "education": CAT_VARIEDADES, "science": CAT_VARIEDADES,
-    "documentary": CAT_VARIEDADES, "relax": CAT_VARIEDADES,
-    "plutotv": CAT_VARIEDADES,
-    "outdoor": CAT_VARIEDADES,
+    "documentary": CAT_VARIEDADES, "documental": CAT_VARIEDADES,
+    "relax": CAT_VARIEDADES, "outdoor": CAT_VARIEDADES,
 
     # --- General ---
     "general": CAT_GENERAL, "public": CAT_GENERAL,
@@ -114,17 +116,78 @@ GROUP_TO_CATEGORY = {
     "shop": CAT_GENERAL, "undefined": CAT_GENERAL,
 }
 
+# --- Coincidencias por NOMBRE de canal (prioridad sobre group-title genérico) ---
+# ORDEN IMPORTANTE: primero las categorías más específicas y prioritarias.
+# La comprobación se hace con substring (key in nom); el nombre ya está en minúsculas.
 NAME_FALLBACKS = [
-    ("novela", CAT_NOVELAS), ("telenovela", CAT_NOVELAS),
-    ("pelicula", CAT_PELICULAS), ("película", CAT_PELICULAS),
-    ("movie", CAT_PELICULAS), ("cinema", CAT_PELICULAS),
-    ("anime", CAT_ANIME), ("infantil", CAT_ANIME),
-    ("kids", CAT_ANIME), ("cartoon", CAT_ANIME),
-    ("noticia", CAT_NOTICIAS), ("news", CAT_NOTICIAS),
-    ("deporte", CAT_DEPORTES), ("sport", CAT_DEPORTES), ("futbol", CAT_DEPORTES),
-    ("musica", CAT_MUSICA), ("música", CAT_MUSICA), ("music", CAT_MUSICA),
-    ("religi", CAT_RELIGION), ("cristo", CAT_RELIGION),
-    ("iglesia", CAT_RELIGION), ("cultura", CAT_RELIGION),
+    # 1) NOVELAS (máxima prioridad: "novela", "novelas", "telenovela", "telenovelas")
+    ("telenovela", CAT_NOVELAS),
+    ("novela", CAT_NOVELAS),
+
+    # 2) DEPORTES
+    ("deporte", CAT_DEPORTES),
+    ("sport", CAT_DEPORTES),
+    ("futbol", CAT_DEPORTES),
+    ("fútbol", CAT_DEPORTES),
+    ("espn", CAT_DEPORTES),
+    ("fox sport", CAT_DEPORTES),
+    ("bein sport", CAT_DEPORTES),
+    ("dazn", CAT_DEPORTES),
+    ("nba", CAT_DEPORTES),
+    ("nfl", CAT_DEPORTES),
+    ("mlb", CAT_DEPORTES),
+    ("ufc", CAT_DEPORTES),
+    ("wwe", CAT_DEPORTES),
+
+    # 3) NOTICIAS
+    ("noticia", CAT_NOTICIAS),
+    ("news", CAT_NOTICIAS),
+    ("cnn", CAT_NOTICIAS),
+    ("bbc", CAT_NOTICIAS),
+    ("al jazeera", CAT_NOTICIAS),
+    ("dw ", CAT_NOTICIAS),
+    ("france 24", CAT_NOTICIAS),
+    ("rt ", CAT_NOTICIAS),
+    ("euronews", CAT_NOTICIAS),
+
+    # 4) INFANTIL / ANIME
+    ("anime", CAT_ANIME),
+    ("cartoon", CAT_ANIME),
+    ("infantil", CAT_ANIME),
+    ("kids", CAT_ANIME),
+    ("disney", CAT_ANIME),
+    ("nickelodeon", CAT_ANIME),
+    ("nick jr", CAT_ANIME),
+    ("discovery kids", CAT_ANIME),
+    ("baby tv", CAT_ANIME),
+    ("pbs kids", CAT_ANIME),
+
+    # 5) MÚSICA
+    ("musica", CAT_MUSICA),
+    ("música", CAT_MUSICA),
+    ("music", CAT_MUSICA),
+    ("mtv", CAT_MUSICA),
+    ("vh1", CAT_MUSICA),
+    ("telehit", CAT_MUSICA),
+
+    # 6) RELIGIÓN / CULTURA
+    ("religi", CAT_RELIGION),
+    ("religio", CAT_RELIGION),
+    ("cristo", CAT_RELIGION),
+    ("cristian", CAT_RELIGION),
+    ("iglesia", CAT_RELIGION),
+    ("ewtn", CAT_RELIGION),
+    ("cultura", CAT_RELIGION),
+    ("culture", CAT_RELIGION),
+    ("history", CAT_RELIGION),
+    ("discovery", CAT_RELIGION),
+
+    # 7) PELÍCULAS (menor prioridad: "cine" es muy genérico)
+    ("pelicula", CAT_PELICULAS),
+    ("película", CAT_PELICULAS),
+    ("movie", CAT_PELICULAS),
+    ("cinema", CAT_PELICULAS),
+    ("cine ", CAT_PELICULAS),
 ]
 
 DOM_GROUP_KEYWORDS = {
@@ -134,6 +197,10 @@ DOM_GROUP_KEYWORDS = {
 DOM_NAME_HINTS = ("dominicana", "dominicano", "quisqueya")
 
 RE_ATTR = re.compile(r'([\w-]+)="([^"]*)"')
+
+# Regex de novelas: captura "novela", "novelas", "telenovela", "telenovelas"
+# en cualquier posición del nombre (con o sin espacios entre palabras).
+RE_NOVELAS_NOMBRE = re.compile(r'(tele)?novelas?', re.IGNORECASE)
 
 SUFIJOS_IGNORAR = re.compile(
     r"\b(hd|sd|fhd|uhd|4k|8k|h265|hevc|\+1|\+2|\+3|"
@@ -240,10 +307,23 @@ def clave_dedupe(canal: dict):
 
 
 def normalizar_categoria(valor: str, tvg_id: str = "", nombre: str = "") -> str:
+    """
+    Clasifica un canal en una de las 10 categorías canónicas.
+
+    ORDEN DE PRIORIDAD (de más específico a más genérico):
+      1) Dominicanos (tvg-id .do, grupo dominicano, o nombre con hint)
+      2) Nombre del canal → NAME_FALLBACKS (aquí "novela" es el primero,
+         por lo que ningún canal de novelas se escapa aunque su group-title
+         diga "Peliculas", "Movies", "Entertainment" o "Pluto TV")
+      3) group-title ya en forma canónica (respetar clasificación correcta)
+      4) GROUP_TO_CATEGORY (mapeo flexible de group-title)
+      5) GENERAL (fallback final)
+    """
     v = (valor or "").strip().upper()
     tid = (tvg_id or "").strip().lower()
     nom = (nombre or "").strip().lower()
 
+    # 1) Dominicanos
     if ".do@" in tid or tid.endswith(".do"):
         return CAT_DOMINICANOS
     partes = [p.strip() for p in v.split(";") if p.strip()]
@@ -252,25 +332,32 @@ def normalizar_categoria(valor: str, tvg_id: str = "", nombre: str = "") -> str:
     if any(h in nom for h in DOM_NAME_HINTS):
         return CAT_DOMINICANOS
 
+    # 2) Nombre del canal (prioridad sobre group-title genérico)
+    #    Incluye un atajo específico para novelas para máxima claridad.
+    if RE_NOVELAS_NOMBRE.search(nom):
+        return CAT_NOVELAS
+    for key, cat in NAME_FALLBACKS:
+        if key and key in nom:
+            return cat
+
+    # 3) group-title ya canónico (respetar clasificación existente correcta)
     CATS_CANONICAS = {
         "DOMINICANOS", "PELICULAS Y SERIES", "ANIME-INFANTIL", "NOTICIAS",
         "NOVELAS", "DEPORTES", "MUSICA", "RELIGION Y CULTURA",
-        "VARIEDADES", "GENERAL"
+        "VARIEDADES", "GENERAL",
     }
     for p in partes:
         if p in CATS_CANONICAS:
             return p
 
+    # 4) Mapeo flexible por group-title
     for p in partes:
         p_norm = unicodedata.normalize("NFKD", p).encode("ascii", "ignore").decode().lower().strip()
         cat = GROUP_TO_CATEGORY.get(p_norm)
         if cat:
             return cat
 
-    for key, cat in NAME_FALLBACKS:
-        if key in nom:
-            return cat
-
+    # 5) Fallback
     return CAT_GENERAL
 
 
