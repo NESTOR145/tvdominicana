@@ -1255,6 +1255,13 @@
     "language": "es"
   },
   {
+    "name": "Marla Vision (576p) [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3738-294x165-FFFFFF.jpg",
+    "url": "https://soportedvb.click:3877/live/merlavisionlive.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "MarlaVision.do@SD"
+  },
+  {
     "name": "MEGA CINE TV",
     "logo": "https://i.postimg.cc/PfCwk3Gd/MEGA-CINE-TV.png",
     "url": "https://cnn.hostlagarto.com/megacinetv/playlist.m3u8",
@@ -1879,9 +1886,9 @@
   {
     "name": "Telemax (Dominican Republic) (1080p) [Not 24/7]",
     "logo": "https://i.imgur.com/QvKmjvV.png",
-    "url": "https://edge.essastream.com/telemax/tracks-v1a1/mono.m3u8",
+    "url": "https://stream-gtlc.telecentro.net.ar/hls/telemaxhls/main.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "Telemax.do@SD",
+    "tvg-id": "Telemax.ar@SD",
     "country": "DO"
   },
   {
@@ -2776,6 +2783,13 @@
     "url": "http://45.171.64.30:6060/play/a00i/index.m3u8",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "HBO2LatinAmerica.us@HD"
+  },
+  {
+    "name": "HBO Xtreme Latin America",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/HBO_Xtreme.svg/960px-HBO_Xtreme.svg.png",
+    "url": "http://181.78.61.202:8000/play/a02a",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "HBOXtremeLatinAmerica.us@SD"
   },
   {
     "name": "HORROR VISION",
@@ -8160,6 +8174,13 @@
     "url": "https://videostream.chileservidores.com:8081/chiloe2/index.m3u8",
     "group-title": "VARIEDADES",
     "tvg-id": "CanalChilote.cl@SD"
+  },
+  {
+    "name": "Canal Guapa (1080p)",
+    "logo": "https://canalguapa.tv/guapa-isologo.png",
+    "url": "https://guapa-live.argosworkspace.com/guapa/index.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "CanalGuapa.py@SD"
   },
   {
     "name": "Canal Nets (720p) [Not 24/7]",
