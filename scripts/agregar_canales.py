@@ -33,10 +33,8 @@ JSON_PATH = Path("tvdominicana.json")
 
 # --- CONFIGURACIÓN DE LISTAS REMOTAS ---
 URLS_SIN_FILTRO = [
-    # Listas originales
     "https://raw.githubusercontent.com/NESTOR145/miscanalesdetv/refs/heads/main/todosmiscanales.m3u",
     "https://iptv-org.github.io/iptv/countries/do.m3u",
-    # --- 17 listas iptv-org por país (sin filtro) ---
     "https://iptv-org.github.io/iptv/countries/pe.m3u",
     "https://iptv-org.github.io/iptv/countries/cl.m3u",
     "https://iptv-org.github.io/iptv/countries/ec.m3u",
@@ -65,7 +63,6 @@ URLS_CON_FILTRO = [
 ]
 
 # --- FILTRO DE GRUPOS PERMITIDOS (para SPA y TDTChannels) ---
-# Nota: los nombres aquí se comparan en minúsculas y sin acentos.
 GRUPOS_PERMITIDOS = {
     # Películas y series
     "movies", "movie", "series", "classic", "cine", "peliculas", "película",
@@ -79,9 +76,10 @@ GRUPOS_PERMITIDOS = {
     "sports", "deportes", "deportivos",
     # Noticias
     "news", "noticias", "informativos",
-    # Novelas (IMPRESCINDIBLE: sin esto los canales de spa.m3u y TDT se descartan)
+    # Novelas y dramas
     "novela", "novelas", "telenovela", "telenovelas",
     "novelas turcas", "telenovelas turcas",
+    "drama", "dramas", "romance", "soap", "soap opera",
     # Religión / cultura
     "religion", "religious", "religioso", "religiosos",
     "culture", "cultura", "cristiano", "cristianos",
@@ -291,8 +289,6 @@ def main() -> None:
     json_actual.extend(nuevos)
 
     # --- RE-CLASIFICACIÓN FINAL: corrige canales históricos mal clasificados ---
-    # (TNT Novelas, TNT Novelas México, Pluto TV Novelas… que estuvieran en
-    # PELICULAS Y SERIES o VARIEDADES por un group-title genérico).
     reclasificados = 0
     for c in json_actual:
         cat_actual = c.get("group-title", "")
