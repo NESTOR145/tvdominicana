@@ -1782,6 +1782,13 @@
     "language": "es"
   },
   {
+    "name": "Tele Ola 44 (576i) [Not 24/7]",
+    "logo": "https://dominicanchannels.com/wp-content/uploads/tele-ola.jpeg",
+    "url": "https://teleola.ddns.net/hls/stream.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "TeleOla44.do@SD"
+  },
+  {
     "name": "Tele Poder TV (720p) [Not 24/7]",
     "logo": "https://www.telepoder.online/wp-content/uploads/2024/02/cropped-cropped-Logo-PoderTV2.png",
     "url": "https://cdn.telepoder.online:3229/dash/stream.m3u8",
@@ -5173,6 +5180,13 @@
     "tvg-id": "torrevision",
     "country": "UN",
     "language": "es"
+  },
+  {
+    "name": "TSi",
+    "logo": "https://i.imgur.com/GEyxDnf.png",
+    "url": "http://181.114.57.246:4000/play/9w2G3HTtuTmrtgPZ/index.m3u8",
+    "group-title": "NOTICIAS",
+    "tvg-id": "TSi.hn@SD"
   },
   {
     "name": "Turno (720p)",
@@ -11545,6 +11559,13 @@
     "url": "https://v2.tustreaming.cl/lcomarcatv/index.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "LaComarcaTV.cl@SD"
+  },
+  {
+    "name": "La Exitosa TV Riberalta (720p)",
+    "logo": "https://i.imgur.com/LnF0zWB.png",
+    "url": "https://ares.disfrutaenlared.com:1936/exitosa/exitosa/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "LaExitosaTVRiberalta.bo@SD"
   },
   {
     "name": "La Metro TV (1080p)",
