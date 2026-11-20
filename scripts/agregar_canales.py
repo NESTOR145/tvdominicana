@@ -65,14 +65,34 @@ URLS_CON_FILTRO = [
 ]
 
 # --- FILTRO DE GRUPOS PERMITIDOS (para SPA y TDTChannels) ---
+# Nota: los nombres aquí se comparan en minúsculas y sin acentos.
 GRUPOS_PERMITIDOS = {
+    # Películas y series
     "movies", "movie", "series", "classic", "cine", "peliculas", "película",
-    "animation", "anime", "kids", "family", "infantil", "ninos", "dibujos",
-    "music", "musica", "música", "sports", "deportes",
-    "documentary", "documental", "news", "noticias",
-    "dominicano", "dominicana",
-    "generalistas", "informativos", "deportivos", "infantiles",
-    "musicales", "religiosos", "eventuales",
+    "cineseries", "cine-series",
+    # Infantil / anime
+    "animation", "anime", "kids", "family", "infantil", "infantiles",
+    "ninos", "dibujos",
+    # Música
+    "music", "musica", "música", "musicales",
+    # Deportes
+    "sports", "deportes", "deportivos",
+    # Noticias
+    "news", "noticias", "informativos",
+    # Novelas (IMPRESCINDIBLE: sin esto los canales de spa.m3u y TDT se descartan)
+    "novela", "novelas", "telenovela", "telenovelas",
+    "novelas turcas", "telenovelas turcas",
+    # Religión / cultura
+    "religion", "religious", "religioso", "religiosos",
+    "culture", "cultura", "cristiano", "cristianos",
+    # Variedades
+    "entertainment", "entretenimiento", "comedy", "lifestyle",
+    "cooking", "travel", "auto", "business", "education",
+    "science", "documentary", "documental", "relax", "outdoor",
+    # General
+    "general", "public", "generalistas", "eventuales",
+    # Dominicanos
+    "dominicano", "dominicana", "dominicanos",
 }
 
 
@@ -270,11 +290,25 @@ def main() -> None:
 
     json_actual.extend(nuevos)
 
+    # --- RE-CLASIFICACIÓN FINAL: corrige canales históricos mal clasificados ---
+    # (TNT Novelas, TNT Novelas México, Pluto TV Novelas… que estuvieran en
+    # PELICULAS Y SERIES o VARIEDADES por un group-title genérico).
+    reclasificados = 0
+    for c in json_actual:
+        cat_actual = c.get("group-title", "")
+        tvg = c.get("tvg-id") or c.get("_tvg_id") or c.get("tvg_id") or ""
+        nueva = normalizar_categoria(cat_actual, tvg, c.get("name", ""))
+        if nueva != cat_actual:
+            c["group-title"] = nueva
+            reclasificados += 1
+    if reclasificados:
+        log(f"Re-clasificados: {reclasificados} canales")
+
     log("=" * 60)
     log(f"Nuevos: {len(nuevos)} | URLs actualizadas: {upd_url} | Conservados: {conservados}")
     log(f"Ignorados filtro: {ign_filtro} | Caídos: {caidos} | Duplicados: {dup}")
 
-    if nuevos or upd_url > 0:
+    if nuevos or upd_url > 0 or reclasificados > 0:
         json_actual.sort(key=clave_orden)
         guardar_json_atomico(JSON_PATH, json_actual)
         log(f"JSON actualizado. Total: {len(json_actual)}")
