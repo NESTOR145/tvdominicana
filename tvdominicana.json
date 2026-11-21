@@ -354,6 +354,13 @@
     "country": "DO"
   },
   {
+    "name": "AVIVAMIENTO TV",
+    "logo": "https://i.postimg.cc/Rh5jGLJD/avivamiento-tv.png",
+    "url": "https://28tv.online:3081/live/avivamientotvlive.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "avivamientotv.do@SD"
+  },
+  {
     "name": "BAJO TECHO TV",
     "logo": "https://i.postimg.cc/qRhZ2Np6/BAJO-TECHO-TV.png",
     "url": "https://fox.hostlagarto.com:8081/bajotechotv/index.m3u8",
@@ -876,6 +883,13 @@
     "group-title": "DOMINICANOS",
     "tvg-id": "jimanitv.do@SD",
     "country": "DO"
+  },
+  {
+    "name": "JPD TV [Not 24/7]",
+    "logo": "https://i0.wp.com/juanpabloduartetv.com/wp-content/uploads/2024/08/logo-JPDTV-100-x-100.png",
+    "url": "https://imagenuniversaltv.net:3026/live/juanpabloduartetvlive.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "JPDTV.do@HD"
   },
   {
     "name": "Junior Technologia TV (1080p) [Not 24/7]",
@@ -10436,6 +10450,13 @@
     "tvg-id": "Canal5SantaFe.ar@SD"
   },
   {
+    "name": "Canal 5 TV Chepes",
+    "logo": "https://i.imgur.com/AzEqroq.png",
+    "url": "https://videostream.shockmedia.com.ar:19360/canal5alfatvchepes/canal5alfatvchepes.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "Canal5TVChepes.ar@SD"
+  },
+  {
     "name": "Canal 5 TV Cozumel (1080p)",
     "logo": "https://i.imgur.com/0nzNMuP.jpeg",
     "url": "https://video0.rogohosting.com:19360/tvcozumel/tvcozumel.m3u8",
@@ -12192,6 +12213,13 @@
     "tvg-id": "RASDTV.eh@SD"
   },
   {
+    "name": "RB TV (1080p)",
+    "logo": "https://i.imgur.com/EMFAFX0.png",
+    "url": "https://video.hostingcaaguazu.com:19360/rbtv/rbtv.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "RBTV.py@SD"
+  },
+  {
     "name": "RCN HD2 (1080p)",
     "logo": "https://i.imgur.com/SrMPTfc.png",
     "url": "http://181.78.14.26:4000/play/a07m/index.m3u8",
@@ -12424,6 +12452,13 @@
     "url": "https://v4.tustreaming.cl/sannicolastv/index.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "SanNicolasTV.cl@SD"
+  },
+  {
+    "name": "San Pedro TV (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/UkpXogr.png",
+    "url": "https://iptv.ixfo.com.ar:30443/live/sanpedrotv/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "SanPedroTV.ar@SD"
   },
   {
     "name": "San Vito Television",
@@ -13014,6 +13049,13 @@
     "url": "https://5eac7b031d945.streamlock.net/TICAVISION/TICAVISION/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "TicaVision.cr@SD"
+  },
+  {
+    "name": "TIV Television (720p)",
+    "logo": "https://i.imgur.com/gsgXGEj.png",
+    "url": "https://videohd.live:19360/8008/8008.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "TIVTelevision.ar@SD"
   },
   {
     "name": "TL Estrella (720p)",
