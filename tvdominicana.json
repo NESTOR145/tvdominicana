@@ -762,6 +762,13 @@
     "country": "DO"
   },
   {
+    "name": "GALAXIA TV",
+    "logo": "https://i.postimg.cc/mZcwLhCj/GALAXIA-TV.jpg",
+    "url": "https://streaming.grupomediosdelnorte.com:19360/galaxiateve/galaxiateve.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "galaxiatv.do@SD"
+  },
+  {
     "name": "GH TELEVISION",
     "logo": "https://i.postimg.cc/PrCfYsjz/GH-TELEVISION.jpg",
     "url": "https://fox.hostlagarto.com:8081/ghtelevision/index.m3u8",
@@ -1192,9 +1199,9 @@
   {
     "name": "ONDA TV",
     "logo": "https://i.postimg.cc/dVvqX7Cn/ONDA-TV.png",
-    "url": "https://cnn.hostlagarto.com/ondatv/index.m3u8",
+    "url": "https://live-evg5.tv360.bitel.com.pe/bitel/onda/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "ondatv.do@SD",
+    "tvg-id": "OndaTV.pe@SD",
     "country": "DO"
   },
   {
@@ -1580,6 +1587,13 @@
     "group-title": "DOMINICANOS",
     "tvg-id": "telecomercio.do@SD",
     "country": "DO"
+  },
+  {
+    "name": "TELECONTACTO 57",
+    "logo": "https://i.postimg.cc/3NbRVfPc/TELECONTACTO-57.jpg",
+    "url": "https://streaming.grupomediosdelnorte.com:19360/telecontacto/telecontacto.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "telecontacto57.do@SD"
   },
   {
     "name": "Telefuturo (Dominican Republic) (480p) [Not 24/7]",
@@ -2050,6 +2064,13 @@
     "url": "http://45.70.201.81:8000/play/a010/index.m3u8",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "AVIRewind.us@SD"
+  },
+  {
+    "name": "AXN (Spain) (1080p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
+    "url": "https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fgeil.to%2Flive%2Fplay%2F4238619703",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "AXN.es@SD"
   },
   {
     "name": "AXN Latin America (1080p)",
@@ -7877,6 +7898,13 @@
     "tvg-id": "canal7"
   },
   {
+    "name": "CANAL 7 TELEVALECIA",
+    "logo": "https://i.postimg.cc/nrfrP1BM/TELEVALENCIA.png",
+    "url": "https://play.cdn.enetres.net/9E9557EFCEBB43A89CEC8FBD3C500247022/028/playlist.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "7televalencia"
+  },
+  {
     "name": "CANAL 8 ROSARIO",
     "logo": "https://i.postimg.cc/QxcZpSCk/CANAL-8-ROSARIO.jpg",
     "url": "https://stmv4.voxtvhd.com.br/canal8ros/canal8ros/playlist.m3u8",
@@ -8497,9 +8525,9 @@
   {
     "name": "IMAGEN TV",
     "logo": "https://i.postimg.cc/9MLSV44z/IMAGEN-TV.png",
-    "url": "https://cdn.streamhispanatv.net:3587/live/imagentvlive.m3u8",
+    "url": "https://igd-it-runtime.otteravision.com/igd/it/it.m3u8",
     "group-title": "VARIEDADES",
-    "tvg-id": "imagentv"
+    "tvg-id": "ImagenTV.mx@SD"
   },
   {
     "name": "IMPACTO TV",
@@ -10129,9 +10157,9 @@
   {
     "name": "Canal 10 (El Salvador) (720p)",
     "logo": "https://i.imgur.com/y2ppMnY.png",
-    "url": "https://5ca3e84a76d30.streamlock.net/tves/videotves/playlist.m3u8",
+    "url": "https://ddycmnicl95kp.cloudfront.net/live/ja5k3h31wv9r/master.m3u8",
     "group-title": "GENERAL",
-    "tvg-id": "Canal10.sv@SD"
+    "tvg-id": "Canal10.ni@SD"
   },
   {
     "name": "Canal 10 Goya (1080p)",
@@ -11714,6 +11742,13 @@
     "tvg-id": "NayaritComunica.mx@SD"
   },
   {
+    "name": "Neox TV [Not 24/7]",
+    "logo": "https://i.imgur.com/eIX71c9.png",
+    "url": "https://tv.streamcasthd.com:3031/live/neoxtvlive.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "NeoxTV.ar@SD"
+  },
+  {
     "name": "Nex TV Canal 21",
     "logo": "https://i.imgur.com/QQBd052.png",
     "url": "https://movil.ejeserver.com/live/nextv.m3u8",
@@ -12311,9 +12346,9 @@
   {
     "name": "RTP (Peru) (720p)",
     "logo": "https://i.imgur.com/nHMqAHn.jpeg",
-    "url": "https://live-evg7.tv360.bitel.com.pe/bitel/rtp/playlist.m3u8",
+    "url": "http://190.181.61.93:8000/play/a00n/index.m3u8",
     "group-title": "GENERAL",
-    "tvg-id": "RTP.pe@SD"
+    "tvg-id": "RTP.bo@SD"
   },
   {
     "name": "RTQ Queretaro (1080p)",
