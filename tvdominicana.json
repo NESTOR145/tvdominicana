@@ -1758,7 +1758,8 @@
     "logo": "https://i.postimg.cc/7Lqf35TW/TELEVISION-DEL-ESTE.jpg",
     "url": "https://edge.essastream.com/televisiondeleste/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "televisiondeleste.do@SD"
+    "tvg-id": "televisiondeleste.do@SD",
+    "country": "DO"
   },
   {
     "name": "TN1 CANAL 51",
