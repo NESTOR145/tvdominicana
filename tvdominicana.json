@@ -356,9 +356,9 @@
   {
     "name": "AVIVAMIENTO TV",
     "logo": "https://i.postimg.cc/Rh5jGLJD/avivamiento-tv.png",
-    "url": "https://28tv.online:3081/live/avivamientotvlive.m3u8",
+    "url": "https://s1.abntelevision.com/avivamientoabr/stream/avivamientohd/avivamientohd/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "avivamientotv.do@SD",
+    "tvg-id": "AvivamientoTV.co@SD",
     "country": "DO"
   },
   {
@@ -3577,6 +3577,13 @@
     "url": "http://38.87.224.19:2220/play/a03u/index.m3u8",
     "group-title": "ANIME-INFANTIL",
     "tvg-id": "FMHKids.us@SD"
+  },
+  {
+    "name": "GikTVMX (720p)",
+    "logo": "https://i.imgur.com/Gwz78jZ.png",
+    "url": "https://pistream.ddns.net/hls/stream.m3u8",
+    "group-title": "ANIME-INFANTIL",
+    "tvg-id": "GikTVMX.mx@SD"
   },
   {
     "name": "Hey Arnold!",
@@ -9780,6 +9787,13 @@
     "url": "https://60417ddeaf0d9.streamlock.net/ntv/videontv/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "8NTV.mx@SD"
+  },
+  {
+    "name": "9 la Loma TV (1080p) [Geo-blocked]",
+    "logo": "https://i.imgur.com/WQP3el2.png",
+    "url": "https://9laloma.tv/live.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "9laLomaTV.es@SD"
   },
   {
     "name": "A Punt (720p)",
