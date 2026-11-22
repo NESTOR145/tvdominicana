@@ -4014,13 +4014,6 @@
     "tvg-id": "324.TV"
   },
   {
-    "name": "4Dmas Noticias TV (1080p) [Not 24/7]",
-    "logo": "https://i.ibb.co/1fb5BtN/unnamed.png",
-    "url": "https://rds3.desdeparaguay.net/4dmasnoticiastv/4dmasnoticiastv/playlist.m3u8",
-    "group-title": "NOTICIAS",
-    "tvg-id": "4DmasNoticiasTV.py@SD"
-  },
-  {
     "name": "A24 (1080p)",
     "logo": "https://i.imgur.com/LnXQkIU.png",
     "url": "http://138.59.227.20:8000/play/a05u/index.m3u8",
@@ -10186,13 +10179,6 @@
     "url": "https://live-evg8.tv360.bitel.com.pe/bitel/cajamarcatvSRT/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "CajamarcaTV.pe@SD"
-  },
-  {
-    "name": "California Medios TV (720p)",
-    "logo": "https://i.imgur.com/IDvpRNI.png",
-    "url": "https://s5.mexside.net:1936/medios/medios/playlist.m3u8",
-    "group-title": "GENERAL",
-    "tvg-id": "CaliforniaMediosTV.mx@SD"
   },
   {
     "name": "CaliTV (1080p)",
