@@ -3560,7 +3560,7 @@
   {
     "name": "EnerGeek Retro HD",
     "logo": "https://pbs.twimg.com/profile_images/2088558300111556608/CrCydAjp_200x200.jpg",
-    "url": "https://cl-2.backend.energeek.cl/bkp/egretroweb/index.m3u8?token=TDTCh4nnelsES",
+    "url": "https://cl-2.backend.energeek.cl/bkp/egretro/mobile/index.m3u8?token=TDTCh4nnelsES",
     "group-title": "ANIME-INFANTIL",
     "tvg-id": "EnergeekRetro.TV"
   },
@@ -4912,9 +4912,9 @@
   {
     "name": "ESPN Premium",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/960px-ESPN_Premium_logo.svg.png",
-    "url": "http://45.134.141.161:2200/ARG/ESPN_Premium_Argentina_HD/tracks-v1a1/mono.m3u8",
+    "url": "http://158.172.155.130:8000/play/a0ao/index.m3u8",
     "group-title": "DEPORTES",
-    "tvg-id": "ESPNPremium.ar@SD"
+    "tvg-id": "ESPNPremium.ar@HD"
   },
   {
     "name": "eSports Max TV",
@@ -5186,6 +5186,13 @@
     "url": "https://live.enfoque.media:5443/live/streams/vinxtv.m3u8",
     "group-title": "DEPORTES",
     "tvg-id": "Vinx.TV"
+  },
+  {
+    "name": "WAPA-TV 4.2 (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/5WNBFmp.png",
+    "url": "https://wapa.hostless.app/WAPA-TV-4-2.m3u8",
+    "group-title": "DEPORTES",
+    "tvg-id": "WAPATV42.pr@HD"
   },
   {
     "name": "Win Sports (1080p)",
@@ -8146,9 +8153,9 @@
   {
     "name": "COSMOS TV",
     "logo": "https://i.postimg.cc/P53M37qL/COSMOS-TV.jpg",
-    "url": "https://canaletaplus.com:3922/live/cosmoslive.m3u8",
+    "url": "https://video.hostingcaaguazu.com:19360/cosmostv/cosmostv.m3u8",
     "group-title": "VARIEDADES",
-    "tvg-id": "CosmosTv.ar@SD"
+    "tvg-id": "cosmos"
   },
   {
     "name": "Crimen & Historia (720p)",
@@ -10931,6 +10938,13 @@
     "url": "https://vivo.solumedia.com:19360/celta/celta.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "CeltaTV.ar@SD"
+  },
+  {
+    "name": "Central TV (Chile) (720p)",
+    "logo": "https://cdn.m3u.cl/logo/1706_Central_TV.png",
+    "url": "https://freya.mivideo.pro/centraltv/video.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "CentralTV.cl@SD"
   },
   {
     "name": "Cerritos TV3 (360p)",
