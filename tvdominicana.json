@@ -1754,6 +1754,13 @@
     "country": "DO"
   },
   {
+    "name": "TELEVISION DEL ESTE",
+    "logo": "https://i.postimg.cc/7Lqf35TW/TELEVISION-DEL-ESTE.jpg",
+    "url": "https://edge.essastream.com/televisiondeleste/index.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "televisiondeleste.do@SD"
+  },
+  {
     "name": "TN1 CANAL 51",
     "logo": "https://i.postimg.cc/C53D3tgK/TNI.jpg",
     "url": "https://ss2.tvrdomi.com:1936/nuevaisabelatv/nuevaisabelatv/playlist.m3u8",
@@ -4108,6 +4115,13 @@
     "tvg-id": "CanalTDC.ar@SD"
   },
   {
+    "name": "CGTN Spanish (1080p)",
+    "logo": "https://i.imgur.com/Poz3xfi.png",
+    "url": "https://amg01314-cgtn-amg01314c3-rakuten-uk-1318.playouts.now.amagi.tv/cgtn-es-rakuten/playlist.m3u8",
+    "group-title": "NOTICIAS",
+    "tvg-id": "CGTNSpanish.cn@SD"
+  },
+  {
     "name": "CNN en Espanol (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Logo_de_CNN_en_Espa%C3%B1ol_%282010-2015%29.svg/960px-Logo_de_CNN_en_Espa%C3%B1ol_%282010-2015%29.svg.png",
     "url": "https://amg00803-cnnfast-amg00803c3-lg-es-5477.playouts.now.amagi.tv/playlist.m3u8",
@@ -5101,6 +5115,13 @@
     "url": "https://live-evg8.tv360.bitel.com.pe/bitel/studiotvhuanta/playlist.m3u8",
     "group-title": "DEPORTES",
     "tvg-id": "SqalaTV.pe@SD"
+  },
+  {
+    "name": "Teledeporte",
+    "logo": "https://graph.facebook.com/teledeporteRTVE/picture?width=200&height=200",
+    "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15601&avod=1&coppa=0&td=6&is_lat=[LMT]&dnt=[DNS]&us_privacy=[US_PRIVACY]&did=[DEVICE_ID]&ip=[IP]&ua=[UA]&ifa_type=[IFA_TYPE]&app_bundle=[APP_BUNDLE]",
+    "group-title": "DEPORTES",
+    "tvg-id": "TDP.TV"
   },
   {
     "name": "Teledeporte GEO",
@@ -6238,6 +6259,13 @@
     "tvg-id": "SalsaGordaTelevision.co@SD"
   },
   {
+    "name": "SanjuaneraTV (1080p)",
+    "logo": "https://i.imgur.com/QB3tz0d.png",
+    "url": "https://live.obslivestream.com/sanjuanera/index.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "SanjuaneraTV.pe@SD"
+  },
+  {
     "name": "Sensacion Costa (1080p)",
     "logo": "https://i.imgur.com/oYQoWAB.png",
     "url": "https://tvcosta.gleeze.com/memfs/4d48db09-0b1e-4803-8da7-22be388bdd7e.m3u8",
@@ -6700,6 +6728,13 @@
     "tvg-id": "Canal6VientoRecio.ar@SD"
   },
   {
+    "name": "Canal 63 TV Catolico Corinto (720p)",
+    "logo": "https://i.imgur.com/SJigdlY.jpeg",
+    "url": "http://167.249.23.102:8000/play/TvCatolico_CO/index.m3u8",
+    "group-title": "RELIGION Y CULTURA",
+    "tvg-id": "Canal63TVCatolicoCorinto.sv@SD"
+  },
+  {
     "name": "CANAL CINE DIOS",
     "logo": "https://i.postimg.cc/cL44Pp6S/CANAL-CINE-DIOS.png",
     "url": "https://canal.mediaserver.com.co/live/cinedios.m3u8",
@@ -7154,6 +7189,13 @@
     "url": "https://2-fss-1.streamhoster.com/pl_122/200226-1427780-1/playlist.m3u8",
     "group-title": "RELIGION Y CULTURA",
     "tvg-id": "KSCE383.us@HD"
+  },
+  {
+    "name": "LGD Television (720p)",
+    "logo": "https://i.imgur.com/a9E0DTY.jpeg",
+    "url": "https://streamtv.intervenhosting.net:3403/hybrid/play.m3u8",
+    "group-title": "RELIGION Y CULTURA",
+    "tvg-id": "LGDTelevision.ve@SD"
   },
   {
     "name": "LLBN TV Latino (480p)",
@@ -10201,6 +10243,13 @@
     "tvg-id": "Canal11TuTV.sv@SD"
   },
   {
+    "name": "Canal 12 Valledupar (1080p)",
+    "logo": "https://i.imgur.com/2xqMZrE.png",
+    "url": "http://181.78.8.199:8000/play/a0e4/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "Canal12Valledupar.co@SD"
+  },
+  {
     "name": "Canal 12 Venado Tuerto (1080i)",
     "logo": "https://i.imgur.com/b93YC0V.jpeg",
     "url": "https://nd106.republicaservers.com:4433/hls/diegologonitv/index.m3u8",
@@ -11662,6 +11711,13 @@
     "tvg-id": "MASTV.gt@SD"
   },
   {
+    "name": "Maxivision Canal 8 (1080p)",
+    "logo": "https://i.imgur.com/rlFAtnO.jpeg",
+    "url": "http://181.119.97.124:8080/play/a00w/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "MaxivisionCanal8.ec@SD"
+  },
+  {
     "name": "MC (1080p)",
     "logo": "https://i.imgur.com/TAjbaml.png",
     "url": "http://168.196.127.137:6001/play/a070/index.m3u8",
@@ -12491,6 +12547,13 @@
     "tvg-id": "RTVE_PopUp3.TV"
   },
   {
+    "name": "SelvaTV (1080p)",
+    "logo": "https://i.imgur.com/CVgix1C.png",
+    "url": "https://videoserver.tmcreativos.com:2020/hls/selvatv/selvatv.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "SelvaTV.pe@SD"
+  },
+  {
     "name": "Senado",
     "logo": "https://pbs.twimg.com/profile_images/2117563720138174464/GG24RqEq_200x200.jpg",
     "url": "https://senadolive.akamaized.net/hls/live/2006551/punto1/master.m3u8",
@@ -12677,6 +12740,13 @@
       "Referer": "https://multicablemas.com/"
     },
     "tvg-id": "SulaTV.hn@SD"
+  },
+  {
+    "name": "Sullana TV (1080p)",
+    "logo": "https://i.imgur.com/BOqtK0a.png",
+    "url": "https://mundial.cpustream.com:8081/sullanatv/video.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "SullanaTV.pe@SD"
   },
   {
     "name": "SUR TV (720p)",
@@ -13575,6 +13645,13 @@
     "url": "http://190.181.61.93:8000/play/a00h/index.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "UPEATV.bo@SD"
+  },
+  {
+    "name": "USIL TV (1080p)",
+    "logo": "https://i.imgur.com/9OXF9EK.png",
+    "url": "https://eu1.servers10.com:8081/8162/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "USILTV.pe@SD"
   },
   {
     "name": "UTV (Chile) (720p)",
