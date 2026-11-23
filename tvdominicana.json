@@ -106,6 +106,13 @@
     "country": "DO"
   },
   {
+    "name": "ALCARRIZOS TV",
+    "logo": "https://i.postimg.cc/D07ykYGk/ALCARRIZOS-TV.jpg",
+    "url": "https://5790d294af2dc.streamlock.net/alcarrizostv/alcarrizostv/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "alcarrizostv.do@SD"
+  },
+  {
     "name": "TELEALTURA",
     "logo": "https://i.postimg.cc/qqN05pG8/TELEALTURA.png",
     "url": "https://stream1.28tv.online/Telealtura/index.m3u8",
@@ -232,6 +239,13 @@
     "group-title": "DOMINICANOS",
     "tvg-id": "MiavisionTV.do@HD",
     "country": "DO"
+  },
+  {
+    "name": "Retro vision TV (720p) [Not 24/7]",
+    "logo": "https://retrovisionmia.com/assets/retrovision-logo-BHToA3lv.png",
+    "url": "https://5790d294af2dc.streamlock.net/retrovision/retrovision/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "RetrovisionTV.do@HD"
   },
   {
     "name": "ZONA VISION TV",
@@ -1216,9 +1230,9 @@
   {
     "name": "ONDA TV",
     "logo": "https://i.postimg.cc/dVvqX7Cn/ONDA-TV.png",
-    "url": "https://live-evg5.tv360.bitel.com.pe/bitel/onda/playlist.m3u8",
+    "url": "https://cnn.hostlagarto.com/ondatv/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "OndaTV.pe@SD",
+    "tvg-id": "ondatv.do@SD",
     "country": "DO"
   },
   {
@@ -1476,6 +1490,13 @@
     "group-title": "DOMINICANOS",
     "tvg-id": "supertv55.do@SD",
     "country": "DO"
+  },
+  {
+    "name": "Taino Live TV (1080p) [Not 24/7]",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/4090-294x165-FFFFFF.jpg",
+    "url": "https://tainolivetv.com/hls/taino2026.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "TainoLiveTV.do@HD"
   },
   {
     "name": "Tarima TV (720p)",
@@ -2391,6 +2412,13 @@
     "url": "https://filmex-filmexclasico-xumo.amagi.tv/playlist.m3u8",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "FilmexClasico.mx@SD"
+  },
+  {
+    "name": "FMH Movies (1080p)",
+    "logo": "https://img-evg3.tv360.bitel.com.pe/peru-image/2024/12/24/23/1735058961578/eaf883fb926d_480_270.png",
+    "url": "http://45.186.254.75:8000/play/a07j/index.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "FMHMovies.us@SD"
   },
   {
     "name": "GARAVITO TV",
@@ -4462,6 +4490,13 @@
     "tvg-id": "RadioAncon.pa@SD"
   },
   {
+    "name": "Radio Isla TV (1080p)",
+    "logo": "https://i.ibb.co/PDThYr5/Logo-Radio-Isla.png",
+    "url": "https://panel2.videocontentstreaming.com/live/4fd37e086394ac7e11a87acbc55e8f91.m3u8",
+    "group-title": "NOTICIAS",
+    "tvg-id": "RadioIslaTV.pr@SD"
+  },
+  {
     "name": "Radio Nacional",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
     "url": "https://ztnr.rtve.es/ztnr/6982891.m3u8",
@@ -5564,6 +5599,13 @@
     "tvg-id": "LaFabulosaTV.pe@SD"
   },
   {
+    "name": "La Granja TV (1080p)",
+    "logo": "https://i.imgur.com/90luGab.png",
+    "url": "https://oracle.streaminghd.cl/8126/8126/playlist.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "LaGranjaTV.cl@SD"
+  },
+  {
     "name": "La Mega Mundial USA",
     "logo": "https://graph.facebook.com/lamegaworldwide/picture?width=200&height=200",
     "url": "https://server80.servistreaming.com:3477/stream/play.m3u8",
@@ -5912,6 +5954,13 @@
     "url": "https://cloudvideo.servers10.com:8081/8116/index.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "OndaValenciaTV.es@SD"
+  },
+  {
+    "name": "PalMundo FM (1080p)",
+    "logo": "https://cdn.m3u.cl/logo/1803_PalMundo_FM.png",
+    "url": "https://streampanelcp.palmundofm.cl/hls/palmundofm/visual/hd.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "PalMundoFM.cl@SD"
   },
   {
     "name": "Parranda Vallenata (720p)",
@@ -7252,6 +7301,13 @@
     "logo": "https://graph.facebook.com/mariavision/picture?width=200&height=200",
     "url": "https://1601580044.rsc.cdn77.org/live/_jcn_/amls:Italiatre/playlist.m3u8",
     "group-title": "RELIGION Y CULTURA"
+  },
+  {
+    "name": "Master Video (1080p)",
+    "logo": "https://i.imgur.com/0jj9Vx0.png",
+    "url": "https://eco.streams.ovh:8081/mastervideotv/index.m3u8",
+    "group-title": "RELIGION Y CULTURA",
+    "tvg-id": "MasterVideo.pr@SD"
   },
   {
     "name": "Mega 2 (1080p)",
@@ -9538,9 +9594,9 @@
   {
     "name": "UNITEL",
     "logo": "https://i.postimg.cc/DwPWcRGP/UNITEL-TV.jpg",
-    "url": "https://play.agenciastreaming.com:8081/uniteltv/index.m3u8",
+    "url": "http://190.181.61.93:8000/play/1909/index.m3u8",
     "group-title": "VARIEDADES",
-    "tvg-id": "unitel"
+    "tvg-id": "Unitel.bo@SantaCruz"
   },
   {
     "name": "UNIVERS TV",
@@ -9698,7 +9754,7 @@
   {
     "name": "+tdp",
     "logo": "https://graph.facebook.com/teledeporteRTVE/picture?width=200&height=200",
-    "url": "https://ztnr.rtve.es/ztnr/6712432.m3u8",
+    "url": "https://ztnr.rtve.es/ztnr/6712411.m3u8",
     "group-title": "GENERAL"
   },
   {
@@ -11443,6 +11499,13 @@
     "tvg-id": "HuachoPeruTV.pe@SD"
   },
   {
+    "name": "Huila TV (1080p)",
+    "logo": "https://i.imgur.com/hFlGHNZ.png",
+    "url": "https://server.asilivehd.com:3333/live/huilatvlive.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "HuilaTV.co@SD"
+  },
+  {
     "name": "Icrtv Colima (1080p)",
     "logo": "https://i.imgur.com/iUks0ot.png",
     "url": "https://5fc584f3f19c9.streamlock.net/icrtvcolima/smil:icrtvcolima.smil/playlist.m3u8",
@@ -11719,6 +11782,13 @@
     "tvg-id": "MasNorteTV.co@SD"
   },
   {
+    "name": "Mas Radio TV (1080p)",
+    "logo": "https://cdn.m3u.cl/logo/1495_Mas_Radio_TV.png",
+    "url": "https://iptv.intersurtv.cl/intersur_mauletv/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "MasRadioTV.cl@SD"
+  },
+  {
     "name": "MAS TV",
     "logo": "https://i.imgur.com/3XuwlkQ.jpg",
     "url": "https://cdn.streamhispanatv.net:3011/live/mastvgtlive.m3u8",
@@ -11950,6 +12020,13 @@
     "tvg-id": "ONDADIGITAL.pe@SD"
   },
   {
+    "name": "Osorno TV (1080p)",
+    "logo": "https://i.imgur.com/0ELjva6.png",
+    "url": "https://envivo.osornotv.cl/memfs/cb5800be-330b-40c9-8519-af788c7e29eb.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "OsornoTV.cl@SD"
+  },
+  {
     "name": "Oviedo TV",
     "logo": "https://i.imgur.com/6OlfgSQ.png",
     "url": "https://video.wilohosting.com:19360/oviedotv/oviedotv.m3u8",
@@ -12116,6 +12193,13 @@
     "url": "http://185.81.77.4/BocairentTV/index.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "RadioBocairentTV.es@SD"
+  },
+  {
+    "name": "Radio Bohemia TV (1080p)",
+    "logo": "https://cdn.m3u.cl/logo/1776_Radio_Bohemia_TV.png",
+    "url": "https://portalstream.cl:8080/bohemia1.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "RadioBohemiaTV.cl@SD"
   },
   {
     "name": "Radio Centro (720p)",
@@ -12818,6 +12902,13 @@
     "url": "https://turnerlive.warnermediacdn.com/hls/live/2023174/tbswest/slate/VIDEO_0_3564000.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "TBS.us@West"
+  },
+  {
+    "name": "TC Television (1080p)",
+    "logo": "https://i.imgur.com/okK02EN.png",
+    "url": "http://45.224.97.181:9999/TC/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "TCTelevision.ec@SD"
   },
   {
     "name": "TDT Multimedia (720p)",
