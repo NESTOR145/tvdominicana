@@ -110,7 +110,8 @@
     "logo": "https://i.postimg.cc/D07ykYGk/ALCARRIZOS-TV.jpg",
     "url": "https://5790d294af2dc.streamlock.net/alcarrizostv/alcarrizostv/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "alcarrizostv.do@SD"
+    "tvg-id": "alcarrizostv.do@SD",
+    "country": "DO"
   },
   {
     "name": "TELEALTURA",
@@ -245,7 +246,8 @@
     "logo": "https://retrovisionmia.com/assets/retrovision-logo-BHToA3lv.png",
     "url": "https://5790d294af2dc.streamlock.net/retrovision/retrovision/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "RetrovisionTV.do@HD"
+    "tvg-id": "RetrovisionTV.do@HD",
+    "country": "DO"
   },
   {
     "name": "ZONA VISION TV",
@@ -1252,14 +1254,6 @@
     "country": "DO"
   },
   {
-    "name": "PITUCO TV",
-    "logo": "https://i.postimg.cc/1zd1948k/PITUCO-TV.png",
-    "url": "https://imagenuniversaltv.net:3439/live/elpitucolive.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "pitucotv.do@SD",
-    "country": "DO"
-  },
-  {
     "name": "PORTAL DIGITAL",
     "logo": "https://i.postimg.cc/Qx77z7tW/PORTAL-DIGITAL.jpg",
     "url": "https://edge.essastream.com/portaldigital/index.m3u8",
@@ -1496,7 +1490,8 @@
     "logo": "https://www.vivalivetv.com/public/files/shows/0/1/4090-294x165-FFFFFF.jpg",
     "url": "https://tainolivetv.com/hls/taino2026.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "TainoLiveTV.do@HD"
+    "tvg-id": "TainoLiveTV.do@HD",
+    "country": "DO"
   },
   {
     "name": "Tarima TV (720p)",
@@ -5353,13 +5348,6 @@
     "tvg-id": "BuenisimaRadioTV.co@SD"
   },
   {
-    "name": "CADENA ELITE",
-    "logo": "https://i.postimg.cc/gkGSczxp/CADENA-ELITE.png",
-    "url": "https://cloudvideo.servers10.com:8081/8004/index.m3u8",
-    "group-title": "MUSICA",
-    "tvg-id": "cadenaelite"
-  },
-  {
     "name": "Canal Womtv (720p)",
     "logo": "https://i.imgur.com/Nr4muMP.jpeg",
     "url": "https://live.amelbatv.co:81/womtvlive/index.m3u8",
@@ -6053,13 +6041,6 @@
     "group-title": "MUSICA"
   },
   {
-    "name": "Radio Clasica TV (720p)",
-    "logo": "https://radioclasicapotosi.com/players/nexoplayer/assets/logo.png",
-    "url": "https://ares.disfrutaenlared.com:1936/clasica/clasica/playlist.m3u8",
-    "group-title": "MUSICA",
-    "tvg-id": "RadioClasicaTV.bo@SD"
-  },
-  {
     "name": "Radio Colmenar 92.5 FM",
     "logo": "https://i.imgur.com/LniNLO1.jpeg",
     "url": "https://tvdatta.com:3041/live/colmenarlive.m3u8",
@@ -6542,13 +6523,6 @@
     "url": "https://59ef525c24caa.streamlock.net/tvurbano/tvurbano/playlist.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "UrbanoTV.cr@SD"
-  },
-  {
-    "name": "V Classic TV (1080p)",
-    "logo": "https://i.imgur.com/WIACJSy.png",
-    "url": "http://186.148.196.100:8000/play/a02z",
-    "group-title": "MUSICA",
-    "tvg-id": "VClassicTV.cl@SD"
   },
   {
     "name": "V2Beat TV EN",
@@ -7817,13 +7791,6 @@
     "url": "https://5bf8041cb3fed.streamlock.net/AlcanceTV/AlcanceTV/playlist.m3u8",
     "group-title": "VARIEDADES",
     "tvg-id": "alcancetv"
-  },
-  {
-    "name": "Alt Media TV",
-    "logo": "https://i.imgur.com/YkOgWMc.png",
-    "url": "https://video.hostingcaaguazu.com:19360/altmedia/altmedia.m3u8",
-    "group-title": "VARIEDADES",
-    "tvg-id": "AltMediaTV.py@SD"
   },
   {
     "name": "AMERICA TV",
@@ -11901,13 +11868,6 @@
     "tvg-id": "NativaTVSatipo.pe@SD"
   },
   {
-    "name": "Nayarit Comunica (1080p)",
-    "logo": "https://i.imgur.com/aZCTkjU.jpg",
-    "url": "https://live.iplanay.gob.mx/hls/nayarittv.m3u8",
-    "group-title": "GENERAL",
-    "tvg-id": "NayaritComunica.mx@SD"
-  },
-  {
     "name": "Neox TV [Not 24/7]",
     "logo": "https://i.imgur.com/eIX71c9.png",
     "url": "https://tv.streamcasthd.com:3031/live/neoxtvlive.m3u8",
@@ -12025,13 +11985,6 @@
     "url": "https://envivo.osornotv.cl/memfs/cb5800be-330b-40c9-8519-af788c7e29eb.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "OsornoTV.cl@SD"
-  },
-  {
-    "name": "Oviedo TV",
-    "logo": "https://i.imgur.com/6OlfgSQ.png",
-    "url": "https://video.wilohosting.com:19360/oviedotv/oviedotv.m3u8",
-    "group-title": "GENERAL",
-    "tvg-id": "OviedoTV.py@SD"
   },
   {
     "name": "Ozono TV (720p)",
