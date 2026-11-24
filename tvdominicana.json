@@ -886,14 +886,6 @@
     "country": "DO"
   },
   {
-    "name": "JIMANI TV",
-    "logo": "https://i.postimg.cc/k4Mq5LsS/JIMANI-TV.jpg",
-    "url": "https://cloud2.streaminglivehd.com:1936/8246/8246/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "jimanitv.do@SD",
-    "country": "DO"
-  },
-  {
     "name": "JPD TV [Not 24/7]",
     "logo": "https://i0.wp.com/juanpabloduartetv.com/wp-content/uploads/2024/08/logo-JPDTV-100-x-100.png",
     "url": "https://imagenuniversaltv.net:3026/live/juanpabloduartetvlive.m3u8",
@@ -923,14 +915,6 @@
     "url": "https://edge.enhdtv.com/8206/index.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "LaHoraTV.do@HD",
-    "country": "DO"
-  },
-  {
-    "name": "LA REYNA TV",
-    "logo": "https://i.postimg.cc/6qWkhwzN/LA-REYNA-TV.jpg",
-    "url": "https://cloud2.streaminglivehd.com:1936/lareinatv/lareinatv/playlist.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "lareynatv.do@SD",
     "country": "DO"
   },
   {
@@ -1075,14 +1059,6 @@
     "url": "http://200.7.219.221:8088/live/livetv/index.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "markatvrd.do@SD",
-    "country": "DO"
-  },
-  {
-    "name": "Marla Vision (576p) [Not 24/7]",
-    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3738-294x165-FFFFFF.jpg",
-    "url": "https://soportedvb.click:3877/live/merlavisionlive.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "MarlaVision.do@SD",
     "country": "DO"
   },
   {
@@ -1474,7 +1450,8 @@
     "logo": "https://i.postimg.cc/909NGyXZ/SUPER-CANAL-33.jpg",
     "url": "https://cnn.hostlagarto.com/supercanalhd/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "supercanal33.do@SD"
+    "tvg-id": "supercanal33.do@SD",
+    "country": "DO"
   },
   {
     "name": "SUPER DIGITAL TV",
