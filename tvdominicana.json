@@ -1470,6 +1470,13 @@
     "country": "DO"
   },
   {
+    "name": "SUPER CANAL 33",
+    "logo": "https://i.postimg.cc/909NGyXZ/SUPER-CANAL-33.jpg",
+    "url": "https://cnn.hostlagarto.com/supercanalhd/playlist.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "supercanal33.do@SD"
+  },
+  {
     "name": "SUPER DIGITAL TV",
     "logo": "https://i.postimg.cc/DwNdqz98/SUPER-DIGITAL.jpg",
     "url": "https://cdn.streamrd.cloud/live/ch_kb5qe1zr.m3u8",
@@ -2012,9 +2019,9 @@
   {
     "name": "XTRA TV",
     "logo": "https://i.postimg.cc/BndC40qh/XTRA-TV.png",
-    "url": "https://edge.essastream.com/xtratv/index.m3u8",
+    "url": "https://streaming.social3.hr/ExtraTVudzdhr5/uUankWqpXD/1.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "xtratv.do@SD",
+    "tvg-id": "xtratv",
     "country": "DO"
   },
   {
@@ -3219,6 +3226,13 @@
     "tvg-id": "urban"
   },
   {
+    "name": "Warner Channel (720p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png",
+    "url": "http://181.78.197.59:8000/play/a07s/index.m3u8",
+    "group-title": "PELICULAS Y SERIES",
+    "tvg-id": "WarnerChannel.us@Panregional"
+  },
+  {
     "name": "Warner Channel Colombia (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png",
     "url": "http://38.134.250.110:8000/play/a029/index.m3u8",
@@ -4147,6 +4161,13 @@
     "tvg-id": "CanalI.ve@SD"
   },
   {
+    "name": "Canal N (576p)",
+    "logo": "https://i.imgur.com/Xytvw3J.png",
+    "url": "http://190.108.91.206:9050/play/a0bd/index.m3u8",
+    "group-title": "NOTICIAS",
+    "tvg-id": "CanalN.pe@SD"
+  },
+  {
     "name": "Canal Sur Noticias",
     "logo": "https://i.imgur.com/A3JscwS.png",
     "url": "https://cdnlive.codev8.net/rtvalive/smil:channel42.smil/playlist.m3u8",
@@ -4948,6 +4969,13 @@
     "tvg-id": "DeporTV.ar@SD"
   },
   {
+    "name": "DSports 2",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/DIRECTV_Sports_2_Latin_America_%282018%29.svg/960px-DIRECTV_Sports_2_Latin_America_%282018%29.svg.png",
+    "url": "http://45.134.141.161:2200/ARG/DTV_SP2/tracks-v1a1/mono.m3u8",
+    "group-title": "DEPORTES",
+    "tvg-id": "DSports2.us@Panregional"
+  },
+  {
     "name": "ESPN 2 Latin America Colombia (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/960px-ESPN2_logo.svg.png",
     "url": "http://190.61.47.54:8000/play/a005/index.m3u8",
@@ -5035,11 +5063,25 @@
     "tvg-id": "fighttv"
   },
   {
+    "name": "FOX",
+    "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/FOX_wordmark.svg/960px-FOX_wordmark.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "url": "https://lilac19.pontiscloud.com/live/gt/FOX/index.m3u8",
+    "group-title": "DEPORTES",
+    "tvg-id": "FOX.mx@HD"
+  },
+  {
     "name": "FOX Central (1080p)",
     "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/FOX_wordmark.svg/960px-FOX_wordmark.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
     "url": "http://181.78.106.127:5000/play/a009/index.m3u8",
     "group-title": "DEPORTES",
     "tvg-id": "FOXCentral.mx@CostaRica"
+  },
+  {
+    "name": "Fox Deportes (720p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/FOX_Deportes_logo.png/960px-FOX_Deportes_logo.png",
+    "url": "https://live-manifest.production-public.tubi.io/live/d906efca-1302-4e29-b0d9-9a1d7a305d69/playlist.m3u8",
+    "group-title": "DEPORTES",
+    "tvg-id": "FoxDeportes.us@SD"
   },
   {
     "name": "Fox Sports (1080p)",
@@ -5493,6 +5535,13 @@
     "url": "https://www.streaming507.net:19360/videofabulosa/videofabulosa.m3u8",
     "group-title": "MUSICA",
     "tvg-id": "FabulosaEstereo1005FM.pa@SD"
+  },
+  {
+    "name": "Farra Play (576p)",
+    "logo": "https://i.imgur.com/bXWzstH.png",
+    "url": "https://stream.farra.com.py/live/farra_low.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "FarraPlay.py@SD"
   },
   {
     "name": "Fiesta TV",
@@ -6441,6 +6490,13 @@
     "url": "http://186.148.196.100:8000/play/a01s",
     "group-title": "MUSICA",
     "tvg-id": "TeleHit.mx@SD"
+  },
+  {
+    "name": "The Retro Channel (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/t3i1HtE.jpg",
+    "url": "https://583ed2f226ac2.streamlock.net/theretrochannel/stream/playlist.m3u8",
+    "group-title": "MUSICA",
+    "tvg-id": "TheRetroChannel.pr@HD"
   },
   {
     "name": "Top Latino TV",
@@ -8027,9 +8083,9 @@
   {
     "name": "CANAL 56",
     "logo": "https://i.postimg.cc/bY2Q8mhB/CANAL-56.jpg",
-    "url": "https://vdopanel.jlahozconsulting.com/p/3124/hybrid/play.m3u8",
+    "url": "https://videos.canal56.com/directe/stream/index.m3u8",
     "group-title": "VARIEDADES",
-    "tvg-id": "canal56"
+    "tvg-id": "Canal56.es@SD"
   },
   {
     "name": "CANAL 7 JUJUY",
@@ -9721,6 +9777,13 @@
     "tvg-id": "Wapp.cl@SD"
   },
   {
+    "name": "WIMN-TV (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/5ntmgEg.png",
+    "url": "https://video2.getstreamhosting.com:1936/8040/8040/playlist.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "WIMNTV.pr@SD"
+  },
+  {
     "name": "WTV NICARAGUA",
     "logo": "https://i.postimg.cc/3JBNtmRJ/WTV-NICARAGUA.jpg",
     "url": "https://cloudvideo.servers10.com:8081/8130/index.m3u8",
@@ -10205,6 +10268,13 @@
     "tvg-id": "Bolivision.bo@LaPaz"
   },
   {
+    "name": "Boricua TV (1080p)",
+    "logo": "https://www.boricuatv.net/uploads/8/3/9/1/83918842/published/1468328426.png?1496069545",
+    "url": "https://2-fss-2.streamhoster.com/pl_138/amlst:201284-1347630/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "BoricuaTV.pr@SD"
+  },
+  {
     "name": "Bruno Masi TV (720p)",
     "logo": "https://i.ibb.co/QFmyjZN/unnamed-1.png",
     "url": "https://rds3.desdeparaguay.net/brunomasitv/brunomasitv/playlist.m3u8",
@@ -10322,6 +10392,20 @@
     "url": "https://183.giatvcdn.com/giatv/giatv-chinique100tvenvivo/chinique100tvenvivo/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "Canal100Chinique.gt@SD"
+  },
+  {
+    "name": "Canal 11 de la Costa (1080p)",
+    "logo": "https://i.imgur.com/yYExcq1.jpg",
+    "url": "https://vivo.solumedia.com:19360/dadaproductora/dadaproductora.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "Canal11delaCosta.ar@SD"
+  },
+  {
+    "name": "Canal 11 Machagai (1080i)",
+    "logo": "https://i.imgur.com/1pXrcdO.jpg",
+    "url": "https://srv2.zcast.com.br/machagay/machagay/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "Canal11Machagai.ar@SD"
   },
   {
     "name": "Canal 11 TuTV (349p)",
@@ -11295,7 +11379,7 @@
   {
     "name": "Ecuador TV (1080p)",
     "logo": "https://i.imgur.com/hj6EYwe.png",
-    "url": "http://45.224.97.181:9999/EcuadorTV/index.m3u8",
+    "url": "https://video-eu1.streamerr.co/hls/s64029a8fdf/live.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "EcuadorTV.ec@SD"
   },
@@ -11434,6 +11518,13 @@
     "url": "https://v2.tustreaming.cl/frecuencia7/index.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "Frecuencia7TV.cl@SD"
+  },
+  {
+    "name": "Fuengirola TV (720p)",
+    "logo": "https://i.ibb.co/D9LGcNf/Patalla-streaming.png",
+    "url": "https://streaming004.gestec-video.com/hls/FTV.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "FuengirolaTV.es@SD"
   },
   {
     "name": "Galavision East HD (1080p) [Geo-blocked]",
