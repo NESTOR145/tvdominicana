@@ -686,7 +686,8 @@
     "logo": "https://i.postimg.cc/fybfmTrz/EL-PUERTO-TV.png",
     "url": "https://5bf8041cb3fed.streamlock.net/PuertoTV/PuertoTV/playlist.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "elpuertotv.do@SD"
+    "tvg-id": "elpuertotv.do@SD",
+    "country": "DO"
   },
   {
     "name": "EL SEIS RD",
@@ -12432,13 +12433,6 @@
     "url": "https://scl.edge.grupoz.cl/uniaccastream/live/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "RadioUNIACC.cl@SD"
-  },
-  {
-    "name": "Radio Universal (720p)",
-    "logo": "https://cdn.m3u.cl/logo/390_Radio_Universal.png",
-    "url": "https://videostream.chileservidores.com:8081/universal/index.m3u8",
-    "group-title": "GENERAL",
-    "tvg-id": "RadioUniversal.cl@SD"
   },
   {
     "name": "Radio UP (1080p)",
