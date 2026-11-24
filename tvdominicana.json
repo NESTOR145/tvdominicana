@@ -322,14 +322,6 @@
     "country": "DO"
   },
   {
-    "name": "ACENTO TV",
-    "logo": "https://i.postimg.cc/kg5mL7tZ/ACENTO-TV.jpg",
-    "url": "https://acentotv01.streamprolive.com/hls/live.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "acentotv.do@SD",
-    "country": "DO"
-  },
-  {
     "name": "Adoram TV (720p) [Not 24/7]",
     "logo": "https://i.imgur.com/uU01KHz.png",
     "url": "https://183.giatvcdn.com/giatv/giatv-adoram/adoram/playlist.m3u8",
@@ -1258,7 +1250,8 @@
     "logo": "https://i.postimg.cc/1zd1948k/PITUCO-TV.png",
     "url": "https://imagenuniversaltv.net:3439/live/elpitucolive.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "pitucotv.do@SD"
+    "tvg-id": "pitucotv.do@SD",
+    "country": "DO"
   },
   {
     "name": "PORTAL DIGITAL",
@@ -1789,7 +1782,8 @@
     "logo": "https://i.postimg.cc/26Mpqw9p/TENARENSES-TV.jpg",
     "url": "https://edge.essastream.com/tenarensestvrd/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "tenarensestv.do@SD"
+    "tvg-id": "tenarensestv.do@SD",
+    "country": "DO"
   },
   {
     "name": "TN1 CANAL 51",
