@@ -644,9 +644,9 @@
   {
     "name": "DELTA TV",
     "logo": "https://i.postimg.cc/Pq3N06xb/DELTA-TV.png",
-    "url": "https://fox.hostlagarto.com:8081/deltatv50/index.m3u8",
+    "url": "https://tv2.bitstreaming.net:3539/live/deltanetlive.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "deltatv.do@SD",
+    "tvg-id": "DeltaTV.pe@SD",
     "country": "DO"
   },
   {
@@ -5064,9 +5064,9 @@
   {
     "name": "Fox Sports (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/960px-FOX_Sports_logo.svg.png",
-    "url": "http://138.59.227.20:8000/play/a085/index.m3u8",
+    "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/1552.m3u8",
     "group-title": "DEPORTES",
-    "tvg-id": "FoxSports.ar@SD"
+    "tvg-id": "FoxSports.ar@HD"
   },
   {
     "name": "FTV (Bolivia) (720p)",
@@ -8957,6 +8957,13 @@
     "tvg-id": "MasTalk.ve@SD"
   },
   {
+    "name": "Maxima TV",
+    "logo": "https://i.imgur.com/HMZRVL5.jpeg",
+    "url": "https://maximatv.net/hls/stream.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "MaximaTV.ve@SD"
+  },
+  {
     "name": "Maxivision TV (720p)",
     "logo": "https://i.imgur.com/UC8WrEN.jpg",
     "url": "https://video03.logicahost.com.br/maxivisiontv/maxivisiontv/playlist.m3u8",
@@ -10437,9 +10444,9 @@
   {
     "name": "Canal 13 (Chile) (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Canal_13_2025.svg/960px-Canal_13_2025.svg.png",
-    "url": "http://15.204.246.24:8080/Canal13HD/index.m3u8",
+    "url": "http://168.196.127.137:6001/play/a064/index.m3u8",
     "group-title": "GENERAL",
-    "tvg-id": "Canal13.cl@SD"
+    "tvg-id": "Canal13.gt@SD"
   },
   {
     "name": "Canal 13 Esquipulas (720p)",
@@ -11304,7 +11311,7 @@
   {
     "name": "Cubavision Internacional (720p) [Not 24/7]",
     "logo": "https://i.imgur.com/0ZHm9f6.png",
-    "url": "https://cdn.teveo.cu/live/video/A36pWmuWvZBQskuZ/ngrp:gppfydfzpSUn9Udy.stream/playlist.m3u8",
+    "url": "http://90.183.52.46:4000/play/a04a/index.m3u8",
     "group-title": "GENERAL",
     "headers": {
       "Referer": "https://teveo.cu/",
@@ -12440,6 +12447,13 @@
     "url": "https://scl.edge.grupoz.cl/uniaccastream/live/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "RadioUNIACC.cl@SD"
+  },
+  {
+    "name": "Radio Universal (720p)",
+    "logo": "https://cdn.m3u.cl/logo/390_Radio_Universal.png",
+    "url": "https://videostream.chileservidores.com:8081/universal/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "RadioUniversal.cl@SD"
   },
   {
     "name": "Radio UP (1080p)",
