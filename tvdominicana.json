@@ -6808,6 +6808,13 @@
     "tvg-id": "Asomavision.ec@SD"
   },
   {
+    "name": "BAMOS TV (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/ntK4D64.png",
+    "url": "https://video2.getstreamhosting.com:19360/8092/8092.m3u8",
+    "group-title": "RELIGION Y CULTURA",
+    "tvg-id": "BAMOSTV.mx@SD"
+  },
+  {
     "name": "BCN Gospel TV HD (720p)",
     "logo": "https://bcngospelchannel.com/wp-content/uploads/2025/09/bcn-gospel-channer-favicon.png",
     "url": "https://live1.ovalcast.com:3916/live/bcngospeltvlive.m3u8",
@@ -8207,6 +8214,13 @@
     "url": "http://player.cetelmon.tv/protecteddfd43c2f3a8b41f3f28582bf8993aca6/992_high.m3u8",
     "group-title": "VARIEDADES",
     "tvg-id": "cetelmontv"
+  },
+  {
+    "name": "Chacra TV (1080p)",
+    "logo": "https://i.imgur.com/gy7AEfO.png",
+    "url": "https://media.cdnvid.com/public/1tgsjc7hs1kv.m3u8",
+    "group-title": "VARIEDADES",
+    "tvg-id": "ChacraTV.ar@SD"
   },
   {
     "name": "Chile Channel (720p)",
