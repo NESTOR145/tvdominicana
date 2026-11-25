@@ -2423,13 +2423,6 @@
     "tvg-id": "FMHMovies.us@SD"
   },
   {
-    "name": "GARAVITO TV",
-    "logo": "https://i.postimg.cc/3xhCFB6f/GARAVITO-TV.png",
-    "url": "https://59ef525c24caa.streamlock.net/garabitoTV/garabitotv/playlist.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "garavitotv"
-  },
-  {
     "name": "Golden Plus (1080p)",
     "logo": "https://i.imgur.com/OOEkyM2.png",
     "url": "http://45.5.118.152:8000/play/a03p/index.m3u8",
@@ -6612,12 +6605,6 @@
     "name": "V2Beat TV EN",
     "logo": "https://graph.facebook.com/vtwobeat/picture?width=200&height=200",
     "url": "https://abr.de1se01.v2beat.live/playlist.m3u8",
-    "group-title": "MUSICA"
-  },
-  {
-    "name": "Verbena TV España",
-    "logo": "https://pbs.twimg.com/profile_images/1463159511133442059/uVV15n4k_200x200.jpg",
-    "url": "https://streamtv2.elitecomunicacion.cloud:3144/live/verbenatvlive.m3u8",
     "group-title": "MUSICA"
   },
   {
@@ -12772,13 +12759,6 @@
     "url": "https://pantera1-100gb-cl-movistar.dps.live/smtv/smtv.smil/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "SantaMariaTelevision.cl@SD"
-  },
-  {
-    "name": "Segunda estrella (RTVE)",
-    "logo": "https://graph.facebook.com/rtveplay/picture?width=200&height=200",
-    "url": "https://ztnr.rtve.es/ztnr/17239088.m3u8",
-    "group-title": "GENERAL",
-    "tvg-id": "RTVE_PopUp3.TV"
   },
   {
     "name": "SelvaTV (1080p)",
