@@ -3225,13 +3225,6 @@
     "tvg-id": "WarnerChannel.us@Colombia"
   },
   {
-    "name": "Warner Channel Mexico (1080p) [Geo-blocked]",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png",
-    "url": "http://15.204.246.24:8080/WarnerChannelHD/index.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "WarnerChannel.us@Mexico"
-  },
-  {
     "name": "Warner Channel South",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png",
     "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/68.m3u8",
