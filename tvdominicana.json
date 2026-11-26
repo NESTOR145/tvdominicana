@@ -950,14 +950,6 @@
     "country": "DO"
   },
   {
-    "name": "LA VOZ SIN SENSURA TV",
-    "logo": "https://i.postimg.cc/pXm3qHrm/LA-VOZ-SIN-SENSURA-TV.jpg",
-    "url": "https://cdnfox.hostlagarto.com/lavozsincensuratv/index.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "lavozsinsensuratv.do@SD",
-    "country": "DO"
-  },
-  {
     "name": "LAGUNA TV",
     "logo": "https://i.postimg.cc/W3n4kD4C/LAGUNA-TV.jpg",
     "url": "https://cnn.hostlagarto.com/lagutv/playlist.m3u8",
@@ -2206,13 +2198,6 @@
     "tvg-id": "CineAmor.us@SD"
   },
   {
-    "name": "Cine Español",
-    "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/294f65bc-fa27-494d-9cb5-423260b7e875.jpeg",
-    "url": "https://spanish-cinema-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6196/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.extra_eids=&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=217.216.126.162&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6196&ads.rtv_channel_name=spanish-cinema-rakuten-tv_es&ads.rtv_content_id=6196&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=206a877c-a547-4501-9ced-297f0ce084c9&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6196&publishing_platform_id=5&tenant_identifier=rtv",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "spanish-cinema-rakuten-tv"
-  },
-  {
     "name": "CINE FRIKI",
     "logo": "https://i.postimg.cc/8zszspPX/CINE-FRIKI.jpg",
     "url": "https://zylo-cinefriki-rakuten.amagi.tv/playlist.m3u8",
@@ -2924,13 +2909,6 @@
     "tvg-id": "PopcornCentral.mx@SD"
   },
   {
-    "name": "Rakuten TV Family Movies (1080p)",
-    "logo": "https://i.imgur.com/Meew6eX.png",
-    "url": "https://b0d59c8c98974e708e5ccb9a27cdfdfc.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6205/master.m3u8",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "RakutenTVFamilyMovies.es@Spain"
-  },
-  {
     "name": "RUNTIME ACCION",
     "logo": "https://i.postimg.cc/pTxGmQ6N/RUNTIME-ACCION.jpg",
     "url": "https://run-ra-es.otteravision.com/run/ra_es/ra_es.m3u8",
@@ -2999,13 +2977,6 @@
     "url": "https://run-rt-uh-roku.otteravision.com/run/rt_uh/rt_uh.m3u8",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "runtime"
-  },
-  {
-    "name": "Sci-Fi",
-    "logo": "https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/a0e491eb-8f73-4bd9-a034-0fe9fd6984d7.jpeg",
-    "url": "https://sci-fi-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6740/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.content_url=rakuten.tv&ads.device_lmt=1&ads.device_make=&ads.device_model=&ads.device_year=&ads.did=&ads.env=prod&ads.extra_eids=&ads.gam_correlator=&ads.gdpr_consent=&ads.google_ad_manager_nonce=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.ip=217.216.126.162&ads.market=es&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.platform=web&ads.player_height=&ads.player_width=&ads.pod_type=playerpage_midroll&ads.ppid=&ads.prodq=1&ads.rating=16&ads.rtv_channel_id=6740&ads.rtv_channel_name=sci-fi-rakuten-tv_es&ads.rtv_content_id=6740&ads.rtv_content_language=es&ads.rtv_language=es&ads.rtvid=271859&ads.streaming_id=9a88a649-3487-495c-bfb0-46b6b8980763&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&channel_id=6740&publishing_platform_id=5&tenant_identifier=rtv",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "sci-fi-rakuten-tv"
   },
   {
     "name": "SensaCine TV x Pluto",
@@ -3139,13 +3110,6 @@
     "url": "https://jmp2.uk/plu-5ea71d48af1d0b0007d837f4.m3u8",
     "group-title": "PELICULAS Y SERIES",
     "tvg-id": "TheNewDetectives.us@LatAm"
-  },
-  {
-    "name": "Thrillers",
-    "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/8f5f37e8-70f0-4d3d-b8cd-ce5f34d6e916.jpeg",
-    "url": "https://thriller-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6480/master.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakuten.tv&ads.app_name=RakutenTV&ads.app_store_url=rakuten.tv&ads.app_version",
-    "group-title": "PELICULAS Y SERIES",
-    "tvg-id": "thriller-rakuten-tv"
   },
   {
     "name": "TODO CINE",
@@ -4256,13 +4220,6 @@
     "url": "https://cdn-euronews.akamaized.net/live/eds/euronews-pl/26382/index.m3u8",
     "group-title": "NOTICIAS",
     "tvg-id": "euronews"
-  },
-  {
-    "name": "Euronews Spanish (1080p)",
-    "logo": "https://i.imgur.com/8t9mdg9.png",
-    "url": "https://euronews-live-spa-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6571/bitok/eyJzdGlkIjoiMDA0YjY0NTMtYjY2MC00ZTZkLTlkNzEtMTk3YTM3ZDZhZWIxIiwibWt0IjoiZXMiLCJjaCI6NjU3MSwicHRmIjoxfQ==/26034/euronews-es.m3u8",
-    "group-title": "NOTICIAS",
-    "tvg-id": "EuronewsSpanish.fr@SD"
   },
   {
     "name": "Exitosa TV (1080p)",
@@ -7056,13 +7013,6 @@
     "group-title": "RELIGION Y CULTURA"
   },
   {
-    "name": "El Sonorense (1080p) [Not 24/7]",
-    "logo": "https://i.imgur.com/aKvPd4g.jpg",
-    "url": "https://s5.mexside.net:1936/elsonorense/elsonorense/playlist.m3u8",
-    "group-title": "RELIGION Y CULTURA",
-    "tvg-id": "ElSonorense.mx@SD"
-  },
-  {
     "name": "Encuentro (720p)",
     "logo": "https://i.imgur.com/uBBZR1X.png",
     "url": "http://138.59.227.20:8000/play/a05s/index.m3u8",
@@ -7603,13 +7553,6 @@
     "url": "https://5d2733224ac48.streamlock.net/taroteame/tarot_web/playlist.m3u8",
     "group-title": "RELIGION Y CULTURA",
     "tvg-id": "Taroteame.es@SD"
-  },
-  {
-    "name": "TBN Espana (576p)",
-    "logo": "https://i.imgur.com/oGvsUH9.png",
-    "url": "https://edge.xn--tbnespaa-j3a.es/LiveApp/streams/tbnlive.m3u8",
-    "group-title": "RELIGION Y CULTURA",
-    "tvg-id": "TBNEspana.es@SD"
   },
   {
     "name": "Television Consciente (1080p)",
@@ -10694,13 +10637,6 @@
     "tvg-id": "Canal5SantaFe.ar@SD"
   },
   {
-    "name": "Canal 5 TV Chepes",
-    "logo": "https://i.imgur.com/AzEqroq.png",
-    "url": "https://videostream.shockmedia.com.ar:19360/canal5alfatvchepes/canal5alfatvchepes.m3u8",
-    "group-title": "GENERAL",
-    "tvg-id": "Canal5TVChepes.ar@SD"
-  },
-  {
     "name": "Canal 5 TV Cozumel (1080p)",
     "logo": "https://i.imgur.com/0nzNMuP.jpeg",
     "url": "https://video0.rogohosting.com:19360/tvcozumel/tvcozumel.m3u8",
@@ -12567,13 +12503,6 @@
     "url": "https://video.wilohosting.com:19360/redinteriortv/redinteriortv.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "RedInteriorTV.py@SD"
-  },
-  {
-    "name": "Red TV Shop (720p)",
-    "logo": "https://i.imgur.com/I7yB176.png",
-    "url": "https://master.tucableip.com/redtvshop/index.m3u8",
-    "group-title": "GENERAL",
-    "tvg-id": "RedTVShop.bo@SD"
   },
   {
     "name": "Red TVE Ventanas (432p)",
