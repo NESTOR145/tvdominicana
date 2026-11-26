@@ -644,9 +644,9 @@
   {
     "name": "DELTA TV",
     "logo": "https://i.postimg.cc/Pq3N06xb/DELTA-TV.png",
-    "url": "https://tv2.bitstreaming.net:3539/live/deltanetlive.m3u8",
+    "url": "https://fox.hostlagarto.com:8081/deltatv50/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "DeltaTV.pe@SD",
+    "tvg-id": "deltatv.do@SD",
     "country": "DO"
   },
   {
@@ -950,6 +950,13 @@
     "country": "DO"
   },
   {
+    "name": "LA VOZ SIN SENSURA TV",
+    "logo": "https://i.postimg.cc/pXm3qHrm/LA-VOZ-SIN-SENSURA-TV.jpg",
+    "url": "https://cdnfox.hostlagarto.com/lavozsincensuratv/index.m3u8",
+    "group-title": "DOMINICANOS",
+    "tvg-id": "lavozsinsensuratv.do@SD"
+  },
+  {
     "name": "LAGUNA TV",
     "logo": "https://i.postimg.cc/W3n4kD4C/LAGUNA-TV.jpg",
     "url": "https://cnn.hostlagarto.com/lagutv/playlist.m3u8",
@@ -1200,9 +1207,9 @@
   {
     "name": "ONDA TV",
     "logo": "https://i.postimg.cc/dVvqX7Cn/ONDA-TV.png",
-    "url": "https://cnn.hostlagarto.com/ondatv/index.m3u8",
+    "url": "https://v4.tustreaming.cl:2020/hls/ondatv/ondatv.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "ondatv.do@SD",
+    "tvg-id": "OndaTV.pe@SD",
     "country": "DO"
   },
   {
@@ -4906,7 +4913,7 @@
   {
     "name": "ESPN 2 Latin America Colombia (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/960px-ESPN2_logo.svg.png",
-    "url": "http://190.61.47.54:8000/play/a005/index.m3u8",
+    "url": "http://38.211.118.56:50002/play/a0fa/index.m3u8",
     "group-title": "DEPORTES",
     "tvg-id": "ESPN2LatinAmerica.us@Colombia"
   },
@@ -10279,6 +10286,13 @@
     "url": "https://live-evg8.tv360.bitel.com.pe/bitel/cajamarcatvSRT/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "CajamarcaTV.pe@SD"
+  },
+  {
+    "name": "California Medios TV (720p)",
+    "logo": "https://i.imgur.com/IDvpRNI.png",
+    "url": "https://s5.mexside.net:1936/medios/medios/playlist.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "CaliforniaMediosTV.mx@SD"
   },
   {
     "name": "CaliTV (1080p)",
