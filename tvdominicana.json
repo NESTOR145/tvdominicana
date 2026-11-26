@@ -7090,6 +7090,13 @@
     "group-title": "RELIGION Y CULTURA"
   },
   {
+    "name": "Escuchame Radio TV (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/gt6UvG8.png",
+    "url": "https://stmv1.transmissaodigital.com/pedro9800/pedro9800/playlist.m3u8",
+    "group-title": "RELIGION Y CULTURA",
+    "tvg-id": "EscuchameRadioTV.ni@SD"
+  },
+  {
     "name": "ESNE TV (720p)",
     "logo": "https://i.imgur.com/bwAuFgx.png",
     "url": "http://168.196.127.137:6001/play/a071/index.m3u8",
@@ -10436,6 +10443,13 @@
     "tvg-id": "Canal13.gt@SD"
   },
   {
+    "name": "Canal 13 Chiquimula (1080p)",
+    "logo": "https://www.tl.com.gt/assets/tlcom.jpg",
+    "url": "https://www.tl.com.gt/live.php?file=0.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "Canal13Chiquimula.gt@HD"
+  },
+  {
     "name": "Canal 13 Esquipulas (720p)",
     "logo": "https://i.imgur.com/INKZvlN.png",
     "url": "https://tv91.hostingnuclear.com:19360/intercable/intercable.m3u8",
@@ -10448,6 +10462,13 @@
     "url": "https://stmv1.voxtvhd.com.br/vavizacli/vavizacli/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "Canal14ValleAltoTelevision.bo@SD"
+  },
+  {
+    "name": "Canal 15 El Zamorano [Not 24/7]",
+    "logo": "https://i.imgur.com/op13ujg.png",
+    "url": "https://vdo.tecnoservix.stream:3007/live/canal15zamoranolive.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "Canal15ElZamorano.sv@SD"
   },
   {
     "name": "Canal 2 Alpavision Neiva (720p) [Not 24/7]",
@@ -12023,6 +12044,13 @@
     "tvg-id": "NativaTVSatipo.pe@SD"
   },
   {
+    "name": "Nayarit Comunica (1080p)",
+    "logo": "https://i.imgur.com/aZCTkjU.jpg",
+    "url": "https://live.iplanay.gob.mx/hls/nayarittv.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "NayaritComunica.mx@SD"
+  },
+  {
     "name": "Neox TV [Not 24/7]",
     "logo": "https://i.imgur.com/eIX71c9.png",
     "url": "https://tv.streamcasthd.com:3031/live/neoxtvlive.m3u8",
@@ -13353,7 +13381,7 @@
   {
     "name": "TL Estrella (720p)",
     "logo": "",
-    "url": "http://190.181.61.93:8000/play/a004/index.m3u8",
+    "url": "https://edge.enhdtv.com/teleestrella/index.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "TLEstrella.bo@SD"
   },
