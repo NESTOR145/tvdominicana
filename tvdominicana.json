@@ -1624,9 +1624,9 @@
   {
     "name": "Telefuturo (Dominican Republic) (480p) [Not 24/7]",
     "logo": "https://i.imgur.com/QpnctoU.png",
-    "url": "https://hls.tvabierta.net/hls/023.m3u8",
+    "url": "http://158.172.217.18:8000/play/a0ns/index.m3u8",
     "group-title": "DOMINICANOS",
-    "tvg-id": "Telefuturo.do@SD",
+    "tvg-id": "Telefuturo.py@SD",
     "country": "DO"
   },
   {
@@ -6767,6 +6767,13 @@
     "tvg-id": "Asomavision.ec@SD"
   },
   {
+    "name": "Audaz TV (432p) [Not 24/7]",
+    "logo": "https://i.imgur.com/QtCgtZq.jpg",
+    "url": "https://cloud2.streaminglivehd.com:1936/8264/8264/playlist.m3u8",
+    "group-title": "RELIGION Y CULTURA",
+    "tvg-id": "AudazTV.ve@SD"
+  },
+  {
     "name": "BAMOS TV (1080p) [Not 24/7]",
     "logo": "https://i.imgur.com/ntK4D64.png",
     "url": "https://video2.getstreamhosting.com:19360/8092/8092.m3u8",
@@ -9806,7 +9813,7 @@
   {
     "name": "+tdp",
     "logo": "https://graph.facebook.com/teledeporteRTVE/picture?width=200&height=200",
-    "url": "https://ztnr.rtve.es/ztnr/6712411.m3u8",
+    "url": "https://ztnr.rtve.es/ztnr/6712426.m3u8",
     "group-title": "GENERAL"
   },
   {
@@ -12541,6 +12548,13 @@
     "tvg-id": "RedInteriorTV.py@SD"
   },
   {
+    "name": "Red TV Shop (720p)",
+    "logo": "https://i.imgur.com/I7yB176.png",
+    "url": "https://master.tucableip.com/redtvshop/index.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "RedTVShop.bo@SD"
+  },
+  {
     "name": "Red TVE Ventanas (432p)",
     "logo": "https://i.imgur.com/Pzf2ZAW.png",
     "url": "https://s2.tvdatta.com:3825/live/redtvelive.m3u8",
@@ -13974,6 +13988,13 @@
     "url": "https://unlimited1-us.dps.live/vtv/vtv.smil/playlist.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "VTVValledeAconcagua.cl@SD"
+  },
+  {
+    "name": "Waldivision Internacional",
+    "logo": "https://i.imgur.com/NB8pfpb.png",
+    "url": "https://media.streambrothers.com:19360/8308/8308.m3u8",
+    "group-title": "GENERAL",
+    "tvg-id": "WaldivisionInternacional.hn@SD"
   },
   {
     "name": "WAPA-TV 4.1 (1080p) [Not 24/7]",
