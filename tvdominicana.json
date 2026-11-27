@@ -12719,13 +12719,6 @@
     "tvg-id": "SanNicolasTV.cl@SD"
   },
   {
-    "name": "San Pedro TV (1080p) [Not 24/7]",
-    "logo": "https://i.imgur.com/UkpXogr.png",
-    "url": "https://iptv.ixfo.com.ar:30443/live/sanpedrotv/playlist.m3u8",
-    "group-title": "GENERAL",
-    "tvg-id": "SanPedroTV.ar@SD"
-  },
-  {
     "name": "San Vito Television",
     "logo": "https://i.imgur.com/Yd7JOxr.png",
     "url": "https://stream.lamegatv.com/hls/sanvitotelevision/index.m3u8",
