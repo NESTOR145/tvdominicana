@@ -578,14 +578,6 @@
     "country": "DO"
   },
   {
-    "name": "CONSUELO TV",
-    "logo": "https://i.postimg.cc/rsCnBB4n/CONSUELO-TV.jpg",
-    "url": "https://28tv.online:3918/live/consuelotvlive.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "consuelotv.do@SD",
-    "country": "DO"
-  },
-  {
     "name": "Coral 39 (1080p) [Not 24/7]",
     "logo": "https://i.imgur.com/k6cv9A9.png",
     "url": "https://hls.tvabierta.net/hls/039.m3u8",
@@ -671,14 +663,6 @@
     "url": "https://2-fss-2.streamhoster.com/pl_138/206532-6829872-1/playlist.m3u8",
     "group-title": "DOMINICANOS",
     "tvg-id": "EcosCanal57.do@HD",
-    "country": "DO"
-  },
-  {
-    "name": "EL PODER TV",
-    "logo": "https://i.postimg.cc/2jg5Bfjr/EL-PODER-TV.png",
-    "url": "https://28tv.online:3795/live/elpodertvcanal57live.m3u8",
-    "group-title": "DOMINICANOS",
-    "tvg-id": "elpodertv.do@SD",
     "country": "DO"
   },
   {
@@ -7885,13 +7869,6 @@
     "tvg-id": "alcancetv"
   },
   {
-    "name": "Alt Media TV",
-    "logo": "https://i.imgur.com/YkOgWMc.png",
-    "url": "https://video.hostingcaaguazu.com:19360/altmedia/altmedia.m3u8",
-    "group-title": "VARIEDADES",
-    "tvg-id": "AltMediaTV.py@SD"
-  },
-  {
     "name": "AMERICA TV",
     "logo": "https://i.postimg.cc/rsQ6XvVZ/AMERICA-TV.png",
     "url": "https://live.gideo.video/americateve2/master.m3u8",
@@ -13552,13 +13529,6 @@
     "url": "https://castv10.plugstreaming.com:19360/redtv/redtv.m3u8",
     "group-title": "GENERAL",
     "tvg-id": "TVLatina.bo@SD"
-  },
-  {
-    "name": "TV Legislativa (1080p) [Not 24/7]",
-    "logo": "https://i.imgur.com/3Y6Lp5l.png",
-    "url": "https://streamingav.asambleanacional.gob.ec/hls/stream.m3u8",
-    "group-title": "GENERAL",
-    "tvg-id": "TVLegislativa.ec@SD"
   },
   {
     "name": "TV Lobo (720p)",
